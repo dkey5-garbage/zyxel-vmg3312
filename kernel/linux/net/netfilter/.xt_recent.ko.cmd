@@ -1,0 +1,1 @@
+cmd_net/netfilter/xt_recent.ko := /opt/toolchains/uclibc-crosstools-gcc-4.4.2-1/usr/bin/mips-linux-uclibc-ld -r  -m elf32btsmip  -o net/netfilter/xt_recent.ko net/netfilter/xt_recent.o net/netfilter/xt_recent.mod.o

@@ -1,0 +1,2053 @@
+﻿#include<stdio.h>	
+#include<string.h>	
+#include<stdlib.h>	
+#include<time.h>	
+#include "languages.h"	
+
+
+
+$NAME$MLG_WLAN_AlertMsg_Alert$
+$Zy_Eng$Alert$
+$Zy_Tur$&#214;nemli Uyar&#305;$
+$Zy_Ger$Alarm$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_AdditionalWLANs_AlertMsg_Str1$
+$Zy_Eng$should not be longer than 32 characters.$
+$Zy_Tur$32 karakterden daha uzun olmamal&#305;d&#305;r.$
+$Zy_Ger$sollte nicht l&#228;nger als 32 Zeichen sein.$
+$Zy_Fre$ne doit pas comporter plus de 32 caract&#232;res.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_AdditionalWLANs_AlertMsg_Str2$
+$Zy_Eng$The DHCP Start Address is invalid. Enter a valid address.$
+$Zy_Tur$DHCP Ba&#351;lang&#305;&#231; Adresi ge&#231;ersiz. Ge&#231;erli bir adres giriniz.$
+$Zy_Ger$Die erste DHCP Adresse ist ung&#252;ltig. Geben Sie eine g&#252;ltige Adresse ein.$
+$Zy_Fre$L&#39;adresse de d&#233;but DHCP n&#39;est pas valide. Entrez une adresse valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_AdditionalWLANs_AlertMsg_Str3$
+$Zy_Eng$The DHCP End Address is invalid. Enter a valid address.$
+$Zy_Tur$DHCP Biti&#351; Adresi ge&#231;ersiz. Ge&#231;erli bir adres giriniz.$
+$Zy_Ger$Die letzte DHCP Adresse ist ung&#252;ltig. Geben Sie eine g&#252;ltige Adresse ein.$
+$Zy_Fre$L&#39;adresse de fin DHCP n&#39;est pas valide. Entrez une adresse valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_AdditionalWLANs_AlertMsg_Str4$
+$Zy_Eng$The SSID Subnet is invalid.  Enter a valid subnet.$
+$Zy_Tur$SSID Alt A&#287;&#305; ge&#231;ersiz.  Ge&#231;erli bir alt a&#287; giriniz.$
+$Zy_Ger$Das SSID-Subnetz ist ung&#252;ltig.  Geben Sie ein g&#252;ltiges Subnetz ein.$
+$Zy_Fre$Le sous-r&#233;seau SSID n&#39;est pas valide.  Entrez un sous-r&#233;seau valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_AdditionalWLANs_AlertMsg_Str5$
+$Zy_Eng$The LAN IP Address is invalid. Enter a valid address.$
+$Zy_Tur$ Yerel Alan A&#287;&#305; IP Adresi ge&#231;ersiz. Ge&#231;erli bir adres giriniz.$
+$Zy_Ger$Die LAN IP-Adresse ist ung&#252;ltig. Geben Sie eine g&#252;ltige Adresse ein.$
+$Zy_Fre$L&#39;adresse IP LAN n&#8217;est pas valide. Entrez une adresse valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_AdditionalWLANs_AlertMsg_Str6$
+$Zy_Eng$The defined subnet is in use.  Enter a unique subnet different than the subnet already in use with DHCP.$
+$Zy_Tur$Tan&#305;ml&#305; alt a&#287; kullan&#305;mdad&#305;r.  DHCP ile kullan&#305;mda olan alt a&#287;dan farkl&#305; benzersiz bir alt a&#287; giriniz.$
+$Zy_Ger$Das definierte Subnetz wird bereits verwendet.  Geben Sie ein eindeutiges Subnetz ein, das sich von dem Subnetz unterscheidet, was bereits mit DHCP verwendet wird.$
+$Zy_Fre$Le sous-r&#233;seau d&#233;fini est en cours d&#39;utilisation.  Entrez un sous-r&#233;seau unique diff&#233;rent du sous-r&#233;seau d&#233;j&#224; utilis&#233; avec DHCP.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_AdditionalWLANs_Str1$
+$Zy_Eng$Assign a name and a security level (if needed) to a new second wireless network service.$
+$Zy_Tur$İkinci bir kablosuz  ağ hizmetini başlatmak için bir kablosuz ağ adı (SSID) ve güvenlik seviyesi (gerekirse) atayınız.$
+$Zy_Ger$Dieses Ger&#228;t kann bis zu 4 WLANs aktivieren, die gleichzeitig arbeiten. Weisen Sie einen Namen und (ggf.) eine Sicherheitsebene zu, um die 2., 3. und 4. WLAN-Dienste zu starten.$
+$Zy_Fre$Ce dispositif peut permettre &#224; 4 r&#233;seaux sans fil maximum de travailler simultan&#233;ment. Attribuez un nom et un niveau de s&#233;curit&#233; (si n&#233;cessaire) pour d&#233;marrer le 2e, 3e, et 4e des services de r&#233;seau sans fil.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_AdditionalWLANs_Str10$
+$Zy_Eng$SSID Subnetmask$
+$Zy_Tur$SSID Alt A&#287; Maskesi  $
+$Zy_Ger$SSID-Subnetzmaske$
+$Zy_Fre$Masque de sous-r&#233;seau SSID$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_AdditionalWLANs_Str11$
+$Zy_Eng$LAN IP Address$
+$Zy_Tur$Yerel Alan A&#287;&#305;(LAN) IP Adresi$
+$Zy_Ger$LAN IP-Adresse$
+$Zy_Fre$Adresse IP LAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_AdditionalWLANs_Str12$
+$Zy_Eng$Enable Wireless LAN$
+$Zy_Tur$Enable Wireless LAN$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_AdditionalWLANs_Str13$
+$Zy_Eng$Configure as isolated Guest WLAN$
+$Zy_Tur$Configure as isolated Guest WLAN$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_AdditionalWLANs_Str2$
+$Zy_Eng$This device can enable up to 3 wireless networks to work at the same time. Assign a name and a security level (if needed) to start the 2nd, and 3rd wireless network services.$
+$Zy_Tur$Bu ayg&#305;t, ayn&#305; anda 3 kablosuz a&#287;&#305; &#231;al&#305;&#351;t&#305;rabilir. 2. ve 3. kablosuz a&#287; hizmetlerini ba&#351;latmak i&#231;in bir kablosuz a&#287; ad&#305;  ve g&#252;venlik seviyesi (gerekirse) atay&#305;n&#305;z.$
+$Zy_Ger$Dieses Ger&#228;t kann bis zu 3 WLANs aktivieren, die gleichzeitig arbeiten. Weisen Sie einen Namen und (ggf.) eine Sicherheitsebene zu, um die 2. und 3. WLAN-Dienste zu starten.$
+$Zy_Fre$Ce dispositif peut permettre &#224; 3 r&#233;seaux sans fil maximum de travailler simultan&#233;ment. Attribuez un nom et un niveau de s&#233;curit&#233; (si n&#233;cessaire) pour d&#233;marrer le 2e, et 3e des services de r&#233;seau sans fil.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_AdditionalWLANs_Str3$
+$Zy_Eng$Status$
+$Zy_Tur$Durum $
+$Zy_Ger$Status$
+$Zy_Fre$&#201;tat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_AdditionalWLANs_Str4$
+$Zy_Eng$SSID$
+$Zy_Tur$SSID $
+$Zy_Ger$SSID$
+$Zy_Fre$SSID$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_AdditionalWLANs_Str5$
+$Zy_Eng$Security$
+$Zy_Tur$G&#252;venlik$
+$Zy_Ger$Sicherheit$
+$Zy_Fre$S&#233;curit&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_AdditionalWLANs_GuestWLAN$
+$Zy_Eng$Guest WLAN$
+$Zy_Tur$Ziyaret&#231;i WLAN$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_AccessScenario$
+$Zy_Eng$Access Scenario$
+$Zy_Tur$Eri&#351;im Senaryosu$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_AdditionalWLANs_ExternalGuest$
+$Zy_Eng$External Guest$
+$Zy_Tur$Harici Ziyaret&#231;i$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_AdditionalWLANs_GuestHome$
+$Zy_Eng$Guest Home$
+$Zy_Tur$Ziyaret&#231;i Evi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_AdditionalWLANs_Str6$
+$Zy_Eng$SSID Subnet$
+$Zy_Tur$SSID Alt A&#287;&#305;$
+$Zy_Ger$SSID-Subnetz$
+$Zy_Fre$Sous-r&#233;seau SSID$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_AdditionalWLANs_Str7$
+$Zy_Eng$More AP Edit$
+$Zy_Tur$Daha fazla AP D&#252;zenleme$
+$Zy_Ger$Weitere APs bearbeiten$
+$Zy_Fre$Plus de modification d&#39;AP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_AdditionalWLANs_Str8$
+$Zy_Eng$DHCP Start Address$
+$Zy_Tur$DHCP Ba&#351;lang&#305;&#231; Adresi$
+$Zy_Ger$Erste DHCP-Adresse$
+$Zy_Fre$Adresse de d&#233;but DHCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_AdditionalWLANs_Str9$
+$Zy_Eng$DHCP End Address$
+$Zy_Tur$DHCP Biti&#351; Adresi$
+$Zy_Ger$Letzte DHCP-Adresse$
+$Zy_Fre$Adresse de fin DHCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Advanced_AlertMsg_Str1$
+$Zy_Eng$RTS threshold {{1}} should be between 0 and 2347.$
+$Zy_Tur$RTS e&#351;i&#287;i {{1}}, 0 ile 2347 aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$Wert f&#252;r RTS-Schwelle {{1}} sollte zwischen 0 und 2347 liegen.$
+$Zy_Fre$Le seuil RTS {{1}} doit &#234;tre compris entre 0 et 2347.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Advanced_AlertMsg_Str2$
+$Zy_Eng$Fragmentation threshold {{1}} should be between 256 and 2346.$
+$Zy_Tur$Par&#231;alanma e&#351;i&#287;i {{1}}, 256 ve 2346 aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$Wert f&#252;r Fragmentierungsschwelle {{1}} sollte zwischen 256 und 2346 liegen.$
+$Zy_Fre$Le seuil de fragmentation {{1}} doit &#234;tre compris entre 256 et 2346.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Advanced_AlertMsg_Str3$
+$Zy_Eng$DTIM interval {{1}} should be between 1 and 255.$
+$Zy_Tur$DTIM aral&#305;&#287;&#305; {{1}}, 1 ile 255 aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$DTIM-Intervall {{1}} sollte zwischen 1 und 255 liegen.$
+$Zy_Fre$L&#39;intervalle DTIM {{1}} doit &#234;tre compris entre 1 et 255.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Advanced_AlertMsg_Str4$
+$Zy_Eng$Beacon interval {{1}} should be between 50 and 1000.$
+$Zy_Tur$Beacon aral&#305;&#287;&#305; {{1}}, 50 ile 1000 aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$Beacon-Intervall {{1}} sollte zwischen 50 und 1000 liegen.$
+$Zy_Fre$L&#39;intervalle de balise {{1}} doit &#234;tre compris entre 50 et 1000.$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_WLAN_Advanced_AlertMsg_11ac_Str1$
+$Zy_Eng$Pre-Network Radar Check {{1}} should be between 0 and 99.$
+$Zy_Tur$Pre-Network Radar Check {{1}} should be between 0 and 99.$
+$Zy_Ger$Pre-Network Radar Check {{1}} should be between 0 and 99.$
+$Zy_Fre$Pre-Network Radar Check {{1}} should be between 0 and 99.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Advanced_AlertMsg_11ac_Str2$
+$Zy_Eng$In-Network Radar Check{{1}} should be between 10 and 99.$
+$Zy_Tur$In-Network Radar Check{{1}} should be between 10 and 99.$
+$Zy_Ger$In-Network Radar Check{{1}} should be between 10 and 99.$
+$Zy_Fre$In-Network Radar Check{{1}} should be between 10 and 99.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Advanced_AlertMsg_Str5$
+$Zy_Eng$N mode only does not support WEP security. You should change security in $
+$Zy_Tur$Sadece N modu WEP g&#252;venli&#287;ini desteklemez. G&#252;venli&#287;i de&#287;i&#351;tirmeniz gerekmektedir.$
+$Zy_Ger$N-Modus unterst&#252;tzt keine WEP-Sicherheit. Sie sollten die Sicherheit &#228;ndern auf $
+$Zy_Fre$Le mode N seul ne prend pas en charge la s&#233;curit&#233; WEP. Vous devez changer la s&#233;curit&#233; dans la $
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Advanced_Str1$
+$Zy_Eng$The configurations below are the advanced wireless settings.$
+$Zy_Tur$A&#351;a&#287;&#305;daki yap&#305;land&#305;rmalar geli&#351;mi&#351; kablosuz ba&#287;lant&#305; ayarlar&#305;d&#305;r.$
+$Zy_Ger$Die untenstehenden Konfigurationen sind die erweiterten WLAN-Einstellungen.$
+$Zy_Fre$Les configurations ci-dessous sont les param&#232;tres sans fil avanc&#233;s$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Advanced_Str10$
+$Zy_Eng$DTIM Interval$
+$Zy_Tur$DTIM Aral&#305;&#287;&#305;$
+$Zy_Ger$DTIM-Intervall$
+$Zy_Fre$Intervalle DTIM$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Advanced_Str2$
+$Zy_Eng$Wireless Advanced Setup$
+$Zy_Tur$Kablosuz Geli&#351;mi&#351; Kurulum$
+$Zy_Ger$WLAN einrichten (Erweitert)$
+$Zy_Fre$Installation avanc&#233;e sans fil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Advanced_Str3$
+$Zy_Eng$RTS/CTS Threshold$
+$Zy_Tur$RTS/CTS E&#351;i&#287;i$
+$Zy_Ger$RTS/CTS-Schwelle$
+$Zy_Fre$Seuil RTS/CTS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Advanced_Str4$
+$Zy_Eng$Fragmentation Threshold$
+$Zy_Tur$Par&#231;alanma E&#351;i&#287;i$
+$Zy_Ger$Fragmentierungsschwelle$
+$Zy_Fre$Seuil de fragmentation$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Advanced_Str5$
+$Zy_Eng$Auto Channel Timer$
+$Zy_Tur$Otomatik Kanal Zamanlay&#305;c&#305;$
+$Zy_Ger$Auto Channel Timer$
+$Zy_Fre$Programmateur de Canal Auto$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Advanced_Str6$
+$Zy_Eng$min$
+$Zy_Tur$dakika$
+$Zy_Ger$Min.$
+$Zy_Fre$min$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Advanced_Str7$
+$Zy_Eng$ms$
+$Zy_Tur$ms$
+$Zy_Ger$ms$
+$Zy_Fre$ms$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Advanced_Str8$
+$Zy_Eng$Output Power$
+$Zy_Tur$&#199;&#305;k&#305;&#351; G&#252;c&#252;$
+$Zy_Ger$Wireless-Sendest&#228;rke$
+$Zy_Fre$Puissance d&#39;&#233;mission$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Advanced_Str9$
+$Zy_Eng$Beacon Interval$
+$Zy_Tur$Beacon Aral&#305;&#287;&#305;$
+$Zy_Ger$Beacon-Intervall$
+$Zy_Fre$Intervalle de balise$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str1$
+$Zy_Eng$SSID should not be empty.$
+$Zy_Tur$SSID bo&#351; olmamal&#305;d&#305;r.$
+$Zy_Ger$SSID sollte nicht leer sein.$
+$Zy_Fre$SSID ne doit pas &#234;tre vide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str10$
+$Zy_Eng$Shared Secret {{1}} is invalid.$
+$Zy_Tur$Payla&#351;&#305;lan Gizlilik {{1}}, ge&#231;ersizdir.$
+$Zy_Ger$Shared Secret {{1}} ist ung&#252;ltig.$
+$Zy_Fre$La cl&#233; partag&#233;e {{1}} n&#8217;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str11$
+$Zy_Eng$WEP security does not support WPS. You should disable wps in$
+$Zy_Tur$WEP g&#252;venli&#287;i, WPS&#39; i desteklemiyor. WPS&#39; i devre d&#305;&#351;&#305; b&#305;rakman&#305;z gerekmektedir.$
+$Zy_Ger$WEP-Sicherheit unterst&#252;tzt WPS nicht. Sie sollten WPS &#228;ndern in $
+$Zy_Fre$La s&#233;curit&#233; WEP ne prend pas en charge WPS. Vous devez d&#233;sactiver wps dans la $
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str12$
+$Zy_Eng$WEP security does not support n only mode. You should disable wps in$
+$Zy_Tur$WEP g&#252;venli&#287;i, sadece n modunu desteklemiyor. WPS&#39; yi devre d&#305;&#351;&#305; b&#305;rakman&#305;z gerekir $
+$Zy_Ger$WEP-Sicherheit unterst&#252;tzt nicht den nur N-Modus. Sie sollten WPS &#228;ndern in $
+$Zy_Fre$La s&#233;curit&#233; WEP ne prend pas en charge le mode n seul. Vous devez d&#233;sactiver wps dans la $
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str13$
+$Zy_Eng$The Key Index was not selected!$
+$Zy_Tur$Anahtar Dizini se&#231;ilmedi!$
+$Zy_Ger$Der Schl&#252;sselindex wurde nicht ausgew&#228;hlt!$
+$Zy_Fre$L&#39;index de la cl&#233; n&#39;a pas &#233;t&#233; s&#233;lectionn&#233;!$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str14$
+$Zy_Eng$Cannot choose key that has empty value.$
+$Zy_Tur$Bo&#351; de&#287;ere sahip anahtar se&#231;emezsiniz.$
+$Zy_Ger$Auswahl eines Schl&#252;ssels mit leerem Wert nicht m&#246;glich.$
+$Zy_Fre$Impossible de choisir une cl&#233; avec une valeur vide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str15$
+$Zy_Eng$Key {{1}} is invalid. Please enter 13 ASCII characters or 26 hexadecimal digits for a 128-bit WEP encryption key.$
+$Zy_Tur$Anahtar {{1}} ge&#231;ersiz. L&#252;tfen 128-bit bir WEP &#351;ifreleme anahtar&#305; i&#231;in 13 ASCII karakter veya 26 adet heksadesimal say&#305; giriniz.$
+$Zy_Ger$Schl&#252;ssel {{1}} ist ung&#252;ltig. Bitte geben Sie 13 ASCII-Zeichen oder 26 Hexadezimal-Zeichen als 128-Bit WEP-Verschl&#252;sselungsschl&#252;ssel ein.$
+$Zy_Fre$La cl&#233; {{1}} n&#39;est pas valide. Saisir 13 caract&#232;res ASCII ou 26 chiffres hexad&#233;cimaux pour une cl&#233; de cryptage WEP de 128 bits.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str16$
+$Zy_Eng$Key {{1}} is invalid. Please enter 5 ASCII characters or 10 hexadecimal digits for a 64-bit WEP encryption key.$
+$Zy_Tur$Anahtar {{1}} ge&#231;ersiz. L&#252;tfen 64-bit bir WEP &#351;ifreleme anahtar&#305; i&#231;in 5 ASCII karakter veya 10 adet heksadesimal say&#305; giriniz.$
+$Zy_Ger$Schl&#252;ssel {{1}} ist ung&#252;ltig. Bitte geben Sie 5 ASCII-Zeichen oder 10 Hexadezimal-Zeichen als 64-Bit WEP-Verschl&#252;sselungsschl&#252;ssel ein.$
+$Zy_Fre$La cl&#233; {{1}} n&#39;est pas valide. Saisir 5 caract&#232;res ASCII ou 10 chiffres hexad&#233;cimaux pour une cl&#233; de cryptage WEP de 64 bits.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str17$
+$Zy_Eng$Found a non-ISO-8859-1 character at position: {{1}} in password {{2}}, Please eliminate before continuing.$
+$Zy_Tur${{1}} konumunda &#351;ifre {{2}} i&#231;inde ISO-8859-1 olmayan bir karakter bulundu:  , l&#252;tfen devam etmeden &#246;nce sorunu gideriniz.$
+$Zy_Ger$Nicht-ISO-8859-1 Zeichen an Position: {{1}} in Kennwort {{2}} gefunden. Bitte entfernen, bevor Sie fortfahren.$
+$Zy_Fre$Un caract&#232;re non-ISO-8859-1 trouv&#233; &#224; la position: {{1}} dans le mot de passe {{2}}, veuillez le supprimer avant de poursuivre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str18$
+$Zy_Eng$Found a non-ISO-8859-1 character at position: {{1}} in password 2, Please eliminate before continuing.$
+$Zy_Tur${{1}} konumunda &#351;ifre 2 i&#231;inde ISO-8859-1 olmayan bir karakter bulundu:  , l&#252;tfen devam etmeden &#246;nce sorunu gideriniz.$
+$Zy_Ger$Nicht-ISO-8859-1 Zeichen an Position: {{1}} in Kennwort {{2}} gefunden. Bitte entfernen, bevor Sie fortfahren.$
+$Zy_Fre$Un caract&#232;re non-ISO-8859-1 trouv&#233; &#224; la position: {{1}} dans le mot de passe 1, veuillez le supprimer avant de poursuivre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str19$
+$Zy_Eng$Found a non-ISO-8859-1 character at position: {{1}} in password 3, Please eliminate before continuing.$
+$Zy_Tur${{1}} konumunda &#351;ifre 3 i&#231;inde ISO-8859-1 olmayan bir karakter bulundu:  , l&#252;tfen devam etmeden &#246;nce sorunu gideriniz.$
+$Zy_Ger$Nicht-ISO-8859-1 Zeichen an Position: {{1}} in Kennwort {{3}} gefunden. Bitte entfernen, bevor Sie fortfahren.$
+$Zy_Fre$Un caract&#232;re non-ISO-8859-1 trouv&#233; &#224; la position: {{1}} dans le mot de passe 1, veuillez le supprimer avant de poursuivre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str2$
+$Zy_Eng$SSID {{1}} should be less than 32 characters.$
+$Zy_Tur$SSID {{1}} 32 karakterden az olmal&#305;d&#305;r.$
+$Zy_Ger$SSID {{1}} sollte nicht l&#228;nger als 32 Zeichen sein.$
+$Zy_Fre$SSID {{1}} doit comporter moins de 32 caract&#232;res.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str20$
+$Zy_Eng$Found a non-ISO-8859-1 character at position: {{1}}  in password 4, Please eliminate before continuing.$
+$Zy_Tur${{1}} konumunda &#351;ifre 4 i&#231;inde ISO-8859-1 olmayan bir karakter bulundu:  , l&#252;tfen devam etmeden &#246;nce sorunu gideriniz.$
+$Zy_Ger$Nicht-ISO-8859-1 Zeichen an Position: {{1}} in Kennwort {{4}} gefunden. Bitte entfernen, bevor Sie fortfahren.$
+$Zy_Fre$Un caract&#232;re non-ISO-8859-1 trouv&#233; &#224; la position: {{1}} dans le mot de passe 1, veuillez le supprimer avant de poursuivre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str21$
+$Zy_Eng$Please eliminate before continuing.$
+$Zy_Tur$L&#252;tfen devam etmeden &#246;nce sorunu gideriniz.$
+$Zy_Ger$Bitte entfernen, bevor Sie fortfahren.$
+$Zy_Fre$Veuillez le supprimer avant de poursuivre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str22$
+$Zy_Eng$N mode only does not support WEP security. You should change security settings.$
+$Zy_Tur$Sadece N modu WEP g&#252;venli&#287;ini desteklemez. G&#252;venlik ayarlar&#305;n&#305; de&#287;i&#351;tirmeniz gerekir.$
+$Zy_Ger$N-Modus unterst&#252;tzt keine WEP-Sicherheit. Sie sollten die Sicherheitseinstellungen &#228;ndern.$
+$Zy_Fre$Le mode N seul ne prend pas en charge la s&#233;curit&#233; WEP. Vous devez changer les param&#232;tres de s&#233;curit&#233;.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str3$
+$Zy_Eng$Found a non-ISO-8859-1 character at position: {{1}} in SSID, Please eliminate before continuing.$
+$Zy_Tur${{1}} konumunda SSID i&#231;inde ISO-8859-1 olmayan bir karakter bulundu:  , l&#252;tfen devam etmeden &#246;nce sorunu gideriniz.$
+$Zy_Ger$Nicht-ISO-8859-1 Zeichen an Position: {{1}} in SSID gefunden. Bitte entfernen, bevor Sie fortfahren.$
+$Zy_Fre$Un caract&#232;re non-ISO-8859-1 trouv&#233; &#224; la position : {{1}} dans SSID, veuillez le supprimer avant de poursuivre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str4$
+$Zy_Eng$WPA Pre-Shared Key should be between 8 and 63 ASCII characters or 64 hexadecimal digits.$
+$Zy_Tur$WPA &#214;n Payla&#351;&#305;ml&#305; Anahtar, 8 ve 63 ASCII karakter veya 64 adet onalt&#305;l&#305;k say&#305; basama&#287;&#305; aras&#305;nda olmal&#305;d&#305;r.  $
+$Zy_Ger$WPA Pre-shared Key sollte zwischen 8 und 63 ASCII-Zeichen oder 64 Hexadezimal-Zeichen haben.$
+$Zy_Fre$La cl&#233; WPA Pre-Shared Key devrait comporter entre 8 et 63 caract&#232;res ASCII ou 64 chiffres hexad&#233;cimaux.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str5$
+$Zy_Eng$Found a non-ISO-8859-1 character at position: {{1}} in WPA Pre-Shared Key, Please eliminate before continuing.$
+$Zy_Tur${{1}} konumunda WPA &#214;n-Payla&#351;&#305;ml&#305; anahtar i&#231;inde ISO-8859-1 olmayan bir karakter bulundu:  , l&#252;tfen devam etmeden &#246;nce sorunu gideriniz.$
+$Zy_Ger$Nicht-ISO-8859-1 Zeichen an Position: {{1}} in WPA Pre-shared Key gefunden. Bitte entfernen, bevor Sie fortfahren.$
+$Zy_Fre$Un caract&#232;re non-ISO-8859-1 trouv&#233; &#224; la position: {{1}} dans la cl&#233; WPA Pre-Shared Key, veuillez le supprimer avant de poursuivre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str6$
+$Zy_Eng$WPA Group Rekey Interval {{1}} should be between 0 and 2147483647.$
+$Zy_Tur$WPA Grup Yeniden Anahtarlama Aral&#305;&#287;&#305; {{1}}, 0 ve 2147483647 aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$Intervall f&#252;r WPA Group Rekey {{1}} sollte zwischen 0 und 2147483647 liegen.$
+$Zy_Fre$L&#39;intervalle de recomposition du groupe de WPA (WPA Group Rekey Interval) {{1}} doit &#234;tre compris entre 0 et 2147483647.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str7$
+$Zy_Eng$WPA Network Reauthentication Interval {{1}} should be between 0 and 2147483647.$
+$Zy_Tur$WPA A&#287; Yeniden Kimlik Do&#287;rulama Aral&#305;&#287;&#305; {{1}}, 0 ve 2147483647 aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$Intervall f&#252;r WPA Netzwerk-Reauthentifizierung {{1}} sollte zwischen 0 und 2147483647 liegen.$
+$Zy_Fre$L&#39;intervalle de nouvelle authentification r&#233;seau de WPA (WPA Network Reauthentication Interval) {{1}} doit &#234;tre compris entre 0 et 2147483647.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str8$
+$Zy_Eng$RADIUS Server IP Address {{1}} is invalid IP address.$
+$Zy_Tur$RADIUS Sunucu IP adresi {{1}} ge&#231;ersiz bir IP adresidir.$
+$Zy_Ger$RADIUS Server-IP-Adresse {{1}} ist ung&#252;ltig.$
+$Zy_Fre$L&#39;adresse IP du serveur RADIUS  {{1}} n&#39;est pas une adresse IP valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str9$
+$Zy_Eng$RADIUS Port {{1}} should be between 1 and 65535.$
+$Zy_Tur$RADIUS Portu {{1}}, 1 ile 65535 aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$RADIUS-Port {{1}} sollte zwischen 1 und 65535 liegen.$
+$Zy_Fre$Le port RADIUS {{1}} doit &#234;tre compris entre 1 et 65535.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str1$
+$Zy_Eng$Wireless security can protect the data from unauthorized access or damage via wireless network. <br> You need a wireless network name (also known as SSID) and security mode to set up the wireless security.$
+$Zy_Tur$Kablosuz g&#252;venli&#287;i, verileri yetkisiz eri&#351;im ya da kablosuz a&#287; &#252;zerinden gelecek zarara kar&#351;&#305; korur. <br> Kablosuz g&#252;venli&#287;ini kurmak i&#231;in bir kablosuz a&#287; ad&#305; (SSID olarak da bilinir) ve g&#252;venlik modu gereklidir.$
+$Zy_Ger$Wireless-Sicherheit kann die Daten vor unbefugtem Zugriff oder Sch&#228;den &#252;ber das WLAN sch&#252;tzen. <br> Sie ben&#246;tigen einen WLAN-Netzwerknamen (auch SSID genannt) und einen Sicherheitsmodus, um die Wireless-Sicherheit einzurichten.$
+$Zy_Fre$La s&#233;curit&#233; sans fil peut prot&#233;ger les donn&#233;es contre les acc&#232;s non autoris&#233;s ou les dommages par l&#39;interm&#233;diaire du r&#233;seau sans fil. <br> Vous avez besoin d&#39;un nom de r&#233;seau sans fil (&#233;galement appel&#233; SSID) et du mode de s&#233;curit&#233; pour mettre en place la s&#233;curit&#233; sans fil.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str10$
+$Zy_Eng$20MHz$
+$Zy_Tur$20MHz$
+$Zy_Ger$20 MHz$
+$Zy_Fre$20MHz$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str11$
+$Zy_Eng$40MHz$
+$Zy_Tur$40MHz$
+$Zy_Ger$40 MHz$
+$Zy_Fre$40MHz$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str12$
+$Zy_Eng$20MHz in Both Band$
+$Zy_Tur$Her iki Bantta 20MHz$
+$Zy_Ger$20 MHz in beiden B&#228;ndern$
+$Zy_Fre$20MHz dans les deux bandes$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str13$
+$Zy_Eng$40MHz in Both Band$
+$Zy_Tur$Her iki Bantta 40MHz$
+$Zy_Ger$40MHz in beiden B&#228;ndern$
+$Zy_Fre$40MHz dans les deux bandes$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str14$
+$Zy_Eng$20MHz in 2.4GHz and 40MHz in 5GHz$
+$Zy_Tur$2.4G Band&#305;nda 20MHz ve 5G Band&#305;nda 40MHz $
+$Zy_Ger$20 MHz im 2,4 GHz Band und 40 MHz im 5 GHz Band$
+$Zy_Fre$20 MHz dans la bande 2,4GHz et 40 MHz dans la bande 5GHz $
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str15$
+$Zy_Eng$Control Sideband$
+$Zy_Tur$Kontrol Yanbant$
+$Zy_Ger$Control Sideband$
+$Zy_Fre$Contr&#244;ler la bande lat&#233;rale$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str16$
+$Zy_Eng$Lower$
+$Zy_Tur$Alt$
+$Zy_Ger$Weiter unten$
+$Zy_Fre$Basse$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str17$
+$Zy_Eng$Upper$
+$Zy_Tur$&#220;st$
+$Zy_Ger$Weiter oben$
+$Zy_Fre$Haute$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str18$
+$Zy_Eng$802.11 Mode$
+$Zy_Tur$802.11 Modu$
+$Zy_Ger$802.11 Modus$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str19$
+$Zy_Eng$802.11 Protection$
+$Zy_Tur$802.11 Korumas&#305;$
+$Zy_Ger$802.11 Schutz$
+$Zy_Fre$802.11 Protection$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str2$
+$Zy_Eng$Wireless Network Setup$
+$Zy_Tur$Kablosuz A&#287; Kurulumu$
+$Zy_Ger$WLAN einrichten$
+$Zy_Fre$Installation du r&#233;seau sans fil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str20$
+$Zy_Eng$Preamble$
+$Zy_Tur$Giri&#351;$
+$Zy_Ger$Pr&#228;ambel$
+$Zy_Fre$Pr&#233;ambule$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str21$
+$Zy_Eng$Output Power$
+$Zy_Tur$&#199;&#305;k&#305;&#351; G&#252;c&#252;$
+$Zy_Ger$Wireless-Sendest&#228;rke$
+$Zy_Fre$Puissance d&#39;&#233;mission$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str22$
+$Zy_Eng$Wireless Network Settings$
+$Zy_Tur$Kablosuz A&#287; Ayarlar&#305;$
+$Zy_Ger$WLAN-Einstellungen$
+$Zy_Fre$Param&#232;tres de r&#233;seau sans fil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str23$
+$Zy_Eng$Wireless Network Name$
+$Zy_Tur$Kablosuz A&#287; Ad&#305;$
+$Zy_Ger$WLAN-Netzwerkname$
+$Zy_Fre$Nom du r&#233;seau sans fil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str24$
+$Zy_Eng$Hide SSID$
+$Zy_Tur$SSID gizle$
+$Zy_Ger$SSID ausblenden$
+$Zy_Fre$Masquer SSID$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str25$
+$Zy_Eng$Client Isolation$
+$Zy_Tur$&#304;stemci &#304;zolasyonu$
+$Zy_Ger$Client-Isolation$
+$Zy_Fre$Isolation du client $
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str26$
+$Zy_Eng$WLAN clients on the same SSID are isolated from each other$
+$Zy_Tur$Ayn&#305; SSID&#39; de yer alan Kablosuz Yerel A&#287;(WLAN) istemcileri birbirinden izole edilir.$
+$Zy_Ger$WLAN-Clients auf derselben SSID werden voneinander isoliert$
+$Zy_Fre$Les clients WLAN sur le m&#234;me SSID sont isol&#233;s les uns des autres$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str27$
+$Zy_Eng$MBSSID/LAN Isolation$
+$Zy_Tur$MBSSID / Yerel Alan A&#287;&#305; &#304;zolasyonu$
+$Zy_Ger$MBSSID/LAN-Isolation$
+$Zy_Fre$Isolation MBSSID/LAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str28$
+$Zy_Eng$WLAN clients are isolated from LAN or other WLANs clients$
+$Zy_Tur$Kablosuz Yerel A&#287; istemcileri, Yerel Alan A&#287;&#305; veya di&#287;er Kablosuz Yerel A&#287; istemcilerinden izole edilir$
+$Zy_Ger$WLAN-Clients werden von LAN- und anderen WLAN-Clients isoliert$
+$Zy_Fre$Les clients WLAN sont isol&#233;s du LAN ou d&#39;autres clients WLAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str29$
+$Zy_Eng$Internet Only$
+$Zy_Tur$Sadece &#304;nternet$
+$Zy_Ger$Nur Internet$
+$Zy_Fre$Internet seulement$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str3$
+$Zy_Eng$Wireless$
+$Zy_Tur$Kablosuz$
+$Zy_Ger$WLAN$
+$Zy_Fre$Sans fil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str30$
+$Zy_Eng$WLAN clients can not access the device$
+$Zy_Tur$Kablosuz Yerel A&#287; istemcileri cihaza eri&#351;emez$
+$Zy_Ger$WLAN-Clients k&#246;nnen nicht auf das Ger&#228;t zugreifen$
+$Zy_Fre$Les clients WLAN ne peuvent pas acc&#233;der au p&#233;riph&#233;rique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_EnhanceMulticastForwarding$
+$Zy_Eng$Enhanced Multicast Forwarding$
+$Zy_Tur$Geli&#351;tirilmi&#351; Multicast Y&#246;nlendirme$
+$Zy_Ger$Verbessertes Multicast Forwarding$
+$Zy_Fre$Redirection de multidiffusion am&#233;lior&#233;e$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str32$
+$Zy_Eng$WLAN clients will receive multicast in unicast format to further enhance wireless performance$
+$Zy_Tur$Kablosuz Yerel A&#287; istemcileri, multicast yay&#305;n&#305; kablosuz ba&#287;lant&#305; performans&#305;n&#305; daha da art&#305;rmak i&#231;in unicast yay&#305;n format&#305;nda al&#305;r.$
+$Zy_Ger$WLAN-Clients erhalten Multicast in Unicast-Format, um die WLAN-Leistung weiter zu verbessern$
+$Zy_Fre$Les clients WLAN recevront la multidiffusion au format monodiffusion pour am&#233;liorer encore les performances sans fil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str33$
+$Zy_Eng$BSSID$
+$Zy_Tur$BSSID$
+$Zy_Ger$BSSID$
+$Zy_Fre$BSSID$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str34$
+$Zy_Eng$Security Mode$
+$Zy_Tur$G&#252;venlik Modu$
+$Zy_Ger$Sicherheitsmodus$
+$Zy_Fre$Mode de s&#233;curit&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str35$
+$Zy_Eng$Passphrase Type$
+$Zy_Tur$Passphrase Tipi$
+$Zy_Ger$Typ der Kennphrase$
+$Zy_Fre$Type de phrase de passe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str36$
+$Zy_Eng$Passphrase Key$
+$Zy_Tur$Passphrase Anahtar&#305; $
+$Zy_Ger$Kennphrasenschl&#252;ssel$
+$Zy_Fre$Cl&#233; de phrase de passe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str37$
+$Zy_Eng$Please enter 13 ASCII characters (a-z, A-Z, 0-9) or 26 hexadecimal characters (A-F, 0-9) for a 128 bit WEP encryption key.  Please enter 5 ASCII characters (a-z, A-Z, 0-9) or 10 hexadecimal characters (A-F, 0-9) for a 64-bit WEP encryption key. Spaces and underscores are not allowed.$
+$Zy_Tur$L&#252;tfen 128 bit WEP &#351;ifreleme anahtar&#305; i&#231;in 13 ASCII karakteri (a-z, A-Z, 0-9) veya 26 adet heksadesimal karakter (A-F, 0-9) giriniz.  L&#252;tfen 64-bit WEP &#351;ifreleme anahtar&#305; i&#231;in 5 ASCII karakter (a-z, A-Z, 0-9) veya 10 adet heksadesimal karakter (A-F, 0-9) giriniz. Bo&#351;luk ve alt&#231;izgi kullan&#305;lamaz.$
+$Zy_Ger$Bitte geben Sie 13 ASCII-Zeichen (a-z, A-Z, 0-9) oder 26 Hexadezimal-Zeichen (A-F, 0-9) als 128-Bit WEP-Verschl&#252;sselungsschl&#252;ssel ein.  Bitte geben Sie 5 ASCII-Zeichen (a-z, A-Z, 0-9) oder 10 Hexadezimal-Zeichen (A-F, 0-9) als 64-Bit WEP-Verschl&#252;sselungsschl&#252;ssel ein. Leerzeichen und Unterstriche sind nicht zul&#228;ssig.$
+$Zy_Fre$Veuillez entrer 13 caract&#232;res ASCII (a-z, A-Z, 0-9) ou 26 caract&#232;res hexad&#233;cimaux (A-F, 0-9) pour une cl&#233; de cryptage WEP de 128 bits.  Veuillez entrer 5 caract&#232;res ASCII (a-z, A-Z, 0-9) ou 10 caract&#232;res hexad&#233;cimaux (A-F, 0-9) pour une cl&#233; de cryptage WEP de 64 bits. Les espaces et les caract&#232;res de soulignement ne sont pas autoris&#233;s.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str37_1$
+$Zy_Eng$Please enter 13 ASCII characters (a-z, A-Z, 0-9) or 26 hexadecimal characters (A-F, 0-9) for a 128 bit WEP encryption key.$
+$Zy_Tur$L&#252;tfen 128 bit WEP &#351;ifreleme anahtar&#305; i&#231;in 13 ASCII karakteri (a-z, A-Z, 0-9) veya 26 adet heksadesimal karakter (A-F, 0-9) giriniz.$
+$Zy_Ger$Bitte geben Sie 13 ASCII-Zeichen (a-z, A-Z, 0-9) oder 26 Hexadezimal-Zeichen (A-F, 0-9) als 128-Bit WEP-Verschl&#252;sselungsschl&#252;ssel ein.$
+$Zy_Fre$Veuillez entrer 13 caract&#232;res ASCII (a-z, A-Z, 0-9) ou 26 caract&#232;res hexad&#233;cimaux (A-F, 0-9) pour une cl&#233; de cryptage WEP de 128 bits.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str37_2$
+$Zy_Eng$Please enter 5 ASCII characters (a-z, A-Z, 0-9) or 10 hexadecimal characters (A-F, 0-9) for a 64-bit WEP encryption key.$
+$Zy_Tur$L&#252;tfen 64-bit WEP &#351;ifreleme anahtar&#305; i&#231;in 5 ASCII karakter (a-z, A-Z, 0-9) veya 10 adet heksadesimal karakter (A-F, 0-9) giriniz.$
+$Zy_Ger$Bitte geben Sie 5 ASCII-Zeichen (a-z, A-Z, 0-9) oder 10 Hexadezimal-Zeichen (A-F, 0-9) als 64-Bit WEP-Verschl&#252;sselungsschl&#252;ssel ein.$
+$Zy_Fre$Veuillez entrer 5 caract&#232;res ASCII (a-z, A-Z, 0-9) ou 10 caract&#232;res hexad&#233;cimaux (A-F, 0-9) pour une cl&#233; de cryptage WEP de 64 bits.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str38$
+$Zy_Eng$Select one password as your active password.$
+$Zy_Tur$Etkin &#351;ifreniz olarak bir &#351;ifre se&#231;iniz$
+$Zy_Ger$W&#228;hlen Sie ein Kennwort als aktives Kennwort aus.$
+$Zy_Fre$Choisissez un mot de passe comme mot de passe actif.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str39$
+$Zy_Eng$Password 1$
+$Zy_Tur$&#350;ifre 1$
+$Zy_Ger$Kennwort 1$
+$Zy_Fre$Mot de passe 1$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str4$
+$Zy_Eng$settings are invalid when disabled$
+$Zy_Tur$devre d&#305;&#351;&#305; b&#305;rak&#305;ld&#305;&#287;&#305;nda ayarlar ge&#231;ersizdir$
+$Zy_Ger$wenn deaktiviert, gelten Einstellungen nicht$
+$Zy_Fre$(Les param&#232;tres dans cet &#233;cran ne sont pas valables si vous s&#233;lectionnez cette option.)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str59$
+$Zy_Eng$The settings in this screen are invalid if you select this.$
+$Zy_Tur$Bunu se&#231;meniz durumunda, bu ekrandaki ayarlar ge&#231;ersizdir.$
+$Zy_Ger$Bei Auswahl dieser Option gelten die Einstellungen in diesem Bildschirm nicht.$
+$Zy_Fre$(Les param&#232;tres dans cet &#233;cran ne sont pas valables si vous s&#233;lectionnez cette option.)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str40$
+$Zy_Eng$Password 2$
+$Zy_Tur$&#350;ifre 2$
+$Zy_Ger$Kennwort 2$
+$Zy_Fre$Mot de passe 2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str41$
+$Zy_Eng$Password 3$
+$Zy_Tur$&#350;ifre 3$
+$Zy_Ger$Kennwort 3$
+$Zy_Fre$Mot de passe 3$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str42$
+$Zy_Eng$Password 4$
+$Zy_Tur$&#350;ifre 4$
+$Zy_Ger$Kennwort 4$
+$Zy_Fre$Mot de passe 4$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str43$
+$Zy_Eng$WEP Encryption$
+$Zy_Tur$WEP &#350;ifreleme$
+$Zy_Ger$WEP-Verschl&#252;sselung$
+$Zy_Fre$Cryptage WEP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str44$
+$Zy_Eng$128-bit$
+$Zy_Tur$128-bit$
+$Zy_Ger$128-Bit$
+$Zy_Fre$128 bits$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str45$
+$Zy_Eng$64-bit$
+$Zy_Tur$64-bit$
+$Zy_Ger$64-Bit$
+$Zy_Fre$64 bits$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str46$
+$Zy_Eng$Enter 8-63 characters (a-z, A-Z, 0-9, \'-\', \'_\' and \'.\'), other characters are not allowed.$
+$Zy_Tur$8 ile 63 karakter aras&#305; karakter(a-z, A-Z, 0-9, \'-\', \'_\' ve \'.\') giriniz, di&#287;er karakterlere izin verilmez.$
+$Zy_Ger$Geben Sie 8-63 Zeichen ein (a-z, A-Z, 0-9, \'-\', \'_\' und \'.\'), andere Zeichen sind nicht zul&#228;ssig.$
+$Zy_Fre$Entrez 8-63 caract&#232;res (a-z, A-Z, et 0-9). Les espaces et les caract&#232;res de soulignement ne sont pas autoris&#233;s.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str47$
+$Zy_Eng$Authentication Server$
+$Zy_Tur$Kimlik Do&#287;rulama Sunucusu$
+$Zy_Ger$Authentifizierungsserver$
+$Zy_Fre$Serveur d&#8217;authentification$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str48$
+$Zy_Eng$IP Address$
+$Zy_Tur$IP Adresi$
+$Zy_Ger$IP-Adresse$
+$Zy_Fre$Adresse IP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str49$
+$Zy_Eng$Port Number$
+$Zy_Tur$Port Numaras&#305;$
+$Zy_Ger$Portnummer$
+$Zy_Fre$Num&#233;ro de port$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str5$
+$Zy_Eng$Band$
+$Zy_Tur$Bant$
+$Zy_Ger$Band$
+$Zy_Fre$Bande$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str50$
+$Zy_Eng$Shared Secret$
+$Zy_Tur$Payla&#351;&#305;lan &#350;ifre$
+$Zy_Ger$Shared Secret$
+$Zy_Fre$Secret partag&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str51$
+$Zy_Eng$WPA-PSK Compatible$
+$Zy_Tur$WPA-PSK Uyumlu$
+$Zy_Ger$WPA-PSK-kompatibel$
+$Zy_Fre$Compatible WPA-PSK$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str52$
+$Zy_Eng$WPA Compatible$
+$Zy_Tur$WPA Uyumlu$
+$Zy_Ger$WPA-kompatibel$
+$Zy_Fre$Compatible WPA$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str53$
+$Zy_Eng$Encryption$
+$Zy_Tur$&#350;ifreleme$
+$Zy_Ger$Verschl&#252;sselung$
+$Zy_Fre$Cryptage$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str54$
+$Zy_Eng$WPA2 Pre-authentication$
+$Zy_Tur$WPA2 &#214;n Kimlik Do&#287;rulama$
+$Zy_Ger$WPA2-Vorauthentifizierung$
+$Zy_Fre$Pr&#233;-authentification WPA2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str55$
+$Zy_Eng$Network Re-auth Interval$
+$Zy_Tur$A&#287; Yeniden Kimlik Do&#287;rulama Aral&#305;&#287;&#305;$
+$Zy_Ger$Intervall f&#252;r Netzwerk-Reauth.$
+$Zy_Fre$Intervalle de r&#233;authentification r&#233;seau$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str56$
+$Zy_Eng$Group Key Update Timer$
+$Zy_Tur$Grup Anahtar&#305; G&#252;ncelleme Zamanlay&#305;c&#305;s&#305;$
+$Zy_Ger$Gruppenschl&#252;ssel-Aktualisierungstimer$
+$Zy_Fre$Programmateur de mise &#224; jour de cl&#233; de groupe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str57$
+$Zy_Eng$Generate password automatically$
+$Zy_Tur$Otomatik olarak &#351;ifre olu&#351;tur$
+$Zy_Ger$Kennwort automatisch erzeugen$
+$Zy_Fre$G&#233;n&#233;rer automatiquement un mot de passe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str58$
+$Zy_Eng$hide password$
+$Zy_Tur$&#351;ifreyi gizle $
+$Zy_Ger$Kennwort verdeckt anzeigen$
+$Zy_Fre$Masquer le mot de passe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str6$
+$Zy_Eng$2.4GHz$
+$Zy_Tur$2.4GHz$
+$Zy_Ger$2,4 GHz$
+$Zy_Fre$2,4GHz$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str61$
+$Zy_Eng$Security Level$
+$Zy_Tur$G&#252;venlik Seviyesi$
+$Zy_Ger$Sicherheitsebene$
+$Zy_Fre$2,4GHz$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str62$
+$Zy_Eng$No Security$
+$Zy_Tur$G&#252;venlik Yok$
+$Zy_Ger$Keine Sicherheit$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str63$
+$Zy_Eng$Basic$
+$Zy_Tur$Temel$
+$Zy_Ger$Basic$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str64$
+$Zy_Eng$More Secure$
+$Zy_Tur$Daha G&#252;venli$
+$Zy_Ger$Sicherer$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str65$
+$Zy_Eng$Recommended$
+$Zy_Tur$&#214;nerilen$
+$Zy_Ger$Empfohlen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str66$
+$Zy_Eng$Enter 5 ASCII characters or 10 hex characters (\'0-9\', \'A-F\')$
+$Zy_Tur$5 ASCII karakteri veya 10 heksadesimal karakter giriniz. (\'0 -9 \',\' A-F \') $
+$Zy_Ger$Geben Sie 5 ASCII-Zeichen oder 10 Hex-Zeichen (\'0-9\', \'A-F\') ein$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str67$
+$Zy_Eng$Enter 13 ASCII characters or 26 hex characters (\'0-9\', \'A-F\')$
+$Zy_Tur$13 ASCII karakteri veya 26 heksadesimal karakter giriniz. (\'0 -9 \',\' A-F \') $
+$Zy_Ger$Geben Sie 13 ASCII-Zeichen oder 26 Hex-Zeichen (\'0-9\', \'A-F\') ein$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str68$
+$Zy_Eng$WMM and APSD have beneficial effects on delay-sensitive applications over wireless connection, such as multimedia streaming, because WMM enhances data transmission quality and APSD improves power management on wireless clients.$
+$Zy_Tur$WMM veri iletim kalitesini art&#305;rd&#305;&#287;&#305;ndan ve APSD kablosuz  istemcilerinde g&#252;&#231; y&#246;netimini geli&#351;tirdi&#287;inden WMM ve APSD&#39; nin multimedya ak&#305;&#351;&#305; gibi kablosuz ba&#287;lant&#305; &#252;zerinden gecikmeye duyarl&#305; uygulamalarda olumlu etkileri vard&#305;r.$
+$Zy_Ger$WMM und APSD haben positive Auswirkungen auf verz&#246;gerungsanf&#228;llige Anwendungen &#252;ber WLAN wie etwa Multimedia Streaming, da WMM die Daten&#252;bertragung qualitativ verbessert und APSD zu Stromeinsparungen bei Wireless-Clients f&#252;hrt.$
+$Zy_Fre$Masquer le mot de passe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str69$
+$Zy_Eng$Auto$
+$Zy_Tur$Otomatik$
+$Zy_Ger$(null)$
+$Zy_Fre$Auto$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str72$
+$Zy_Eng$Generate password$
+$Zy_Tur$parola olu&#351;turmak$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str73$
+$Zy_Eng$Password strength$
+$Zy_Tur$&#350;ifre g&#252;c&#252;$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str74$
+$Zy_Eng$very weak$
+$Zy_Tur$&#231;ok zay&#305;f$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str75$
+$Zy_Eng$weak$
+$Zy_Tur$zay&#305;f$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str76$
+$Zy_Eng$better$
+$Zy_Tur$daha iyi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str77$
+$Zy_Eng$medium$
+$Zy_Tur$orta$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str78$
+$Zy_Eng$strong$
+$Zy_Tur$g&#252;&#231;l&#252;$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str79$
+$Zy_Eng$very strong$
+$Zy_Tur$&#231;ok g&#252;&#231;l&#252;$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str7$
+$Zy_Eng$5GHz$
+$Zy_Tur$5GHz$
+$Zy_Ger$5 GHz$
+$Zy_Fre$5GHz$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str71$
+$Zy_Eng$password unmask$
+$Zy_Tur$password unmask$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str8$
+$Zy_Eng$Channel$
+$Zy_Tur$Kanal$
+$Zy_Ger$Kanal$
+$Zy_Fre$Canal$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Str9$
+$Zy_Eng$Bandwidth$
+$Zy_Tur$Bant Geni&#351;li&#287;i$
+$Zy_Ger$Bandbreite$
+$Zy_Fre$Bande passante$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessButtom_Str1$
+$Zy_Eng$Enable WPS/WiFi Button$
+$Zy_Tur$Enable WPS/WiFi Button$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_EmailNotificationSetting$
+$Zy_Eng$E-mail notification when the wireless guest visit$
+$Zy_Tur$E-mail notification when the wireless guest visit$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_MACAuthentication_AlertMsg_Str1$
+$Zy_Eng$No WLAN is enabled. Please enable WLAN to modify \'MAC Authenication\'.$
+$Zy_Tur$Kablosuz Yerel A&#287;  Etkin de&#287;ildir. L&#252;tfen \'MAC Kimlik Do&#287;rulamas&#305;n&#305;\' de&#287;i&#351;tirmek i&#231;in Kablosuz Yerel A&#287;&#305; etkinle&#351;tiriniz.$
+$Zy_Ger$Es ist kein WLAN aktiviert. Bitte aktivieren Sie ein WLAN oder &#228;ndern Sie die \'MAC-Authentifizierung\'.$
+$Zy_Fre$Aucun WLAN n&#39;est activ&#233;. Activer WLAN pour modifier &#171;&#160;Authentification MAC.&#160;&#187;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_MACAuthentication_AlertMsg_Str2$
+$Zy_Eng$The number of mac filter records is limited to 32.$
+$Zy_Tur$MAC Filtre kay&#305;t adedi 32 ile s&#305;n&#305;rl&#305;d&#305;r.$
+$Zy_Ger$Die Anzahl von Datens&#228;tzen im MAC-Filter ist auf 32 begrenzt.$
+$Zy_Fre$Le nombre d&#39;enregistrements de filtre mac est limit&#233; &#224; 32.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_MACAuthentication_AlertMsg_Str3$
+$Zy_Eng$Address {{1}} is duplicated MAC address.$
+$Zy_Tur$Adres {{1}}, yinelenen bir MAC adresidir.$
+$Zy_Ger$Adresse {{1}} ist doppelte MAC-Adresse.$
+$Zy_Fre$L&#39;adresse {{1}} est une copie d&#39;adresse MAC.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_MACAuthentication_AlertMsg_Str4$
+$Zy_Eng$Address {{1}} is invalid MAC address.$
+$Zy_Tur$Adres {{1}, ge&#231;ersiz bir MAC adresidir.$
+$Zy_Ger$Adresse {{1}} ist ung&#252;ltige MAC-Adresse.$
+$Zy_Fre$L&#39;adresse {{1}} n&#39;est pas une adresse MAC valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_MACAuthentication_Str1$
+$Zy_Eng$MAC Authentication can allow or block the access of the device(s) to your wireless network. Edit the list in the table to decide the rule of the access on device(s).$
+$Zy_Tur$MAC Kimlik Do&#287;rulamas&#305;, cihaz&#305;n (lar) kablosuz a&#287;a eri&#351;imine izin verebilir veya eri&#351;imi engelleyebilir. Cihaz (lar) &#252;zerindeki eri&#351;im kural&#305;na karar vermek i&#231;in tablodaki listeyi d&#252;zenleyiniz.$
+$Zy_Ger$MAC-Authentifizierung kann den Zugriff von Ger&#228;ten auf Ihr WLAN zulassen oder blockieren. Bearbeiten Sie die Liste in der Tabelle, um die Regel f&#252;r den Zugriff f&#252;r Ger&#228;te festzulegen.$
+$Zy_Fre$L&#39;authentification MAC peut autoriser ou emp&#234;cher un (des) dispositif(s) d&#39;acc&#233;der &#224; votre r&#233;seau sans fil.. <br> Modifier le tableau ci-dessous pour ajouter des adresses MAC que vous souhaitez autoriser ou refuser.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_MACAuthentication_Str10$
+$Zy_Eng$Manual Input$
+$Zy_Tur$Manuel Giri&#351;$
+$Zy_Ger$Manuelle Eingabe$
+$Zy_Fre$Entr&#233;e manuelle$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_MACAuthentication_Str11$
+$Zy_Eng$MAC Filter Delete$
+$Zy_Tur$MAC Filtresi Sil$
+$Zy_Ger$MAC-Filter l&#246;schen$
+$Zy_Fre$Suppression du filtre MAC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_MACAuthentication_Str12$
+$Zy_Eng$This will delete the item. Please confirm this step.$
+$Zy_Tur$Bu, &#246;&#287;eyi silecektir. L&#252;tfen bu ad&#305;m&#305; onaylay&#305;n&#305;z.$
+$Zy_Ger$Element wird hierdurch gel&#246;scht. Bitte diesen Schritt best&#228;tigen.$
+$Zy_Fre$Cela va supprimer l&#39;&#233;l&#233;ment. Veuillez confirmer cette &#233;tape.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_MACAuthentication_Str13$
+$Zy_Eng$MAC address List$
+$Zy_Tur$MAC Adres Listesi$
+$Zy_Ger$MAC-Adressliste$
+$Zy_Fre$Adresse MAC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_MACAuthentication_Str14$
+$Zy_Eng$Note: If mode of first SSID 'allow' is choosed and MAC list is empty, WPS will be disabled$
+$Zy_Tur$Note: If mode of first SSID 'allow' is choosed and MAC list is empty, WPS will be disabled$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_MACAuthentication_Str15$
+$Zy_Eng$Note: The MAC list is empty, WPS will be disabled.$
+$Zy_Tur$Note: The MAC list is empty, WPS will be disabled.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_MACAuthentication_Str2$
+$Zy_Eng$MAC Restrict Mode$
+$Zy_Tur$MAC S&#305;n&#305;rlama Modu $
+$Zy_Ger$MAC-Beschr&#228;nkungsmodus$
+$Zy_Fre$Mode restreint MAC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_MACAuthentication_Str3$
+$Zy_Eng$MAC List$
+$Zy_Tur$MAC Listesi$
+$Zy_Ger$MAC-Liste$
+$Zy_Fre$Liste MAC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_MACAuthentication_Str4$
+$Zy_Eng$MAC Address$
+$Zy_Tur$MAC Adresi$
+$Zy_Ger$MAC-Adresse$
+$Zy_Fre$Adresse MAC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_MACAuthentication_Str5$
+$Zy_Eng$MAC Filter Configuration$
+$Zy_Tur$MAC Filtre Konfig&#252;rasyonu$
+$Zy_Ger$MAC-Filter konfigurieren$
+$Zy_Fre$Configuration du filtre MAC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_MACAuthentication_Str6$
+$Zy_Eng$Add to list by MAC address$
+$Zy_Tur$MAC adresine g&#246;re listeye ekle$
+$Zy_Ger$Zu Liste anhand MAC-Adresse hinzuf&#252;gen$
+$Zy_Fre$Ajouter &#224; la liste par adresse MAC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_MACAuthentication_Str7$
+$Zy_Eng$The number of mac filter records is limited to 32.$
+$Zy_Tur$MAC Filtre kay&#305;t adedi 32 ile s&#305;n&#305;rl&#305;d&#305;r.$
+$Zy_Ger$Die Anzahl von Datens&#228;tzen im MAC-Filter ist auf 32 begrenzt.$
+$Zy_Fre$Le nombre d&#39;enregistrements de filtre mac est limit&#233; &#224; 32.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_MACAuthentication_Str8$
+$Zy_Eng$To add a device, please enter device&rsquo;s MAC address$
+$Zy_Tur$Bir ayg&#305;t eklemek i&#231;in, cihaz&#305;n MAC adresini giriniz.$
+$Zy_Ger$Um ein Ger&#228;t hinzuzuf&#252;gen, geben Sie bitte die MAC-Adresse des Ger&#228;ts ein$
+$Zy_Fre$Pour ajouter un appareil, entrez l&#39;adresse MAC de l&#39;appareil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_MACAuthentication_Str9$
+$Zy_Eng$Select Device Info$
+$Zy_Tur$Ayg&#305;t Bilgisini se&#231;iniz.$
+$Zy_Ger$Ger&#228;teinfo ausw&#228;hlen$
+$Zy_Fre$S&#233;lectionnez les informations de l&#39;appareil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WDS_AlertMsg_Str1$
+$Zy_Eng$Wireless is disabled. Please set enabled in \'{{1}}\' page.$
+$Zy_Tur$Kablosuz ba&#287;lant&#305; devre d&#305;&#351;&#305;. L&#252;tfen \'{{1}}\' sayfas&#305;nda etkin se&#231;ene&#287;ini ayarlay&#305;n&#305;z.$
+$Zy_Ger$WLAN ist deaktiviert. Bitte auf Seite \'{{1}}\' aktivieren.$
+$Zy_Fre$Sans fil est d&#233;sactiv&#233;. D&#233;finir comme activ&#233; dans la page &#171;&#160;{{1}}&#160;&#187;.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WDS_AlertMsg_Str2$
+$Zy_Eng$No needs to delete empty record.$
+$Zy_Tur$Bo&#351; bir kayd&#305; silmek gerekmez.$
+$Zy_Ger$Es ist nicht notwendig, einen leeren Datensatz zu l&#246;schen.$
+$Zy_Fre$Pas besoin de supprimer l&#39;enregistrement vide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WDS_AlertMsg_Str3$
+$Zy_Eng$Duplicate static lease information! Please check the MAC address.$
+$Zy_Tur$Ayn&#305; statik lease bilgisi! L&#252;tfen MAC adresini kontrol ediniz.$
+$Zy_Ger$Doppelte Informationen f&#252;r Static Lease! Bitte MAC-Adresse pr&#252;fen.$
+$Zy_Fre$Copie des Informations du bail statique! Veuillez v&#233;rifier l&#39;adresse MAC.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WDS_AlertMsg_Str4$
+$Zy_Eng$Address {{1}} is multicast address, which is invalid remote bridge MAC address.$
+$Zy_Tur$Adres {{1}}, ge&#231;ersiz uzak k&#246;pr&#252; MAC adresi olan multicast bir adrestir.$
+$Zy_Ger$Adresse {{1}} ist Multicast-Adresse und ung&#252;ltige Remote Bridge MAC-Adresse.$
+$Zy_Fre$L&#39;adresse {{1}} est l&#39;adresse de multidiffusion, qui est une adresse MAC de pont distant non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WDS_Str1$
+$Zy_Eng$This page allows you to set the operating mode of your CPE to Access Point (AP) or Wireless Bridge. Select Wireless Bridge to disable AP functionality. Select Access Point to enable the CPE to act as an access point while on bridge mode so that other wireless stations are still able to associate with the AP. Select Disable in Bridge Restrict to enable any wireless station to establish a wireless bridge connection to the CPE. Select Enable in Bridge Restrict to limit wireless bridge connections only to wireless stations listed in the table.$
+$Zy_Tur$Bu sayfa, CPE &#231;al&#305;&#351;ma modunu Eri&#351;im Noktas&#305; (AP) veya Kablosuz Ba&#287;lant&#305; K&#246;pr&#252;s&#252; i&#231;in ayarlaman&#305;z&#305; sa&#287;lar. AP i&#351;levini devre d&#305;&#351;&#305; b&#305;rakmak i&#231;in Kablosuz Ba&#287;lant&#305; K&#246;pr&#252;s&#252;n&#252; se&#231;iniz. K&#246;pr&#252; modunda iken CPE&#39; nin bir AP gibi hareket etmesini sa&#287;lamak i&#231;in eri&#351;im noktas&#305; se&#231;iniz, b&#246;ylece di&#287;er kablosuz ba&#287;lant&#305; istasyonlar&#305;n&#305; Eri&#351;im Noktas&#305; ile ili&#351;kilendirmek m&#252;mk&#252;n olur. CPE&#39; ye bir kablosuz k&#246;pr&#252; ba&#287;lant&#305;s&#305; kuracak herhangi bir kablosuz ba&#287;lant&#305; istasyonunu etkinle&#351;tirmek i&#231;in K&#246;pr&#252; S&#305;n&#305;rlamada Devre D&#305;&#351;&#305; B&#305;rak se&#231;ene&#287;ini se&#231;iniz. Sadece tabloda listelenen kablosuz ba&#287;lant&#305; istasyonlar&#305;na kablosuz k&#246;pr&#252; ba&#287;lant&#305;s&#305; hakk&#305; vermek i&#231;in K&#246;pr&#252; S&#305;n&#305;rlamada Etkinle&#351;tir se&#231;ene&#287;ini se&#231;in.$
+$Zy_Ger$Auf dieser Seite k&#246;nnen Sie den Betriebsmodus des Ger&#228;ts auf Access Point (AP) oder Wireless Bridge einstellen. W&#228;hlen Sie Wireless Bridge, um die AP-Funktionen zu deaktivieren. W&#228;hlen Sie Access Point, um das Ger&#228;t im Bridge-Modus als Access Point verwenden zu k&#246;nnen, damit andere Wireless-Stationen immer noch mit dem AP Verbindung aufnehmen k&#246;nnen. W&#228;hlen Sie bei Einschr&#228;nkung auf Bridge die Option Deaktivieren, damit alle Wireless-Stationen eine Verbindung &#252;ber Wireless Bridge mit dem Ger&#228;t aufbauen k&#246;nnen. W&#228;hlen Sie bei Einschr&#228;nkung auf Bridge die Option Aktivieren, um Verbindungen &#252;ber Wireless Bridge nur auf Wireless-Stationen zu beschr&#228;nken, die in der Tabelle aufgef&#252;hrt sind.$
+$Zy_Fre$Cette page vous permet de ponter le {{1}} &#224; d&#39;autres ponts sans fil activ&#233;s compatibles WDS.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WDS_Str10$
+$Zy_Eng$When Bridge Restrict is enabled, only the MAC Addresses entered in the table below will be able to WDS bridge to the {{1}} . <br> When Bridge Restrict is disabled, any WDS bridge may connect to the {{2}}. $
+$Zy_Tur$K&#246;pr&#252; S&#305;n&#305;rlama etkinle&#351;tirildi&#287;inde, sadece tabloya girilmi&#351; a&#351;a&#287;&#305;daki MAC Adresleri {{1}} i&#231;in WDS k&#246;pr&#252;lemesi yapabilecektir. <br> K&#246;pr&#252; S&#305;n&#305;rlama devre d&#305;&#351;&#305; b&#305;rak&#305;ld&#305;&#287;&#305;nda, herhangi bir WDS k&#246;pr&#252;s&#252; {{2}}&#39; e ba&#287;lanabilir. $
+$Zy_Ger$Wenn die Einschr&#228;nkung auf Bridge aktiviert ist, k&#246;nnen nur MAC-Adressen, die in der untenstehenden Tabelle aufgef&#252;hrt sind, &#252;ber WDS Bridge eine Verbindung zu {{1}} aufbauen. <br> Wenn die Einschr&#228;nkung auf Bridge deaktiviert ist, kann jede WDS Bridge Verbindung zu {{2}} herstellen. $
+$Zy_Fre$Quand restriction de pont est activ&#233;, seules les adresses MAC entr&#233;es dans le tableau ci-dessous seront en mesure de faire un pontage WDS au {{1}}. <br> Lorsque Restriction de pont est d&#233;sactiv&#233;, tout pont WDS peut se connecter au {{2}}. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WDS_Str11$
+$Zy_Eng$1.The WDS function only works when the security mode is set to No Security, WEP, WPA-PSK and WPA2-PSK. <br> 2. The WDS connection security mode is based on the settings configured in the Wireless > General screen. <br> 3. The WDS function only works with the first SSID. <br> 4. If the AP mode is Wireless Bridge, WPS will be disabled. <br> 5. The SSID should be the same in both WPA-PSK or WPA2-PSK security modes.$
+$Zy_Tur$1. WDS fonksiyonu, sadece g&#252;venlik modu G&#252;venlik Yok, WEP, WPA-PSK ve WPA2-PSK olarak ayarland&#305;&#287;&#305;nda &#231;al&#305;&#351;&#305;r. <br> 2. WDS ba&#287;lant&#305; g&#252;venlik modu, Kablosuz> Genel ekran&#305;nda yap&#305;land&#305;r&#305;lan ayarlara dayanmaktad&#305;r. <br> 3. WDS fonksiyonu sadece ilk SSID ile &#231;al&#305;&#351;&#305;r. <br> 4. Eri&#351;im Noktas&#305; modu Kablosuz K&#246;pr&#252; ise, WPS devre d&#305;&#351;&#305; b&#305;rak&#305;lacakt&#305;r. <br> 5. SSID, hem WPA-PSK hem de WPA2-PSK g&#252;venlik modlar&#305;nda ayn&#305; olmal&#305;d&#305;r.$
+$Zy_Ger$1. Die WDS-Funktion funktioniert nur, wenn der Sicherheitsmodus auf Keine Sicherheit, WEP, WPA-PSK oder WPA2-PSK eingestellt ist. <br> 2. Der Sicherheitsmodus der WDS-Verbindung basiert auf den Einstellungen, die im Bildschirm Wireless > Allgemein eingestellt wurden. <br> 3. Die WDS-Funktion funktioniert nur mit der ersten SSID. <br> 4. Wenn Wireless Bridge als AP-Modus eingestellt ist, wird WPS deaktiviert. <br> 5. Die SSID sollte in den beiden Sicherheitsmodi WPA-PSK und WPA2-PSK &#252;bereinstimmen.$
+$Zy_Fre$1. La fonction WDS ne fonctionne que lorsque le mode de s&#233;curit&#233; est d&#233;fini sur Pas de s&#233;curit&#233;, WEP, WPA-PSK et WPA2-PSK. <br> 2. Le mode de s&#233;curit&#233; de connexion WDS est bas&#233; sur des param&#232;tres configur&#233;s dans l&#39;&#233;cran Sans fil > G&#233;n&#233;ral. <br> 3. La fonction WDS fonctionne uniquement avec le premier SSID. <br> 4. Si le mode AP est Pont sans fil, WPS sera d&#233;sactiv&#233;. <br> 5. Le SSID doit &#234;tre le m&#234;me dans les deux modes de s&#233;curit&#233; WPA-PSK ou WPA2-PSK.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WDS_Str12$
+$Zy_Eng$Scan$
+$Zy_Tur$Tara $
+$Zy_Ger$Scannen$
+$Zy_Fre$Analyser$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WDS_Str13$
+$Zy_Eng$Remote Bridges MAC Address$
+$Zy_Tur$Uzak K&#246;pr&#252; MAC Adresi$
+$Zy_Ger$MAC-Adressen von Remote Bridges$
+$Zy_Fre$Adresse MAC de Ponts sans fil $
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WDS_Str14$
+$Zy_Eng$Modify list by MAC address$
+$Zy_Tur$MAC adresine g&#246;re listeyi de&#287;i&#351;tir$
+$Zy_Ger$Liste anhand MAC-Adresse &#228;ndern$
+$Zy_Fre$Modifier la liste par adresse MAC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WDS_Str15$
+$Zy_Eng$To modify a device, please enter device&rsquo;s MAC address$
+$Zy_Tur$Bir cihaz&#305; de&#287;i&#351;tirmek i&#231;in, cihaz&#305;n MAC adresini giriniz$
+$Zy_Ger$Um ein Ger&#228;t zu &#228;ndern, geben Sie bitte die MAC-Adresse des Ger&#228;ts ein$
+$Zy_Fre$Pour modifier un appareil, entrez l&#39;adresse MAC de l&#39;appareil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WDS_Str16$
+$Zy_Eng$Scan SSID$
+$Zy_Tur$SSID Tarama $
+$Zy_Ger$SSID scannen$
+$Zy_Fre$Rechercher SSID$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WDS_Str17$
+$Zy_Eng$Wireless Bridge Scan Setup$
+$Zy_Tur$Kablosuz K&#246;pr&#252; Tarama Kurulumu$
+$Zy_Ger$Wireless Bridge Scan einrichten$
+$Zy_Fre$Configuration de la recherche du pont sans fil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WDS_Str18$
+$Zy_Eng$WDS Delete$
+$Zy_Tur$WDS Silme$
+$Zy_Ger$WDS l&#246;schen$
+$Zy_Fre$Suppression de WDS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WDS_Str2$
+$Zy_Eng$When AP mode is set to {{1}} mode the {{2}} will: <br>     -Bridge to other WDS enabled wirless bridges <br>      -Allow WLAN clients to associate to {{3}}$
+$Zy_Tur$Eri&#351;im Noktas&#305; modu {{1}} moduna ayarland&#305;&#287;&#305;nda {{2}} ..... olacakt&#305;r: <br> - Di&#287;er WDS etkin kablosuz ba&#287;lant&#305; k&#246;pr&#252;leri i&#231;in <br> - WLAN istemcilerine {{3}} ili&#351;kilendirmesi i&#231;in izin ver $
+$Zy_Ger$Wenn als AP-Modus {{1}} eingestellt wird, trifft Folgendes f&#252;r {{2}} zu: <br>     -Herstellen einer Bridge zu anderen WDS-aktivierten Wireless Bridges<br>      -WLAN-Clients d&#252;rfen Verbindung zu {{3}} herstellen$
+$Zy_Fre$Lorsque le mode AP est r&#233;gl&#233; sur le mode {{1}} le {{2}} va: <br>      -Ponter vers d&#39;autres ponts sans fils compatibles WDS <br>      -Autoriser les clients WLAN de s&#39;associer &#224; {{3}}$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WDS_Str3$
+$Zy_Eng$When AP mode is set to {{1}} mode the {{2}} will:<br>     -Only bridge to other WDS enabled wireless bridges $
+$Zy_Tur$Eri&#351;im Noktas&#305; modu {{1}} moduna ayarland&#305;&#287;&#305;nda {{2}} ..... olacakt&#305;r: <br> Sadece di&#287;er WDS etkin kablosuz ba&#287;lant&#305; k&#246;pr&#252;leri i&#231;in  $
+$Zy_Ger$Wenn {{1}} als AP-Modus eingestellt ist, trifft Folgendes f&#252;r {{2}} zu:<br>     -Nur Bridge zu anderen WDS-aktivierten Wireless Bridges herstellen $
+$Zy_Fre$Lorsque le mode AP est r&#233;gl&#233; sur le mode {{1}} le {{2}} va: <br>      -Ponter seulement sur les autres ponts sans fil compatibles WDS $
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WDS_Str4$
+$Zy_Eng$Wireless Bridge Setup$
+$Zy_Tur$Kablosuz K&#246;pr&#252; Kurulumu$
+$Zy_Ger$Wireless Bridge einrichten$
+$Zy_Fre$Configuration du pont sans fil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WDS_Str5$
+$Zy_Eng$AP Mode$
+$Zy_Tur$Eri&#351;im Noktas&#305;(AP) Modu$
+$Zy_Ger$AP-Modus$
+$Zy_Fre$Mode PA$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WDS_Str6$
+$Zy_Eng$Access Point$
+$Zy_Tur$Eri&#351;im Noktas&#305;$
+$Zy_Ger$Access Point$
+$Zy_Fre$Point d&#39;acc&#232;s$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WDS_Str7$
+$Zy_Eng$Wireless Bridge$
+$Zy_Tur$Kablosuz K&#246;pr&#252;$
+$Zy_Ger$Wireless Bridge$
+$Zy_Fre$Pont sans fil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WDS_Str8$
+$Zy_Eng$Remote Bridges MAC Address$
+$Zy_Tur$Uzak K&#246;pr&#252; MAC Adresi$
+$Zy_Ger$MAC-Adressen von Remote Bridges$
+$Zy_Fre$Adresse MAC de Ponts sans fil $
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WDS_Str9$
+$Zy_Eng$Bridge Restrict$
+$Zy_Tur$K&#246;pr&#252; S&#305;n&#305;rlama$
+$Zy_Ger$Einschr&#228;nkung auf Bridge$
+$Zy_Fre$Restriction de pont $
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Wirelsss_Btn1$
+$Zy_Eng$Register$
+$Zy_Tur$Kaydol$
+$Zy_Ger$Registrieren$
+$Zy_Fre$Inscrire$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Wirelsss_Btn2$
+$Zy_Eng$Release Configuration$
+$Zy_Tur$Yap&#305;land&#305;rmay&#305; serbest b&#305;rak$
+$Zy_Ger$Konfiguration freigeben$
+$Zy_Fre$Configuration de version$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Wirelsss_Btn3$
+$Zy_Eng$Generate New PIN Number$
+$Zy_Tur$Yeni PIN Numaras&#305; Olu&#351;tur$
+$Zy_Ger$Neue PIN generieren$
+$Zy_Fre$G&#233;n&#233;rer un nouveau code PIN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Wirelsss_Btn4$
+$Zy_Eng$Refresh$
+$Zy_Tur$Yenile $
+$Zy_Ger$Aktualisieren$
+$Zy_Fre$Actualiser$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Wirelsss_Btn5$
+$Zy_Eng$Add new MAC address$
+$Zy_Tur$Yeni MAC adresi ekle$
+$Zy_Ger$Neue MAC-Adresse hinzuf&#252;gen$
+$Zy_Fre$Ajouter une nouvelle adresse MAC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Wirelsss_Btn6$
+$Zy_Eng$Release Lock$
+$Zy_Tur$Release Lock$
+$Zy_Ger$Schutz entfernen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WMM_Str1$
+$Zy_Eng$Wi-Fi Multimedia (WMM) prioritizes traffic according to four standarized Access Categories - Voice, Video, Best Effort, and Background.$
+$Zy_Tur$Wi-Fi &#199;oklu Ortam&#305; (WMM), standart hale getirilmi&#351; d&#246;rt eri&#351;im kategorisine - Ses, Video, En &#304;yi Eri&#351;im ve Arka Plan -  g&#246;re trafi&#287;i &#246;nceliklendirir.$
+$Zy_Ger$WMM (Wi-Fi Multimedia) priorisiert den Traffic gem&#228;&#223; vier standardisierten Zugangskategorien (Voice, Video, Best Effort und Background).$
+$Zy_Fre$Wi-Fi Multimedia (WMM) donne la priorit&#233; au trafic en fonction de quatre cat&#233;gories d&#39;acc&#232;s standardis&#233;es - Voix, Vid&#233;o, Meilleur effort, et arri&#232;re-plan.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WMM_Str2$
+$Zy_Eng$WMM may also enable Power Saving mechanisms from 802.11e and legacy 802.11 for fine-tuning power consumption.$
+$Zy_Tur$WMM ayr&#305;ca 802.11e ve standart 802.11&#39;de ince ayar g&#252;&#231; t&#252;ketimi i&#231;in  g&#252;&#231; tasarrufunu etkin hale getirebilir.$
+$Zy_Ger$WMM kann auch Stromsparfunktionen von 802.11e und dem &#228;lteren 802.11 Standard aktivieren f&#252;r die Feineinstellung des Stromverbrauchs.$
+$Zy_Fre$WMM peut &#233;galement activer les m&#233;canismes d&#39;&#233;conomie d&#39;&#233;nergie &#224; partir de 802.11e et de 802.11 h&#233;rit&#233; pour r&#233;gler pr&#233;cis&#233;ment  la consommation d&#39;&#233;nergie.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WMM_Str3$
+$Zy_Eng$WMM (Wi-Fi Multimedia)$
+$Zy_Tur$WMM (Wi-Fi &#199;oklu Ortam&#305;)$
+$Zy_Ger$WMM (Wi-Fi Multimedia)$
+$Zy_Fre$WMM (Wi-Fi Multim&#233;dia)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WMM_Str4$
+$Zy_Eng$WMM$
+$Zy_Tur$WMM$
+$Zy_Ger$WMM$
+$Zy_Fre$WMM$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WMM_Str5$
+$Zy_Eng$WMM Automatic Power Save Delivery(APSD)$
+$Zy_Tur$WMM Otomatik G&#252;&#231; Tasarrufu Da&#287;&#305;t&#305;m&#305; (APSD)$
+$Zy_Ger$WMM Automatic Power Save Delivery (APSD)$
+$Zy_Fre$Economie d&#39;&#233;nergie WMM$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_AlertMsg_Str1$
+$Zy_Eng$Basic SSID is not enabled. So WPS is not running.$
+$Zy_Tur$Temel SSID etkin de&#287;il. Bu y&#252;zden WPS &#231;al&#305;&#351;m&#305;yor.$
+$Zy_Ger$Es ist keine grundlegende SSID aktiviert. D.h. WPS l&#228;uft nicht.$
+$Zy_Fre$Basic SSID n&#39;est pas activ&#233;. Donc, WPS ne fonctionne pas.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_AlertMsg_Str2$
+$Zy_Eng$Invalid PIN number$
+$Zy_Tur$Ge&#231;ersiz PIN numaras&#305;$
+$Zy_Ger$Ung&#252;ltige PIN$
+$Zy_Fre$Num&#233;ro PIN non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_AlertMsg_Str3$
+$Zy_Eng$WPS does not support WEP security. You should change security in$
+$Zy_Tur$WPS, WEP g&#252;venli&#287;ini desteklemiyor. G&#252;venli&#287;i de&#287;i&#351;tirmeniz gerekir $
+$Zy_Ger$WPS unterst&#252;tzt WEP-Sicherheit nicht. Sie sollten die Sicherheit &#228;ndern auf $
+$Zy_Fre$WPS ne prend pas en charge la s&#233;curit&#233; WEP. Vous devez changer la s&#233;curit&#233; dans la$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_AlertMsg_Str4$
+$Zy_Eng$Hide SSID does not support with WPS 2.0. You should disable it in$
+$Zy_Tur$WPS, WEP g&#252;venli&#287;ini desteklemiyor. G&#252;venli&#287;i de&#287;i&#351;tirmeniz gerekir $
+$Zy_Ger$WPS unterst&#252;tzt WEP-Sicherheit nicht. Sie sollten die Sicherheit &#228;ndern auf $
+$Zy_Fre$WPS ne prend pas en charge la s&#233;curit&#233; WEP. Vous devez changer la s&#233;curit&#233; dans la$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_AlertMsg_Str5$
+$Zy_Eng$WPA-PSK can not work on WPS 2.0$
+$Zy_Tur$WPA-PSK çalışır olamaz WPS 2.0$
+$Zy_Ger$WPS unterst&#252;tzt WEP-Sicherheit nicht. Sie sollten die Sicherheit &#228;ndern auf $
+$Zy_Fre$WPS ne prend pas en charge la s&#233;curit&#233; WEP. Vous devez changer la s&#233;curit&#233; dans la$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_AlertMsg_Str6$
+$Zy_Eng$Or disable WPS 2.0 in$
+$Zy_Tur$Veya devre d&#305;&#351;&#305; WPA 2.0$
+$Zy_Ger$WPS unterst&#252;tzt WEP-Sicherheit nicht. Sie sollten die Sicherheit &#228;ndern auf $
+$Zy_Fre$WPS ne prend pas en charge la s&#233;curit&#233; WEP. Vous devez changer la s&#233;curit&#233; dans la$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_AlertMsg_Str7$
+$Zy_Eng$Warning! Before enable WPS you should add at least one MAC in allow list or change MAC restrict mode with first SSID in $
+$Zy_Tur$Warning! Before enable WPS you should add at least one MAC in allow list or change MAC restrict mode with first SSID in $
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_AlertMsg_page$
+$Zy_Eng$page$
+$Zy_Tur$sayfa$
+$Zy_Ger$Seite$
+$Zy_Fre$Num&#233;ro PIN non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_AlertMsg_Others$
+$Zy_Eng$Others$
+$Zy_Tur$Di&#287;er$
+$Zy_Ger$Erweitert$
+$Zy_Fre$Num&#233;ro PIN non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str1$
+$Zy_Eng$Wi-Fi Protected Setup (WPS) lets you set up wireless security easily. Select a method for establishing a WPS connection between the router and another WPS-compatible device.$
+$Zy_Tur$ Wi-Fi Korumal&#305; Kurulum (WPS), kablosuz ba&#287;lant&#305; g&#252;venli&#287;inizi kolayca ayarlaman&#305;z&#305; sa&#287;lar. Y&#246;nlendirici ve ba&#351;ka bir WPS uyumlu cihaz aras&#305;nda bir WPS ba&#287;lant&#305;s&#305; kurmak i&#231;in bir y&#246;ntem se&#231;iniz..$
+$Zy_Ger$Mit WPS (Wi-Fi Protected Setup) k&#246;nnen Sie die Netzwerksicherheit einfach einrichten. W&#228;hlen Sie eine Methode zum Aufbau einer WPS-Verbindung zwischen dem Router und einem anderen WPS-kompatiblen Ger&#228;t.$
+$Zy_Fre$Wi-Fi Protected Setup (WPS) vous permet de configurer la s&#233;curit&#233; sans fil facilement. S&#233;lectionnez une m&#233;thode pour &#233;tablir une connexion WPS entre le routeur et un autre appareil compatible WPS.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str10$
+$Zy_Eng$Enter the PIN of your wireless client and click \'Register\'$
+$Zy_Tur$Kablosuz istemcinizin PIN kodunu giriniz ve \'Kaydol\' se&#231;ene&#287;ine t&#305;klay&#305;n&#305;z.$
+$Zy_Ger$Geben Sie die PIN Ihres Wireless-Client ein und klicken Sie auf \'Registrieren\'$
+$Zy_Fre$Entrez le code PIN de votre client sans fil et cliquez sur &#171;&#160;Enregistrer&#160;&#187;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str11$
+$Zy_Eng$Activate WPS on the wireless client within 2 minutes after clicking \'Connect\'$
+$Zy_Tur$\'Ba&#287;lan\' se&#231;ene&#287;ine t&#305;klad&#305;ktan sonra 2 dakika i&#231;inde kablosuz istemcide WPS&#39; yi etkinle&#351;tiriniz.$
+$Zy_Ger$Aktivieren Sie WPS auf dem Wireless-Client innerhalb von 2 Minuten, nachdem Sie auf \'Verbinden\' geklickt haben$
+$Zy_Fre$Activer WPS sur le client sans fil dans les 2 minutes apr&#232;s avoir cliqu&#233; sur &#171;&#160;Connecter&#160;&#187;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str12$
+$Zy_Eng$Enter AP&#39;s PIN Number in Wireless Client$
+$Zy_Tur$AP PIN Numaras&#305;n&#305; Kablosuz &#304;stemcisine giriniz$
+$Zy_Ger$Geben Sie auf dem Wireless-Client die PIN des AP ein$
+$Zy_Fre$Entrez le num&#233;ro PIN de l&#39;AP dans le client sans fil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Currnet$
+$Zy_Eng$Current$
+$Zy_Tur$Ge&#231;erli$
+$Zy_Ger$Aktuell$
+$Zy_Fre$&#201;tat actuel: Configur&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str13$
+$Zy_Eng$Current state: Configured$
+$Zy_Tur$Ge&#231;erli durum: Konfig&#252;re edilmi&#351;$
+$Zy_Ger$Aktueller Status: Konfiguriert$
+$Zy_Fre$&#201;tat actuel: Configur&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str13_1$
+$Zy_Eng$Current state$
+$Zy_Tur$Ge&#231;erli durum$
+$Zy_Ger$Aktueller Status$
+$Zy_Fre$&#201;tat actuel$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str14$
+$Zy_Eng$Unconfigured$
+$Zy_Tur$Konfig&#252;re edilmemi&#351;$
+$Zy_Ger$Nicht konfiguriert$
+$Zy_Fre$&#201;tat actuel: Non configur&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str15$
+$Zy_Eng$Please release configuration if you want to configure the wireless settings$
+$Zy_Tur$Kablosuz ayarlar&#305;n&#305; yap&#305;land&#305;rmak istiyorsan&#305;z l&#252;tfen yap&#305;land&#305;rmay&#305; serbest b&#305;rak&#305;n&#305;z$
+$Zy_Ger$Bitte geben Sie die Konfiguration frei, wenn Sie die WLAN-Einstellungen $
+$Zy_Fre$Veuillez lib&#233;rer la configuration si vous souhaitez configurer les param&#232;tres sans fil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str15_1$
+$Zy_Eng$on your wireless client$
+$Zy_Tur$kablosuz istemcinizde$
+$Zy_Ger$auf Ihrem Wireless-Client konfigurieren wollen$
+$Zy_Fre$Veuillez lib&#233;rer la configuration si vous souhaitez configurer les param&#232;tres sans fil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str16$
+$Zy_Eng$Enter current PIN$
+$Zy_Tur$Ge&#231;erli PIN kodunu giriniz$
+$Zy_Ger$Geben Sie die aktuelle PIN ein$
+$Zy_Fre$Entrez le PIN actuel sur votre client sans fil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str16_1$
+$Zy_Eng$Enter current PIN$
+$Zy_Tur$Ge&#231;erli PIN kodunu giriniz$
+$Zy_Ger$Geben Sie die aktuelle PIN$
+$Zy_Fre$Entrez le PIN actuel$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str16_2$
+$Zy_Eng$on your wireless client$
+$Zy_Tur$kablosuz ba&#287;lant&#305; istemcinizde$
+$Zy_Ger$auf Ihrem Wireless-Client ein$
+$Zy_Fre$sur votre client sans fil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str17$
+$Zy_Eng$1. This function only works on the first SSID. <br> 2. Click the \'Release Configuration\' button to have the WPS status changed to \'Unconfigured\'. Otherwise, WPS status is in \'Configured\' mode.$
+$Zy_Tur$1. Bu i&#351;lev sadece ilk SSID&#39; de &#231;al&#305;&#351;&#305;r. <br> 2. WPS durumunu ''Yap&#305;land&#305;r&#305;lmam&#305;&#351;\' olarak de&#287;i&#351;tirmek i&#231;in \'Konfig&#252;rasyonu b&#305;rak\' d&#252;&#287;mesine t&#305;klay&#305;n. Aksi takdirde, WPS durumu \'Yap&#305;land&#305;r&#305;lm&#305;&#351;\' modunda kal&#305;r.$
+$Zy_Ger$1. Diese Funktion funktioniert nur mit der ersten SSID. <br> 2. Klicken Sie auf \'Konfiguration freigeben\', damit der WPS-Status zu \'Unkonfiguriert\' &#252;bergeht. Andernfalls lautet der WPS-Status \'Konfiguriert\'.$
+$Zy_Fre$1. Cette fonction ne fonctionne que sur le premier SSID. <br> 2. Cliquez sur le bouton &#171;&#160;Lib&#233;rer la configuration&#160;&#187; pour que l&#39;&#233;tat WPS se change en &#171;&#160;Non configur&#233;&#160;&#187;. Sinon, l&#39;&#233;tat WPS est en &#171;&#160;Mode Configur&#233;&#160;&#187;. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str18$
+$Zy_Eng$Adding a new device$
+$Zy_Tur$Yeni bir ayg&#305;t ekleme$
+$Zy_Ger$Neues Ger&#228;t hinzuf&#252;gen$
+$Zy_Fre$Ajout d&#39;un nouvel appareil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str19$
+$Zy_Eng$Establishing WPS connection.$
+$Zy_Tur$WPS ba&#287;lant&#305;s&#305; kuruluyor$
+$Zy_Ger$WPS-Verbindung herstellen$
+$Zy_Fre$&#201;tablissement de la connexion WPS.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str2$
+$Zy_Eng$WPS settings will be applied to SSID: $
+$Zy_Tur$WPS ayarlar&#305; SSID i&#231;in uygulanacakt&#305;r$
+$Zy_Ger$WPS-Einstellungen werden auf die SSID angewendet: $
+$Zy_Fre$Les param&#232;tres WPS seront appliqu&#233;s &#224; SSID: $
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str20$
+$Zy_Eng$Press the WPS button on your new wireless client device now ({{1}} seconds left).$
+$Zy_Tur$&#350;imdi yeni kablosuz istemci cihaz&#305;n&#305;zdaki WPS d&#252;&#287;mesine bas&#305;n&#305;z. ({{1}} saniye kald&#305;).$
+$Zy_Ger$Dr&#252;cken Sie jetzt die WPS-Taste an Ihrem neuen Wireless-Client ({{1}} Sekunden verbleiben).$
+$Zy_Fre$Appuyez sur le bouton WPS sur votre nouvel appareil client sans fil, maintenant il reste ({{1}} secondes).$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str20_1$
+$Zy_Eng$Press the WPS button on your new wireless client device now $
+$Zy_Tur$&#350;imdi yeni kablosuz istemci cihaz&#305;n&#305;zdaki WPS d&#252;&#287;mesine bas&#305;n&#305;z. $
+$Zy_Ger$Dr&#252;cken Sie jetzt die WPS-Taste an Ihrem neuen Wireless-Client $
+$Zy_Fre$Appuyez sur le bouton WPS sur votre nouvel appareil client sans fil, maintenant il reste $
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str20_2$
+$Zy_Eng$seconds left$
+$Zy_Tur$saniye kald&#305;$
+$Zy_Ger$Sekunden verbleiben$
+$Zy_Fre$secondes$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str21$
+$Zy_Eng$WPS connection timeout.$
+$Zy_Tur$WPS ba&#287;lant&#305;s&#305; zaman&#305;nda tamamlanamad&#305;.$
+$Zy_Ger$Zeit&#252;berschreitung bei WPS-Verbindung$
+$Zy_Fre$D&#233;lai de connexion WPS.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str22$
+$Zy_Eng$WPS success$
+$Zy_Tur$WPS ba&#351;ar&#305;l&#305;$
+$Zy_Ger$WPS-Verbindung erfolgreich$
+$Zy_Fre$WPS r&#233;ussi$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str23$
+$Zy_Eng$Unknown error happened.Please retry again$
+$Zy_Tur$Bilinmeyen hata olu&#351;tu. L&#252;tfen tekrar deneyiniz.$
+$Zy_Ger$Unbekannter Fehler. Bitte nochmal probieren$
+$Zy_Fre$Une erreur inconnue s&#39;est produite. Veuillez r&#233;essayer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str24$
+$Zy_Eng$Pin error. Please input the correct pin of client.$
+$Zy_Tur$ Pin hatas&#305;. L&#252;tfen do&#287;ru istemci pinini giriniz.$
+$Zy_Ger$PIN-Fehler. Bitte geben Sie die richtige PIN des Client ein.$
+$Zy_Fre$Erreur de code PIN. Entrez le code PIN correct du client.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str25$
+$Zy_Eng$Please release lock if you want to configure the wireless settings$
+$Zy_Tur$Please release lock if you want to configure the wireless settings$
+$Zy_Ger$Bitte entfernen Sie den Schutz, wenn Sie das WLAN konfigurieren wollen$
+$Zy_Fre$Si vous voulez configurer les param&#232;tres de wireless, lib&#233;rez le verrou$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str26$
+$Zy_Eng$WPS PIN Feature$
+$Zy_Tur$WPS PIN Özelliği$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str3$
+$Zy_Eng$WPS Setup$
+$Zy_Tur$WPS Kurulumu$
+$Zy_Ger$WPS einrichten$
+$Zy_Fre$Installation de WPS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str4$
+$Zy_Eng$WPS$
+$Zy_Tur$WPS$
+$Zy_Ger$WPS$
+$Zy_Fre$WPS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str5$
+$Zy_Eng$Method$
+$Zy_Tur$Y&#246;ntem$
+$Zy_Ger$Methode$
+$Zy_Fre$M&#233;thode$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str6$
+$Zy_Eng$Push Button Configuration$
+$Zy_Tur$Butona Basarak Konfig&#252;rasyon$
+$Zy_Ger$Konfiguration durch Tastendruck$
+$Zy_Fre$Appuyez sur le bouton Configuration$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str7$
+$Zy_Eng$Click \'Connect\'$
+$Zy_Tur$Ba&#287;lan&#39; t&#305;klay&#305;n&#305;z.$
+$Zy_Ger$Klicken Sie auf \'Verbinden\'$
+$Zy_Fre$Cliquez sur &#171;&#160;Connecter&#160;&#187;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str8$
+$Zy_Eng$Activate WPS on the wireless client within 2 minutes after clicking &quot;Connect&quot;.$
+$Zy_Tur$\'Ba&#287;lan\' se&#231;ene&#287;ine t&#305;klad&#305;ktan sonra 2 dakika i&#231;inde kablosuz istemcide WPS&#39; i etkinle&#351;tiriniz.$
+$Zy_Ger$Aktivieren Sie WPS auf dem Wireless-Client innerhalb von 2 Minuten, nachdem Sie auf &quot;Verbinden&quot; geklickt haben$
+$Zy_Fre$Activer WPS sur le client sans fil dans les 2 minutes apr&#232;s avoir cliqu&#233; sur &#171;&#160;Connecter&#160;&#187;.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPS_Str9$
+$Zy_Eng$Register Wireless Client PIN Number$
+$Zy_Tur$Kablosuz &#304;stemci PIN Numaras&#305;n&#305; Kaydedin$
+$Zy_Ger$Registrieren Sie die PIN des Wireless-Client$
+$Zy_Fre$Enregistrer le num&#233;ro PIN du client sans fil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Refresh_Str1$
+$Zy_Eng$Restarting Wireless... Click menu in the left panel for manual refresh$
+$Zy_Tur$Kablosuz yeniden ba&#351;lat&#305;l&#305;yor... Manuel yenileme i&#231;in sol paneldeki men&#252;ye t&#305;klay&#305;n&#305;z$
+$Zy_Ger$WLAN wird neu gestartet ... Klicken Sie auf das Men&#252; auf der linken Seite, um eine manuelle Aktualisierung zu starten$
+$Zy_Fre$Red&#233;marrage de la connexion sans fil ... Cliquez sur le menu dans le panneau de gauche pour le rafra&#238;chissement manuel $
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPA$
+$Zy_Eng$WPA$
+$Zy_Tur$WPA$
+$Zy_Ger$WPA$
+$Zy_Fre$WPA$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPA2$
+$Zy_Eng$WPA2$
+$Zy_Tur$WPA2$
+$Zy_Ger$WPA2$
+$Zy_Fre$WPA2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPAPSK$
+$Zy_Eng$WPA-PSK$
+$Zy_Tur$WPA-PSK$
+$Zy_Ger$WPA-PSK$
+$Zy_Fre$WPA-PSK$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WPA2PSK$
+$Zy_Eng$WPA2-PSK$
+$Zy_Tur$WPA2-PSK$
+$Zy_Ger$WPA2-PSK$
+$Zy_Fre$WPA2-PSK$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_TKIPAES$
+$Zy_Eng$TKIP+AES$
+$Zy_Tur$TKIP+AES$
+$Zy_Ger$TKIP+AES$
+$Zy_Fre$TKIP+AES$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_AES$
+$Zy_Eng$AES$
+$Zy_Tur$AES$
+$Zy_Ger$AES$
+$Zy_Fre$AES$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_ChannelStatus_Str1$
+$Zy_Eng$The chart shows channel status$
+$Zy_Tur$Grafik, kanal durumunu g&#246;sterir$
+$Zy_Ger$Im Diagramm wird der Status der Kan&#228;le angezeigt$
+$Zy_Fre$Canal$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_ChannelStatus_Str2$
+$Zy_Eng$Channel Monitor$
+$Zy_Tur$Kanal &#304;zleyicisi$
+$Zy_Ger$Kanalmonitor$
+$Zy_Fre$Canal$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_ChannelStatus_Str3$
+$Zy_Eng$Scan Wireless LAN Channels$
+$Zy_Tur$Kablosuz LAN Kanallar&#305;n&#305; Tara$
+$Zy_Ger$Nach WLAN-Kan&#228;len suchen$
+$Zy_Fre$Canal$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_ChannelStatus_Str4$
+$Zy_Eng$It takes about 15 seconds to scan the wireless channels$
+$Zy_Tur$Kablosuz kanallar&#305; taramak yakla&#351;&#305;k 15 saniye s&#252;rer$
+$Zy_Ger$Das Scannen der WLAN-Kan&#228;le dauert ca. 15 Sekunden$
+$Zy_Fre$Canal$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_ChannelStatus_Str5$
+$Zy_Eng$Channel Scan Result$
+$Zy_Tur$Kanal Tarama Sonucu$
+$Zy_Ger$Ergebnisse des Kanal-Scans$
+$Zy_Fre$Canal$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_ChannelStatus_Str6$
+$Zy_Eng$Channel Noise$
+$Zy_Tur$Kanal G&#252;r&#252;lt&#252;s&#252;$
+$Zy_Ger$St&#246;rsignale$
+$Zy_Fre$Canal$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_ChannelStatus_Str7$
+$Zy_Eng$Current WLAN Channel$
+$Zy_Tur$Ge&#231;erli WLAN Kanal&#305;$
+$Zy_Ger$Aktueller WLAN-Kanal$
+$Zy_Fre$Canal$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_ChannelStatus_Str8$
+$Zy_Eng$Channel NO.$
+$Zy_Tur$Kanal Numaras&#305;.$
+$Zy_Ger$Kanal-Nr.$
+$Zy_Fre$Canal$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_ChannelStatus_Str9$
+$Zy_Eng$&nbsp;&nbsp;The value of Channel Noise is not an \'absolute value\' but a \'relative value\', so there is always a channel getting Channel Noise with 100.$
+$Zy_Tur$&nbsp;&nbsp; Kanal G&#252;r&#252;lt&#252; de&#287;eri \'mutlak bir de&#287;er\' de&#287;il \'g&#246;receli bir de&#287;erdir\', bu y&#252;zden Kanal G&#252;r&#252;lt&#252;s&#252; 100 olan bir kanal her zaman vard&#305;r.$
+$Zy_Ger$&nbsp;&nbsp;Der Wert von Kanalst&#246;rung ist nicht \'absolut\', sondern \'relativ\', d.h. es gibt immer einen Kanal, der als Kanalst&#246;rung den Wert 100 erreicht.$
+$Zy_Fre$Canal$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_ChannelStatus_Str10$
+$Zy_Eng$Retrieve data failed, please press \'Scan\' to try again.$
+$Zy_Tur$Al veri ba&#351;ar&#305;s&#305;z, yeniden denemek i&#231;in \'Tarama\' tu&#351;una bas&#305;n l&#252;tfen.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_ChannelStatus_Str11$
+$Zy_Eng$This channel scan function only works in 2.4G Band with 20HMZ Bandwidth.$
+$Zy_Tur$Kanal tarama fonksiyonu sadece 20Mhz bant geni&#351;li&#287;iyle 2.4G band&#305;nda &#231;al&#305;&#351;&#305;r.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str23$
+$Zy_Eng$WPA Pre-Shared Key should be between 8 and 63 characters(a-z, A-Z, 0-9, \'-\', \'_\' and \'.\') or 64 hexadecimal digits.$
+$Zy_Tur$WPA Payla&#351;&#305;lan Anahtar&#305; 8 ve 63 karakter (a-z, A-Z, 0-9, \'-\', \'_\' ve \'.\')  veya 64 heksadesimal aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$WPA Pre-shared Key sollte zwischen 8 und 63 ASCII-Zeichen (a-z, A-Z, 0-9, \'-\', \'_\' und \'.\') oder 64 Hexadezimal-Zeichen haben.$
+$Zy_Fre$Le mode N seul ne prend pas en charge la s&#233;curit&#233; WEP. Vous devez changer les param&#232;tres de s&#233;curit&#233;.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str24$
+$Zy_Eng$Max clients should be between 1 and 32.$
+$Zy_Tur$Max istemcileri 1 ile 32 aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str25$
+$Zy_Eng$You can disable wps 2.0 in$
+$Zy_Tur$Sen wps 2.0 devre d&#305;&#351;&#305; b&#305;rakabilirsiniz$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str26$
+$Zy_Eng$It is not allowed to configure SSID name like as \'FON ... etc\'.$
+$Zy_Tur$&#304;&#231;inde &#8216;FON&#8217; ve benzeri ifadelerin ge&#231;ti&#287;i a&#287; ad&#305; tan&#305;m&#305;na izin verilmemektedir.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str27$
+$Zy_Eng$ No special characters in WLAN SSID !!$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_AlertMsg_Str18_1$
+$Zy_Eng$Found a non-ISO-8859-1 character at position: {{1}} in password 1, Please eliminate before continuing.$
+$Zy_Tur$&#351;ifre 1&#39;de {1} ISO-8859-1 olmayan bir karakter yer almaktad&#305;r, devam etmeden &#246;nce kald&#305;r&#305;n&#305;z.$
+$Zy_Ger$Nicht-ISO-8859-1 Zeichen an Position: {{1}} in Kennwort {{1}} gefunden. Bitte entfernen, bevor Sie fortfahren.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WDS_AlertMsg_Str11$
+$Zy_Eng$Wireless is disabled. Please set enabled in$
+$Zy_Tur$Kablosuz devre d&#305;&#351;&#305;. L&#252;tfen etkinle&#351;tiriniz.$
+$Zy_Ger$WLAN ist deaktiviert. Bitte aktivieren unter$
+$Zy_Fre$Restriction de pont $
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_WDS_Str12_1$
+$Zy_Eng$Scanning...$
+$Zy_Tur$Tarama...$
+$Zy_Ger$Scannen...$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_General_Str1$
+$Zy_Eng$Max clients$
+$Zy_Tur$Max istemcileri$
+$Zy_Ger$Clients max.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_General_MaxUpstreamBandwidth$
+$Zy_Eng$Max. Upstream Bandwidth$
+$Zy_Tur$Maksimum Upstream Bantgeni&#351;li&#287;i$
+$Zy_Ger$Maximale Bandbreite$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_General_MaxDownstreamBandwidth$
+$Zy_Eng$Max. Downstream Bandwidth$
+$Zy_Tur$Maksimum Downstream Bantgeni&#351;li&#287;i$
+$Zy_Ger$Maximale Bandbreite$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_General_Str2$
+$Zy_Eng$Maximum Bandwidth$
+$Zy_Tur$Maximum Bandwidth$
+$Zy_Ger$Maximale Bandbreite$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_General_Max_Down_BW$
+$Zy_Eng$Max. Downstream Bandwidth$
+$Zy_Tur$Maksimum Downstream Bantgeni&#351;li&#287;i$
+$Zy_Ger$Maximale Bandbreite$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_General_Max_Up_BW$
+$Zy_Eng$Max. Upstream Bandwidth$
+$Zy_Tur$Maksimum Upstream Bantgeni&#351;li&#287;i$
+$Zy_Ger$Maximale Bandbreite$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Other_power_save$
+$Zy_Eng$RX Chain Power Save$
+$Zy_Tur$RX Chain Power Save$
+$Zy_Ger$RX Chain Power Save$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Other_FrameBurst$
+$Zy_Eng$XPress&#8482; Technology$
+$Zy_Tur$XPress&#8482; Technology$
+$Zy_Ger$XPress&#8482; Technology$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_Other_WPSV2$
+$Zy_Eng$WPS 2.0$
+$Zy_Tur$WPS 2.0$
+$Zy_Ger$WPS 2.0$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Eircom_Str1$
+$Zy_Eng$1. The different WEP key lengths configure different strength security, 40/64-bit, or 128-bit respectively. Your wireless client must match the security strength set on the router.$
+$Zy_Tur$1. The different WEP key lengths configure different strength security, 40/64-bit, or 128-bit respectively. Your wireless client must match the security strength set on the router.$
+$Zy_Ger$1. The different WEP key lengths configure different strength security, 40/64-bit, or 128-bit respectively. Your wireless client must match the security strength set on the router.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Eircom_Str2$
+$Zy_Eng$2. Please type exactly 5, or 13 characters (5 will create a 64-bit key and 13 will create a 128-bit key)$
+$Zy_Tur$2. Please type exactly 5, or 13 characters (5 will create a 64-bit key and 13 will create a 128-bit key)$
+$Zy_Ger$2. Please type exactly 5, or 13 characters (5 will create a 64-bit key and 13 will create a 128-bit key)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Eircom_Str3$
+$Zy_Eng$3. Alternatively type exactly 10 or 26 Hexadecimal (numbers 0-9 or letters a-f) characters (10 will create a 64-bit key and 26 will create a 128-bit key).$
+$Zy_Tur$3. Alternatively type exactly 10 or 26 Hexadecimal (numbers 0-9 or letters a-f) characters (10 will create a 64-bit key and 26 will create a 128-bit key).$
+$Zy_Ger$3. Alternatively type exactly 10 or 26 Hexadecimal (numbers 0-9 or letters a-f) characters (10 will create a 64-bit key and 26 will create a 128-bit key).$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_Note$
+$Zy_Eng$Notes$
+$Zy_Tur$Notlar$
+$Zy_Ger$Notes$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_80Mbps$
+$Zy_Eng$80MHz$
+$Zy_Tur$80MHz$
+$Zy_Ger$80MHz$
+$Zy_Fre$80MHz$
+$Zy_Ita$80MHz$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_5g_str1$
+$Zy_Eng$802.11h$
+$Zy_Tur$802.11h$
+$Zy_Ger$802.11h$
+$Zy_Fre$802.11h$
+$Zy_Ita$802.11h$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_5g_str2$
+$Zy_Eng$802.11d$
+$Zy_Tur$802.11d$
+$Zy_Ger$802.11d$
+$Zy_Fre$802.11d$
+$Zy_Ita$802.11d$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_5g_str3$
+$Zy_Eng$Regulatory Mode$
+$Zy_Tur$Regulatory Mode$
+$Zy_Ger$Regulatory Mode$
+$Zy_Fre$Regulatory Mode$
+$Zy_Ita$Regulatory Mode$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_5g_str4$
+$Zy_Eng$Pre-Network Radar Check$
+$Zy_Tur$Pre-Network Radar Check$
+$Zy_Ger$Pre-Network Radar Check$
+$Zy_Fre$Pre-Network Radar Check$
+$Zy_Ita$Pre-Network Radar Check$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_5g_str5$
+$Zy_Eng$In-Network Radar Check$
+$Zy_Tur$In-Network Radar Check$
+$Zy_Ger$In-Network Radar Check$
+$Zy_Fre$In-Network Radar Check$
+$Zy_Ita$In-Network Radar Check$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_5g_str6$
+$Zy_Eng$TPC Mitigation(db)$
+$Zy_Tur$TPC Mitigation(db)$
+$Zy_Ger$TPC Mitigation(db)$
+$Zy_Fre$TPC Mitigation(db)$
+$Zy_Ita$TPC Mitigation(db)$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_5g_str7$
+$Zy_Eng$OBSS Coexistence$
+$Zy_Tur$OBSS Coexistence$
+$Zy_Ger$OBSS Coexistence$
+$Zy_Fre$OBSS Coexistence$
+$Zy_Ita$OBSS Coexistence$
+
+$NAME$MLG_WLAN_BasicWirelessSetup_rifs$
+$Zy_Eng$RIFS Advertisement$
+$Zy_Tur$RIFS Advertisement$
+$Zy_Ger$RIFS Advertisement$
+$Zy_Fre$RIFS Advertisement$
+$Zy_Ita$RIFS Advertisement$
+
+$NAME$MLG_WLAN_PASSWORD_Str1$
+$Zy_Eng$You had changed the wireless password. Please remember your new password.$
+$Zy_Tur$Modeminizin alt&#305;nda yazan varsay&#305;lan kablosuz &#351;ifrenizi de&#287;i&#351;tirdiniz. Kablosuz ba&#287;lant&#305; yaparken bu yeni &#351;ifrenizi kullanabilirsiniz.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_moreapnote1$
+$Zy_Eng$1.Max. Upstream Bandwidth:This field allow user configure the maximum bandwidth of this SSID to WAN.$
+$Zy_Tur$1. Maksimum Upstream Bantgeni&#351;li&#287;i: Bu alan kullan&#305;c&#305;ya, WAN taraf&#305;ndaki bir SSID'nin maksimum bantgeni&#351;li&#287;ini yap&#305;land&#305;rabilmesi i&#231;in izin verir.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_moreapnote2$
+$Zy_Eng$2.Max. Downstream Bandwidth:This field allow user configure the maximum bandwidth of WAN to this SSID.$
+$Zy_Tur$2. Maksimum Downstream Bantgeni&#351;li&#287;i: Bu alan kullan&#305;c&#305;ya, bu SSID &uuml;zerinden maksimum WAN bantgeni&#351;li&#287;i yap&#305;land&#305;rabilmesi i&#231;in izin verir.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_moreapnote3$
+$Zy_Eng$3.If Max. Upstream/Downstream Bandwidth is empty, the CPE sets the value automatically.$
+$Zy_Tur$3. E&#287;er Maksimum Upstream/Downstream Bantgeni&#351;li&#287;i alan&#305; bo&#351; ise, CPE bu de&#287;eri otomatik olarak atayacakt&#305;r.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_parent_control_err2$
+$Zy_Eng$Hide SSID does not support on WPS 2.0. You should disable wps in {{1}} page.$
+$Zy_Tur$SSID Gizle özelliği WPS 2.0'da desteklenmemektedir. Önce {{1}} sayfasından wps'i devre .$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WLAN_bandwidth_err1$
+$Zy_Eng$Invalid maximum bandwidth.$
+$Zy_Tur$Geçersiz maksimum bantgenişliği.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+

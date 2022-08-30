@@ -1,0 +1,477 @@
+.SS connlimit
+Allows you to restrict the number of parallel connections to a server per
+client IP address (or client address block).
+.TP
+[\fB!\fR] \fB--connlimit-above \fIn\fR
+Match if the number of existing connections is (not) above \fIn\fR.
+.TP
+\fB--connlimit-mask\fR \fIprefix_length\fR
+Group hosts using the prefix length. For IPv4, this must be a number between
+(including) 0 and 32. For IPv6, between 0 and 128.
+.P
+Examples:
+.TP
+# allow 2 telnet connections per client host
+iptables -A INPUT -p tcp --syn --dport 23 -m connlimit --connlimit-above 2 -j REJECT
+.TP
+# you can also match the other way around:
+iptables -A INPUT -p tcp --syn --dport 23 -m connlimit ! --connlimit-above 2 -j ACCEPT
+.TP
+# limit the number of parallel HTTP requests to 16 per class C sized \
+network (24 bit netmask)
+iptables -p tcp --syn --dport 80 -m connlimit --connlimit-above 16
+--connlimit-mask 24 -j REJECT
+.TP
+# limit the number of parallel HTTP requests to 16 for the link local network \
+(ipv6)
+ip6tables -p tcp --syn --dport 80 -s fe80::/64 -m connlimit --connlimit-above
+16 --connlimit-mask 64 -j REJECT
+.SS dscp
+This module matches the 6 bit DSCP field within the TOS field in the
+IP header.  DSCP has superseded TOS within the IETF.
+.TP
+.BI "--dscp " "value"
+Match against a numeric (decimal or hex) value [0-63].
+.TP
+.BI "--dscp-class " "\fIDiffServ Class\fP"
+Match the DiffServ class. This value may be any of the
+BE, EF, AFxx or CSx classes.  It will then be converted
+into it's according numeric value.
+.SS helper
+This module matches packets related to a specific conntrack-helper.
+.TP
+.BI "--helper " "string"
+Matches packets related to the specified conntrack-helper.
+.RS
+.PP
+string can be "ftp" for packets related to a ftp-session on default port.
+For other ports append -portnr to the value, ie. "ftp-2121".
+.PP
+Same rules apply for other conntrack-helpers.
+.RE
+.SS icmp
+This extension can be used if `--protocol icmp' is specified.  It
+provides the following option:
+.TP
+.BR "--icmp-type " "[!] \fItypename\fP"
+This allows specification of the ICMP type, which can be a numeric
+ICMP type, or one of the ICMP type names shown by the command
+.nf
+ iptables -p icmp -h
+.fi
+.SS iprange
+This matches on a given arbitrary range of IPv4 addresses
+.TP
+.BI "[!]" "--src-range " "ip-ip"
+Match source IP in the specified range.
+.TP
+.BI "[!]" "--dst-range " "ip-ip"
+Match destination IP in the specified range.
+.SS length
+This module matches the length of a packet against a specific value
+or range of values.
+.TP
+.BR "--length " "[!] \fIlength\fP[:\fIlength\fP]"
+.SS limit
+This module matches at a limited rate using a token bucket filter.
+A rule using this extension will match until this limit is reached
+(unless the `!' flag is used).  It can be used in combination with the
+.B LOG
+target to give limited logging, for example.
+.TP
+.BI "--limit " "rate"
+Maximum average matching rate: specified as a number, with an optional
+`/second', `/minute', `/hour', or `/day' suffix; the default is
+3/hour.
+.TP
+.BI "--limit-burst " "number"
+Maximum initial number of packets to match: this number gets
+recharged by one every time the limit specified above is not reached,
+up to this number; the default is 5.
+.SS mac
+.TP
+.BR "--mac-source " "[!] \fIaddress\fP"
+Match source MAC address.  It must be of the form XX:XX:XX:XX:XX:XX.
+Note that this only makes sense for packets coming from an Ethernet device
+and entering the
+.BR PREROUTING ,
+.B FORWARD
+or
+.B INPUT
+chains.
+.SS mark
+This module matches the netfilter mark field associated with a packet
+(which can be set using the
+.B MARK
+target below).
+.TP
+.BR "--mark " "\fIvalue\fP[/\fImask\fP]"
+Matches packets with the given unsigned mark value (if a \fImask\fP is
+specified, this is logically ANDed with the \fImask\fP before the
+comparison).
+.SS multiport
+This module matches a set of source or destination ports.  Up to 15
+ports can be specified.  A port range (port:port) counts as two
+ports.  It can only be used in conjunction with
+.B "-p tcp"
+or
+.BR "-p udp" .
+.TP
+.BR "--source-ports " "\fI[!] port\fP[,\fIport\fP[,\fIport:port\fP...]]"
+Match if the source port is one of the given ports.  The flag
+.B --sports
+is a convenient alias for this option.
+.TP
+.BR "--destination-ports " "\fI[!] port\fP[,\fIport\fP[,\fIport:port\fP...]]"
+Match if the destination port is one of the given ports.  The flag
+.B --dports
+is a convenient alias for this option.
+.TP
+.BR "--ports " "\fI[!] port\fP[,\fIport\fP[,\fIport:port\fP...]]"
+Match if either the source or destination ports are equal to one of
+the given ports.
+.SS pkttype
+This module matches the link-layer packet type.
+.TP
+.BI "--pkt-type " "[\fIunicast\fP|\fIbroadcast\fP|\fImulticast\fP]"
+.SS recent
+Allows you to dynamically create a list of IP addresses and then match
+against that list in a few different ways.
+
+For example, you can create a `badguy' list out of people attempting
+to connect to port 139 on your firewall and then DROP all future
+packets from them without considering them.
+.TP
+.BI "--name " "name"
+Specify the list to use for the commands. If no name is given then 'DEFAULT'
+will be used.
+.TP
+[\fB!\fR] \fB--set\fR
+This will add the source address of the packet to the list. If the
+source address is already in the list, this will update the existing
+entry. This will always return success (or failure if `!' is passed
+in).
+.TP
+[\fB!\fR] \fB--rcheck\fR
+Check if the source address of the packet is currently in
+the list.
+.TP
+[\fB!\fR] \fB--update\fR
+Like \fB--rcheck\fR, except it will update the "last seen" timestamp if it
+matches.
+.TP
+[\fB!\fR] \fB--remove\fR
+Check if the source address of the packet is currently in the list and
+if so that address will be removed from the list and the rule will
+return true. If the address is not found, false is returned.
+.TP
+[\fB!\fR] \fB--seconds \fIseconds\fR
+This option must be used in conjunction with one of \fB--rcheck\fR or
+\fB--update\fR. When used, this will narrow the match to only happen
+when the address is in the list and was seen within the last given
+number of seconds.
+.TP
+[\fB!\fR] \fB--hitcount \fIhits\fR
+This option must be used in conjunction with one of \fB--rcheck\fR or
+\fB--update\fR. When used, this will narrow the match to only happen
+when the address is in the list and packets had been received greater
+than or equal to the given value. This option may be used along with
+\fB--seconds\fR to create an even narrower match requiring a certain
+number of hits within a specific time frame.
+.TP
+\fB--rttl\fR
+This option must be used in conjunction with one of \fB--rcheck\fR or
+\fB--update\fR. When used, this will narrow the match to only happen
+when the address is in the list and the TTL of the current packet
+matches that of the packet which hit the \fB--set\fR rule. This may be
+useful if you have problems with people faking their source address in
+order to DoS you via this module by disallowing others access to your
+site by sending bogus packets to you.
+.P
+Examples:
+.IP
+# iptables -A FORWARD -m recent --name badguy --rcheck --seconds 60 -j DROP
+
+# iptables -A FORWARD -p tcp -i eth0 --dport 139 -m recent --name badguy --set -j DROP
+.P
+Official website (http://snowman.net/projects/ipt_recent/) also has
+some examples of usage.
+
+/proc/net/ipt_recent/* are the current lists of addresses and information 
+about each entry of each list.
+
+Each file in /proc/net/ipt_recent/ can be read from to see the current list
+or written two using the following commands to modify the list:
+.TP
+echo xx.xx.xx.xx > /proc/net/ipt_recent/DEFAULT
+to Add to the DEFAULT list
+.TP
+echo -xx.xx.xx.xx > /proc/net/ipt_recent/DEFAULT
+to Remove from the DEFAULT list
+.TP
+echo clear > /proc/net/ipt_recent/DEFAULT
+to empty the DEFAULT list.
+.P
+The module itself accepts parameters, defaults shown:
+.TP
+.BI "ip_list_tot=" "100"
+Number of addresses remembered per table
+.TP
+.BI "ip_pkt_list_tot=" "20"
+Number of packets per address remembered
+.TP
+.BI "ip_list_hash_size=" "0"
+Hash table size. 0 means to calculate it based on ip_list_tot, default: 512
+.TP
+.BI "ip_list_perms=" "0644"
+Permissions for /proc/net/ipt_recent/* files
+.TP
+.BI "debug=" "0"
+Set to 1 to get lots of debugging info
+.SS recent
+Allows you to dynamically create a list of IP addresses and then match
+against that list in a few different ways.
+
+For example, you can create a `badguy' list out of people attempting
+to connect to port 139 on your firewall and then DROP all future
+packets from them without considering them.
+.TP
+.BI "--name " "name"
+Specify the list to use for the commands. If no name is given then 'DEFAULT'
+will be used.
+.TP
+[\fB!\fR] \fB--set\fR
+This will add the source address of the packet to the list. If the
+source address is already in the list, this will update the existing
+entry. This will always return success (or failure if `!' is passed
+in).
+.TP
+[\fB!\fR] \fB--rcheck\fR
+Check if the source address of the packet is currently in
+the list.
+.TP
+[\fB!\fR] \fB--update\fR
+Like \fB--rcheck\fR, except it will update the "last seen" timestamp if it
+matches.
+.TP
+[\fB!\fR] \fB--remove\fR
+Check if the source address of the packet is currently in the list and
+if so that address will be removed from the list and the rule will
+return true. If the address is not found, false is returned.
+.TP
+[\fB!\fR] \fB--seconds \fIseconds\fR
+This option must be used in conjunction with one of \fB--rcheck\fR or
+\fB--update\fR. When used, this will narrow the match to only happen
+when the address is in the list and was seen within the last given
+number of seconds.
+.TP
+[\fB!\fR] \fB--hitcount \fIhits\fR
+This option must be used in conjunction with one of \fB--rcheck\fR or
+\fB--update\fR. When used, this will narrow the match to only happen
+when the address is in the list and packets had been received greater
+than or equal to the given value. This option may be used along with
+\fB--seconds\fR to create an even narrower match requiring a certain
+number of hits within a specific time frame.
+.TP
+\fB--rttl\fR
+This option must be used in conjunction with one of \fB--rcheck\fR or
+\fB--update\fR. When used, this will narrow the match to only happen
+when the address is in the list and the TTL of the current packet
+matches that of the packet which hit the \fB--set\fR rule. This may be
+useful if you have problems with people faking their source address in
+order to DoS you via this module by disallowing others access to your
+site by sending bogus packets to you.
+.P
+Examples:
+.IP
+# iptables -A FORWARD -m recent --name badguy --rcheck --seconds 60 -j DROP
+
+# iptables -A FORWARD -p tcp -i eth0 --dport 139 -m recent --name badguy --set -j DROP
+.P
+Official website (http://snowman.net/projects/ipt_recent/) also has
+some examples of usage.
+
+/proc/net/ipt_recent/* are the current lists of addresses and information 
+about each entry of each list.
+
+Each file in /proc/net/ipt_recent/ can be read from to see the current list
+or written two using the following commands to modify the list:
+.TP
+echo xx.xx.xx.xx > /proc/net/ipt_recent/DEFAULT
+to Add to the DEFAULT list
+.TP
+echo -xx.xx.xx.xx > /proc/net/ipt_recent/DEFAULT
+to Remove from the DEFAULT list
+.TP
+echo clear > /proc/net/ipt_recent/DEFAULT
+to empty the DEFAULT list.
+.P
+The module itself accepts parameters, defaults shown:
+.TP
+.BI "ip_list_tot=" "100"
+Number of addresses remembered per table
+.TP
+.BI "ip_pkt_list_tot=" "20"
+Number of packets per address remembered
+.TP
+.BI "ip_list_hash_size=" "0"
+Hash table size. 0 means to calculate it based on ip_list_tot, default: 512
+.TP
+.BI "ip_list_perms=" "0644"
+Permissions for /proc/net/ipt_recent/* files
+.TP
+.BI "debug=" "0"
+Set to 1 to get lots of debugging info
+.SS state
+This module, when combined with connection tracking, allows access to
+the connection tracking state for this packet.
+.TP
+.BI "--state " "state"
+Where state is a comma separated list of the connection states to
+match.  Possible states are
+.B INVALID
+meaning that the packet could not be identified for some reason which
+includes running out of memory and ICMP errors which don't correspond to any
+known connection,
+.B ESTABLISHED
+meaning that the packet is associated with a connection which has seen
+packets in both directions,
+.B NEW
+meaning that the packet has started a new connection, or otherwise
+associated with a connection which has not seen packets in both
+directions, and
+.B RELATED
+meaning that the packet is starting a new connection, but is
+associated with an existing connection, such as an FTP data transfer,
+or an ICMP error.
+.SS tcp
+These extensions can be used if `--protocol tcp' is specified. It
+provides the following options:
+.TP
+.BR "--source-port " "[!] \fIport\fP[:\fIport\fP]"
+Source port or port range specification. This can either be a service
+name or a port number. An inclusive range can also be specified,
+using the format
+.IR port : port .
+If the first port is omitted, "0" is assumed; if the last is omitted,
+"65535" is assumed.
+If the second port greater then the first they will be swapped.
+The flag
+.B --sport
+is a convenient alias for this option.
+.TP
+.BR "--destination-port " "[!] \fIport\fP[:\fIport\fP]"
+Destination port or port range specification.  The flag
+.B --dport
+is a convenient alias for this option.
+.TP
+.BR "--tcp-flags " "[!] \fImask\fP \fIcomp\fP"
+Match when the TCP flags are as specified.  The first argument is the
+flags which we should examine, written as a comma-separated list, and
+the second argument is a comma-separated list of flags which must be
+set.  Flags are:
+.BR "SYN ACK FIN RST URG PSH ALL NONE" .
+Hence the command
+.nf
+ iptables -A FORWARD -p tcp --tcp-flags SYN,ACK,FIN,RST SYN
+.fi
+will only match packets with the SYN flag set, and the ACK, FIN and
+RST flags unset.
+.TP
+.B "[!] --syn"
+Only match TCP packets with the SYN bit set and the ACK,RST and FIN bits
+cleared.  Such packets are used to request TCP connection initiation;
+for example, blocking such packets coming in an interface will prevent
+incoming TCP connections, but outgoing TCP connections will be
+unaffected.
+It is equivalent to \fB--tcp-flags SYN,RST,ACK,FIN SYN\fP.
+If the "!" flag precedes the "--syn", the sense of the
+option is inverted.
+.TP
+.BR "--tcp-option " "[!] \fInumber\fP"
+Match if TCP option set.
+.SS time
+This matches if the packet arrival time/date is within a given range. All
+options are optional, but are ANDed when specified.
+.TP
+\fB--datestart\fR \fIYYYY\fR[\fB-\fR\fIMM\fR[\fB-\fR\fIDD\fR[\fBT\fR\fIhh\fR[\fB:\fR\fImm\fR[\fB:\fR\fIss\fR]]]]]
+.TP
+\fB--datestop\fR \fIYYYY\fR[\fB-\fR\fIMM\fR[\fB-\fR\fIDD\fR[\fBT\fR\fIhh\fR[\fB:\fR\fImm\fR[\fB:\fR\fIss\fR]]]]]
+.IP
+Only match during the given time, which must be in ISO 8601 "T" notation.
+The possible time range is 1970-01-01T00:00:00 to 2038-01-19T04:17:07.
+.IP
+If --datestart or --datestop are not specified, it will default to 1970-01-01
+and 2038-01-19, respectively.
+.TP
+\fB--timestart\fR \fIhh\fR\fB:\fR\fImm\fR[\fB:\fR\fIss\fR]
+.TP
+\fB--timestop\fR \fIhh\fR\fB:\fR\fImm\fR[\fB:\fR\fIss\fR]
+.IP
+Only match during the given daytime. The possible time range is 00:00:00 to
+23:59:59. Leading zeroes are allowed (e.g. "06:03") and correctly interpreted
+as base-10.
+.TP
+[\fB!\fR] \fB--monthday\fR \fIday\fR[\fB,\fR\fIday\fR...]
+.IP
+Only match on the given days of the month. Possible values are \fB1\fR
+to \fB31\fR. Note that specifying \fB31\fR will of course not match
+on months which do not have a 31st day; the same goes for 28- or 29-day
+February.
+.TP
+[\fB!\fR] \fB--weekdays\fR \fIday\fR[\fB,\fR\fIday\fR...]
+.IP
+Only match on the given weekdays. Possible values are \fBMon\fR, \fBTue\fR,
+\fBWed\fR, \fBThu\fR, \fBFri\fR, \fBSat\fR, \fBSun\fR, or values from \fB1\fR
+to \fB7\fR, respectively. You may also use two-character variants (\fBMo\fR,
+\fBTu\fR, etc.).
+.TP
+\fB--utc\fR
+.IP
+Interpret the times given for \fB--datestart\fR, \fB--datestop\fR,
+\fB--timestart\fR and \fB--timestop\fR to be UTC.
+.TP
+\fB--localtz\fR
+.IP
+Interpret the times given for \fB--datestart\fR, \fB--datestop\fR,
+\fB--timestart\fR and \fB--timestop\fR to be local kernel time. (Default)
+.PP
+EXAMPLES. To match on weekends, use:
+.IP
+-m time --weekdays Sa,Su
+.PP
+Or, to match (once) on a national holiday block:
+.IP
+-m time --datestart 2007-12-24 --datestop 2007-12-27
+.PP
+Since the stop time is actually inclusive, you would need the following stop
+time to not match the first second of the new day:
+.IP
+-m time --datestart 2007-01-01T17:00 --datestop 2007-01-01T23:59:59
+.PP
+During lunch hour:
+.IP
+-m time --timestart 12:30 --timestop 13:30
+.PP
+The fourth Friday in the month:
+.IP
+-m time --weekdays Fr --monthdays 22,23,24,25,26,27,28
+.PP
+(Note that this exploits a certain mathematical property. It is not possible to
+say "fourth Thursday OR fourth Friday" in one rule. It is possible with
+multiple rules, though.)
+.SS udp
+These extensions can be used if `--protocol udp' is specified.  It
+provides the following options:
+.TP
+.BR "--source-port " "[!] \fIport\fP[:\fIport\fP]"
+Source port or port range specification.
+See the description of the
+.B --source-port
+option of the TCP extension for details.
+.TP
+.BR "--destination-port " "[!] \fIport\fP[:\fIport\fP]"
+Destination port or port range specification.
+See the description of the
+.B --destination-port
+option of the TCP extension for details.

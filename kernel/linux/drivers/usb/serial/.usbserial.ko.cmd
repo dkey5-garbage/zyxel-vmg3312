@@ -1,0 +1,1 @@
+cmd_drivers/usb/serial/usbserial.ko := /opt/toolchains/uclibc-crosstools-gcc-4.4.2-1/usr/bin/mips-linux-uclibc-ld -r  -m elf32btsmip  -o drivers/usb/serial/usbserial.ko drivers/usb/serial/usbserial.o drivers/usb/serial/usbserial.mod.o

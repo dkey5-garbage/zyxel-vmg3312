@@ -1,0 +1,15 @@
+VMG3312-B10B Consumer Release Notes
+
+This release contains all of the files needed to build a BCM963xx DSL Router
+image.  To build an image, enter:
+
+# make PROFILE=<profile_name>
+
+For example,
+
+# make PROFILE=VMG3312-B10B
+
+The final image is located in the images subdirectory.  This image can be
+specified in the VMG3312-B10B Web interface image upgrade item in order to
+upgrade the DSL router image.
+

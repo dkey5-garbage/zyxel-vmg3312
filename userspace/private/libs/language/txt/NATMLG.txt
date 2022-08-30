@@ -1,0 +1,2577 @@
+﻿#include<stdio.h>	
+#include<string.h>	
+#include<stdlib.h>	
+#include<time.h>	
+#include "languages.h"	
+
+
+
+$NAME$MLG_NAT_ALG_Explain$
+$Zy_Eng$Application-Level Gateway (ALG) allows customized NAT traversal filters to support address and port translation for certain application such as FTP, SIP, or file transfer in IM.$
+$Zy_Tur$Uygulama-Seviyesi A&#287; Ge&#231;idi (ALG), &#246;zelle&#351;tirilmi&#351; NAT traversal filtrelerinin, FTP, SIP veya an&#305;nda mesajla&#351;ma uygulamalar&#305;ndaki dosya transferi gibi  uygulamalar&#305;, adres ve port transferinin desteklemesine olanak sa&#287;lar.$
+$Zy_Ger$Durch das Application-Level Gateway (ALG) werden spezielle NAT-Tarversal-Filter f&#252;r bestimmte Anwendungen (wie FTP, SIP oder Daten&#252;bertragungen in IM.Anwendungen) aktiviert$
+$Zy_Fre$&(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_ALG_Str1$
+$Zy_Eng$Application-Level Gateway (ALG) allows customized NAT traversal filters to support address and port translation for certain application such as FTP, or file transfer in IM applications.$
+$Zy_Tur$Uygulama - A&#287; Ge&#231;idi Seviyesi  (ALG), &#246;zelle&#351;tirilmi&#351; NAT filtrelerinin FTP gibi belirli uygulamalar i&#231;in adres ve port &#231;evirisini veya IM i&#231;erisinde dosya transferini desteklemesine olanak sa&#287;lar.  $
+$Zy_Ger$Durch das Application-Level Gateway (ALG) k&#246;nnen benutzerdefinierte NAT-Traversal-Filter f&#252;r bestimmte Anwendungen (wie FTP oder Datei&#252;bertragung in IM-Anwendungen) Adressen- und Port Translation unterst&#252;tzen$
+$Zy_Fre$Application-Level Gateway (ALG) permet aux filtres NAT traversal personnalis&#233;s de prendre en charge la translation d&#39;adresses et de ports pour certaines applications telles que FTP ou le transfert de fichiers dans les applications de messagerie instantan&#233;e.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_ALG_Str2$
+$Zy_Eng$ALG State$
+$Zy_Tur$ALG Durumu$
+$Zy_Ger$ALG-Status$
+$Zy_Fre$&#201;tat ALG$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_ALG_Str3$
+$Zy_Eng$ALG$
+$Zy_Tur$ALG$
+$Zy_Ger$ALG$
+$Zy_Fre$ALG$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_ALG_Str4$
+$Zy_Eng$Disable (The settings in this screen are invalid if you select this.)$
+$Zy_Tur$Devre D&#305;&#351;&#305; B&#305;rak (Bunu se&#231;meniz durumunda, bu ekrandaki ayarlar ge&#231;ersiz olacakt&#305;r.)$
+$Zy_Ger$Deaktivieren (dann gelten die Einstellungen in diesem Bildschirm nicht)$
+$Zy_Fre$D&#233;sactiver (Les param&#232;tres dans cet &#233;cran ne sont pas valides si vous s&#233;lectionnez cette option.)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_ALG_Str5$
+$Zy_Eng$Enable$
+$Zy_Tur$Etkinle&#351;tir$
+$Zy_Ger$Aktivieren$
+$Zy_Fre$Activer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_ALG_Str6$
+$Zy_Eng$Disable$
+$Zy_Tur$Devre D&#305;&#351;&#305; B&#305;rak$
+$Zy_Ger$Deaktivieren$
+$Zy_Fre$D&#233;sactiver$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_ALG_Str7$
+$Zy_Eng$SIP ALG State$
+$Zy_Tur$SIP ALG Durumu$
+$Zy_Ger$SIP ALG-Status$
+$Zy_Fre$Etat SIP ALG$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_ALG_Str8$
+$Zy_Eng$SIP ALG$
+$Zy_Tur$SIP ALG$
+$Zy_Ger$SIP ALG$
+$Zy_Fre$SIP ALG$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_ALG_RTSPALG$
+$Zy_Eng$RTSP ALG$
+$Zy_Tur$RTSP ALG$
+$Zy_Ger$RTSP ALG$
+$Zy_Fre$RTSP ALG$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_ALG_Str9$
+$Zy_Eng$NAT ALG$
+$Zy_Tur$NAT ALG$
+$Zy_Ger$NAT ALG$
+$Zy_Fre$NAT ALG$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_ALG_Str10$
+$Zy_Eng$settings are invalid when disabled$
+$Zy_Tur$devre d&#305;&#351;&#305; b&#305;rak&#305;ld&#305;&#287;&#305;nda ayarlar ge&#231;ersizdir$
+$Zy_Ger$wenn deaktiviert, gelten Einstellungen nicht$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_AlertMsg_Str1$
+$Zy_Eng$Internal server IP address {{1}} is invalid.$
+$Zy_Tur$Dahili sunucu IP adresi {{1}} ge&#231;ersiz.$
+$Zy_Ger$Interne Server-IP-Adresse {{1}} ist ung&#252;ltig.$
+$Zy_Fre$L&#39;adresse IP du serveur interne {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_AlertMsg_Str2$
+$Zy_Eng$The IP port range is invalid.$
+$Zy_Tur$Girilen IP port aral&#305;&#287;&#305; ge&#231;ersizdir.$
+$Zy_Ger$IP-Portbereich ist ung&#252;ltig.$
+$Zy_Fre$La plage de ports IP n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_AlertMsg_Str3$
+$Zy_Eng$The IP port range is invalid.$
+$Zy_Tur$Girilen IP port aral&#305;&#287;&#305; ge&#231;ersizdir.$
+$Zy_Ger$IP-Portbereich ist ung&#252;ltig.$
+$Zy_Fre$La plage de ports IP n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_AlertMsg_Str4$
+$Zy_Eng$The defined port or port range is in use by another port forwarding, applications or UPNP rule. You must remove the rule before the new rule can be applied.$
+$Zy_Tur$Tan&#305;ml&#305; port veya port aral&#305;&#287;&#305; ba&#351;ka bir port y&#246;nlendirme, uygulama veya UPNP kural&#305; taraf&#305;ndan kullan&#305;l&#305;yor. Yeni kural&#305;n uygulanmas&#305; i&#231;in &#246;nce kural&#305; kald&#305;rman&#305;z gerekir.$
+$Zy_Ger$Der definierte Port bzw. Portbereich wird von einer anderen Regel f&#252;r Port Forwarding, Anwendungen oder UPnP verwendet. Sie m&#252;ssen die Regel entfernen, bevor Sie die neue Regel anwenden k&#246;nnen.$
+$Zy_Fre$Le port d&#233;fini ou la plage de ports est en cours d&#39;utilisation par une autre redirection de port, des applications ou une r&#232;gle UPNP. Vous devez supprimer la r&#232;gle avant de pouvoir appliquer la nouvelle r&#232;gle.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_AlertMsg_Str5$
+$Zy_Eng$The defined port or port range is in use by another port forwarding, applications or UPNP rule. You must remove the rule before the new rule can be applied.$
+$Zy_Tur$Tan&#305;ml&#305; port veya port aral&#305;&#287;&#305; ba&#351;ka bir port y&#246;nlendirme, uygulama veya UPNP kural&#305; taraf&#305;ndan kullan&#305;l&#305;yor. Yeni kural&#305;n uygulanmas&#305; i&#231;in &#246;nce kural&#305; kald&#305;rman&#305;z gerekir.$
+$Zy_Ger$Der definierte Port bzw. Portbereich wird von einer anderen Regel f&#252;r Port Forwarding, Anwendungen oder UPnP verwendet. Sie m&#252;ssen die Regel entfernen, bevor Sie die neue Regel anwenden k&#246;nnen.$
+$Zy_Fre$Le port d&#233;fini ou la plage de ports est en cours d&#39;utilisation par une autre redirection de port, des applications ou une r&#232;gle UPNP. Vous devez supprimer la r&#232;gle avant de pouvoir appliquer la nouvelle r&#232;gle.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_AlertMsg_Str6$
+$Zy_Eng$The defined port or port range is in use by another port forwarding, applications or UPNP rule. You must remove the rule before the new rule can be applied.$
+$Zy_Tur$Tan&#305;ml&#305; port veya port aral&#305;&#287;&#305; ba&#351;ka bir port y&#246;nlendirme, uygulama veya UPNP kural&#305; taraf&#305;ndan kullan&#305;l&#305;yor. Yeni kural&#305;n uygulanmas&#305; i&#231;in &#246;nce kural&#305; kald&#305;rman&#305;z gerekir.$
+$Zy_Ger$Der definierte Port bzw. Portbereich wird von einer anderen Regel f&#252;r Port Forwarding, Anwendungen oder UPnP verwendet. Sie m&#252;ssen die Regel entfernen, bevor Sie die neue Regel anwenden k&#246;nnen.$
+$Zy_Fre$Le port d&#233;fini ou la plage de ports est en cours d&#39;utilisation par une autre redirection de port, des applications ou une r&#232;gle UPNP. Vous devez supprimer la r&#232;gle avant de pouvoir appliquer la nouvelle r&#232;gle.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_AlertMsg_Str7$
+$Zy_Eng$The defined rule is in use by another port forwarding, applications or UPNP rule. You must remove the rule before the new rule can be applied.$
+$Zy_Tur$Tan&#305;ml&#305; kural ba&#351;ka bir port y&#246;nlendirme, uygulama veya UPNP kural&#305; taraf&#305;ndan kullan&#305;l&#305;yor. Yeni kural&#305;n uygulanmas&#305; i&#231;in &#246;nce kural&#305; kald&#305;rman&#305;z gerekir.$
+$Zy_Ger$Die definierte Regel wird von einer anderen Regel f&#252;r Port Forwarding, Anwendungen oder UPnP verwendet. Sie m&#252;ssen die Regel entfernen, bevor Sie die neue Regel anwenden k&#246;nnen.$
+$Zy_Fre$La r&#232;gle d&#233;finie est utilis&#233;e par une autre redirection de port, des applications ou la r&#232;gle UPNP. Vous devez supprimer la r&#232;gle avant de pouvoir appliquer la nouvelle r&#232;gle.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Explain$
+$Zy_Eng$Each and every Internet activity, such as online gaming and online video streaming, requires at least a port to communicate. Applications provide commonly seen Internet activities by categories and make configuring port forwarding easier.$
+$Zy_Tur$&#199;evrimi&#231;i oyun ve &#231;evrimi&#231;i video yay&#305;n&#305; gibi  her internet aktivitesi, ileti&#351;im i&#231;in en az bir port gerektirir. Uygulamalar, kategorilere g&#246;re s&#305;k g&#246;zlenen &#304;nternet aktivitelerini sa&#287;lar ve port iletim yap&#305;land&#305;r&#305;lmas&#305;n&#305; kolayla&#351;t&#305;r&#305;r.$
+$Zy_Ger$Bei jeglicher Aktivit&#228;t im Internet, wie Online-Spiele und Online Video Streaming, muss mindestens ein Port kommunizieren. Die Registerkarte Anwendungen stellt g&#228;ngige Internet-Aktivit&#228;ten nach Kategorien bereit und erleichtert die Konfiguration von Port Forwarding.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str1$
+$Zy_Eng$Applications provide predefined common applications to let you set up the port forwarding easier.$
+$Zy_Tur$Uygulamalar, port iletim kurulumunu daha kolay yapman&#305;z i&#231;in &#246;n tan&#305;ml&#305; ortak uygulamalar sa&#287;lar.$
+$Zy_Ger$Auf der Registerkarte Anwendungen werden vordefinierte g&#228;ngige Anwendungen bereitgestellt, damit Sie Port Forwarding leichter einrichten k&#246;nnen.$
+$Zy_Fre$Les applications fournissent des applications courantes pr&#233;d&#233;finies pour vous permettre de mettre en place la redirection de port plus facilement.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_AlertMsg_Str8$
+$Zy_Eng$WAN IP address {{1}} is invalid.$
+$Zy_Tur$WAN IP adresi {{1}} ge&#231;ersiz.$
+$Zy_Ger$WAN-IP-Adresse {{1}} ist ung&#252;ltig.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_AlertMsg_Str9$
+$Zy_Eng$The IP port range is invalid.$
+$Zy_Tur$IP port aral&#305;&#287;&#305; ge&#231;ersiz.$
+$Zy_Ger$IP-Portbereich ist ung&#252;ltig.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str10$
+$Zy_Eng$Games$
+$Zy_Tur$Oyunlar$
+$Zy_Ger$Spiele$
+$Zy_Fre$Jeux$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str100$
+$Zy_Eng$Nintendo Wii$
+$Zy_Tur$Nintendo Wii$
+$Zy_Ger$Nintendo Wii$
+$Zy_Fre$Nintendo Wii$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str101$
+$Zy_Eng$Xbox 360$
+$Zy_Tur$Xbox 360$
+$Zy_Ger$Xbox 360$
+$Zy_Fre$Xbox 360$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str102$
+$Zy_Eng$DirecTV Receiver 1$
+$Zy_Tur$DirecTV Alıcı1$
+$Zy_Ger$DirecTV Receiver 1$
+$Zy_Fre$DirecTV Receiver 1$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str103$
+$Zy_Eng$DirecTV Receiver 2$
+$Zy_Tur$DirecTV Alıcı2$
+$Zy_Ger$DirecTV Receiver 2$
+$Zy_Fre$DirecTV Receiver 2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str104$
+$Zy_Eng$DirecTV Receiver 3$
+$Zy_Tur$DirecTV Alıcı3$
+$Zy_Ger$DirecTV Receiver 3$
+$Zy_Fre$DirecTV Receiver 3$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str105$
+$Zy_Eng$DirecTV Receiver 4$
+$Zy_Tur$DirecTV Alıcı4$
+$Zy_Ger$DirecTV Receiver 4$
+$Zy_Fre$DirecTV Receiver 4$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str106$
+$Zy_Eng$ITunes Music Share$
+$Zy_Tur$iTunes Muzik Paylasımı$
+$Zy_Ger$iTunes Music Share$
+$Zy_Fre$ITunes Music Share$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str107$
+$Zy_Eng$Net2Phone$
+$Zy_Tur$Net2Phone$
+$Zy_Ger$Net2Phone$
+$Zy_Fre$Net2Phone$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str108$
+$Zy_Eng$NetFone$
+$Zy_Tur$NetFone$
+$Zy_Ger$NetFone$
+$Zy_Fre$NetFone$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str109$
+$Zy_Eng$Netmeeting$
+$Zy_Tur$Netmeeting$
+$Zy_Ger$Netmeeting$
+$Zy_Fre$Netmeeting$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str11$
+$Zy_Eng$Game Consoles$
+$Zy_Tur$Oyun Konsollar&#305;$
+$Zy_Ger$Spielekonsolen$
+$Zy_Fre$Consoles de jeux$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str110$
+$Zy_Eng$Slingbox$
+$Zy_Tur$Slingbox$
+$Zy_Ger$Slingbox$
+$Zy_Fre$Slingbox$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str111$
+$Zy_Eng$Quick Time 4 Server$
+$Zy_Tur$Quick Time 4 Sunucusu$
+$Zy_Ger$Quick Time 4 Server$
+$Zy_Fre$Quick Time 4 Server$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str112$
+$Zy_Eng$Webphone$
+$Zy_Tur$Web telefon$
+$Zy_Ger$Webphone$
+$Zy_Fre$Webphone$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str113$
+$Zy_Eng$Gnutella$
+$Zy_Tur$Gnutella$
+$Zy_Ger$Gnutella$
+$Zy_Fre$Gnutella$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str114$
+$Zy_Eng$Laplink$
+$Zy_Tur$Laplink$
+$Zy_Ger$Laplink$
+$Zy_Fre$Laplink$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str115$
+$Zy_Eng$NetBIOS$
+$Zy_Tur$NetBIOS$
+$Zy_Ger$NetBIOS$
+$Zy_Fre$NetBIOS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str116$
+$Zy_Eng$PC Anywhere$
+$Zy_Tur$PC Anywhere$
+$Zy_Ger$PC Anywhere$
+$Zy_Fre$PC Anywhere$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str117$
+$Zy_Eng$Remote Administrator$
+$Zy_Tur$Remote Administrator$
+$Zy_Ger$Remote Administrator$
+$Zy_Fre$Remote Administrator$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str118$
+$Zy_Eng$Remote Anything$
+$Zy_Tur$Remote Anything$
+$Zy_Ger$Remote Anything$
+$Zy_Fre$Remote Anything$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str119$
+$Zy_Eng$Remote AnyWhere$
+$Zy_Tur$Remote AnyWhere$
+$Zy_Ger$Remote AnyWhere$
+$Zy_Fre$Remote AnyWhere$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str12$
+$Zy_Eng$Audio/Video$
+$Zy_Tur$Ses / Video$
+$Zy_Ger$Audio/Video$
+$Zy_Fre$Audio/Vid&#233;o$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str120$
+$Zy_Eng$Remote Desktop Connection$
+$Zy_Tur$Uzak Masaustu Baglantısı$
+$Zy_Ger$Remote Desktop Connection$
+$Zy_Fre$Remote Desktop Connection$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str121$
+$Zy_Eng$VNC$
+$Zy_Tur$VNC$
+$Zy_Ger$VNC$
+$Zy_Fre$VNC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str122$
+$Zy_Eng$Windows 2000 Terminal$
+$Zy_Tur$Windows 2000 Terminal$
+$Zy_Ger$Windows 2000 Terminal$
+$Zy_Fre$Windows 2000 Terminal$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str123$
+$Zy_Eng$IPSec$
+$Zy_Tur$IPSec$
+$Zy_Ger$IPSec$
+$Zy_Fre$IPSec$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str124$
+$Zy_Eng$L2TP$
+$Zy_Tur$L2TP$
+$Zy_Ger$L2TP$
+$Zy_Fre$L2TP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str125$
+$Zy_Eng$PPTP$
+$Zy_Tur$PPTP$
+$Zy_Ger$PPTP$
+$Zy_Fre$PPTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str126$
+$Zy_Eng$Shiva VPN$
+$Zy_Tur$Shiva VPN$
+$Zy_Ger$Shiva VPN$
+$Zy_Fre$Shiva VPN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str127$
+$Zy_Eng$SSL VPN$
+$Zy_Tur$SSL VPN$
+$Zy_Ger$SSL VPN$
+$Zy_Fre$VPN SSL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str128$
+$Zy_Eng$DNS Server$
+$Zy_Tur$DNS Sunucusu$
+$Zy_Ger$DNS Server$
+$Zy_Fre$Serveur DNS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str129$
+$Zy_Eng$FTP Server$
+$Zy_Tur$FTP Sunucusu$
+$Zy_Ger$FTP Server$
+$Zy_Fre$Serveur FTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str13$
+$Zy_Eng$Applications$
+$Zy_Tur$Uygulamalar$
+$Zy_Ger$Anwendungen$
+$Zy_Fre$Applications$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str130$
+$Zy_Eng$IMAP Server$
+$Zy_Tur$IMAP Sunucusu$
+$Zy_Ger$IMAP Server$
+$Zy_Fre$Serveur IMAP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str131$
+$Zy_Eng$IRC Server$
+$Zy_Tur$IRC Sunucusu$
+$Zy_Ger$IRC Server$
+$Zy_Fre$Serveur IRC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str132$
+$Zy_Eng$LDAP Server$
+$Zy_Tur$LDAP Sunucusu$
+$Zy_Ger$LDAP Server$
+$Zy_Fre$Serveur LDAP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str133$
+$Zy_Eng$Lotus$
+$Zy_Tur$Lotus$
+$Zy_Ger$Lotus$
+$Zy_Fre$Lotus$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str134$
+$Zy_Eng$NNTP$
+$Zy_Tur$NNTP$
+$Zy_Ger$NNTP$
+$Zy_Fre$NNTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str135$
+$Zy_Eng$POP2 Mail Server$
+$Zy_Tur$POP2 Posta Sunucusu$
+$Zy_Ger$POP2 Mail Server$
+$Zy_Fre$Serveur de messagerie POP2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str136$
+$Zy_Eng$POP3 Mail Server$
+$Zy_Tur$POP3 Posta Sunucusu$
+$Zy_Ger$POP3 Mail Server$
+$Zy_Fre$Serveur de messagerie POP3$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str137$
+$Zy_Eng$Remotely Possible Server$
+$Zy_Tur$Uzak Muhtemel Sunucu$
+$Zy_Ger$Remotely Possible Server$
+$Zy_Fre$Serveur possible &#224; distance $
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str138$
+$Zy_Eng$Quick Time 4 Server$
+$Zy_Tur$Quick Time 4 Sunucusu$
+$Zy_Ger$Quick Time 4 Server$
+$Zy_Fre$Quick Time 4 Server$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str139$
+$Zy_Eng$SMTP Mail Server$
+$Zy_Tur$SMTP Posta Sunucusu$
+$Zy_Ger$SMTP Mail Server$
+$Zy_Fre$Serveur de messagerie SMTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str14$
+$Zy_Eng$VPN$
+$Zy_Tur$VPN$
+$Zy_Ger$VPN$
+$Zy_Fre$VPN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str140$
+$Zy_Eng$Telnet Server$
+$Zy_Tur$Telnet Sunucusu$
+$Zy_Ger$Telnet Server$
+$Zy_Fre$Serveur Telnet$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str141$
+$Zy_Eng$Web Server$
+$Zy_Tur$Web Sunucusu$
+$Zy_Ger$Web Server$
+$Zy_Fre$Serveur Web$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str142$
+$Zy_Eng$Rule Name$
+$Zy_Tur$Kural Ad&#305;$
+$Zy_Ger$Regelname$
+$Zy_Fre$Nom de la r&#232;gle$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str143$
+$Zy_Eng$Protocol$
+$Zy_Tur$Protokol$
+$Zy_Ger$Protokoll$
+$Zy_Fre$Protocole$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str144$
+$Zy_Eng$Start Port $
+$Zy_Tur$Ba&#351;lang&#305;&#231; Portu $
+$Zy_Ger$Erster Port $
+$Zy_Fre$Port de d&#233;but $
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str145$
+$Zy_Eng$End Port$
+$Zy_Tur$Biti&#351; Portu$
+$Zy_Ger$Letzter Port$
+$Zy_Fre$Port de fin$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str146$
+$Zy_Eng$Map Port$
+$Zy_Tur$Harita Portu$
+$Zy_Ger$Map-Port$
+$Zy_Fre$Mapper le port$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str147$
+$Zy_Eng$View Rule Management$
+$Zy_Tur$Kural Y&#246;netimini G&#246;r&#252;nt&#252;le$
+$Zy_Ger$Regelmanagement anzeigen$
+$Zy_Fre$Afficher la gestion des r&#232;gles$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str148$
+$Zy_Eng$Applications Configuration$
+$Zy_Tur$Uygulamalar&#305; Yap&#305;land&#305;rma$
+$Zy_Ger$Anwendungen konfigurieren$
+$Zy_Fre$Configuration des applications$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str149$
+$Zy_Eng$Applications Delete$
+$Zy_Tur$Uygulamalar&#305; Sil$
+$Zy_Ger$Anwendungen l&#246;schen$
+$Zy_Fre$Suppression d&#39;applications$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str15$
+$Zy_Eng$Servers$
+$Zy_Tur$Sunucular$
+$Zy_Ger$Server$
+$Zy_Fre$Serveurs$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str150$
+$Zy_Eng$none$
+$Zy_Tur$hi&#231;biri$
+$Zy_Ger$keine$
+$Zy_Fre$Aucune$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str151$
+$Zy_Eng$Add New Application$
+$Zy_Tur$Yeni Uygulama Ekle$
+$Zy_Ger$Neue Anwendung hinzuf&#252;gen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str152$
+$Zy_Eng$Applications Edit$
+$Zy_Tur$Uygulamalar&#305; D&#252;zenleme$
+$Zy_Ger$Anwendungen bearbeiten$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str153$
+$Zy_Eng$Back$
+$Zy_Tur$geri$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str16$
+$Zy_Eng$Age of Empires$
+$Zy_Tur$Age of Empires$
+$Zy_Ger$Age of Empires$
+$Zy_Fre$Age of Empires$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str17$
+$Zy_Eng$Age of Empires II$
+$Zy_Tur$Age of Empires II$
+$Zy_Ger$Age of Empires II$
+$Zy_Fre$Age of Empires II$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str18$
+$Zy_Eng$Age of Empires III$
+$Zy_Tur$Age of Empires III$
+$Zy_Ger$Age of Empires III$
+$Zy_Fre$Age of Empires III$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str19$
+$Zy_Eng$Age of Mythology$
+$Zy_Tur$Age of Mythology$
+$Zy_Ger$Age of Mythology$
+$Zy_Fre$Age of Mythology$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str2$
+$Zy_Eng$Application Forwarded$
+$Zy_Tur$Y&#246;nlendirilen Uygulama $
+$Zy_Ger$Anwendung f&#252;r Forwarding$
+$Zy_Fre$Application redirig&#233;e$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str20$
+$Zy_Eng$Alien vs. Predator 2$
+$Zy_Tur$Alien vs. Predator 2$
+$Zy_Ger$Alien vs. Predator 2$
+$Zy_Fre$Alien vs. Predator 2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str21$
+$Zy_Eng$Asherons Call$
+$Zy_Tur$Asherons Call$
+$Zy_Ger$Asherons Call$
+$Zy_Fre$Asherons Call$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str22$
+$Zy_Eng$Asheron's Call$
+$Zy_Tur$Asheron's Call$
+$Zy_Ger$Asheron's Call$
+$Zy_Fre$Asheron's Call$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str23$
+$Zy_Eng$Baldurs Gate$
+$Zy_Tur$Baldurs Gate$
+$Zy_Ger$Baldurs Gate$
+$Zy_Fre$Baldurs Gate$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str24$
+$Zy_Eng$Baldur&#39;s Gate$
+$Zy_Tur$Baldur&#39;s Gate$
+$Zy_Ger$Baldur&#39;s Gate$
+$Zy_Fre$Baldur&#39;s Gate$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str25$
+$Zy_Eng$Baldurs Gate II$
+$Zy_Tur$Baldurs Gate II$
+$Zy_Ger$Baldurs Gate II$
+$Zy_Fre$Baldurs Gate II$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str26$
+$Zy_Eng$Baldur's Gate II$
+$Zy_Tur$Baldur's Gate II$
+$Zy_Ger$Baldur's Gate II$
+$Zy_Fre$Baldur's Gate II$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str27$
+$Zy_Eng$Battlefield 1942$
+$Zy_Tur$Battlefield 1942$
+$Zy_Ger$Battlefield 1942$
+$Zy_Fre$Battlefield 1942$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str28$
+$Zy_Eng$Battlefield 1942$
+$Zy_Tur$Battlefield 1942$
+$Zy_Ger$Battlefield 1942$
+$Zy_Fre$Battlefield 1942$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str29$
+$Zy_Eng$Battlefield Vietnam$
+$Zy_Tur$Battlefield Vietnam$
+$Zy_Ger$Battlefield Vietnam$
+$Zy_Fre$Battlefield Vietnam$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str3$
+$Zy_Eng$Server IP Address$
+$Zy_Tur$Sunucu IP Adresi$
+$Zy_Ger$Server-IP-Adresse$
+$Zy_Fre$Adresse IP du serveur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str30$
+$Zy_Eng$Battlestations Midway$
+$Zy_Tur$Battlestations Midway$
+$Zy_Ger$Battlestations Midway$
+$Zy_Fre$Battlestations Midway$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str31$
+$Zy_Eng$Battlefield Communicator$
+$Zy_Tur$Battlefield Communicator$
+$Zy_Ger$Battlefield Communicator$
+$Zy_Fre$Battlefield Communicator$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str32$
+$Zy_Eng$Black and White$
+$Zy_Tur$Black and White$
+$Zy_Ger$Black and White$
+$Zy_Fre$Black and White$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str33$
+$Zy_Eng$Black and White 2$
+$Zy_Tur$Black and White 2$
+$Zy_Ger$Black and White 2$
+$Zy_Fre$Black and White 2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str34$
+$Zy_Eng$Call of Duty$
+$Zy_Tur$Call of Duty$
+$Zy_Ger$Call of Duty$
+$Zy_Fre$Call of Duty$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str35$
+$Zy_Eng$Call of Duty - United Offensive$
+$Zy_Tur$Call of Duty - United Offensive$
+$Zy_Ger$Call of Duty - United Offensive$
+$Zy_Fre$Call of Duty - United Offensive$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str36$
+$Zy_Eng$Call of Duty 2$
+$Zy_Tur$Call of Duty 2$
+$Zy_Ger$Call of Duty 2$
+$Zy_Fre$Call of Duty 2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str37$
+$Zy_Eng$Call of Duty 4$
+$Zy_Tur$Call of Duty 4$
+$Zy_Ger$Call of Duty 4$
+$Zy_Fre$Call of Duty 4$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str38$
+$Zy_Eng$Civilization III$
+$Zy_Tur$Civilization III$
+$Zy_Ger$Civilization III$
+$Zy_Fre$Civilization III$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str39$
+$Zy_Eng$Civilization IV$
+$Zy_Tur$Civilization IV$
+$Zy_Ger$Civilization IV$
+$Zy_Fre$Civilization IV$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str4$
+$Zy_Eng$Modify$
+$Zy_Tur$De&#287;i&#351;tir $
+$Zy_Ger$&#196;ndern$
+$Zy_Fre$Modifier$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str40$
+$Zy_Eng$Close Combat$
+$Zy_Tur$Close Combat$
+$Zy_Ger$Close Combat$
+$Zy_Fre$Close Combat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str41$
+$Zy_Eng$Close Combat III: The Russian Front$
+$Zy_Tur$Close Combat III: The Russian Front$
+$Zy_Ger$Close Combat III: The Russian Front$
+$Zy_Fre$Close Combat III: The Russian Front$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str42$
+$Zy_Eng$Close Combat IV$
+$Zy_Tur$Close Combat IV$
+$Zy_Ger$Close Combat IV$
+$Zy_Fre$Close Combat IV$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str43$
+$Zy_Eng$Close Combat V$
+$Zy_Tur$Close Combat V$
+$Zy_Ger$Close Combat V$
+$Zy_Fre$Close Combat V$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str44$
+$Zy_Eng$Combat Flight Sim 2: WWII Pacific Theatre$
+$Zy_Tur$Combat Flight Sim 2: WWII Pacific Theatre$
+$Zy_Ger$Combat Flight Sim 2: WWII Pacific Theatre$
+$Zy_Fre$Combat Flight Sim 2: WWII Pacific Theatre$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str45$
+$Zy_Eng$Combat Flight Sim 2: WWII Europe Series$
+$Zy_Tur$Combat Flight Sim 2: WWII Europe Series$
+$Zy_Ger$Combat Flight Sim 2: WWII Europe Series$
+$Zy_Fre$Combat Flight Sim 2: WWII Europe Series$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str46$
+$Zy_Eng$Command and Conquer 3 TW$
+$Zy_Tur$Command and Conquer 3 TW$
+$Zy_Ger$Command and Conquer 3 TW$
+$Zy_Fre$Command and Conquer 3 TW$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str47$
+$Zy_Eng$Command and Conquer Generals$
+$Zy_Tur$Command and Conquer Generals$
+$Zy_Ger$Command and Conquer Generals$
+$Zy_Fre$Command and Conquer Generals$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str48$
+$Zy_Eng$Dark Reign$
+$Zy_Tur$Dark Reign$
+$Zy_Ger$Dark Reign$
+$Zy_Fre$Dark Reign$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str49$
+$Zy_Eng$Dark Reign 2$
+$Zy_Tur$Dark Reign 2$
+$Zy_Ger$Dark Reign 2$
+$Zy_Fre$Dark Reign 2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str5$
+$Zy_Eng$Server IP Address$
+$Zy_Tur$Sunucu IP Adresi$
+$Zy_Ger$Server-IP-Adresse$
+$Zy_Fre$Adresse IP du serveur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str50$
+$Zy_Eng$Delta Force$
+$Zy_Tur$Delta Force$
+$Zy_Ger$Delta Force$
+$Zy_Fre$Delta Force$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str51$
+$Zy_Eng$Delta Force II$
+$Zy_Tur$Delta Force II$
+$Zy_Ger$Delta Force II$
+$Zy_Fre$Delta Force II$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str52$
+$Zy_Eng$Diablo$
+$Zy_Tur$Diablo$
+$Zy_Ger$Diablo$
+$Zy_Fre$Diablo$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str53$
+$Zy_Eng$Diablo II$
+$Zy_Tur$Diablo II$
+$Zy_Ger$Diablo II$
+$Zy_Fre$Diablo II$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str54$
+$Zy_Eng$DirectX 7-8 Games$
+$Zy_Tur$DirectX 7-8 Games$
+$Zy_Ger$DirectX 7-8 Games$
+$Zy_Fre$DirectX 7-8 Games$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str55$
+$Zy_Eng$Doom I-II-III$
+$Zy_Tur$Doom I-II-III$
+$Zy_Ger$Doom I-II-III$
+$Zy_Fre$Doom I-II-III$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str56$
+$Zy_Eng$Dune 2000$
+$Zy_Tur$Dune 2000$
+$Zy_Ger$Dune 2000$
+$Zy_Fre$Dune 2000$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str57$
+$Zy_Eng$Dragon Age: Origins$
+$Zy_Tur$Dragon Age: Origins$
+$Zy_Ger$Dragon Age: Origins$
+$Zy_Fre$Dragon Age: Origins$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str58$
+$Zy_Eng$Dungeons and Dragons Online$
+$Zy_Tur$Dungeons and Dragons Online$
+$Zy_Ger$Dungeons and Dragons Online$
+$Zy_Fre$Dungeons and Dragons Online$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str59$
+$Zy_Eng$F-16 Mig. 29$
+$Zy_Tur$F-16 Mig. 29$
+$Zy_Ger$F-16 Mig. 29$
+$Zy_Fre$F-16 Mig. 29$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str6$
+$Zy_Eng$Application Category$
+$Zy_Tur$Uygulama Kategorisi$
+$Zy_Ger$Anwendungskategorie$
+$Zy_Fre$Cat&#233;gorie d&#39;applications $
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str60$
+$Zy_Eng$F-22 Lightning 3$
+$Zy_Tur$F-22 Lightning 3$
+$Zy_Ger$F-22 Lightning 3$
+$Zy_Fre$F-22 Lightning 3$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str61$
+$Zy_Eng$F-22 Raptor$
+$Zy_Tur$F-22 Raptor$
+$Zy_Ger$F-22 Raptor$
+$Zy_Fre$F-22 Raptor$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str62$
+$Zy_Eng$Fighter Ace II$
+$Zy_Tur$Fighter Ace II$
+$Zy_Ger$Fighter Ace II$
+$Zy_Fre$Fighter Ace II$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str63$
+$Zy_Eng$Flight Simulator 2000 - 2002$
+$Zy_Tur$Flight Simulator 2000 - 2002$
+$Zy_Ger$Flight Simulator 2000 - 2002$
+$Zy_Fre$Flight Simulator 2000 - 2002$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str64$
+$Zy_Eng$Flight Simulator 2004$
+$Zy_Tur$Flight Simulator 2004$
+$Zy_Ger$Flight Simulator 2004$
+$Zy_Fre$Flight Simulator 2004$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str65$
+$Zy_Eng$GameSpy$
+$Zy_Tur$GameSpy$
+$Zy_Ger$GameSpy$
+$Zy_Fre$GameSpy$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str66$
+$Zy_Eng$Ghost Recon: Advanced Warfighter 2$
+$Zy_Tur$Ghost Recon: Advanced Warfighter 2$
+$Zy_Ger$Ghost Recon: Advanced Warfighter 2$
+$Zy_Fre$Ghost Recon: Advanced Warfighter 2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str67$
+$Zy_Eng$GNUtella$
+$Zy_Tur$GNUtella$
+$Zy_Ger$GNUtella$
+$Zy_Fre$GNUtella$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str68$
+$Zy_Eng$Guild Wars$
+$Zy_Tur$Guild Wars$
+$Zy_Ger$Guild Wars$
+$Zy_Fre$Guild Wars$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str69$
+$Zy_Eng$Half Life$
+$Zy_Tur$Half Life$
+$Zy_Ger$Half Life$
+$Zy_Fre$Half Life$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str7$
+$Zy_Eng$Application Forwarded$
+$Zy_Tur$Y&#246;nlendirilen Uygulama $
+$Zy_Ger$Anwendung f&#252;r Forwarding$
+$Zy_Fre$Application redirig&#233;e$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str70$
+$Zy_Eng$Half Life II$
+$Zy_Tur$Half Life II$
+$Zy_Ger$Half Life II$
+$Zy_Fre$Half Life II$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str71$
+$Zy_Eng$Halo - Combat Evolved$
+$Zy_Tur$Halo - Combat Evolved$
+$Zy_Ger$Halo - Combat Evolved$
+$Zy_Fre$Halo - Combat Evolved$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str72$
+$Zy_Eng$Heretic II$
+$Zy_Tur$Heretic II$
+$Zy_Ger$Heretic II$
+$Zy_Fre$Heretic II$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str73$
+$Zy_Eng$Hexen II$
+$Zy_Tur$Hexen II$
+$Zy_Ger$Hexen II$
+$Zy_Fre$Hexen II$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str74$
+$Zy_Eng$Kali$
+$Zy_Tur$Kali$
+$Zy_Ger$Kali$
+$Zy_Fre$Kali$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str75$
+$Zy_Eng$KaZaA$
+$Zy_Tur$KaZaA$
+$Zy_Ger$KaZaA$
+$Zy_Fre$KaZaA$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str76$
+$Zy_Eng$Lord of the Rings Online$
+$Zy_Tur$Lord of the Rings Online$
+$Zy_Ger$Lord of the Rings Online$
+$Zy_Fre$Le Seigneur des anneaux en ligne$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str77$
+$Zy_Eng$Lord of the Rings: Battle for Middle Earth$
+$Zy_Tur$Lord of the Rings: Battle for Middle Earth$
+$Zy_Ger$Lord of the Rings: Battle for Middle Earth$
+$Zy_Fre$Le Seigneur des anneaux: La Bataille pour la Terre du Milieu$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str78$
+$Zy_Eng$Lord of the Rings: Battle for Middle Earth 2$
+$Zy_Tur$Lord of the Rings: Battle for Middle Earth 2$
+$Zy_Ger$Lord of the Rings: Battle for Middle Earth 2$
+$Zy_Fre$Le Seigneur des anneaux: La Bataille pour la Terre du Milieu 2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str79$
+$Zy_Eng$Lord of the Rings: War of the Rings$
+$Zy_Tur$Lord of the Rings: War of the Rings$
+$Zy_Ger$Lord of the Rings: War of the Rings$
+$Zy_Fre$Le Seigneur des anneaux: La Guerre des Anneaux$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str8$
+$Zy_Eng$View Rule$
+$Zy_Tur$Kural G&#246;r&#252;nt&#252;le$
+$Zy_Ger$Regel anzeigen$
+$Zy_Fre$Afficher la r&#232;gle$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str80$
+$Zy_Eng$Madden 06$
+$Zy_Tur$Madden 06$
+$Zy_Ger$Madden 06$
+$Zy_Fre$Madden 06$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str81$
+$Zy_Eng$Madden 07$
+$Zy_Tur$Madden 07$
+$Zy_Ger$Madden 07$
+$Zy_Fre$Madden 07$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str82$
+$Zy_Eng$MechWarrior 3$
+$Zy_Tur$MechWarrior 3$
+$Zy_Ger$MechWarrior 3$
+$Zy_Fre$MechWarrior 3$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str83$
+$Zy_Eng$MechWarrior 4$
+$Zy_Tur$MechWarrior 4$
+$Zy_Ger$MechWarrior 4$
+$Zy_Fre$MechWarrior 4$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str84$
+$Zy_Eng$MSN Gaming Zone$
+$Zy_Tur$MSN Gaming Zone$
+$Zy_Ger$MSN Gaming Zone$
+$Zy_Fre$MSN Gaming Zone$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str85$
+$Zy_Eng$Need For Speed 3$
+$Zy_Tur$Need For Speed 3$
+$Zy_Ger$Need For Speed 3$
+$Zy_Fre$Need For Speed 3$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str86$
+$Zy_Eng$Need for Speed Porsche$
+$Zy_Tur$Need for Speed Porsche$
+$Zy_Ger$Need for Speed Porsche$
+$Zy_Fre$Need for Speed Porsche$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str87$
+$Zy_Eng$Outlaws$
+$Zy_Tur$Outlaws$
+$Zy_Ger$Outlaws$
+$Zy_Fre$Outlaws$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str88$
+$Zy_Eng$Rainbow 6$
+$Zy_Tur$Rainbow 6$
+$Zy_Ger$Rainbow 6$
+$Zy_Fre$Rainbow 6$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str89$
+$Zy_Eng$Rouge Spear$
+$Zy_Tur$Rouge Spear$
+$Zy_Ger$Rouge Spear$
+$Zy_Fre$Rouge Spear$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str9$
+$Zy_Eng$All$
+$Zy_Tur$T&#252;m&#252;$
+$Zy_Ger$Alle$
+$Zy_Fre$Tout$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str90$
+$Zy_Eng$Starcraft$
+$Zy_Tur$Starcraft$
+$Zy_Ger$Starcraft$
+$Zy_Fre$Starcraft$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str91$
+$Zy_Eng$Star Wars$
+$Zy_Tur$Star Wars$
+$Zy_Ger$Star Wars$
+$Zy_Fre$La Guerre des Etoiles$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str92$
+$Zy_Eng$Supreme Commander$
+$Zy_Tur$Supreme Commander$
+$Zy_Ger$Supreme Commander$
+$Zy_Fre$Supreme Commander$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str93$
+$Zy_Eng$Tabula Rasa$
+$Zy_Tur$Tabula Rasa$
+$Zy_Ger$Tabula Rasa$
+$Zy_Fre$Tabula Rasa$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str94$
+$Zy_Eng$Tiberian Sun$
+$Zy_Tur$Tiberian Sun$
+$Zy_Ger$Tiberian Sun$
+$Zy_Fre$Tiberian Sun$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str95$
+$Zy_Eng$Ultima$
+$Zy_Tur$Ultima$
+$Zy_Ger$Ultima$
+$Zy_Fre$Ultima$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str96$
+$Zy_Eng$Quake 3 Server$
+$Zy_Tur$Quake 3 Sunucusu$
+$Zy_Ger$Quake 3 Server$
+$Zy_Fre$Serveur Quake 3$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str97$
+$Zy_Eng$Quake 2 Server$
+$Zy_Tur$Quake 2 Sunucusu$
+$Zy_Ger$Quake 2 Server$
+$Zy_Fre$Serveur Quake 2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str98$
+$Zy_Eng$World of Warcraft$
+$Zy_Tur$World of Warcraft$
+$Zy_Ger$World of Warcraft$
+$Zy_Fre$World of Warcraft$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str99$
+$Zy_Eng$Sony PS-2 - PS-3$
+$Zy_Tur$Sony PS-2 - PS-3$
+$Zy_Ger$Sony PS-2 - PS-3$
+$Zy_Fre$Sony PS-2 - PS-3$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_DMZ_AlertMsg_Str1$
+$Zy_Eng$DMZ host address {{1}} is invalid IP address.$
+$Zy_Tur$DMZ ana bilgisayar adresi {{1}} ge&#231;ersiz bir IP adresi.$
+$Zy_Ger$DMZ-Host-Adresse {{1}} ist ung&#252;ltige IP-Adresse.$
+$Zy_Fre$L&#39;adresse de l&#39;h&#244;te DMZ {{1}} n&#39;est pas une adresse IP valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_DMZ_Explain$
+$Zy_Eng$The LAN client in the Demilitarized Zone (DMZ) is no longer behind this device and therefore can run any Internet applications, such as video conferencing and Internet gaming without restrictions. But with the same reason, it also uncover itself to Internet security threats.$
+$Zy_Tur$DMZ i&#231;indeki Yerel A&#287; &#304;stemcisi, cihaz&#305;n arkas&#305;nda olmad&#305;&#287;&#305; i&#231;in, video konferans ve internet oyunu gibi, s&#305;n&#305;rs&#305;z bir &#351;ekilde her t&#252;rl&#252; internet uygulamas&#305; taraf&#305;ndan &#231;al&#305;&#351;t&#305;rabilir. Ancak ayn&#305; sebepten &#246;t&#252;r&#252; g&#252;venlik tehditlerine kar&#351;&#305; da gizlili&#287;i yoktur.$
+$Zy_Ger$Der LAN-Client in der DMZ befindet sich nicht mehr hinter diesem Ger&#228;t und kann daher jegliche Internet-Anwendungen ohne Einschr&#228;nkungen ausf&#252;hren, wie etwa Videokonferenzen und Internet-Spiele. Deshalb ist er auch Sicherheitsbedrohungen aus dem Internet ausgesetzt.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_DMZ_Str1$
+$Zy_Eng$The Demilitarized Zone (DMZ) allows the configured computer to be exposed to the Internet.$
+$Zy_Tur$Askersiz B&#246;lge (DMZ), yap&#305;land&#305;r&#305;lm&#305;&#351; bilgisayar&#305;n Internet&#39; e maruz kalmas&#305;na izin verir.$
+$Zy_Ger$Die DMZ erlaubt, dass der konfigurierte Computer &#252;ber das Internet zug&#228;nglich ist.$
+$Zy_Fre$La zone d&#233;militaris&#233;e (DMZ) permet &#224; l&#39;ordinateur configur&#233; d&#39;&#234;tre expos&#233;s &#224; Internet.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_DMZ_Str2$
+$Zy_Eng$Default Server Address$
+$Zy_Tur$Varsay&#305;lan Sunucu Adresi$
+$Zy_Ger$Standard-Server-Adresse$
+$Zy_Fre$Adresse du serveur par d&#233;faut$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_DMZ_Str3$
+$Zy_Eng$Enter IP address and click \'Apply\' to activate the DMZ host.$
+$Zy_Tur$DMZ hostunu aktifle&#351;tirmek i&#231;in IP adresini giriniz ve \'Uygula\' butonuna bas&#305;n&#305;z.$
+$Zy_Ger$Geben Sie die IP-Adresse ein und klicken Sie auf \'Anwenden\', um den DMZ-Host zu aktivieren.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Note$
+$Zy_Eng$Note$
+$Zy_Tur$Not$
+$Zy_Ger$Hinweis$
+$Zy_Fre$Remarque$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_DMZ_Str4$
+$Zy_Eng$Enter IP address and click \'Apply\' to activate the DMZ host.$
+$Zy_Tur$DMZ &#246;zelli&#287;ini etkinle&#351;tirmek i&#231;in y&#246;nlendirece&#287;iniz IP adresini giriniz ve  \'Uygula\' d&#252;&#287;mesine t&#305;klay&#305;n&#305;z.$
+$Zy_Ger$Geben Sie die IP-Adresse ein und klicken Sie auf \'Anwenden\', um den DMZ-Host zu aktivieren.$
+$Zy_Fre$Entrez l&#39;adresse IP et cliquez sur &#171;&#160;Appliquer&#160;&#187; pour activer l&#39;h&#244;te DMZ.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_DMZ_Str5$
+$Zy_Eng$Clear the IP address field and click \'Apply\' to deactivate the DMZ host.$
+$Zy_Tur$DMZ &#246;zelli&#287;ini devre d&#305;&#351;&#305; b&#305;rakmak i&#231;in y&#246;nlendirdi&#287;iniz IP adresini siliniz ve  \'Uygula\' d&#252;&#287;mesine t&#305;klay&#305;n&#305;z.$
+$Zy_Ger$L&#246;schen Sie das Feld f&#252;r die IP-Adresse und klicken Sie auf \'Anwenden\', um den DMZ-Host zu deaktivieren.$
+$Zy_Fre$Effacez le champ d&#39;adresse IP et cliquez sur &#171;&#160;Appliquer&#160;&#187; pour d&#233;sactiver l&#39;h&#244;te DMZ.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str1$
+$Zy_Eng$Invaid Service Name!!$
+$Zy_Tur$Ge&#231;ersiz Hizmet Ad&#305;!$
+$Zy_Ger$Ung&#252;ltiger Service-Name!$
+$Zy_Fre$Nom de service non valide!!$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str10$
+$Zy_Eng$The defined port or port range is in use by another port forwarding, applications or UPNP rule. You must remove the rule before the new rule can be applied.$
+$Zy_Tur$Tan&#305;ml&#305; port veya port aral&#305;&#287;&#305; ba&#351;ka bir port y&#246;nlendirme, uygulama veya UPNP kural&#305; taraf&#305;ndan kullan&#305;l&#305;yor. Yeni kural&#305;n uygulanmas&#305; i&#231;in &#246;nce kural&#305; kald&#305;rman&#305;z gerekir.$
+$Zy_Ger$Der definierte Port bzw. Portbereich wird von einer anderen Regel f&#252;r Port Forwarding, Anwendungen oder UPnP verwendet. Sie m&#252;ssen die Regel entfernen, bevor Sie die neue Regel anwenden k&#246;nnen.$
+$Zy_Fre$Le port d&#233;fini ou la plage de ports est en cours d&#39;utilisation par une autre redirection de port, des applications ou une r&#232;gle UPNP. Vous devez supprimer la r&#232;gle avant de pouvoir appliquer la nouvelle r&#232;gle.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str11$
+$Zy_Eng$The defined rule is in use by another port forwarding, applications or UPNP rule. You must remove the rule before the new rule can be applied.$
+$Zy_Tur$Tan&#305;ml&#305; kural ba&#351;ka bir port y&#246;nlendirme, uygulama veya UPNP kural&#305; taraf&#305;ndan kullan&#305;l&#305;yor. Yeni kural&#305;n uygulanmas&#305; i&#231;in &#246;nce kural&#305; kald&#305;rman&#305;z gerekir.$
+$Zy_Ger$Die definierte Regel wird von einer anderen Regel f&#252;r Port Forwarding, Anwendungen oder UPnP verwendet. Sie m&#252;ssen die Regel entfernen, bevor Sie die neue Regel anwenden k&#246;nnen.$
+$Zy_Fre$La r&#232;gle d&#233;finie est utilis&#233;e par une autre redirection de port, des applications ou la r&#232;gle UPNP. Vous devez supprimer la r&#232;gle avant de pouvoir appliquer la nouvelle r&#232;gle.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str12$
+$Zy_Eng$Since TCP port 50805 is reserved for TR-069 Client.<br>Please change the port or port range.$
+$Zy_Tur$TCP portu 50805, TR-069 &#304;stemcisi i&#231;in ayr&#305;lm&#305;&#351; oldu&#287;undan, <br>L&#252;tfen port veya port aral&#305;&#287;&#305;n&#305; de&#287;i&#351;tiriniz.$
+$Zy_Ger$TCP-Port 50805 ist reserviert f&#252;r den TR-069 Client.<br>Bitte den Port oder Portbereich &#228;ndern.$
+$Zy_Fre$Comme le port 50805 TCP est r&#233;serv&#233; pour le client TR-069. <br> Veuillez changer le port ou la plage de ports.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str13$
+$Zy_Eng$Since TCP port 21  are used. The router FTP server port will be moved to 2121.$
+$Zy_Tur$TCP portu 21 kullan&#305;ld&#305;&#287;&#305;ndan. Y&#246;nlendirici FTP sunucu portu 2121&#39; e ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$TCP-Port 21 wird bereits verwendet. Der Router FTP-Server-Port wird auf 2121 verlagert.$
+$Zy_Fre$Comme les ports 21 TCP sont utilis&#233;s. Le port du serveur FTP du routeur sera d&#233;plac&#233; &#224; 2121.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str14$
+$Zy_Eng$Since TCP port 23  are used. The router TELNET server port will be moved to 2323.$
+$Zy_Tur$TCP portu 23 kullan&#305;ld&#305;&#287;&#305;ndan. Y&#246;nlendirici TELNET sunucu portu 2323&#39; e ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$TCP-Port 23 wird bereits verwendet. Der Router TELNET-Server-Port wird auf 2323 verlagert.$
+$Zy_Fre$Comme les ports 23 TCP sont utilis&#233;s. Le port du serveur TELNET du routeur sera d&#233;plac&#233; &#224; 2323.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str15$
+$Zy_Eng$Since TCP port 69  are used. The router TFTP server port will be moved to 6969.$
+$Zy_Tur$TCP portu 69 kullan&#305;ld&#305;&#287;&#305;ndan. Y&#246;nlendirici TFTP sunucu portu 6969&#39; a ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$TCP-Port 69 wird bereits verwendet. Der Router TFTP-Server-Port wird auf 6969 verlagert.$
+$Zy_Fre$Comme les ports 69 TCP sont utilis&#233;s. Le port du serveur TFTP du routeur sera d&#233;plac&#233; &#224; 6969.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str16$
+$Zy_Eng$Since TCP port 80  are used. The router WEB server port will be moved to 8080$
+$Zy_Tur$TCP portu 80 kullan&#305;ld&#305;&#287;&#305;ndan. Y&#246;nlendirici WEB sunucu portu 8080&#39; e ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$TCP-Port 80 wird bereits verwendet. Der Router WEB-Server-Port wird auf 8080 verlagert.$
+$Zy_Fre$Comme les ports 80 TCP sont utilis&#233;s. Le port du serveur WEB du routeur sera d&#233;plac&#233; &#224; 8080$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str17$
+$Zy_Eng$Since TCP port 443  are used. The router HTTPS server port will be moved to 4433.$
+$Zy_Tur$TCP portu 443 kullan&#305;ld&#305;&#287;&#305;ndan. Y&#246;nlendirici HTTPS sunucu portu 4433&#39; e ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$TCP-Port 443 wird bereits verwendet. Der Router HTTPS-Server-Port wird auf 4433 verlagert.$
+$Zy_Fre$Comme les ports 443 TCP sont utilis&#233;s. Le port du serveur HTTPS du routeur sera d&#233;plac&#233; &#224; 4433.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str18$
+$Zy_Eng$Since TCP port 22  are used. The router SSH server port will be moved to 2222.$
+$Zy_Tur$TCP portu 22 kullan&#305;ld&#305;&#287;&#305;ndan. Y&#246;nlendirici SSH sunucu portu 2222&#39; e ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$TCP-Port 22 wird bereits verwendet. Der Router SSH-Server-Port wird auf 2222 verlagert.$
+$Zy_Fre$Comme les ports 22 TCP sont utilis&#233;s. Le port du serveur SSH du routeur sera d&#233;plac&#233; &#224; 2222.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str19$
+$Zy_Eng$Since TCP port 21  is used. The router FTP server port will be moved to 2121.$
+$Zy_Tur$TCP portu 21 kullan&#305;ld&#305;&#287;&#305;ndan. Y&#246;nlendirici FTP sunucu portu 2121&#39; e ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$TCP-Port 21 wird bereits verwendet. Der Router FTP-Server-Port wird auf 2121 verlagert.$
+$Zy_Fre$Comme le port 21 TCP est utilis&#233;. Le port du serveur FTP du routeur sera d&#233;plac&#233; &#224; 2121.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str2$
+$Zy_Eng$Internal server IP address {{1}} is invalid.$
+$Zy_Tur$Dahili sunucu IP adresi {{1}} ge&#231;ersizdir.$
+$Zy_Ger$Interne Server-IP-Adresse {{1}} ist ung&#252;ltig.$
+$Zy_Fre$L&#39;adresse IP du serveur interne {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str20$
+$Zy_Eng$Since TCP port 23  is used. The router TELNET server port will be moved to 2323.$
+$Zy_Tur$TCP portu 23 kullan&#305;ld&#305;&#287;&#305;ndan. Y&#246;nlendirici TELNET sunucu portu 2323&#39; e ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$TCP-Port 23 wird bereits verwendet. Der Router TELNET-Server-Port wird auf 2323 verlagert.$
+$Zy_Fre$Comme le port 23 TCP est utilis&#233;. Le port du serveur TELNET du routeur sera d&#233;plac&#233; &#224; 2323.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str21$
+$Zy_Eng$Since TCP port 69  is used. The router TFTP server port will be moved to 6969.$
+$Zy_Tur$TCP portu 69 kullan&#305;ld&#305;&#287;&#305;ndan. Y&#246;nlendirici TFTP sunucu portu 6969&#39; a ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$TCP-Port 69 wird bereits verwendet. Der Router TFTP-Server-Port wird auf 6969 verlagert.$
+$Zy_Fre$Comme le port 69 TCP est utilis&#233;. Le port du serveur TFTP du routeur sera d&#233;plac&#233; &#224; 6969.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str22$
+$Zy_Eng$Since TCP port 80  is used. The router WEB server port will be moved to 8080$
+$Zy_Tur$TCP portu 80 kullan&#305;ld&#305;&#287;&#305;ndan. Y&#246;nlendirici WEB sunucu portu 8080&#39; e ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$TCP-Port 80 wird bereits verwendet. Der Router WEB-Server-Port wird auf 8080 verlagert.$
+$Zy_Fre$Comme le port 80 TCP est utilis&#233;. Le port du serveur WEB du routeur sera d&#233;plac&#233; &#224; 8080$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str23$
+$Zy_Eng$Since TCP port 443  is used. The router HTTPS server port will be moved to 4433.$
+$Zy_Tur$TCP portu 443 kullan&#305;ld&#305;&#287;&#305;ndan. Y&#246;nlendirici HTTPS sunucu portu 4433&#39; e ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$TCP-Port 443 wird bereits verwendet. Der Router HTTPS-Server-Port wird auf 4433 verlagert.$
+$Zy_Fre$Comme le port 443 TCP est utilis&#233;. Le port du serveur HTTPS du routeur sera d&#233;plac&#233; &#224; 4433.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str24$
+$Zy_Eng$Since TCP port 22  is used. The router SSH server port will be moved to 2222.$
+$Zy_Tur$TCP portu 22 kullan&#305;ld&#305;&#287;&#305;ndan. Y&#246;nlendirici SSH sunucu portu 2222&#39; e ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$TCP-Port 22 wird bereits verwendet. Der Router SSH-Server-Port wird auf 2222 verlagert.$
+$Zy_Fre$Comme le port 22 TCP est utilis&#233;. Le port du serveur SSH du routeur sera d&#233;plac&#233; &#224; 2222.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str25$
+$Zy_Eng$Internal server IP address {{1}} is invalid.$
+$Zy_Tur$Dahili sunucu IP adresi {{1}} ge&#231;ersiz.$
+$Zy_Ger$Interne Server-IP-Adresse {{1}} ist ung&#252;ltig.$
+$Zy_Fre$L&#39;adresse IP du serveur interne {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str26$
+$Zy_Eng$External port start {{1}} is invalid.$
+$Zy_Tur$Harici port ba&#351;lang&#305;c&#305; &#8203;&#8203;{{1}} ge&#231;ersiz.$
+$Zy_Ger$Erster externer Port {1}} ist ung&#252;ltig.$
+$Zy_Fre$Le d&#233;but du port externe {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str27$
+$Zy_Eng$External port end {{1}} is invalid.$
+$Zy_Tur$Harici port sonu {{1}} ge&#231;ersiz.$
+$Zy_Ger$Letzter externer Port {{1}} ist ung&#252;ltig.$
+$Zy_Fre$La fin du port externe {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str28$
+$Zy_Eng$Internal port start {{1}} is invalid.$
+$Zy_Tur$Dahili port ba&#351;lang&#305;c&#305; &#8203;&#8203;{{1}} ge&#231;ersiz.$
+$Zy_Ger$Erster interner Port {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le d&#233;but du port interne {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str29$
+$Zy_Eng$Internal port end {{1}} is invalid.$
+$Zy_Tur$Dahili port sonu {{1}} ge&#231;ersiz.$
+$Zy_Ger$Letzter interner Port {{1}} ist ung&#252;ltig.$
+$Zy_Fre$La fin du port interne {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str3$
+$Zy_Eng$External port start {{1}} is invalid.$
+$Zy_Tur$Harici port ba&#351;lang&#305;c&#305; {{1}} ge&#231;ersiz.$
+$Zy_Ger$Erster externer Port {1}} ist ung&#252;ltig.$
+$Zy_Fre$Le d&#233;but du port externe {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str30$
+$Zy_Eng$External port range [{{1}}-{{2}}] is invalid.$
+$Zy_Tur$Harici port aral&#305;&#287;&#305; {{1}} ge&#231;ersiz.$
+$Zy_Ger$Externer Portbereich [{{1}}-{{2}}] ist ung&#252;ltig.$
+$Zy_Fre$La plage de ports externes [{{1}}-{{2}}] n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str31$
+$Zy_Eng$Internal port range [{{1}}-{{2}}] is invalid.$
+$Zy_Tur$Dahili port aral&#305;&#287;&#305; {{1}} ge&#231;ersiz.$
+$Zy_Ger$Interner Portbereich [{{1}}-{{2}}] ist ung&#252;ltig.$
+$Zy_Fre$La plage de ports internes [{{1}}-{{2}}] n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str32$
+$Zy_Eng$The defined port or port range is in use by another port forwarding, applications or UPNP rule. You must remove the rule before the new rule can be applied.$
+$Zy_Tur$Tan&#305;ml&#305; port veya port aral&#305;&#287;&#305; ba&#351;ka bir port y&#246;nlendirme, uygulama veya UPNP kural&#305; taraf&#305;ndan kullan&#305;l&#305;yor. Yeni kural&#305;n uygulanmas&#305; i&#231;in &#246;nce kural&#305; kald&#305;rman&#305;z gerekir.$
+$Zy_Ger$Der definierte Port bzw. Portbereich wird von einer anderen Regel f&#252;r Port Forwarding, Anwendungen oder UPnP verwendet. Sie m&#252;ssen die Regel entfernen, bevor Sie die neue Regel anwenden k&#246;nnen.$
+$Zy_Fre$Le port d&#233;fini ou la plage de ports est en cours d&#39;utilisation par une autre redirection de port, des applications ou une r&#232;gle UPNP. Vous devez supprimer la r&#232;gle avant de pouvoir appliquer la nouvelle r&#232;gle.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str33$
+$Zy_Eng$The defined rule is in use by another port forwarding, applications or UPNP rule. You must remove the rule before the new rule can be applied.$
+$Zy_Tur$Tan&#305;ml&#305; kural ba&#351;ka bir port y&#246;nlendirme, uygulama veya UPNP kural&#305; taraf&#305;ndan kullan&#305;l&#305;yor. Yeni kural&#305;n uygulanmas&#305; i&#231;in &#246;nce kural&#305; kald&#305;rman&#305;z gerekir.$
+$Zy_Ger$Die definierte Regel wird von einer anderen Regel f&#252;r Port Forwarding, Anwendungen oder UPnP verwendet. Sie m&#252;ssen die Regel entfernen, bevor Sie die neue Regel anwenden k&#246;nnen.$
+$Zy_Fre$La r&#232;gle d&#233;finie est utilis&#233;e par une autre redirection de port, des applications ou la r&#232;gle UPNP. Vous devez supprimer la r&#232;gle avant de pouvoir appliquer la nouvelle r&#232;gle.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str34$
+$Zy_Eng$Since TCP port 50805 is reserved for TR-069 Client.<br>Please change the port or port range.$
+$Zy_Tur$TCP portu 50805, TR-069 &#304;stemcisi i&#231;in ayr&#305;lm&#305;&#351; oldu&#287;undan, <br>L&#252;tfen port veya port aral&#305;&#287;&#305;n&#305; de&#287;i&#351;tiriniz.$
+$Zy_Ger$TCP-Port 50805 ist reserviert f&#252;r den TR-069 Client.<br>Bitte den Port oder Portbereich &#228;ndern.$
+$Zy_Fre$Comme le port TCP 50805 est r&#233;serv&#233; pour le client TR-069. <br> Veuillez changer le port ou plage de ports.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str35$
+$Zy_Eng$Since TCP port 21  are used. The router FTP server port will be moved to 2121.$
+$Zy_Tur$TCP portu 21 kullan&#305;ld&#305;&#287;&#305;ndan. Y&#246;nlendirici FTP sunucu portu 2121&#39; e ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$TCP-Port 21 wird bereits verwendet. Der Router FTP-Server-Port wird auf 2121 verlagert.$
+$Zy_Fre$Comme les ports TCP 21 sont utilis&#233;s. Le port du serveur FTP du routeur sera d&#233;plac&#233; &#224; 2121.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str36$
+$Zy_Eng$Since TCP port 23  are used. The router TELNET server port will be moved to 2323.$
+$Zy_Tur$TCP portu 23 kullan&#305;ld&#305;&#287;&#305;ndan. Y&#246;nlendirici TELNET sunucu portu 2323&#39; e ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$TCP-Port 23 wird bereits verwendet. Der Router TELNET-Server-Port wird auf 2323 verlagert.$
+$Zy_Fre$Comme les ports TCP 23 sont utilis&#233;s. Le port du serveur TELNET du routeur sera d&#233;plac&#233; &#224; 2323.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str37$
+$Zy_Eng$Since TCP port 69  are used. The router TFTP server port will be moved to 6969.$
+$Zy_Tur$TCP portu 69 kullan&#305;ld&#305;&#287;&#305;ndan. Y&#246;nlendirici TFTP sunucu portu 6969&#39; a ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$TCP-Port 69 wird bereits verwendet. Der Router TFTP-Server-Port wird auf 6969 verlagert.$
+$Zy_Fre$Comme les ports TCP 69 sont utilis&#233;s. Le port du serveur TFTP du routeur sera d&#233;plac&#233; &#224; 6969.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str38$
+$Zy_Eng$Since TCP port 80  are used. The router WEB server port will be moved to 8080$
+$Zy_Tur$TCP portu 80 kullan&#305;ld&#305;&#287;&#305;ndan. Y&#246;nlendirici WEB sunucu portu 8080&#39; e ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$TCP-Port 80 wird bereits verwendet. Der Router WEB-Server-Port wird auf 8080 verlagert.$
+$Zy_Fre$Comme les ports TCP 80 sont utilis&#233;s. Le port du serveur WEB du routeur sera d&#233;plac&#233; &#224; 8080$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str39$
+$Zy_Eng$Since TCP port 443  are used. The router HTTPS server port will be moved to 4433.$
+$Zy_Tur$TCP portu 443 kullan&#305;ld&#305;&#287;&#305;ndan. Y&#246;nlendirici HTTPS sunucu portu 4433&#39; e ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$TCP-Port 443 wird bereits verwendet. Der Router HTTPS-Server-Port wird auf 4433 verlagert.$
+$Zy_Fre$Comme les ports TCP 443 sont utilis&#233;s. Le port du serveur HTTPS du routeur sera d&#233;plac&#233; &#224; 4433.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str4$
+$Zy_Eng$External port end {{1}} is invalid.$
+$Zy_Tur$Harici port biti&#351;i {{1}} ge&#231;ersiz.$
+$Zy_Ger$Letzter externer Port {{1}} ist ung&#252;ltig.$
+$Zy_Fre$La fin du port externe {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str40$
+$Zy_Eng$Since TCP port 22  are used. The router SSH server port will be moved to 2222.$
+$Zy_Tur$TCP portu 22 kullan&#305;ld&#305;&#287;&#305;ndan. Y&#246;nlendirici SSH sunucu portu 2222&#39; e ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$TCP-Port 22 wird bereits verwendet. Der Router SSH-Server-Port wird auf 2222 verlagert.$
+$Zy_Fre$Comme les ports TCP 22 sont utilis&#233;s. Le port du serveur SSH du routeur sera d&#233;plac&#233; &#224; 2222.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str41$
+$Zy_Eng$Since TCP port 21  is used. The router FTP server port will be moved to 2121.$
+$Zy_Tur$TCP portu 21 kullan&#305;ld&#305;&#287;&#305;ndan. Y&#246;nlendirici FTP sunucu portu 2121&#39; e ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$TCP-Port 21 wird bereits verwendet. Der Router FTP-Server-Port wird auf 2121 verlagert.$
+$Zy_Fre$Comme le port TCP 21 est utilis&#233;. Le port du serveur FTP du routeur sera d&#233;plac&#233; &#224; 2121.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str42$
+$Zy_Eng$Since TCP port 23  is used. The router TELNET server port will be moved to 2323.$
+$Zy_Tur$TCP portu 23 kullan&#305;ld&#305;&#287;&#305;ndan. Y&#246;nlendirici TELNET sunucu portu 2323&#39; e ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$TCP-Port 23 wird bereits verwendet. Der Router TELNET-Server-Port wird auf 2323 verlagert.$
+$Zy_Fre$Comme le port TCP 23 est utilis&#233;. Le port du serveur TELNET du routeur sera d&#233;plac&#233; &#224; 2323.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str43$
+$Zy_Eng$Since TCP port 69  is used. The router TFTP server port will be moved to 6969.$
+$Zy_Tur$TCP portu 69 kullan&#305;ld&#305;&#287;&#305;ndan. Y&#246;nlendirici TFTP sunucu portu 6969&#39; a ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$TCP-Port 69 wird bereits verwendet. Der Router TFTP-Server-Port wird auf 6969 verlagert.$
+$Zy_Fre$Comme le port TCP 69 est utilis&#233;. Le port du serveur TFTP du routeur sera d&#233;plac&#233; &#224; 6969.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str44$
+$Zy_Eng$Since TCP port 80  is used. The router WEB server port will be moved to 8080$
+$Zy_Tur$TCP portu 80 kullan&#305;ld&#305;&#287;&#305;ndan. Y&#246;nlendirici WEB sunucu portu 8080&#39; e ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$TCP-Port 80 wird bereits verwendet. Der Router WEB-Server-Port wird auf 8080 verlagert.$
+$Zy_Fre$Comme le port TCP 80 est utilis&#233;. Le port du serveur WEB du routeur sera d&#233;plac&#233; &#224; 8080$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str45$
+$Zy_Eng$Since TCP port 443  is used. The router HTTPS server port will be moved to 4433.$
+$Zy_Tur$TCP portu 443 kullan&#305;ld&#305;&#287;&#305;ndan. Y&#246;nlendirici HTTPS sunucu portu 4433&#39; e ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$TCP-Port 443 wird bereits verwendet. Der Router HTTPS-Server-Port wird auf 4433 verlagert.$
+$Zy_Fre$Comme le port TCP 443 est utilis&#233;. Le port du serveur HTTPS du routeur sera d&#233;plac&#233; &#224; 4433.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str46$
+$Zy_Eng$Since TCP port 22  is used. The router SSH server port will be moved to 2222.$
+$Zy_Tur$TCP portu 22 kullan&#305;ld&#305;&#287;&#305;ndan. Y&#246;nlendirici SSH sunucu portu 2222&#39; e ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$TCP-Port 22 wird bereits verwendet. Der Router SSH-Server-Port wird auf 2222 verlagert.$
+$Zy_Fre$Comme le port TCP 22 est utilis&#233;. Le port du serveur SSH du routeur sera d&#233;plac&#233; &#224; 2222.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str47$
+$Zy_Eng$The defined rule is in use by another port forwarding, applications or UPNP rule. You must remove the rule before the new rule can be applied.$
+$Zy_Tur$Tan&#305;ml&#305; kural ba&#351;ka bir port y&#246;nlendirme, uygulama veya UPNP kural&#305; taraf&#305;ndan kullan&#305;l&#305;yor. Yeni kural&#305;n uygulanmas&#305; i&#231;in &#246;nce kural&#305; kald&#305;rman&#305;z gerekir.$
+$Zy_Ger$Die definierte Regel wird von einer anderen Regel f&#252;r Port Forwarding, Anwendungen oder UPnP verwendet. Sie m&#252;ssen die Regel entfernen, bevor Sie die neue Regel anwenden k&#246;nnen.$
+$Zy_Fre$La r&#232;gle d&#233;finie est utilis&#233;e par une autre redirection de port, des applications ou la r&#232;gle UPNP. Vous devez supprimer la r&#232;gle avant de pouvoir appliquer la nouvelle r&#232;gle.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str48$
+$Zy_Eng$Since TCP port 7547 is reserved for TR-069 Client.<br>Please change the port or port range.$
+$Zy_Tur$TCP portu 7547, TR-069 &#304;stemcisi i&#231;in ayr&#305;lm&#305;&#351; oldu&#287;undan, <br>L&#252;tfen port veya port aral&#305;&#287;&#305;n&#305; de&#287;i&#351;tiriniz.$
+$Zy_Ger$TCP-Port 7547 ist reserviert f&#252;r den TR-069 Client.<br>Bitte den Port oder Portbereich &#228;ndern.$
+$Zy_Fre$Comme le port TCP 7547 est r&#233;serv&#233; pour le client TR-069. <br> Veuillez changer le port ou la plage de ports.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str49$
+$Zy_Eng$Since TCP port $
+$Zy_Tur$TCP portu .... kullan&#305;ld&#305;&#287;&#305;ndan $
+$Zy_Ger$TCP-Port $
+$Zy_Fre$Comme le port TCP $
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str50$
+$Zy_Eng$The router FTP server port will be moved to 2121.<br>$
+$Zy_Tur$Y&#246;nlendirici FTP sunucu portu 2121&#39; e ta&#351;&#305;nacakt&#305;r.<br>$
+$Zy_Ger$Der Router FTP-Server-Port wird auf 2121 verlagert.<br>$
+$Zy_Fre$Le port du serveur FTP du routeur sera d&#233;plac&#233; &#224; 2121.<br>$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str51$
+$Zy_Eng$The router TELNET server port will be moved to 2323.<br>$
+$Zy_Tur$Y&#246;nlendirici TELNET sunucu portu 2323&#39; e ta&#351;&#305;nacakt&#305;r.<br>$
+$Zy_Ger$Der Router TELNET-Server-Port wird auf 2323 verlagert.<br>$
+$Zy_Fre$Le port du serveur TELNET du routeur sera d&#233;plac&#233; &#224; 2323.<br>$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str52$
+$Zy_Eng$The router SSH server port will be moved to 2222.<br>$
+$Zy_Tur$Y&#246;nlendirici SSH sunucu portu 2222&#39; e ta&#351;&#305;nacakt&#305;r.<br>$
+$Zy_Ger$Der Router SSH-Server-Port wird auf 2222 verlagert.<br>$
+$Zy_Fre$Le port du serveur SSH du routeur sera d&#233;plac&#233; &#224; 2222.<br>$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str53$
+$Zy_Eng$The router TFTP server port will be moved to 6969.<br>$
+$Zy_Tur$Y&#246;nlendirici TFTP sunucu portu 6969&#39; a ta&#351;&#305;nacakt&#305;r.<br>$
+$Zy_Ger$Der Router TFTP-Server-Port wird auf 6969 verlagert.<br>$
+$Zy_Fre$Le port du serveur TFTP du routeur sera d&#233;plac&#233; &#224; 6969.<br>$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str54$
+$Zy_Eng$The router WEB server port will be moved to 8080.<br>$
+$Zy_Tur$Y&#246;nlendirici WEB sunucu portu 8080&#39; e ta&#351;&#305;nacakt&#305;r.<br>$
+$Zy_Ger$Der Router WEB-Server-Port wird auf 8080 verlagert.<br>$
+$Zy_Fre$Le port du serveur WEB du routeur sera d&#233;plac&#233; &#224; 8080.<br>$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str55$
+$Zy_Eng$The router HTTPS server port will be moved to 4433.$
+$Zy_Tur$Y&#246;nlendirici HTTPS sunucu portu 4433&#39; e ta&#351;&#305;nacakt&#305;r.$
+$Zy_Ger$Der Router HTTPS-Server-Port wird auf 4433 verlagert.$
+$Zy_Fre$Le port du serveur HTTPS du routeur sera d&#233;plac&#233; &#224; 4433.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str56$
+$Zy_Eng$ are used.<br>$
+$Zy_Tur$ kullan&#305;ld&#305;klar&#305;ndan. <br>$
+$Zy_Ger$ wird bereits verwendet.<br>$
+$Zy_Fre$ sont utilis&#233;s.<br>$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str57$
+$Zy_Eng$ is used.<br>$
+$Zy_Tur$ kullan&#305;ld&#305;&#287;&#305;ndan. <br>$
+$Zy_Ger$ wird bereits verwendet.<br>$
+$Zy_Fre$ est utilis&#233;.<br>$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str5$
+$Zy_Eng$Internal port start {{1}} is invalid.$
+$Zy_Tur$Dahili port ba&#351;lang&#305;c&#305; {{1}} ge&#231;ersiz.$
+$Zy_Ger$Erster interner Port {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le d&#233;but du port interne {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str6$
+$Zy_Eng$Internal port end {{1}} is invalid.$
+$Zy_Tur$Dahili port sonu {{1}} ge&#231;ersiz.$
+$Zy_Ger$Letzter interner Port {{1}} ist ung&#252;ltig.$
+$Zy_Fre$La fin du port interne {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str7$
+$Zy_Eng$External port range [{{1}}-{{2}}] is invalid.$
+$Zy_Tur$Harici port aral&#305;&#287;&#305; {{1}} ge&#231;ersiz.$
+$Zy_Ger$Externer Portbereich [{{1}}-{{2}}] ist ung&#252;ltig.$
+$Zy_Fre$La plage de ports externes [{{1}}-{{2}}] n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str8$
+$Zy_Eng$Internal port range [{{1}}-{{2}}] is invalid.$
+$Zy_Tur$Dahili port aral&#305;&#287;&#305; {{1}} ge&#231;ersiz.$
+$Zy_Ger$Interner Portbereich [{{1}}-{{2}}] ist ung&#252;ltig.$
+$Zy_Fre$La plage de ports internes [{{1}}-{{2}}] n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_AlertMsg_Str9$
+$Zy_Eng$The defined port or port range is in use by another port forwarding or applications rule. You must remove the rule before the new rule can be applied.$
+$Zy_Tur$Tan&#305;ml&#305; port veya port aral&#305;&#287;&#305;, ba&#351;ka bir port y&#246;nlendirme veya uygulama kural&#305; taraf&#305;ndan kullan&#305;l&#305;yor. Yeni kural&#305;n uygulanmas&#305; i&#231;in &#246;nce kural&#305; kald&#305;rman&#305;z gerekir.$
+$Zy_Ger$Der definierte Port bzw. Portbereich wird von einer anderen Regel f&#252;r Port Forwarding oder Anwendungen verwendet. Sie m&#252;ssen die Regel entfernen, bevor Sie die neue Regel anwenden k&#246;nnen.$
+$Zy_Fre$Le port d&#233;fini ou plage de ports est en cours d&#39;utilisation par une autre redirection de port de ou r&#232;gle d&#39;applications. Vous devez supprimer la r&#232;gle avant de pouvoir appliquer la nouvelle r&#232;gle.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str1$
+$Zy_Eng$Port Forwarding is commonly used when you want to do some Internet activities, such as online gaming, P2P file sharing, or even hosting servers on your network. It creates a bridge in order to let a party from the Internet contact a specific LAN client on your network correctly.$
+$Zy_Tur$Port Y&#246;nlendirme, &#231;evrimi&#231;i oyun, P2P dosya payla&#351;&#305;m&#305; gibi baz&#305; internet aktivitelerini yapmak veya hatta a&#287;&#305;n&#305;zda sunucu bar&#305;nd&#305;rmak istedi&#287;inizde yayg&#305;n olarak kullan&#305;l&#305;r. Bu, internetten bir taraf&#305;n a&#287;&#305;n&#305;zdaki belirli bir Yerel A&#287; istemcisi ile do&#287;ru bir &#351;ekilde ileti&#351;im kurmas&#305;na izin vermek i&#231;in bir k&#246;pr&#252; olu&#351;turur.$
+$Zy_Ger$Port Forwarding wird normalerweise verwendet, wenn Sie im Internet aktiv werden wollen, wie Online spielen, P2P File Sharing oder Server auf Ihrem Netzwerk hosten. Es wird dadurch eine Bridge erzeugt, damit ein Teilnehmer aus dem Internet einen bestimmten LAN-Client in Ihrem Netzwerk korrekt kontaktieren kann.$
+$Zy_Fre$La redirection de port cr&#233;e un pont afin de permettre &#224; une partie venant de l&#39;ext&#233;rieur de contacter un utilisateur sp&#233;cifique &#224; l&#39;int&#233;rieur du r&#233;seau.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str10$
+$Zy_Eng$Note$
+$Zy_Tur$Not$
+$Zy_Ger$Hinweis$
+$Zy_Fre$Remarque$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str11$
+$Zy_Eng$The TCP port 7547 is reserved for TR-069 connection request port .$
+$Zy_Tur$TCP portu 7547, TR-069 ba&#287;lant&#305; istek portu i&#231;in ayr&#305;lm&#305;&#351;t&#305;r.$
+$Zy_Ger$TCP-Port 7547 ist als Port f&#252;r TR-069 Verbindungsanforderungen reserviert.$
+$Zy_Fre$Le port TCP 7547 est r&#233;serv&#233; au port de demande de connexion TR-069.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str12$
+$Zy_Eng$Add new rule$
+$Zy_Tur$Yeni kural ekle$
+$Zy_Ger$Neue Regel hinzuf&#252;gen$
+$Zy_Fre$Ajouter une nouvelle r&#232;gle$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str13$
+$Zy_Eng$Port Forwarding Configuration$
+$Zy_Tur$Port Y&#246;nlendirme Yap&#305;land&#305;rmas&#305;$
+$Zy_Ger$Port Forwarding konfigurieren$
+$Zy_Fre$Configuration de redirection de port$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str14$
+$Zy_Eng$Port Forwarding Edit$
+$Zy_Tur$Port Y&#246;nlendirme D&#252;zenlemesi$
+$Zy_Ger$Port Forwarding bearbeiten$
+$Zy_Fre$Modification de redirection de port$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str15$
+$Zy_Eng$Active$
+$Zy_Tur$Aktif$
+$Zy_Ger$Aktiv$
+$Zy_Fre$Actif$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str16$
+$Zy_Eng$Protocol$
+$Zy_Tur$Protokol  $
+$Zy_Ger$Protokoll$
+$Zy_Fre$Protocole$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str17$
+$Zy_Eng$This will delete the item. Please confirm this step.$
+$Zy_Tur$Bu, &#246;&#287;eyi silecektir. L&#252;tfen bu ad&#305;m&#305; onaylay&#305;n&#305;z.$
+$Zy_Ger$Element wird hierdurch gel&#246;scht. Bitte diesen Schritt best&#228;tigen.$
+$Zy_Fre$Cela va supprimer l&#39;&#233;l&#233;ment. Veuillez confirmer cette &#233;tape.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str18$
+$Zy_Eng$Port Forwarding Delete$
+$Zy_Tur$Port Y&#246;nlendirme Silme$
+$Zy_Ger$Port Forwarding l&#246;schen$
+$Zy_Fre$Suppression de redirection de port$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str19$
+$Zy_Eng$The TCP port 50805 is reserved for TR-069 connection request port$
+$Zy_Tur$TCP portu 50805, TR-069 ba&#287;lant&#305; istek portu i&#231;in ayr&#305;lm&#305;&#351;$
+$Zy_Ger$TCP-Port 50805 ist als Port f&#252;r TR-069 Verbindungsanforderungen reserviert.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str20$
+$Zy_Eng$remove$
+$Zy_Tur$kald&#305;r$
+$Zy_Ger$Entfernen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str21$
+$Zy_Eng$WAN IP$
+$Zy_Tur$WAN IP$
+$Zy_Ger$WAN IP$
+$Zy_Fre$WAN IP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str22$
+$Zy_Eng$TCP/UDP$
+$Zy_Tur$TCP/UDP$
+$Zy_Ger$TCP/UDP$
+$Zy_Fre$TCP/UDP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str23$
+$Zy_Eng$Translation Start Port$
+$Zy_Tur$&#199;eviri Ba&#351;lang&#305;&#231; Portu$
+$Zy_Ger$Erster Translation Port$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str24$
+$Zy_Eng$Translation End Port$
+$Zy_Tur$&#199;eviri Biti&#351; Portu$
+$Zy_Ger$Erster Translation Port$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str25$
+$Zy_Eng$If Start Port and End Port configured to the same port, the input text of Translation Start Port can be configurable, and when user configure this value to different port number, its means cofigure for Port Translation.(one to one mapping)$
+$Zy_Tur$Ba&#351;lang&#305;&#231; Portu ve Biti&#351; Portu ayn&#305; port i&#231;in yap&#305;land&#305;r&#305;lm&#305;&#351;sa, &#199;eviri Ba&#351;lang&#305;&#231; &#8203;&#8203;Portu giri&#351; metni yap&#305;land&#305;r&#305;labilir olabilir ve kullan&#305;c&#305; bu de&#287;eri farkl&#305; bir port numaras&#305; i&#231;in yap&#305;land&#305;rd&#305;&#287;&#305;nda, bu, Port &#199;evirisi i&#231;in yap&#305;land&#305;rma anlam&#305;na gelir (bire bir e&#351;leme).$
+$Zy_Ger$Wenn der erste Port und der letzte Port auf denselben Port festgelegt werden, ist der Eingabetext f&#252;r den ersten Translation Port konfigurierbar. Wenn die Benutzer diesen Wert auf eine andere Portnummer setzen, bedeutet dies, dass die Konfiguration f&#252;r Port Translation erfolgt (Eins-zu-Eins Abbildung).$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str26$
+$Zy_Eng$WAN IP is optional. If user wants to present Multi-to-Multi NAT, user can assign the desired device WAN IP.$
+$Zy_Tur$ WAN IP iste&#287;e ba&#287;l&#305;d&#305;r. Kullan&#305;c&#305; &#199;ok Noktadan &#199;ok Noktaya NAT sunmak isterse, kullan&#305;c&#305; istenen cihaz WAN IP adresini atayabilir.$
+$Zy_Ger$Die Eingabe der WAN IP ist optional. Wenn Sie Multi-to-Multi NAT erreichen wollen, k&#246;nnen Sie die gew&#252;nschte WAN IP f&#252;r das Ger&#228;t zuweisen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str27$
+$Zy_Eng$Since TCP port $
+$Zy_Tur$TCP portu .... kullan&#305;ld&#305;&#287;&#305;ndan $
+$Zy_Ger$TCP-Port $
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str28$
+$Zy_Eng$Wake up this target by Wake On Lan(WOL)$
+$Zy_Tur$Wake on Lan(WOL) taraf&#305;ndan bu hedef uyand&#305;r&#305;lsm$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str29$
+$Zy_Eng$MAC address of WOL device$
+$Zy_Tur$WOL cihaz&#305;n MAC adresi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str2$
+$Zy_Eng$Status$
+$Zy_Tur$Durum$
+$Zy_Ger$Status$
+$Zy_Fre$&#201;tat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str3$
+$Zy_Eng$Service Name$
+$Zy_Tur$Hizmet Ad&#305;$
+$Zy_Ger$Service-Name$
+$Zy_Fre$Nom du service$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str4$
+$Zy_Eng$External Start Port$
+$Zy_Tur$Harici Ba&#351;lang&#305;&#231; Portu$
+$Zy_Ger$Erster externer Port$
+$Zy_Fre$Port de d&#233;but externe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str5$
+$Zy_Eng$External End Port$
+$Zy_Tur$Harici Biti&#351; Portu$
+$Zy_Ger$Letzter externer Port$
+$Zy_Fre$Port de fin externe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str6$
+$Zy_Eng$Internal Start Port$
+$Zy_Tur$Dahili Ba&#351;lang&#305;&#231; Portu$
+$Zy_Ger$Erster interner Port$
+$Zy_Fre$Port de d&#233;but interne$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str7$
+$Zy_Eng$Internal End Port$
+$Zy_Tur$Dahili Biti&#351; Portu$
+$Zy_Ger$Letzter interner Port$
+$Zy_Fre$Port de fin interne$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str8$
+$Zy_Eng$Server IP Address$
+$Zy_Tur$Sunucu IP Adresi$
+$Zy_Ger$Server-IP-Adresse$
+$Zy_Fre$Adresse IP du serveur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortForwarding_Str9$
+$Zy_Eng$Modify$
+$Zy_Tur$De&#287;i&#351;tir $
+$Zy_Ger$&#196;ndern$
+$Zy_Fre$Modifier$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Explain$
+$Zy_Eng$Port Triggering is a way to automate port forwarding with a little better security. It dynamically forwards connection or data to whatever LAN client made a certain outgoing connection. Example: You define port 25 as Trigger Port and port 113 as Open Port. If any of the LAN devices on your network creates an outgoing connection via port 25, all incoming connections via port 113 will temporarily go to that client.$
+$Zy_Tur$Port Tetikleme, daha iyi g&#252;venlik d&#252;zeyi ile, port y&#246;nlendirmeyi otomatik olarak tetiklemek i&#231;in kullan&#305;lan yoldur. Ba&#287;lant&#305; veya veriyi, d&#305;&#351;ar&#305; y&#246;nl&#252; ba&#287;lant&#305; yapan her Yerel A&#287; istemcisine dinamik olarak iletir. <br> &#214;rnek: Port 25'i Tetikleme Portu olarak ve port 113'&#252; A&#231;&#305;k Port olarak tan&#305;mlad&#305;n&#305;z. A&#287;&#305;n&#305;zdaki Yerel A&#287; cihazlar&#305;ndan herhangi biri, port 25 &#252;zerinden d&#305;&#351;ar&#305; y&#246;nl&#252; bir ba&#287;lant&#305; olu&#351;turursa, port 113 &#252;zerinden t&#252;m gelen ba&#287;lant&#305;lar ge&#231;ici olarak bu istemciye gider.$
+$Zy_Ger$Port Triggering ist eine Methode zur Automatisierung von Port Forwarding mit etwas besserer Sicherheit. Dabei werden Verbindungen oder Daten dynamisch weitergeleitet an einen beliebigen LAN-Client, der eine bestimmte ausgehende Verbindung aufgebaut hat. Beispiel: Sie definieren Port 25 als Trigger-Port und Port 113 als offenen Port. Wenn eines der LAN-Ger&#228;te in Ihrem Netzwerk eine ausgehende Verbindung &#252;ber Port 25 aufbaut, werden alle &#252;ber Port 113 eingehenden Verbindungen tempor&#228;r an diesen Client weitergeleitet.$
+$Zy_Fre$Le d&#233;but du port de d&#233;clenchement {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str1$
+$Zy_Eng$Triggering port start {{1}} is invalid.$
+$Zy_Tur$Tetikleme portu ba&#351;lang&#305;c&#305; &#8203;&#8203;{{1}} ge&#231;ersiz.$
+$Zy_Ger$Erster Trigger-Port {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le d&#233;but du port de d&#233;clenchement {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str10$
+$Zy_Eng$TCP port 1720 is used. Please change to another one.$
+$Zy_Tur$TCP portu 1720 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$TCP-Port 1720 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port TCP 1720 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str11$
+$Zy_Eng$TCP port 1723 is used. Please change to another one.$
+$Zy_Tur$TCP portu 1723 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$TCP-Port 1723 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port TCP 1723 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str12$
+$Zy_Eng$TCP port 6667 is used. Please change to another one.$
+$Zy_Tur$TCP portu 6667 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$TCP-Port 6667 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port TCP 6667 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str13$
+$Zy_Eng$UDP port 69 is used. Please change to another one.$
+$Zy_Tur$UDP portu 69 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$UDP-Port 69 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port UDP 69 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str14$
+$Zy_Eng$UDP port 161 is used. Please change to another one.$
+$Zy_Tur$UDP portu 161 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$UDP-Port 161 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port UDP 161 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str15$
+$Zy_Eng$UDP port 162 is used. Please change to another one.$
+$Zy_Tur$UDP portu 162 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$UDP-Port 162 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port UDP 162 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str16$
+$Zy_Eng$UDP port 517 is used. Please change to another one.$
+$Zy_Tur$UDP portu 517 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$UDP-Port 517 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port UDP 517 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str17$
+$Zy_Eng$UDP port 518 is used. Please change to another one.$
+$Zy_Tur$UDP portu 518 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$UDP-Port 518 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port UDP 518 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str18$
+$Zy_Eng$UDP port 5060 is used. Please change to another one.$
+$Zy_Tur$UDP portu 5060 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$UDP-Port 5060 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port UDP 5060 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str19$
+$Zy_Eng$Invaid Service Name!!$
+$Zy_Tur$Ge&#231;ersiz Hizmet Ad&#305;!$
+$Zy_Ger$Ung&#252;ltiger Service-Name!$
+$Zy_Fre$Nom de service non valide!!$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str2$
+$Zy_Eng$Triggering port end {{1}} is invalid.$
+$Zy_Tur$Tetikleme portu sonu &#8203;&#8203;{{1}} ge&#231;ersiz.$
+$Zy_Ger$Letzter Trigger-Port {{1}} ist ung&#252;ltig.$
+$Zy_Fre$La fin du port de d&#233;clenchement {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str20$
+$Zy_Eng$Service name has been used!.$
+$Zy_Tur$Hizmet ad&#305; kullan&#305;mda!.$
+$Zy_Ger$Service-Name wird bereits verwendet.$
+$Zy_Fre$Nom de service a &#233;t&#233; utilis&#233;!.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str21$
+$Zy_Eng$Triggering port start {{1}} is invalid.$
+$Zy_Tur$Tetikleme portu ba&#351;lang&#305;c&#305; &#8203;&#8203;{{1}} ge&#231;ersiz.$
+$Zy_Ger$Erster Trigger-Port {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le d&#233;but du port de d&#233;clenchement {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str22$
+$Zy_Eng$Triggering port end {{1}} is invalid.$
+$Zy_Tur$Tetikleme portu sonu &#8203;&#8203;{{1}} ge&#231;ersiz.$
+$Zy_Ger$Letzter Trigger-Port {{1}} ist ung&#252;ltig.$
+$Zy_Fre$La fin du port de d&#233;clenchement {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str23$
+$Zy_Eng$Triggering port range [{{1}}-{{2}}] is invalid.$
+$Zy_Tur$Tetikleme portu aral&#305;&#287;&#305; &#8203;&#8203;[{{1}}-{{2}}] ge&#231;ersiz. $
+$Zy_Ger$Trigger-Portbereich [{{1}}-{{2}}] ist ung&#252;ltig.$
+$Zy_Fre$La plage du port de d&#233;clenchement [{{1}}-{{2}}] n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str24$
+$Zy_Eng$Open port start {{1}} is invalid.$
+$Zy_Tur$A&#231;&#305;k port ba&#351;lang&#305;c&#305; {{1}} ge&#231;ersiz.$
+$Zy_Ger$Erster offener Port {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le d&#233;but du port ouvert {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str25$
+$Zy_Eng$Open port end {{1}} is invalid.$
+$Zy_Tur$A&#231;&#305;k port sonu {{1}} ge&#231;ersiz.$
+$Zy_Ger$Letzter offener Port {{1}} ist ung&#252;ltig.$
+$Zy_Fre$La fin du port ouvert {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str26$
+$Zy_Eng$Open port range [{{1}}-{{2}}] is invalid.$
+$Zy_Tur$A&#231;&#305;k port aral&#305;&#287;&#305; {{1}} ge&#231;ersiz.$
+$Zy_Ger$Bereich der offenen Ports [{{1}}-{{2}}] ist ung&#252;ltig.$
+$Zy_Fre$La plage du port ouvert [{{1}}-{{2}}] n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str27$
+$Zy_Eng$TCP port 50805 is used. Please change to another one.$
+$Zy_Tur$TCP portu 50805 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$TCP-Port 50805 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port TCP 50805 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str28$
+$Zy_Eng$TCP port 21 is used. Please change to another one.$
+$Zy_Tur$TCP portu 21 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$TCP-Port 21 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port TCP 21 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str29$
+$Zy_Eng$TCP port 80 is used. Please change to another one.$
+$Zy_Tur$TCP portu 80 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$TCP-Port 80 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port TCP 80 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str3$
+$Zy_Eng$Triggering port range [{{1}}-{{2}}] is invalid.$
+$Zy_Tur$Tetikleme portu aral&#305;&#287;&#305; &#8203;&#8203;[{{1}}-{{2}}] ge&#231;ersiz.$
+$Zy_Ger$Trigger-Portbereich [{{1}}-{{2}}] ist ung&#252;ltig.$
+$Zy_Fre$La plage du port de d&#233;clenchement [{{1}}-{{2}}] n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str30$
+$Zy_Eng$TCP port 1720 is used. Please change to another one.$
+$Zy_Tur$TCP portu 1720 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$TCP-Port 1720 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port TCP 1720 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str31$
+$Zy_Eng$TCP port 1723 is used. Please change to another one.$
+$Zy_Tur$TCP portu 1723 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$TCP-Port 1723 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port TCP 1723 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str32$
+$Zy_Eng$TCP port 6667 is used. Please change to another one.$
+$Zy_Tur$TCP portu 6667 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$TCP-Port 6667 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port TCP 6667 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str33$
+$Zy_Eng$UDP port 69 is used. Please change to another one.$
+$Zy_Tur$TCP portu 69 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$UDP-Port 69 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port UDP 69 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str34$
+$Zy_Eng$UDP port 161 is used. Please change to another one.$
+$Zy_Tur$UDP portu 161 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$UDP-Port 161 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port UDP 161 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str35$
+$Zy_Eng$UDP port 162 is used. Please change to another one.$
+$Zy_Tur$UDP portu 162 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$UDP-Port 162 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port UDP 162 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str36$
+$Zy_Eng$UDP port 517 is used. Please change to another one.$
+$Zy_Tur$UDP portu 517 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$UDP-Port 517 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port UDP 517 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str37$
+$Zy_Eng$UDP port 518 is used. Please change to another one.$
+$Zy_Tur$UDP portu 518 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$UDP-Port 518 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port UDP 518 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str38$
+$Zy_Eng$UDP port 5060 is used. Please change to another one.$
+$Zy_Tur$UDP portu 5060 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$UDP-Port 5060 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port UDP 5060 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str39$
+$Zy_Eng$Invaid Service Name!!$
+$Zy_Tur$Ge&#231;ersiz Hizmet Ad&#305;!$
+$Zy_Ger$Ung&#252;ltiger Service-Name!$
+$Zy_Fre$Nom de service non valide!!$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str4$
+$Zy_Eng$Open port start {{1}} is invalid.$
+$Zy_Tur$A&#231;&#305;k port ba&#351;lang&#305;c&#305; {{1}} ge&#231;ersiz.$
+$Zy_Ger$Erster offener Port {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le d&#233;but du port ouvert {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str40$
+$Zy_Eng$Error! The sum of trigger ports in all rules is greater than 1000 or open port range is greater than 1000.$
+$Zy_Tur$Hata! T&#252;m kurallardaki tetikleyici portlar&#305;n toplam&#305; 1000&#39; den veya a&#231;&#305;k port aral&#305;&#287;&#305; 1000&#39;den daha b&#252;y&#252;k.$
+$Zy_Ger$Fehler! Die Summe der Trigger-Ports in allen Regeln bzw. der Bereich der offenen Ports ist gr&#246;&#223;er als 1000.$
+$Zy_Fre$Erreur ! La somme des ports de d&#233;clenchement de l&#39;ensemble des r&#232;gles est sup&#233;rieure &#224; 1000 ou la plage des ports ouverts est sup&#233;rieure &#224; 1000.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str40_1$
+$Zy_Eng$Error! The sum of trigger ports in all rules is greater than$
+$Zy_Tur$Hata! T&#252;m kurallardaki tetikleyici portlar&#305;n toplam&#305; ....&#39; den daha b&#252;y&#252;k$
+$Zy_Ger$Fehler! Die Summe der Trigger-Ports in allen Regeln ist gr&#246;&#223;er als$
+$Zy_Fre$Erreur ! La somme des ports de declenchement de l&#39;ensemble des regles est superieure a$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str40_2$
+$Zy_Eng$or open port range is greater than $
+$Zy_Tur$veya a&#231;&#305;k port aral&#305;&#287;&#305; ....&#39; den daha b&#252;y&#252;k $
+$Zy_Ger$bzw. der Bereich der offenen Ports ist gr&#246;&#223;er als  $
+$Zy_Fre$ou la plage des ports ouverts est superieure a$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str41$
+$Zy_Eng$Error!$
+$Zy_Tur$Hata!$
+$Zy_Ger$Fehler!$
+$Zy_Fre$Erreur !$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str43$
+$Zy_Eng$TCP port 22 is used. Please change to another one.$
+$Zy_Tur$TCP portu 22 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$TCP-Port 22 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str44$
+$Zy_Eng$TCP port 23 is used. Please change to another one.$
+$Zy_Tur$TCP portu 23 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$TCP-Port 23 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str45$
+$Zy_Eng$TCP port 443 is used. Please change to another one.$
+$Zy_Tur$TCP portu 443 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$TCP-Port 443 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str42$
+$Zy_Eng$TCP port 7547 is used. Please change to another one.$
+$Zy_Tur$TCP portu 7547 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$TCP-Port 7547 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port TCP 7547 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str5$
+$Zy_Eng$Open port end {{1}} is invalid.$
+$Zy_Tur$A&#231;&#305;k port sonu {{1}} ge&#231;ersiz.$
+$Zy_Ger$Letzter offener Port {{1}} ist ung&#252;ltig.$
+$Zy_Fre$La fin du port ouvert {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str6$
+$Zy_Eng$Open port range [{{1}}-{{2}}] is invalid.$
+$Zy_Tur$A&#231;&#305;k port aral&#305;&#287;&#305; {{1}} ge&#231;ersiz.$
+$Zy_Ger$Bereich der offenen Ports [{{1}}-{{2}}] ist ung&#252;ltig.$
+$Zy_Fre$La plage du port ouvert [{{1}}-{{2}}] n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str7$
+$Zy_Eng$TCP port 50805 is used. Please change to another one.$
+$Zy_Tur$TCP portu 50805 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$TCP-Port 50805 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port TCP 50805 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str8$
+$Zy_Eng$TCP port 21 is used. Please change to another one.$
+$Zy_Tur$TCP portu 21 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$TCP-Port 21 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port TCP 21 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_AlertMsg_Str9$
+$Zy_Eng$TCP port 80 is used. Please change to another one.$
+$Zy_Tur$TCP portu 80 kullan&#305;l&#305;yor. L&#252;tfen bir di&#287;eri ile de&#287;i&#351;tiriniz.$
+$Zy_Ger$TCP-Port 80 wird bereits verwendet. Bitte anderen Port angeben.$
+$Zy_Fre$Le port TCP 80 est utilis&#233;. Veuillez en choisir un autre.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str1$
+$Zy_Eng$Port Triggering is a way to automate port forwarding, and can allow computers on local network to provide services that would normally require a fixed address on the local network.$
+$Zy_Tur$Port Tetikleme, port y&#246;nlendirmeyi otomatikle&#351;tirmek i&#231;in kullan&#305;lan bir yoldur ve yerel a&#287; &#252;zerindeki bilgisayarlar&#305;n normalde yerel a&#287; &#252;zerinde sabit bir adres gerektirecek hizmeti vermesine olanak sa&#287;layabilir.$
+$Zy_Ger$Port Triggering ist eine Methode zur Automatisierung von Port Forwarding. Damit k&#246;nnen Computer in einem lokalen Netzwerk Services anbieten, f&#252;r die sie normalerweise eine feste Adresse im lokalen Netzwerk ben&#246;tigen w&#252;rden.$
+$Zy_Fre$Le d&#233;clenchement de port est un moyen d&#39;automatiser la redirection de port, et peut permettre aux ordinateurs sur le r&#233;seau local de fournir des services qui n&#233;cessiteraient normalement une adresse fixe sur le r&#233;seau local.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str10$
+$Zy_Eng$Open Proto.$
+$Zy_Tur$A&#231;&#305;k Protokol$
+$Zy_Ger$Prot. (&#214;ffnen)$
+$Zy_Fre$Ouvrir Proto.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str11$
+$Zy_Eng$Modify$
+$Zy_Tur$De&#287;i&#351;tir $
+$Zy_Ger$&#196;ndern$
+$Zy_Fre$Modifier$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str12$
+$Zy_Eng$Notes$
+$Zy_Tur$Notlar$
+$Zy_Ger$Hinweise$
+$Zy_Fre$Remarques$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str13$
+$Zy_Eng$1. When the protocol is TCP/UDP, the ports are counted twice.$
+$Zy_Tur$1. Protokol TCP / UDP oldu&#287;unda, portlar iki kez say&#305;l&#305;r.$
+$Zy_Ger$1. Wenn TCP/UDP als Protokoll verwendet wird, werden die Ports zweimal gez&#228;hlt.$
+$Zy_Fre$1. Lorsque le protocole est TCP/UDP, les ports sont compt&#233;s deux fois.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str14$
+$Zy_Eng$2. TCP port 7547 is reserved for TR-069 connection request port.$
+$Zy_Tur$2. TCP portu 7547, TR-069 ba&#287;lant&#305; istek portu i&#231;in ayr&#305;lm&#305;&#351;.$
+$Zy_Ger$2. TCP-Port 7547 ist als Port f&#252;r TR-069 Verbindungsanforderungen reserviert.$
+$Zy_Fre$2. Le port TCP 7547 est r&#233;serv&#233; au port de demande de connexion TR-069.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str15$
+$Zy_Eng$3. TCP ports 21, 80, 1720, 1723, 6667 and UDP ports 69, 161, 162, 517, 518, 5060 are registered for special services. Triggering these ports will not open the opening ports.$
+$Zy_Tur$3. TCP portlar&#305; 21, 80, 1720, 1723, 6667 ve UDP portlar&#305; 69, 161, 162, 517, 518, 5060 &#246;zel hizmetler i&#231;in kay&#305;tl&#305;d&#305;r. Bu portlar&#305; tetiklemek a&#231;&#305;l&#305;&#351; portlar&#305;n&#305; a&#231;maz.$
+$Zy_Ger$3. Die TCP-Ports 21, 80, 1720, 1723, 6667 und UDP-Ports 69, 161, 162, 517, 518, 5060 sind f&#252;r spezielle Services vorgesehen. Triggering bei diesen Ports &#246;ffnet diese Ports nicht.$
+$Zy_Fre$3. Les ports TCP 21, 80, 1720, 1723, 6667 et les ports UDP 69, 161, 162, 517, 518, 5060 sont enregistr&#233;s pour des services sp&#233;ciaux. Le d&#233;clenchement de ces ports n&#39;ouvrira pas les ports d&#39;ouverture.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str16$
+$Zy_Eng$Add new rule$
+$Zy_Tur$Yeni kural ekle$
+$Zy_Ger$Neue Regel hinzuf&#252;gen$
+$Zy_Fre$Ajouter une nouvelle r&#232;gle$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str17$
+$Zy_Eng$Active$
+$Zy_Tur$Aktif$
+$Zy_Ger$Aktiv$
+$Zy_Fre$Actif$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str18$
+$Zy_Eng$Port Triggering Configuration$
+$Zy_Tur$Port Tetikleme Yap&#305;land&#305;rmas&#305;$
+$Zy_Ger$Port Triggering konfigurieren$
+$Zy_Fre$Configuration du d&#233;clenchement de port$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str19$
+$Zy_Eng$Edit$
+$Zy_Tur$D&#252;zenle$
+$Zy_Ger$Bearbeiten$
+$Zy_Fre$Editer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str2$
+$Zy_Eng$Status$
+$Zy_Tur$Durum$
+$Zy_Ger$Status$
+$Zy_Fre$&#201;tat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str20$
+$Zy_Eng$Delete$
+$Zy_Tur$Sil $
+$Zy_Ger$L&#246;schen$
+$Zy_Fre$Supprimer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str21$
+$Zy_Eng$Port Triggering Edit$
+$Zy_Tur$Port Tetikleme D&#252;zenleme$
+$Zy_Ger$Port Triggering bearbeiten$
+$Zy_Fre$Modification du d&#233;clenchement de port$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str22$
+$Zy_Eng$Port Triggering Delete$
+$Zy_Tur$Port Tetikleme Silme$
+$Zy_Ger$Port Triggering l&#246;schen$
+$Zy_Fre$Suppression du D&#233;clenchement de port $
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str23$
+$Zy_Eng$Open Protocol$
+$Zy_Tur$A&#231;&#305;k Protokol$
+$Zy_Ger$Prot. (&#214;ffnen)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str24$
+$Zy_Eng$Trigger Protocol$
+$Zy_Tur$Tetikleyici Protokol$
+$Zy_Ger$Trigger-Protokoll$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str25$
+$Zy_Eng$The sum of trigger ports in all rules must be less than 1000 and every open port range must be  less than 1000.When the protocol is TCP/UDP, the ports are counted twice.$
+$Zy_Tur$T&#252;m kurallardaki tetikleyici portlar&#305;n&#305;n toplam&#305; 1000&#39; den ve her a&#231;&#305;k port aral&#305;&#287;&#305; 1000&#39;den daha az olmal&#305;d&#305;r. Protokol TCP / UDP oldu&#287;unda, portlar iki kez say&#305;l&#305;r.$
+$Zy_Ger$Die Summe der Trigger-Ports in allen Regeln muss kleiner als 1000 sein. Auch jeder Bereich mit offenen Ports muss kleiner als 1000 sein. Wenn TCP/UDP als Protokoll verwendet wird, werden die Ports zweimal gez&#228;hlt.$
+$Zy_Fre$(null$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str3$
+$Zy_Eng$Service Name$
+$Zy_Tur$Hizmet Ad&#305;$
+$Zy_Ger$Service-Name$
+$Zy_Fre$Nom du service$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str4$
+$Zy_Eng$WAN Interface$
+$Zy_Tur$WAN Aray&#252;z&#252;$
+$Zy_Ger$WAN-Schnittstelle$
+$Zy_Fre$Interface WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str5$
+$Zy_Eng$Trigger Start Port$
+$Zy_Tur$Ba&#351;lang&#305;&#231; Portunu Tetikleme$
+$Zy_Ger$Erster Trigger-Port$
+$Zy_Fre$Port de d&#233;clenchement de d&#233;but$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str6$
+$Zy_Eng$Trigger End Port$
+$Zy_Tur$Biti&#351; Portunu Tetikleme$
+$Zy_Ger$Letzter Tigger-Port$
+$Zy_Fre$Port de d&#233;clenchement de fin$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str7$
+$Zy_Eng$Trigger Proto.$
+$Zy_Tur$Tetikleyici Protokol$
+$Zy_Ger$Trigger-Prot.$
+$Zy_Fre$Proto de d&#233;clenchement.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str8$
+$Zy_Eng$Open Start Port$
+$Zy_Tur$Ba&#351;lang&#305;&#231; Portunu A&#231;ma$
+$Zy_Ger$Erster offener Port$
+$Zy_Fre$Ouvrir le port de d&#233;but$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_PortTriggering_Str9$
+$Zy_Eng$Open End Port$
+$Zy_Tur$Biti&#351; Portunu A&#231;ma$
+$Zy_Ger$Letzter offener Port$
+$Zy_Fre$Ouvrir le port de fin$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Sessions_AlertMsg_Str1$
+$Zy_Eng$Max session number should be between 128 and 15000.$
+$Zy_Tur$Maksimum oturum say&#305;s&#305; 128 ve 15000 aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$Max. Anzahl Sitzungen sollte zwischen 128 und 15000 liegen.$
+$Zy_Fre$Le nombre de sessions max doit &#234;tre compris entre 128 et 15000.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Sessions_AlertMsg_Str2$
+$Zy_Eng$Max session number should be between 128 and 15000.$
+$Zy_Tur$Maksimum oturum say&#305;s&#305; 128 ve 15000 aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$Max. Anzahl Sitzungen sollte zwischen 128 und 15000 liegen.$
+$Zy_Fre$Le nombre de sessions max doit &#234;tre compris entre 128 et 15000.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Sessions_Str1$
+$Zy_Eng$You can choose to limit the number of NAT sessions per host to control the bandwidth on your network.$
+$Zy_Tur$A&#287;&#305;n&#305;zdaki bant geni&#351;li&#287;ini kontrol etmek i&#231;in ana bilgisayar ba&#351;&#305;na d&#252;&#351;en NAT oturum say&#305;s&#305;n&#305; s&#305;n&#305;rlamay&#305; se&#231;ebilirsiniz.$
+$Zy_Ger$Sie k&#246;nnen die Anzahl von NAT-Sitzungen pro Host begrenzen, um die Bandbreite in Ihrem Netzwerk zu steuern.$
+$Zy_Fre$Vous pouvez choisir de limiter le nombre de sessions NAT par h&#244;te pour contr&#244;ler la bande passante sur votre r&#233;seau.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Sessions_Str2$
+$Zy_Eng$Maximum NAT session per Host :$
+$Zy_Tur$Ana bilgisayar ba&#351;&#305;na d&#252;&#351;en maksimum NAT oturum say&#305;s&#305;:$
+$Zy_Ger$Max. NAT-Sitzungen pro Host:$
+$Zy_Fre$Session NAT maximum par h&#244;te:$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Sessions_Str3$
+$Zy_Eng$Note$
+$Zy_Tur$Not$
+$Zy_Ger$Hinweis$
+$Zy_Fre$Remarque$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Sessions_Str4$
+$Zy_Eng$Enter session number and click \'Apply\' to activate this feature.$
+$Zy_Tur$Oturum say&#305;s&#305;n&#305; girin ve bu &#246;zelli&#287;i etkinle&#351;tirmek i&#231;in \'Uygula\' d&#252;&#287;mesine t&#305;klay&#305;n&#305;z.$
+$Zy_Ger$Geben Sie die Anzahl der Sitzungen ein und klicken Sie auf \'Anwenden\', um diese Funktion zu aktivieren.$
+$Zy_Fre$Entrez le nombre de sessions et cliquez sur &#171;&#160;Appliquer&#160;&#187; pour activer cette fonctionnalit&#233;.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Sessions_Str5$
+$Zy_Eng$Clear the session number field and click \'Apply\' to deactivate this feature.$
+$Zy_Tur$Bu &#246;zelli&#287;i devre d&#305;&#351;&#305; b&#305;rakmak i&#231;in oturum say&#305;s&#305; alan&#305;n&#305; temizleyin  ve \'Uygula\' d&#252;&#287;mesine t&#305;klay&#305;n&#305;z.$
+$Zy_Ger$L&#246;schen Sie das Feld f&#252;r die Anzahl der Sitzungen und klicken Sie auf \'Anwenden\', um diese Funktion zu deaktivieren.$
+$Zy_Fre$Effacez le champ du nombre de sessions et cliquez sur &#171;&#160;Appliquer&#160;&#187; pour d&#233;sactiver cette fonctionnalit&#233;.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Sessions_Str6$
+$Zy_Eng$NAT Session$
+$Zy_Tur$NAT Oturumu$
+$Zy_Ger$NAT-Sitzung$
+$Zy_Fre$Session NAT$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Address_Mapping_Explain$
+$Zy_Eng$Address Mapping can map local address to global address.$
+$Zy_Tur$(null)$
+$Zy_Ger$Mit Hilfe der Adressabbildung kann man die lokale Adresse(n) auf globale Adresse(n) abbilden.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Address_Mapping_Str1$
+$Zy_Eng$Address Mapping$
+$Zy_Tur$Adres E&#351;le&#351;tirme$
+$Zy_Ger$Abdressabbildung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Address_Mapping_Str2$
+$Zy_Eng$Local Start IP$
+$Zy_Tur$Yerel Ba&#351;lang&#305;&#231; &#8203;&#8203;IP Adresi$
+$Zy_Ger$Erste lokale IP$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Address_Mapping_Str3$
+$Zy_Eng$Local End IP$
+$Zy_Tur$Yerel Biti&#351; IP Adresi$
+$Zy_Ger$Letzte lokale IP$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Address_Mapping_Str4$
+$Zy_Eng$Global Start IP$
+$Zy_Tur$Global Ba&#351;lang&#305;&#231; &#8203;&#8203;IP Adresi$
+$Zy_Ger$Erste globale IP$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Address_Mapping_Str5$
+$Zy_Eng$Global End IP$
+$Zy_Tur$Global Biti&#351; IP Adresi$
+$Zy_Ger$Letzte globale IP$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Address_Mapping_Str6$
+$Zy_Eng$One-to-One$
+$Zy_Tur$Bire Bir$
+$Zy_Ger$Eins-zu-Eins$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Address_Mapping_Str7$
+$Zy_Eng$Many-to-One$
+$Zy_Tur$&#199;oktan Bire$
+$Zy_Ger$Viele-zu-Eins$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Address_Mapping_Str8$
+$Zy_Eng$Many-to-Many$
+$Zy_Tur$&#199;oktan &#199;o&#287;a$
+$Zy_Ger$Viele-zu-Viele$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_NAT_Address_Mapping_AlertMsg_Str1$
+$Zy_Eng$Please enter valid Local Start IP.$
+$Zy_Tur$L&#252;tfen ge&#231;erli Yerel Ba&#351;lang&#305;&#231; &#8203;&#8203;IP adresi girin.$
+$Zy_Ger$Bitte geben Sie eine g&#252;ltige erste lokale IP ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Address_Mapping_AlertMsg_Str2$
+$Zy_Eng$Please enter valid Global End IP.$
+$Zy_Tur$L&#252;tfen ge&#231;erli Global Biti&#351; IP adresi girin.$
+$Zy_Ger$Bitte geben Sie eine g&#252;ltige letzte globale IP ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Address_Mapping_AlertMsg_Str3$
+$Zy_Eng$Local Start IP and Local End IP must be in the same subnet.$
+$Zy_Tur$Yerel Ba&#351;lang&#305;&#231; &#8203;&#8203;IP ve Yerel Biti&#351; IP adresinin alt a&#287; maskesi ayn&#305; olmal&#305;d&#305;r.$
+$Zy_Ger$Erste und letzte lokale IP m&#252;ssen sich im selben Subnetz befinden.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Address_Mapping_AlertMsg_Str4$
+$Zy_Eng$Global Start IP and Global End IP must be in the same subnet.$
+$Zy_Tur$Yerel Ba&#351;lang&#305;&#231; &#8203;&#8203;IP ve Yerel Biti&#351; IP adresinin alt a&#287; maskesi ayn&#305; olmal&#305;d&#305;r.$
+$Zy_Ger$Erste und letzte globale IP m&#252;ssen sich im selben Subnetz befinden.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Address_Mapping_AlertMsg_Str5$
+$Zy_Eng$Please enter valid Local End IP.$
+$Zy_Tur$L&#252;tfen ge&#231;erli Yerel Biti&#351; IP adresi girin.$
+$Zy_Ger$Bitte geben Sie eine g&#252;ltige letzte lokale IP ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Applications_Str83_2$
+$Zy_Eng$MechWarrior 4 - Black Knight / Mercenaries / Vengeance$
+$Zy_Tur$MechWarrior 4 - Black Knight / Mercenaries / Vengeance$
+$Zy_Ger$MechWarrior 4 - Black Knight / Mercenaries / Vengeance$
+$Zy_Fre$MechWarrior 4 - Black Knight / Mercenaries / Vengeance$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Common_Set$
+$Zy_Eng$Set$
+$Zy_Tur$Kur$
+$Zy_Ger$Einstellen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_NAT_Address_Mapping_Str11$
+$Zy_Eng$Address Mapping Configuration$
+$Zy_Tur$Adres E&#351;le&#351;tirme Konfig&#252;rasyonu$
+$Zy_Ger$Adressenabbildung konfigurieren$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$

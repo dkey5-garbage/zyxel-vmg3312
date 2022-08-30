@@ -1,0 +1,120 @@
+# /etc_ro/mwr/3g-devices
+
+# vendor product name driver device operator [offset]
+
+# vendor - must match the Vendor string in /proc/bus/usb/devices
+# product - must match the ProdID string in /proc/bus/usb/devices
+# name - the string stored to nvram by the webUI
+# driver - the name of the driver in /lib/modules
+# device - the name of the serial device in /dev without trailing character
+# operator - use the operator-specific chat script for dialing
+# offset - the trailing character of the modem port device in /dev
+
+########
+# Sprint
+
+# 598U by Sierra Wireless
+1199 0025 SPR_598U usbserial ttyUSB cdma
+
+# Merlin C777 by Novatel Wireless
+1410 6000 SPR_C777 usbserial ttyUSB cdma
+
+# 3G/4G USB Modem U300
+16d8 6002 SPR_U300 usbserial ttyUSB cdma
+
+# AirCard 597E by Sierra Wireless
+1199 0021 SPR_597E usbserial ttyUSB cdma
+
+# Merlin EX720 by Novatel Wireless
+1410 1120 SPR_EX720 usbserial ttyUSB cdma
+
+#########
+# Verizon
+
+# Verizon Wireless UM175 USB Modem
+#106c 3714 VZW_UM175 cdc-acm ttyACM cdma
+106c 3714 VZW_UM175 usbserial ttyUSB cdma
+
+# Verizon Wireless UMW190 Global USB Modem
+106c 3716 VZW_UMW190 cdc-acm ttyACM cdma
+
+# Pantech 4G LTE USB Modem UML290
+106c 3718 VZW_UML290 cdc-acm ttyACM lte
+
+# LG 4G LTE USB Modem VL600
+1004 61aa VZW_VL600 lg-vl600 ttyACM lte 0
+
+# Verizon Wireless USB760 Modem
+1410 6000 VZW_USB760 usbserial ttyUSB cdma
+
+# Verizon Wireless PC770 2-in-1 Card and ExpressCard
+1410 6000 VZW_PC770 usbserial ttyUSB cdma
+
+# Verizon Wireless 4G LTE USB Modem 551L
+1410 b001 VZW_USB551L usbserial ttyUSB lte
+
+# Verizon Wireless KPC680 ExpressCard
+0c88 180a VZW_KPC680 usbserial ttyUSB cdma
+
+######
+# AT&T
+
+# AT&T USBConnect Mercury
+1199 6880 ATT_Mercury usbserial ttyUSB gsm 3
+
+# AT&T USBConnect Quicksilver
+0af0 d033 ATT_Quicksilver hso ttyHS gsm
+
+# AT&T USBConnect Velocity
+0af0 7a05 ATT_Velocity hso ttyHS gsm
+
+# Option GT Ultra Express
+#0af0 7011 ATT_Ultra hso ttyHS gsm
+
+###############
+# Miscellaneous
+
+# ZTE MF100, MF112, MF626
+19d2 0031 Misc_MF636 usbserial ttyUSB gsm 2
+
+# ZTE MF636
+#19d2 0031 Misc_MF636 usbserial ttyUSB gsm 1
+
+# ZTE MF637
+19d2 0121 Misc_MF637 usbserial ttyUSB gsm 4
+
+# Huawei E270
+12d1 1003 Misc_E270 usbserial ttyUSB gsm
+
+####################################
+# Tested by BSE, unconfirmed by BARD
+
+# Sierra Wireless Aircard 875U
+1199 6856 ATT_875U usbserial ttyUSB gsm
+
+# Novatel Ovation MC950D
+1410 4400 Misc_MC950D usbserial ttyUSB gsm
+
+# Novatel Ovation MC990D
+1410 7001 Misc_MC990D usbserial ttyUSB gsm
+
+# Aircard 595U by Sierra Wireless
+1199 0120 SPR_595U usbserial ttyUSB cdma
+
+# ZTE MF626 (vid/pid conflict with MF636)
+#19d2 0031 Misc_MF626 usbserial ttyUSB cdma
+
+# Verizon Wireless USB727 Modem
+1410 4100 VZW_USB727 usbserial ttyUSB cdma
+
+###############################
+# Windows Mobile 6.x smartphone
+
+# Samsung Jack
+#04e8 04e8 WM6_Jack RNDIS noscan gsm
+
+###############################
+# VKOM 3G DONGLE
+
+# VKOM 301USB
+1c9e 9605 VKOM_301USB usbserial ttyUSB gsm 3

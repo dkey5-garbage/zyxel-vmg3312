@@ -1,0 +1,1396 @@
+﻿#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+#include<time.h>
+#include "languages.h"
+
+
+
+$NAME$MLG_System_IGMPGroup_Str1$
+$Zy_Eng$IGMP Group$
+$Zy_Tur$IGMP Grubu$
+$Zy_Ger$IGMP-Gruppe$
+$Zy_Fre$Groupe IGMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_IGMPGroup_Str2$
+$Zy_Eng$The Internet Group Management Protocol (IGMP) is a communication protocol which can be used for more efficient use of online streaming video. This page shows the status of IGMP.$
+$Zy_Tur$Internet Grubu Y&#246;netim Protokol&#252; (IGMP) &#231;evrimi&#231;i  video ak&#305;&#351; yay&#305;n&#305;n&#305; daha etkili kullanmak i&#231;in kullan&#305;lan bir ileti&#351;im protokol&#252;d&#252;r. Bu sayfa IGMP&#8217;nin durumunu g&#246;stermektedir.$
+$Zy_Ger$Das Kommunikationsprotokoll IGMP (Internet Group Management Protocol) kann f&#252;r effizientere Nutzung von Online Video Streaming verwendet werden. Auf dieser Seite wird der Status von IGMP angezeigt.$
+$Zy_Fre$L&#39;Internet Group Management Protocol (IGMP) est un protocole de communication pouvant &#234;tre utilis&#233; pour une utilisation plus efficace de streaming vid&#233;o en ligne. Cette page indique l&#39;&#233;tat d&#39;IGMP.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_IGMPGroup_Str3$
+$Zy_Eng$Interface$
+$Zy_Tur$Aray&#252;z$
+$Zy_Ger$Schnittstelle$
+$Zy_Fre$Interface$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_IGMPGroup_Str4$
+$Zy_Eng$Multicast Group$
+$Zy_Tur$Multicast Grup$
+$Zy_Ger$Multicast-Gruppe$
+$Zy_Fre$Groupe multidiffusion$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_IGMPGroup_Str5$
+$Zy_Eng$Filter Mode$
+$Zy_Tur$Filtre Modu$
+$Zy_Ger$Filter-Modus$
+$Zy_Fre$Mode Filtre$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_IGMPGroup_Str6$
+$Zy_Eng$Source List$
+$Zy_Tur$Kaynak Listesi$
+$Zy_Ger$Liste der Quell-IPs$
+$Zy_Fre$Liste source$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_IGMPGroup_Str7$
+$Zy_Eng$The Multicast Listener Discovery (MLD) is a communication protocol for IPv6 which can be used for more efficient use of online streaming video. This page shows the status of MLD.$
+$Zy_Tur$MLD , &#231;evirimi&#231;i video ak&#305;&#351;&#305;n&#305;n daha verimli kullan&#305;m&#305; i&#231;in IPv6&#8217;da ullan&#305;lan bir ileti&#351;im protokol&#252;d&#252;r. Bu sayfa MLD durumunu g&#246;sterir.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_IGMPStatistics_Str1$
+$Zy_Eng$IGMP Statistics$
+$Zy_Tur$IGMP &#304;statistikleri$
+$Zy_Ger$IGMP-Statistik$
+$Zy_Fre$Statistiques IGMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_IGMPStatistics_Str2$
+$Zy_Eng$The Internet Group Management Protocol (IGMP) is a communication protocol which can be used for more efficient use of online streaming video. This page shows the statistics of IGMP. When the total time is not available, which means CPE does not get time by NTP.$
+$Zy_Tur$Internet Grubu Y&#246;netim Protokol&#252; (IGMP) &#231;evrimi&#231;i video ak&#305;&#351; yay&#305;n&#305;n&#305; daha etkili kullanmak i&#231;in kullan&#305;lan bir ileti&#351;im protokol&#252;d&#252;r. Bu sayfa IGMP&#8217;nin istatistiklerini g&#246;stermektedir. Toplam s&#252;re mevcut olmad&#305;&#287;&#305; zaman, CPE NTP taraf&#305;ndan s&#252;re almad&#305;&#287;&#305; anlam&#305;na gelir.$
+$Zy_Ger$Das Kommunikationsprotokoll IGMP (Internet Group Management Protocol) kann f&#252;r effizientere Nutzung von Online Video Streaming verwendet werden. Auf dieser Seite werden die Statistiken von IGMP angezeigt. Wenn die Gesamtzeit nicht verf&#252;gbar ist, hei&#223;t das, dass die NTP-Verbindung fehlt und das CPE-Ger&#228;t die Zeit nicht &#252;ber NTP erh&#228;lt.$
+$Zy_Fre$L&#39;Internet Group Management Protocol (IGMP) est un protocole de communication pouvant &#234;tre utilis&#233; pour une utilisation plus efficace de streaming vid&#233;o en ligne. Cette page indique les statistiques d&#39;IGMP. Quand le temps total n&#39;est pas disponible, ce qui signifie que CPE n&#39;obtient pas le temps par NTP.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_IGMPStatistics_Str3$
+$Zy_Eng$IGMP Multicast Group Statistics$
+$Zy_Tur$IGMP Multicast Grubu &#304;statistikleri$
+$Zy_Ger$IGMP Multicast-Gruppen-Statistik$
+$Zy_Fre$Statistiques du groupe multidiffusion d&#39;IGMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_IGMPStatistics_Str4$
+$Zy_Eng$Last Report Time$
+$Zy_Tur$Son Rapor S&#252;resi$
+$Zy_Ger$Zeit des letzten Berichts$
+$Zy_Fre$Heure du dernier rapport$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_IGMPStatistics_Str5$
+$Zy_Eng$Total Time(sec)$
+$Zy_Tur$Toplam S&#252;re(sn)$
+$Zy_Ger$Gesamtzeit (s)$
+$Zy_Fre$Dur&#233;e totale (sec)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_IGMPStatistics_Str6$
+$Zy_Eng$Total Join$
+$Zy_Tur$Toplam Kat&#305;l&#305;m$
+$Zy_Ger$Join (Teilnahme) insgesamt$
+$Zy_Fre$Joint total$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_IGMPStatistics_Str7$
+$Zy_Eng$Total Leaves$
+$Zy_Tur$Toplam Ayr&#305;lma$
+$Zy_Ger$Leave (Verlassen) insgesamt$
+$Zy_Fre$Quitt&#233; total$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_IGMPStatistics_Str8$
+$Zy_Eng$IGMP LAN Host Statistics$
+$Zy_Tur$IGMP LAN Kullan&#305;c&#305; &#304;statistikleri$
+$Zy_Ger$IGMP LAN-Host-Statistik$
+$Zy_Fre$Statistiques d&#39;h&#244;te LAN IGMP $
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_IGMPStatistics_Str9$
+$Zy_Eng$Host Address$
+$Zy_Tur$Kullan&#305;c&#305; Adresi$
+$Zy_Ger$Host-Adresse$
+$Zy_Fre$Adresse de l&#39;h&#244;te$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_IGMPStatistics_Str10$
+$Zy_Eng$Multicast Group$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$Groupe multidiffusion$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_ARPTable_Str1$
+$Zy_Eng$ARP Table displays the IPv4 and MAC address of each DHCP connection.$
+$Zy_Tur$Adres &#199;&#246;z&#252;mleme Protokol&#252; (ARP) Tablosu her DHCP ba&#287;lant&#305;n&#305;n IP ve MAC adresini g&#246;r&#252;nt&#252;lemektedir.$
+$Zy_Ger$ARP-Tabelle f&#252;hrt die IP- und MAC-Adressen jeder DHCP-Verbindung auf.$
+$Zy_Fre$La table ARP affiche l&#39;adresse IP et MAC de chaque connexion DHCP.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_ARPTable_Str2$
+$Zy_Eng$Neighbor Table displays the IPv6 address and MAC address of each Neighbor.$
+$Zy_Tur$Kom&#351;u Tablo IPv6 adresi ve her Kom&#351;u MAC adresini g&#246;r&#252;nt&#252;ler.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_ARPTable_Str3$
+$Zy_Eng$IPv4 ARP Table$
+$Zy_Tur$IPv4 ARP Tablosu$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_ARPTable_Str4$
+$Zy_Eng$IPv6 Neighbor Table$
+$Zy_Tur$IPv6 Kom&#351;u Tablo$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_Menu_xDSLStatistics$
+$Zy_Eng$(null)$
+$Zy_Tur$(bo&#351;)$
+$Zy_Ger$(kein Eintrag)$
+$Zy_Fre$Statistiques xDSL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_xDSLStatistics_Str1$
+$Zy_Eng$xDSL Statistics displays the DSL information.$
+$Zy_Tur$xDSL &#304;statistikleri DSL bilgilerini g&#246;r&#252;nt&#252;lemektedir.$
+$Zy_Ger$xDSL-Statistik zeigt DSL-Informationen an.$
+$Zy_Fre$Les statistiques xDSL affichent les informations DSL.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_xDSLStatistics_Str10$
+$Zy_Eng$Actual Delay$
+$Zy_Tur$As&#305;l Gecikme$
+$Zy_Ger$Tats&#228;chliche Verz&#246;gerung$
+$Zy_Fre$D&#233;lai r&#233;el$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_xDSLStatistics_Str11$
+$Zy_Eng$Transmit Power$
+$Zy_Tur$G&#246;nderme g&#252;c&#252;$
+$Zy_Ger$&#220;bertragungsleistung$
+$Zy_Fre$Puissance de transmission$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_xDSLStatistics_Str12$
+$Zy_Eng$Receive Power$
+$Zy_Tur$Alma g&#252;c&#252;$
+$Zy_Ger$Empfangsleistung$
+$Zy_Fre$Puissance de r&#233;ception$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_xDSLStatistics_Str13$
+$Zy_Eng$Actual INP$
+$Zy_Tur$As&#305;l INP$
+$Zy_Ger$Tats&#228;chliche INP$
+$Zy_Fre$INP r&#233;el$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_xDSLStatistics_Str14$
+$Zy_Eng$Total Attenuation$
+$Zy_Tur$Toplam Zay&#305;flama(Attenuation)$
+$Zy_Ger$D&#228;mpfung insgesamt$
+$Zy_Fre$Att&#233;nuation totale $
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_xDSLStatistics_Str15$
+$Zy_Eng$Attainable Net Data Rate$
+$Zy_Tur$Eri&#351;ilebilir Net Veri H&#305;z&#305;$
+$Zy_Ger$Erreichbare Netto-Datenrate$
+$Zy_Fre$D&#233;bit de donn&#233;es du r&#233;seau atteignable $
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_xDSLStatistics_Str16$
+$Zy_Eng$ADSL Counters$
+$Zy_Tur$ADSL Saya&#231;lar&#305;$
+$Zy_Ger$ADSL-Z&#228;hler$
+$Zy_Fre$Compteurs ADSL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_xDSLStatistics_Str17$
+$Zy_Eng$Since Link Time$
+$Zy_Tur$Ba&#287;lant&#305; S&#252;resinden Beri$
+$Zy_Ger$Seit Verbindungsaufbau$
+$Zy_Fre$Depuis l&#39;heure de liaison$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_xDSLStatistics_Str18$
+$Zy_Eng$Latest 15 minutes time$
+$Zy_Tur$En son 15 dakikal&#305;k s&#252;re$
+$Zy_Ger$Dauer letzte Viertelstunde$
+$Zy_Fre$Les 15 derni&#232;res minutes$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_xDSLStatistics_Str19$
+$Zy_Eng$Previous 15 minutes time$
+$Zy_Tur$&#214;nceki 15 dakikal&#305;k s&#252;re$
+$Zy_Ger$Dauer Viertelstunde davor$
+$Zy_Fre$Les 15 minutes pr&#233;c&#233;dentes$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_xDSLStatistics_Str2$
+$Zy_Eng$Line$
+$Zy_Tur$Hat$
+$Zy_Ger$xDSL-Verbindung$
+$Zy_Fre$Ligne$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_xDSLStatistics_Str20$
+$Zy_Eng$Latest 1 day time$
+$Zy_Tur$En son 1 g&#252;nl&#252;k s&#252;re$
+$Zy_Ger$Zeit im Verlauf des letzten 1 Tags$
+$Zy_Fre$Le dernier jour$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_xDSLStatistics_Str21$
+$Zy_Eng$Previous 1 day time$
+$Zy_Tur$&#214;nceki 1 g&#252;nl&#252;k s&#252;re$
+$Zy_Ger$Zeit im Verlauf des vorangehenden 1 Tags$
+$Zy_Fre$Le jour pr&#233;c&#233;dent$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_xDSLStatistics_Str22$
+$Zy_Eng$Total time$
+$Zy_Tur$Toplam s&#252;re$
+$Zy_Ger$Zeit insgesamt$
+$Zy_Fre$Dur&#233;e totale$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_xDSLStatistics_Str3$
+$Zy_Eng$ADSL Training Status$
+$Zy_Tur$ADSL Deneme Durumu$
+$Zy_Ger$Status von ADSL-Training$
+$Zy_Fre$Etat de la formation ADSL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_xDSLStatistics_Str4$
+$Zy_Eng$Traffic Type$
+$Zy_Tur$Trafik Tipi$
+$Zy_Ger$Verkehrstyp$
+$Zy_Fre$Type de trafic$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_xDSLStatistics_Str5$
+$Zy_Eng$Link Uptime$
+$Zy_Tur$Ba&#287;lant&#305; &#199;al&#305;&#351;ma S&#252;resi$
+$Zy_Ger$Betriebszeit der Verbindung$
+$Zy_Fre$Temps d&#39;activit&#233; de la liaison$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_xDSLStatistics_Str6$
+$Zy_Eng$ADSL Port Details$
+$Zy_Tur$ADSL Port Detaylar&#305;$
+$Zy_Ger$ADSL-Port-Details$
+$Zy_Fre$D&#233;tails sur le port ADSL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_xDSLStatistics_Str7$
+$Zy_Eng$Link Rate$
+$Zy_Tur$Ba&#287;lant&#305; Oran&#305;$
+$Zy_Ger$Verbindungsrate$
+$Zy_Fre$Vitesse de la liaison$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_xDSLStatistics_Str8$
+$Zy_Eng$Actual Net Data Rate$
+$Zy_Tur$As&#305;l Net Veri H&#305;z&#305;$
+$Zy_Ger$Tats&#228;chliche Netto-Datenrate$
+$Zy_Fre$R&#233;el d&#233;bit de donn&#233;es du r&#233;seau$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_Monitor_xDSLStatistics_Str9$
+$Zy_Eng$Trellis Coding$
+$Zy_Tur$Trellis Kodlama$
+$Zy_Ger$Trellis-Coding$
+$Zy_Fre$Codage en treillis$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_PacketCapture_Str1$
+$Zy_Eng$Figures about packets that have been sent out to and received from the wan interface are displayed in the following table.$
+$Zy_Tur$Figures about packets that have been sent out to and received from the wan interface are displayed in the following table.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_PacketCapture_Str2$
+$Zy_Eng$Clear Packets$
+$Zy_Tur$Clear Packets$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_PacketCapture_Str3$
+$Zy_Eng$Refresh$
+$Zy_Tur$Yenile$
+$Zy_Ger$Aktualisieren$
+$Zy_Fre$Actualiser$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_PacketCapture_Str4$
+$Zy_Eng$Export Packets$
+$Zy_Tur$Export Packets$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_PacketCapture_Str5$
+$Zy_Eng$WAN Interface$
+$Zy_Tur$WAN Interface$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_PacketCapture_Str6$
+$Zy_Eng$Capture Time$
+$Zy_Tur$Capture Time$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_PacketCapture_AlertMsg_Str1$
+$Zy_Eng$Capture Time {{1}} is out of range [1-600].$
+$Zy_Tur$Capture Time {{1}} ,  [1-600] aral&#305;&#287;&#305;  d&#305;&#351;&#305;ndad&#305;r.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SecurityLog_Str1$
+$Zy_Eng$Security Log$
+$Zy_Tur$G&#252;venlik Kayd&#305;$
+$Zy_Ger$Sicherheitsprotokoll$
+$Zy_Fre$Le journal de s&#233;curit&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SecurityLog_Str2$
+$Zy_Eng$All security events will be logged and displayed in the following table. Select a level from the pull-down menu to show filtered results.$
+$Zy_Tur$B&#252;t&#252;n g&#252;venlik olaylar&#305; a&#351;a&#287;&#305;da belirtilmi&#351; olan &#231;izelge tablosunda kaydedilecektir ve g&#246;r&#252;nt&#252;lenecektir. Filtrelenmi&#351; sonu&#231;lar&#305; g&#246;rmek i&#231;in a&#351;a&#287;&#305; a&#231;&#305;lan men&#252;den bir seviye se&#231;in.$
+$Zy_Ger$Alle Sicherheitsereignisse werden in der folgenden Tabelle protokolliert und angezeigt. W&#228;hlen Sie eine Ebene im Pulldown-Men&#252;, um gefilterte Ergebnisse anzuzeigen.$
+$Zy_Fre$Le journal de s&#233;curit&#233; enregistre les &#233;v&#233;nements sur la s&#233;curit&#233; du pare-feu. Vous pouvez v&#233;rifier l&#39;&#233;tat des &#233;v&#233;nements ou envoyer les informations &#224; un compte de messagerie.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str1$
+$Zy_Eng$MLG_System_SystemLog_Str1$
+$Zy_Tur$MLG_Sistem_Sistem G&#252;nl&#252;&#287;&#252;_Str1$
+$Zy_Ger$MLG_System_SystemLog_Str1$
+$Zy_Fre$Journal syst&#232;me$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str10$
+$Zy_Eng$Informational$
+$Zy_Tur$Bilgilendirme Ama&#231;l&#305;$
+$Zy_Ger$Einfach$
+$Zy_Fre$Informationnel$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str11$
+$Zy_Eng$Debugging$
+$Zy_Tur$Hata Tespit Ediliyor$
+$Zy_Ger$Ausf&#252;hrlich$
+$Zy_Fre$D&#233;bogage$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str12$
+$Zy_Eng$Category$
+$Zy_Tur$Kategori$
+$Zy_Ger$Kategorie$
+$Zy_Fre$Cat&#233;gorie$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str13$
+$Zy_Eng$All$
+$Zy_Tur$Hepsi$
+$Zy_Ger$Alle$
+$Zy_Fre$Tout$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str14$
+$Zy_Eng$Clear Log$
+$Zy_Tur$Kayd&#305; Temizle$
+$Zy_Ger$Protokoll l&#246;schen$
+$Zy_Fre$Effacer le journal$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str15$
+$Zy_Eng$Refresh$
+$Zy_Tur$Yenile$
+$Zy_Ger$Aktualisieren$
+$Zy_Fre$Actualiser$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str16$
+$Zy_Eng$Export Log$
+$Zy_Tur$Kayd&#305; D&#305;&#351;ar&#305;ya Aktar$
+$Zy_Ger$Prot. exportieren$
+$Zy_Fre$Journal d&#39;exportation$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str17$
+$Zy_Eng$Email Log Now$
+$Zy_Tur$Kayd&#305; Elektronik Posta olarak &#351;imdi g&#246;nder$
+$Zy_Ger$Prot. mailen$
+$Zy_Fre$Messagerie connect&#233;e maintenant$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str18$
+$Zy_Eng$Time$
+$Zy_Tur$S&#252;re$
+$Zy_Ger$Zeit$
+$Zy_Fre$Heure$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str19$
+$Zy_Eng$Facility$
+$Zy_Tur$Olanak$
+$Zy_Ger$Einrichtung$
+$Zy_Fre$Facilit&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_SaveLog$
+$Zy_Eng$Save Log$
+$Zy_Tur$Kayd&#305; Kaydet$
+$Zy_Ger$Protokoll speichern$
+$Zy_Fre$Facilit&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str2$
+$Zy_Eng$All system events will be logged and displayed in the following table. Select a level from the pull-down menu to show filtered results.$
+$Zy_Tur$B&#252;t&#252;n g&#252;venlik olaylar&#305; a&#351;a&#287;&#305;da belirtilmi&#351; olan tabloda kaydedilecektir ve g&#246;r&#252;nt&#252;lenecektir. Filtrelenmi&#351; sonu&#231;lar&#305; g&#246;rmek i&#231;in a&#351;a&#287;&#305; a&#231;&#305;lan men&#252;den bir seviye se&#231;in.$
+$Zy_Ger$Alle Systemereignisse werden in der folgenden Tabelle protokolliert und angezeigt. W&#228;hlen Sie eine Ebene im Pulldown-Men&#252;, um gefilterte Ergebnisse anzuzeigen.$
+$Zy_Fre$Le journal syst&#232;me enregistre les &#233;v&#233;nements qui ont eu lieu sur le p&#233;riph&#233;rique. Vous pouvez v&#233;rifier l&#39;&#233;tat des &#233;v&#233;nements ou envoyer les informations &#224; un compte de messagerie.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str20$
+$Zy_Eng$Messages$
+$Zy_Tur$&#304;letiler$
+$Zy_Ger$Nachrichten$
+$Zy_Fre$Messages$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str21$
+$Zy_Eng$Forwarded web$
+$Zy_Tur$&#304;zin verilen web siteleri$
+$Zy_Ger$Zugelassene Websites$
+$Zy_Fre$Web transmis$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str22$
+$Zy_Eng$Blocked web$
+$Zy_Tur$Engellenen web siteleri$
+$Zy_Ger$Blockierte Websites$
+$Zy_Fre$Web bloqu&#233; $
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str23$
+$Zy_Eng$System Event$
+$Zy_Tur$Sistem Olay&#305;$
+$Zy_Ger$Systemereignis$
+$Zy_Fre$Web bloqu&#233; $
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str24$
+$Zy_Eng$emerg$
+$Zy_Tur$Acil Durum$
+$Zy_Ger$Notfall$
+$Zy_Fre$Web bloqu&#233; $
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str25$
+$Zy_Eng$System start up$
+$Zy_Tur$Sistem ba&#351;lat&#305;lmas&#305;$
+$Zy_Ger$Systemstart$
+$Zy_Fre$Web bloqu&#233; $
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str26$
+$Zy_Eng$EMERG$
+$Zy_Tur$Acil Durum$
+$Zy_Ger$NOTFALL$
+$Zy_Fre$Web bloqu&#233; $
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str27$
+$Zy_Eng$ALERT$
+$Zy_Tur$&#214;nemli Uyar&#305;$
+$Zy_Ger$ALARM$
+$Zy_Fre$Web bloqu&#233; $
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str28$
+$Zy_Eng$CRIT$
+$Zy_Tur$kritik$
+$Zy_Ger$KRIT$
+$Zy_Fre$Web bloqu&#233; $
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str29$
+$Zy_Eng$ERROR$
+$Zy_Tur$HATA$
+$Zy_Ger$FEHLER$
+$Zy_Fre$Web bloqu&#233; $
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str30$
+$Zy_Eng$WARNING$
+$Zy_Tur$UYARI$
+$Zy_Ger$WARNUNG$
+$Zy_Fre$Web bloqu&#233; $
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str31$
+$Zy_Eng$NOTICE$
+$Zy_Tur$D&#304;KKAT!$
+$Zy_Ger$HINWEIS$
+$Zy_Fre$Web bloqu&#233; $
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str32$
+$Zy_Eng$INFO$
+$Zy_Tur$B&#304;LG&#304;$
+$Zy_Ger$INFO$
+$Zy_Fre$Web bloqu&#233; $
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str33$
+$Zy_Eng$DEBUG$
+$Zy_Tur$HATA BULMA$
+$Zy_Ger$DEBUG$
+$Zy_Fre$Web bloqu&#233; $
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_AlertMsg_Str1$
+$Zy_Eng$Email server address is not set, please configure it on Log Settings page$
+$Zy_Tur$Elektronik posta sunucusu ayarlanmam&#305;&#351;t&#305;r, l&#252;tfen bunu Kay&#305;t Ayarlar&#305; sayfas&#305;ndan d&#252;zenleyiniz.$
+$Zy_Ger$Keine E-Mail-Serveradresse eingestellt, bitte auf Seite Protokolleinstellungen konfigurieren$
+$Zy_Fre$L&#39;adresse du serveur de messagerie n&#39;est pas d&#233;finie, veuillez la configurer sur la page Param&#232;tres des journaux$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_AlertMsg_Str2$
+$Zy_Eng$Send log by email has failed for some reason, please check related configuration in Log Settings page$
+$Zy_Tur$Elektronik posta ile kay&#305;t g&#246;nderimi herhangi bir nedenden dolay&#305; ba&#351;ar&#305;s&#305;z oldu, l&#252;tfen Kay&#305;t Ayarlar&#305; sayfas&#305;ndaki ilgili konfig&#252;rasyonu g&#246;zden ge&#231;iriniz.$
+$Zy_Ger$Fehler beim Senden des Protokolls per E-Mail, bitte entsprechende Konfiguration auf Seite Protokolleinstellungen pr&#252;fen$
+$Zy_Fre$L&#39;envoi du journal par email a &#233;chou&#233; pour une raison inconnue, v&#233;rifiez la configuration connexe dans la page Param&#232;tres des journaux $
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str3$
+$Zy_Eng$Level$
+$Zy_Tur$Seviye$
+$Zy_Ger$Ebene$
+$Zy_Fre$Niveau$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str4$
+$Zy_Eng$Emergency$
+$Zy_Tur$Acil Durum$
+$Zy_Ger$Notfall$
+$Zy_Fre$Urgence$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str5$
+$Zy_Eng$Alert$
+$Zy_Tur$&#214;nemli Uyar&#305;$
+$Zy_Ger$Alarm$
+$Zy_Fre$Alerte$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str6$
+$Zy_Eng$Critical$
+$Zy_Tur$Kritik$
+$Zy_Ger$Kritisch$
+$Zy_Fre$Critique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str7$
+$Zy_Eng$Error$
+$Zy_Tur$Hata$
+$Zy_Ger$Fehler$
+$Zy_Fre$Erreur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str8$
+$Zy_Eng$Warning$
+$Zy_Tur$Uyar&#305;$
+$Zy_Ger$Warnung$
+$Zy_Fre$Avertissement$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str9$
+$Zy_Eng$Notice$
+$Zy_Tur$D&#304;KKAT!$
+$Zy_Ger$Hinweis$
+$Zy_Fre$Notification$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatus_Str1$
+$Zy_Eng$Traffic Status$
+$Zy_Tur$Trafik Durumu$
+$Zy_Ger$Verkehrsstatus$
+$Zy_Fre$&#201;tat du trafic$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusHPNA_Str1$
+$Zy_Eng$Figures about data that have been sent out to and received from the Internet are displayed in the following table.$
+$Zy_Tur$&#304;nternetten g&#246;nderilmi&#351; ve al&#305;nm&#305;&#351; olan veri hakk&#305;ndaki bilgiler a&#351;a&#287;&#305;daki tabloda g&#246;r&#252;nt&#252;lenmektedir.$
+$Zy_Ger$Angaben &#252;ber Daten, die ins Internet gesendet oder von dort empfangen wurden, werden in der folgenden Tabelle angezeigt.$
+$Zy_Fre$Cette page affiche les statistiques pour l&#39;ensemble du trafic r&#233;seau passant par le port LAN individuellement.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusHPNA_Str10$
+$Zy_Eng$RX Error$
+$Zy_Tur$RX Hatas&#305;$
+$Zy_Ger$RX-Fehler$
+$Zy_Fre$Erreur RX$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusHPNA_Str11$
+$Zy_Eng$TX Drop$
+$Zy_Tur$TX D&#252;&#351;&#252;r$
+$Zy_Ger$TX-Drop$
+$Zy_Fre$Abandon TX$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusHPNA_Str12$
+$Zy_Eng$RX Drop$
+$Zy_Tur$RX D&#252;&#351;&#252;r$
+$Zy_Ger$RX-Drop$
+$Zy_Fre$Abandon RX$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusHPNA_Str13$
+$Zy_Eng$Figures about data that have been sent to and received from each LAN port (including wireless) are displayed in the following table.$
+$Zy_Tur$Her LAN portundan ve kablosuz aray&#252;zden g&#246;nderilmi&#351; ve al&#305;nm&#305;&#351; olan veri bilgileri a&#351;a&#287;&#305;daki tabloda g&#246;r&#252;nt&#252;lenmektedir.$
+$Zy_Ger$Angaben &#252;ber Daten, die an jeden LAN-Port (einschlie&#223;lich Wireless) gesendet oder von dort empfangen wurden, werden in der folgenden Tabelle angezeigt.$
+$Zy_Fre$Cette page affiche les statistiques pour l&#39;ensemble du trafic r&#233;seau passant par l&#39;interface HPNA individuellement.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusHPNA_Str2$
+$Zy_Eng$Role$
+$Zy_Tur$G&#246;rev$
+$Zy_Ger$Rolle$
+$Zy_Fre$R&#244;le$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusHPNA_Str3$
+$Zy_Eng$Device$
+$Zy_Tur$Cihaz$
+$Zy_Ger$Ger&#228;t$
+$Zy_Fre$P&#233;riph&#233;rique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusHPNA_Str4$
+$Zy_Eng$Version$
+$Zy_Tur$S&#252;r&#252;m$
+$Zy_Ger$Version$
+$Zy_Fre$Version$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusHPNA_Str5$
+$Zy_Eng$Packets Sent$
+$Zy_Tur$G&#246;nderilen Paketler$
+$Zy_Ger$Gesendete Pakete$
+$Zy_Fre$Paquets TX$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusHPNA_Str6$
+$Zy_Eng$Packets Received$
+$Zy_Tur$Al&#305;nan Paketler$
+$Zy_Ger$Empfangene Pakete$
+$Zy_Fre$Paquets RX$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusHPNA_Str7$
+$Zy_Eng$TX Byte$
+$Zy_Tur$TX Bayt$
+$Zy_Ger$TX Byte$
+$Zy_Fre$Octet TX$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusHPNA_Str8$
+$Zy_Eng$RX Byte$
+$Zy_Tur$RX Bayt$
+$Zy_Ger$RX Byte$
+$Zy_Fre$Octet RX$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusHPNA_Str9$
+$Zy_Eng$TX Error$
+$Zy_Tur$TX Hatas&#305;$
+$Zy_Ger$TX-Fehler$
+$Zy_Fre$Erreur TX$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusLAN_Str1$
+$Zy_Eng$This page displays the status and statistics for all network traffic moving through the LAN port.$
+$Zy_Tur$Bu sayfa LAN portundan ge&#231;en b&#252;t&#252;n a&#287; trafi&#287;inin durumunu ve istatistiklerini g&#246;r&#252;nt&#252;lemektedir.$
+$Zy_Ger$Auf dieser Seite wird der Status und die Statistik f&#252;r jeglichen Netzwerkverkehr angezeigt, der &#252;ber die LAN-Ports l&#228;uft.$
+$Zy_Fre$Cette page affiche l&#39;&#233;tat et les statistiques pour l&#39;ensemble du trafic r&#233;seau passant par le port LAN.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusLAN_Str10$
+$Zy_Eng$LAN4$
+$Zy_Tur$LAN4$
+$Zy_Ger$LAN4$
+$Zy_Fre$LAN4$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusLAN_Str11$
+$Zy_Eng$LAN5$
+$Zy_Tur$LAN5$
+$Zy_Ger$LAN5$
+$Zy_Fre$LAN5$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusLAN_Str12$
+$Zy_Eng$HPNA$
+$Zy_Tur$HPNA$
+$Zy_Ger$HPNA$
+$Zy_Fre$HPNA$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusLAN_Str13$
+$Zy_Eng$Wireless$
+$Zy_Tur$Kablosuz$
+$Zy_Ger$WLAN$
+$Zy_Fre$Sans fil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusLAN_Str2$
+$Zy_Eng$Interface$
+$Zy_Tur$Aray&#252;z$
+$Zy_Ger$Schnittstelle$
+$Zy_Fre$Interface$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusLAN_Str3$
+$Zy_Eng$Bytes Sent$
+$Zy_Tur$G&#246;nderilen Veri (Byte)$
+$Zy_Ger$Gesendete Byte$
+$Zy_Fre$Octets envoy&#233;s$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusLAN_Str4$
+$Zy_Eng$Bytes Received$
+$Zy_Tur$Al&#305;nan Veri (Byte)$
+$Zy_Ger$Empfangene Byte$
+$Zy_Fre$Octets re&#231;us$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusLAN_Str5$
+$Zy_Eng$Packet$
+$Zy_Tur$Paket$
+$Zy_Ger$Paket$
+$Zy_Fre$Paquet envoy&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusLAN_Str6$
+$Zy_Eng$Packet Received$
+$Zy_Tur$Al&#305;nan Paket$
+$Zy_Ger$Empfangene Pakete$
+$Zy_Fre$Paquet re&#231;u$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusLAN_Str7$
+$Zy_Eng$LAN1$
+$Zy_Tur$LAN1$
+$Zy_Ger$LAN1$
+$Zy_Fre$LAN1$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusLAN_Str8$
+$Zy_Eng$LAN2$
+$Zy_Tur$LAN2$
+$Zy_Ger$LAN2$
+$Zy_Fre$LAN2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusLAN_Str9$
+$Zy_Eng$LAN3$
+$Zy_Tur$LAN3$
+$Zy_Ger$LAN3$
+$Zy_Fre$LAN3$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusWAN_Str1$
+$Zy_Eng$This page displays the status and statistics for all network traffic moving through the WAN port.$
+$Zy_Tur$Bu sayfa WAN portundan ge&#231;en b&#252;t&#252;n a&#287; trafik durumunu ve istatistiklerini g&#246;r&#252;nt&#252;lemektedir.$
+$Zy_Ger$Auf dieser Seite wird der Status und die Statistik f&#252;r jeglichen Netzwerkverkehr angezeigt, der &#252;&#252;ber den WAN-Port l&#228;uft.$
+$Zy_Fre$Cette page affiche l&#39;&#233;tat et les statistiques pour l&#39;ensemble du trafic r&#233;seau passant par le port WAN.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusWAN_Str10$
+$Zy_Eng$Error$
+$Zy_Tur$Hata$
+$Zy_Ger$Fehler$
+$Zy_Fre$Erreur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusWAN_Str11$
+$Zy_Eng$Drop$
+$Zy_Tur$D&#252;&#351;&#252;r$
+$Zy_Ger$Verworfen$
+$Zy_Fre$Abandonner$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusWAN_Str12$
+$Zy_Eng$more$
+$Zy_Tur$Daha fazla$
+$Zy_Ger$mehr$
+$Zy_Fre$plus$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusWAN_Str13$
+$Zy_Eng$Disabled Interface$
+$Zy_Tur$Devre d&#305;&#351;&#305; b&#305;rak&#305;lan Aray&#252;z$
+$Zy_Ger$Deaktivierte Schnittstelle$
+$Zy_Fre$Interface d&#233;sactiv&#233;e$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusWAN_Str14$
+$Zy_Eng$less$
+$Zy_Tur$Daha az$
+$Zy_Ger$weniger$
+$Zy_Fre$moins$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusWAN_Str2$
+$Zy_Eng$Status$
+$Zy_Tur$Durum$
+$Zy_Ger$Status$
+$Zy_Fre$&#201;tat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusWAN_Str3$
+$Zy_Eng$Sent$
+$Zy_Tur$G&#246;nderilen Veri (Bayt)$
+$Zy_Ger$Gesendet$
+$Zy_Fre$Envoy&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusWAN_Str4$
+$Zy_Eng$Received$
+$Zy_Tur$Al&#305;nan Veri (Bayt)$
+$Zy_Ger$Empfangen$
+$Zy_Fre$Re&#231;u$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusWAN_Str5$
+$Zy_Eng$Bytes$
+$Zy_Tur$Bayt$
+$Zy_Ger$Byte$
+$Zy_Fre$Octets$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusWAN_Str6$
+$Zy_Eng$Connected Interface$
+$Zy_Tur$Ba&#287;l&#305; olan Aray&#252;z$
+$Zy_Ger$Verbundene Schnittstelle$
+$Zy_Fre$Interface connect&#233;e $
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusWAN_Str7$
+$Zy_Eng$Packet Sent$
+$Zy_Tur$G&#246;nderilen Paket$
+$Zy_Ger$Pakete gesendet$
+$Zy_Fre$Paquet envoy&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusWAN_Str8$
+$Zy_Eng$Packet Received$
+$Zy_Tur$Al&#305;nan Paket$
+$Zy_Ger$Empfangene Pakete$
+$Zy_Fre$Paquet re&#231;u$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatusWAN_Str9$
+$Zy_Eng$Data$
+$Zy_Tur$Veri$
+$Zy_Ger$Daten$
+$Zy_Fre$Donn&#233;es$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str1$
+$Zy_Eng$System$
+$Zy_Tur$Sistem$
+$Zy_Ger$System$
+$Zy_Fre$Syst&#232;me$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str2$
+$Zy_Eng$DHCP client$
+$Zy_Tur$DHCP istemcisi$
+$Zy_Ger$DHCP-Client$
+$Zy_Fre$Client DHCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str4$
+$Zy_Eng$Wireless$
+$Zy_Tur$Kablosuz$
+$Zy_Ger$WLAN$
+$Zy_Fre$Sans fil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str4_1$
+$Zy_Eng$2.4G WLAN$
+$Zy_Tur$2.4G WLAN$
+$Zy_Ger$2.4G WLAN$
+$Zy_Fre$2.4G WLAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str4_2$
+$Zy_Eng$5G WLAN$
+$Zy_Tur$5G WLAN$
+$Zy_Ger$5G WLAN$
+$Zy_Fre$5G WLAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str5$
+$Zy_Eng$DHCP server$
+$Zy_Tur$DHCP Sunucu$
+$Zy_Ger$DHCP Server$
+$Zy_Fre$Serveur DHCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str6$
+$Zy_Eng$Active$
+$Zy_Tur$Etkin$
+$Zy_Ger$Aktiv$
+$Zy_Fre$Actif$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str7$
+$Zy_Eng$UPnP$
+$Zy_Tur$UPnP$
+$Zy_Ger$UPnP$
+$Zy_Fre$UPnP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str8$
+$Zy_Eng$NAT$
+$Zy_Tur$NAT$
+$Zy_Ger$NAT$
+$Zy_Fre$NAT$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_System__Routingtext$
+$Zy_Eng$Flags: U - up, ! - reject, G - gateway, C - cache, H - host, R - reinstate, D - dynamic (redirect), M - modified (redirect).$
+$Zy_Tur$&#304;&#351;aretler: U - yukar&#305;, ! - reddet, G &#8211; a&#287; ge&#231;idi, H - kullan&#305;c&#305;, R &#8211; eski haline getir, D - dinamik (yeniden y&#246;nlendir), M - d&#252;zeltilmi&#351; (yeniden y&#246;nlendir).$
+$Zy_Ger$Flags: U - up, ! - abweisen, G - Gateway, H - Host, R - Wiedereinsetzen, D - dynamisch (umleiten), M - ge&#228;ndert (umleiten).$
+$Zy_Fre$Routage statique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Routingtext1$
+$Zy_Eng$Destination: The destination network or destination host.$
+$Zy_Tur$Hedef: Hedef a&#287; veya hedef istemci.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Routingtext2$
+$Zy_Eng$Gateway : The gateway address or '*'(IPv4)/'::'(IPv6) if none set.$
+$Zy_Tur$A&#287; Ge&#231;idi: A&#287; ge&#231;idi adresi veya hi&#231;biri ayarlanmam&#305;&#351; ise '*' (IPv4) / '::' (IPv6).$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Routingtext3$
+$Zy_Eng$Subnet Mask (IPv4): The netmask for the destination net; '255.255.255.255' for a host destination and '0.0.0.0' for the default route.$
+$Zy_Tur$Alt A&#287; Maskesi (IPv4): Hedef a&#287; i&#231;in a&#287; maskesi '255.255.255.255.  Varsay&#305;lan y&#246;nlendirmede hedef istemci i&#231;in  '0.0.0.0'.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Routingtext4$
+$Zy_Eng$Metric: The distance to the target (usually counted in hops).$
+$Zy_Tur$Metrik: Hedef olan mesafe (genellikle her bir atlama say&#305;s&#305; say&#305;l&#305;r)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Routingtext5$
+$Zy_Eng$Interface: Interface to which packets for this route will be sent.$
+$Zy_Tur$Aray&#252;z: &#304;lgili y&#246;nlendirmede paketlerin g&#246;nderilece&#287;i aray&#252;z.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Routing_Str1$
+$Zy_Eng$Destination$
+$Zy_Tur$Var&#305;&#351; Noktas&#305;$
+$Zy_Ger$Ziel$
+$Zy_Fre$Routage statique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Routing_Str3$
+$Zy_Eng$Gateway$
+$Zy_Tur$A&#287; Ge&#231;idi$
+$Zy_Ger$Gateway$
+$Zy_Fre$Routage statique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Routing_Str4$
+$Zy_Eng$Flag$
+$Zy_Tur$&#304;&#351;aret$
+$Zy_Ger$Flag$
+$Zy_Fre$Routage statique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Routing_Str2$
+$Zy_Eng$Service$
+$Zy_Tur$Servis$
+$Zy_Ger$Service$
+$Zy_Fre$Service$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Routing_Str5$
+$Zy_Eng$Metric$
+$Zy_Tur$&#214;l&#231;&#252;$
+$Zy_Ger$Metrik$
+$Zy_Fre$Routage statique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Routing_Str6$
+$Zy_Eng$IPv4 Routing Table$
+$Zy_Tur$IPv4 Y&#246;nlendirme Tablosu$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Routing_Str7$
+$Zy_Eng$IPv6 Routing Table$
+$Zy_Tur$IPv6 Y&#246;nlendirme Tablosu$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str9$
+$Zy_Eng$Static Route$
+$Zy_Tur$Statik Rota$
+$Zy_Ger$Statische Route$
+$Zy_Fre$Routage statique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str10$
+$Zy_Eng$DDNS$
+$Zy_Tur$DDNS$
+$Zy_Ger$DDNS$
+$Zy_Fre$DDNS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str11$
+$Zy_Eng$IGMP$
+$Zy_Tur$IGMP$
+$Zy_Ger$IGMP$
+$Zy_Fre$IGMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str12$
+$Zy_Eng$QoS$
+$Zy_Tur$QoS$
+$Zy_Ger$QoS$
+$Zy_Fre$QoS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str13$
+$Zy_Eng$TR-069$
+$Zy_Tur$TR-069$
+$Zy_Ger$TR-069$
+$Zy_Fre$TR-069$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str14$
+$Zy_Eng$NTP$
+$Zy_Tur$NTP$
+$Zy_Ger$NTP$
+$Zy_Fre$NTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str15$
+$Zy_Eng$Firewall$
+$Zy_Tur$G&#252;venlik Duvar&#305;$
+$Zy_Ger$Firewall$
+$Zy_Fre$Pare-feu$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str16$
+$Zy_Eng$MAC Filter$
+$Zy_Tur$MAC Filtresi$
+$Zy_Ger$MAC-Filter$
+$Zy_Fre$Filtre MAC $
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str17$
+$Zy_Eng$Forward Web Sites$
+$Zy_Tur$&#304;zin verilen web siteleri$
+$Zy_Ger$Zugelassene Websites$
+$Zy_Fre$Rediriger les sites Internet$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str18$
+$Zy_Eng$Bloaked Web Sites$
+$Zy_Tur$Engellenen web siteleri$
+$Zy_Ger$Blockierte Websites$
+$Zy_Fre$Sites web bloqu&#233;s$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str19$
+$Zy_Eng$Attack$
+$Zy_Tur$Sald&#305;r&#305;$
+$Zy_Ger$Angriff$
+$Zy_Fre$Attaque$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str20$
+$Zy_Eng$Certificate$
+$Zy_Tur$Sertifika$
+$Zy_Ger$Zertifikat$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str21$
+$Zy_Eng$IPSec$
+$Zy_Tur$IPSec$
+$Zy_Ger$IPSec$
+$Zy_Fre$IPSec$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str22$
+$Zy_Eng$Account$
+$Zy_Tur$Kullan&#305;c&#305; Hesab&#305;$
+$Zy_Ger$Konto$
+$Zy_Fre$Compte$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str23$
+$Zy_Eng$XDSL$
+$Zy_Tur$XDSL$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str24$
+$Zy_Eng$Internet$
+$Zy_Tur$Internet$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__Log_Str25$
+$Zy_Eng$VoIP$
+$Zy_Tur$VoIP$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__TrafficStatus_Str1$
+$Zy_Eng$hide more$
+$Zy_Tur$Daha fazlas&#305;n&#305; gizle$
+$Zy_Ger$weniger$
+$Zy_Fre$Compte$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System__TrafficStatus_Str2$
+$Zy_Eng$GBytes$
+$Zy_Tur$Gbayt&#39;lar$
+$Zy_Ger$ GB$
+$Zy_Fre$Compte$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_xdslStatistic$
+$Zy_Eng$No Refresh$
+$Zy_Tur$Yenileme yok$
+$Zy_Ger$Keine Aktualisierung$
+$Zy_Fre$Pas d&#39;actualisation $
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatistic1$
+$Zy_Eng$ETHWAN$
+$Zy_Tur$ETHWAN$
+$Zy_Ger$ETHWAN$
+$Zy_Fre$ETHWAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatistic2$
+$Zy_Eng$Device Name$
+$Zy_Tur$Cihaz Ad&#305;$
+$Zy_Ger$Ger&#228;tename$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatistic3$
+$Zy_Eng$No. of Open Session$
+$Zy_Tur$A&#231;&#305;k Oturumlar&#305;n Say&#305;s&#305;$
+$Zy_Ger$Anz. offene Sitzungen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_TrafficStatistic4$
+$Zy_Eng$The current connection numbers built by each LAN client are displayed in the following table. A higher number of open sessions that a LAN client creates means busier Internet activities he or she is engaging in.$
+$Zy_Tur$Her bir LAN istemcisi arac&#305;l&#305;&#287;&#305;yla olu&#351;turulan mevcut ba&#287;lant&#305; say&#305;s&#305; a&#351;a&#287;&#305;daki tabloda g&#246;r&#252;nt&#252;lenmektedir. LAN istemcisi taraf&#305;ndan a&#231;&#305;lan daha fazla miktardaki oturum say&#305;s&#305;, kullan&#305;c&#305;n&#305;n daha yo&#287;un &#304;nternet aktivitesi i&#231;inde oldu&#287;u anlam&#305;na gelir.$
+$Zy_Ger$Die aktuellen Verbindungszahlen, die von jedem LAN-Client aufgebaut werden, werden in der folgenden Tabelle angezeigt. Erstellt ein LAN-Client eine h&#246;here Anzahl an offenen Sitzungen, so hei&#223;t das mehr Internetaktivit&#228;t.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str34$
+$Zy_Eng$Date$
+$Zy_Tur$Tarih$
+$Zy_Ger$Datum$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str35$
+$Zy_Eng$Website$
+$Zy_Tur$Website$
+$Zy_Ger$Website$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_SystemLog_Str36$
+$Zy_Eng$tw.yahoo.com$
+$Zy_Tur$tw.yahoo.com$
+$Zy_Ger$tw.yahoo.com$
+$Zy_Fre$tw.yahoo.com$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_3gStatistics_explain1$
+$Zy_Eng$3G Statistics displays the 3G information.$
+$Zy_Tur$3G İstatistikleri, 3G bilgisini gösterir.$
+$Zy_Ger$3G Statistics displays the 3G information.$
+$Zy_Fre$3G Statistics displays the 3G information.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_3gStatistics_explain2$
+$Zy_Eng$Currently not in 3G modulation.$
+$Zy_Tur$3G modülasyonu mevcut değil.$
+$Zy_Ger$Currently not in 3G modulation.$
+$Zy_Fre$Currently not in 3G modulation.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_3gStatistics_title1$
+$Zy_Eng$Budget Control Status$
+$Zy_Tur$Budget Control Status$
+$Zy_Ger$Budget Control Status$
+$Zy_Fre$Budget Control Status$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_System_3gStatistics_str1$
+$Zy_Eng$3G Status$
+$Zy_Tur$3G Status$
+$Zy_Ger$3G Status$
+$Zy_Fre$3G Status$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_3gStatistics_str2$
+$Zy_Eng$Service Provider$
+$Zy_Tur$Service Provider$
+$Zy_Ger$Service Provider$
+$Zy_Fre$Service Provider$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_3gStatistics_str3$
+$Zy_Eng$Signal Strength$
+$Zy_Tur$Signal Strength$
+$Zy_Ger$Signal Strength$
+$Zy_Fre$Signal Strength$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_3gStatistics_str4$
+$Zy_Eng$Connection Uptime$
+$Zy_Tur$Connection Uptime$
+$Zy_Ger$Connection Uptime$
+$Zy_Fre$Connection Uptime$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_3gStatistics_str5$
+$Zy_Eng$3G Card Manufacturer$
+$Zy_Tur$3G Card Manufacturer$
+$Zy_Ger$3G Card Manufacturer$
+$Zy_Fre$3G Card Manufacturer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_3gStatistics_str6$
+$Zy_Eng$3G Card Model$
+$Zy_Tur$3G Card Model$
+$Zy_Ger$3G Card Model$
+$Zy_Fre$3G Card Model$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_3gStatistics_str7$
+$Zy_Eng$3G Card F/W Version$
+$Zy_Tur$3G Card F/W Version$
+$Zy_Ger$3G Card F/W Version$
+$Zy_Fre$3G Card F/W Version$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_3gStatistics_str8$
+$Zy_Eng$SIM Card IMSI$
+$Zy_Tur$SIM Card IMSI$
+$Zy_Ger$SIM Card IMSI$
+$Zy_Fre$SIM Card IMSI$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_3gStatistics_str9$
+$Zy_Eng$Total Times$
+$Zy_Tur$Total Times$
+$Zy_Ger$Total Times$
+$Zy_Fre$Total Times$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_3gStatistics_str10$
+$Zy_Eng$Total Bytes$
+$Zy_Tur$Total Bytes$
+$Zy_Ger$Total Bytes$
+$Zy_Fre$Total Bytes$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_3gStatistics_str11$
+$Zy_Eng$Total Packets$
+$Zy_Tur$Total Packets$
+$Zy_Ger$Total Packets$
+$Zy_Fre$Total Packets$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_3gStatistics_item1$
+$Zy_Eng$Mbytes$
+$Zy_Tur$Mbytes$
+$Zy_Ger$Mbytes$
+$Zy_Fre$Mbytes$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_3gStatistics_item2$
+$Zy_Eng$kPackets$
+$Zy_Tur$kPackets$
+$Zy_Ger$kPackets$
+$Zy_Fre$kPackets$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_3gStatistics_item3$
+$Zy_Eng$of Time Budget$
+$Zy_Tur$of Time Budget$
+$Zy_Ger$of Time Budget$
+$Zy_Fre$of Time Budget$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_3gStatistics_item4$
+$Zy_Eng$of Data Budget$
+$Zy_Tur$of Data Budget$
+$Zy_Ger$of Data Budget$
+$Zy_Fre$of Data Budget$
+$Zy_Ita$(null)$
+
+$NAME$MLG_System_3gStatistics_button$
+$Zy_Eng$Reset time and data budget counters$
+$Zy_Tur$Reset time and data budget counters$
+$Zy_Ger$Reset time and data budget counters$
+$Zy_Fre$Reset time and data budget counters$
+$Zy_Ita$(null)$
+

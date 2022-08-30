@@ -1,0 +1,2208 @@
+﻿#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+#include<time.h>
+#include "languages.h"
+
+
+
+$NAME$MLG_Common_128bit$
+$Zy_Eng$128-bit$
+$Zy_Tur$128-bit$
+$Zy_Ger$128-Bit$
+$Zy_Fre$128 bits$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_64bit$
+$Zy_Eng$64-bit$
+$Zy_Tur$64-bit$
+$Zy_Ger$64-Bit$
+$Zy_Fre$64 bits$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_80211b$
+$Zy_Eng$802.11b Only$
+$Zy_Tur$Sadece 802.11b$
+$Zy_Ger$Nur 802.11b$
+$Zy_Fre$802.11b seulement$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_80211bg$
+$Zy_Eng$802.11b/g Mixed$
+$Zy_Tur$Karışık 802.11b / g$
+$Zy_Ger$802.11b/g gemischt$
+$Zy_Fre$802.11b/g Mixte$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_80211bgn$
+$Zy_Eng$802.11b/g/n Mixed$
+$Zy_Tur$Karışık  802.11b/g/n$
+$Zy_Ger$802.11b/g/n gemischt$
+$Zy_Fre$802.11b/g/n Mixte$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_80211g$
+$Zy_Eng$802.11g Only$
+$Zy_Tur$Sadece 802.11g$
+$Zy_Ger$Nur 802.11g$
+$Zy_Fre$802.11g seulement$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_80211n$
+$Zy_Eng$802.11n Only$
+$Zy_Tur$Sadece 802.11n$
+$Zy_Ger$Nur 802.11n$
+$Zy_Fre$802.11n seulement$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_IPv4Only$
+$Zy_Eng$IPv4 Only$
+$Zy_Tur$Sadece IPv4$
+$Zy_Ger$Nur IPv4$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_IPv6Only$
+$Zy_Eng$IPv6 Only$
+$Zy_Tur$Sadece IPv6$
+$Zy_Ger$Nur IPv6$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_IPv6IPv4_DualStack$
+$Zy_Eng$IPv6/IPv4 DualStack$
+$Zy_Tur$IPv6/IPv4 DualStack$
+$Zy_Ger$IPv6/IPv4 DualStack$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_8021Q$
+$Zy_Eng$802.1Q$
+$Zy_Tur$802.1Q$
+$Zy_Ger$802.1Q$
+$Zy_Fre$802.1Q$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Action$
+$Zy_Eng$Action$
+$Zy_Tur$Eylem$
+$Zy_Ger$Aktion$
+$Zy_Fre$Action$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Active$
+$Zy_Eng$Active$
+$Zy_Tur$Aktif$
+$Zy_Ger$Aktiv$
+$Zy_Fre$Actif$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Passive$
+$Zy_Eng$Passive$
+$Zy_Tur$Pasif$
+$Zy_Ger$Passiv$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Add$
+$Zy_Eng$Add$
+$Zy_Tur$Ekle $
+$Zy_Ger$Hinzuf&#252;gen$
+$Zy_Fre$Ajouter$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_ADSL$
+$Zy_Eng$ADSL$
+$Zy_Tur$ADSL$
+$Zy_Ger$ADSL$
+$Zy_Fre$ADSL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_ADSLoverATM$
+$Zy_Eng$ADSL over ATM$
+$Zy_Tur$ATM &#252;zerinden ADSL$
+$Zy_Ger$ADSL over ATM$
+$Zy_Fre$ADSL via ATM$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_ADSLoverPTM$
+$Zy_Eng$ADSL over PTM$
+$Zy_Tur$PTM &#252;zerinden ADSL$
+$Zy_Ger$ADSL over PTM$
+$Zy_Fre$ADSL via PTM$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_AES$
+$Zy_Eng$AES$
+$Zy_Tur$AES$
+$Zy_Ger$AES$
+$Zy_Fre$AES$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Alert$
+$Zy_Eng$Alert$
+$Zy_Tur$&#214;nemli Uyar&#305;$
+$Zy_Ger$Alarm$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_AlertMsg_Str1$
+$Zy_Eng$The username or password is not correct.$
+$Zy_Tur$Kullan&#305;c&#305; ad&#305; veya &#351;ifre yanl&#305;&#351;.$
+$Zy_Ger$Benutzername oder Kennwort nicht richtig.$
+$Zy_Fre$Le nom d&#39;utilisateur ou le mot de passe n&#39;est pas correct.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_AlertMsg_Str2$
+$Zy_Eng$Password is required.$
+$Zy_Tur$&#350;ifre gereklidir.$
+$Zy_Ger$Kennwort erforderlich.$
+$Zy_Fre$Mot de passe requis.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_AlertMsg_Str3$
+$Zy_Eng$Are you sure you want to logout ?$
+$Zy_Tur$Oturumu kapatmak istedi&#287;inizden emin misiniz?$
+$Zy_Ger$Sind Sie sicher, dass Sie sich abmelden wollen?$
+$Zy_Fre$Etes-vous s&#251;r de vouloir fermer la session?$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_AlertMsg_Str4$
+$Zy_Eng$Are you sure you want to delete it ?$
+$Zy_Tur$Bunu silmek istedi&#287;inizden emin misiniz?$
+$Zy_Ger$Sind Sie sicher, dass Sie l&#246;schen wollen?$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Allow$
+$Zy_Eng$Allow$
+$Zy_Tur$&#304;zin ver$
+$Zy_Ger$Zulassen$
+$Zy_Fre$Autoriser$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Apply$
+$Zy_Eng$Apply$
+$Zy_Tur$Uygula$
+$Zy_Ger$Anwenden$
+$Zy_Fre$Appliquer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_ARP$
+$Zy_Eng$ARP$
+$Zy_Tur$ARP$
+$Zy_Ger$ARP$
+$Zy_Fre$ARP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_ATM$
+$Zy_Eng$ATM$
+$Zy_Tur$ATM$
+$Zy_Ger$ATM$
+$Zy_Fre$ATM$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Auto$
+$Zy_Eng$Auto$
+$Zy_Tur$Otomatik$
+$Zy_Ger$Auto$
+$Zy_Fre$Auto$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Back$
+$Zy_Eng$Back$
+$Zy_Tur$Geri$
+$Zy_Ger$Zurück$
+$Zy_Fre$retour$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Bridge$
+$Zy_Eng$Bridge$
+$Zy_Tur$K&#246;pr&#252;$
+$Zy_Ger$Bridge$
+$Zy_Fre$Pont$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Cancel$
+$Zy_Eng$Cancel$
+$Zy_Tur$İptal et$
+$Zy_Ger$Abbrechen$
+$Zy_Fre$Annuler$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Update$
+$Zy_Eng$Update$
+$Zy_Tur$G&#252;ncelle$
+$Zy_Ger$Aktualisieren$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Cellular$
+$Zy_Eng$Cellular$
+$Zy_Tur$H&#252;cresel$
+$Zy_Ger$Cellular$
+$Zy_Fre$Cellulaire$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Close$
+$Zy_Eng$Close$
+$Zy_Tur$Kapat$
+$Zy_Ger$Schließen$
+$Zy_Fre$Fermer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_LoadSigned$
+$Zy_Eng$Load_Signed$
+$Zy_Tur$Y&#252;k_&#304;mzal&#305;$
+$Zy_Ger$Signiertes Zertifikat laden$
+$Zy_Fre$Fermer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Configuration$
+$Zy_Eng$Configuration$
+$Zy_Tur$Konfig&#252;rasyon$
+$Zy_Ger$Konfiguration$
+$Zy_Fre$Configuration$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Configured$
+$Zy_Eng$Configured$
+$Zy_Tur$Konfig&#252;re edilmi&#351;$
+$Zy_Ger$Konfiguriert$
+$Zy_Fre$Configur&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Locked$
+$Zy_Eng$Locked$
+$Zy_Tur$(null)$
+$Zy_Ger$gesch&#252;tzt$
+$Zy_Fre$Bloqu&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Confirm$
+$Zy_Eng$Confirm$
+$Zy_Tur$Onayla$
+$Zy_Ger$Bestätigen$
+$Zy_Fre$Confirmer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Connect$
+$Zy_Eng$Connect$
+$Zy_Tur$Ba&#287;lan$
+$Zy_Ger$Verbinden$
+$Zy_Fre$Connecter$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Day$
+$Zy_Eng$Day$
+$Zy_Tur$G&#252;n$
+$Zy_Ger$Tag$
+$Zy_Fre$Jour$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Days$
+$Zy_Eng$day$
+$Zy_Tur$g&#252;n$
+$Zy_Ger$Tag$
+$Zy_Fre$Jour$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Default$
+$Zy_Eng$Default$
+$Zy_Tur$Varsay&#305;lan$
+$Zy_Ger$Standard$
+$Zy_Fre$Par d&#233;faut$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Delete$
+$Zy_Eng$Delete$
+$Zy_Tur$Sil$
+$Zy_Ger$L&#246;schen$
+$Zy_Fre$Supprimer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_DeleteAlertMsg$
+$Zy_Eng$This will delete the item. Please Confirm this step.$
+$Zy_Tur$Bu, &#246;&#287;eyi silecektir. L&#252;tfen bu ad&#305;m&#305; onaylay&#305;n&#305;z.$
+$Zy_Ger$Element wird hierdurch gel&#246;scht. Bitte diesen Schritt best&#228;tigen.$
+$Zy_Fre$Cela va supprimer l&#39;&#233;l&#233;ment. Veuillez confirmer cette &#233;tape.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Deny$
+$Zy_Eng$Deny$
+$Zy_Tur$Reddet$
+$Zy_Ger$Ablehnen$
+$Zy_Fre$Refuser$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Description$
+$Zy_Eng$Description$
+$Zy_Tur$A&#231;&#305;klama$
+$Zy_Ger$Beschreibung$
+$Zy_Fre$Description$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Device$
+$Zy_Eng$Device$
+$Zy_Tur$Cihaz$
+$Zy_Ger$Ger&#228;t$
+$Zy_Fre$P&#233;riph&#233;rique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_DHCP$
+$Zy_Eng$DHCP$
+$Zy_Tur$DHCP$
+$Zy_Ger$DHCP$
+$Zy_Fre$DHCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_DHCPDisable$
+$Zy_Eng$Disable$
+$Zy_Tur$Devre D&#305;&#351;&#305; B&#305;rak$
+$Zy_Ger$Deaktivieren$
+$Zy_Fre$D&#233;sactiver$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_DHCPRelay$
+$Zy_Eng$Relay$
+$Zy_Tur$Aktar$
+$Zy_Ger$Relay$
+$Zy_Fre$Relais$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_DHCPServer$
+$Zy_Eng$Server$
+$Zy_Tur$Sunucu$
+$Zy_Ger$Server$
+$Zy_Fre$Serveur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Disable$
+$Zy_Eng$Disable$
+$Zy_Tur$Devre D&#305;&#351;&#305; B&#305;rak$
+$Zy_Ger$Deaktivieren$
+$Zy_Fre$D&#233;sactiver$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Disabled$
+$Zy_Eng$Disabled$
+$Zy_Tur$Devre d&#305;&#351;&#305;$
+$Zy_Ger$Deaktiviert$
+$Zy_Fre$D&#233;sactiv&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Disconnect$
+$Zy_Eng$Disconnect$
+$Zy_Tur$Ba&#287;lant&#305;y&#305; kes$
+$Zy_Ger$Verbindung abbauen$
+$Zy_Fre$D&#233;connecter$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_DNS$
+$Zy_Eng$DNS$
+$Zy_Tur$DNS$
+$Zy_Ger$DNS$
+$Zy_Fre$DNS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Down$
+$Zy_Eng$Down$
+$Zy_Tur$A&#351;a&#287;&#305;$
+$Zy_Ger$Nach unten$
+$Zy_Fre$Bas$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Downstream$
+$Zy_Eng$Downstream$
+$Zy_Tur$Downstream$
+$Zy_Ger$Downstream$
+$Zy_Fre$Aval$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_DSCP$
+$Zy_Eng$DSCP$
+$Zy_Tur$DSCP$
+$Zy_Ger$DSCP$
+$Zy_Fre$DSCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Edit$
+$Zy_Eng$Edit$
+$Zy_Tur$D&#252;zenle$
+$Zy_Ger$Bearbeiten$
+$Zy_Fre$Editer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Enable$
+$Zy_Eng$Enable$
+$Zy_Tur$Etkin$
+$Zy_Ger$Aktivieren$
+$Zy_Fre$Activer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Enabled$
+$Zy_Eng$Enabled$
+$Zy_Tur$Etkin$
+$Zy_Ger$Aktiviert$
+$Zy_Fre$Activ&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Error$
+$Zy_Eng$Error$
+$Zy_Tur$Hata$
+$Zy_Ger$Fehler$
+$Zy_Fre$Erreur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_EthernetWAN$
+$Zy_Eng$Ethernet WAN$
+$Zy_Tur$Ethernet WAN$
+$Zy_Ger$Ethernet WAN$
+$Zy_Fre$Ethernet WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_FilePath$
+$Zy_Eng$File Path$
+$Zy_Tur$Dosya Yolu$
+$Zy_Ger$Dateipfad$
+$Zy_Fre$Chemin d&#39;acc&#232;s du fichier$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Fixed$
+$Zy_Eng$Fixed$
+$Zy_Tur$Sabit$
+$Zy_Ger$Feste L&#228;nge$
+$Zy_Fre$Fixe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_FRI$
+$Zy_Eng$FRI$
+$Zy_Tur$FRI$
+$Zy_Ger$FR$
+$Zy_Fre$VEN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_From$
+$Zy_Eng$From$
+$Zy_Tur$Kaynak$
+$Zy_Ger$Von$
+$Zy_Fre$De$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Full$
+$Zy_Eng$Full$
+$Zy_Tur$Tam$
+$Zy_Ger$Full$
+$Zy_Fre$Plein$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_General$
+$Zy_Eng$General$
+$Zy_Tur$Genel$
+$Zy_Ger$Allgemein$
+$Zy_Fre$G&#233;n&#233;ral$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Half$
+$Zy_Eng$Half$
+$Zy_Tur$Yar&#305;m$
+$Zy_Ger$Half$
+$Zy_Fre$Moiti&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_High$
+$Zy_Eng$High$
+$Zy_Tur$Y&#252;ksek$
+$Zy_Ger$Hoch$
+$Zy_Fre$Forte$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Home$
+$Zy_Eng$Home$
+$Zy_Tur$Ana Sayfa$
+$Zy_Ger$Home$
+$Zy_Fre$Origine$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Hour$
+$Zy_Eng$hour$
+$Zy_Tur$saat$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_ICMP$
+$Zy_Eng$ICMP$
+$Zy_Tur$ICMP$
+$Zy_Ger$ICMP$
+$Zy_Fre$ICMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_IGMP$
+$Zy_Eng$IGMP$
+$Zy_Tur$IGMP$
+$Zy_Ger$IGMP$
+$Zy_Fre$IGMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_MLD$
+$Zy_Eng$MLD$
+$Zy_Tur$MLD$
+$Zy_Ger$MLD$
+$Zy_Fre$MLD$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Information$
+$Zy_Eng$Information$
+$Zy_Tur$Bilgi$
+$Zy_Ger$Information$
+$Zy_Fre$Informations$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_IP$
+$Zy_Eng$IP$
+$Zy_Tur$IP$
+$Zy_Ger$IP$
+$Zy_Fre$IP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_IPAddress$
+$Zy_Eng$IPv4 Address$
+$Zy_Tur$IP Adresi$
+$Zy_Ger$IP Adresse$
+$Zy_Fre$Adresse IP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_IPv6Address$
+$Zy_Eng$IPv6 Address$
+$Zy_Tur$IPv6 Adresi$
+$Zy_Ger$IPv6 Adresse$
+$Zy_Fre$Adresse IPv6$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_IPoA$
+$Zy_Eng$IPoA$
+$Zy_Tur$IPoA$
+$Zy_Ger$IPoA$
+$Zy_Fre$IPoA$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_IPoE$
+$Zy_Eng$IPoE$
+$Zy_Tur$IPoE$
+$Zy_Ger$IPoE$
+$Zy_Fre$IPoE$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_IPSubnetMask$
+$Zy_Eng$IPv4 Subnet Mask$
+$Zy_Tur$IP Alt A&#287; Maskesi$
+$Zy_Ger$IP-Subnetzmaske$
+$Zy_Fre$Masque de sous-r&#233;seau d&#39;IP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_WAN_SubnetMask$
+$Zy_Eng$WAN Subnet Mask$
+$Zy_Tur$WAN Alt A&#287; Maskesi$
+$Zy_Ger$WAN-Subnetzmaske$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_UpTime$
+$Zy_Eng$IPv4 Uptime$
+$Zy_Tur$IPv4 Uptime$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_v6UpTime$
+$Zy_Eng$IPv6 Uptime$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Kbps$
+$Zy_Eng$kbps$
+$Zy_Tur$kbps$
+$Zy_Ger$kb/s$
+$Zy_Fre$Kbps$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_WLAN$
+$Zy_Eng$WLAN$
+$Zy_Tur$Kablosuz Yerel A&#287; (WLAN)$
+$Zy_Ger$WLAN$
+$Zy_Fre$WLAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_LAN$
+$Zy_Eng$LAN$
+$Zy_Tur$Yerel A&#287; (LAN)$
+$Zy_Ger$LAN$
+$Zy_Fre$LAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Link$
+$Zy_Eng$Link$
+$Zy_Tur$Link$
+$Zy_Ger$Link$
+$Zy_Fre$Liaison$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Loading$
+$Zy_Eng$Loading&#8230;$
+$Zy_Tur$Y&#252;kleniyor&#8230;$
+$Zy_Ger$Laden&#8230;$
+$Zy_Fre$Chargement&#8230;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Login$
+$Zy_Eng$Login$
+$Zy_Tur$Oturum a&#231;$
+$Zy_Ger$Anmelden$
+$Zy_Fre$Ouvrir une session$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Telenor_Login$
+$Zy_Eng$Logg inn$
+$Zy_Tur$Oturum a&#231;$
+$Zy_Ger$Anmelden$
+$Zy_Fre$Ouvrir une session$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_LoginMsg$
+$Zy_Eng$It is highly recommended to setup a new password instead of using the default one for security concerns. The password must contain 4 to 256 characters, include 0-9 and a-z.$
+$Zy_Tur$G&#252;venli&#287;iniz nedeniyle varsay&#305;lan &#351;ifreyi kullanmak yerine yeni bir &#351;ifre belirlemeniz &#246;nemle tavsiye edilir. &#350;ifre, 0 - 9 ve a - z aras&#305;ndan se&#231;ilen 4 ile 256 karakterden olu&#351;mal&#305;d&#305;r.$
+$Zy_Ger$Aus Sicherheitsgr&#252;nden wird dringend empfohlen, ein neues Kennwort einzurichten und nicht das Standardkennwort zu verwenden. Das Kennwort muss aus 4 bis 256 Zeichen (aus 0-9 und a-z) bestehen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_LoginMsg_Retail$
+$Zy_Eng$It is highly recommended to setup a new password instead of using the default one for security concerns. The password must contain 6 to 20 characters, include 0-9 and a-z.$
+$Zy_Tur$G&#252;venli&#287;iniz nedeniyle varsay&#305;lan &#351;ifreyi kullanmak yerine yeni bir &#351;ifre belirlemeniz &#246;nemle tavsiye edilir. &#350;ifre, 0 - 9 ve a - z aras&#305;ndan se&#231;ilen 6 ile 20 karakterden olu&#351;mal&#305;d&#305;r.$
+$Zy_Ger$Aus Sicherheitsgr&#252;nden wird dringend empfohlen, ein neues Kennwort einzurichten und nicht das Standardkennwort zu verwenden. Das Kennwort muss aus 6 bis 20 Zeichen (aus 0-9 und a-z) bestehen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_LoginMsg_Retail1$
+$Zy_Eng$It is highly recommended to setup a new password instead of using the default one for security concerns. The password must contain numbers and letters together. It should not have more than 3 increasing, decreasing or repeating characters from minimum 8 characters up to 256 characters.$
+$Zy_Tur$G&#252;venli&#287;iniz nedeniyle varsay&#305;lan &#351;ifreyi kullanmak yerine yeni bir &#351;ifre ile belirlemeniz &#246;nemle tavsiye edilir. &#350;ifre i&#231;inde rakam ve harf birlikte bulunduracak &#351;ekilde, 3&#8217;ten fazla artan, azalan veya tekrar eden karakterlerin bulunmad&#305;&#287;&#305; 8 ile 256 aras&#305; karakterden olu&#351;mal&#305;d&#305;r.$
+$Zy_Ger$Aus Sicherheitsgr&#252;nden wird dringend empfohlen, ein neues Kennwort einzurichten und nicht das Standardkennwort zu verwenden. Das Kennwort muss aus 8 bis 256 Zeichen (aus 0-9 und a-z) bestehen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_LoginMsg_Str1$
+$Zy_Eng$Your modem is currently using the randomly generated unique password. For convenience you may wish to change this password to a new password that will be easy to remember yet difficult for others to guess. We suggest you combine text with numbers.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_LoginMsg_Str2$
+$Zy_Eng$Enter your new password in the field below and click &#34;Apply&#34;. Otherwise click &#34;Skip&#34; to keep the default password.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_LockoutMsg_Str1$
+$Zy_Eng$You have been locked out of your modem's configuration utility for 10 minutes due to failed attempted logins with an incorrect password.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_LockoutMsg_Str2$
+$Zy_Eng$You can clear this lock out by powering your modem off and on again.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_LockoutMsg_Str3$
+$Zy_Eng$This lock out does not affect the internet connectivity of your modem.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_LockoutMsg_Str4$
+$Zy_Eng$Click button to manually retry.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Login_AlertMsg_Str1$
+$Zy_Eng$Username is required.$
+$Zy_Tur$Kullan&#305;c&#305; Ad&#305; gerekli$
+$Zy_Ger$Benutzername erforderlich.$
+$Zy_Fre$Nom d&#39;utilisateur requis.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Login_AlertMsg_Str2$
+$Zy_Eng$Password is required.$
+$Zy_Tur$&#350;ifre gerekli$
+$Zy_Ger$Kennwort erforderlich.$
+$Zy_Fre$Mot de passe requis.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Login_AlertMsg_Str3$
+$Zy_Eng$The username or password is not correct.$
+$Zy_Tur$Kullan&#305;c&#305; ad&#305; veya &#351;ifre yanl&#305;&#351;t&#305;r.$
+$Zy_Ger$Benutzername oder Kennwort nicht richtig.$
+$Zy_Fre$Le nom d&#39;utilisateur ou le mot de passe n&#39;est pas correct.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Login_AlertMsg_Str4$
+$Zy_Eng$The password is not correct.$
+$Zy_Tur$&#350;ifre yanl&#305;&#351;t&#305;r.$
+$Zy_Ger$Kennwort nicht richtig.$
+$Zy_Fre$Le mot de passe n&#39;est pas correct.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Login_AlertMsg_Str5$
+$Zy_Eng$Please enable javascript in the browser.$
+$Zy_Tur$L&#252;tfen taray&#305;c&#305;n&#305;zda JavaScript&#39; i etkinle&#351;tiriniz.$
+$Zy_Ger$Bitte aktivieren Sie Javascript im Browser.$
+$Zy_Fre$Veuillez activer le javascript dans le navigateur.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Login_AlertMsg_Str6$
+$Zy_Eng$The Verify New Password is not correct.$
+$Zy_Tur$Yeni &#350;ifreyi Do&#287;rulama yanl&#305;&#351;t&#305;r.$
+$Zy_Ger$Nochmals eingegebenes neues Kennwort nicht richtig.$
+$Zy_Fre$Veuillez activer le javascript dans le navigateur.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Login_AlertMsg_Str7$
+$Zy_Eng$The New Password is not correct$
+$Zy_Tur$Yeni &#350;ifre yanl&#305;&#351;t&#305;r.$
+$Zy_Ger$Neues Kennwort nicht richtig$
+$Zy_Fre$Veuillez activer le javascript dans le navigateur.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Login_AlertMsg_Str8$
+$Zy_Eng$Please verify the password and try again.$
+$Zy_Tur$L&#252;tfen &#351;ifreyi do&#287;rulay&#305;n ve yeniden deneyiniz.$
+$Zy_Ger$Bitte geben Sie das Kennwort nochmals ein und probieren Sie es erneut.$
+$Zy_Fre$Veuillez activer le javascript dans le navigateur.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Login_AlertMsg_Str9$
+$Zy_Eng$The password can not be the empty$
+$Zy_Tur$&#350;ifre alan&#305; bo&#351; olamaz.$
+$Zy_Ger$Das Kennwort darf nicht leer sein.$
+$Zy_Fre$Veuillez activer le javascript dans le navigateur.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Login_AlertMsg_Str10$
+$Zy_Eng$The characters in password cannot contain your username.$
+$Zy_Tur$&#350;ifredeki karakterler ad&#305;n&#305;z&#305; i&#231;eremez.$
+$Zy_Ger$In einem Kennwort d&#252;rfen Sie Ihren Benutzernamen nicht verwenden.$
+$Zy_Fre$Veuillez activer le javascript dans le navigateur.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Login_AlertMsg_Str11$
+$Zy_Eng$The password must contain at least one numeric character and one alpha character.$
+$Zy_Tur$&#350;ifre, en az bir say&#305;sal karakter ve bir alfa karakter i&#231;ermelidir.$
+$Zy_Ger$Das Kennwort muss mindestens eine Ziffer und einen Buchstaben enthalten.$
+$Zy_Fre$Veuillez activer le javascript dans le navigateur.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Login_AlertMsg_Str12$
+$Zy_Eng$The password must contain 4 to 256 characters.$
+$Zy_Tur$&#350;ifre, 4 ile 256 aras&#305; karakterden olu&#351;mal&#305;d&#305;r.$
+$Zy_Ger$Das Kennwort muss aus 6 bis 256 Zeichen bestehen.$
+$Zy_Fre$Veuillez activer le javascript dans le navigateur.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Login_AlertMsg_Str13$
+$Zy_Eng$It is suggested to change your password and note it down.$
+$Zy_Tur$&#350;ifrenizi de&#287;i&#351;tirmeniz ve bir yere not etmeniz &#246;nerilir.$
+$Zy_Ger$Es wird empfohlen, das Kennwort zu &#228;ndern und es zu notieren.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Login_AlertMsg_Str14$
+$Zy_Eng$A user has logined. Please wait.$
+$Zy_Tur$(null)$
+$Zy_Ger$Ein Benutzer hat sich angemeldet. Bitte warten.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Login_AlertMsg_Str15$
+$Zy_Eng$The password must contain 6 to 20 characters.$
+$Zy_Tur$&#350;ifre, 6 ile 20 aras&#305; karakterden olu&#351;mal&#305;d&#305;r.$
+$Zy_Ger$Das Kennwort muss aus 6 bis 20 Zeichen bestehen.$
+$Zy_Fre$Veuillez activer le javascript dans le navigateur.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Login_AlertMsg_Str16$
+$Zy_Eng$The password must contain 8 to 256 characters.$
+$Zy_Tur$&#350;ifre, 8 ile 256 aras&#305; karakterden olu&#351;mal&#305;d&#305;r.$
+$Zy_Ger$Das Kennwort muss aus 6 bis 20 Zeichen bestehen.$
+$Zy_Fre$Veuillez activer le javascript dans le navigateur.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Login_Str1$
+$Zy_Eng$Welcome to$
+$Zy_Tur$Ho&#351; geldiniz$
+$Zy_Ger$Willkommen bei$
+$Zy_Fre$Bienvenue &#224; {{1}}$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Login_Str2$
+$Zy_Eng$Welcome$
+$Zy_Tur$Ho&#351; geldiniz$
+$Zy_Ger$Willkommen$
+$Zy_Fre$Bienvenue$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Minute$
+$Zy_Eng$minutes$
+$Zy_Tur$dakika$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Telenor_Login_Str1$
+$Zy_Eng$Velkommen$
+$Zy_Tur$Ho&#351; geldiniz$
+$Zy_Ger$Willkommen$
+$Zy_Fre$Bienvenue$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Login_Str3$
+$Zy_Eng$Welcome to {{1}} configuration interface. Please enter username and password to login. $
+$Zy_Tur${{1}} Yap&#305;land&#305;rma ara y&#252;z&#252;ne ho&#351; geldiniz. Giri&#351; yapmak i&#231;in l&#252;tfen kullan&#305;c&#305; ad&#305;n&#305;z&#305; ve &#351;ifrenizi giriniz.$
+$Zy_Ger$Willkommen bei der Konfiguration von {{1}}. Bitte geben Sie den Benutzernamen und das Kennwort ein, um sich anzumelden. $
+$Zy_Fre$C&#39;est Configurateur Web {{1}}. Saisissez le nom d&#39;utilisateur et le mot de passe pour ouvrir une session.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Login_Str4$
+$Zy_Eng$Welcome to the Web-Based Configurator$
+$Zy_Tur$Web Tabanl&#305; Yap&#305;land&#305;r&#305;c&#305;ya ho&#351; geldiniz$
+$Zy_Ger$Willkommen beim Web-basierten Konfigurator$
+$Zy_Fre$Bienvenue dans l&#39;Assistant de configuration bas&#233; sur Internet$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Login_Str5$
+$Zy_Eng$Your default password is the same as the Wireless Security Key printed on the label on the underside of your modem $
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Telenor_Login_Str2$
+$Zy_Eng$Velkommen til konfigureringssidene for Telenors $
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Telenor_Login_Str3$
+$Zy_Eng$ multimodem. Skriv inn brukernavn og passord for &#229; f&#229; tilgang. $
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_TelenorNorwayStaticText$
+$Zy_Eng$Ditt sambandsnummer er:$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_TelenorNorwayNoteHead1$
+$Zy_Eng$Privatkunder:$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_TelenorNorwayNote1$
+$Zy_Eng$For &#229; logge inn p&#229; modemet benytter du f&#248;lgende:$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_TelenorNorwayNote2$
+$Zy_Eng$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Brukernavn: admin$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_TelenorNorwayNote3$
+$Zy_Eng$ dette finner du p&#229; lappen under modemet etter teksten$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_TelenorNorwayNote4$
+$Zy_Eng$&#171;WPA2&#187; og best&#229;r av 13 sm&#229; bokstaver.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_TelenorNorwayNote5$
+$Zy_Eng$Skal du endre dine tr&#229;dl&#248;se innstillinger: nettverksnavn og nettverkspassord (krypteringsn&#248;kkel) anbefaler Telenor at du gj&#248;r dette p&#229;&nbsp;&#171;Mine Sider&#187; <a href=http://www.telenor.no/minesider/><FONT size=2>www.telenor.no/minesider</FONT></a>.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_TelenorNorwayNote6$
+$Zy_Eng$Da vil dine innstillinger bli lagret og modemet automatisk oppdatert dersom du bytter det eller m&#229; nullstille det.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_TelenorNorwayNote7$
+$Zy_Eng$Trenger du hjelp med modeminnstillinger kan du kontakte&nbsp;&#171;Telenoreksperten&#187; p&#229; telefon: <nobr>820 90 100.</nobr>$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_TelenorNorwayNote8$
+$Zy_Eng$OBS: endring av modeminnstillinger kan medf&#248;re redusert ytelse og sikkerhet i ditt nettverk. Telenor anbefaler derfor at du kontakter&nbsp;&#171;Telenoreksperten&#187; dersom du har behov for dette.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_TelenorNorwayNoteHead2$
+$Zy_Eng$Bedriftskunder:$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_TelenorNorwayNote9$
+$Zy_Eng$For &#229; logge inn p&#229; modemet benytter du f&#248;lgende:$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_TelenorNorwayNote10$
+$Zy_Eng$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Brukernavn: admin$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_TelenorNorwayNote11$
+$Zy_Eng$vet du ikke ditt admin passord kan du kontakte&nbsp;&#171;Kundeservice&#187; p&#229; telefon: 05000.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$$MLG_Common_TelenorNorwayNote12$
+$Zy_Eng$Hilsen Telenor$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Loginsum_AlertMsg_Str1$
+$Zy_Eng$Password verification fail.$
+$Zy_Tur$&#350;ifre do&#287;rulama ba&#351;ar&#305;s&#305;z.$
+$Zy_Ger$Fehler bei der &#220;berpr&#252;fung des Kennworts.$
+$Zy_Fre$La v&#233;rification du mot de passe a &#233;chou&#233;.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Loginsum_Str1$
+$Zy_Eng$Hello$
+$Zy_Tur$Merhaba$
+$Zy_Ger$Hallo$
+$Zy_Fre$Bonjour$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Loginsum_Str2$
+$Zy_Eng$Welcome to the TELUS {{1}}. <br>Please change your password to secure your home gateway.$
+$Zy_Tur$TELUS VSG1432&#39; ye ho&#351; geldiniz. <br> L&#252;tfen ev a&#287; ge&#231;idinizin g&#252;venli&#287;i i&#231;in &#351;ifrenizi de&#287;i&#351;tiriniz.$
+$Zy_Ger$(null)$
+$Zy_Fre$Bienvenue sur le TELUS {{1}}. <br>Changer votre mot de passe pour securiser votre passerelle domestique, s&#39;il vous plait.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Loginsum_Str3$
+$Zy_Eng$New Password$
+$Zy_Tur$Yeni &#350;ifre$
+$Zy_Ger$Neues Kennwort$
+$Zy_Fre$Nouveau mot de passe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Loginsum_Str4$
+$Zy_Eng$Verify New Password$
+$Zy_Tur$Yeni &#350;ifreyi Do&#287;rula$
+$Zy_Ger$Neues Kennwort nochmals eingeben$
+$Zy_Fre$V&#233;rifiez le nouveau mot de passe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Loginsum_Str5$
+$Zy_Eng$Remind me later$
+$Zy_Tur$Daha sonra hat&#305;rlat$
+$Zy_Ger$Sp&#228;ter erinnern$
+$Zy_Fre$Rappelez-moi plus tard$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Loginsum_Str6$
+$Zy_Eng$Change password$
+$Zy_Tur$&#350;ifreyi de&#287;i&#351;tir$
+$Zy_Ger$Kennwort &#228;ndern$
+$Zy_Fre$Changez le mot de passe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Loginsum_Str7$
+$Zy_Eng$Do not remind me again$
+$Zy_Tur$Tekrar hat&#305;rlatma$
+$Zy_Ger$Nicht erinnern$
+$Zy_Fre$Ne pas me rappeler$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Loginsum_Str8$
+$Zy_Eng$Retype New Password$
+$Zy_Tur$Tekrar Yeni &#350;ifre$
+$Zy_Ger$(null$)
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Logout$
+$Zy_Eng$Logout$
+$Zy_Tur$&#199;&#305;k&#305;&#351;$
+$Zy_Ger$Abmelden$
+$Zy_Fre$Fermer la session$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Long$
+$Zy_Eng$Long$
+$Zy_Tur$Uzun$
+$Zy_Ger$Lang$
+$Zy_Fre$Long$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Low$
+$Zy_Eng$Low$
+$Zy_Tur$D&#252;&#351;&#252;k$
+$Zy_Ger$Niedrig$
+$Zy_Fre$Faible$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_MACAddress$
+$Zy_Eng$MAC Address$
+$Zy_Tur$MAC Adresi$
+$Zy_Ger$MAC-Adresse$
+$Zy_Fre$Adresse MAC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_ManualInput$
+$Zy_Eng$Manual Input$
+$Zy_Tur$Manuel Giri&#351;$
+$Zy_Ger$Manuelle Eingabe$
+$Zy_Fre$Entr&#233;e manuelle$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Manual$
+$Zy_Eng$Manual$
+$Zy_Tur$Manuel$
+$Zy_Ger$Manuelle$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Medium$
+$Zy_Eng$Medium$
+$Zy_Tur$Orta$
+$Zy_Ger$Mittel$
+$Zy_Fre$Moyenne$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Message$
+$Zy_Eng$Message$
+$Zy_Tur$Mesaj$
+$Zy_Ger$Nachricht$
+$Zy_Fre$Message$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_MixedWPAWPA2$
+$Zy_Eng$Mixed WPA2/WPA$
+$Zy_Tur$Kar&#305;&#351;&#305;k WPA2/WPA$
+$Zy_Ger$Gemischt WPA2/WPA$
+$Zy_Fre$WPA2/WPA mixte$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_MixedWPAWPA2PSK$
+$Zy_Eng$Mixed WPA2-PSK/WPA-PSK$
+$Zy_Tur$Kar&#305;&#351;&#305;k WPA2-PSK/WPA-PSK$
+$Zy_Ger$Gemischt WPA2-PSK/WPA-PSK$
+$Zy_Fre$WPA2-PSK/WPA-PSK mixte$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_MoCA$
+$Zy_Eng$MoCA$
+$Zy_Tur$MoCA$
+$Zy_Ger$MoCA$
+$Zy_Fre$MoCA$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Mode$
+$Zy_Eng$Mode$
+$Zy_Tur$Mod$
+$Zy_Ger$Modus$
+$Zy_Fre$Mode$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Modify$
+$Zy_Eng$Modify$
+$Zy_Tur$De&#287;i&#351;tir$
+$Zy_Ger$&#196;ndern$
+$Zy_Fre$Modifier$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_TRUE$
+$Zy_Eng$TRUE$
+$Zy_Tur$ger&#231;ek$
+$Zy_Ger$TURE$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_MON$
+$Zy_Eng$MON$
+$Zy_Tur$PZT$
+$Zy_Ger$MO$
+$Zy_Fre$LUN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Monitor$
+$Zy_Eng$Monitor$
+$Zy_Tur$&#304;zle$
+$Zy_Ger$Monitor$
+$Zy_Fre$Moniteur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_NA$
+$Zy_Eng$N/A$
+$Zy_Tur$N/A$
+$Zy_Ger$k.A.$
+$Zy_Fre$N/A$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Name$
+$Zy_Eng$Name$
+$Zy_Tur$Ad&#305;$
+$Zy_Ger$Name$
+$Zy_Fre$Nom$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_No$
+$Zy_Eng$No$
+$Zy_Tur$Hayır$
+$Zy_Ger$Nein$
+$Zy_Fre$Non$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_NoLink$
+$Zy_Eng$NoLink$
+$Zy_Tur$Ba&#287;lant&#305; Yok$
+$Zy_Ger$NoLink$
+$Zy_Fre$NoLink (Pas de liaison)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_None$
+$Zy_Eng$None$
+$Zy_Tur$Hi&#231;biri$
+$Zy_Ger$Keine Auswahl$
+$Zy_Fre$Aucun$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_NoSecurity1$
+$Zy_Eng$No Security$
+$Zy_Tur$G&#252;venlik Yok$
+$Zy_Ger$Keine Sicherheit$
+$Zy_Fre$Pas de s&#233;curit&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_NoSecurity2$
+$Zy_Eng$NO SECURITY$
+$Zy_Tur$G&#220;VENL&#304;K YOK$
+$Zy_Ger$KEINE SICHERHEIT$
+$Zy_Fre$PAS DE S&#201;CURIT&#201;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Note$
+$Zy_Eng$Note$
+$Zy_Tur$Not Ediniz$
+$Zy_Ger$Hinweis$
+$Zy_Fre$Remarque$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Notes$
+$Zy_Eng$Notes$
+$Zy_Tur$Notlar$
+$Zy_Ger$Hinweise$
+$Zy_Fre$Remarques$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_noVDSLoverATM$
+$Zy_Eng$Not support VDSL over ATM$
+$Zy_Tur$ATM &#252;zerinden VDSL desteklenmiyor$
+$Zy_Ger$VDSL over ATM wird nicht unterst&#252;tzt$
+$Zy_Fre$ne prend pas en charge VDSL via ATM$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Off$
+$Zy_Eng$Off$
+$Zy_Tur$Kapal&#305;$
+$Zy_Ger$Aus$
+$Zy_Fre$D&#233;sactiv&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_OK$
+$Zy_Eng$OK$
+$Zy_Tur$TAMAM$
+$Zy_Ger$OK$
+$Zy_Fre$OK$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_On$
+$Zy_Eng$On$
+$Zy_Tur$A&#231;&#305;k$
+$Zy_Ger$Ein$
+$Zy_Fre$Activ&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Open$
+$Zy_Eng$Open$
+$Zy_Tur$A&#231;&#305;k$
+$Zy_Ger$Open$
+$Zy_Fre$Ouvrir$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Password$
+$Zy_Eng$Password$
+$Zy_Tur$&#350;ifre$
+$Zy_Ger$Kennwort$
+$Zy_Fre$Mot de passe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Telenor_Password$
+$Zy_Eng$Passord$
+$Zy_Tur$&#350;ifre$
+$Zy_Ger$Kennwort$
+$Zy_Fre$Mot de passe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_VerifyPassword$
+$Zy_Eng$Verify Password$
+$Zy_Tur$&#350;ifreyi Do&#287;rula$
+$Zy_Ger$Kennwort nochmals eingeben$
+$Zy_Fre$Mot de passe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_PPPoA$
+$Zy_Eng$PPPoA$
+$Zy_Tur$PPPoA$
+$Zy_Ger$PPPoA$
+$Zy_Fre$PPPoA$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_PPPoE$
+$Zy_Eng$PPPoE$
+$Zy_Tur$PPPoE$
+$Zy_Ger$PPPoE$
+$Zy_Fre$PPPoE$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_PTM$
+$Zy_Eng$PTM$
+$Zy_Tur$PTM$
+$Zy_Ger$PTM$
+$Zy_Fre$PTM$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_RefreshInterval$
+$Zy_Eng$Refresh Interval$
+$Zy_Tur$Yenileme S&#305;kl&#305;&#287;&#305;$
+$Zy_Ger$Aktualisierungsintervall$
+$Zy_Fre$Intervalle d&#39;actualisation $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Release$
+$Zy_Eng$Release$
+$Zy_Tur$S&#252;r&#252;m$
+$Zy_Ger$Freigeben$
+$Zy_Fre$Version$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Renew$
+$Zy_Eng$Renew$
+$Zy_Tur$Yenile$
+$Zy_Ger$Erneuern$
+$Zy_Fre$Renouveler$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_RenewIP$
+$Zy_Eng$Renew IP$
+$Zy_Tur$IP Yenile$
+$Zy_Ger$Erneuern IP$
+$Zy_Fre$Renouveler IP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_SAT$
+$Zy_Eng$SAT$
+$Zy_Tur$CMT$
+$Zy_Ger$SA$
+$Zy_Fre$SAM$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Save$
+$Zy_Eng$Save$
+$Zy_Tur$Kaydet$
+$Zy_Ger$Speichern$
+$Zy_Fre$Enregistrer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Sec$
+$Zy_Eng$sec$
+$Zy_Tur$saniye$
+$Zy_Ger$s.$
+$Zy_Fre$sec$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Second$
+$Zy_Eng$second$
+$Zy_Tur$saniye$
+$Zy_Ger$Sekunden$
+$Zy_Fre$seconde$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Seconds$
+$Zy_Eng$Seconds$
+$Zy_Tur$Saniye$
+$Zy_Ger$Sekunden$
+$Zy_Fre$Secondes$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Settings$
+$Zy_Eng$Settings$
+$Zy_Tur$Ayarlar$
+$Zy_Ger$Einstellungen$
+$Zy_Fre$R&#233;glages$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Set$
+$Zy_Eng$Set$
+$Zy_Tur$Ayarla$
+$Zy_Ger$#$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Short$
+$Zy_Eng$Short$
+$Zy_Tur$K&#305;sa$
+$Zy_Ger$Kurz$
+$Zy_Fre$Court$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_State$
+$Zy_Eng$State$
+$Zy_Tur$Durum$
+$Zy_Ger$Status$
+$Zy_Fre$&#201;tat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Status$
+$Zy_Eng$Status$
+$Zy_Tur$Durum$
+$Zy_Ger$Status$
+$Zy_Fre$&#201;tat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_SubnetMask$
+$Zy_Eng$Subnet Mask$
+$Zy_Tur$Alt a&#287; maskesi$
+$Zy_Ger$Subnetzmaske$
+$Zy_Fre$Masque de sous-r&#233;seau$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_SUN$
+ $Zy_Eng$SUN$
+$Zy_Tur$PAZ$
+$Zy_Ger$SO$
+$Zy_Fre$DIM$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_TCP$
+$Zy_Eng$TCP$
+$Zy_Tur$TCP$
+$Zy_Ger$TCP$
+$Zy_Fre$TCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_THU$
+$Zy_Eng$THU$
+$Zy_Tur$PER$
+$Zy_Ger$DO$
+$Zy_Fre$JEU$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Time$
+$Zy_Eng$Time$
+$Zy_Tur$S&#252;re$
+$Zy_Ger$Zeit$
+$Zy_Fre$Heure$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_TKIP$
+$Zy_Eng$TKIP$
+$Zy_Tur$TKIP$
+$Zy_Ger$TKIP$
+$Zy_Fre$TKIP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_TKIPAES$
+$Zy_Eng$TKIP+AES$
+$Zy_Tur$TKIP+AES$
+$Zy_Ger$TKIP+AES$
+$Zy_Fre$TKIP+AES$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_To$
+$Zy_Eng$To$
+$Zy_Tur$Hedef$
+$Zy_Ger$bis$
+$Zy_Fre$&#192;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_TUE$
+$Zy_Eng$TUE$
+$Zy_Tur$SAL$
+$Zy_Ger$DI$
+$Zy_Fre$MAR$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Type$
+$Zy_Eng$Type$
+$Zy_Tur$T&#252;r$
+$Zy_Ger$Typ$
+$Zy_Fre$Type$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_UDP$
+$Zy_Eng$UDP$
+$Zy_Tur$UDP$
+$Zy_Ger$UDP$
+$Zy_Fre$UDP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Unconfigured$
+$Zy_Eng$Unconfigured$
+$Zy_Tur$Yap&#305;land&#305;r&#305;lmam&#305;&#351;$
+$Zy_Ger$Nicht konfiguriert$
+$Zy_Fre$Non configur&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Unknown$
+$Zy_Eng$unknown$
+$Zy_Tur$bilinmeyen$
+$Zy_Ger$unbekannt$
+$Zy_Fre$Inconnu$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_UP$
+$Zy_Eng$Up$
+$Zy_Tur$Yukar&#305;$
+$Zy_Ger$Up$
+$Zy_Fre$Haut$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Upload$
+$Zy_Eng$Upload$
+$Zy_Tur$Y&#252;kle$
+$Zy_Ger$Hochladen$
+$Zy_Fre$T&#233;l&#233;charger$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Upstream$
+$Zy_Eng$Upstream$
+$Zy_Tur$Upstream$
+$Zy_Ger$Upstream$
+$Zy_Fre$Amont$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_UserDefined$
+$Zy_Eng$User Defined$
+$Zy_Tur$Kullan&#305;c&#305; Tan&#305;ml&#305;$
+$Zy_Ger$Benutzerdefiniert$
+$Zy_Fre$Personnalis&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Username$
+$Zy_Eng$Username$
+$Zy_Tur$Kullan&#305;c&#305; Ad&#305;$
+$Zy_Ger$Benutzername$
+$Zy_Fre$Nom d&#39;utilisateur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Telenor_Username$
+$Zy_Eng$Brukernavn:$
+$Zy_Tur$Kullan&#305;c&#305; Ad&#305;$
+$Zy_Ger$Benutzername$
+$Zy_Fre$Nom d&#39;utilisateur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_User_Name$
+$Zy_Eng$User Name$
+$Zy_Tur$Kullan&#305;c&#305; Ad&#305;$
+$Zy_Ger$Benutzername$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Variable$
+$Zy_Eng$Variable$
+$Zy_Tur$De&#287;i&#351;ken$
+$Zy_Ger$Variabel$
+$Zy_Fre$Variable$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_VDSL$
+$Zy_Eng$VDSL$
+$Zy_Tur$VDSL$
+$Zy_Ger$VDSL$
+$Zy_Fre$VDSL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_View$
+$Zy_Eng$View$
+$Zy_Tur$G&#246;r&#252;nt&#252;le$
+$Zy_Ger$Ansicht$
+$Zy_Fre$Afficher$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_ViewingMode$
+$Zy_Eng$Viewing mode $
+$Zy_Tur$G&#246;r&#252;nt&#252;leme modu $
+$Zy_Ger$Modus f&#252;r Ansicht $
+$Zy_Fre$Mode d&#39;affichage $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_VLANID$
+$Zy_Eng$VLAN ID$
+$Zy_Tur$VLAN ID$
+$Zy_Ger$VLAN ID$
+$Zy_Fre$ID VLAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_WAN$
+$Zy_Eng$WAN$
+$Zy_Tur$WAN$
+$Zy_Ger$WAN$
+$Zy_Fre$WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Port$
+$Zy_Eng$Port$
+$Zy_Tur$Port$
+$Zy_Ger$Port$
+$Zy_Fre$Port$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Warning$
+$Zy_Eng$Warning$
+$Zy_Tur$Uyar&#305;$
+$Zy_Ger$Warnung$
+$Zy_Fre$Avertissement$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_WED$
+$Zy_Eng$WED$
+$Zy_Tur$&#199;AR$
+$Zy_Ger$MI$
+$Zy_Fre$MER$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_WEP$
+$Zy_Eng$WEP$
+$Zy_Tur$WEP$
+$Zy_Ger$WEP$
+$Zy_Fre$WEP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_WPA$
+$Zy_Eng$WPA$
+$Zy_Tur$WPA$
+$Zy_Ger$WPA$
+$Zy_Fre$WPA$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_WPA2$
+$Zy_Eng$WPA2$
+$Zy_Tur$WPA2$
+$Zy_Ger$WPA2$
+$Zy_Fre$WPA2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_WPA2PSK$
+$Zy_Eng$WPA2-PSK$
+$Zy_Tur$WPA2-PSK$
+$Zy_Ger$WPA2-PSK$
+$Zy_Fre$WPA2-PSK$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_WPAPSK$
+$Zy_Eng$WPA-PSK$
+$Zy_Tur$WPA-PSK$
+$Zy_Ger$WPA-PSK$
+$Zy_Fre$WPA-PSK$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Yes$
+$Zy_Eng$Yes$
+$Zy_Tur$Evet$
+$Zy_Ger$Ja$
+$Zy_Fre$Oui$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_more$
+$Zy_Eng$more$
+$Zy_Tur$daha fazla$
+$Zy_Ger$mehr$
+$Zy_Fre$plus$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_less$
+$Zy_Eng$less$
+$Zy_Tur$daha az$
+$Zy_Ger$weniger$
+$Zy_Fre$moins$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Language$
+$Zy_Eng$Language$
+$Zy_Tur$Dil$
+$Zy_Ger$Sprache$
+$Zy_Fre$Langue$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_DSLLine$
+$Zy_Eng$DSL Line{{1}}$
+$Zy_Tur$DSL Hatt&#305; {{1}}$
+$Zy_Ger$DSL-Verbindung {{1}}$
+$Zy_Fre$Ligne{{1}} DSL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Include$
+$Zy_Eng$include$
+$Zy_Tur$dahil et$
+$Zy_Ger$include$
+$Zy_Fre$inclure$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Exclude$
+$Zy_Eng$exclude$
+$Zy_Tur$hari&#231; tut$
+$Zy_Ger$exclude$
+$Zy_Fre$exclure$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Primary$
+$Zy_Eng$Primary$
+$Zy_Tur$Birincil$
+$Zy_Ger$Prim&#228;r$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Secondary$
+$Zy_Eng$Secondary$
+$Zy_Tur$&#304;kincil$
+$Zy_Ger$Sekund&#228;r$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Primary_DNS_server$
+$Zy_Eng$Primary DNS server$
+$Zy_Tur$Birincil DNS sunucusu$
+$Zy_Ger$Prim&#228;rer DNS Server$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Secondary_DNS_server$
+$Zy_Eng$Secondary DNS server$
+$Zy_Tur$&#304;kincil DNS sunucusu$
+$Zy_Ger$Sekund&#228;rer DNS Server$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Primary_IPv6_DNS_server$
+$Zy_Eng$Primary IPv6 DNS server$
+$Zy_Tur$Birincil IPv6 DNS sunucusu$
+$Zy_Ger$Prim&#228;rer IPv6 DNS Server$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Secondary_IPv6_DNS_server$
+$Zy_Eng$Secondary IPv6 DNS server$
+$Zy_Tur$&#304;kincil IPv6 DNS sunucusu$
+$Zy_Ger$Sekund&#228;rer iPv6 DNS Server$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_PPP_Password$
+$Zy_Eng$PPP Password$
+$Zy_Tur$PPP &#350;ifresi$
+$Zy_Ger$PPP-Kennwort$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_PPPoE_ServiceName$
+$Zy_Eng$PPPoE Service Name$
+$Zy_Tur$PPPoE Servis Ad&#305;$
+$Zy_Ger$PPPoE-Service-Name$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Specific_IPAddress$
+$Zy_Eng$Specific IP Address$
+$Zy_Tur$&#214;zel IP Adresi$
+$Zy_Ger$Spezifische IP-Adresse$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Specific_Service$
+$Zy_Eng$Specific Service$
+$Zy_Tur$&#214;zel Servis$
+$Zy_Ger$Spezifischer Service$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_PPP$
+$Zy_Eng$PPP$
+$Zy_Tur$PPP$
+$Zy_Ger$PPP$
+$Zy_Fre$PPP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Automatic$
+$Zy_Eng$Automatic$
+$Zy_Tur$Otomatik$
+$Zy_Ger$Automatisch$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Ip_From_DHCPServer$
+$Zy_Eng$Get IPv6 Address From DHCPv6 Server(IA_NA)$
+$Zy_Tur$DHCPv6 Sunucu (IA_NA) itibaren IPv6 Adres$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Prefix_From_DHCPServer$
+$Zy_Eng$Prefix Delegation(IA_PD)$
+$Zy_Tur$&#214;nek Delegasyonu (IA_PD)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_PrefixLength$
+$Zy_Eng$Prefix Length$
+$Zy_Tur$&#214;nek Uzunlu&#287;u$
+$Zy_Ger$Pr&#228;fixl&#228;nge$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_IPv6$
+$Zy_Eng$IPv6$
+$Zy_Tur$IPv6$
+$Zy_Ger$IPv6$
+$Zy_Fre$IPv6$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Administrator$
+$Zy_Eng$Administrator$
+$Zy_Tur$Y&#246;netici$
+$Zy_Ger$Administrator$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_User$
+$Zy_Eng$User$
+$Zy_Tur$Kullan&#305;c&#305;$
+$Zy_Ger$Benutzer$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Supervisor$
+$Zy_Eng$Supervisor$
+$Zy_Tur$S&#252;perviz&#246;r$
+$Zy_Ger$Aufsicht$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_PrivilegeSetting$
+$Zy_Eng$Privilege Setting$
+$Zy_Tur$Ayr&#305;cal&#305;k Ayar&#305;$
+$Zy_Ger$Einstellungen von Rechten$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Expand_All$
+$Zy_Eng$Expand All$
+$Zy_Tur$T&#252;m&#252;n&#252; Geni&#351;let$
+$Zy_Ger$Alles einblenden$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Collapse_All$
+$Zy_Eng$Collapse All$
+$Zy_Tur$T&#252;m&#252;n&#252; Daralt$
+$Zy_Ger$Alles ausblenden$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Wizard$
+$Zy_Eng$Wizard$
+$Zy_Tur$Sihirbaz$
+$Zy_Ger$Assistent$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_QuickStart$
+$Zy_Eng$Quick Start$
+$Zy_Tur$H&#305;zl&#305; Ba&#351;lang&#305;&#231;$
+$Zy_Ger$Quickstart$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_EasySetup$
+$Zy_Eng$Easy Setup$
+$Zy_Tur$kolay Kurulum$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Group$
+$Zy_Eng$Group$
+$Zy_Tur$Grupla$
+$Zy_Ger$Gruppe$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_UntitledDocument$
+$Zy_Eng$Untitled Document$
+$Zy_Tur$Ads&#305;z Belge$
+$Zy_Ger$Unbenanntes Dokument$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_USB$
+$Zy_Eng$USB$
+$Zy_Tur$USB$
+$Zy_Ger$USB$
+$Zy_Fre$USB$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_English$
+$Zy_Eng$English$
+$Zy_Tur$English$
+$Zy_Ger$Englisch$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Turkish$
+$Zy_Eng$Turkish$
+$Zy_Tur$T&#252;rk&#231;e$
+$Zy_Ger$T&#252;rkisch$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_German$
+$Zy_Eng$German$
+$Zy_Tur$Alman$
+$Zy_Ger$Deutsch$
+$Zy_Fre$Allemand$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_French$
+$Zy_Eng$French$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$Fran&ccedil;ais$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_LoginPrivilege$
+$Zy_Eng$Login Privilege$
+$Zy_Tur$Giri&#351; Ayr&#305;cal&#305;&#287;&#305;$
+$Zy_Ger$Anmeldeberechtigung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Next$
+$Zy_Eng$Next$
+$Zy_Tur$Sonraki$
+$Zy_Ger$Weiter$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Retry$
+$Zy_Eng$Retry$
+$Zy_Tur$Tekrar dene$
+$Zy_Ger$Erneut probieren$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_nopage$
+$Zy_Eng$no page$
+$Zy_Tur$sayfa yok$
+$Zy_Ger$keine Seite$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_tabpage$
+$Zy_Eng$tab page$
+$Zy_Tur$sekme sayfas&#305;$
+$Zy_Ger$Registerkarte$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_singlepage$
+$Zy_Eng$single page$
+$Zy_Tur$tek sayfa$
+$Zy_Ger$Einzelseite$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_QuickStartmeg$
+$Zy_Eng$Do not automatically show this Quick Start after login.$
+$Zy_Tur$Giri&#351; yapt&#305;ktan sonra bu H&#305;zl&#305; Ba&#351;lang&#305;c&#305; otomatik olarak &#8203;&#8203;g&#246;sterme.$
+$Zy_Ger$Diesen Quickstart nach dem Anmelden nicht automatisch anzeigen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Skip$
+$Zy_Eng$Skip$
+$Zy_Tur$Atla$
+$Zy_Ger$&#220;berspringen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Admin$
+$Zy_Eng$Admin$
+$Zy_Tur$Y&#246;netici$
+$Zy_Ger$Admin$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_zyxel$
+$Zy_Eng$ZyXEL$
+$Zy_Tur$ZyXEL$
+$Zy_Ger$ZyXEL$
+$Zy_Fre$ZyXEL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_FamilySafety$
+$Zy_Eng$Family Safety$
+$Zy_Tur$Aile Korumas&#305;$
+$Zy_Ger$Jugendschutz$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Security$
+$Zy_Eng$Security$
+$Zy_Tur$G&#252;venlik$
+$Zy_Ger$Sicherheit$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Last$
+$Zy_Eng$Last$
+$Zy_Tur$Son$
+$Zy_Ger$Last$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Inactive$
+$Zy_Eng$Inactive$
+$Zy_Tur$Aktif De&#287;il$
+$Zy_Ger$Inaktiv$
+$Zy_Fre$Actif$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Characters$
+$Zy_Eng$characters$
+$Zy_Tur$(null)$
+$Zy_Ger$Zeichen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_ExternalPort$
+$Zy_Eng$External Port$
+$Zy_Tur$(null)$
+$Zy_Ger$externer Port$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_InternalPort$
+$Zy_Eng$Internal Port$
+$Zy_Tur$(null)$
+$Zy_Ger$interner Port$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Common_AddSIPAccount$
+$Zy_Eng$Add this SIP Account$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Common_EditSIPAccount$
+$Zy_Eng$Edit this SIP Account$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_ApplyWorringMessageCancel$
+$Zy_Eng$Cancel$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_ApplyWorringMessageContinue$
+$Zy_Eng$Continue$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_ApplyWorringMessageMakeSure$
+$Zy_Eng$Error$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_80211a$
+$Zy_Eng$802.11a Only$
+$Zy_Tur$802.11a Only$
+$Zy_Ger$802.11a Only$
+$Zy_Fre$802.11a Only$
+$Zy_Ita$802.11a Only$
+
+$NAME$MLG_Common_AutoFWNotify$
+$Zy_Eng$There is a newer firmware.$
+$Zy_Tur$Yeni bir yaz&#305;l&#305;m mevcut.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_AutoFWNotify_2$
+$Zy_Eng$Enter the username and password then click \"Upgrade\" to update the firmware of$
+$Zy_Tur$Yaz&#305;l&#305;m g&#252;ncelleme i&#231;in, kullan&#305;c&#305; ad&#305; ve &#351;ifreyi girdikten sonra, \"Y&#252;kle\" butonuna bas&#305;n&#305;z$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_FirmwareUpgradeInProgress$
+$Zy_Eng$Firmware upgrade in progress$
+$Zy_Tur$Yaz&#305;l&#305;m G&#252;ncelle&#351;tirme &#304;&#351;lemi S&#252;r&#252;yor$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_DoNotTurnOffTheDevice$
+$Zy_Eng$Do not Turn Off the Device.$
+$Zy_Tur$Cihaz&#305; kapatmay&#305;n&#305;z.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_PleaseWait$
+$Zy_Eng$Please Wait ...$
+$Zy_Tur$L&#252;tfen Bekleyiniz ...$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_FirmwareUpgradeInProgress_CONTENT_1$
+$Zy_Eng$If a VoIP call is still active, the device waits for the call to end before starting the firmware upgrade process.$
+$Zy_Tur$E&#287;er bir VoIP aramas&#305; hala aktifse, cihaz yaz&#305;l&#305;m g&#252;ncelle&#351;tirme i&#351;lemini ba&#351;latmak i&#231;in araman&#305;n sonlanmas&#305;n&#305; bekliyor olabilir.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_FirmwareUpgradeInProgress_CONTENT_2$
+$Zy_Eng$Please wait for the device to finish restarting. This should take about three minutes.$
+$Zy_Tur$L&#252;tfen cihaz&#305;n&#305;z&#305;n yeniden ba&#351;lat&#305;lmas&#305;n&#305; bekleyiniz. Bu i&#351;lem 3 dakika s&#252;rebilir.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_FirmwareUpgradeInProgress_CONTENT_3$
+$Zy_Eng$To access the device after a successful firmware upgrade, you need to log in again. Check your new firmware version in the system status menu.$
+$Zy_Tur$Ba&#351;ar&#305;l&#305; bir yaz&#305;l&#305;m g&#252;ncelle&#351;tirme i&#351;leminin ard&#305;ndan cihaza eri&#351;ebilmek i&#231;in tekrar giri&#351; yapmaya ihtiyac&#305;n&#305;z var. L&#252;fen yeni yaz&#305;l&#305;m&#305;n&#305;z&#305; sistem durum men&#252;s&#252;nden kontrol ediniz.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Note_Common$
+$Zy_Eng$Note : $
+$Zy_Tur$Not$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_80211an$
+$Zy_Eng$802.11a/n Mixed$
+$Zy_Tur$Karışık 802.11a / n$
+$Zy_Ger$802.11a/n gemischt$
+$Zy_Fre$802.11a/n Mixte$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_80211anac$
+$Zy_Eng$802.11a/n/ac Mixed$
+$Zy_Tur$Karışık 802.11a / n /ac$
+$Zy_Ger$802.11a/n/ac gemischt$
+$Zy_Fre$802.11a/n/ac Mixte$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_80211nac$
+$Zy_Eng$802.11n/ac Mixed$
+$Zy_Tur$Karışık 802.11n /ac$
+$Zy_Ger$802.11n/ac gemischt$
+$Zy_Fre$802.11n/ac Mixte$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Vlan_ID$
+$Zy_Eng$This ID is reserved for the other application.$
+$Zy_Tur$Bu ID ba&#351;ka bir uygulama i&#231;in rezerve edilmi&#351;tir.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_TTHGW_Model_Name$
+$Zy_Eng$VMG8324-B10A T&#252;rk Telekom$
+$Zy_Tur$VMG8324-B10A T&#252;rk Telekom$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Common_Login_User$
+$Zy_Eng$Login User: $
+$Zy_Tur$Oturum a&#231;an kullan&#305;c&#305;: $
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$

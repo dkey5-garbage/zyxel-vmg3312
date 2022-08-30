@@ -1,0 +1,3407 @@
+﻿#include<stdio.h>	
+#include<string.h>	
+#include<stdlib.h>	
+#include<time.h>	
+#include "languages.h"	
+
+
+
+$NAME$MLG_Maintenance_CFM_Explain$
+$Zy_Eng$Ping and TraceRoute are network utilities used to test whether a particular host is reachable. Enter either an IP address or a host name and click one of the buttons to start a Ping or TraceRoute test. The test result will be shown in the Info area.$
+$Zy_Tur$Ping ve TraceRoute belirli bir hostun eri&#351;ilebilir olup olmad&#305;&#287;&#305;n&#305; test etmek i&#231;in kullan&#305;lan a&#287; ara&#231;lar&#305;d&#305;r. Ya bir IP adresi ya da host ad&#305; girin ve bir ping ve TraceRoute testi ba&#351;latmak i&#231;in butonlardan birine t&#305;klay&#305;n&#305;z. Test sonucu, Bilgiler alan&#305;nda g&#246;sterilecektir. $
+$Zy_Ger$Ping und TraceRoute sind Netzwerkdienstprogramme, mit denen getestet werden kann, ob ein bestimmter Host erreichbar ist. Geben Sie entweder eine IP-Adresse oder einen Hostnamen ein ,und klicken Sie auf eine der Schaltfl&#228;chen, um einen Test mit Ping oder TraceRoute zu starten. Das Testergebnis wird im Bereich Info gezeigt.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_CFM_Str15$
+$Zy_Eng$Ping/TraceRoute Test$
+$Zy_Tur$Ping/TraceRoute Test$
+$Zy_Ger$Test mit Ping/TraceRoute$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_CFM_Str16$
+$Zy_Eng$TCP/IP$
+$Zy_Tur$TCP/IP$
+$Zy_Ger$TCP/IP$
+$Zy_Fre$TCP/IP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_CFM_AlertMsg_Str1$
+$Zy_Eng$MAC address {{1}} is invalid. Eg. 11:22:33:AA:BB:CC$
+$Zy_Tur$MAC adresi {{1}} ge&#231;ersiz. &#214;rn. 11:22:33:AA:BB:CC$
+$Zy_Ger$MAC-Adresse {{1}} ist ung&#252;ltig. Beispiel: 11:22:33:AA:BB:CC$
+$Zy_Fre$L&#39;adresse MAC {{1}} n&#39;est pas valide. Eg. 11:22:33:AA:BB:CC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_CFM_AlertMsg_Str2$
+$Zy_Eng$VLAN ID {{1}} is out of range [0-4095].$
+$Zy_Tur$VLAN ID {{1}},  [0-4095] aral&#305;&#287;&#305; d&#305;&#351;&#305;ndad&#305;r.$
+$Zy_Ger$VLAN ID {{1}} liegt au&#223;erhalb des Bereichs [0-4095].$
+$Zy_Fre$ID VLAN {{1}} hors plage [0-4095].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_CFM_AlertMsg_Str3$
+$Zy_Eng$Address should not be empty!$
+$Zy_Tur$Adres alan&#305; bo&#351; olmamal&#305;!$
+$Zy_Ger$Adresse sollte nicht leer sein.$
+$Zy_Fre$L&#39;adresse ne doit pas &#234;tre vide!$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_CFM_AlertMsg_Str4$
+$Zy_Eng$Address is invalid$
+$Zy_Tur$Adres ge&#231;ersiz$
+$Zy_Ger$Adresse ist ung&#252;ltig$
+$Zy_Fre$L&#39;adresse n&#39;est pas valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_CFM_Str1$
+$Zy_Eng$This diagnostic is only used for VDSL PTM mode.$
+$Zy_Tur$Bu tan&#305;lama, sadece VDSL PTM modu i&#231;in kullan&#305;l&#305;r.$
+$Zy_Ger$Diese Diagnose wird nur f&#252;r den VDSL PTM Modus verwendet.$
+$Zy_Fre$Ce diagnostic est utilis&#233; uniquement pour le mode VDSL PTM. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_CFM_Str10$
+$Zy_Eng$Loopback Message (LBM)$
+$Zy_Tur$Geri D&#246;ng&#252; Mesaj&#305; (LBM)$
+$Zy_Ger$LBM (Loopback Message)$
+$Zy_Fre$Message de bouclage (LBM)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_CFM_Str11$
+$Zy_Eng$Linktrace Message (LTM)$
+$Zy_Tur$Ba&#287;lant&#305; Trace&#39;i Mesaj&#305; (LTM)$
+$Zy_Ger$LTM (Linktrace Message)$
+$Zy_Fre$Message suivi li&#233; (LTM)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_CFM_Str12$
+$Zy_Eng$Set MD Level$
+$Zy_Tur$MD Seviyesini ayarla $
+$Zy_Ger$MD Level einstellen$
+$Zy_Fre$D&#233;finir le niveau MD$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_CFM_Str13$
+$Zy_Eng$Send Loopback$
+$Zy_Tur$Geri D&#246;ng&#252; g&#246;nder$
+$Zy_Ger$Loopback senden$
+$Zy_Fre$Envoyer le bouclage$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_CFM_Str14$
+$Zy_Eng$Send Linktrace$
+$Zy_Tur$Ba&#287;lant&#305; Trace&#39;i G&#246;nder$
+$Zy_Ger$Linktrace senden$
+$Zy_Fre$Envoyer le suivi li&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_CFM_Str2$
+$Zy_Eng$802.1ag Connectivity Fault Management$
+$Zy_Tur$802.1ag Ba&#287;lant&#305; Hata Y&#246;netimi$
+$Zy_Ger$802.1ag Konnektivit&#228;ts-St&#246;rungsmanagement$
+$Zy_Fre$Gestion des pannes de connectivit&#233; 802.1ag$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_CFM_Str3$
+$Zy_Eng$Maintenance Domain (MD) Level$
+$Zy_Tur$Bak&#305;m Etki Alan&#305; Seviyesi$
+$Zy_Ger$Maintenance Domain (MD) Level$
+$Zy_Fre$Niveau du Domaine de maintenance (MD) $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_CFM_Str4$
+$Zy_Eng$Destination MAC Address$
+$Zy_Tur$Hedef MAC Adresi$
+$Zy_Ger$Ziel-MAC-Adresse$
+$Zy_Fre$Adresse MAC de destination$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_CFM_Str5$
+$Zy_Eng$802.1Q VLAN ID$
+$Zy_Tur$802.1Q VLAN ID$
+$Zy_Ger$802.1Q VLAN ID$
+$Zy_Fre$ID VLAN 802.1Q$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_CFM_Str6$
+$Zy_Eng$VDSL Traffic Type$
+$Zy_Tur$VDSL Trafik Tipi$
+$Zy_Ger$VDSL-Verkehrstyp$
+$Zy_Fre$Type de trafic VDSL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_CFM_Str7$
+$Zy_Eng$Active$
+$Zy_Tur$Aktif$
+$Zy_Ger$Aktiv$
+$Zy_Fre$Actif$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_CFM_Str8$
+$Zy_Eng$Inactive$
+$Zy_Tur$Aktif De&#287;il$
+$Zy_Ger$Inaktiv$
+$Zy_Fre$Inactif$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_CFM_Str9$
+$Zy_Eng$Test the connection to another Maintenance End Point (MEP)$
+$Zy_Tur$Ba&#351;ka bir Bak&#305;m Biti&#351; Noktas&#305; ba&#287;lant&#305;s&#305;n&#305; test ediniz$
+$Zy_Ger$Testen Sie die Verbindung zu einem anderen MEP (Maintenance End Point)$
+$Zy_Fre$Test de la connexion &#224; un autre Point de fin de maintenance (MEP)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_AlertMsg_Str1$
+$Zy_Eng$Configuration uploading failed. The system is out of memory.$
+$Zy_Tur$ Yap&#305;land&#305;rma y&#252;klemesi ba&#351;ar&#305;s&#305;z. Sistem bellek d&#305;&#351;&#305;ndad&#305;r.$
+$Zy_Ger$Fehler beim Hochladen der Konfiguration. Das System hat zu wenig Speicher.$
+$Zy_Fre$Le t&#233;l&#233;chargement de la configuration a &#233;chou&#233;. Le syst&#232;me est &#224; court de m&#233;moire.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_AlertMsg_Str10$
+$Zy_Eng$Router failed to reset wireless settings to factory defaults !!!.$
+$Zy_Tur$Y&#246;nlendirici kablosuz ayarlar&#305;n&#305; fabrika ayarlar&#305;na d&#246;nd&#252;rmede ba&#351;ar&#305;s&#305;z!.$
+$Zy_Ger$Fehler im Router beim Zur&#252;cksetzen der WLAN-Einstellungen auf die Werkseinstellungen.$
+$Zy_Fre$Le routeur n&#39;a pas r&#233;ussi &#224; r&#233;initialiser les param&#232;tres sans fil par d&#233;faut d&#39;usine!!!.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_AlertMsg_Str11$
+$Zy_Eng$Router successfully reset WAN settings to factory defaults.$
+$Zy_Tur$Y&#246;nlendirici WAN ayarlar&#305;n&#305; ba&#351;ar&#305;yla fabrika ayarlar&#305;na geri d&#246;nd&#252;rd&#252;.$
+$Zy_Ger$Zur&#252;cksetzen der WAN-Einstellungen auf die Werkseinstellungen im Router erfolgreich.$
+$Zy_Fre$Le routeur a r&#233;initialis&#233; avec succ&#232;s les param&#232;tres WAN par d&#233;faut d&#39;usine.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_AlertMsg_Str12$
+$Zy_Eng$Router successfully reset Firewall settings to factory defaults.$
+$Zy_Tur$Y&#246;nlendirici G&#252;venlik Duvar&#305; ayarlar&#305;n&#305; ba&#351;ar&#305;yla fabrika ayarlar&#305;na geri d&#246;nd&#252;rd&#252;.$
+$Zy_Ger$Zur&#252;cksetzen der Firewall-Einstellungen auf die Werkseinstellungen im Router erfolgreich.$
+$Zy_Fre$Le routeur a r&#233;initialis&#233; avec succ&#232;s les param&#232;tres du pare-feu par d&#233;faut d&#39;usine.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_AlertMsg_Str13$
+$Zy_Eng$Router is updating now. Please wait ...$
+$Zy_Tur$Y&#246;nlendirici &#351;imdi g&#252;ncelliyor. L&#252;tfen bekleyiniz...$
+$Zy_Ger$Router wird jetzt aktualisiert. Bitte warten ...$
+$Zy_Fre$Le routeur est en cours de mise &#224; jour. Patientez ...$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_AlertMsg_Str14$
+$Zy_Eng$As there will be no indication of when the process is complete, please wait for two minutes before attempting to access the router again.$
+$Zy_Tur$&#304;&#351;lemin tamamland&#305;&#287;&#305;na dair hi&#231;bir g&#246;sterge olmayaca&#287;&#305;ndan, y&#246;nlendiriciye tekrar eri&#351;meyi denemeden &#246;nce l&#252;tfen iki dakika bekleyiniz.$
+$Zy_Ger$Da Sie keinen Hinweis erhalten werden, wann der Vorgang abgeschlossen ist, warten Sie bitte zwei Minuten, bevor Sie erneut versuchen, auf den Router zuzugreifen.$
+$Zy_Fre$Etant donn&#233; qu&#8217;il n&#8217;y a pas d&#8217;indication sur la fin du processus, patientez deux minutes avant d&#8217;essayer d&#8217;acc&#233;der &#224; nouveau au routeur.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_AlertMsg_Str15$
+$Zy_Eng$Router is doing self-diagnostic. Please wait &#8230;$
+$Zy_Tur$Y&#246;nlendirici kendi kendine tan&#305;lama yap&#305;yor. L&#252;tfen bekleyiniz. &#8230;$
+$Zy_Ger$Router durchl&#228;uft eine Selbstdiagnose. Bitte warten &#8230;$
+$Zy_Fre$Routeur proc&#232;de &#224; un auto-diagnostic. Patientez ...$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_AlertMsg_Str16$
+$Zy_Eng$As there will be no indication of when the process is complete, please wait for 30 seconds before attempting to access the router again.$
+$Zy_Tur$&#304;&#351;lemin tamamland&#305;&#287;&#305;na dair hi&#231;bir g&#246;sterge olmayaca&#287;&#305;ndan, y&#246;nlendiriciye tekrar eri&#351;meyi denemeden &#246;nce l&#252;tfen 30 dakika bekleyiniz.$
+$Zy_Ger$Da Sie keinen Hinweis erhalten werden, wann der Vorgang abgeschlossen ist, warten Sie bitte 30 Sekunden, bevor Sie erneut versuchen, auf den Router zuzugreifen.$
+$Zy_Fre$Etant donn&#233; qu&#8217;il n&#8217;y a pas d&#8217;indication sur la fin du processus, patientez 30 secondes avant d&#8217;essayer d&#8217;acc&#233;der &#224; nouveau au routeur.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_AlertMsg_Str17$
+$Zy_Eng$Router is resetting Wireless configuration. Please wait &#8230;$
+$Zy_Tur$Y&#246;nlendirici, Kablosuz yap&#305;land&#305;rman&#305;z&#305; resetliyor. L&#252;tfen bekleyiniz &#8230;$
+$Zy_Ger$Router setzt gerade die WLAN-Konfiguration zur&#252;ck. Bitte warten &#8230;$
+$Zy_Fre$Le routeur r&#233;initialise la configuration sans fil. Patientez ...$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_AlertMsg_Str18$
+$Zy_Eng$Router is resetting WAN configuration. Please wait &#8230;$
+$Zy_Tur$Y&#246;nlendirici, WAN yap&#305;land&#305;rman&#305; resetliyor. L&#252;tfen bekleyiniz &#8230;$
+$Zy_Ger$Router setzt gerade die WAN-Konfiguration zur&#252;ck. Bitte warten &#8230;$
+$Zy_Fre$Le routeur r&#233;initialise la configuration WAN. Patientez ...$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_AlertMsg_Str19$
+$Zy_Eng$Router is resetting Firewall configuration. Please wait &#8230;$
+$Zy_Tur$Y&#246;nlendirici, G&#252;venlik Duvar&#305; yap&#305;land&#305;rman&#305; resetliyor. L&#252;tfen bekleyiniz &#8230;$
+$Zy_Ger$Router setzt gerade die Firewall-Konfiguration zur&#252;ck. Bitte warten &#8230;$
+$Zy_Fre$Le routeur r&#233;initialise la configuration du pare-feu. Patientez ...$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_AlertMsg_Str2$
+$Zy_Eng$Configuration uploading failed. No Configuration file was selected.$
+$Zy_Tur$ Yap&#305;land&#305;rma y&#252;klemesi ba&#351;ar&#305;s&#305;z. Hi&#231;bir Yap&#305;land&#305;rma dosyas&#305; se&#231;ilmedi.$
+$Zy_Ger$Fehler beim Hochladen der Konfiguration. Es wurde keine Konfigurationsdatei ausgew&#228;hlt.$
+$Zy_Fre$Le t&#233;l&#233;chargement de la configuration a &#233;chou&#233;. Aucun fichier de configuration n&#39;a &#233;t&#233; choisi.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_AlertMsg_Str3$
+$Zy_Eng$Configuration uploading failed. The selected file contains an illegal Configuration setting.$
+$Zy_Tur$ Yap&#305;land&#305;rma y&#252;klemesi ba&#351;ar&#305;s&#305;z. Se&#231;ilen dosya ge&#231;ersiz bir yap&#305;land&#305;rma dosyas&#305; i&#231;eriyor.$
+$Zy_Ger$Fehler beim Hochladen der Konfiguration. Die ausgew&#228;hlte Datei enth&#228;lt eine unzul&#228;ssige Konfigurationsdatei.$
+$Zy_Fre$Le t&#233;l&#233;chargement de la configuration a &#233;chou&#233;. Le fichier s&#233;lectionn&#233; contient un fichier de configuration ill&#233;gal.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_AlertMsg_Str4$
+$Zy_Eng$Fatal error during Configuration uploading.$
+$Zy_Tur$Yap&#305;land&#305;rma y&#252;klemesi s&#305;ras&#305;nda &#246;nemli hata.$
+$Zy_Ger$Schwerer Fehler beim Hochladen der Konfiguration.$
+$Zy_Fre$Erreur fatale lors du t&#233;l&#233;chargement de la configuration.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_AlertMsg_Str5$
+$Zy_Eng$Are you sure you want to reset wireless settings to factory defaults?$
+$Zy_Tur$Kablosuz ayarlar&#305;n&#305; fabrika ayarlar&#305;na d&#246;nd&#252;rmek istedi&#287;inizden emin misiniz?$
+$Zy_Ger$Sind Sie sicher, dass Sie die WLAN-Einstellungen auf die Werkseinstellungen zur&#252;cksetzen wollen?$
+$Zy_Fre$Etes-vous s&#251;r de vouloir r&#233;initialiser les param&#232;tres sans fil par d&#233;faut d&#39;usine?$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_AlertMsg_Str6$
+$Zy_Eng$Are you sure you want to reset WAN settings to factory defaults?$
+$Zy_Tur$WAN ayarlar&#305;n&#305; fabrika ayarlar&#305;na d&#246;nd&#252;rmek istedi&#287;inizden emin misiniz?  $
+$Zy_Ger$Sind Sie sicher, dass Sie die WAN-Einstellungen auf die Werkseinstellungen zur&#252;cksetzen wollen?$
+$Zy_Fre$&#202;tes-vous s&#251;r de vouloir r&#233;initialiser les param&#232;tres WAN par d&#233;faut d&#39;usine?$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_AlertMsg_Str7$
+$Zy_Eng$Are you sure you want to reset Firewall settings to factory defaults?$
+$Zy_Tur$G&#252;venlik Duvar&#305; ayarlar&#305;n&#305; fabrika ayarlar&#305;na d&#246;nd&#252;rmek istedi&#287;inizden emin misiniz?  $
+$Zy_Ger$Sind Sie sicher, dass Sie die Firewall-Einstellungen auf die Werkseinstellungen zur&#252;cksetzen wollen?$
+$Zy_Fre$&#202;tes-vous s&#251;r de vouloir r&#233;initialiser les param&#232;tres de pare-feu par d&#233;faut d&#39;usine?$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_AlertMsg_Str8$
+$Zy_Eng$Are you sure you want to restore factory default settings?$
+$Zy_Tur$Fabrika ayarlar&#305;na geriy&#252;klemek istedi&#287;inizden emin misiniz?  $
+$Zy_Ger$Sind Sie sicher, dass Sie die Werkseinstellungen wiederherstellen wollen?$
+$Zy_Fre$&#202;tes-vous s&#251;r de vouloir restaurer les param&#232;tres par d&#233;faut d&#39;usine?$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_AlertMsg_Str9$
+$Zy_Eng$Router successfully reset wireless settings to factory defaults.$
+$Zy_Tur$Y&#246;nlendirici, kablosuz ayarlar&#305;n&#305; fabrika ayarlar&#305;na ba&#351;ar&#305;yla geri d&#246;nd&#252;rd&#252;.$
+$Zy_Ger$Zur&#252;cksetzen der WLAN-Einstellungen auf die Werkseinstellungen im Router erfolgreich.$
+$Zy_Fre$Le routeur a r&#233;initialis&#233; avec succ&#232;s les param&#232;tres sans fil par d&#233;faut d&#39;usine.$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Maintenance_Configuration_Btn1$
+$Zy_Eng$Backup$
+$Zy_Tur$Yedekleme$
+$Zy_Ger$Backup$
+$Zy_Fre$Sauvegarder$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Btn2$
+$Zy_Eng$Reset Wireless$
+$Zy_Tur$Kablosuzu fabrika ayarlar&#305;na y&#252;kle$
+$Zy_Ger$WLAN zur&#252;cksetzen$
+$Zy_Fre$R&#233;initialiser la connexion sans fil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Btn3$
+$Zy_Eng$Reset WAN$
+$Zy_Tur$WAN&#39;&#305; fabrika ayarlar&#305;na y&#252;kle$
+$Zy_Ger$WAN zur&#252;cksetzen$
+$Zy_Fre$R&#233;initialiser le WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Btn4$
+$Zy_Eng$Reset Firewall$
+$Zy_Tur$G&#252;venlik Duvar&#305;n&#305; fabrika ayarlar&#305;na y&#252;kle$
+$Zy_Ger$Firewall zur&#252;cksetzen$
+$Zy_Fre$R&#233;initialiser le pare-feu$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Btn5$
+$Zy_Eng$Reset$
+$Zy_Tur$Fabrika ayarlar&#305;na y&#252;kle $
+$Zy_Ger$Zur&#252;cksetzen$
+$Zy_Fre$R&#233;initialiser$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Str1$
+$Zy_Eng$In Configuration you can save the current device settings in a backup file in your computer, or recover the system by restoring the backup file. You can also reset the device back to factory default.$
+$Zy_Tur$Yap&#305;land&#305;rmada mevcut cihaz ayarlar&#305;n&#305; bilgisayar&#305;n&#305;zda bir yedekleme dosyas&#305;na kaydedebilir veya yedekleme dosyas&#305;n&#305; geri y&#252;kleyerek sistemi kurtarabilirsiniz. Ayr&#305;ca cihaz&#305; fabrika ayarlar&#305;na geri d&#246;nd&#252;rebilirsiniz.$
+$Zy_Ger$Unter Konfiguration k&#246;nnen Sie die aktuellen Ger&#228;teeinstellungen in einer Backup-Datei auf Ihrem Computer speichern bzw. das System wiederherstellen, indem Sie die Backup-Datei einspielen. Au&#223;erdem k&#246;nnen Sie das Ger&#228;t zur&#252;cksetzen auf die Werkseinstellungen.$
+$Zy_Fre$Dans la configuration vous pouvez enregistrer les param&#232;tres de l&#39;appareil actuel dans un fichier de sauvegarde dans votre ordinateur, ou r&#233;cup&#233;rer le syst&#232;me en restaurant le fichier de sauvegarde. Vous pouvez &#233;galement r&#233;initialiser l&#39;appareil aux valeurs d&#39;usine par d&#233;faut.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Str10$
+$Zy_Eng$Restore Firewall Settings$
+$Zy_Tur$G&#252;venlik Duvar&#305; Ayarlar&#305;n&#305; Geri Y&#252;kle$
+$Zy_Ger$Firewall-Einstellungen wiederherstellen$
+$Zy_Fre$R&#233;tablir les param&#232;tres du pare-feu$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Str11$
+$Zy_Eng$Reset Firewall settings to factory defaults while retaining other RG settings.$
+$Zy_Tur$Di&#287;er modem ayarlar&#305;n&#305; korurken G&#252;venlik Duvar&#305;n&#305; fabrika ayarlar&#305;na y&#252;kle.$
+$Zy_Ger$(null)$
+$Zy_Fre$R&#233;initialiser les param&#232;tres du pare-feu par d&#233;faut d&#39;usine, tout en conservant les autres param&#232;tres RG.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Str12$
+$Zy_Eng$Restore Configuration$
+$Zy_Tur$Yap&#305;land&#305;rmay&#305; Geri Y&#252;kle$
+$Zy_Ger$Konfiguration wiederherstellen$
+$Zy_Fre$R&#233;tablir la configuration$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Str13$
+$Zy_Eng$To restore a previously saved configuration file to your system, browse to the location of the configuration file and click Upload.$
+$Zy_Tur$Sisteminize daha &#246;nce kaydedilen bir yap&#305;land&#305;rma dosyas&#305;n&#305; geri y&#252;klemek i&#231;in yap&#305;land&#305;rma dosyas&#305;n&#305;n bulundu&#287;u konuma gidiniz ve Kar&#351;&#305;ya Y&#252;kle&#39; yi t&#305;klay&#305;n&#305;z.$
+$Zy_Ger$Um eine fr&#252;her auf Ihrem System gespeicherte Konfigurationsdatei wiederherzustellen, gehen Sie zum Speicherort der Konfigurationsdatei und klicken Sie auf Hochladen.$
+$Zy_Fre$Pour r&#233;tablir un fichier de configuration pr&#233;c&#233;demment enregistr&#233; sur votre syst&#232;me, allez &#224; l&#8217;emplacement du fichier de configuration et cliquez sur T&#233;l&#233;charger.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Str14$
+$Zy_Eng$Back to Factory Defaults$
+$Zy_Tur$Fabrika Ayarlar&#305;na Geri D&#246;nme$
+$Zy_Ger$Auf Werkseinstellungen zur&#252;cksetzen$
+$Zy_Fre$Retour aux valeurs d&#39;usine par d&#233;faut$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Str15$
+$Zy_Eng$Click Reset to clear all user-entered configuration information and return to factory defaults. After resetting, the <br> - LAN IP address will be 192.168.1.1 <br> - DHCP will be reset by server$
+$Zy_Tur$T&#252;m kullan&#305;c&#305; taraf&#305;ndan girilen yap&#305;land&#305;rma bilgilerini temizlemek ve fabrika ayarlar&#305;na geri d&#246;nmek i&#231;in Resetle se&#231;ene&#287;ine t&#305;klay&#305;n. Resetleme sonras&#305;nda, <br> - Yerel A&#287; IP adresi 192.168.1.254 olacakt&#305;r <br> - DHCP, sunucuya s&#305;f&#305;rlanacakt&#305;r $
+$Zy_Ger$Klicken Sie auf Zur&#252;cksetzen, um alle vom Benutzer eingegebenen Konfigurationsinformationen zu l&#246;schen und auf die Werkseinstellungen zur&#252;ckzusetzen. Nach dem Zur&#252;cksetzen <br> - lautet die LAN IP-Adresse: 192.168.1.254 <br> - wird DHCP vom Server zur&#252;ckgesetzt$
+$Zy_Fre$Cliquez sur R&#233;initialiser pour effacer toutes les informations de configuration saisies par l&#39;utilisateur et retourner aux valeurs par d&#233;faut d&#39;usine. Apr&#232;s la r&#233;initialisation, le <br> L&#8217;adresse IP LAN sera 192.168.1.254 <br> DHCP sera r&#233;initialis&#233; sur le serveur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Str15_1$
+$Zy_Eng$Click Reset to clear all user-entered configuration information and return to factory defaults. After resetting, the <br> - LAN IP address will be 192.168.1.254 <br> - DHCP will be reset by server$
+$Zy_Tur$T&#252;m kullan&#305;c&#305; taraf&#305;ndan girilen yap&#305;land&#305;rma bilgilerini temizlemek ve fabrika ayarlar&#305;na geri d&#246;nmek i&#231;in Resetle se&#231;ene&#287;ine t&#305;klay&#305;n. Resetleme sonras&#305;nda, <br> - Yerel A&#287; IP adresi 192.168.1.254 olacakt&#305;r <br> - DHCP, sunucuya s&#305;f&#305;rlanacakt&#305;r $
+$Zy_Ger$Klicken Sie auf Zur&#252;cksetzen, um alle vom Benutzer eingegebenen Konfigurationsinformationen zu l&#246;schen und auf die Werkseinstellungen zur&#252;ckzusetzen. Nach dem Zur&#252;cksetzen <br> - lautet die LAN IP-Adresse: 192.168.1.254 <br> - wird DHCP vom Server zur&#252;ckgesetzt$
+$Zy_Fre$Cliquez sur R&#233;initialiser pour effacer toutes les informations de configuration saisies par l&#39;utilisateur et retourner aux valeurs par d&#233;faut d&#39;usine. Apr&#232;s la r&#233;initialisation, le <br> L&#8217;adresse IP LAN sera 192.168.1.254 <br> DHCP sera r&#233;initialis&#233; sur le serveur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Str15_2$
+$Zy_Eng$Click Reset to clear all user-entered configuration information and return to factory defaults. After resetting, the$
+$Zy_Tur$Kullan&#305;c&#305; tan&#305;ml&#305; b&#252;t&#252;n ayarlar&#305; temizlemek ve cihaz&#305; fabrika ayarlar&#305;na geri y&#252;klemek i&#231;in Reset butonuna t&#305;klay&#305;n&#305;z. Resetten sonra,$ 
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Str15_3$
+$Zy_Eng$LAN IP address will be 192.168.1.1$
+$Zy_Tur$LAN IP adresi 192.168.1.1\'dir.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Str15_4$
+$Zy_Eng$DHCP will be reset to server$
+$Zy_Tur$DHCP sunucusu fabrika ayarlar&#305;na geri y&#252;klenecektir.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Maintenance_Configuration_Explain$
+$Zy_Eng$You can save the current device settings in a backup file in your computer, or restore previous settings from a backup file. You can also reset the device back to its factory default.$
+$Zy_Tur$Mevcut cihaz ayarlar&#305;n&#305; bilgisayar&#305;n&#305;zda bir yedekleme dosyas&#305;na kaydedebilir veya bir yedekleme dosyas&#305;ndan &#246;nceki ayarlar&#305; geri y&#252;kleyebilirsiniz. Ayr&#305;ca cihaz&#305; fabrika ayarlar&#305;na geri d&#246;nd&#252;rebilirsiniz.$
+$Zy_Ger$Sie k&#246;nnen die aktuellen Ger&#228;teeinstellungen in einer Backup-Datei auf Ihrem Computer speichern bzw. die vorherigen Einstellungen aus einer Backup-Datei wiederherstellen. Au&#223;erdem k&#246;nnen Sie das Ger&#228;t zur&#252;cksetzen auf die Werkseinstellungen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Str2$
+$Zy_Eng$Backup Configuration$
+$Zy_Tur$Yedekleme Yap&#305;land&#305;rmas&#305;$
+$Zy_Ger$Backup der Konfiguration erstellen$
+$Zy_Fre$Sauvegardez la configuration$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Str3$
+$Zy_Eng$Click Backup to save the current configuration of your system to your computer.$
+$Zy_Tur$Bilgisayar&#305;n&#305;za sistemin ge&#231;erli yap&#305;land&#305;rmas&#305;n&#305; kaydetmek i&#231;in Yedekle se&#231;ene&#287;ine t&#305;klay&#305;n&#305;z.$
+$Zy_Ger$Klicken Sie auf Backup, um die aktuelle Konfiguration Ihres Systems auf Ihrem Computer zu speichern.$
+$Zy_Fre$Cliquez sur Sauvegarder pour enregistrer la configuration actuelle de votre syst&#232;me sur votre ordinateur.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Str4$
+$Zy_Eng$Reset Wireless Configuration$
+$Zy_Tur$Kablosuz Yap&#305;land&#305;rmas&#305;n&#305; Resetle $
+$Zy_Ger$WLAN-Konfiguration zur&#252;cksetzen$
+$Zy_Fre$R&#233;initialiser la configuration sans fil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Str5$
+$Zy_Eng$Reset WAN Configuration$
+$Zy_Tur$WAN Yap&#305;land&#305;rmas&#305;n&#305; Resetle$
+$Zy_Ger$WAN-Konfiguration zur&#252;cksetzen$
+$Zy_Fre$R&#233;initialiser la configuration WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Str6$
+$Zy_Eng$Reset Firewall Configuration$
+$Zy_Tur$G&#252;venlik Duvar&#305; Yap&#305;land&#305;rmas&#305;n&#305; Resetle$
+$Zy_Ger$Firewall-Konfiguration zur&#252;cksetzen$
+$Zy_Fre$R&#233;initialiser la configuration du pare-feu$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Str7$
+$Zy_Eng$Reset Wireless settings to factory defaults while retaining other RG settings.$
+$Zy_Tur$Di&#287;er modem ayarlar&#305;n&#305; korurken Kablosuz ayarlar&#305;n&#305; resetleyiniz.$
+$Zy_Ger$(null)$
+$Zy_Fre$R&#233;initialiser les param&#232;tres sans fil par d&#233;faut d&#39;usine, tout en conservant les autres param&#232;tres RG.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Str8$
+$Zy_Eng$Restore WAN Settings$
+$Zy_Tur$WAN Ayarlar&#305;n&#305; Geri Y&#252;kle$
+$Zy_Ger$WAN-Einstellungen wiederherstellen$
+$Zy_Fre$R&#233;tablir les param&#232;tres WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Str9$
+$Zy_Eng$Reset WAN settings to factory defaults while retaining other RG settings.$
+$Zy_Tur$Di&#287;er modem ayarlar&#305;n&#305; korurken WAN ayarlar&#305;n&#305; resetleyiniz.$
+$Zy_Ger$(null)$
+$Zy_Fre$R&#233;initialiser les param&#232;tres WAN par d&#233;faut d&#39;usine, tout en conservant les autres param&#232;tres RG.$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Maintenance_FWUpgrade_Str10$
+$Zy_Eng$Upgrade Firmware$
+$Zy_Tur$Cihaz Yaz&#305;l&#305;m&#305;n&#305; Y&#252;kseltme$
+$Zy_Ger$Firmware Upgrade durchf&#252;hren$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_FWUpgrade_AlertMsg_Str1$
+$Zy_Eng$Image uploading failed. The system is out of memory.$
+$Zy_Tur$G&#246;r&#252;nt&#252; y&#252;kleme ba&#351;ar&#305;s&#305;z. Sistem bellek d&#305;&#351;&#305;nda.$
+$Zy_Ger$Fehler beim Hochladen des Image. Das System hat zu wenig Speicher.$
+$Zy_Fre$Le t&#233;l&#233;chargement de l&#39;image a &#233;chou&#233;. Le syst&#232;me est &#224; court de m&#233;moire.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_FWUpgrade_AlertMsg_Str2$
+$Zy_Eng$Image uploading failed. No image file was selected.$
+$Zy_Tur$G&#246;r&#252;nt&#252; y&#252;kleme ba&#351;ar&#305;s&#305;z. Hi&#231;bir g&#246;r&#252;nt&#252; dosyas&#305; se&#231;ilmedi.$
+$Zy_Ger$Fehler beim Hochladen des Image. Es wurde keine Image-Datei ausgew&#228;hlt.$
+$Zy_Fre$Le t&#233;l&#233;chargement de l&#39;image a &#233;chou&#233;. Aucun fichier image n&#39;a &#233;t&#233; choisi.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_FWUpgrade_AlertMsg_Str3$
+$Zy_Eng$Image uploading failed. The selected file is an illegal image.$
+$Zy_Tur$G&#246;r&#252;nt&#252; y&#252;kleme ba&#351;ar&#305;s&#305;z. Se&#231;ilen dosya ge&#231;ersiz bir g&#246;r&#252;nt&#252; i&#231;eriyor.$
+$Zy_Ger$Fehler beim Hochladen des Image. Die ausgew&#228;hlte Datei ist eine unzul&#228;ssige Image-Datei.$
+$Zy_Fre$Le t&#233;l&#233;chargement de l&#39;image a &#233;chou&#233;. Le fichier s&#233;lectionn&#233; contient une image ill&#233;gale.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_FWUpgrade_AlertMsg_Str4$
+$Zy_Eng$Image uploading failed. The selected file contains an illegal model id.$
+$Zy_Tur$G&#246;r&#252;nt&#252; y&#252;kleme ba&#351;ar&#305;s&#305;z. Se&#231;ilen dosya ge&#231;ersiz bir model id i&#231;eriyor.$
+$Zy_Ger$Fehler beim Hochladen des Image. Die ausgew&#228;hlte Datei enth&#228;lt eine unzul&#228;ssige Modell-ID.$
+$Zy_Fre$Le t&#233;l&#233;chargement de l&#39;image a &#233;chou&#233;. Le fichier s&#233;lectionn&#233; contient un identifiant de mod&#232;le ill&#233;gal.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_FWUpgrade_AlertMsg_Str5$
+$Zy_Eng$Image uploading failed. The selected file contains an illegal boot rom size.$
+$Zy_Tur$G&#246;r&#252;nt&#252; y&#252;kleme ba&#351;ar&#305;s&#305;z. Se&#231;ilen dosya ge&#231;ersiz&#305; bir &#246;ny&#252;kleme rom boyutu i&#231;eriyor.$
+$Zy_Ger$Fehler beim Hochladen des Image. Die ausgew&#228;hlte Datei enth&#228;lt eine unzul&#228;ssige Gr&#246;&#223;e f&#252;r das Boot-ROM.$
+$Zy_Fre$Le t&#233;l&#233;chargement de l&#39;image a &#233;chou&#233;. Le fichier s&#233;lectionn&#233; contient une taille de rom de d&#233;marrage ill&#233;gal.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_FWUpgrade_AlertMsg_Str6$
+$Zy_Eng$Fatal error during image uploading.$
+$Zy_Tur$G&#246;r&#252;nt&#252; y&#252;kleme s&#305;ras&#305;nda &#246;nemli hata.$
+$Zy_Ger$Schwerer Fehler beim Hochladen des Image.$
+$Zy_Fre$Erreur fatale lors du t&#233;l&#233;chargement de l&#39;image.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_FWUpgrade_AlertMsg_Str7$
+$Zy_Eng$If take too long time for upgrade, Please reboot and check Internet connection or clear browser cookies and temporary files, try again later.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_FWUpgrade_Str1$
+$Zy_Eng$Firmware Upgrade is where you can update the device with newly released features by upgrading the latest firmware. You can download the latest firmware from the official website.$
+$Zy_Tur$Ayg&#305;t Yaz&#305;l&#305;m&#305;n&#305; Y&#252;kseltme, en g&#252;ncel yaz&#305;l&#305;ma y&#252;kselterek cihaz&#305; yeni &#231;&#305;kan &#246;zellikler ile g&#252;ncelleyebilece&#287;iniz ad&#305;md&#305;r. En g&#252;ncel yaz&#305;l&#305;m&#305; resmi web sitesinden indirebilirsiniz.$
+$Zy_Ger$Unter Firmware Upgrade k&#246;nnen Sie das Ger&#228;t mit neuen Funktionen ausstatten. Dazu aktualisieren Sie auf die neueste Firmware. Sie k&#246;nnen die neueste Firmware von der offiziellen Website herunterladen.$
+$Zy_Fre$Mise &#224; niveau du microprogramme est l&#39;endroit o&#249; vous pouvez mettre &#224; jour le p&#233;riph&#233;rique avec des fonctionnalit&#233;s nouvellement publi&#233;es en mettant &#224; niveau au dernier microprogramme. Vous pouvez t&#233;l&#233;charger le dernier microprogramme sur le site officiel.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_FWUpgrade_Str2$
+$Zy_Eng$Restore default settings after firmware upgrade$
+$Zy_Tur$Ayg&#305;t Yaz&#305;l&#305;m g&#252;ncellemesinden sonra varsay&#305;lan ayarlar&#305; geri y&#252;kle.$
+$Zy_Ger$Standardeinstellungen nach Firmware Upgrade wiederherstellen$
+$Zy_Fre$R&#233;tablir les param&#232;tres par d&#233;faut apr&#232;s mise &#224; niveau du microprogramme$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_FWUpgrade_Str3$
+$Zy_Eng$Current Firmware Version$
+$Zy_Tur$Mevcut Ayg&#305;t Yaz&#305;l&#305;m S&#252;r&#252;m&#252;$
+$Zy_Ger$Aktuelle Firmware Version$
+$Zy_Fre$Version actuelle du microprogramme$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_FWUpgrade_Str4$
+$Zy_Eng$Failed to check the latest firmware$
+$Zy_Tur$G&#252;ncel ayg&#305;t yaz&#305;l&#305;m y&#252;kseltmesi kontrol edilemedi$
+$Zy_Ger$Fehler beim Pr&#252;fen auf neue Firmware$
+$Zy_Fre$Impossible de v&#233;rifier le dernier microprogramme$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_FWUpgrade_Str5$
+$Zy_Eng$File Path$
+$Zy_Tur$Dosya Yolu$
+$Zy_Ger$Dateipfad$
+$Zy_Fre$Chemin d&#39;acc&#232;s du fichier$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_FWUpgrade_Str6$
+$Zy_Eng$Upload$
+$Zy_Tur$Y&#252;kle$
+$Zy_Ger$Hochladen$
+$Zy_Fre$T&#233;l&#233;charger$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_FWUpgrade_Str7$
+$Zy_Eng$Auto checking the latest firmware$
+$Zy_Tur$G&#252;ncel cihaz yaz&#305;l&#305;m&#305;n&#305; otomatik olarak kontrol etme$
+$Zy_Ger$Automatische Pr&#252;fung auf neue Firmware$
+$Zy_Fre$V&#233;rification automatique de la derni&#232;re version du microprogramme$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_FWUpgrade_Str8$
+$Zy_Eng$Complete checking, there is no newer firmware.$
+$Zy_Tur$Kontrol&#252; tamamla, daha yeni bir cihaz yaz&#305;l&#305;m&#305; yoktur.$
+$Zy_Ger$Pr&#252;fung beendet, es gibt keine neuere Firmware.$
+$Zy_Fre$V&#233;rification termin&#233;e, il n&#39;y a pas de microprogramme plus r&#233;cent.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_FWUpgrade_Str9$
+$Zy_Eng$Upgrade firmware to version:$
+$Zy_Tur$Cihaz yaz&#305;l&#305;m&#305;n&#305; ..... s&#252;r&#252;m&#252;ne y&#252;kseltme:$
+$Zy_Ger$Firmware aktualisieren auf Version:$
+$Zy_Fre$Mettre &#224; niveau le microprogramme &#224; la version:$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_FWUpgrade_Str15$
+$Zy_Eng$Download NEW firmware, please wait...$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_FWUpgrade_Str11$
+$Zy_Eng$Firmware Upgrade from Auto Provisioning Server$
+$Zy_Tur$Oto-Provizyon Sunucusu ile Yaz&#305;l&#305;m G&#252;ncelleme$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_FWUpgrade_Str12$
+$Zy_Eng$Check on Server (force auto firmware upgrade to check the auto provisioning server)$
+$Zy_Tur$Sunucuyu Yokla(Oto-Provizyon sunucusunda yenibir yaz&#305;l&#305;m olup olmad&#305;&#287;&#305;n&#305;n&#305; kontrol et)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_FWUpgrade_Str13$
+$Zy_Eng$Upgrade from server (inactive unless there is a firmware available)$
+$Zy_Tur$Sunucudan Y&#252;kle (Yeni bir yaz&#305;l&#305;m yoksa inaktif g&#246;r&#252;n&#252;r)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_FWUpgrade_Str14$
+$Zy_Eng$Check$
+$Zy_Tur$kontrol$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Upgrade$
+$Zy_Eng$Upgrade$
+$Zy_Tur$Y&#252;kle$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str1$
+$Zy_Eng$Logs Setting defines the level of logs to be recorded and where to send the log history. If the log mode is enabled, the system will begin to record selected logs.$
+$Zy_Tur$Kay&#305;t Ayarlar&#305; kaydedilecek kay&#305;t seviyesini ve bu kay&#305;t ge&#231;mi&#351;inin nereye g&#246;nderilece&#287;ini tan&#305;mlar. Kay&#305;t modu etkin ise, sistem se&#231;ili kay&#305;tlar&#305; kaydetmeye ba&#351;layacakt&#305;r.$
+$Zy_Ger$In Protokoll-Einstellungen werden die Ebenen von Protokollen definiert, die aufgezeichnet werden. Auch wohin der Protokoll-Verlauf gesendet werden soll, wird hier angegeben. Wenn der Protokoll-Modus aktiviert ist, beginnt das System mit der Aufzeichnung ausgew&#228;hlter Protokolle.$
+$Zy_Fre$Le param&#232;tre de journaux d&#233;finit le niveau de traces &#224; enregistrer et o&#249; envoyer l&#39;historique du journal. Si le mode de journalisation est activ&#233;, le syst&#232;me commencera &#224; enregistrer les journaux s&#233;lectionn&#233;s.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str10$
+$Zy_Eng$SMTP Server NAME or IP$
+$Zy_Tur$SMTP Sunucusu ADI veya IP$
+$Zy_Ger$SMTP-Servername oder IP-Adresse$
+$Zy_Fre$NOM ou IP du serveur SMTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str11$
+$Zy_Eng$System Log Mail Subject$
+$Zy_Tur$Sistem G&#252;nl&#252;&#287;&#252; Mail Konusu$
+$Zy_Ger$Betreff der Systemprotokoll-Mail$
+$Zy_Fre$Sujet de messagerie du journal syst&#232;me$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str12$
+$Zy_Eng$Security Log Mail Subject$
+$Zy_Tur$G&#252;venlik G&#252;nl&#252;&#287;&#252; Mail Konusu$
+$Zy_Ger$Betreff der Sicherheitsprotokoll-Mail$
+$Zy_Fre$Sujet de messagerie du journal de s&#233;curit&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str13$
+$Zy_Eng$From$
+$Zy_Tur$Kimden$
+$Zy_Ger$Von$
+$Zy_Fre$De$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str14$
+$Zy_Eng$E-Mail Address$
+$Zy_Tur$E-Posta Adresi$
+$Zy_Ger$E-Mail-Adresse$
+$Zy_Fre$Adresse de messagerie$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str15$
+$Zy_Eng$Send Log to$
+$Zy_Tur$G&#252;nl&#252;&#287;&#252; g&#246;nder$
+$Zy_Ger$Protokoll senden an$
+$Zy_Fre$Envoyer le journal &#224;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str16$
+$Zy_Eng$Send Alarm to$
+$Zy_Tur$Alarm&#305; g&#246;nder$
+$Zy_Ger$Alarm senden an$
+$Zy_Fre$Envoyer l&#39;alarme &#224;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str17$
+$Zy_Eng$Alarm Interval$
+$Zy_Tur$Alarm Aral&#305;&#287;&#305;$
+$Zy_Ger$Alarm-Intervall$
+$Zy_Fre$Intervalle d&#39;alarme$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str18$
+$Zy_Eng$Allowed Capacity Before email Notification$
+$Zy_Tur$E-posta Bildirimi &#214;ncesinde &#304;zin Verilen Kapasite$
+$Zy_Ger$Erlaubte Kapazit&#228;t vor E-Mail-Benachrichtigung$
+$Zy_Fre$Capacit&#233; autoris&#233;e avant notification par email$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str19$
+$Zy_Eng$SMTP Authentication$
+$Zy_Tur$SMTP Kimlik Do&#287;rulamas&#305;$
+$Zy_Ger$SMTP-Authentifizierung$
+$Zy_Fre$Authentification SMTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str2$
+$Zy_Eng$Syslog Logging$
+$Zy_Tur$Syslog Kayd&#305;$
+$Zy_Ger$Syslog-Protokollierung$
+$Zy_Fre$Connexion Syslog$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str20$
+$Zy_Eng$User Name$
+$Zy_Tur$Kullan&#305;c&#305; Ad&#305;$
+$Zy_Ger$Benutzername$
+$Zy_Fre$Nom d&#39;utilisateur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str21$
+$Zy_Eng$Password$
+$Zy_Tur$&#350;ifre$
+$Zy_Ger$Kennwort$
+$Zy_Fre$Mot de passe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Old_Pwd$
+$Zy_Eng$Old Password$
+$Zy_Tur$Eski &#350;ifre$
+$Zy_Ger$Altes Kennwort$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_New_Pwd$
+$Zy_Eng$New Password$
+$Zy_Tur$Yeni &#350;ifre$
+$Zy_Ger$Neues Kennwort$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Pwd_Confirm$
+$Zy_Eng$Retype to confirm$
+$Zy_Tur$Onaylamak i&#231;in yeniden yaz&#305;n$
+$Zy_Ger$Nochmals eintippen als Best&#228;tigung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Enable_Local_Admin$
+$Zy_Eng$Enable Local Admin Login$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_UserAccount_Explain$
+$Zy_Eng$Password that you use to log in the configuration interface can be changed in this page. Once a new password is given and saved, you need to use the new one next time when logging in the interface.$
+$Zy_Tur$Yap&#305;land&#305;rma aray&#252;z&#252;nde oturum a&#231;mak i&#231;in kulland&#305;&#287;&#305;n&#305;z &#350;ifre bu sayfada de&#287;i&#351;tirilebilir. Yeni bir &#351;ifre verilip kaydedildikten sonra, bir dahaki sefere aray&#252;zde oturum a&#231;arken yeni &#351;ifreyi kullanman&#305;z gerekir.$
+$Zy_Ger$Das Kennwort, mit dem Sie sich bei der Konfigurationsoberfl&#228;che anmelden, kann auf dieser Seite ge&#228;ndert werden. Sobald ein neues Kennwort angegeben und gespeichert wird, m&#252;ssen Sie dieses neue Kennwort auch bei der n&#228;chsten Anmeldung in der Oberfl&#228;che verwenden.$
+$Zy_Fre$Mot de passe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str22$
+$Zy_Eng$Clear log after sending mail$
+$Zy_Tur$E-Posta g&#246;nderdikten sonra g&#252;nl&#252;&#287;&#252; temizle $
+$Zy_Ger$Protokoll nach dem Senden der E-Mail l&#246;schen$
+$Zy_Fre$Effacer le journal apr&#232;s avoir envoy&#233; le courrier &#233;lectronique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str23$
+$Zy_Eng$Active Log and Alert$
+$Zy_Tur$Aktif Kay&#305;t ve &#214;nemli Uyar&#305;$
+$Zy_Ger$Aktive Protokolle und Alarme$
+$Zy_Fre$Activer le journal et l&#39;alerte$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str24$
+$Zy_Eng$System Log$
+$Zy_Tur$Sistem G&#252;nl&#252;&#287;&#252;$
+$Zy_Ger$Systemprotokoll$
+$Zy_Fre$Journal syst&#232;me$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str25$
+$Zy_Eng$System$
+$Zy_Tur$Sistem$
+$Zy_Ger$System$
+$Zy_Fre$Syst&#232;me$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str26$
+$Zy_Eng$DHCP client$
+$Zy_Tur$DHCP istemcisi$
+$Zy_Ger$DHCP-Client$
+$Zy_Fre$Client DHCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str27$
+$Zy_Eng$PPPoE$
+$Zy_Tur$PPPoE$
+$Zy_Ger$PPPoE$
+$Zy_Fre$PPPoE$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str28$
+$Zy_Eng$Wireless$
+$Zy_Tur$Kablosuz$
+$Zy_Ger$WLAN$
+$Zy_Fre$Sans fil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str29$
+$Zy_Eng$DHCP Server$
+$Zy_Tur$DHCP Sunucusu$
+$Zy_Ger$DHCP Server$
+$Zy_Fre$Serveur DHCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str3$
+$Zy_Eng$Active$
+$Zy_Tur$Aktif$
+$Zy_Ger$Aktiv$
+$Zy_Fre$Actif$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str30$
+$Zy_Eng$UPnP$
+$Zy_Tur$UPnP$
+$Zy_Ger$UPnP$
+$Zy_Fre$UPnP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str31$
+$Zy_Eng$NAT$
+$Zy_Tur$NAT$
+$Zy_Ger$NAT$
+$Zy_Fre$NAT$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str32$
+$Zy_Eng$Static Route$
+$Zy_Tur$Statik Y&#246;nlendirme$
+$Zy_Ger$Statische Route$
+$Zy_Fre$Routage statique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str33$
+$Zy_Eng$DDNS$
+$Zy_Tur$DDNS$
+$Zy_Ger$DDNS$
+$Zy_Fre$DDNS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str34$
+$Zy_Eng$IGMP$
+$Zy_Tur$IGMP$
+$Zy_Ger$IGMP$
+$Zy_Fre$IGMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str35$
+$Zy_Eng$QoS$
+$Zy_Tur$QoS$
+$Zy_Ger$QoS$
+$Zy_Fre$QoS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str36$
+$Zy_Eng$TR-069$
+$Zy_Tur$TR-069$
+$Zy_Ger$TR-069$
+$Zy_Fre$TR-069$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str37$
+$Zy_Eng$NTP$
+$Zy_Tur$NTP$
+$Zy_Ger$NTP$
+$Zy_Fre$NTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str38$
+$Zy_Eng$Security log$
+$Zy_Tur$G&#252;venlik G&#252;nl&#252;&#287;&#252;$
+$Zy_Ger$Sicherheitsprotokoll$
+$Zy_Fre$Le journal de s&#233;curit&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str39$
+$Zy_Eng$Firewall$
+$Zy_Tur$G&#252;venlik Duvar&#305;$
+$Zy_Ger$Firewall$
+$Zy_Fre$Pare-feu$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str4$
+$Zy_Eng$Mode$
+$Zy_Tur$Mod$
+$Zy_Ger$Modus$
+$Zy_Fre$Mode$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str40$
+$Zy_Eng$MAC Filter$
+$Zy_Tur$MAC Filtresi$
+$Zy_Ger$MAC-Filter$
+$Zy_Fre$Filtre MAC $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str41$
+$Zy_Eng$Forward Web Sites$
+$Zy_Tur$Web Sitelerini &#304;let$
+$Zy_Ger$Zugelassene Websites$
+$Zy_Fre$Rediriger les sites Internet$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str42$
+$Zy_Eng$Blocked Web Sites$
+$Zy_Tur$Engelli Web Siteleri$
+$Zy_Ger$Blockierte Websites$
+$Zy_Fre$Sites web bloqu&#233;s$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str43$
+$Zy_Eng$Attack$
+$Zy_Tur$Sald&#305;r&#305;$
+$Zy_Ger$Angriff$
+$Zy_Fre$Attaque$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str44$
+$Zy_Eng$Certificate$
+$Zy_Tur$Sertifika$
+$Zy_Ger$Zertifikat$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str45$
+$Zy_Eng$IPSec$
+$Zy_Tur$IPSec$
+$Zy_Ger$IPSec$
+$Zy_Fre$IPSec$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str46$
+$Zy_Eng$Account$
+$Zy_Tur$Hesap$
+$Zy_Ger$Konto$
+$Zy_Fre$Compte$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str47$
+$Zy_Eng$Send immediate alert$
+$Zy_Tur$Acil &#246;nemli uyar&#305; g&#246;nder$
+$Zy_Ger$Alarm sofort senden$
+$Zy_Fre$Envoyer imm&#233;diatement une alerte$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str48$
+$Zy_Eng$Attacks$
+$Zy_Tur$Sald&#305;r&#305;lar$
+$Zy_Ger$Angriffe$
+$Zy_Fre$Attaques$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str49$
+$Zy_Eng$Blocked Web Sites$
+$Zy_Tur$Engelli Web Siteleri$
+$Zy_Ger$Blockierte Websites$
+$Zy_Fre$Site Web bloqu&#233;s$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str50$
+$Zy_Eng$Local$
+$Zy_Tur$Yerel$
+$Zy_Ger$Lokal$
+$Zy_Fre$Local$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str51$
+$Zy_Eng$Remote$
+$Zy_Tur$Uzak$
+$Zy_Ger$Remote$
+$Zy_Fre$Distant$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str55$
+$Zy_Eng$Server Port$
+$Zy_Tur$Sunucu Portu$
+$Zy_Ger$Server-Port$
+$Zy_Fre$Distant$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str53$
+$Zy_Eng$Syslog Server$
+$Zy_Tur$Syslog Sunucusu$
+$Zy_Ger$Syslog-Server$
+$Zy_Fre$Distant$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str54$
+$Zy_Eng$MoCA$
+$Zy_Tur$MoCA$
+$Zy_Ger$MoCA$
+$Zy_Fre$MoCA$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str56$
+$Zy_Eng$XDSL$
+$Zy_Tur$XDSL$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str57$
+$Zy_Eng$Internet$
+$Zy_Tur$Internet$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str58$
+$Zy_Eng$VoIP$
+$Zy_Tur$VoIP$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str59$
+$Zy_Eng$Remote$
+$Zy_Tur$Uzaktan Eri&#351;im$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str60$
+$Zy_Eng$Local File$
+$Zy_Tur$Yerel Dosya$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str61$
+$Zy_Eng$Local File and Remote$
+$Zy_Tur$Yerel Dosya ve Uzaktan Eri&#351;im$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$ 
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Maintenance_Remote_Title$
+$Zy_Eng$Trust Domain$
+$Zy_Tur$G&#252;venilir Alan Ad&#305;$
+$Zy_Ger$Trusted Domain$
+$Zy_Fre$Distant$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Remote_Add_Domain$
+$Zy_Eng$Add Trust Domain$
+$Zy_Tur$G&#252;venilir Alan Ad&#305;$
+$Zy_Ger$Trusted Domain$
+$Zy_Fre$Distant$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Remote_Title_Certificate$
+$Zy_Eng$Certificate$
+$Zy_Tur$Sertifika$
+$Zy_Ger$Zertifikat$
+$Zy_Fre$Distant$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Remote_Title_Certificate_Str$
+$Zy_Eng$HTTPS Certificate$
+$Zy_Tur$HTTPS Sertifikas&#305;$
+$Zy_Ger$HTTPS-Zertifikat$
+$Zy_Fre$Distant$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Remote_Str$
+$Zy_Eng$prefix length$
+$Zy_Tur$&#246;nek uzunlu&#287;u$
+$Zy_Ger$Pr&#228;fixl&#228;nge$
+$Zy_Fre$Distant$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Maintenance_Remote_Explain$
+$Zy_Eng$Remote MGMT enables various approaches to access this device remotely from a WAN and/or LAN connection.$
+$Zy_Tur$Uzak MGMT, bir WAN ve / veya Yerel A&#287; ba&#287;lant&#305;s&#305; ile uzaktan bu cihaza eri&#351;im i&#231;in &#231;e&#351;itli y&#246;ntemler sa&#287;lar.$
+$Zy_Ger$Mit der Fernwartung k&#246;nnen Sie verschiedene Zugriffsm&#246;glichkeiten auf das Ger&#228;t &#252;ber die WAN und/oder LAN Schnittstelle einstellen.$
+$Zy_Fre$Local et Distant$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Remote_Passwordchanged_Str$
+$Zy_Eng$Remote access will not be enabled unless the GUI login password is changed. Would you like to change your password now?$
+$Zy_Tur$Modemin arayüz giriş şifresi değiştirilmediği takdirde uzaktan erişim etkin olmayacaktır. Modeminizi şifresini değiştirmek ister misiniz?$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Remote_HTTPS_Str$
+$Zy_Eng$HTTPS$
+$Zy_Tur$HTTPS$
+$Zy_Ger$HTTPS$
+$Zy_Fre$HTTPS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Remote_HTTP_Str$
+$Zy_Eng$HTTP$
+$Zy_Tur$HTTP$
+$Zy_Ger$HTTP$
+$Zy_Fre$HTTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Remote_TELNET_Str$
+$Zy_Eng$TELNET$
+$Zy_Tur$TELNET$
+$Zy_Ger$TELNET$
+$Zy_Fre$TELNET$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Remote_FTP_Str$
+$Zy_Eng$FTP$
+$Zy_Tur$FTP$
+$Zy_Ger$FTP$
+$Zy_Fre$FTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Remote_SSH_Str$
+$Zy_Eng$SSH$
+$Zy_Tur$SSH$
+$Zy_Ger$SSH$
+$Zy_Fre$SSH$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Remote_Services_Str$
+$Zy_Eng$HTTP$
+$Zy_Tur$HTTP$
+$Zy_Ger$HTTP$
+$Zy_Fre$HTTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_WAN_USED_FOR_SERVERS$
+$Zy_Eng$WAN Interface used for services$
+$Zy_Tur$Servisler i&#231;in kullan&#305;lan WAN aray&uuml;zleri$
+$Zy_Ger$HTTP$
+$Zy_Fre$HTTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Trust_Domain_Explain$
+$Zy_Eng$Click the 'Add Trust Domain' button to enter the IP address of the management station permitted to access the local management services$
+$Zy_Tur$Uzak MGMT, bir WAN ve / veya Yerel A&#287; ba&#287;lant&#305;s&#305; ile uzaktan bu cihaza eri&#351;im i&#231;in &#231;e&#351;itli y&#246;ntemler sa&#287;lar.$
+$Zy_Ger$Mit der Fernwartung k&#246;nnen Sie verschiedene Zugriffsm&#246;glichkeiten auf das Ger&#228;t &#252;ber die WAN und/oder LAN Schnittstelle einstellen.$
+$Zy_Fre$Local et Distant$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Add_Trust_Domain_Explain$
+$Zy_Eng$Enter the IP address of the management station permitted to access the local management services, and click 'Apply'$
+$Zy_Tur$Uzak MGMT, bir WAN ve / veya Yerel A&#287; ba&#287;lant&#305;s&#305; ile uzaktan bu cihaza eri&#351;im i&#231;in &#231;e&#351;itli y&#246;ntemler sa&#287;lar.$
+$Zy_Ger$Mit der Fernwartung k&#246;nnen Sie verschiedene Zugriffsm&#246;glichkeiten auf das Ger&#228;t &#252;ber die WAN und/oder LAN Schnittstelle einstellen.$
+$Zy_Fre$Local et Distant$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Maintenance_Trust_Domain_Alert_str1$
+$Zy_Eng$IP Address {{1}} is  exist$
+$Zy_Tur$Uzak MGMT, bir WAN ve / veya Yerel A&#287; ba&#287;lant&#305;s&#305; ile uzaktan bu cihaza eri&#351;im i&#231;in &#231;e&#351;itli y&#246;ntemler sa&#287;lar.$
+$Zy_Ger$Mit der Fernwartung k&#246;nnen Sie verschiedene Zugriffsm&#246;glichkeiten auf das Ger&#228;t &#252;ber die WAN und/oder LAN Schnittstelle einstellen.$
+$Zy_Fre$Local et Distant$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str1$
+$Zy_Eng$System log mail subject cannot be empty.$
+$Zy_Tur$Sistem kayd&#305; e-posta konusu bo&#351; olamaz.$
+$Zy_Ger$Der Betreff einer Systemprotokoll-E-Mail darf nicht leer sein.$
+$Zy_Fre$L&#39;objet de l&#39;email du journal du syst&#232;me ne peut &#234;tre vide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str2$
+$Zy_Eng$Security log mail subject cannot be empty.$
+$Zy_Tur$G&#252;venlik kayd&#305; e- posta konusu bo&#351; olamaz.$
+$Zy_Ger$Der Betreff einer Sicherheitsprotokoll-E-Mail darf nicht leer sein.$
+$Zy_Fre$L&#39;objet de l&#39;email du journal de s&#233;curit&#233; ne peut &#234;tre vide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Explain$
+$Zy_Eng$Log Setting defines which types of logs and which log levels you want to record. If you have a LAN client on your network that is running a syslog utility, you can also save the log files there by enabling Syslog Logging and enter the IP address of that LAN client.$
+$Zy_Tur$Kay&#305;t Ayar&#305;, kaydetmek istedi&#287;iniz kay&#305;t t&#252;rlerini ve kay&#305;t seviyelerini tan&#305;mlar. Bir syslog program&#305; &#231;al&#305;&#351;t&#305;ran a&#287; &#252;zerinde bir Yerel A&#287; istemciniz varsa, siz de Sistem Giri&#351; Kayd&#305;n&#305; etkinle&#351;tirerek ve Yerel A&#287; istemcisi IP adresini girerek kay&#305;t dosyalar&#305;n&#305; oraya kaydedebilirsiniz.$
+$Zy_Ger$Unter Protokoll-Einstellungen wird definiert, welche Arten von Protokollen und welche Protokollebenen Sie aufzeichnen wollen. Wenn Sie in Ihrem Netzwerk einen LAN-Client haben, auf dem ein syslog Dienstprogramm l&#228;uft, k&#246;nnen Sie die Protokolldateien auch speichern und damit die Syslog-Protokollierung aktivieren. Dazu m&#252;ssen Sie die IP-Adresse des LAN-Client eingeben.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str52$
+$Zy_Eng$settings are invalid when disabled$
+$Zy_Tur$devre d&#305;&#351;&#305; b&#305;rak&#305;ld&#305;&#287;&#305;nda ayarlar ge&#231;ersizdir$
+$Zy_Ger$wenn deaktiviert, gelten Einstellungen nicht$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Title$
+$Zy_Eng$Syslog Setting$
+$Zy_Tur$Syslog Ayarlar&#305;$
+$Zy_Ger$Syslog-Einstellungen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str3$
+$Zy_Eng$Invalid alert interval, valid range: 0~3600$
+$Zy_Tur$Ge&#231;ersiz &#246;nemli uyar&#305; aral&#305;&#287;&#305;, ge&#231;erli aral&#305;k: 0~3600 &#39;d&#252;r.$
+$Zy_Ger$Ung&#252;ltiges Alarmintervall, g&#252;ltiger Bereich: 0~3600$
+$Zy_Fre$Intervalle d&#39;alerte non valide, plage valide: 0 ~ 3600$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str4$
+$Zy_Eng$Invalid capacity alarm percent, valid range: 0~100$
+$Zy_Tur$Ge&#231;ersiz kapasite alarm y&#252;zdesi, ge&#231;erli aral&#305;k: 0~100 &#39;d&#252;r.$
+$Zy_Ger$Ung&#252;ltiger Prozentsatz f&#252;r Kapazit&#228;tsalarm, g&#252;ltiger Bereich: 0~100$
+$Zy_Fre$Pourcentage d&#39;alarme de capacit&#233; non valide, plage valide: 0 ~ 100$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str5$
+$Zy_Eng$SMTP user cannot be empty.$
+$Zy_Tur$SMTP kullan&#305;c&#305;s&#305; bo&#351; olamaz.$
+$Zy_Ger$SMTP-Benutzer darf nicht leer sein.$
+$Zy_Fre$L&#39;utilisateur SMTP ne doit &#234;tre vide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str6$
+$Zy_Eng$SMTP password cannot be empty.$
+$Zy_Tur$SMTP &#351;ifresi bo&#351; olamaz.$
+$Zy_Ger$SMTP-Kennwort darf nicht leer sein.$
+$Zy_Fre$Le mot de passe SMTP ne doit pas &#234;tre vide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str7$
+$Zy_Eng$Please set Mail Server in Maintenance->Email Notification$
+$Zy_Tur$Bak&#305;m-> E-posta Bildirimi sekmesindeki E- Posta Sunucusunu ayarlay&#305;n&#305;z.$
+$Zy_Ger$Bitte stellen Sie den Mail Server unter Wartung ->E-Mail-Benachrichtigung ein$
+$Zy_Fre$Param&#233;trez le serveur de messagerie dans Entretien-> Notification par email $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str8$
+$Zy_Eng$Server IP address {{1}} is invalid IP address or host name.$
+$Zy_Tur$Sunucu IP adresi {{1}} ge&#231;ersiz bir IP adresi veya host ad&#305;d&#305;r.$
+$Zy_Ger$Server-IP-Adresse {{1}} ist ung&#252;ltige IP-Adresse bzw. ung&#252;ltiger Hostname.$
+$Zy_Fre$L&#39;adresse IP du serveur {{1}} n&#39;est pas une adresse IP ou nom d&#39;h&#244;te valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str9$
+$Zy_Eng$Server UDP port {{1}} is invalid.$
+$Zy_Tur$UDP portu Sunucusu {{1}} ge&#231;ersizdir.$
+$Zy_Ger$Server-UDP-Port {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le port UDP {{1}} du serveur n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str10$
+$Zy_Eng$Log E-Mail address {{1}} is invalid.$
+$Zy_Tur$E-Posta adresi Kayd&#305;{{1}} ge&#231;ersizdir.$
+$Zy_Ger$E-Mail-Adresse (Protokoll) {{1}} ist ung&#252;ltig.$
+$Zy_Fre$L&#39;adresse e-mail du journal {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str11$
+$Zy_Eng$Mail server address {{1}} is invalid IP address or host name.$
+$Zy_Tur$E-Posta sunucu adresi {{1}} ge&#231;ersiz bir IP adresi veya host ad&#305;d&#305;r.$
+$Zy_Ger$Mail Server Adresse {{1}} ist ung&#252;ltige IP-Adresse bzw. ung&#252;ltiger Hostname.$
+$Zy_Fre$L&#39;adresse du serveur de messagerie {{1}} n&#39;est pas une adresse IP ou nom d&#39;h&#244;te valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str12$
+$Zy_Eng$Alert E-Mail address {{1}} is invalid.$
+$Zy_Tur$E-Posta adresi &#246;nemli uyar&#305;s&#305; {{1}} ge&#231;ersizdir.$
+$Zy_Ger$E-Mail-Adresse (Alarm) {{1}} ist ung&#252;ltig.$
+$Zy_Fre$L&#39;adresse e-mail d&#39;alerte {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str13$
+$Zy_Eng$The password must contain 4 to 256 characters.$
+$Zy_Tur$&#350;ifre, 4 ile 256 aras&#305; karakterden olu&#351;mal&#305;d&#305;r.$
+$Zy_Ger$Das Kennwort muss aus 6 bis 256 Zeichen bestehen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str14$
+$Zy_Eng$The password must contain at least one numeric character and one alpha character.$
+$Zy_Tur$&#350;ifre, en az bir rakam ve bir harf i&#231;ermelidir!$
+$Zy_Ger$Das Kennwort muss mindestens eine Ziffer und einen Buchstaben enthalten.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str15$
+$Zy_Eng$The characters in password cannot contain your username.$
+$Zy_Tur$&#350;ifredeki karakterler ad&#305;n&#305;z&#305; i&#231;eremez.$
+$Zy_Ger$In einem Kennwort d&#252;rfen Sie Ihren Benutzernamen nicht verwenden.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str16$
+$Zy_Eng$The password can not be the empty.$
+$Zy_Tur$&#350;ifre alan&#305; bo&#351; olamaz$
+$Zy_Ger$Das Kennwort darf nicht leer sein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str17$
+$Zy_Eng$Please verify the password and try again.$
+$Zy_Tur$L&#252;tfen &#351;ifreyi do&#287;rulay&#305;n ve yeniden deneyin.$
+$Zy_Ger$Bitte geben Sie das Kennwort nochmals ein und probieren Sie es erneut.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str18$
+$Zy_Eng$Administrator level can not change password.$
+$Zy_Tur$Y&#246;netici d&#252;zeyi, parolay&#305; de&#287;i&#351;tiremez.$
+$Zy_Ger$Das Kennwort darf auf Administratorebene nicht ge&#228;ndert werden.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str19$
+$Zy_Eng$HTTP port {{1}} is used for other service.$
+$Zy_Tur$HTTP portu {{1}} di&#287;er hizmet i&#231;in kullan&#305;l&#305;yor.$
+$Zy_Ger$HTTP-Port {{1}} wird f&#252;r anderen Service verwendet.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Email_Notification_Explain$
+$Zy_Eng$Add email to set email notification for logs, 3G Backup and Wireless.$
+$Zy_Tur$Kay&#305;tlar, 3G Yedekleme ve i&#231;in e-posta bildirimini ayarlamak i&#231;in e-posta ekleyin.$
+$Zy_Ger$F&#252;gen Sie eine E-Mail-Adresse hinzu, um die E-Mail-Benachrichtigung f&#252;r Protokolle, 3G-Backup und VOIP einzustellen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Email_Notification_Explain_NoVoip$
+$Zy_Eng$Add email to set email notification for logs, 3G Backup.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Email_Str1$
+$Zy_Eng$Email Notification$
+$Zy_Tur$E-posta Bildirimi$
+$Zy_Ger$E-Mail-Benachrichtigung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Email_Str2$
+$Zy_Eng$Email Delete$
+$Zy_Tur$E-posta Sil $
+$Zy_Ger$E-Mail l&#246;schen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Email_Title$
+$Zy_Eng$Email Notification Configuration$
+$Zy_Tur$E-posta Bildirimi Yap&#305;land&#305;rmas&#305;$
+$Zy_Ger$E-Mail-Benachrichtigung konfigurieren$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Email_Notification_Str$
+$Zy_Eng$E-mail notification only support the e-mail server using port 25.$
+$Zy_Tur$E-posta bildirimi sadece port 25 kullanan e-posta sunucusunu destekler.$
+$Zy_Ger$E-Mail-Benachrichtigung unterst&#252;tzt nur den E-Mail-Server, wenn Port 25 verwendet wird.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Btn_Add_New_Email$
+$Zy_Eng$Add New Email$
+$Zy_Tur$Yeni E-posta ekle$
+$Zy_Ger$Neue E-Mail hinzuf&#252;gen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Email_Address_Str$
+$Zy_Eng$Email Address$
+$Zy_Tur$E-posta Adresi$
+$Zy_Ger$E-Mail-Adresse$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Email_Authentication_Password_Str$
+$Zy_Eng$Authentication Password$
+$Zy_Tur$Do&#287;rulama &#350;ifresi$
+$Zy_Ger$Kennwort f&#252;r Authentifizierung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Email_Authentication_Username_Str$
+$Zy_Eng$Authentication Username$
+$Zy_Tur$Do&#287;rulama Kullan&#305;c&#305; Ad&#305;$
+$Zy_Ger$Benutzername f&#252;r Authentifizierung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Email_Account_Email_Address_Str$
+$Zy_Eng$Account Email Address$
+$Zy_Tur$Hesap E-posta Adresi$
+$Zy_Ger$Konto E-Mail-Adresse$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Mail_Server_Address_Str$
+$Zy_Eng$Mail Server Address$
+$Zy_Tur$Posta Sunucu Adresi$
+$Zy_Ger$Mail Server Adresse$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str20$
+$Zy_Eng$HTTPS port {{1}} is used for other service.$
+$Zy_Tur$HTTP portu {{1}} di&#287;er hizmet i&#231;in kullan&#305;l&#305;yor.$
+$Zy_Ger$HTTPS-Port {{1}} wird f&#252;r anderen Service verwendet.$
+$Zy_Fre$L&#39;adresse e-mail d&#39;alerte {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str21$
+$Zy_Eng$SSH port {{1}} is used for other service.$
+$Zy_Tur$SSH portu {{1}} di&#287;er hizmet i&#231;in kullan&#305;l&#305;yor.$
+$Zy_Ger$SSH-Port {{1}} wird f&#252;r anderen Service verwendet.$
+$Zy_Fre$L&#39;adresse e-mail d&#39;alerte {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str22$
+$Zy_Eng$TELNET port {{1}} is used for other service.$
+$Zy_Tur$TELNET portu {{1}} di&#287;er hizmet i&#231;in kullan&#305;l&#305;yor.$
+$Zy_Ger$TELNET-Port {{1}} wird f&#252;r anderen Service verwendet.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str23$
+$Zy_Eng$FTP port {{1}} is used for other service.$
+$Zy_Tur$FTP portu {{1}} di&#287;er hizmet i&#231;in kullan&#305;l&#305;yor.$
+$Zy_Ger$FTP-Port {{1}} wird f&#252;r anderen Service verwendet.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str24$
+$Zy_Eng$Http port {{1}} is invalid (1~65535).$
+$Zy_Tur$Http portu{{1}}, (1 ~ 65535) aral&#305;&#287;&#305;nda ge&#231;ersizdir.$
+$Zy_Ger$HTTP-Port {{1}} ist ung&#252;ltig (1~65535).$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str25$
+$Zy_Eng$Https port {{1}} is invalid (1~65535).$
+$Zy_Tur$Http portu{{1}}, (1 ~ 65535) aral&#305;&#287;&#305;nda ge&#231;ersizdir$
+$Zy_Ger$HTTPS-Port {{1}} ist ung&#252;ltig (1~65535).$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str26$
+$Zy_Eng$SSH port {{1}} is invalid (1~65535).$
+$Zy_Tur$SSH portu{{1}}, (1 ~ 65535) aral&#305;&#287;&#305;nda ge&#231;ersizdir.$
+$Zy_Ger$SSH-Port {{1}} ist ung&#252;ltig (1~65535).$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str27$
+$Zy_Eng$Telnet port {{1}} is invalid (1~65535).$
+$Zy_Tur$Telnet portu{{1}}, (1 ~ 65535) aral&#305;&#287;&#305;nda ge&#231;ersizdir.$
+$Zy_Ger$TELNET-Port {{1}} ist ung&#252;ltig (1~65535).$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str28$
+$Zy_Eng$FTP port {{1}} is invalid (1~65535).$
+$Zy_Tur$FTP portu{{1}}, ge&#231;ersizdir$
+$Zy_Ger$FTP-Port {{1}} ist ung&#252;ltig (1~65535).$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str29$
+$Zy_Eng$IP Address {{1}} is  invalid.$
+$Zy_Tur$IP adresi {{1}}, ge&#231;ersizdir.$
+$Zy_Ger$IP-Adresse {{1}} ist ung&#252;ltig.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str30$
+$Zy_Eng$Mail Server Address {{1}} is  invalid.$
+$Zy_Tur$Posta Sunucu Adresi {{1}}, ge&#231;ersizdir.$
+$Zy_Ger$Mail Server Adresse {{1}} ist ung&#252;ltig.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str31$
+$Zy_Eng$Account Email Address {{1}} is  invalid.$
+$Zy_Tur$Hesap E-Posta Adresi {{1}}, ge&#231;ersizdir.$
+$Zy_Ger$Konto E-Mail-Adresse {{1}} ist ung&#252;ltig.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str32$
+$Zy_Eng$From E-Mail address {{1}} is  invalid.$
+$Zy_Tur$E-Posta G&#246;nderen Adresi {{1}}, ge&#231;ersizdir.$
+$Zy_Ger$Absender E-Mail-Adresse (Alarm) {{1}} ist ung&#252;ltig.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str33$
+$Zy_Eng$Please set Mail Server in Email Notification$
+$Zy_Tur$L&#252;tfen E-Posta Bildiriminde E-Posta Sunucusunu ayarlay&#305;n&#305;z.$
+$Zy_Ger$Bitte stellen Sie den Mail Server unter Wartung ->E-Mail-Benachrichtigung ein$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str34$ 
+$Zy_Eng$Old Password error.$ 
+$Zy_Tur$Eski Şifre hatası.$ 
+$Zy_Ger$(null)$ 
+$Zy_Fre$(null)$ 
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str35$ 
+$Zy_Eng$The password must contain 4 to 256 characters, include 0-9 and a-z.$ 
+$Zy_Tur$&#350;ifre, 0 - 9 ve a - z aras&#305;ndan se&#231;ilen 4 ile 256 karakterden olu&#351;mal&#305;d&#305;r.$ 
+$Zy_Ger$(null)$ 
+$Zy_Fre$(null)$ 
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str36$ 
+$Zy_Eng$The password must contain 6 to 20 characters, include 0-9 and a-z.$ 
+$Zy_Tur$&#350;ifre, 0 - 9 ve a - z aras&#305;ndan se&#231;ilen 6 ile 20 karakterden olu&#351;mal&#305;d&#305;r.$ 
+$Zy_Ger$(null)$ 
+$Zy_Fre$(null)$ 
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str37$
+$Zy_Eng$The password must contain 6 to 20 characters.$
+$Zy_Tur$&#350;ifre, 6 ile 20 aras&#305; karakterden olu&#351;mal&#305;d&#305;r.$
+$Zy_Ger$Das Kennwort muss aus 6 bis 20 Zeichen bestehen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str38$ 
+$Zy_Eng$The password must contain numbers and letters together; it shouldn’t have more than 3 increasing, decreasing or repeating characters from minimum 8 characters up to 256 characters.$ 
+$Zy_Tur$Şifre içinde rakam ve harf birlikte bulunduracak şekilde, 3’ten fazla artan, azalan veya tekrar eden karakterlerin bulunmadığı 8 ile 256 arası karakterden oluşmalıdır.$ 
+$Zy_Ger$(null)$ 
+$Zy_Fre$(null)$ 
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str39$
+$Zy_Eng$Your password has more than 3 increasing or decreasing numbers or letters. Please do not create a password that can be easily guessed for your own security.$
+$Zy_Tur$&#350;ifrenizde 3&#8217;ten fazla artan veya azalan rakamlar veya harfler var. G&#252;venli&#287;iniz i&#231;in l&#252;tfen kolay tahmin edilebilir &#351;ifreler girmeyiz!$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str40$
+$Zy_Eng$Your password has more than 3 repeating characters. Please do not create a password that can be easily guessed for your own security.$
+$Zy_Tur$&#350;ifrenizde 3&#8217;ten fazla tekrar eden karakterler var. G&#252;venli&#287;iniz i&#231;in l&#252;tfen kolay tahmin edilebilir &#351;ifreler girmeyiz!$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str41$
+$Zy_Eng$The password must contain 8 to 256 characters.$
+$Zy_Tur$&#350;ifre, 8 Ile 256 aras&#305; karakterden olu&#351;mal&#305;d&#305;r.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_AlertMsg_Str42$
+$Zy_Eng$Your new password is same with your old password. Please define a new password.$
+$Zy_Tur$Yeni şifreniz eski şifreniz ile aynı. Lütfen başka bir şifre tanımlayınız.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str5$
+$Zy_Eng$Syslog Server IP Address$
+$Zy_Tur$Syslog Sunucusu IP Adresi$
+$Zy_Ger$Syslog Server-IP-Adresse$
+$Zy_Fre$Adresse IP du serveur Syslog$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str6$
+$Zy_Eng$Server NAME or IPv4/IPv6 Address$
+$Zy_Tur$Sunucu ADI veya IP Adresi$
+$Zy_Ger$Servername oder IP-Adresse$
+$Zy_Fre$NOM ou adresse IP du serveur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str7$
+$Zy_Eng$UDP Port$
+$Zy_Tur$UDP Portu$
+$Zy_Ger$UDP-Port$
+$Zy_Fre$Port UDP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str8$
+$Zy_Eng$E-mail Log Settings$
+$Zy_Tur$E-Posta Giri&#351; Ayarlar&#305;$
+$Zy_Ger$Protokolleinstellungen f&#252;r E-Mail$
+$Zy_Fre$Param&#232;tres du journal de messagerie &#233;lectronique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_LogsSetting_Str9$
+$Zy_Eng$Mail Server$
+$Zy_Tur$E-Posta Sunucusu$
+$Zy_Ger$Mail Server$
+$Zy_Fre$Serveur de messagerie$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_OAMPing_Str1$
+$Zy_Eng$OAM Ping is a computer network administration utility used to test ADSL connection status.$
+$Zy_Tur$OAM Ping, ADSL ba&#287;lant&#305;s&#305; durumunu test etmek i&#231;in kullan&#305;lan bir bilgisayar a&#287; y&#246;netimi arac&#305;d&#305;r.$
+$Zy_Ger$OAM Ping ist ein Dienstprogramm f&#252;r die Verwaltung von Computernetzwerken, mit dem der ADSL-Verbindungsstatus getestet werden kann.$
+$Zy_Fre$OAM Ping est un utilitaire d&#39;administration de r&#233;seau informatique utilis&#233; pour tester l&#39;&#233;tat de connexion ADSL.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_OAMPing_Str10$
+$Zy_Eng$FAIL$
+$Zy_Tur$HATA$
+$Zy_Ger$FEHLER$
+$Zy_Fre$&#201;CHEC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_OAMPing_Str11$
+$Zy_Eng$F4 FAIL$
+$Zy_Tur$F4 HATA$
+$Zy_Ger$F4 FEHLER$
+$Zy_Fre$&#201;CHEC F4$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_OAMPing_Str12$
+$Zy_Eng${{1}} Test: FAIL$
+$Zy_Tur$ {{1}} Test: HATA$
+$Zy_Ger${{1}} Test: FEHLER$
+$Zy_Fre$Test {{1}}: &#201;CHEC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_OAMPing_Str13$
+$Zy_Eng${{1}} Test: PASS$
+$Zy_Tur$ {{1}} Test: GE&#199;T&#304; $
+$Zy_Ger${{1}} Test: IN ORDNUNG$
+$Zy_Fre$Test {{1}}: R&#201;USSI$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_OAMPing_Str14$
+$Zy_Eng${{1}} Test: DISABLED <br> ADSL link is down, tests not done$
+$Zy_Tur$ {{1}} Test: DEVRE DI&#350;I <br> ADSL ba&#287;lant&#305;s&#305; koptu, testler yap&#305;lamad&#305; $
+$Zy_Ger${{1}} Test: DEAKTIVIERT <br> ADSL-Verbindung ausgefallen, Tests nicht durchgef&#252;hrt$
+$Zy_Fre$Test {{1}}: D&#201;SACTIV&#201; <br> La liaison ADSL est en panne, les tests ne sont pas faits$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_OAMPing_Str2$
+$Zy_Eng$Info$
+$Zy_Tur$Bilgi$
+$Zy_Ger$Info$
+$Zy_Fre$Infos$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_OAMPing_Str3$
+$Zy_Eng$F4 segment$
+$Zy_Tur$F4 segmenti$
+$Zy_Ger$F4 Segment$
+$Zy_Fre$Segment F4$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_OAMPing_Str4$
+$Zy_Eng$F4 end-end$
+$Zy_Tur$U&#231;tan uca F4$
+$Zy_Ger$F4 End-End$
+$Zy_Fre$F4 fin-fin$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_OAMPing_Str5$
+$Zy_Eng$F5 segment$
+$Zy_Tur$F5 segmenti$
+$Zy_Ger$F5 Segment$
+$Zy_Fre$Segment F5$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_OAMPing_Str6$
+$Zy_Eng$F5 end-end$
+$Zy_Tur$U&#231;tan uca F5$
+$Zy_Ger$F5 End-End$
+$Zy_Fre$F5 fin-fin$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_OAMPing_Str7$
+$Zy_Eng$DISABLED$
+$Zy_Tur$DEVRE DI&#350;I $
+$Zy_Ger$DEAKTIVIERT$
+$Zy_Fre$D&#201;SACTIV&#201;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_OAMPing_Str8$
+$Zy_Eng$SKIP$
+$Zy_Tur$ATLA$
+$Zy_Ger$&#220;BERSPRINGEN$
+$Zy_Fre$SAUTER$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_OAMPing_Str9$
+$Zy_Eng$PASS$
+$Zy_Tur$GE&#199; $
+$Zy_Ger$IN ORDNUNG$
+$Zy_Fre$R&#201;USSI$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_PingTraceRouteNsLookup_Str1$
+$Zy_Eng$Traceroute is a computer network administration utility used to test whether a particular host is reachable. You can enter IP or hostname to do traceroute test.$
+$Zy_Tur$Traceroute, belirli bir hostun eri&#351;ilebilir olup olmad&#305;&#287;&#305;n&#305; test etmek i&#231;in kullan&#305;lan bir a&#287; arac&#305;d&#305;r. Traceroute testi yapmak i&#231;in IP veya host ad&#305;n&#305; girebilirsiniz.$
+$Zy_Ger$Traceroute ist ein Dienstprogramm zur Verwaltung von Computernetzwerken, mit dem getestet werden kann, ob ein bestimmter Host erreichbar ist. Sie k&#246;nnen die IP bzw. den Hostnamen eingeben, um den Test mit traceroute zu starten.$
+$Zy_Fre$Traceroute est un outil d&#39;administration r&#233;seau informatique utilis&#233; pour tester si un h&#244;te particulier est accessible. Vous pouvez entrer l&#39;IP ou le nom de l&#39;h&#244;te pour faire le test traceroute.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_PingTraceRouteNsLookup_Str2$
+$Zy_Eng$Ping is a computer network administration utility used to test whether a particular host is reachable. You can enter IP or hostname to do Ping test.$
+$Zy_Tur$Ping, belirli bir hostun eri&#351;ilebilir olup olmad&#305;&#287;&#305;n&#305; test etmek i&#231;in kullan&#305;lan bir a&#287; arac&#305;d&#305;r. Ping testi yapmak i&#231;in IP veya host ad&#305;n&#305; girebilirsiniz.$
+$Zy_Ger$Ping ist ein Dienstprogramm zur Verwaltung von Computernetzwerken, mit dem getestet werden kann, ob ein bestimmter Host erreichbar ist. Sie k&#246;nnen die IP bzw. den Hostnamen eingeben, um den Test mit ping zu starten.$
+$Zy_Fre$Ping est un outil d&#39;administration r&#233;seau informatique utilis&#233; pour tester si un h&#244;te particulier est accessible. Vous pouvez entrer l&#39;IP ou le nom de l&#39;h&#244;te pour faire le test Ping.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_PingTraceRouteNsLookup_Str3$
+$Zy_Eng$Info$
+$Zy_Tur$Bilgi$
+$Zy_Ger$Info$
+$Zy_Fre$Infos$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_PingTraceRouteNsLookup_Str4$
+$Zy_Eng$Address$
+$Zy_Tur$Adres$
+$Zy_Ger$Adresse$
+$Zy_Fre$Adresse$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_PingTraceRouteNsLookup_Str5$
+$Zy_Eng$URL or IP Address$
+$Zy_Tur$URL veya IP Adresi$
+$Zy_Ger$URL oder IP-Adresse$
+$Zy_Fre$URL ou adresse IP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_PingTraceRouteNsLookup_Str6$
+$Zy_Eng$Ping$
+$Zy_Tur$Ping$
+$Zy_Ger$Ping$
+$Zy_Fre$Ping$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_PingTraceRouteNsLookup_Str7$
+$Zy_Eng$Trace Route$
+$Zy_Tur$Trace route$
+$Zy_Ger$Trace Route$
+$Zy_Fre$Trace Route$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_PingTraceRouteNsLookup_Str8$
+$Zy_Eng$Nslookup$
+$Zy_Tur$Nslookup$
+$Zy_Ger$Nslookup$
+$Zy_Fre$Nslookup$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Maintenance_PingTraceRouteNsLookup_AlertMsg_Str1$
+$Zy_Eng$Address should not be empty!$
+$Zy_Tur$Adres alan&#305; bo&#351; olmamal&#305;!$
+$Zy_Ger$Adresse sollte nicht leer sein.$
+$Zy_Fre$L&#39;adresse ne doit pas &#234;tre vide!$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_PingTraceRouteNsLookup_AlertMsg_Str2$
+$Zy_Eng$Address is invalid$
+$Zy_Tur$Adres ge&#231;ersiz.$
+$Zy_Ger$Adresse ist ung&#252;ltig$
+$Zy_Fre$L&#39;adresse n&#39;est pas valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_OAMPing_Str15$
+$Zy_Eng$VPI/VCI$
+$Zy_Tur$VPI/VCI$
+$Zy_Ger$VPI/VCI$
+$Zy_Fre$VPI/VCI$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_OAMPing_Str16$
+$Zy_Eng$Test: DISABLED$
+$Zy_Tur$Test: DEVRE DI&#350;I $
+$Zy_Ger$Test: DEAKTIVIERT$
+$Zy_Fre$Test: D&#201;SACTIV&#201;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_OAMPing_Str17$
+$Zy_Eng$ADSL link is down, tests not done$
+$Zy_Tur$ADSL ba&#287;lant&#305;s&#305; koptu, testler yap&#305;lamad&#305;.$
+$Zy_Ger$ADSL-Verbindung ausgefallen, Tests nicht durchgef&#252;hrt$
+$Zy_Fre$La liaison ADSL est en panne, les tests ne sont pas faits$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Reboot_AlertMsg_Str1$
+$Zy_Eng$Router is rebooting now. Please wait &#8230;$
+$Zy_Tur$Y&#246;nlendirici &#351;imdi yeniden ba&#351;lat&#305;l&#305;yor. L&#252;tfen bekleyiniz &#8230;$
+$Zy_Ger$Router wird jetzt neu gestartet. Bitte warten &#8230;$
+$Zy_Fre$Le routeur est maintenant en cours de red&#233;marrage. Patientez ...$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Reboot_AlertMsg_Str2$
+$Zy_Eng$As there will be no indication of when the process is complete, please wait for one minute before attempting to access the router again.$
+$Zy_Tur$&#304;&#351;lemin tamamland&#305;&#287;&#305;na dair hi&#231;bir g&#246;sterge olmayaca&#287;&#305;ndan, y&#246;nlendiriciye tekrar eri&#351;meyi denemeden &#246;nce l&#252;tfen bir dakika bekleyin.$
+$Zy_Ger$Da Sie keinen Hinweis erhalten werden, wann der Vorgang abgeschlossen ist, warten Sie bitte eine Minute, bevor Sie erneut versuchen, auf den Router zuzugreifen.$
+$Zy_Fre$Etant donn&#233; qu&#8217;il n&#8217;y a pas d&#8217;indication sur la fin du processus, patientez une minute avant d&#8217;essayer d&#8217;acc&#233;der &#224; nouveau au routeur.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Apply_Btn$
+$Zy_Eng$Apply$
+$Zy_Tur$Uygula$
+$Zy_Ger$Anwenden$
+$Zy_Fre$Appliquer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Cancel_Btn$
+$Zy_Eng$Cancel$
+$Zy_Tur$&#304;ptal$
+$Zy_Ger$Abbrechen$
+$Zy_Fre$Annuler$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Reboot_Btn1$
+$Zy_Eng$Reboot$
+$Zy_Tur$Yeniden ba&#351;lat$
+$Zy_Ger$Neustart$
+$Zy_Fre$Red&#233;marrer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Reboot_Str1$
+$Zy_Eng$Reboot performs a software restart of the device. It takes a few minutes before you can log into the device again after reboot.$
+$Zy_Tur$Yeniden ba&#351;latma se&#231;ene&#287;i, cihaz&#305;n yaz&#305;l&#305;m&#305;n&#305; yeniden ba&#351;latmas&#305;n&#305; sa&#287;lar. Bu yeniden ba&#351;latma i&#351;leminden sonra cihaza tekrar giri&#351; yapabilmeniz i&#231;in bir ka&#231; dakika beklemeniz gerekmektedir.$
+$Zy_Ger$Ein Neustart startet die Software des Ger&#228;ts neu. Es dauert ein paar Minuten, bevor Sie sich nach einem Neustart wieder beim Ger&#228;t anmelden k&#246;nnen.$
+$Zy_Fre$Le red&#233;marrage effectue un red&#233;marrage logiciel de l&#39;appareil. Quelques minutes sont n&#233;cessaires avant de pouvoir vous connecter &#224; nouveau &#224; l&#39;appareil apr&#232;s le red&#233;marrage.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Reboot_Str2$
+$Zy_Eng$System Reboot$
+$Zy_Tur$Sistemi Yeniden Ba&#351;lat$
+$Zy_Ger$System-Neustart$
+$Zy_Fre$Red&#233;marrage du syst&#232;me$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Reboot_Str3$
+$Zy_Eng$Router is restarting now.Please wait ...$
+$Zy_Tur$Y&#246;nlendiriciniz yeniden ba&#351;lat&#305;l&#305;yor.L&#252;tfen bekleyiniz&#8230;$
+$Zy_Ger$Router wird jetzt neu gestartet. Bitte warten ...$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_SNMP_AlertMsg_Str1$
+$Zy_Eng$Read community is required.$
+$Zy_Tur$Community okuma gerekli.$
+$Zy_Ger$Read Community ist erforderlich.$
+$Zy_Fre$La communaut&#233; de lecture est requise.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_SNMP_AlertMsg_Str2$
+$Zy_Eng$Set community is required.$
+$Zy_Tur$Community ayarlama gerekli.$
+$Zy_Ger$Set Community ist erforderlich.$
+$Zy_Fre$La communaut&#233; d&#233;finie est n&#233;cessaire.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_SNMP_AlertMsg_Str3$
+$Zy_Eng$The length of read community {{1}} is too long [0-15].$
+$Zy_Tur$Community okuma uzunlu&#287;u {{1}}, &#231;ok uzundur, [0-15].$
+$Zy_Ger$Read Community {{1}} zu lang [0-15].$
+$Zy_Fre$La longueur de la communaut&#233; de lecture {{1}} est trop grande [0-15].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_SNMP_AlertMsg_Str4$
+$Zy_Eng$The length of set community {{1}} is too long [0-15].$
+$Zy_Tur$Community ayarlama uzunlu&#287;u {{1}}, &#231;ok uzundur, [0-15].$
+$Zy_Ger$Set Community {{1}} zu lang [0-15].$
+$Zy_Fre$La longueur de la communaut&#233; d&#233;finie {{1}} est trop grande [0-15].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_SNMP_AlertMsg_Str5$
+$Zy_Eng$The length of System name {{1}} is too long [0-15].$
+$Zy_Tur$SysName uzunlu&#287;u {{1}}, &#231;ok uzundur, [0-15].$
+$Zy_Ger$Systemname {{1}} zu lang [0-15].$
+$Zy_Fre$La longueur de sysName {{1}} est trop grande [0-15].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_SNMP_AlertMsg_Str6$
+$Zy_Eng$The length of System Contact {{1}} is too long [0-15].$
+$Zy_Tur$SysContact uzunlu&#287;u {{1}}, &#231;ok uzundur,  [0-15].$
+$Zy_Ger$Systemkontakt {{1}} zu lang [0-15].$
+$Zy_Fre$La longueur de sysContact {{1}} est trop grande [0-15].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_SNMP_AlertMsg_Str7$
+$Zy_Eng$The length of System Location {{1}} is too long [0-15].$
+$Zy_Tur$SysLocation uzunlu&#287;u {{1}}, &#231;ok uzundur,  [0-15].$
+$Zy_Ger$Systemort {{1}} zu lang [0-15].$
+$Zy_Fre$La longueur de sysLocation {{1}} est trop grande [0-15].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_SNMP_AlertMsg_Str8$
+$Zy_Eng$Trap Management IP address {{1}} is invalid IP address.$
+$Zy_Tur$Trap&#39;lerin g&#246;nderilece&#287;i Y&#246;netici IP adresi {{1}}, ge&#231;ersiz bir IP adresidir.$
+$Zy_Ger$Trap Management IP-Adresse {{1}} ist ung&#252;ltig.$
+$Zy_Fre$L&#39;adresse IP de gestion de d&#233;routement {{1}} n&#39;est pas une adresse IP correcte.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_SNMP_Str1$
+$Zy_Eng$Simple Network Management Protocol (SNMP) allows a management application to retrieve statistics and status from the SNMP agent in this device. <br> Select the desired values and click \'Apply\' to configure the SNMP options. $
+$Zy_Tur$Basit A&#287; Y&#246;netimi Protokol&#252; (SNMP), bir y&#246;netim uygulamas&#305;n&#305;n bu cihazdaki SNMP agent&#39;&#305;ndan istatistikleri ve durumu almas&#305;n&#305; sa&#287;lar. <br> &#304;stenilen de&#287;erleri se&#231;in ve SNMP se&#231;eneklerini yap&#305;land&#305;rmak i&#231;in \'Uygula\' d&#252;&#287;mesine t&#305;klay&#305;n. $
+$Zy_Ger$SNMP (Simple Network Management Protocol) erlaubt einer Management-Anwendung, Statistiken und Statusangaben vom SNMP Agenten in diesem Ger&#228;t abzurufen. <br> W&#228;hlen Sie die gew&#252;nschten Werte und klicken Sie auf \'Anwenden\', um die SNMP-Optionen zu konfigurieren. $
+$Zy_Fre$Simple Network Management Protocol (SNMP) permet &#224; une application de gestion d&#39;obtenir des statistiques et l&#39;&#233;tat de l&#39;agent SNMP dans cet appareil. <br> S&#233;lectionnez les valeurs souhait&#233;es et cliquez sur &#171;&#160;Appliquer&#160;&#187; pour configurer les options SNMP. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_SNMP_Str2$
+$Zy_Eng$SNMP Agent$
+$Zy_Tur$SNMP Agent$
+$Zy_Ger$SNMP Agent$
+$Zy_Fre$Agent SNMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_SNMP_Str3$
+$Zy_Eng$Read Community$
+$Zy_Tur$Community Oku$
+$Zy_Ger$Read Community$
+$Zy_Fre$Communaut&#233; de lecture$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_SNMP_Str4$
+$Zy_Eng$Set Community$
+$Zy_Tur$Community Ayarla$
+$Zy_Ger$Set Community$
+$Zy_Fre$Communaut&#233; d&#233;finie$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_SNMP_Str5$
+$Zy_Eng$System Name$
+$Zy_Tur$Sistem Ad&#305;$
+$Zy_Ger$Systemname$
+$Zy_Fre$Nom du syst&#232;me$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_SNMP_Str6$
+$Zy_Eng$System Location$
+$Zy_Tur$Sistem Konumu$
+$Zy_Ger$Systemort$
+$Zy_Fre$Emplacement du syst&#232;me$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_SNMP_Str7$
+$Zy_Eng$System Contact$
+$Zy_Tur$Sistem &#304;leti&#351;imi$
+$Zy_Ger$Systemkontakt$
+$Zy_Fre$Contact du syst&#232;me$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_SNMP_Str8$
+$Zy_Eng$Trap Manager IP$
+$Zy_Tur$Trap Y&#246;netici IP$
+$Zy_Ger$Trap Manager IP$
+$Zy_Fre$IP du gestionnaire de d&#233;routement$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str1$
+$Zy_Eng$You can adjust the time of the device with the following settings. Current Date/Time is in 24 hour format.$
+$Zy_Tur$A&#351;a&#287;&#305;daki ayarlar ile cihaz&#305;n zaman&#305;n&#305; ayarlayabilirsiniz. Ge&#231;erli Tarih / Saat, 24 saat format&#305;ndad&#305;r.$
+$Zy_Ger$Sie k&#246;nnen die Zeit des Ger&#228;ts mit den folgenden Einstellungen anpassen. Datum/Uhrzeit aktuell wird im 24-Stunden-Format angegeben.$
+$Zy_Fre$Vous pouvez r&#233;gler l&#39;heure de l&#39;appareil avec les param&#232;tres suivants. La Date/Heure actuelle est au format de 24 heures.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str10$
+$Zy_Eng$clock.fmt.he.net$
+$Zy_Tur$clock.fmt.he.net$
+$Zy_Ger$clock.fmt.he.net$
+$Zy_Fre$clock.fmt.he.net$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str11$
+$Zy_Eng$clock.nyc.he.net$
+$Zy_Tur$clock.nyc.he.net$
+$Zy_Ger$clock.nyc.he.net$
+$Zy_Fre$clock.nyc.he.net$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str12$
+$Zy_Eng$clock.sjc.he.net$
+$Zy_Tur$clock.sjc.he.net$
+$Zy_Ger$clock.sjc.he.net$
+$Zy_Fre$clock.sjc.he.net$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str13$
+$Zy_Eng$clock.via.net$
+$Zy_Tur$clock.via.net$
+$Zy_Ger$clock.via.net$
+$Zy_Fre$clock.via.net$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str14$
+$Zy_Eng$ntp1.tummy.com$
+$Zy_Tur$ntp1.tummy.com$
+$Zy_Ger$ntp1.tummy.com$
+$Zy_Fre$ntp1.tummy.com$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str15$
+$Zy_Eng$time.cachenetworks.com$
+$Zy_Tur$time.cachenetworks.com$
+$Zy_Ger$time.cachenetworks.com$
+$Zy_Fre$time.cachenetworks.com$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str16$
+$Zy_Eng$time.nist.gov$
+$Zy_Tur$time.nist.gov$
+$Zy_Ger$time.nist.gov$
+$Zy_Fre$time.nist.gov$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str17$
+$Zy_Eng$Time Zone$
+$Zy_Tur$Zaman Dilimi$
+$Zy_Ger$Zeitzone$
+$Zy_Fre$Fuseau horaire$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str18$
+$Zy_Eng$Time zone offset$
+$Zy_Tur$Saat dilimi farkl&#305;l&#305;&#287;&#305;$
+$Zy_Ger$Zeitzonen-Offset$
+$Zy_Fre$D&#233;calage du fuseau horaire$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str19$
+$Zy_Eng$(GMT-09:00)Alaska$
+$Zy_Tur$(GMT-09:00)Alaska$
+$Zy_Ger$(GMT-09:00) Alaska$
+$Zy_Fre$(GMT-09:00) Alaska$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str2$
+$Zy_Eng$Current Date/Time$
+$Zy_Tur$Ge&#231;erli Tarih / Saat$
+$Zy_Ger$Datum/Uhrzeit aktuell$
+$Zy_Fre$Date/Heure actuelle$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Current_Time$
+$Zy_Eng$Current Time$
+$Zy_Tur$Ge&#231;erli Saat$
+$Zy_Ger$Uhrzeit aktuell$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Current_Date$
+$Zy_Eng$Current Date$
+$Zy_Tur$Ge&#231;erli Tarih$
+$Zy_Ger$Datum aktuell$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str20$
+$Zy_Eng$(GMT-08:00) Pacific Time, Tijuana$
+$Zy_Tur$(GMT-08: 00) Pasifik Saati, Tijuana$
+$Zy_Ger$(GMT-08:00) Pacific Time, Tijuana$
+$Zy_Fre$(GMT-08:00) Pacifique, Tijuana$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str21$
+$Zy_Eng$(GMT-07:00) Mountain Time$
+$Zy_Tur$(GMT-07: 00) Mountain Saati$
+$Zy_Ger$(GMT-07:00) Mountain Time$
+$Zy_Fre$(GMT-07:00) Montagnes Rocheuses$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str22$
+$Zy_Eng$(GMT-06:00) Central time$
+$Zy_Tur$(GMT-06: 00) Merkezi saat$
+$Zy_Ger$(GMT-06:00) Central Time$
+$Zy_Fre$(GMT-06:00) Centre$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str23$
+$Zy_Eng$(GMT-05:00) Eastern Time$
+$Zy_Tur$(GMT-05: 00) Do&#287;u Saati$
+$Zy_Ger$(GMT-05:00) Eastern Time$
+$Zy_Fre$(GMT-05:00) Est$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str24$
+$Zy_Eng$Daylight Saving$
+$Zy_Tur$G&#252;n&#305;&#351;&#305;&#287;&#305;ndan Tasarruf$
+$Zy_Ger$Sommerzeit$
+$Zy_Fre$Heure d&#8217;&#233;t&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str25$
+$Zy_Eng$Start rule$
+$Zy_Tur$Kural Ba&#351;lat$
+$Zy_Ger$Regel Anfang$
+$Zy_Fre$D&#233;marrer la r&#232;gle$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str26$
+$Zy_Eng$Day$
+$Zy_Tur$G&#252;n$
+$Zy_Ger$Tag$
+$Zy_Fre$Jour$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str27$
+$Zy_Eng$in$
+$Zy_Tur$de$
+$Zy_Ger$in$
+$Zy_Fre$en$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str28$
+$Zy_Eng$Week$
+$Zy_Tur$Hafta$
+$Zy_Ger$Woche$
+$Zy_Fre$Semaine$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str29$
+$Zy_Eng$Sunday$
+$Zy_Tur$Pazar$
+$Zy_Ger$Sonntag$
+$Zy_Fre$Dimanche$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str3$
+$Zy_Eng$System Time$
+$Zy_Tur$Sistem Zaman&#305;$
+$Zy_Ger$Systemzeit$
+$Zy_Fre$Heure du syst&#232;me$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str30$
+$Zy_Eng$Monday$
+$Zy_Tur$Pazartesi$
+$Zy_Ger$Montag$
+$Zy_Fre$Lundi$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str31$
+$Zy_Eng$Tuesday$
+$Zy_Tur$Sal&#305;$
+$Zy_Ger$Dienstag$
+$Zy_Fre$Mardi$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str32$
+$Zy_Eng$Wednesday$
+$Zy_Tur$&#199;ar&#351;amba$
+$Zy_Ger$Mittwoch$
+$Zy_Fre$Mercredi$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str33$
+$Zy_Eng$Thursday$
+$Zy_Tur$Per&#351;embe$
+$Zy_Ger$Donnerstag$
+$Zy_Fre$Jeudi$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str34$
+$Zy_Eng$Friday$
+$Zy_Tur$Cuma$
+$Zy_Ger$Freitag$
+$Zy_Fre$Vendredi$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str35$
+$Zy_Eng$Saturday$
+$Zy_Tur$Cumartesi$
+$Zy_Ger$Samstag$
+$Zy_Fre$Samedi$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str36$
+$Zy_Eng$Month$
+$Zy_Tur$Ay$
+$Zy_Ger$Monat$
+$Zy_Fre$Mois$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str37$
+$Zy_Eng$January$
+$Zy_Tur$Ocak$
+$Zy_Ger$Januar$
+$Zy_Fre$Janvier$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str38$
+$Zy_Eng$February$
+$Zy_Tur$&#350;ubat$
+$Zy_Ger$Februar$
+$Zy_Fre$F&#233;vrier$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str39$
+$Zy_Eng$March$
+$Zy_Tur$Mart$
+$Zy_Ger$M&#228;rz$
+$Zy_Fre$Mars$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str4$
+$Zy_Eng$NTP Time Server$
+$Zy_Tur$NTP Zaman Sunucusu$
+$Zy_Ger$NTP Time Server$
+$Zy_Fre$Serveur de temps NTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_First_NTP_Service$
+$Zy_Eng$First Time Server$
+$Zy_Tur$&#304;lk Zaman Sunucusu$
+$Zy_Ger$Erster Time Server$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Second_NTP_Service$
+$Zy_Eng$Second Time Server$
+$Zy_Tur$&#304;kinci Zaman Sunucusu$
+$Zy_Ger$Zweiter Time Server$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Fourth_NTP_Service$
+$Zy_Eng$Fourth Time Server$
+$Zy_Tur$D&#246;rd&#252;nc&#252; Zaman Sunucusu$
+$Zy_Ger$Vierter Time Server$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Fifth_NTP_Service$
+$Zy_Eng$Fifth Time Server$
+$Zy_Tur$Be&#351;inci Zaman Sunucusu$
+$Zy_Ger$F&#252;nfter Time Server$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Third_NTP_Service$
+$Zy_Eng$Third Time Server$
+$Zy_Tur$&#220;&#231;&#252;nc&#252; Zaman Sunucusu$
+$Zy_Ger$Dritter Time Server$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str40$
+$Zy_Eng$April$
+$Zy_Tur$Nisan$
+$Zy_Ger$April$
+$Zy_Fre$Avril$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str41$
+$Zy_Eng$May$
+$Zy_Tur$May&#305;s$
+$Zy_Ger$Mai$
+$Zy_Fre$Mai$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str42$
+$Zy_Eng$June$
+$Zy_Tur$Haziran$
+$Zy_Ger$Juni$
+$Zy_Fre$Juin$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str43$
+$Zy_Eng$July$
+$Zy_Tur$Temmuz$
+$Zy_Ger$Jul$
+$Zy_Fre$Juillet$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str44$
+$Zy_Eng$August$
+$Zy_Tur$A&#287;ustos$
+$Zy_Ger$August$
+$Zy_Fre$Ao&#251;t$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str45$
+$Zy_Eng$September$
+$Zy_Tur$Eyl&#252;l$
+$Zy_Ger$September$
+$Zy_Fre$Septembre$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str46$
+$Zy_Eng$October$
+$Zy_Tur$Ekim$
+$Zy_Ger$Oktober$
+$Zy_Fre$Octobre$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str47$
+$Zy_Eng$November$
+$Zy_Tur$Kas&#305;m$
+$Zy_Ger$November$
+$Zy_Fre$Novembre$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str48$
+$Zy_Eng$December$
+$Zy_Tur$Aral&#305;k$
+$Zy_Ger$Dezember$
+$Zy_Fre$D&#233;cembre$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str49$
+$Zy_Eng$Time$
+$Zy_Tur$Zaman$
+$Zy_Ger$Zeit$
+$Zy_Fre$Heure$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str5$
+$Zy_Eng$First NTP time server$
+$Zy_Tur$&#304;lk NTP zaman sunucusu$
+$Zy_Ger$Erster NTP Time Server$
+$Zy_Fre$Premier serveur de temps NTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str50$
+$Zy_Eng$End rule$
+$Zy_Tur$Biti&#351; kural&#305; $
+$Zy_Ger$Regel Ende$
+$Zy_Fre$Terminer la r&#232;gle$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str51$
+$Zy_Eng$Hour$
+$Zy_Tur$Saat$
+$Zy_Ger$Stunde$
+$Zy_Fre$Heure$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str52$
+$Zy_Eng$Order$
+$Zy_Tur$D&#252;zen$
+$Zy_Ger$Reihenfolge$
+$Zy_Fre$Trier$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str53$
+$Zy_Eng$First$
+$Zy_Tur$Birinci$
+$Zy_Ger$Erster$
+$Zy_Fre$Premier$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str54$
+$Zy_Eng$Second$
+$Zy_Tur$&#304;kinci$
+$Zy_Ger$Zweiter$
+$Zy_Fre$Seconde$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str55$
+$Zy_Eng$Third$
+$Zy_Tur$&#220;&#231;&#252;nc&#252;$
+$Zy_Ger$Dritter$
+$Zy_Fre$Troisi&#232;me$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str56$
+$Zy_Eng$Fourth$
+$Zy_Tur$D&#246;rd&#252;nc&#252;$
+$Zy_Ger$Vierter$
+$Zy_Fre$Quatri&#232;me$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str57$
+$Zy_Eng$Fifth$
+$Zy_Tur$Be&#351;inci$
+$Zy_Ger$F&#252;nfter$
+$Zy_Fre$Cinqui&#232;me$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str58$
+$Zy_Eng$Min$
+$Zy_Tur$Dakika$
+$Zy_Ger$Min.$
+$Zy_Fre$Min$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str59$
+$Zy_Eng$(GMT-12:00) International Date Line West$
+$Zy_Tur$(GMT-12:00) Uluslararas&#305; Tarih De&#287;i&#351;tirme &#199;izgisi$
+$Zy_Ger$(GMT-12:00) Internationale Datumsgrenze Westen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str60$
+$Zy_Eng$(GMT-11:00) Midway Island, Samoa$
+$Zy_Tur$(GMT-11:00) Midway Adas&#305;, Samoa$
+$Zy_Ger$(GMT-11:00) Midwayinseln, Samoa$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str61$
+$Zy_Eng$(GMT-10:00) Hawaii$
+$Zy_Tur$(GMT-10:00) Hawaii$
+$Zy_Ger$(GMT-10:00) Hawaii$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str62$
+$Zy_Eng$(GMT-09:00) Alaska$
+$Zy_Tur$(GMT-09:00) Alaska$
+$Zy_Ger$(GMT-09:00) Alaska$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str63$
+$Zy_Eng$(GMT-08:00) Pacific Time, Tijuana$
+$Zy_Tur$(GMT-08:00) Pasifik Saati, Tijuana$
+$Zy_Ger$(GMT-08:00) Pacific Time, Tijuana$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str64$
+$Zy_Eng$(GMT-07:00) Arizona, Mazatlan$
+$Zy_Tur$(GMT-07:00) Arizona, Mazatlan$
+$Zy_Ger$(GMT-07:00) Arizona, Mazatlan$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str65$
+$Zy_Eng$(GMT-07:00) Chihuahua$
+$Zy_Tur$(GMT-07:00) Chihuahua$
+$Zy_Ger$(GMT-07:00) Chihuahua$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str66$
+$Zy_Eng$(GMT-07:00) Mountain Time$
+$Zy_Tur$(GMT-07:00) Mountain Saati$
+$Zy_Ger$(GMT-07:00) Mountain Time$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str67$
+$Zy_Eng$(GMT-06:00) Central America$
+$Zy_Tur$(GMT-06:00) Central America$
+$Zy_Ger$(GMT-06:00) Mittelamerika$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str68$
+$Zy_Eng$(GMT-06:00) Central Time$
+$Zy_Tur$(GMT-06:00) Merkezi Saat$
+$Zy_Ger$(GMT-06:00) Central Time$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str69$
+$Zy_Eng$(GMT-06:00) Guadalajara, Mexico City, Monterrey$
+$Zy_Tur$(GMT-06:00) Guadalajara, Mexico City, Monterrey$
+$Zy_Ger$(GMT-06:00) Guadalajara, Mexiko-Stadt, Monterrey$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str70$
+$Zy_Eng$(GMT-06:00) Saskatchewan$
+$Zy_Tur$(GMT-06:00) Saskatchewan$
+$Zy_Ger$(GMT-06:00) Saskatchewan$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str71$
+$Zy_Eng$(GMT-05:00) Bogota, Lima, Quito$
+$Zy_Tur$(GMT-05:00) Bogota, Lima, Quito$
+$Zy_Ger$(GMT-05:00) Bogota, Lima, Quito$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str72$
+$Zy_Eng$(GMT-05:00) Eastern Time$
+$Zy_Tur$(GMT-05:00) Do&#287;u Saati$
+$Zy_Ger$(GMT-05:00) Eastern Time$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str73$
+$Zy_Eng$(GMT-05:00) Indiana$
+$Zy_Tur$(GMT-05:00) Indiana$
+$Zy_Ger$(GMT-05:00) Indiana$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str74$
+$Zy_Eng$(GMT-04:00) Atlantic Time$
+$Zy_Tur$(GMT-04:00) Atlantik Saati$
+$Zy_Ger$(GMT-04:00) Atlantic Time$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str75$
+$Zy_Eng$(GMT-04:00) Caracas, La Paz$
+$Zy_Tur$(GMT-04:00) Caracas, La Paz$
+$Zy_Ger$(GMT-04:00) Caracas, La Paz$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str76$
+$Zy_Eng$(GMT-04:00) Santiago$
+$Zy_Tur$(GMT-04:00) Santiago$
+$Zy_Ger$(GMT-04:00) Santiago$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str77$
+$Zy_Eng$(GMT-04:00) Georgetown$
+$Zy_Tur$(GMT-04:00) Georgetown$
+$Zy_Ger$(GMT-04:00) Georgetown$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str78$
+$Zy_Eng$(GMT-03:30) Newfoundland$
+$Zy_Tur$(GMT-03:30) Newfoundland$
+$Zy_Ger$(GMT-03:30) Neufundland$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str79$
+$Zy_Eng$(GMT-03:00) Brasilia$
+$Zy_Tur$(GMT-03:00) Brezilya$
+$Zy_Ger$(GMT-03:00) Brasilia$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str80$
+$Zy_Eng$(GMT-03:00) Buenos Aires$
+$Zy_Tur$(GMT-03:00) Buenos Aires$
+$Zy_Ger$(GMT-03:00) Buenos Aires$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str81$
+$Zy_Eng$(GMT-03:00) Greenland$
+$Zy_Tur$(GMT-03:00) Gr&#246;nland$
+$Zy_Ger$(GMT-03:00) Gr&#246;nland$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str82$
+$Zy_Eng$(GMT-02:00) Mid-Atlantic$
+$Zy_Tur$(GMT-02:00) Orta Atlantik$
+$Zy_Ger$(GMT-02:00) Mid-Atlantic$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str83$
+$Zy_Eng$(GMT-01:00) Azores$
+$Zy_Tur$(GMT-01:00) Azores$
+$Zy_Ger$(GMT-01:00) Azoren$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str84$
+$Zy_Eng$(GMT-01:00) Cape Verde Is.$
+$Zy_Tur$(GMT-01:00) Cape Verde Is.$
+$Zy_Ger$(GMT-01:00) Kap Verde Inseln$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str85$
+$Zy_Eng$(GMT-00:00) Casablanca$
+$Zy_Tur$(GMT-00:00) Kazablanka$
+$Zy_Ger$(GMT-00:00) Casablanca$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str86$
+$Zy_Eng$(GMT-00:00) Monrovia$
+$Zy_Tur$(GMT-00:00) Monrovia$
+$Zy_Ger$(GMT-00:00) Monrovia$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str87$
+$Zy_Eng$(GMT-00:00) Greenwich Mean Time: Edinburgh, London$
+$Zy_Tur$(GMT-00:00) Greenwich Ana Saati: Edinburgh, Londra$
+$Zy_Ger$(GMT-00:00) Greenwich Mean Time: Edinburgh, London$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str88$
+$Zy_Eng$(GMT-00:00) Greenwich Mean Time: Dublin$
+$Zy_Tur$(GMT-00:00) Greenwich Ana Saati: Dublin$
+$Zy_Ger$(GMT-00:00) Greenwich Mean Time: Dublin$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str89$
+$Zy_Eng$(GMT-00:00) Lisbon$
+$Zy_Tur$(GMT-00:00) Lizbon$
+$Zy_Ger$(GMT-00:00) Lissabon$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str90$
+$Zy_Eng$(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna$
+$Zy_Tur$(GMT+01:00) Amsterdam, Berlin, Bern, Roma, Stockholm, Viyana$
+$Zy_Ger$(GMT+01:00) Amsterdam, Berlin, Bern, Rom, Stockholm, Wien$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str91$
+$Zy_Eng$(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague$
+$Zy_Tur$(GMT+01:00) Belgrad, Bratislava, Budape&#351;te, Ljubljana, Prag$
+$Zy_Ger$(GMT+01:00) Belgrad, Bratislava, Budapest, Ljubljana, Prag$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str92$
+$Zy_Eng$(GMT+01:00) Brussels, Copenhagen, Madrid, Paris$
+$Zy_Tur$(GMT+01:00) Br&#252;ksel, Kopenhag, Madrid, Paris$
+$Zy_Ger$(GMT+01:00) Br&#252;ssel, Kopenhagen, Madrid, Paris$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str93$
+$Zy_Eng$(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb$
+$Zy_Tur$(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb$
+$Zy_Ger$(GMT+01:00) Sarajevo, Skopje, Warschau, Zagreb$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str94$
+$Zy_Eng$(GMT+01:00) West Central Africa$
+$Zy_Tur$(GMT+01:00) Bat&#305; Merkezi Afrika$
+$Zy_Ger$(GMT+01:00) West-Zentralafrika$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str95$
+$Zy_Eng$(GMT+02:00) Athens, Istanbul, Minsk$
+$Zy_Tur$(GMT+02:00) &#304;stanbul, Atina, Minsk$
+$Zy_Ger$(GMT+02:00) Athen, Istanbul, Minsk$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str96$
+$Zy_Eng$(GMT+02:00) Bucharest$
+$Zy_Tur$(GMT+02:00) B&#252;kre&#351;$
+$Zy_Ger$(GMT+02:00) Bukarest$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str97$
+$Zy_Eng$(GMT+02:00) Cairo$
+$Zy_Tur$(GMT+02:00) Kahire$
+$Zy_Ger$(GMT+02:00) Kairo$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str98$
+$Zy_Eng$(GMT+02:00) Harare, Pretoria$
+$Zy_Tur$(GMT+02:00) Harare, Pretoria$
+$Zy_Ger$(GMT+02:00) Harare, Pretoria$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str99$
+$Zy_Eng$(GMT+02:00) Pretoria$
+$Zy_Tur$(GMT+02:00) Pretoria$
+$Zy_Ger$(GMT+02:00) Pretoria$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str100$
+$Zy_Eng$(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius$
+$Zy_Tur$(GMT+02:00) Helsinki, Kiev, Riga, Sofya, Tallinn, Vilnius$
+$Zy_Ger$(GMT+02:00) Helsinki, Kiew, Riga, Sofia, Tallinn, Vilnius$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str101$
+$Zy_Eng$(GMT+02:00) Jerusalem$
+$Zy_Tur$(GMT+02:00) Kud&#252;s$
+$Zy_Ger$(GMT+02:00) Jerusalem$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str102$
+$Zy_Eng$(GMT+03:00) Baghdad$
+$Zy_Tur$(GMT+03:00) Ba&#287;dat$
+$Zy_Ger$(GMT+03:00) Bagdad$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str103$
+$Zy_Eng$(GMT+03:00) Kuwait, Riyadh$
+$Zy_Tur$(GMT+03:00) Kuveyt, Riyad$
+$Zy_Ger$(GMT+03:00) Kuwait, Riad$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str104$
+$Zy_Eng$(GMT+03:00) Moscow, St. Petersburg, Volgograd$
+$Zy_Tur$(GMT+03:00) Moskova, St. Petersburg, Volgograd$
+$Zy_Ger$(GMT+03:00) Moskau, St. Petersburg, Wolgograd$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str105$
+$Zy_Eng$(GMT+03:00) Nairobi$
+$Zy_Tur$(GMT+03:00) Nairobi$
+$Zy_Ger$(GMT+03:00) Nairobi$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str106$
+$Zy_Eng$(GMT+03:30) Tehran$
+$Zy_Tur$(GMT+03:30) Tahran$
+$Zy_Ger$(GMT+03:30) Teheran$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str107$
+$Zy_Eng$(GMT+04:00) Abu Dhabi, Muscat$
+$Zy_Tur$(GMT+04:00) Abu Dhabi, Muscat$
+$Zy_Ger$(GMT+04:00) Abu Dhabi, Maskat$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str108$
+$Zy_Eng$(GMT+04:00) Baku$
+$Zy_Tur$(GMT+04:00) Baku$
+$Zy_Ger$(GMT+04:00) Baku$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str109$
+$Zy_Eng$(GMT+04:00) Yerevan$
+$Zy_Tur$(GMT+04:00) Yerevan$
+$Zy_Ger$(GMT+04:00) Eriwan$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str110$
+$Zy_Eng$(GMT+04:00) Tbilisi$
+$Zy_Tur$(GMT+04:00) Tiflis$
+$Zy_Ger$(GMT+04:00) Tbilisi$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str111$
+$Zy_Eng$(GMT+04:30) Kabul$
+$Zy_Tur$(GMT+04:30) Kabil$
+$Zy_Ger$(GMT+04:30) Kabul$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str112$
+$Zy_Eng$(GMT+05:00) Yekaterinburg$
+$Zy_Tur$(GMT+05:00) Yekaterinburg$
+$Zy_Ger$(GMT+05:00) Jekaterinburg$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str113$
+$Zy_Eng$(GMT+05:00) Islamabad, Karachi$
+$Zy_Tur$(GMT+05:00) Islamabad, Kara&#231;i$
+$Zy_Ger$(GMT+05:00) Islamabad, Karachi$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str114$
+$Zy_Eng$(GMT+05:00) Tashkent$
+$Zy_Tur$(GMT+05:00) Ta&#351;kent$
+$Zy_Ger$(GMT+05:00) Taschkent$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str115$
+$Zy_Eng$(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi$
+$Zy_Tur$(GMT+05:30) Chennai, Kolkata, Mumbai, Yeni Delhi$
+$Zy_Ger$(GMT+05:30) Chennai, Kolkata, Mumbai, Neu-Delhi$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str116$
+$Zy_Eng$(GMT+05:45) Kathmandu$
+$Zy_Tur$(GMT+05:45) Kathmandu$
+$Zy_Ger$(GMT+05:45) Kathmandu$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str117$
+$Zy_Eng$(GMT+06:00) Almaty, Astana$
+$Zy_Tur$(GMT+06:00) Almaata, Astana$
+$Zy_Ger$(GMT+06:00) Almaty, Astana$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str118$
+$Zy_Eng$(GMT+06:00) Novosibirsk$
+$Zy_Tur$(GMT+06:00) Novosibirsk$
+$Zy_Ger$(GMT+06:00) Nowosibirsk$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str119$
+$Zy_Eng$(GMT+06:00) Dhaka$
+$Zy_Tur$(GMT+06:00) Dhaka$
+$Zy_Ger$(GMT+06:00) Dhaka$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str120$
+$Zy_Eng$(GMT+06:00) Sri Jayawardenapura$
+$Zy_Tur$(GMT+06:00) Sri Jayawardenapura$
+$Zy_Ger$(GMT+06:00) Sri Jayawardenapura$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str121$
+$Zy_Eng$(GMT+06:30) Yangoon$
+$Zy_Tur$(GMT+06:30) Yangoon$
+$Zy_Ger$(GMT+06:30) Rangun$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str122$
+$Zy_Eng$(GMT+07:00) Bangkok, Hanoi$
+$Zy_Tur$(GMT+07:00) Bangkok, Hanoi$
+$Zy_Ger$(GMT+07:00) Bangkok, Hanoi$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str123$
+$Zy_Eng$(GMT+07:00) Jakarta$
+$Zy_Tur$(GMT+07:00) Jakarta$
+$Zy_Ger$(GMT+07:00) Jakarta$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str124$
+$Zy_Eng$(GMT+07:00) Krasnoyarsk$
+$Zy_Tur$(GMT+07:00) Krasnoyarsk$
+$Zy_Ger$(GMT+07:00) Krasnojarsk$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str125$
+$Zy_Eng$(GMT+08:00) Hong Kong$
+$Zy_Tur$(GMT+08:00) Hong Kong$
+$Zy_Ger$(GMT+08:00) Hong Kong$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str126$
+$Zy_Eng$(GMT+08:00) Beijing, Chongquing, Urumqi$
+$Zy_Tur$(GMT+08:00) Beijing, Chongquing, Urumqi$
+$Zy_Ger$(GMT+08:00) Peking, Chongqing, &#220;r&#252;mqi$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str127$
+$Zy_Eng$(GMT+08:00) Irkutsk$
+$Zy_Tur$(GMT+08:00) Irkutsk$
+$Zy_Ger$(GMT+08:00) Irkutsk$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str128$
+$Zy_Eng$(GMT+08:00) Ulaan Bataar$
+$Zy_Tur$(GMT+08:00) Ulaan Bataar$
+$Zy_Ger$(GMT+08:00) Ulaanbataar$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str129$
+$Zy_Eng$(GMT+08:00) Kuala Lumpur$
+$Zy_Tur$(GMT+08:00) Kuala Lumpur$
+$Zy_Ger$(GMT+08:00) Kuala Lumpur$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str130$
+$Zy_Eng$(GMT+08:00) Singapore$
+$Zy_Tur$(GMT+08:00) Singapur$
+$Zy_Ger$(GMT+08:00) Singapur$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str131$
+$Zy_Eng$(GMT+08:00) Perth$
+$Zy_Tur$(GMT+08:00) Perth$
+$Zy_Ger$(GMT+08:00) Perth$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str132$
+$Zy_Eng$(GMT+08:00) Taipei$
+$Zy_Tur$(GMT+08:00) Taipei$
+$Zy_Ger$(GMT+08:00) Taipeh$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str133$
+$Zy_Eng$(GMT+09:00) Osaka, Sapporo, Tokyo$
+$Zy_Tur$(GMT+09:00) Osaka, Sapporo, Tokyo$
+$Zy_Ger$(GMT+09:00) Osaka, Sapporo, Tokio$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str134$
+$Zy_Eng$(GMT+09:00) Seoul$
+$Zy_Tur$GMT+09:00) Seul$
+$Zy_Ger$(GMT+09:00) Seoul$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str135$
+$Zy_Eng$(GMT+09:00) Yakutsk$
+$Zy_Tur$(GMT+09:00) Yakutsk$
+$Zy_Ger$(GMT+09:00) Jakutsk$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str136$
+$Zy_Eng$(GMT+09:30) Adelaide$
+$Zy_Tur$(GMT+09:30) Adelaide$
+$Zy_Ger$(GMT+09:30) Adelaide$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str137$
+$Zy_Eng$(GMT+09:30) Darwin$
+$Zy_Tur$(GMT+09:30) Darwin$
+$Zy_Ger$(GMT+09:30) Darwin$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str138$
+$Zy_Eng$(GMT+10:00) Brisbane$
+$Zy_Tur$(GMT+10:00) Brisbane$
+$Zy_Ger$(GMT+10:00) Brisbane$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str139$
+$Zy_Eng$(GMT+10:00) Canberra, Melbourne, Sydney$
+$Zy_Tur$(GMT+10:00) Canberra, Melbourne, Sidney$
+$Zy_Ger$(GMT+10:00) Canberra, Melbourne, Sydney$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str140$
+$Zy_Eng$(GMT+10:00) Guam$
+$Zy_Tur$(GMT+10:00) Guam$
+$Zy_Ger$(GMT+10:00) Guam$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str141$
+$Zy_Eng$(GMT+10:00) Port Moresby$
+$Zy_Tur$(GMT+10:00) Port Moresby$
+$Zy_Ger$(GMT+10:00) Port Moresby$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str142$
+$Zy_Eng$(GMT+10:00) Hobart$
+$Zy_Tur$(GMT+10:00) Hobart$
+$Zy_Ger$(GMT+10:00) Hobart$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str143$
+$Zy_Eng$(GMT+10:00) Vladivostok$
+$Zy_Tur$(GMT+10:00) Vladivostok$
+$Zy_Ger$(GMT+10:00) Wladiwostok$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str144$
+$Zy_Eng$(GMT+11:00) Magadan$
+$Zy_Tur$(GMT+10:00) Magadan$
+$Zy_Ger$(GMT+10:00) Magadan$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str145$
+$Zy_Eng$(GMT+11:00) Solomon Is.$
+$Zy_Tur$(GMT+11:00) Solomon Is.$
+$Zy_Ger$(GMT+11:00) Salomonen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str146$
+$Zy_Eng$(GMT+11:00) New Caledonia$
+$Zy_Tur$(GMT+11:00) New Caledonia$
+$Zy_Ger$(GMT+11:00) Neukaledonien$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str147$
+$Zy_Eng$(GMT+12:00) Auckland, Wellington$
+$Zy_Tur$(GMT+12:00) Auckland, Wellington$
+$Zy_Ger$(GMT+12:00) Auckland, Wellington$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str148$
+$Zy_Eng$(GMT+12:00) Kamchatka$
+$Zy_Tur$(GMT+12:00) Kamchatka$
+$Zy_Ger$(GMT+12:00) Kamtschatka$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str149$
+$Zy_Eng$(GMT+12:00) Marshall Is.$
+$Zy_Tur$(GMT+12:00) Marshall Is.$
+$Zy_Ger$(GMT+12:00) Marshallinseln$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str150$
+$Zy_Eng$(GMT+12:00) Fiji$
+$Zy_Tur$(GMT+12:00) Fiji$
+$Zy_Ger$(GMT+12:00) Fidschi$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_AlertMsg_Str1$
+$Zy_Eng$First time server is other, but Other field is blank$
+$Zy_Tur$&#304;lk zaman sunucusu Di&#287;erleridir, fakat Di&#287;er alan&#305; bo&#351;tur.$
+$Zy_Ger$Erster Time Server ist auf Anderer festgelegt, aber Feld Anderer ist leer$
+$Zy_Fre$Le premier serveur de temps est Autre, mais le champ Autre est vide $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_AlertMsg_Str2$
+$Zy_Eng$Second time server is other, but Other field is blank$
+$Zy_Tur$&#304;kinci zaman sunucusu Di&#287;erleridir, fakat Di&#287;er alan&#305; bo&#351;tur.$
+$Zy_Ger$Zweiter Time Server ist auf Anderer festgelegt, aber Feld Anderer ist leer$
+$Zy_Fre$Le second serveur de temps est Autre, mais le champ Autre est vide $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_AlertMsg_Str3$
+$Zy_Eng$Third time server is other, but Other field is blank$
+$Zy_Tur$&#220;&#231;&#252;nc&#252; zaman sunucusu Di&#287;erleridir, fakat Di&#287;er alan&#305; bo&#351;tur.$
+$Zy_Ger$Dritter Time Server ist auf Anderer festgelegt, aber Feld Anderer ist leer$
+$Zy_Fre$Le troisi&#232;me serveur de temps est Autre, mais le champ Autre est vide. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_AlertMsg_Str4$
+$Zy_Eng$Fourth time server is other, but Other field is blank$
+$Zy_Tur$D&#246;rd&#252;nc&#252; zaman sunucusu Di&#287;erleridir, fakat Di&#287;er alan&#305; bo&#351;tur.$
+$Zy_Ger$Vierter Time Server ist auf Anderer festgelegt, aber Feld Anderer ist leer$
+$Zy_Fre$Le quatri&#232;me serveur de temps est Autre, mais le champ Autre est vide. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_AlertMsg_Str5$
+$Zy_Eng$Fifth time server is other, but Other field is blank$
+$Zy_Tur$Be&#351;inci, zaman sunucusu Di&#287;erleridir, fakat Di&#287;er alan&#305; bo&#351;tur.$
+$Zy_Ger$F&#252;nfter Time Server ist auf Anderer festgelegt, aber Feld Anderer ist leer$
+$Zy_Fre$Le cinqui&#232;me serveur de temps est Autre, mais le champ Autre est vide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_AlertMsg_Str6$
+$Zy_Eng$Daylight saving rule is not correct$
+$Zy_Tur$Yaz saati kural&#305; do&#287;ru de&#287;ildir.$
+$Zy_Ger$Regel f&#252;r Sommerzeit ist nicht korrekt$
+$Zy_Fre$La r&#232;gle de l&#39;heure d&#39;&#233;t&#233; n&#39;est pas correcte $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_AlertMsg_Str7$
+$Zy_Eng$NTP Time Server has been exist$
+$Zy_Tur$NTP Zaman Sunucusu mevcuttur.$
+$Zy_Ger$NTP Time Server {{1}} wurde bereits konfiguriert$
+$Zy_Fre$Le serveur de temps NTP existe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_AlertMsg_Str8$
+$Zy_Eng$Please enter the NTP time server without special characters$
+$Zy_Tur$&#214;zel karakterler olmaks&#305;z&#305;n NTP zaman sunucusunu giriniz.$
+$Zy_Ger$Bitte geben Sie den NTP Time Server ohne Sonderzeichen ein.$
+$Zy_Fre$Entrez le URL du serveur de temps de NTP sans les caracteres speciaux, s&#39;il vous plait$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str6$
+$Zy_Eng$Second NTP time server$
+$Zy_Tur$&#304;kinci NTP zaman sunucusu$
+$Zy_Ger$Zweiter NTP Time Server$
+$Zy_Fre$Second serveur de temps NTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str7$
+$Zy_Eng$Third NTP time server$
+$Zy_Tur$&#220;&#231;&#252;nc&#252; NTP zaman sunucusu$
+$Zy_Ger$Dritter NTP Time Server$
+$Zy_Fre$Troisi&#232;me serveur de temps NTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str8$
+$Zy_Eng$Fourth NTP time server$
+$Zy_Tur$D&#246;rd&#252;nc&#252; NTP zaman sunucusu$
+$Zy_Ger$Vierter NTP Time Server$
+$Zy_Fre$Quatri&#232;me serveur de temps NTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Explain$
+$Zy_Eng$In order to get a correct time for the device, fill in a time server address, select the time zone where this device is physically located, and complete the daylight saving settings if needed.$
+$Zy_Tur$Cihaz i&#231;in do&#287;ru zaman&#305; almak i&#231;in, bir zaman sunucusu adresi yaz&#305;n&#305;z, bu cihaz&#305;n fiziksel olarak bulundu&#287;u saat dilimini se&#231;in ve gerekirse g&#252;n &#305;&#351;&#305;&#287;&#305;ndan yararlanma ayarlar&#305;n&#305; kaydediniz.$
+$Zy_Ger$Um f&#252;r das Ger&#228;t die richtige Zeit zu erhalten, tragen Sie die Adresse eines Time Servers ein, w&#228;hlen die Zeitzone aus, in der sich das Ger&#228;t physikalisch befindet, und f&#252;llen ggf. die Einstellungen f&#252;r die Sommerzeit aus.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TimeSetting_Str9$
+$Zy_Eng$Fifth NTP time server$
+$Zy_Tur$Be&#351;inci NTP zaman sunucusu$
+$Zy_Ger$F&#252;nfter NTP Time Server$
+$Zy_Fre$Cinqui&#232;me serveur de temps NTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR064_Str1$
+$Zy_Eng$TR064 is a LAN automation control.$
+$Zy_Tur$TR064, bir Yerel A&#287; otomasyon kontrol&#252;d&#252;r.$
+$Zy_Ger$TR-064 ist ein Verfahren zur automatischen Konfiguration &#252;ber LAN.$
+$Zy_Fre$TR064 est un contr&#244;le d&#39;automatisation LAN.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_Explain$
+$Zy_Eng$TR-069 is a remote management tool on this device. The operator can upgrade firmware, modify settings, and diagnose problems remotely when TR-069 is enabled.$
+$Zy_Tur$ TR-069, bu cihazdaki bir uzaktan y&#246;netim arac&#305;d&#305;r. Operat&#246;r, ayg&#305;t yaz&#305;l&#305;m&#305;n&#305; y&#252;kseltebilir, ayarlar&#305; de&#287;i&#351;tirebilir ve TR-069 etkinle&#351;tirildi&#287;inde sorunlar&#305; uzaktan tan&#305;layabilir.$
+$Zy_Ger$TR-069 ist ein Werkzeug f&#252;r Remote Management auf diesem Ger&#228;t. Wenn TR-069 aktiviert ist, kann der Netzbetreiber Firmware Upgrades, &#196;nderungen an Einstellungen und Problemdiagnose entfernt ausf&#252;hren.$
+$Zy_Fre$ACS URL n&#233;cessaire.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_AlertMsg_Str1$
+$Zy_Eng$ACS URL is required.$
+$Zy_Tur$ACS URL gerekli.$
+$Zy_Ger$ACS URL ist erforderlich.$
+$Zy_Fre$ACS URL n&#233;cessaire.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_AlertMsg_Str2$
+$Zy_Eng$The length of ACS URL ({{1}}) is too long [1-256].$
+$Zy_Tur$ACS URL uzunlu&#287;u ({{1}}) &#231;ok uzundur, [1-256] karakter aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$ACS URL ({{1}}) zu lang [1-256].$
+$Zy_Fre$La longueur de ACS URL ({{1}}) est trop grande [1-256].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_AlertMsg_Str3$
+$Zy_Eng$The length of ACS user name {{1}} is too long [0-256].$
+$Zy_Tur$ACS kullan&#305;c&#305; ad&#305; {{1}} uzunlu&#287;u &#231;ok uzundur, [0-256] karakter aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$ACS Benutzername {{1}} zu lang [0-256].$
+$Zy_Fre$La longueur du nom d&#39;utilisateur ACS {{1}} est trop grande [0-256].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_AlertMsg_Str4$
+$Zy_Eng$The length of ACS password {{1}} is too long [0-256].$
+$Zy_Tur$SysName uzunlu&#287;u {{1}} &#231;ok uzundur, [0-256] karakter aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$ACS-Kennwort {{1}} ist zu lang [0-256].$
+$Zy_Fre$La longueur de ACS password {{1}} est trop grande [0-256].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_AlertMsg_Str5$
+$Zy_Eng$The length of connection request user name {{1}} is too long [0-256].$
+$Zy_Tur$Ba&#287;lant&#305; kullan&#305;c&#305; ad&#305; iste&#287;i {{1}}, &#231;ok uzundur, [0-256] karakter aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$Benutzername der Verbindungsanforderung {{1}} zu lang [0-256].$
+$Zy_Fre$La longueur du nom d&#39;utilisateur de demande de connexion {{1}} est trop grande [0-256].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_AlertMsg_Str6$
+$Zy_Eng$The length of connection request password {{1}} is too long [0-256].$
+$Zy_Tur$Ba&#287;lant&#305; &#351;ifre iste&#287;i{{1}}, &#231;ok uzundur, [0-256] karakter aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$Kennwort der Verbindungsanforderung {{1}} zu lang [0-256].$
+$Zy_Fre$La longueur du mot de passe de demande de connexion {{1}} est trop grande [0-256].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_AlertMsg_Str7$
+$Zy_Eng$Invalid Inform interval {{1}} is invalid.$
+$Zy_Tur$Bilgilendirme s&#305;kl&#305;&#287;&#305; {{1}}, ge&#231;ersizdir.$
+$Zy_Ger$Inform-Intervall {{1}} ist ung&#252;ltig.$
+$Zy_Fre$L&#39;intervalle d&#39;information non valide {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_AlertMsg_Str8$
+$Zy_Eng$Invalid Inform interval {{1}} is out of range [30-31536000].$
+$Zy_Tur$Bilgilendirme s&#305;kl&#305;&#287;&#305; {{1}}, [30-31.536.000] aral&#305;&#287;&#305; d&#305;&#351;&#305;ndad&#305;r.$
+$Zy_Ger$Inform-Intervall {{1}} liegt au&#223;erhalb des Bereichs [30-31536000].$
+$Zy_Fre$L&#39;intervalle d&#39;information non valide {{1}} est hors plage [30-31536000].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_AlertMsg_Str9$
+$Zy_Eng$At least one interface must be used.$
+$Zy_Tur$En az bir aray&#252;z kullan&#305;lmas&#305; gerekir.$
+$Zy_Ger$Mindestens eine Schnittstelle muss verwendet werden.$
+$Zy_Fre$Au moins une interface doit &#234;tre utilis&#233;e.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_Str1$
+$Zy_Eng$TR-069 is a remote management tool on your device. The operator can upgrade firmware, modify settings, and diagnose problems remotely when you enable TR-069. $
+$Zy_Tur$TR-069, cihaz&#305;n&#305;zdaki bir uzaktan y&#246;netim arac&#305;d&#305;r. Operat&#246;r, ayg&#305;t yaz&#305;l&#305;m&#305;n&#305; y&#252;kseltebilir, ayarlar&#305; de&#287;i&#351;tirebilir ve TR-069 etkinle&#351;tirildi&#287;inde sorunlar&#305; uzaktan tan&#305;layabilir. $
+$Zy_Ger$TR-069 ist ein Werkzeug f&#252;r Remote Management auf Ihrem Ger&#228;t. Wenn Sie TR-069 aktivieren, kann der Betreiber Firmware Upgrades, &#196;nderungen an Einstellungen und Problemdiagnose aus der Ferne ausf&#252;hren.$
+$Zy_Fre$TR-069 est un outil de gestion &#224; distance sur votre appareil. L&#39;op&#233;rateur peut mettre &#224; niveau le microprogramme, modifier les param&#232;tres, et diagnostiquer les probl&#232;mes &#224; distance lorsque vous activez TR-069. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_Str10$
+$Zy_Eng$Connection Request User Name$
+$Zy_Tur$Kullan&#305;c&#305; Ad&#305; Ba&#287;lant&#305; &#304;ste&#287;i $
+$Zy_Ger$Benutzernamen der Verbindungsanforderung$
+$Zy_Fre$Nom d&#39;utilisateur de demande de connexion$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_Str11$
+$Zy_Eng$Connection Request Password$
+$Zy_Tur$&#350;ifre Ba&#287;lant&#305; &#304;ste&#287;i $
+$Zy_Ger$Kennwort der Verbindungsanforderung$
+$Zy_Fre$Mot de passe de demande de connexion$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_Str12$
+$Zy_Eng$Connection Request URL$
+$Zy_Tur$Ba&#287;lant&#305; &#304;ste&#287;i URL&#39;i$
+$Zy_Ger$URL der Verbindungsanforderung$
+$Zy_Fre$URL de demande de connexion$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_Str13$
+$Zy_Eng$Local certificate used by TR-069 client$
+$Zy_Tur$TR-069 istemcisi taraf&#305;ndan kullan&#305;lan yerel sertifika$
+$Zy_Ger$Manuell eingetragenes, vom TR-069 Client verwendetes Zertifikat$
+$Zy_Fre$Certificat local utilis&#233; par le client TR-069$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_Str14$
+$Zy_Eng$Any_WAN$
+$Zy_Tur$Any_WAN$
+$Zy_Ger$irgendein_WAN$
+$Zy_Fre$Any_WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_Str15$
+$Zy_Eng$Multi_WAN$
+$Zy_Tur$Multi_WAN$
+$Zy_Ger$Mehrere WAN$
+$Zy_Fre$Multi_WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_Str2$
+$Zy_Eng$Inform$
+$Zy_Tur$Bilgi$
+$Zy_Ger$Inform$
+$Zy_Fre$Informer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_Str3$
+$Zy_Eng$Inform Interval$
+$Zy_Tur$Bilgilendirme Aral&#305;&#287;&#305;$
+$Zy_Ger$Inform-Intervall$
+$Zy_Fre$Intervalle d&#39;information$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_Str4$
+$Zy_Eng$ACS URL$
+$Zy_Tur$ACS URL$
+$Zy_Ger$ACS URL$
+$Zy_Fre$ACS URL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_Str5$
+$Zy_Eng$ACS User Name$
+$Zy_Tur$ACS Kullan&#305;c&#305; Ad&#305;$
+$Zy_Ger$ACS-Benutzername:$
+$Zy_Fre$Nom d&#39;utilisateur ACS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_Str6$
+$Zy_Eng$ACS Password$
+$Zy_Tur$ACS &#350;ifre$
+$Zy_Ger$ACS-Kennwort$
+$Zy_Fre$Mot de passe ACS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_Str7$
+$Zy_Eng$WAN Interface used by TR-069 client$
+$Zy_Tur$TR-069 istemcisi taraf&#305;ndan kullan&#305;lan WAN Aray&#252;z&#252;$
+$Zy_Ger$Vom TR-069 Client verwendete WAN-Schnittstelle$
+$Zy_Fre$Interface WAN utilis&#233;e par le client TR-069$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_Str8$
+$Zy_Eng$Display SOAP messages on serial console$
+$Zy_Tur$Seri konsolda SOAP mesajlar&#305;n&#305; g&#246;ster $
+$Zy_Ger$SOAP-Nachrichten auf serieller Konsole anzeigen$
+$Zy_Fre$Afficher les messages SOAP sur la console s&#233;rie$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_Str9$
+$Zy_Eng$Connection Request Authentication $
+$Zy_Tur$Ba&#287;lant&#305; &#304;ste&#287;i Do&#287;rulama $
+$Zy_Ger$Authentifizierung der Verbindungsanforderung $
+$Zy_Fre$Authentification de demande de connexion $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Str16$
+$Zy_Eng$Click Reset to clear all user-entered configuration information and return to factory defaults. After resetting, the$
+$Zy_Tur$Kullan&#305;c&#305; tan&#305;ml&#305; b&#252;t&#252;n ayarlar&#305; temizlemek ve cihaz&#305; fabrika ayarlar&#305;na geri y&#252;klemek i&#231;in Reset butonuna t&#305;klay&#305;n&#305;z. Resetten sonra,$
+$Zy_Ger$Klicken Sie auf Zur&#252;cksetzen, um alle vom Benutzer eingegebenen Konfigurationsinformationen zu l&#246;schen und auf die Werkseinstellungen zur&#252;ckzusetzen. Nach dem Zur&#252;cksetzen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Str17$
+$Zy_Eng$LAN IP address will be 192.168.1.1$
+$Zy_Tur$LAN IP adresi 192.168.1.1&#39;dir.$
+$Zy_Ger$lautet die LAN IP-Adresse: 192.168.1.1$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Configuration_Str18$
+$Zy_Eng$DHCP will be reset to server$
+$Zy_Tur$DHCP sunucusu fabrika ayarlar&#305;na geri y&#252;klenecektir.$
+$Zy_Ger$wird DHCP zur&#252;ckgesetzt auf Server$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Remove$
+$Zy_Eng$Remove$
+$Zy_Tur$Kald&#305;r$
+$Zy_Ger$Entfernen$
+$Zy_Fre$Retirer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Other$
+$Zy_Eng$Other$
+$Zy_Tur$Di&#287;er $
+$Zy_Ger$Anderer$
+$Zy_Fre$Autre$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Diagnostic_AlertMsg_Str1$
+$Zy_Eng$Unknown Host or Unreachable Network!$
+$Zy_Tur$Bilinmeyen host ve ya adrese erişim mevcut değil$
+$Zy_Ger$Unbekannter Host oder nicht erreichbares Netzwerk!$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Diagnostic_AlertMsg_Str2$
+$Zy_Eng$Unknown Host or Unreachable Network!$
+$Zy_Tur$Bilinmeyen host ve ya adrese erişim mevcut değil$
+$Zy_Ger$Unbekannter Host oder nicht erreichbares Netzwerk!$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Diagnostic_AlertMsg_Str3$
+$Zy_Eng$NsLookup end$
+$Zy_Tur$NsLookup end$
+$Zy_Ger$NsLookup end$
+$Zy_Fre$NsLookup end$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_FWUpgrade_Explain$
+$Zy_Eng$Firmware Upgrade is where you can update the device with newly released features by upgrading the latest firmware. You can download the latest firmware file from the manufacturer website of this device.$
+$Zy_Tur$Yaz&#305;l&#305;m Y&#252;kleme i&#351;lemi ile modeminize, mevcut olan en yeni &#246;zellikleri i&#231;eren en g&#252;ncel yaz&#305;l&#305;m&#305; y&#252;kleyebilirsiniz.En g&#252;ncel yaz&#305;l&#305;m&#305; ZyXEL&#39;in internet sitesinden indirebilirsiniz.$
+$Zy_Ger$Unter Firmware Upgrade k&#246;nnen Sie das Ger&#228;t mit neuen Funktionen ausstatten. Dazu aktualisieren Sie auf die neueste Firmware. Sie k&#246;nnen die neueste Firmware von der Website des Ger&#228;teherstellers herunterladen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Maintenance_3G_package_title$
+$Zy_Eng$Upgrade 3G Package$
+$Zy_Tur$3G Package Güncelleme$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Maintenance_3G_package_CurrentVer$
+$Zy_Eng$Current 3G Package Version$
+$Zy_Tur$Mevcut 3G Package Versiyonu$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_3G_package_FilePath$
+$Zy_Eng$File Path$
+$Zy_Tur$Dosya Path$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_Remote_err1$
+$Zy_Eng$At least one interface must be used$
+$Zy_Tur$En azından bir arayüz kullanılmalıdır.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Maintenance_TR069_Str16$
+$Zy_Eng$WAN manage for TR069$
+$Zy_Tur$WAN manage for TR069$
+$Zy_Ger$WAN manage for TR069$
+$Zy_Fre$WAN manage for TR069$
+$Zy_Ita$(null)$

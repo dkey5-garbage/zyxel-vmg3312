@@ -1,0 +1,51 @@
+<script language="JavaScript">
+var enblnatbl = '<%ejGet(natlbEnabl)%>'
+function frmLoad(){
+    
+    if(enblnatbl=='1')
+      $("input[name='natlbEnabl']").get(0).checked = true;
+    else 
+      $("input[name='natlbEnabl']").get(1).checked = true;
+
+}
+
+$(document).ready(function() {
+	frmLoad();
+});
+</script>
+</head>
+<body>
+<form action="/pages/tabFW/nat-loopback.cmd" method="post" onSubmit="$.openLoadingMask(1);return true;">
+<input type="hidden" name="sessionKey" id="sessionKey" value="<%ejGetOther(sessionKey)%>">
+<div class="content_frame" >
+<!--Unit Explain start-->
+<div class="explain">
+<div><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b><b class="r4"></b></div>
+<div class="explain_text"><%ejGetML(MLG_NAT_ALG_Explain)%></div>
+<div><b class="r4"></b><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></div></div>
+<!--Unit Explain End-->
+<div class="data_frame"><ul>
+<li class="set1">
+  <div class="w_text">
+  <ul>
+    <li class="left_table"><%ejGetML(MLG_Security_NATLoopback)%>   :</li>
+    <li class="right_table">
+      <input name="natlbEnabl" id="natlbEnabl" type="radio" value="1" />
+      <%ejGetML(MLG_Common_Enable)%>
+      <input name="natlbEnabl" id="natlbEnabl" type="radio" value="0" />
+      <%ejGetML(MLG_Common_Disabled)%>
+    </li>
+  </ul>
+</div>
+</li>
+
+<li class="space"> </li>
+<!--Button define start-->
+<li class="buttonframe"><div class="button_position"><input name="sysSubmit" value="<%ejGetML(MLG_Common_Apply)%>" type="submit" />&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<input name="Cancel" value='<%ejGetML(MLG_Common_Cancel)%>' type="button" onClick='frmLoad();'/></div></li>
+<!--Button define end-->
+</ul></div>
+</div>
+<br><br>
+</form>
+</body>
+</html>

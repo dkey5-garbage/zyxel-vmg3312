@@ -1,0 +1,12 @@
+######################################################## 
+# HUAWEI E352_T-MOBILE
+
+DefaultVendor= 0x12d1
+DefaultProduct= 0x14fe
+
+TargetVendor= 0x12d1
+TargetProductList= 0x1001
+
+CheckSuccess=20
+
+MessageContent="55534243123456780000000000000011063000000100010000000000000000"

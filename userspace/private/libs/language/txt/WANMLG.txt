@@ -1,0 +1,2346 @@
+﻿#include<stdio.h>	
+#include<string.h>	
+#include<stdlib.h>	
+#include<time.h>	
+#include "languages.h"	
+
+
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str1$
+$Zy_Eng$Only support {{1}} WAN connections.$
+$Zy_Tur$Sadece {{1}} WAN Ba&#287;lant&#305;lar&#305;n&#305; desteklemektedir.$
+$Zy_Ger$Es werden nur {{1}} WAN-Verbindungen unterst&#252;tzt.$
+$Zy_Fre$Prend uniquement en charge {{1}} connexions WAN.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str10$
+$Zy_Eng$VPI {{1}} is out of range [0-255].$
+$Zy_Tur$VPI {{1}} , [0-255] aral&#305;&#287;&#305; d&#305;&#351;&#305;ndad&#305;r.$
+$Zy_Ger$VPI {{1}} liegt au&#223;erhalb des Bereichs [0-255].$
+$Zy_Fre$VPI {{1}} est hors plage  [0-255].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str11$
+$Zy_Eng$VCI {{1}} is out of range [32-65535].$
+$Zy_Tur$VCI {{1}} , [32-65535] aral&#305;&#287;&#305; d&#305;&#351;&#305;ndad&#305;r .$
+$Zy_Ger$VCI {{1}} liegt au&#223;erhalb des Bereichs [32-65535].$
+$Zy_Fre$VCI {{1}} est hors plage  [32-65535].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str12$
+$Zy_Eng$Peak Cell Rate {{1}} is invalid.$
+$Zy_Tur$PCR {{1}} ge&#231;ersizdir.$
+$Zy_Ger$Peak Cell Rate {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le d&#233;bit de cellule maximum {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str13$
+$Zy_Eng$Peak Cell Rate {{1}} is out of range [1-{{2}}].$
+$Zy_Tur$PCR {{1}} , [1-{{2}} aral&#305;&#287;&#305; d&#305;&#351;&#305;ndad&#305;r [1-{{2}}].$
+$Zy_Ger$Peak Cell Rate {{1}} liegt au&#223;erhalb des Bereichs [1-{{2}}].$
+$Zy_Fre$Le d&#233;bit de cellule maximum {{1}} hors plage [1-{{2}}].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str14$
+$Zy_Eng$Sustainable Cell Rate {{1}} is invalid.$
+$Zy_Tur$S&#252;rd&#252;r&#252;lebilir H&#252;cre Oran&#305; {{1}} ge&#231;ersizdir.$
+$Zy_Ger$Sustainable Cell Rate {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le d&#233;bit de cellule soutenu {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str15$
+$Zy_Eng$Sustainable Cell Rate {{1}} is out of range [1-{{2}}].$
+$Zy_Tur$S&#252;rd&#252;r&#252;lebilir H&#252;cre Oran&#305; {{1}} aral&#305;&#287;&#305; d&#305;&#351;&#305;ndad&#305;r [1-{{2}}].$
+$Zy_Ger$Sustainable Cell Rate {{1}} liegt au&#223;erhalb des Bereichs [1-{{2}}].$
+$Zy_Fre$Le d&#233;bit de cellule soutenu {{1}} est hors plage [1-{{2}}].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str16$
+$Zy_Eng$Sustainable Cell Rate {{1}} has to be smaller than Peak Cell Rate$
+$Zy_Tur$S&#252;rd&#252;r&#252;lebilir H&#252;cre Oran&#305; {{1}} Tepe H&#252;cre H&#305;z&#305;&#8217;ndan daha k&#252;&#231;&#252;k olmal&#305;d&#305;r.$
+$Zy_Ger$Sustainable Cell Rate {{1}} muss kleiner als Peak Cell Rate sein$
+$Zy_Fre$Le d&#233;bit de cellule soutenu {{1}} doit &#234;tre plus petit que le d&#233;bit de cellule maximum$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str17$
+$Zy_Eng$Maximum Burst Size {{1}} is invalid.$
+$Zy_Tur$ATM&#39;de PCR&#39;da g&#246;nderilebilecek maksimum h&#252;cre say&#305;s&#305; i&#231;in  {{1}} ge&#231;ersizdir.$
+$Zy_Ger$Maximum Burst Size {{1}} ist ung&#252;ltig.$
+$Zy_Fre$La taille de rafale maximum {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str18$
+$Zy_Eng$Maximum Burst Size {{1}} is out of range [1-1000000].$
+$Zy_Tur$ATM&#39;de PCR&#39;da g&#246;nderilebilecek maksimum h&#252;cre say&#305;s&#305; {{1}}, [1-1000000] aral&#305;&#287;&#305; d&#305;&#351;&#305;ndad&#305;r.$
+$Zy_Ger$Maximum Burst Size {{1}} liegt au&#223;erhalb des Bereichs [1-1000000].$
+$Zy_Fre$La taille de rafale maximum {{1}} est hors plage [1-1000000].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str19$
+$Zy_Eng$VLAN ID {{1}} is invalid.$
+$Zy_Tur$VLAN ID {{1}} ge&#231;ersizdir.$
+$Zy_Ger$VLAN ID {{1}} ist ung&#252;ltig.$
+$Zy_Fre$L&#39;ID VLAN {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str2$
+$Zy_Eng$No value change.$
+$Zy_Tur$De&#287;er de&#287;i&#351;imi yoktur.$
+$Zy_Ger$Keine &#196;nderung im Wert.$
+$Zy_Fre$Pas de changement de valeur.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str20$
+$Zy_Eng$Range of VLAN ID is 1~4094$
+$Zy_Tur$VLAN ID de&#287;er aral&#305;&#287;&#305; 1 ~4094 &#39;t&#252;r.$
+$Zy_Ger$Bereich VLAN IDs: 1~4094$
+$Zy_Fre$La plage d&#39;ID VLAN est 1~4094$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str21$
+$Zy_Eng$VLAN 8021p Priority {{1}} is out of range [0-7].$
+$Zy_Tur$VLAN 8021p &#214;nceli&#287;i {{1}} , [0-7] aral&#305;&#287;&#305; d&#305;&#351;&#305;ndad&#305;r.$
+$Zy_Ger$VLAN 802.1p Priorit&#228;t {{1}} liegt au&#223;erhalb des Bereichs [0-7].$
+$Zy_Fre$La priorit&#233; 8021p VLAN {{1}} est hors plage [0-7].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str22$
+$Zy_Eng$VLAN ID {{1}} is out of range [0-4094].$
+$Zy_Tur$VLAN ID {{1}} ,  [0-4094] aral&#305;&#287;&#305;  d&#305;&#351;&#305;ndad&#305;r.$
+$Zy_Ger$VLAN ID {{1}} liegt au&#223;erhalb des Bereichs [0-4094].$
+$Zy_Fre$L&#39;ID VLAN {{1}} est hors plage [0-4094].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str23$
+$Zy_Eng$VLAN ID {{1}} is already used.$
+$Zy_Tur$VLAN ID {{1}} kullan&#305;lmaktad&#305;r.$
+$Zy_Ger$VLAN ID {{1}} wird bereits verwendet.$
+$Zy_Fre$L&#39;ID VLAN {{1}} est d&#233;j&#224; utilis&#233;e.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str24$
+$Zy_Eng$The length of user name {{1}} is too long [0-256].$
+$Zy_Tur$Kullan&#305;c&#305; ad&#305; uzunlu&#287;u {{1}} &#231;ok uzundur [0-256].$
+$Zy_Ger$Benutzername {{1}} zu lang [0-256].$
+$Zy_Fre$La longueur du nom d&#39;utilisateur {{1}} est trop grande [0-256].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str25$
+$Zy_Eng$Inactivity Timeout {{1}} is invalid.$
+$Zy_Tur$Etkisizlik Zaman A&#351;&#305;m&#305; {{1}} ge&#231;ersizdir.$
+$Zy_Ger$Inaktivit&#228;tszeit {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le d&#233;lai d&#39;inactivit&#233; {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str26$
+$Zy_Eng$Inactivity Timeout {{1}} is out of range [1-4320].$
+$Zy_Tur$Etkisizlik Zaman A&#351;&#305;m&#305; {{1}} , [1-4320] aral&#305;&#287;&#305; d&#305;&#351;&#305;ndad&#305;r.$
+$Zy_Ger$Inaktivit&#228;tszeit {{1}} liegt au&#223;erhalb des Bereichs [1-4320].$
+$Zy_Fre$Le d&#233;lai d&#39;inactivit&#233; {{1}} est hors plage [1-4320].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str27$
+$Zy_Eng$The length of PPP service {{1}} is too long [0-32].$
+$Zy_Tur$PPP hizmetinin uzunlu&#287;u  {{1}} &#231;ok uzundur [0-32].$
+$Zy_Ger$PPP-Service {{1}} zu lang [0-32].$
+$Zy_Fre$La longueur du service PPP {{1}} est trop grande [0-32].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str28$
+$Zy_Eng$The Gateway IP Address of Block of Static IP Addresses {{1}} is invalid.$
+$Zy_Tur$Statik IP Adreslerin Engellenmesi ile ilgili A&#287; Ge&#231;idi IP adresi {{1}} ge&#231;ersizdir.$
+$Zy_Ger$Gateway-IP-Adresse des Blocks statischer IP-Adressen {{1}} ist ung&#252;ltig.$
+$Zy_Fre$L&#39;adresse IP de la passerelle du bloc d&#39;adresses IP statiques {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str29$
+$Zy_Eng$The Subnet Mask of Block of Static IP Addresses {{1}} is invalid.$
+$Zy_Tur$Statik IP Adreslerin Engellenmesi ile ilgili Alt A&#287; Maskesi {{1}} ge&#231;ersizdir. $
+$Zy_Ger$Subnetzmaske des Blocks statischer IP-Adressen {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le masque de sous-r&#233;seau du bloc d&#39;adresses IP statiques {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str3$
+$Zy_Eng$Wrong WAN interface to Bridge Mode.$
+$Zy_Tur$K&#246;pr&#252; Moduna yanl&#305;&#351; WAN arabirimi$
+$Zy_Ger$Falsche WAN-Schnittstelle zum Bridge-Modus.$
+$Zy_Fre$Mauvaise interface WAN en mode Pont.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str30$
+$Zy_Eng$MTU size {{1}} should be between 68 and 1492.$
+$Zy_Tur$MTU boyutu {{1}} 68 ve 1492 aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$MTU-Gr&#246;&#223;e {{1}} sollte zwischen 68 und 1492 liegen.$
+$Zy_Fre$La taille MTU {{1}} doit &#234;tre comprise entre 68 et 1492.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str31$
+$Zy_Eng$WAN IP address {{1}} is invalid IP address.$
+$Zy_Tur$WAN IP adresi {{1}} ge&#231;ersiz bir IP adresidir.$
+$Zy_Ger$WAN-IP-Adresse {{1}} ist ung&#252;ltig.$
+$Zy_Fre$L&#39;adresse IP WAN {{1}} est une adresse IP non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str32$
+$Zy_Eng$WAN subnet mask {{1}} is invalid IP address.$
+$Zy_Tur$WAN alt a&#287; maskesi {{1}} ge&#231;ersiz bir IP adresidir.$
+$Zy_Ger$WAN-Subnetzmaske {{1}} ist ung&#252;ltige IP-Adresse.$
+$Zy_Fre$Le masque de sous-r&#233;seau WAN {{1}} est une adresse IP non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str33$
+$Zy_Eng${{1}} is invalid gateway IP address.$
+$Zy_Tur${{1}} Ge&#231;ersiz bir a&#287; ge&#231;idi IP adresidir.$
+$Zy_Ger${{1}} ist ung&#252;ltige Gateway-IP-Adresse.$
+$Zy_Fre${{1}} est une adresse IP de passerelle non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str34$
+$Zy_Eng$MTU size {{1}} should be between 68 and 1500.$
+$Zy_Tur$MTU boyutu {{1}} 68 ve 1500 aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$MTU-Gr&#246;&#223;e {{1}} sollte zwischen 68 und 1500 liegen.$
+$Zy_Fre$La taille MTU {{1}} doit &#234;tre comprise entre 68 et 1500.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str35$
+$Zy_Eng$MTU size {{1}} should be between 68 and 1492.$
+$Zy_Tur$MTU boyutu {{1}} 68 ve 1492 aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$MTU-Gr&#246;&#223;e {{1}} sollte zwischen 68 und 1492 liegen.$
+$Zy_Fre$La taille MTU {{1}} doit &#234;tre comprise entre 68 et 1492.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str35_2$
+$Zy_Eng$MRU size {{1}} should be between 68 and 1492.$
+$Zy_Tur$MRU boyutu {{1}} 68 ve 1492 aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$MRU-Gr&#246;&#223;e {{1}} sollte zwischen 68 und 1492 liegen.$
+$Zy_Fre$La taille MRU {{1}} doit &#234;tre comprise entre 68 et 1492.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str36$
+$Zy_Eng$WAN IP address {{1}} is invalid IP address.$
+$Zy_Tur$WAN IP adresi {{1}} ge&#231;ersiz bir IP adresidir.$
+$Zy_Ger$WAN-IP-Adresse {{1}} ist ung&#252;ltig.$
+$Zy_Fre$L&#39;adresse IP WAN {{1}} est une adresse IP non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str37$
+$Zy_Eng$WAN subnet mask {{1}} is invalid IP address.$
+$Zy_Tur$WAN alt a&#287; maskesi {{1}} ge&#231;ersiz bir IP adresidir.$
+$Zy_Ger$WAN-Subnetzmaske {{1}} ist ung&#252;ltige IP-Adresse.$
+$Zy_Fre$Le masque de sous-r&#233;seau WAN {{1}} est une adresse IP non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str38$
+$Zy_Eng$The Gateway IP Address of Block of Static IP addresses {{1}} is invalid.$
+$Zy_Tur$Statik IP Adreslerin Engellenmesi ile ilgili A&#287; Ge&#231;idi IP adresi {{1}} ge&#231;ersizdir.$
+$Zy_Ger$Gateway-IP-Adresse des Blocks statischer IP-Adressen {{1}} ist ung&#252;ltig.$
+$Zy_Fre$L&#39;adresse IP de la passerelle du bloc d&#39;adresses IP statiques {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str39$
+$Zy_Eng$The Subnet Mask of Block of Static IP Addresses  {{1}} is invalid.$
+$Zy_Tur$Statik IP Adreslerin Engellenmesi ile ilgili Alt A&#287; Maskesi {{1}} ge&#231;ersizdir.$
+$Zy_Ger$Subnetzmaske des Blocks statischer IP-Adressen {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le masque de sous-r&#233;seau du bloc d&#39;adresses IP statiques {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str4$
+$Zy_Eng$Entry name is necessary.$
+$Zy_Tur$Girdi ad&#305; gerekmektedir.$
+$Zy_Ger$Eingabename ist erforderlich.$
+$Zy_Fre$Le nom de l&#39;entr&#233;e est n&#233;cessaire.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str40$
+$Zy_Eng$Please enter a valid DNS address when DNS Type is Static$
+$Zy_Tur$L&#252;tfen DNS Tipi Statik oldu&#287;u zaman ge&#231;erli bir DNS adresi giriniz.$
+$Zy_Ger$Bitte geben Sie eine g&#252;ltige DNS-Adresse ein, wenn DNS-Typ statisch ist$
+$Zy_Fre$Entrez une adresse DNS valide lorsque le type de DNS est statique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str41$
+$Zy_Eng$Please enter a valid DNS address when DNS Type is Static$
+$Zy_Tur$L&#252;tfen DNS Tipi Statik oldu&#287;u zaman ge&#231;erli bir DNS adresi giriniz.$
+$Zy_Ger$Bitte geben Sie eine g&#252;ltige DNS-Adresse ein, wenn DNS-Typ statisch ist$
+$Zy_Fre$Entrez une adresse DNS valide lorsque le type de DNS est statique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str42$
+$Zy_Eng$Entry name is necessary.$
+$Zy_Tur$Girdi ad&#305; gerekmektedir.$
+$Zy_Ger$Eingabename ist erforderlich.$
+$Zy_Fre$Le nom de l&#39;entr&#233;e est n&#233;cessaire.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str43$
+$Zy_Eng$Please enter valid rule name without special characters.$
+$Zy_Tur$L&#252;tfen &#246;zel karakterler i&#231;ermeyen ge&#231;erli bir kural ad&#305; giriniz.$
+$Zy_Ger$Bitte geben Sie einen g&#252;ltigen Regelnamen ein ohne Sonderzeichen.$
+$Zy_Fre$Veuillez entrer un nom de r&#232;gle valide sans caract&#232;res sp&#233;ciaux.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str43_1$
+$Zy_Eng$When the state of DSL Bonding is changed, the CPE will require a reboot. If xDSL setting is changed, the CPE will require a retrain.$
+$Zy_Tur$DSL Ba&#287;lanman&#305;n durumu de&#287;i&#351;tirildi&#287;inde modeminiz yeniden ba&#351;lat&#305;lacakt&#305;r. xDSL ayar&#305; de&#287;i&#351;tirildi&#287;i zaman, modemin Internet ba&#287;lant&#305;s&#305; kopup, ard&#305;ndan tekrar ba&#287;lanacakt&#305;r.$
+$Zy_Ger$Wird der Zustand von DSL Bonding ge&#228;ndert, ist es erforderlich, das CPE-Ger&#228;t neu zu starten. Wird die xDSL-Einstellung ge&#228;ndert, ben&#246;tigt das CPE-Ger&#228;t ein Retrain.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str43_2$
+$Zy_Eng$If xDSL setting is changed, the CPE will require a retrain.$
+$Zy_Tur$xDSL ayar&#305; de&#287;i&#351;tirildi&#287;i zaman, modemin Internet ba&#287;lant&#305;s&#305; kopup, ard&#305;ndan tekrar ba&#287;lanacakt&#305;r.$
+$Zy_Ger$Wird die xDSL-Einstellung ge&#228;ndert, ben&#246;tigt das CPE-Ger&#228;t ein Retrain.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str44$
+$Zy_Eng$Shaping rate {{1}} should be between 0 and 1024000.$
+$Zy_Tur$&#350;ekillendirme oran&#305; {{1}} 0 ve 1024000 aras&#305;nda olmal&#305;d&#305;r$
+$Zy_Ger$Die Shaping Rate {{1}} sollte zwischen 0 und 1024000 liegen.$
+$Zy_Fre$Le d&#233;bit de mise en forme {{1}} doit &#234;tre compris entre 0 et 1024000.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str45$
+$Zy_Eng$All ATM WAN interfaces will be removed after user enables ADSL over PTM feature. Do you want to do this?$
+$Zy_Tur$B&#252;t&#252;n ATM WAN aray&#252;zleri, kullan&#305;c&#305; PTM &#246;zelli&#287;i &#252;zerinden ADSL&#8217;i etkinle&#351;tirdikten sonra kald&#305;r&#305;lacakt&#305;r. Bunu yapmak istiyor musunuz?$
+$Zy_Ger$Alle ATM WAN-Schnittstellen werden entfernt, wenn Sie die Funktion ADSL over PTM aktivieren. Wollen Sie dies wirklich erreichen?$
+$Zy_Fre$Toutes les interfaces WAN ATM seront supprim&#233;es une fois que l&#39;utilisateur aura activ&#233; la fonctionnalit&#233; ADSL via PTM. Voulez-vous continuer?$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str46$
+$Zy_Eng$configure ADSL over PTM failed$
+$Zy_Tur$PTM &#252;zerinden ADSL konfig&#252;rasyonu ba&#351;ar&#305;s&#305;z olmu&#351;tur.$
+$Zy_Ger$Fehler bei Konfiguration von ADSL over PTM$
+$Zy_Fre$la configuration ADSL sur PTM a &#233;chou&#233; $
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str47$
+$Zy_Eng${{%s}} is used for another WAN entry.$
+$Zy_Tur${{%s}} ba&#351;ka bir WAN giri&#351;i i&#231;in kullan&#305;lmaktad&#305;r.$
+$Zy_Ger${{%s}} wird f&#252;r einen anderen WAN-Eintrag verwendet.$
+$Zy_Fre${{%s}} est utilis&#233; pour une autre entr&#233;e WAN.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str48$
+$Zy_Eng$VPI/VCI is already in use.$
+$Zy_Tur$VPI/VCI daha &#246;nceden kullan&#305;lmaktad&#305;r.$
+$Zy_Ger$VPI/VCI wird bereits verwendet.$
+$Zy_Fre$VPI/VCI est d&#233;j&#224; utilis&#233;.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str49$
+$Zy_Eng$failed to edit L2 interface.$
+$Zy_Tur$L2 aray&#252;z&#252;n&#252;  d&#252;zenlemek ba&#351;ar&#305;s&#305;zl&#305;kla sonu&#231;lanm&#305;&#351;t&#305;r.$
+$Zy_Ger$Fehler bei der Bearbeitung der L2-Schnittstelle.$
+$Zy_Fre$&#233;chec de la modification de l&#39;interface L2.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str5$
+$Zy_Eng$Please enter valid rule name without special characters.$
+$Zy_Tur$&#214;zel karakterler i&#231;ermeyen ge&#231;erli bir kural ad&#305; girin.$
+$Zy_Ger$Bitte geben Sie einen g&#252;ltigen Regelnamen ein ohne Sonderzeichen.$
+$Zy_Fre$Veuillez entrer un nom de r&#232;gle valide sans caract&#232;res sp&#233;ciaux.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str50$
+$Zy_Eng$failed to add L2 interface.$
+$Zy_Tur$L2 aray&#252;z&#252;n&#252;  eklemek ba&#351;ar&#305;s&#305;zl&#305;kla sonu&#231;lanm&#305;&#351;t&#305;r.$
+$Zy_Ger$Fehler beim Hinzuf&#252;gen der L2-Schnittstelle.$
+$Zy_Fre$&#233;chec de l&#39;ajout de l&#39;interface L2.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str51$
+$Zy_Eng$Configure WAN Setting failed, please try again.$
+$Zy_Tur$WAN Ayarlar&#305; D&#252;zenlemesi ba&#351;ar&#305;s&#305;zl&#305;kla sonu&#231;lanm&#305;&#351;t&#305;r, l&#252;tfen tekrar deneyiniz.$
+$Zy_Ger$Fehler bei der Konfiguration der WAN-Einstellungen, bitte nochmals versuchen.$
+$Zy_Fre$La configuration du param&#232;tre WAN a &#233;chou&#233;, veuillez essayer &#224; nouveau.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str52$
+$Zy_Eng$failed to active/in-active WAN connection {{%s}}$
+$Zy_Tur$WAN ba&#287;lant&#305;s&#305;n&#305; etkinle&#351;tirmek/etkisiz hale getirmek ba&#351;ar&#305;s&#305;zl&#305;kla sonu&#231;lanm&#305;&#351;t&#305;r {{%s}}$
+$Zy_Ger$Fehler beim Aktivieren/Deaktivieren der WAN-Verbindung {{%s}}$
+$Zy_Fre$&#233;chec d&#39;activation/d&#233;sactivation de la connexion WAN {{%s}}$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str53$
+$Zy_Eng$Failed to get WAN info for Edit.$
+$Zy_Tur$D&#252;zenleme i&#231;in WAN bilgileri edinmek ba&#351;ar&#305;s&#305;zl&#305;kla sonu&#231;lanm&#305;&#351;t&#305;r.$
+$Zy_Ger$Fehler beim Abrufen der WAN-Daten zum Bearbeiten.$
+$Zy_Fre$Impossible d&#39;obtenir des infos WAN pour Modifier.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str54$
+$Zy_Eng$The length of user name ( {{1]} ) is too long [0-32].$
+$Zy_Tur$Kullan&#305;c&#305; ad&#305; uzunlu&#287;u {{1}} &#231;ok uzundur, [0-32].$
+$Zy_Ger$Benutzername ( {{1}} ) zu lang [0-32].$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str55$
+$Zy_Eng$6RD tunnel address {{1}} is invalid IP address.$
+$Zy_Tur$6RD t&#252;nel adresi {{1}} ge&#231;ersiz bir IP adresidir.$
+$Zy_Ger$6RD Tunnel-Adresse {{1}} ist ung&#252;ltige IP-Adresse.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str56$
+$Zy_Eng$6RD IPv6 Prefix {{1}} is invalid IPv6 address$
+$Zy_Tur$6RD IPv6 &#246;neki {{1}} ge&#231;ersiz bir IP adresidir.$
+$Zy_Ger$6RD IPv6-Pr&#228;fix {{1}} ist ung&#252;ltige IPv6-Adresse.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str57$
+$Zy_Eng$Please enter the prefix length \'/\' to 6RD IPv6 Prefix field, e.g.: xxxx:xxxx::/xx$
+$Zy_Tur$L&#252;tfen 6RD &#214;neki alan&#305;na \'/\'  &#246;nek uzunlu&#287;unu giriniz, &#246;rn: xxxx:xxxx::/xx$
+$Zy_Ger$Bitte geben Sie die Pr&#228;fixl&#228;nge \'/\' in das Feld f&#252;r das 6RD IPv6-Pr&#228;fix ein, z.B.: xxxx:xxxx::/xx$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str58$
+$Zy_Eng$PPPoE do not support DHCP 6RD option. Please use static setting.$
+$Zy_Tur$PPPOE, DHCP 6RD se&#231;ene&#287;ini desteklememektedir. L&#252;tfen statik ayarlar&#305; kullan&#305;n&#305;z.$
+$Zy_Ger$PPPoE unterst&#252;tzt die DHCP 6RD Option nicht. Bitte verwenden Sie die Einstellung Statisch.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str59$
+$Zy_Eng$WAN IPv6 address {{1}} is invalid IPv6 address.$
+$Zy_Tur$WAN IPv6 adresi {{1}} ge&#231;ersiz bir IPv6 adresidir.$
+$Zy_Ger$WAN IPv6-Adresse  {{1}} ist ung&#252;ltige IPv6-Adresse.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str60$
+$Zy_Eng$Please remove the \'/\', and key in WAN IPv6 prefix to Prefix Length field$
+$Zy_Tur$L&#252;tfen \'/\' &#39;i kald&#305;r&#305;n&#305;z ve WAN IPv6 &#246;nek &#351;ifrelemesini \'&#214;nek Uzunlu&#287;u\' alan&#305;na giriniz.$
+$Zy_Ger$Bitten entfernen Sie \'/\' und geben Sie das WAN IPv6-Pr&#228;fix in das Feld \'Pr&#228;fixl&#228;nge\' ein $
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str61$
+$Zy_Eng$Please remove the \'/\', and key in WAN IPv6 prefix to Prefix Length field$
+$Zy_Tur$L&#252;tfen \'/\' &#39;i kald&#305;r&#305;n&#305;z ve WAN IPv6 &#246;nek &#351;ifrelemesini \'&#214;nek Uzunlu&#287;u\' alan&#305;na giriniz.$
+$Zy_Ger$Bitten entfernen Sie \'/\' und geben Sie das WAN IPv6-Pr&#228;fix in das Feld \'Pr&#228;fixl&#228;nge\' ein$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str62$
+$Zy_Eng$DS-Lite tunnel IPv6 address {{1}} is invalid IPv6 address.$
+$Zy_Tur$DS-Lite t&#252;nel IPv6 adresi {{1}} ge&#231;ersiz bir IPv6 adresidir.$
+$Zy_Ger$DS-Lite Tunnel IPv6-Adresse {{1}} ist ung&#252;ltige IPv6-Adresse.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str63$
+$Zy_Eng$Please enter a valid DNSv6 address when DNSv6 Type is Static$
+$Zy_Tur$DNSv6 Tipi statik oldu&#287;u zaman, l&#252;tfen ge&#231;erli bir DNSv6 adresi giriniz.$
+$Zy_Ger$Bitte geben Sie eine g&#252;ltige DNSv6-Adresse ein, wenn DNSv6-Typ statisch ist$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str6$
+$Zy_Eng$Please enter valid rule name without special characters.$
+$Zy_Tur$&#214;zel karakterler i&#231;ermeyen ge&#231;erli bir kural ad&#305; giriniz.$
+$Zy_Ger$Bitte geben Sie einen g&#252;ltigen Regelnamen ein ohne Sonderzeichen.$
+$Zy_Fre$Veuillez entrer un nom de r&#232;gle valide sans caract&#232;res sp&#233;ciaux.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str7$
+$Zy_Eng$Shaping rate {{1}} should be between 0 and 1024000.$
+$Zy_Tur$&#350;ekillendirme oran&#305; {{1}} 0 ve 1024000 aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$Die Shaping Rate {{1}} sollte zwischen 0 und 1024000 liegen.$
+$Zy_Fre$Le d&#233;bit de mise en forme {{1}} doit &#234;tre compris entre 0 et 1024000.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str8$
+$Zy_Eng$VPI {{1}} is invalid.$
+$Zy_Tur$VPI {{1}} ge&#231;ersizdir.$
+$Zy_Ger$VPI {{1}} ist ung&#252;ltig.$
+$Zy_Fre$VPI {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str9$
+$Zy_Eng$VCI {{1}} is invalid.$
+$Zy_Tur$VCI {{1}} ge&#231;ersizdir.$
+$Zy_Ger$VCI {{1}} ist ung&#252;ltig.$
+$Zy_Fre$VCI {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str1$
+$Zy_Eng$You can configure the Internet settings of this device. Correct configurations build successful Internet connection.$
+$Zy_Tur$Bu cihaz&#305;n Internet ayarlar&#305;n&#305;z&#305; d&#252;zenleyebilirsiniz. Do&#287;ru konfig&#252;rasyonlar ba&#351;ar&#305;l&#305; bir Internet ba&#287;lant&#305;s&#305;n&#305; kurmaktad&#305;r.$
+$Zy_Ger$Sie k&#246;nnen die Internet-Einstellungen dieses Ger&#228;ts konfigurieren. Mit einer korrekten Konfiguration wird eine Internet-Verbindung erfolgreich aufgebaut.$
+$Zy_Fre$Corrigez les param&#232;tres de connexion Internet pour vous mettre en ligne. Vous pourriez avoir besoin de consulter le fournisseur de services Internet (ISP) pour les param&#232;tres suivants.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str10$
+$Zy_Eng$VLAN$
+$Zy_Tur$VLAN$
+$Zy_Ger$VLAN$
+$Zy_Fre$VLAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str11$
+$Zy_Eng$VPI/VCI$
+$Zy_Tur$VPI/VCI$
+$Zy_Ger$VPI/VCI$
+$Zy_Fre$VPI/VCI$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str12$
+$Zy_Eng$ATM QoS$
+$Zy_Tur$ATM QoS$
+$Zy_Ger$ATM QoS$
+$Zy_Fre$ATM QoS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str13$
+$Zy_Eng$NAT$
+$Zy_Tur$NAT$
+$Zy_Ger$NAT$
+$Zy_Fre$NAT$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str14$
+$Zy_Eng$Default Gateway$
+$Zy_Tur$Varsay&#305;lan A&#287; Ge&#231;idi$
+$Zy_Ger$Standard-Gateway$
+$Zy_Fre$Passerelle par d&#233;faut$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str15$
+$Zy_Eng$Modify$
+$Zy_Tur$D&#252;zeltme$
+$Zy_Ger$&#196;ndern$
+$Zy_Fre$Modifier$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str16$
+$Zy_Eng$Change to Bridge Mode$
+$Zy_Tur$K&#246;pr&#252; Moduna De&#287;i&#351;tirin.$
+$Zy_Ger$Wechseln in Bridge-Modus$
+$Zy_Fre$Passer en mode Pont$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str17$
+$Zy_Eng$WAN Interface$
+$Zy_Tur$WAN Aray&#252;z&#252;$
+$Zy_Ger$WAN-Schnittstelle$
+$Zy_Fre$Interface WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str18$
+$Zy_Eng$Note$
+$Zy_Tur$Dikkat!$
+$Zy_Ger$Hinweis$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str19$
+$Zy_Eng$If no default gateway is configured, system will select default gateway automatically.$
+$Zy_Tur$E&#287;er herhangi bir a&#287; ge&#231;idi konfig&#252;re edilmemi&#351;se, sistem otomatik olarak bir a&#287; ge&#231;idi se&#231;ecektir.$
+$Zy_Ger$Wenn kein Standard-Gateway konfiguriert ist, w&#228;hlt das System automatisch eines.$
+$Zy_Fre$Si aucune passerelle par d&#233;faut n&#39;est configur&#233;e, le syst&#232;me choisira automatiquement la passerelle par d&#233;faut.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str2$
+$Zy_Eng$ADSL over PTM$
+$Zy_Tur$ADSL &#252;zerinden PTM$
+$Zy_Ger$ADSL over PTM$
+$Zy_Fre$ADSL via PTM$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str20$
+$Zy_Eng$General$
+$Zy_Tur$Genel$
+$Zy_Ger$Allgemein$
+$Zy_Fre$G&#233;n&#233;ral$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str21$
+$Zy_Eng$Active$
+$Zy_Tur$Etkin$
+$Zy_Ger$Aktiv$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str23$
+$Zy_Eng$Mode$
+$Zy_Tur$Mod$
+$Zy_Ger$Modus$
+$Zy_Fre$Mode$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str24$
+$Zy_Eng$ADSL/VDSL over PTM$
+$Zy_Tur$PTM &#252;zerinden ADSL/VDSL$
+$Zy_Ger$ADSL/VDSL over PTM$
+$Zy_Fre$ADSL/VDSL via PTM$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str25$
+$Zy_Eng$ADSL over ATM$
+$Zy_Tur$ATM &#252;zerinden ADSL$
+$Zy_Ger$ADSL over ATM$
+$Zy_Fre$ADSL via ATM$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str26$
+$Zy_Eng$Ethernet$
+$Zy_Tur$Ethernet$
+$Zy_Ger$Ethernet$
+$Zy_Fre$Ethernet$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str27$
+$Zy_Eng$Routing$
+$Zy_Tur$Y&#246;nlendirme$
+$Zy_Ger$Routing$
+$Zy_Fre$Routage$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str28$
+$Zy_Eng$Bridge$
+$Zy_Tur$K&#246;pr&#252;$
+$Zy_Ger$Bridge$
+$Zy_Fre$Pont$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str29$
+$Zy_Eng$PPPoE$
+$Zy_Tur$PPPoE$
+$Zy_Ger$PPPoE$
+$Zy_Fre$PPPoE$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str3$
+$Zy_Eng$State$
+$Zy_Tur$Durum$
+$Zy_Ger$Status$
+$Zy_Fre$&#201;tat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str30$
+$Zy_Eng$IPoE$
+$Zy_Tur$IPoE$
+$Zy_Ger$IPoE$
+$Zy_Fre$IPoE$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str31$
+$Zy_Eng$IPoA$
+$Zy_Tur$IPoA$
+$Zy_Ger$IPoA$
+$Zy_Fre$IPoA$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str32$
+$Zy_Eng$PPPoA$
+$Zy_Tur$PPPoA$
+$Zy_Ger$PPPoA$
+$Zy_Fre$PPPoA$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str33$
+$Zy_Eng$PPP Information$
+$Zy_Tur$PPP Bilgisi$
+$Zy_Ger$PPP-Daten$
+$Zy_Fre$Informations PPP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str34$
+$Zy_Eng$PPP User Name$
+$Zy_Tur$PPP Kullan&#305;c&#305; Ad&#305;$
+$Zy_Ger$PPP-Benutzername$
+$Zy_Fre$Nom d&#39;utilisateur PPP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str35$
+$Zy_Eng$PPP Password$
+$Zy_Tur$PPP &#350;ifre$
+$Zy_Ger$PPP-Kennwort$
+$Zy_Fre$Mot de passe PPP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str36$
+$Zy_Eng$PPP Auto Connect$
+$Zy_Tur$PPP Otomatik Olarak Ba&#287;lanma$
+$Zy_Ger$PPP Auto Connect$
+$Zy_Fre$Connexion automatique PPP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AutoConnect$
+$Zy_Eng$Auto Connect$
+$Zy_Tur$Otomatik Olarak Ba&#287;lanma$
+$Zy_Ger$Auto Connect$
+$Zy_Fre$Connexion automatique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_PPPTriggerType$
+$Zy_Eng$PPP Trigger Type$
+$Zy_Tur$PPP Tetik Tipi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_PPPConnectOnDemand$
+$Zy_Eng$Connect on Demand$
+$Zy_Tur$Talep &#252;zerine ba&#287;lanma$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str37$
+$Zy_Eng$Idle Timeout [minutes]:$
+$Zy_Tur$Eylemsizlik Zaman A&#351;&#305;m&#305; [dakikalar]:$
+$Zy_Ger$Inaktivit&#228;tszeit [Minuten]:$
+$Zy_Fre$D&#233;lai d&#39;inactivit&#233; [minutes]:$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str38$
+$Zy_Eng$PPPoE Service Name$
+$Zy_Tur$PPPoE Hizmet Ad&#305;$
+$Zy_Ger$PPPoE-Service-Name$
+$Zy_Fre$Nom du service PPPoE$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str39$
+$Zy_Eng$PPPoE Passthrough$
+$Zy_Tur$PPPoE Do&#287;rudan ge&#231;i&#351;$
+$Zy_Ger$PPPoE Passthrough$
+$Zy_Fre$PPPoE Passthrough$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str40$
+$Zy_Eng$password unmask$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_IDLETimeout$
+$Zy_Eng$IDLE Timeout [minutes]$
+$Zy_Tur$Eylemsizlik Zaman A&#351;&#305;m&#305; [dakikalar]:$
+$Zy_Ger$Inaktivit&#228;tszeit [Minuten]$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str4$
+$Zy_Eng$Enable$
+$Zy_Tur$Aktif$
+$Zy_Ger$Aktivieren$
+$Zy_Fre$Activer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str41$
+$Zy_Eng$Obtain an IP Address Automatically$
+$Zy_Tur$Otomatik olarak bir IP Adresi Al$
+$Zy_Ger$IP-Adresse automatisch beziehen$
+$Zy_Fre$Obtenir une adresse IP automatiquement$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str42$
+$Zy_Eng$Static IP Address$
+$Zy_Tur$Statik IP Adresi$
+$Zy_Ger$Statische IP-Adresse$
+$Zy_Fre$Adresse IP statique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str43$
+$Zy_Eng$IP Address$
+$Zy_Tur$IP Adresi$
+$Zy_Ger$IP-Adresse$
+$Zy_Fre$Adresse IP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str44$
+$Zy_Eng$Subnet Mask$
+$Zy_Tur$Alt A&#287; Maskesi$
+$Zy_Ger$Subnetzmaske$
+$Zy_Fre$Masque de sous-r&#233;seau$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str45$
+$Zy_Eng$Gateway IP Address$
+$Zy_Tur$A&#287; Ge&#231;idi IP Adresi$
+$Zy_Ger$Gateway-IP-Adresse$
+$Zy_Fre$Adresse IP de la passerelle$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str46$
+$Zy_Eng$Block of Static IP Addresses$
+$Zy_Tur$Statik IP Adreslerin blo&#287;u$
+$Zy_Ger$Block statischer IP-Adressen$
+$Zy_Fre$Bloc d&#39;adresses IP statiques$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str47$
+$Zy_Eng$Use public IP Addresses$
+$Zy_Tur$Halka a&#231;&#305;k IP Adreslerini kullan&#305;n.$
+$Zy_Ger$&#214;ffentliche IP-Adressen verwenden$
+$Zy_Fre$Utilisez des adresses IP publiques$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str48$
+$Zy_Eng$Routing Feature$
+$Zy_Tur$Y&#246;nlendirme &#214;zelli&#287;i$
+$Zy_Ger$Routing-Funktion$
+$Zy_Fre$Fonctionnalit&#233; de routage$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str49$
+$Zy_Eng$NAT Enable$
+$Zy_Tur$NAT Etkinle&#351;tir$
+$Zy_Ger$NAT-Aktivierung$
+$Zy_Fre$Activer NAT$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Fullcone_NATEnable$
+$Zy_Eng$Fullcone NAT Enable$
+$Zy_Tur$Tam Koni NAT Etkinle&#351;tirme$
+$Zy_Ger$Fullcone NAT-Aktivierung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_FullFeature_NATEnable$
+$Zy_Eng$FullFeature NAT Enable$
+$Zy_Tur$Tam &#214;zellikli NAT Etkinle&#351;tirme$
+$Zy_Ger$FullFeature NAT-Aktivierung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str5$
+$Zy_Eng$Disable$
+$Zy_Tur$Devre d&#305;&#351;&#305;$
+$Zy_Ger$Deaktivieren$
+$Zy_Fre$D&#233;sactiver$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str50$
+$Zy_Eng$Apply as Default Gateway$
+$Zy_Tur$Varsay&#305;lan A&#287; Ge&#231;idi olarak uygula$
+$Zy_Ger$Als Standard-Gateway verwenden$
+$Zy_Fre$Appliquer comme passerelle par d&#233;faut$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str51$
+$Zy_Eng$DNS Server$
+$Zy_Tur$DNS Sunucusu$
+$Zy_Ger$DNS Server$
+$Zy_Fre$Serveur DNS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str52$
+$Zy_Eng$Dynamic$
+$Zy_Tur$Dinamik$
+$Zy_Ger$Dynamisch$
+$Zy_Fre$Dynamique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str53$
+$Zy_Eng$Static$
+$Zy_Tur$Statik$
+$Zy_Ger$Statisch$
+$Zy_Fre$Statique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str54$
+$Zy_Eng$DNS Server 1$
+$Zy_Tur$DNS Sunucusu 1$
+$Zy_Ger$DNS Server 1$
+$Zy_Fre$Serveur DNS 1$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str55$
+$Zy_Eng$DNS Server 2$
+$Zy_Tur$DNS Sunucusu 2$
+$Zy_Ger$DNS Server 2$
+$Zy_Fre$Serveur DNS 2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str56$
+$Zy_Eng$VLAN$
+$Zy_Tur$VLAN$
+$Zy_Ger$VLAN$
+$Zy_Fre$VLAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str57$
+$Zy_Eng$802.1p / VPI$
+$Zy_Tur$802.1p / VPI$
+$Zy_Ger$802.1p / VPI$
+$Zy_Fre$802.1p / VPI$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str58$
+$Zy_Eng$802.1q / VCI$
+$Zy_Tur$802.1q / VCI$
+$Zy_Ger$802.1q / VCI$
+$Zy_Fre$802.1q / VCI$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_8021x$
+$Zy_Eng$802.1x$
+$Zy_Tur$802.1x$
+$Zy_Ger$802.1x$
+$Zy_Fre$802.1x$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_8021_Authentication$
+$Zy_Eng$802.1x Authentication List.$
+$Zy_Tur$802.1x Kimlik Do&#287;rulama Listesi.$
+$Zy_Ger$802.1x Authentifizierungsliste$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_8021_AuthenticationEdit$
+$Zy_Eng$802.1x Authentication Edit.$
+$Zy_Tur$802.1x Kimlik Do&#287;rulama D&#252;zenlemesi.$
+$Zy_Ger$802.1x Authentifizierung bearbeiten$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str59$
+$Zy_Eng$QoS$
+$Zy_Tur$QoS$
+$Zy_Ger$QoS$
+$Zy_Fre$Qos$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_WAN_Broadband_Str6$
+$Zy_Eng$Status$
+$Zy_Tur$Durum$
+$Zy_Ger$Status$
+$Zy_Fre$&#201;tat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str60$
+$Zy_Eng$Rate Limit$
+$Zy_Tur$H&#305;z Limiti$
+$Zy_Ger$&#220;bertragungsratengrenze$
+$Zy_Fre$Limite de d&#233;bit$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_WANOutgoingDefTag$
+$Zy_Eng$WAN Outgoing Default Tag$
+$Zy_Tur$WAN Giden Default Tag$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str61$
+$Zy_Eng$MTU$
+$Zy_Tur$MTU$
+$Zy_Ger$MTU$
+$Zy_Fre$MTU$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str61_2$
+$Zy_Eng$MRU$
+$Zy_Tur$MRU$
+$Zy_Ger$MRU$
+$Zy_Fre$MRU$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str62$
+$Zy_Eng$MTU Size$
+$Zy_Tur$MTU Boyutu$
+$Zy_Ger$MTU-Gr&#246;&#223;e$
+$Zy_Fre$Taille de MTU$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str62_2$
+$Zy_Eng$MRU Size$
+$Zy_Tur$MRU Boyutu$
+$Zy_Ger$MRU-Gr&#246;&#223;e$
+$Zy_Fre$Taille de MRU$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str63$
+$Zy_Eng$ATM PVC Configuration$
+$Zy_Tur$ATM PVC Konfig&#252;rasyonu$
+$Zy_Ger$ATM PVC konfigurieren$
+$Zy_Fre$Configuration du code PVC ATM$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str64$
+$Zy_Eng$VPI [0-255]$
+$Zy_Tur$VPI [0-255]$
+$Zy_Ger$VPI [0-255]$
+$Zy_Fre$VPI [0-255]$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str65$
+$Zy_Eng$VCI[32-65535]$
+$Zy_Tur$VCI[32-65535]$
+$Zy_Ger$VCI[32-65535]$
+$Zy_Fre$VCI[32-65535]$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str66$
+$Zy_Eng$DSL Link Type$
+$Zy_Tur$DSL Ba&#287;lant&#305; T&#252;r&#252;$
+$Zy_Ger$DSL-Verbindungstyp$
+$Zy_Fre$Type de liaison DSL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str67$
+$Zy_Eng$Encapsulation Mode$
+$Zy_Tur$Kaps&#252;lleme Durumu$
+$Zy_Ger$Encapsulation-Modus$
+$Zy_Fre$Mode d&#39;encapsulation$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str68$
+$Zy_Eng$EoA$
+$Zy_Tur$EoA$
+$Zy_Ger$EoA$
+$Zy_Fre$EoA$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str69$
+$Zy_Eng$PPPoA$
+$Zy_Tur$PPPoA$
+$Zy_Ger$PPPoA$
+$Zy_Fre$PPPoA$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str7$
+$Zy_Eng$Name$
+$Zy_Tur$Ad$
+$Zy_Ger$Name$
+$Zy_Fre$Nom$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str70$
+$Zy_Eng$IPoA$
+$Zy_Tur$IPoA$
+$Zy_Ger$IPoA$
+$Zy_Fre$IPoA$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str71$
+$Zy_Eng$VC/MUX$
+$Zy_Tur$VC/MUX$
+$Zy_Ger$VC/MUX$
+$Zy_Fre$VC/MUX$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str72$
+$Zy_Eng$LLC/ENCAPSULATION$
+$Zy_Tur$LLC/KAPS&#220;LLEME$
+$Zy_Ger$LLC/ENCAPSULATION$
+$Zy_Fre$LLC/ENCAPSULATION$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str73$
+$Zy_Eng$LLC/SNAP-BRIDGING$
+$Zy_Tur$LLC/SNAP-KÖPRÜ OLUŞTURMA$
+$Zy_Ger$LLC/SNAP-BRIDGING$
+$Zy_Fre$LLC/SNAP-PONTAGE$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str74$
+$Zy_Eng$LLC/SNAP-ROUTING$
+$Zy_Tur$LLC/SNAP-Y&#214;NLEND&#304;RME$
+$Zy_Ger$LLC/SNAP-ROUTING$
+$Zy_Fre$LLC/SNAP-ROUTAGE$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str75$
+$Zy_Eng$UBR Without PCR$
+$Zy_Tur$PCR olmaks&#305;z&#305;n UBR$
+$Zy_Ger$UBR ohne PCR$
+$Zy_Fre$UBR sans PCR$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str76$
+$Zy_Eng$UBR With PCR$
+$Zy_Tur$PCR &#39;li UBR$
+$Zy_Ger$UBR mit PCR$
+$Zy_Fre$UBR avec PCR$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str77$
+$Zy_Eng$CBR$
+$Zy_Tur$CBR$
+$Zy_Ger$CBR$
+$Zy_Fre$CBR$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str78$
+$Zy_Eng$Non Realtime VBR$
+$Zy_Tur$Ger&#231;ek Zamanl&#305; Olmayan VBR$
+$Zy_Ger$VBR ohne Echtzeit$
+$Zy_Fre$VBR non temps r&#233;el$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str79$
+$Zy_Eng$Realtime VBR$
+$Zy_Tur$Ger&#231;ek Zamanl&#305; VBR$
+$Zy_Ger$VBR mit Echtzeit$
+$Zy_Fre$VBR temps r&#233;el$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str8$
+$Zy_Eng$Type$
+$Zy_Tur$Tipi$
+$Zy_Ger$Typ$
+$Zy_Fre$Type$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str80$
+$Zy_Eng$Broadband$
+$Zy_Tur$Geni&#351;bant$
+$Zy_Ger$Breitband$
+$Zy_Fre$Large bande$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str81$
+$Zy_Eng$Add New WAN Interface$
+$Zy_Tur$Yeni bir WAN Aray&#252;z&#252;  Ekle$
+$Zy_Ger$Neue WAN-Schnittstelle hinzuf&#252;gen$
+$Zy_Fre$Ajouter une nouvelle interface WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str82$
+$Zy_Eng$ATM$
+$Zy_Tur$ATM$
+$Zy_Ger$ATM$
+$Zy_Fre$ATM$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str83$
+$Zy_Eng$Default$
+$Zy_Tur$Varsay&#305;lan$
+$Zy_Ger$Standard$
+$Zy_Fre$Par d&#233;faut$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str84$
+$Zy_Eng$Gateway$
+$Zy_Tur$A&#287; Ge&#231;idi$
+$Zy_Ger$Gateway$
+$Zy_Fre$Passerelle$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str85$
+$Zy_Eng$If DSL capabilities is changed, the CPE will require a retrain.$
+$Zy_Tur$DSL olanaklar&#305; de&#287;i&#351;tirildi&#287;inde, modeminizin Internet ba&#287;lant&#305;s&#305; kopup, yeniden ba&#351;layacakt&#305;r.$
+$Zy_Ger$Werden die DSL-F&#228;higkeiten ge&#228;ndert, ben&#246;tigt das CPE-Ger&#228;t ein Retrain.$
+$Zy_Fre$Si les capacit&#233;s DSL ont chang&#233;, le CPE n&#233;cessitera un recyclage.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str86$
+$Zy_Eng$DSL Capabilities$
+$Zy_Tur$DSL Olanaklar&#305; $
+$Zy_Ger$DSL-F&#228;higkeiten$
+$Zy_Fre$Capacit&#233;s DSL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str87$
+$Zy_Eng$PhyR US$
+$Zy_Tur$PhyR US$
+$Zy_Ger$PhyR US$
+$Zy_Fre$PhyR US$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str88$
+$Zy_Eng$PhyR DS$
+$Zy_Tur$PhyR DS$
+$Zy_Ger$PhyR DS$
+$Zy_Fre$PhyR DS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_SRA$
+$Zy_Eng$SRA$
+$Zy_Tur$SRA$
+$Zy_Ger$SRA$
+$Zy_Fre$SRA$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str89$
+$Zy_Eng$DSL Bonding$
+$Zy_Tur$DSL Birle&#351;tirme$
+$Zy_Ger$DSL Bonding$
+$Zy_Fre$Liaison DSL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str9$
+$Zy_Eng$Encapsulation$
+$Zy_Tur$Kaps&#252;lleme$
+$Zy_Ger$Encapsulation$
+$Zy_Fre$Encapsulation$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str90$
+$Zy_Eng$WAN Configuration Edit$
+$Zy_Tur$WAN Konfig&#252;rasyonu D&#252;zenle$
+$Zy_Ger$WAN-Konfiguration bearbeiten$
+$Zy_Fre$Modification de la configuration WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str91$
+$Zy_Eng$Service Category$
+$Zy_Tur$Hizmet Kategorisi$
+$Zy_Ger$Service-Kategorie$
+$Zy_Fre$Cat&#233;gorie de service$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str92$
+$Zy_Eng$WAN Configuration$
+$Zy_Tur$WAN Konfig&#252;rasyonu$
+$Zy_Ger$WAN-Konfiguration$
+$Zy_Fre$Configuration WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str93$
+$Zy_Eng$Remove WAN Entry$
+$Zy_Tur$WAN Girdisini Kald&#305;r$
+$Zy_Ger$WAN-Eintrag entfernen$
+$Zy_Fre$Supprimer l&#39;entr&#233;e WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str94$
+$Zy_Eng$IGMP Proxy$
+$Zy_Tur$IGMP Proxy$
+$Zy_Ger$IGMP Proxy$
+$Zy_Fre$IGMP Proxy$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str95_1$
+$Zy_Eng$Please click $
+$Zy_Tur$TTNET d&#305;&#351;&#305;nda bir &#304;nternet Servis Sa&#287;lay&#305;c&#305; ile kullanmak i&#231;in$
+$Zy_Ger$Bitte klicken Sie $
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str95_2$
+$Zy_Eng$here$
+$Zy_Tur$ t&#305;klay&#305;n&#305;z$
+$Zy_Ger$hier$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str95_3$
+$Zy_Eng$ to use other ISPs.$
+$Zy_Tur$ Diğer Servis Sağlayıcılarını (ISP) kullanmak için.$
+$Zy_Ger$ wenn Sie andere ISPs verwenden wollen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str96_1$
+$Zy_Eng$You need to write your username as stated in your contract $
+$Zy_Tur$S&#246;zle&#351;menizde yer alan &#351;ekliyle kullan&#305;c&#305; ad&#305;n&#305;z&#305; girmeniz gerekmektedir.$
+$Zy_Ger$Sie m&#252;ssen genau den Benutzernamen aus Ihrem Vertrag verwenden $
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str96_2$
+$Zy_Eng$e.g.$
+$Zy_Tur$&#246;rn:$
+$Zy_Ger$z.B.$
+$Zy_Fre$e.g.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str96_3$
+$Zy_Eng$ahmetdemir123$
+$Zy_Tur$ahmetdemir123$
+$Zy_Ger$ahmetdemir123$
+$Zy_Fre$ahmetdemir123$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str96_4$
+$Zy_Eng$ISP_name$
+$Zy_Tur$ISS_ad&#305;$
+$Zy_Ger$ISP_name$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str96_5$
+$Zy_Eng$If you do not know your username, you can learn it by calling your ISP&#39; customer support.$
+$Zy_Tur$Kullan&#305;c&#305; ad&#305;n&#305;z&#305; bilmiyorsan&#305;z, ISS&#39;nizin m&#252;&#351;teri hizmetlerini arayarak &#246;&#287;renebilirsiniz.$
+$Zy_Ger$Wenn Sie Ihren Benutzernamen nicht kennen, fragen Sie beim Kundenservice Ihres ISP nach.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str97$
+$Zy_Eng$Enable DS-Lite$
+$Zy_Tur$ DS-Lite&#39;&#305; Etkinle&#351;tir$
+$Zy_Ger$DS-Lite aktivieren$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str98$
+$Zy_Eng$Get IPv6 Address From DHCPv6 Server$
+$Zy_Tur$DHCPv6 Sunucusundan IPv6 adresi al&#305;n$
+$Zy_Ger$IPv6-Adresse vom DHCPv6-Server beziehen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str99$
+$Zy_Eng$WAN IPv6 Address$
+$Zy_Tur$WAN IPv6 Adresi$
+$Zy_Ger$WAN IPv6-Adresse$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str100$
+$Zy_Eng$Prefix Length$
+$Zy_Tur$&#214;nek Uzunlu&#287;u$
+$Zy_Ger$Pr&#228;fixl&#228;nge$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str101$
+$Zy_Eng$MLD Proxy Enable$
+$Zy_Tur$MLD Proxy Etkinle&#351;tir$
+$Zy_Ger$MLD Proxy Enable$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str102$
+$Zy_Eng$IPv6 DNS Server$
+$Zy_Tur$IPv6 DNS Sunucu$
+$Zy_Ger$IPv6 DNS Server$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str103$
+$Zy_Eng$IPv6 DNS Server$
+$Zy_Tur$IPv6 DNS Sunucu$
+$Zy_Ger$IPv6 DNS Server$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str104$
+$Zy_Eng$PPP$
+$Zy_Tur$PPP$
+$Zy_Ger$PPP$
+$Zy_Fre$PPP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str105_1$
+$Zy_Eng$You should write your username $
+$Zy_Tur$Kullan&#305;c&#305; ad&#305;n&#305;z&#305; s&#246;zle&#351;menizde verildi&#287;i &#351;ekilde$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str105_2$
+$Zy_Eng$e.g.$
+$Zy_Tur$&#246;rnek$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str105_3$
+$Zy_Eng$ mehmetplatin$
+$Zy_Tur$ mehmetplatin$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str105_4$
+$Zy_Eng$ISP name \(Internet Service Provider\)$
+$Zy_Tur$ISP ad&#305; \(internet sa&#287;lay&#305;c&#305; ad&#305;\)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str105_5$
+$Zy_Eng$ as it is stated in your contract. If you do not know your username, you can learn it  by calling the customer support of your Internet Service Provider.$
+$Zy_Tur$ yazman&#305;z gerekmektedir. Kullan&#305;c&#305; ad&#305;n&#305;z&#305; bilmiyorsan&#305;z, internet hizmetini ald&#305;&#287;&#305;n&#305;z servis sa&#287;lay&#305;c&#305;n&#305;n m&#252;&#351;teri hizmetlerini arayarak &#246;&#287;renmeniz gerekmektedir.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Tunnel$
+$Zy_Eng$Tunnel$
+$Zy_Tur$T&#252;nel$
+$Zy_Ger$Tunnel$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_IPv6_IPv4Mode$
+$Zy_Eng$IPv6/IPv4 Mode$
+$Zy_Tur$IPv6/IPv4 Durumu$
+$Zy_Ger$IPv6/IPv4 Modus$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Enable6RD$
+$Zy_Eng$Enable 6RD$
+$Zy_Tur$6RD Etkinle&#351;tir$
+$Zy_Ger$6RD aktivieren$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_6RDType$
+$Zy_Eng$6RD Type$
+$Zy_Tur$6RD Tipi$
+$Zy_Ger$6RD Typ$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_6RD_IPv6Prefix$
+$Zy_Eng$6RD IPv6 Prefix$
+$Zy_Tur$6RD IPv6 &#214;n eki$
+$Zy_Ger$6RD IPv6-Pr&#228;fix$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_6RD_Border_Relay_ServerIP$
+$Zy_Eng$6RD Border Relay Server IP$
+$Zy_Tur$6RD S&#305;n&#305;r Aktarma Sunucusu IP$
+$Zy_Ger$6RD Border Relay Server IP$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_xDSL_setup$
+$Zy_Eng$xDSL setup$
+$Zy_Tur$xDSL kurulumu$
+$Zy_Ger$xDSL-Einrichtung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_AnnexM$
+$Zy_Eng$Annex M $
+$Zy_Tur$Annex M $
+$Zy_Ger$Annex M $
+$Zy_Fre$Annex M $
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_AnnexJ$
+$Zy_Eng$Annex J $
+$Zy_Tur$Annex J $
+$Zy_Ger$Annex J $
+$Zy_Fre$Annex J $
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3Gbackup_explain_text$
+$Zy_Eng$Whenever the WAN connection is down, 3G Backup takes over the job and keeps you online. It is valid when a 3G USB dongle is attached to the device and proper settings are configured. You may consult your 3G service provider for the following settings.$ 
+$Zy_Tur$WAN ba&#287;lant&#305;s&#305; kesildi&#287;i zaman, 3G yedekleme &#246;zelli&#287;i devreye girip, &#231;evrimi&#231;i kalman&#305;z&#305; sa&#287;lamaktad&#305;r. Bunun i&#231;in 3G USB adapt&#246;r&#252;n cihaza eklenmesi ve uygun ayarlar&#305;n yap&#305;lmas&#305; gerekmektedir. A&#351;a&#287;&#305;da belirtilmi&#351; olan ayarlar hakk&#305;nda 3G hizmet sa&#287;lay&#305;c&#305;n&#305;za dan&#305;&#351;abilirsiniz.$
+$Zy_Ger$Immer wenn die WAN-Verbindung ausf&#228;llt, &#252;bernimmt 3G-Backup, und Sie bleiben somit online. Das funktioniert, wenn ein 3G USB-Dongle am Ger&#228;t angeschlossen ist und entsprechende Einstellungen konfiguriert wurden. Fragen Sie bei Ihrem 3G Service Provider nach den folgenden Einstellungen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3Gbackup_Telenor_explain_text1$
+$Zy_Eng$Aktivering og bruk av 3G backup vil medf&#248;re datakostnader p&#229; ditt SIM kort.$
+$Zy_Tur$WAN ba&#287;lant&#305;s&#305; kesildi&#287;i zaman, 3G yedekleme &#246;zelli&#287;i devreye girip, &#231;evrimi&#231;i kalman&#305;z&#305; sa&#287;lamaktad&#305;r. Bunun i&#231;in 3G USB adapt&#246;r&#252;n cihaza eklenmesi ve uygun ayarlar&#305;n yap&#305;lmas&#305; gerekmektedir. A&#351;a&#287;&#305;da belirtilmi&#351; olan ayarlar hakk&#305;nda 3G hizmet sa&#287;lay&#305;c&#305;n&#305;za dan&#305;&#351;abilirsiniz.$
+$Zy_Ger$Immer wenn die WAN-Verbindung ausf&#228;llt, &#252;bernimmt 3G-Backup, und Sie bleiben somit online. Das funktioniert, wenn ein 3G USB-Dongle am Ger&#228;t angeschlossen ist und entsprechende Einstellungen konfiguriert wurden. Fragen Sie bei Ihrem 3G Service Provider nach den folgenden Einstellungen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3Gbackup_Telenor_explain_text2$
+$Zy_Eng$&#216;nsker du varsling om dataforbruk til din mobiltelefon, kan dette settes opp p&#229; &#171;Mine Sider&#187; under SMS-varslinger.$ 
+$Zy_Tur$WAN ba&#287;lant&#305;s&#305; kesildi&#287;i zaman, 3G yedekleme &#246;zelli&#287;i devreye girip, &#231;evrimi&#231;i kalman&#305;z&#305; sa&#287;lamaktad&#305;r. Bunun i&#231;in 3G USB adapt&#246;r&#252;n cihaza eklenmesi ve uygun ayarlar&#305;n yap&#305;lmas&#305; gerekmektedir. A&#351;a&#287;&#305;da belirtilmi&#351; olan ayarlar hakk&#305;nda 3G hizmet sa&#287;lay&#305;c&#305;n&#305;za dan&#305;&#351;abilirsiniz.$
+$Zy_Ger$Immer wenn die WAN-Verbindung ausf&#228;llt, &#252;bernimmt 3G-Backup, und Sie bleiben somit online. Das funktioniert, wenn ein 3G USB-Dongle am Ger&#228;t angeschlossen ist und entsprechende Einstellungen konfiguriert wurden. Fragen Sie bei Ihrem 3G Service Provider nach den folgenden Einstellungen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_ATM_Interface$
+$Zy_Eng$Please add ATM interface.$
+$Zy_Tur$L&#252;tfen ATM ara birimini ekleyiniz.$
+$Zy_Ger$Bitte ATM-Schnittstelle hinzuf&#252;gen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_PTM_Interface$
+$Zy_Eng$Please add PTM interface.$
+$Zy_Tur$L&#252;tfen PTM ara birimini ekleyiniz.$
+$Zy_Ger$Bitte PTM-Schnittstelle hinzuf&#252;gen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_ETH_Interface$
+$Zy_Eng$Please add Ether interface.$
+$Zy_Tur$L&#252;tfen Ether ara birimini ekleyiniz.$
+$Zy_Ger$Bitte Ethernet-Schnittstelle hinzuf&#252;gen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_ADD_WanIntf$
+$Zy_Eng$You need to add WAN interface first, and you can modify authentication rules.$
+$Zy_Tur$&#304;lk &#246;nce WAN ara birimini eklemeniz gerekmektedir, ard&#305;ndan kimlik do&#287;rulama kurallar&#305;n&#305; d&#252;zenleyebilirsiniz.$
+$Zy_Ger$Sie m&#252;ssen zuerst eine WAN-Schnittstelle hinzuf&#252;gen. Dann k&#246;nnen Sie die Authentifizierungsregeln &#228;ndern.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_ADD_EAP_Identity$
+$Zy_Eng$EAP Identity must have a value.$
+$Zy_Tur$EAP Kimli&#287;i mutlaka bir de&#287;ere sahip olmal&#305;d&#305;r.$
+$Zy_Ger$EAP Identity muss einen Wert haben.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Bidirectional_Authentication$
+$Zy_Eng$Enable Bidirectional Authentication$
+$Zy_Tur$&#199;ift Y&#246;nl&#252; Kimlik Do&#287;rulamay&#305; Etkinle&#351;tir$
+$Zy_Ger$Bidirektionale Authentifizierung aktivieren$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_ATM0$
+$Zy_Eng$atm0$
+$Zy_Tur$atm0$
+$Zy_Ger$atm0$
+$Zy_Fre$atm0$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Peak_CellRate$
+$Zy_Eng$Peak Cell Rate [cells/s]$
+$Zy_Tur$Peak Cell Rate [cells/s]$
+$Zy_Ger$Peak Cell Rate [Zellen/s]$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Sustainable_CellRate$
+$Zy_Eng$Sustainable Cell Rate [cells/s]$
+$Zy_Tur$Sustainable Cell Rate [cells/s]$
+$Zy_Ger$Sustainable Cell Rate [Zellen/s]$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_NextHop$
+$Zy_Eng$Next Hop$
+$Zy_Tur$Bir sonraki A&#287; Ge&#231;idi$
+$Zy_Ger$Next Hop$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_DSLite$
+$Zy_Eng$DS-Lite$
+$Zy_Tur$DS-Lite$
+$Zy_Ger$DS-Lite$
+$Zy_Fre$DS-Lite$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_DSLite_serverIP$
+$Zy_Eng$DS-Lite Relay Server IP$
+$Zy_Tur$DS-Lite Aktarma Sunucusu IP&#39;si$
+$Zy_Ger$DS-Lite Relay Server IP$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_NatSet$
+$Zy_Eng$NatSet$
+$Zy_Tur$NATKurulumu$
+$Zy_Ger$NatSet$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_MaxBurst_Size$
+$Zy_Eng$Maximum Burst Size [cells]$
+$Zy_Tur$Maximum Burst Size [cells]$
+$Zy_Ger$Maximum Burst Size [Zellen]$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_WWAN$
+$Zy_Eng$WWAN$
+$Zy_Tur$WWAN$
+$Zy_Ger$WWAN$
+$Zy_Fre$WWAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str71$
+$Zy_Eng$Interface must have value.$
+$Zy_Tur$Arabirimin bir de&#287;eri olmal&#305;d&#305;r.$
+$Zy_Ger$Die Schnittstelle muss einen Wert haben.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str72$
+$Zy_Eng$Certificate should not be empty.$
+$Zy_Tur$Sertifika bo&#351; olamaz.$
+$Zy_Ger$Zertifikat sollte nicht leer sein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str73$
+$Zy_Eng$Trusted CA should not be empty.$
+$Zy_Tur$G&#252;venilir CA bo&#351; olamaz.$
+$Zy_Ger$Trusted CA sollte nicht leer sein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str74$
+$Zy_Eng$6RD tunnel address \'{{1}}\' is invalid IP address.$
+$Zy_Tur$6RD t&#252;nel addresi \'{{1}}\' ge&#231;ersiz bir IP adresidir.$
+$Zy_Ger$6RD Tunnel-Adresse \'{{1}}\' ist ung&#252;ltige IP-Adresse.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str75$
+$Zy_Eng$6RD IPv6 Prefix \'{{1}}\' is invalid IPv6 address.$
+$Zy_Tur$6RD IPv6 &#214;neki \'{{1}}\' ge&#231;eriz bir IPv6 adresidir.$
+$Zy_Ger$6RD IPv6-Pr&#228;fix \'{{1}}\' ist ung&#252;ltige IPv6-Adresse.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str76$
+$Zy_Eng$Please enter the prefix length \'/\' to 6RD IPv6 Prefix field, e.g.: xxxx:xxxx::/xx$
+$Zy_Tur$L&#252;tfen 6RD IPv6 &#214;nek alan&#305; i&#231;in &#246;nek uzunlu&#287;unu  \'/\'  giriniz,  &#246;rn: xxxx:xxxx::/xx$
+$Zy_Ger$Bitte geben Sie die Pr&#228;fixl&#228;nge \'/\' in das Feld f&#252;r das 6RD IPv6-Pr&#228;fix ein, z.B.: xxxx:xxxx::/xx$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str77$
+$Zy_Eng$PPPoE do not support DHCP 6RD option. Please use static setting.$
+$Zy_Tur$PPPoE DHCP 6RD se&#231;ene&#287;ini desteklememektedir. L&#252;tfen statik ayarlar&#305; kullan&#305;n&#305;z.$
+$Zy_Ger$PPPoE unterst&#252;tzt die DHCP 6RD Option nicht. Bitte verwenden Sie die Einstellung Statisch.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str78$
+$Zy_Eng$WAN IPv6 address \'{{1}}\' is invalid IPv6 address.$
+$Zy_Tur$WAN IPv6 address \'{{1}}\' ge&#231;ersiz bir IPv6 adresidir.$
+$Zy_Ger$WAN IPv6-Adresse \'{{1}}\' ist ung&#252;ltige IPv6-Adresse.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str79$
+$Zy_Eng$Please remove the \'/\', and key in WAN IPv6 prefix to Prefix Length field$
+$Zy_Tur$L&#252;tfen \\\'/\\\' yi kald&#305;r&#305;n&#305;z  ve \\\'&#214;nek Uzunlu&#287;u\\\' alan&#305; i&#231;in anahtar WAN IPv6 &#246;nekini giriniz.$
+$Zy_Ger$Bitten entfernen Sie \'/\' und geben Sie das WAN IPv6-Pr&#228;fix in das Feld \'Pr&#228;fixl&#228;nge\' ein$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str80$
+$Zy_Eng$WAN IPv6 address \'{{1}}\' is invalid IPv6 address.$
+$Zy_Tur$WAN IPv6 address \'{{1}}\' , ge&#231;ersiz bir IPv6 adresidir.$
+$Zy_Ger$WAN IPv6-Adresse \'{{1}}\' ist ung&#252;ltige IPv6-Adresse.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str81$
+$Zy_Eng$Please enter a PPP User Name.$
+$Zy_Tur$Lütfen bir PPP Kullanıcı Adı Giriniz.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str82$
+$Zy_Eng$Please enter a PPP Password.$
+$Zy_Tur$Lütfen bir PPP Şifresi giriniz.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str64$
+$Zy_Eng$DS-Lite tunnel IPv6 address \'{{1}}\' is invalid IPv6 address.$
+$Zy_Tur$DS-Lite tunnel IPv6 addresi\'{{1}}\' , ge&#231;ersiz bir IP adresidir.$
+$Zy_Ger$DS-Lite Tunnel IPv6-Adresse \'{{1}}\' ist ung&#252;ltige IPv6-Adresse.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str65$
+$Zy_Eng$WAN IPv6 Prefix \'{{1}}\' is invalid IPv6 Prefix.$
+$Zy_Tur$WAN IPv6 &#214;neki \'{{1}}\', ge&#231;ersiz bir IPv6 &#246;nekidir.$
+$Zy_Ger$WAN IPv6-Pr&#228;fix \'{{1}}\' ist ung&#252;ltiges IPv6-Pr&#228;fix.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str66$
+$Zy_Eng$WAN IPv6 Next Hop address \'{{1}}\' is invalid IPv6 address.$
+$Zy_Tur$WAN IPv6 Gelecek IPv6 adresi \'{{1}}\', ge&#231;ersiz bir IPv6 adresidir.$
+$Zy_Ger$WAN IPv6 Next Hop-Adresse \'{{1}}\' ist ung&#252;ltige IPv6-Adresse.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str67$
+$Zy_Eng$Please remove the \'/\' on Next Hop field.$
+$Zy_Tur$L&#252;tfen bir sonraki a&#287; ge&#231;idi alan&#305;ndaki \'/\' yi kald&#305;r&#305;n&#305;z.$
+$Zy_Ger$Bitte entfernen Sie \'/\' im Feld Next Hop.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str68$
+$Zy_Eng$Please enter a valid DNSv6 address when DNSv6 Type is Static$
+$Zy_Tur$L&#252;tfen DNSv6 Tipi Statik oldu&#287;u zaman, ge&#231;erli bir DNSv6 adresi giriniz.$
+$Zy_Ger$Bitte geben Sie eine g&#252;ltige DNSv6-Adresse ein, wenn DNSv6-Typ statisch ist$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str69$
+$Zy_Eng$The length of user name {{1}} is too long [0-50].$
+$Zy_Tur$Kullan&#305;c&#305; ad&#305; uzunlu&#287;u {{1}} &#231;ok uzundur [0-50].$
+$Zy_Ger$Benutzername {{1}} zu lang [0-50].$
+$Zy_Fre$La longueur du nom d&#39;utilisateur {{1}} est trop grande [0-50].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str70$
+$Zy_Eng$The length of password {{1}} is too long [0-25].$
+$Zy_Tur$&#351;ifre uzunlu&#287;u {{1}} &#231;ok uzundur [0-25].$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Sample_Str1$
+$Zy_Eng$SAMPLE$
+$Zy_Tur$&#214;RNEK$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_Str106$
+$Zy_Eng$You should write your Username and Password as it exits on your agreement made with your internet service provider(look at sample).If you dont know your username and passworf, you should contact your internet service provider's call center.$
+$Zy_Tur$Kullanıcı adınızı ve &#350;ifrenizi internet servis sa&#287;layıcınız ile yapti&#287;ınız s&#246zle&#351;menizde verildi&#287;i &#351;ekilds (l&#252;tfen bakınız &#246rnek) yazmanız gerekmektedir. Kullanıcı adınızı bilmiyorsanız, internet hizmetini aldı&#287;ınız servis sa&#287;layıcının m&#252;&#351;teri hizmetlerini arayarak &#246&#287;renmeniz gerekmektedir.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Ethlanwan_AlertMsg_Str1$
+$Zy_Eng$Please remove all Ethernet WAN interface first.$
+$Zy_Tur$Lütfen önce bütün Ethernet WAN arayü.$
+$Zy_Ger$Bitte zuerst alle Ethernet WAN-Schnittstellen entfernen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Ethlanwan_Str1$
+$Zy_Eng$You can convert your Ethernet LAN 4 port as WAN port, or restore the WAN port to LAN port.$
+$Zy_Tur$Ethernet LAN 4 portunuzu WAN portuna veya tekrar WAN portunu LAN portuna dönüştü.$
+$Zy_Ger$Sie k&#246;nnen Ihren Ethernet LAN 4 Port in einen WAN-Port verwandeln oder den WAN-Port auf den LAN-Port wiederherstellen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Ethlanwan_Note_Str1$
+$Zy_Eng$State Enable, the Ethernet Port is WAN Ethernet.$
+$Zy_Tur$Durum Aktif Et ise, Ethernet Portu WAN Ethernetidir.$
+$Zy_Ger$Status Aktivieren: der Ethernet-Port bezieht sich auf WAN-Ethernet.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Ethlanwan_Note_Str2$
+$Zy_Eng$State Disable, the Ethernet Port is LAN Ethernet.$
+$Zy_Tur$Durum Devre Dışı ise, Ethernet Portu LAN Ethernetidir.$
+$Zy_Ger$Status Deaktivieren: der Ethernet-Port bezieht sich auf LAN-Ethernet.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Ethlanwan_Note_Str3$
+$Zy_Eng$Please do not connect Ethernet WAN cable and xDSL line at the same time.$
+$Zy_Tur$Lütfen Ethernet WAN kablosunu ve XDSL hattı aynı anda bağlamayınız.$
+$Zy_Ger$Bitte schlie&#223;en Sie das Ethernet WAN-Kabel und die xDSL-Verbindung nicht gleichzeitig an.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_AlertMsg_Str1$
+$Zy_Eng$Max Idle Timeout should be [1-4320].$
+$Zy_Tur$Maksimum Boşta Kalma Zamanı [1-4320] olmalıdır.$
+$Zy_Ger$Max. Inaktivit&#228;tszeit sollte zwischen 1 und 4320 liegen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_AlertMsg_Str2$
+$Zy_Eng$Static IP \'{{1}}\' has invalid IP address.$
+$Zy_Tur$Statik IP \'{{1}}\' geçersiz bir IP adresidir.$
+$Zy_Ger$Statische IP \'{{1}}\' ist ung&#252;ltige IP-Adresse.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_AlertMsg_Str3$
+$Zy_Eng$Primary DNS \'{{1}}\' has invalid IP address.$
+$Zy_Tur$Birincil DNS \'{{1}}\' geçersiz bir IP adresidir.$
+$Zy_Ger$Prim&#228;rer DNS \'{{1}}\' hat ung&#252;ltiges IP-Format.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_AlertMsg_Str4$
+$Zy_Eng$Secondary DNS \'{{1}}\' has invalid IP address.$
+$Zy_Tur$İkincil DNS \'{{1}}\' geçersiz bir IP adresidir.$
+$Zy_Ger$Sekund&#228;rer DNS \'{{1}}\' hat ung&#252;ltiges IP-Format.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_AlertMsg_Str5$
+$Zy_Eng$Check Cycle \'{{1}}\'  is incorrect.$
+$Zy_Tur$Döngü Kontrolü \'{{1}}\' doğru değildir.$
+$Zy_Ger$Pr&#252;fzyklus \'{{1}}\' ist nicht korrekt.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_AlertMsg_Str6$
+$Zy_Eng$Consecutive PING Fail \'{{1}}\'  is incorrect.$
+$Zy_Tur$Sıralı PİNG Hatası \'{{1}}\' doğru değildir.$
+$Zy_Ger$Anzahl von mehreren fehlenden PING-Antworten \'{{1}}\' ist nicht korrekt.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_AlertMsg_Str7$
+$Zy_Eng$Ping Host \'{{1}}\' has invalid IP address.$
+$Zy_Tur$Ping Host \'{{1}}\' geçersiz bir IP adresidir.$
+$Zy_Ger$Ping Host \'{{1}}\' hat ung&#252;ltige IP-Adresse.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_AlertMsg_Str8$
+$Zy_Eng$Time and Data Budget will Reset$
+$Zy_Tur$Zaman ve Veri Bütçesi resetlenecektir.$
+$Zy_Ger$Zeit- und Datenbudget wird zur&#252;ckgesetzt$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_AlertMsg_Str9$
+$Zy_Eng$Time Budget \'{{1}}\' hours is incorrect.$
+$Zy_Tur$Zaman Bütçesi \'{{1}}\' saati doğru değildir.$
+$Zy_Ger$Zeitbudget \'{{1}}\' Stunden ist nicht korrekt.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_AlertMsg_Str10$
+$Zy_Eng$Data Budget \'{{1}}\' Mbytes is incorrect.$
+$Zy_Tur$Veri Bütçesi \'{{1}}\' Mbytes doğru değildir.$
+$Zy_Ger$Datenbudget \'{{1}}\' MB ist nicht korrekt.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_AlertMsg_Str11$
+$Zy_Eng$Data Budget \'{{1}}\' Packets is incorrect.$
+$Zy_Tur$Veri Bütçesi \'{{1}}\' Packets doğru değildir.$
+$Zy_Ger$Datenbudget \'{{1}}\' Pakete ist nicht korrekt.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_AlertMsg_Str12$
+$Zy_Eng$\'{{1}}\' percent of time budget is incorrect.$
+$Zy_Tur$Zaman bütçesi yüzdesi \'{{1}}\' doğru değildir.$
+$Zy_Ger$\'{{1}}\' % des Zeitbudgets ist nicht korrekt.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_AlertMsg_Str13$
+$Zy_Eng$\'{{1}}\' of log interval is incorrect.$
+$Zy_Tur$Log aralığı \'{{1}}\' doğru değildir.$
+$Zy_Ger$\'{{1}}\' der Protokollzeitspanne ist nicht korrekt.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_AlertMsg_Str14$
+$Zy_Eng$\'{{1}}\' reset date is incorrect.$
+$Zy_Tur$Reset zamanı \'{{1}}\' doğru değildir.$
+$Zy_Ger$\'{{1}}\' Zur&#252;cksetzungsdatum ist nicht korrekt.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_AlertMsg_Str15$
+$Zy_Eng$Send Notification to Email \'{{1}}\' is invalid, please set in maintenance->email notification.$
+$Zy_Tur$Email'e Hatırlatma Gönderme \'{{1}}\' geçersizdir, lütfen bakım > email hatırlatma menüsü.$
+$Zy_Ger$Benachrichtigung senden an E-Mail \'{{1}}\' ist ung&#252;ltig, bitte stellen Sie dies unter Wartung > E-Mail-Benachrichtigung ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_AlertMsg_Str16$
+$Zy_Eng$Must Enter Over Budget Email Title$
+$Zy_Tur$Bütçe Email Başlığı Üzerinden Girilmeli$
+$Zy_Ger$Eingabe erforderlich f&#252;r E-Mail-Betreff bei &#252;berschrittenem Budget$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_AlertMsg_Str17$
+$Zy_Eng$\'{{1}}\' of email interval is incorrect.$
+$Zy_Tur$Email aralığı \'{{1}}\' doğru değildir.$
+$Zy_Ger$ \'{{1}}\' der E-Mail-Zeitspanne ist nicht korrekt.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_AlertMsg_Str18$
+$Zy_Eng$Reset time and data budget counters$
+$Zy_Tur$Reset zamanı ve veri bütçesi sayacı$
+$Zy_Ger$Z&#228;hler f&#252;r Zeit- und Datenbudget zur&#252;cksetzen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str2$
+$Zy_Eng$settings are invalid when disabled$
+$Zy_Tur$Devre dışı kaldığı zaman ayarlar geçersizdir$
+$Zy_Ger$wenn deaktiviert, gelten Einstellungen nicht$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str3$
+$Zy_Eng$Trigger by ETHER WAN Down (trigger 3G backup when physical link of primary WAN is down)$
+$Zy_Tur$ETHER WAN bağlı değilse tetikle (Birincil WAN fiziksel olarak bağlı değilse 3G yedeklemeyi tetikle$
+$Zy_Ger$Ausgel&#246;st durch Ausfall von Ethernet WAN (3G-Backup wird ausgel&#246;st, wenn physikalische Verbindung des prim&#228;ren WAN ausgefallen ist)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str4$
+$Zy_Eng$Ping Check$
+$Zy_Tur$Ping Kontrolü$
+$Zy_Ger$Ping-Pr&#252;fung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str5$
+$Zy_Eng$Check Cycle$
+$Zy_Tur$Kontrol Döngüsü$
+$Zy_Ger$Pr&#252;fungszyklus$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str6$
+$Zy_Eng$Every$
+$Zy_Tur$Her$
+$Zy_Ger$Alle$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str7$
+$Zy_Eng$Second$
+$Zy_Tur$İkinci$
+$Zy_Ger$Sekunden$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str8$
+$Zy_Eng$Consecutive PING Fail$
+$Zy_Tur$Sıralı PİNG Hatası$
+$Zy_Ger$Keine Ping-Antwort:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str9$
+$Zy_Eng$times$
+$Zy_Tur$defa$
+$Zy_Ger$Mal hintereinander$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str10$
+$Zy_Eng$Ping Default Gateway$
+$Zy_Tur$Ping Varsayılan Ağ Geçidi$
+$Zy_Ger$Ping des Standard-Gateways$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str11$
+$Zy_Eng$Ping the Host$
+$Zy_Tur$Ping Host$
+$Zy_Ger$Ping des Hosts$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str12$
+$Zy_Eng$Host Name or IP address$
+$Zy_Tur$Host Adı veya IP Adresi$
+$Zy_Ger$Hostname oder IP-Adresse$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str13$
+$Zy_Eng$Primary WAN is not in service when ping failed after consecutive times.$
+$Zy_Tur$Ping sıralı bir şekilde başarısız olduğu zaman Birincil WAN servis dışıdır.$
+$Zy_Ger$Prim&#228;res WAN funktioniert nicht, wenn ping mehrmals hintereinander keine Antwort zur&#252;ckgegeben hat.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str14$
+$Zy_Eng$3G Connection Settings$
+$Zy_Tur$3G Bağlantı Ayarları$
+$Zy_Ger$3G-Verbindungseinstellungen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str15$
+$Zy_Eng$Card description$
+$Zy_Tur$Kart Tanımlama$
+$Zy_Ger$Kartenbeschreibung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str16$
+$Zy_Eng$Optional$
+$Zy_Tur$İsteğe Bağlı$
+$Zy_Ger$Optional$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str17$
+$Zy_Eng$Only for unlock PIN next time$
+$Zy_Tur$Sadece bir sonraki kilitli olmayan PIN$
+$Zy_Ger$Nur zum Entsperren der PIN beim n&#228;chsten Mal$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str18$
+$Zy_Eng$PIN remaining authentication times$
+$Zy_Tur$Kalan PING kimlik doğrulama sayısı$
+$Zy_Ger$Verbleibende Authentifizierungszeiten f&#252;r PIN$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str19$
+$Zy_Eng$Dial string$
+$Zy_Tur$Dial string$
+$Zy_Ger$W&#228;hlzeichenkette$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str20$
+$Zy_Eng$Connection$
+$Zy_Tur$Bağlantı$
+$Zy_Ger$Verbindung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str21$
+$Zy_Eng$Nailed UP$
+$Zy_Tur$Canlı-tut$
+$Zy_Ger$Permanent$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str22$
+$Zy_Eng$on Demand$
+$Zy_Tur$İsteğe göre$
+$Zy_Ger$Bei Bedarf$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str23$
+$Zy_Eng$Max Idle Timeout$
+$Zy_Tur$Maksimum Boşta Kalma Zamanı$
+$Zy_Ger$Max. Inaktivit&#228;tszeit$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str24$
+$Zy_Eng$Use the following static IP address$
+$Zy_Tur$Statik IP adresi kullan$
+$Zy_Ger$Folgende statische IP-Adresse verwenden$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str25$
+$Zy_Eng$Obtain DNS info dynamically$
+$Zy_Tur$DNS bilgisini otomatik olarak al$
+$Zy_Ger$DNS-Info dynamisch beziehen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str26$
+$Zy_Eng$Use the following static DNS IP address$
+$Zy_Tur$Statik DNS IP adresi kullan$
+$Zy_Ger$Folgende statische DNS IP-Adressen verwenden$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str27$
+$Zy_Eng$Entering the wrong PIN code 3 times will lock SIM card.$
+$Zy_Tur$3 defa üstüste yanlış PIN girerseniz SIM kartınız kilitlenecektir.$
+$Zy_Ger$Wenn Sie die PIN dreimal falsch eingeben, wird die SIM-Karte gesperrt.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str28$
+$Zy_Eng$Budget Setup$
+$Zy_Tur$Bütçe Kurulumu$
+$Zy_Ger$Budget einrichten$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str29$
+$Zy_Eng$Budget Control$
+$Zy_Tur$Bütçe Kontrolü$
+$Zy_Ger$Budget-Kontrolle$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str30$
+$Zy_Eng$Time Budget$
+$Zy_Tur$Zaman Bütçesi$
+$Zy_Ger$Zeitbudget$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str31$
+$Zy_Eng$per month$
+$Zy_Tur$her ay$
+$Zy_Ger$pro Monat$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str32$
+$Zy_Eng$Data Budget$
+$Zy_Tur$Veri Bütçesi$
+$Zy_Ger$Datenbudget$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str33$
+$Zy_Eng$Download$
+$Zy_Tur$İndirme$
+$Zy_Ger$Download$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str34$
+$Zy_Eng$Actions before over budget$
+$Zy_Tur$Bütçe aşımından önceki hareketler$
+$Zy_Ger$Aktionen vor Budget&#252;berschreitung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str35$
+$Zy_Eng$of time budget$
+$Zy_Tur$zaman bütçesi$
+$Zy_Ger$des Zeitbudgets$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str36$
+$Zy_Eng$of data budget (Mbytes)$
+$Zy_Tur$veri bütçesi (Mbytes)$
+$Zy_Ger$des Datenbudgets (MB)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str37$
+$Zy_Eng$of data budget (Packets)$
+$Zy_Tur$veri bütçesi (Packets)$
+$Zy_Ger$des Datenbudgets (Pakete)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str38$
+$Zy_Eng$Actions when over budget$
+$Zy_Tur$Bütçe aşımı olduktan sonraki hareketler$
+$Zy_Ger$Aktionen bei Budget&#252;berschreitung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str39$
+$Zy_Eng$Current 3G connection$
+$Zy_Tur$Mevcut 3G bağlantısı$
+$Zy_Ger$Aktuelle 3G-Verbindung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str40$
+$Zy_Eng$Keep$
+$Zy_Tur$Bağlı tut$
+$Zy_Ger$Beibehalten$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str42$
+$Zy_Eng$Over Budget Email Title$
+$Zy_Tur$Email Başlığı Bütçesi Üzerinden$
+$Zy_Ger$E-Mail-Betreff bei &#252;berschrittenem Budget$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str43$
+$Zy_Eng$Send Notification to Email$
+$Zy_Tur$Email'e Hatırlatma Gönder$
+$Zy_Ger$Benachrichtigung senden an E-Mail$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str44$
+$Zy_Eng$Interval$
+$Zy_Tur$Aralık$
+$Zy_Ger$Zeitspanne$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str45$
+$Zy_Eng$Budget Control is an approximate value.$
+$Zy_Tur$Bütçe Kontrolü yaklaşık bir değerdir.$
+$Zy_Ger$Budget-Kontrolle ist ein ungef&#228;hrer Wert.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str46$
+$Zy_Eng$Reset all budget counters on$
+$Zy_Tur$Bütün bütçe sayıcılarını sıfırla$
+$Zy_Ger$Alle Budget-Z&#228;hler zur&#252;cksetzen an$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str47$
+$Zy_Eng$last$
+$Zy_Tur$en son$
+$Zy_Ger$dem letzten$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str48$
+$Zy_Eng$specific$
+$Zy_Tur$özel$
+$Zy_Ger$einem bestimmten$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str49$
+$Zy_Eng$day of month$
+$Zy_Tur$ayın günü$
+$Zy_Ger$Tag des Monats$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gbackup_Str50$
+$Zy_Eng$Actions$
+$Zy_Tur$Hareketler$
+$Zy_Ger$Aktionen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gStatus_Str1$
+$Zy_Eng$SIM card is not inserted or damaged.$
+$Zy_Tur$SIM kart takılı değil veya zarar görmüş.$
+$Zy_Ger$SIM-Karte nicht eingelegt oder besch&#228;digt.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gStatus_Str2$
+$Zy_Eng$Please check SIM card again.$
+$Zy_Tur$Lütfen SIM kartı tekrardan kontrol ediniz.$
+$Zy_Ger$Bitte pr&#252;fen Sie nochmals die SIM-Karte.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gStatus_Str3$
+$Zy_Eng$Incorrect PIN code$
+$Zy_Tur$Doğru olmayan PIN kodu$
+$Zy_Ger$Inkorrekte PIN$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gStatus_Str4$
+$Zy_Eng$Enter PIN code again$
+$Zy_Tur$PIN kodunu tekrar giriniz$
+$Zy_Ger$PIN nochmals eingeben$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_3gStatus_Str5$
+$Zy_Eng$PIN remaining authentication times$
+$Zy_Tur$Kalan PIN Kimlik Doğrulama Sayısı$
+$Zy_Ger$Verbleibende Authentifizierungszeiten f&#252;r PIN$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_troubleshoot_Str1$
+$Zy_Eng$Physical line in not properly connected$
+$Zy_Tur$Fiziksel hat doğru bir şekilde bağlanmamıştır.$
+$Zy_Ger$Physikalischer Verbindungseingang ist nicht richtig angeschlossen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_troubleshoot_Str2$
+$Zy_Eng$Checking Connection$
+$Zy_Tur$Bağlantı kontrol ediliyor$
+$Zy_Ger$Verbindung wird gepr&#252;ft$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_troubleshoot_Str3$
+$Zy_Eng$Ensure that the fiber is securely connected to this device. To test physical connection again, click$
+$Zy_Tur$Fiberin cihaza emniyetli ve doğru bir şekilde bağlandığından emin olunuz. Fiziksel bağlantıyı test etmek için tıklayınız$
+$Zy_Ger$Stellen Sie sicher, dass die Leitung ordnungsgem&#228;&#223; an dieses Ger&#228;t angeschlossen ist. Um die physikalische Verbindung nochmals zu testen, klicken Sie auf $
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_troubleshoot_Str4$
+$Zy_Eng$Domain Name Server$
+$Zy_Tur$Alan Adı Sunucusu$
+$Zy_Ger$Domain Name Server$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_troubleshoot_Str5$
+$Zy_Eng$Successful PPP connection requires the correct user name and password. Fill in the following blanks, and click$
+$Zy_Tur$Başarılı PPP bağlantısı doğru kullanıcı adı ve şifre gerektiriyor. Boşlukları doldurunuz ve tıklayınız$
+$Zy_Ger$F&#252;r eine erfolgreiche PPP-Verbindung sind der richtige Benutzername und das korrekte Kennwort erforderlich. F&#252;llen Sie die Leerstellen aus und klicken Sie auf$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_troubleshoot_Str6$
+$Zy_Eng$to test Internet connection again.$
+$Zy_Tur$internet bağlantısını tekrar kontrol etmek için.$
+$Zy_Ger$um die Internetverbindung nochmals zu testen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_troubleshoot_Str7$
+$Zy_Eng$Unable to obtain a WAN IP address$
+$Zy_Tur$Bir WAN IP adresi alınamıyor$
+$Zy_Ger$Beziehen einer WAN IP-Adresse nicht m&#246;glich$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_troubleshoot_Str8$
+$Zy_Eng$Connection error occurred. The following information might help you resolve the error.$
+$Zy_Tur$Bağlantı hatası oluştu. Bu bilgiler hatayı gidermek için size yardımcı olabilir.$
+$Zy_Ger$Verbindungsfehler aufgetreten. Die folgenden Informationen k&#246;nnten Ihnen bei der L&#246;sung des Fehlers behilflich sein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_troubleshoot_Str9$
+$Zy_Eng$Click$
+$Zy_Tur$Tıklayınız$
+$Zy_Ger$Klicken Sie auf$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_troubleshoot_Str10$
+$Zy_Eng$to obtain a WAN IP address again.$
+$Zy_Tur$Tekrar bir WAN IP adresi almak için$
+$Zy_Ger$um nochmals eine WAN IP-Adresse zu beziehen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_troubleshoot_Str11$
+$Zy_Eng$Please wait while the router is recovering the connection.$
+$Zy_Tur$Lütfen router bağlantıyı tekrardan başlatana kadar bekleyiniz.$
+$Zy_Ger$Bitte warten Sie, w&#228;hrend der Router die Verbindung wieder aufbaut.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_6rd_plen_error$
+$Zy_Eng$The maximum of prefix length is 32.$
+$Zy_Tur$Maksimum ön ek uzunluğu 32\\' dir.$
+$Zy_Ger$(Das Maximum der Präfix-Länge beträgt 32.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_6rd_ipv4MaskLengthError$
+$Zy_Eng$Please enter correct IPv4 Mask length, ex: 0~32$
+$Zy_Tur$Lütfen doğru IPv4 Maske uzunluğu giriniz, ör: 0~32$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_6rd_v6LengthError$
+$Zy_Eng$The maximum of prefix length is $
+$Zy_Tur$Maksimum ön ek uzunluğu$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_6RD_v4MaskLength$
+$Zy_Eng$IPv4 Mask Length : $
+$Zy_Tur$IPv4 Maske Uzunluğu:$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str83$
+$Zy_Eng$Please enter valid rule without (space).$
+$Zy_Tur$olmadan ge&#231;erli kural (bo&#351;luk) girin.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_WAN_Broadband_AlertMsg_Str84$
+$Zy_Eng$You can easily assign LAN ports for this bridged PVC service under Network Setting > Interface Group > Add New Interface Group$
+$Zy_Tur$Köprülenmiş PVC den geçecek trafiği Ağ Ayarı > Arayüz Grubu > Yeni Arayüz Grubu Ekle yaparak kolaylıkla istenilen LAN portlarına atayabilirsiniz.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$

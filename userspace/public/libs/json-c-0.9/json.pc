@@ -1,0 +1,11 @@
+prefix=/home/stevenzhang/source/BRCM/4.12/DSL-491HNU-B1Bv2_TTNET/dev_L06/userspace/public/libs/json-c-0.9/install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: json
+Description: JSON implementation in C
+Version: 0.9
+Requires: 
+Libs:  -L${libdir} -ljson
+Cflags: -I${includedir}/json

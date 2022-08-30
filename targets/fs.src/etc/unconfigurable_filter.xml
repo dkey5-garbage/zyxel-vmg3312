@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DslCpeConfig>
+ <InternetGatewayDevice>
+  <ManagementServer>
+  </ManagementServer>
+  <X_ZyXEL_Ext>
+    <TR069>
+    </TR069>
+  </X_ZyXEL_Ext>
+ </InternetGatewayDevice>
+</DslCpeConfig>

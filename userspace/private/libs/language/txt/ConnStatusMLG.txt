@@ -1,0 +1,2470 @@
+﻿#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+#include<time.h>
+#include "languages.h"
+
+
+
+$NAME$MLG_ConnStatus_ConnectionStatus_AlertMsg_Str1$
+$Zy_Eng$You attempt to release IP address for {{1}}.$
+$Zy_Tur${{1}}IP adresini b&#305;rakmaya &#231;al&#305;&#351;&#305;yorsunuz.$
+$Zy_Ger$Sie versuchen, die IP-Adresse f&#252;r {{1}} freizugeben.$
+$Zy_Fre$Vous tentez de lib&#233;rer l&#39;adresse IP pour {{1}}.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_ConnectionStatus_AlertMsg_Str2$
+$Zy_Eng$You attempt to renew IP address for {{1}}.$
+$Zy_Tur${{1}} IP adresini yenilemeye &#231;al&#305;&#351;&#305;yorsunuz.$
+$Zy_Ger$Sie versuchen, die IP-Adresse f&#252;r {{1}} zu erneuern.$
+$Zy_Fre$Vous tentez de renouveler l&#39;adresse IP pour {{1}}.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_ConnectionStatus_AlertMsg_Str3$
+$Zy_Eng$You attempt to set PPP {{1}} to link {{2}}$
+$Zy_Tur${{2}} ba&#287;lant&#305;s&#305; i&#231;in PPP {{1}}&#39; i ayarlamaya &#231;al&#305;&#351;&#305;yorsunuz.$
+$Zy_Ger$Sie versuchen, PPP {{1}} auf Verbindung {{2}} einzustellen$
+$Zy_Fre$Vous tentez de d&#233;finir PPP {{1}} en liaison montante$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_ConnectionStatus_AlertMsg_Str4$
+$Zy_Eng$You attempt to set PPP {{1}} to link Down$
+$Zy_Tur$Mevcut olmayan ba&#287;lant&#305; i&#231;in PPP {{1}}&#39; i ayarlamaya &#231;al&#305;&#351;&#305;yorsunuz.$
+$Zy_Ger$Sie versuchen, PPP {{1}} auf nicht bestehende Verbindung einzustellen$
+$Zy_Fre$Vous tentez de d&#233;finir PPP {{1}} en liaison descendante$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_ConnectionStatus_AlertMsg_Str5$
+$Zy_Eng$Set Refresh interval to regain WAN connection status.$
+$Zy_Tur$WAN ba&#287;lant&#305; durumunu yeniden kazanmak i&#231;in Yenileme Aral&#305;&#287;&#305;n&#305; ayarla$
+$Zy_Ger$Stellen Sie das Aktualisierungsintervall ein, um den WAN-Verbindungsstatus wieder zu erhalten.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_AlertMsg_Str1$
+$Zy_Eng$A problem occurred:$
+$Zy_Tur$Bir sorun olu&#351;tu:$
+$Zy_Ger$Es ist ein Problem aufgetreten:$
+$Zy_Fre$Un probl&#232;me est apparu:$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_AlertMsg_Str2$
+$Zy_Eng$The {{1}} cannot connect to Internet. Please check the connection between your modem and the {{2}} .$
+$Zy_Tur${{1}} internete ba&#287;lanam&#305;yor. L&#252;tfen {{2}} ve modeminiz aras&#305;ndaki ba&#287;lant&#305;y&#305; kontrol ediniz.$
+$Zy_Ger${{1}} kann keine Verbindung zum Internet herstellen. Bitte pr&#252;fen Sie die Verbindung zwischen Ihrem Modem und {{2}} .$
+$Zy_Fre$Le  {{1}} ne peut pas se connecter &#224; Internet. V&#233;rifiez la connexion entre votre modem et le {{2}}.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_AlertMsg_Str3$
+$Zy_Eng$A problem occurred:The {{1}} cannot connect to Internet. Please check WAN settings or contact your ISP.$
+$Zy_Tur$Bir sorun olu&#351;tu: {{1}} internete ba&#287;lanam&#305;yor. L&#252;tfen WAN ayarlar&#305;n&#305; kontrol edin veya ISS&#39; nize ba&#351;vurunuz.$
+$Zy_Ger$Es ist ein Problem aufgetreten: {{1}} kann keine Verbindung zum Internet herstellen. Bitte WAN-Einstellungen pr&#252;fen oder Kontakt zu Ihrem ISP aufnehmen.$
+$Zy_Fre$Un probl&#232;me est apparu: Le {{1}} ne peut pas se connecter &#224; Internet.  V&#233;rifiez les param&#232;tres WAN ou contactez votre FAI.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_AlertMsg_Str4$
+$Zy_Eng$Support share folder only when using Microsoft Internet Explorer.$
+$Zy_Tur$Payla&#351;&#305;m klas&#246;r&#252; yaln&#305;zca Microsoft Internet Explorer ile kullan&#305;labilir.$
+$Zy_Ger$Ordner freigeben wird nur unterst&#252;tzt, wenn Microsoft Internet Explorer verwendet wird.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_AlertMsg_Str5$
+$Zy_Eng$This IP address has been occupied by other device.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str1$
+$Zy_Eng$Network Map$
+$Zy_Tur$A&#287; Haritas&#305;$
+$Zy_Ger$Netzwerk&#252;bersicht$
+$Zy_Fre$Carte du r&#233;seau$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str10$
+$Zy_Eng$Add device into Static DHCP$
+$Zy_Tur$Statik DHCP i&#231;in cihaz ekle$
+$Zy_Ger$Ger&#228;t zu statischem DHCP hinzuf&#252;gen$
+$Zy_Fre$Ajouter un appareil dans DHCP statique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str11$
+$Zy_Eng$Refresh interval$
+$Zy_Tur$Yenileme S&#305;kl&#305;&#287;&#305;$
+$Zy_Ger$Aktualisierungsintervall$
+$Zy_Fre$Intervalle d&#39;actualisation$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str12$
+$Zy_Eng$None$
+$Zy_Tur$Hi&#231;biri$
+$Zy_Ger$Keines$
+$Zy_Fre$Aucun$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str13$
+$Zy_Eng$10 seconds$
+$Zy_Tur$10 saniye$
+$Zy_Ger$10 Sekunden$
+$Zy_Fre$10 secondes$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str14$
+$Zy_Eng$20 seconds$
+$Zy_Tur$20 saniye$
+$Zy_Ger$20 Sekunden$
+$Zy_Fre$20 secondes$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str15$
+$Zy_Eng$30 seconds$
+$Zy_Tur$30 saniye$
+$Zy_Ger$30 Sekunden$
+$Zy_Fre$30 secondes$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str16$
+$Zy_Eng$60 seconds$
+$Zy_Tur$60 saniye$
+$Zy_Ger$60 Sekunden$
+$Zy_Fre$60 secondes$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str17$
+$Zy_Eng$Viewing mode$
+$Zy_Tur$G&#246;r&#252;nt&#252;leme modu $
+$Zy_Ger$Modus f&#252;r Ansicht$
+$Zy_Fre$Mode d&#39;affichage$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str18$
+$Zy_Eng$Icon View$
+$Zy_Tur$Simge G&#246;r&#252;n&#252;m&#252;$
+$Zy_Ger$Icon-Ansicht$
+$Zy_Fre$Affichage Ic&#244;nes$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str19$
+$Zy_Eng$List View$
+$Zy_Tur$Liste G&#246;r&#252;n&#252;m&#252;$
+$Zy_Ger$Listen-Ansicht$
+$Zy_Fre$Affichage Liste$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str2$
+$Zy_Eng$Internet$
+$Zy_Tur$&#304;nternet$
+$Zy_Ger$Internet$
+$Zy_Fre$Internet$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str20$
+$Zy_Eng$Device Name$
+$Zy_Tur$Cihaz Ad&#305;$
+$Zy_Ger$Ger&#228;tename$
+$Zy_Fre$Nom de l&#39;appareil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str21$
+$Zy_Eng$Expires In$
+$Zy_Tur$... sona eriyor$
+$Zy_Ger$L&#228;uft ab in$
+$Zy_Fre$Expire dans$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str22$
+$Zy_Eng$Computer$
+$Zy_Tur$Bilgisayar$
+$Zy_Ger$Computer$
+$Zy_Fre$Ordinateu$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str23$
+$Zy_Eng$Game console$
+$Zy_Tur$Oyun konsolu$
+$Zy_Ger$Spielekonsole$
+$Zy_Fre$Console de je$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str24$
+$Zy_Eng$Printer$
+$Zy_Tur$Yaz&#305;c&#305;$
+$Zy_Ger$Drucker$
+$Zy_Fre$Imprimant$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str25$
+$Zy_Eng$Set-top box$
+$Zy_Tur$STB$
+$Zy_Ger$Set-Top-Box$
+$Zy_Fre$D&#233;codeu$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str26$
+$Zy_Eng$Camera$
+$Zy_Tur$Kamera$
+$Zy_Ger$Kamera$
+$Zy_Fre$Appareil phot$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str27$
+$Zy_Eng$Telephone$
+$Zy_Tur$Telefon$
+$Zy_Ger$Telefon$
+$Zy_Fre$T&#233;l&#233;phon$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str28$
+$Zy_Eng$Router$
+$Zy_Tur$Y&#246;nlendirici$
+$Zy_Ger$Router$
+$Zy_Fre$Routeu$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str29$
+$Zy_Eng$Device icon:$
+$Zy_Tur$Cihaz simgesi:$
+$Zy_Ger$Ger&#228;te-Icon:$
+$Zy_Fre$Ic&#244;ne de l&#39;appareil:$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str30$
+$Zy_Eng$Device icon:$
+$Zy_Tur$Cihaz simgesi:$
+$Zy_Ger$Ger&#228;te-Icon:$
+$Zy_Fre$Copie des Informations du bail statique! V&#233;rifiez le nom de l&#39;h&#244;te.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str31$
+$Zy_Eng$Host Name {{1}} is invalid.$
+$Zy_Tur${{1}} Host Ad&#305; ge&#231;ersiz.$
+$Zy_Ger$Hostname {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le nom de l&#39;h&#244;te {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str32$
+$Zy_Eng$Add device into$
+$Zy_Tur$... i&#231;in cihaz ekle$
+$Zy_Ger$Ger&#228;t hinzuf&#252;gen$
+$Zy_Fre$Ajouter un appareil dans$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str33$
+$Zy_Eng$Parental Control$
+$Zy_Tur$Ebeveyn Kontrol&#252;$
+$Zy_Ger$Jugendschutz$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str34$
+$Zy_Eng$Disconnected$
+$Zy_Tur$Ba&#287;l&#305; de&#287;il$
+$Zy_Ger$Verbindung abgebaut$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str35$
+$Zy_Eng$Your connection is not successful.$
+$Zy_Tur$Ba&#287;lant&#305;n&#305;z ba&#351;ar&#305;l&#305; de&#287;il.$
+$Zy_Ger$Ihre Verbindung war nicht erfolgreich.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str36$
+$Zy_Eng$Connected$
+$Zy_Tur$Ba&#287;l&#305;$
+$Zy_Ger$Verbunden$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str37$
+$Zy_Eng$Your connection is successful.$
+$Zy_Tur$Ba&#287;lant&#305;n&#305;z ba&#351;ar&#305;l&#305;.$
+$Zy_Ger$Ihre Verbindung wurde erfolgreich aufgebaut.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str38$
+$Zy_Eng$PC$
+$Zy_Tur$PC$
+$Zy_Ger$PC$
+$Zy_Fre$PC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str39$
+$Zy_Eng$PVR$
+$Zy_Tur$PVR$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str40$
+$Zy_Eng$Stereo$
+$Zy_Tur$Müzik seti$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str41$
+$Zy_Eng$Streamer$
+$Zy_Tur$Flama$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str42$
+$Zy_Eng$TV$
+$Zy_Tur$Televizyon$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str43$
+$Zy_Eng$Mobile$
+$Zy_Tur$Hareketli$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str44$
+$Zy_Eng$Others$
+$Zy_Tur$Di&#287;erleri$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str3$
+$Zy_Eng$Info$
+$Zy_Tur$Bilgi$
+$Zy_Ger$Info$
+$Zy_Fre$Infos$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str4$
+$Zy_Eng$Change name/icon$
+$Zy_Tur$Ad / simge de&#287;i&#351;tir$
+$Zy_Ger$Namen/Icon &#228;ndern$
+$Zy_Fre$Changer le nom/ic&#244;ne$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str5$
+$Zy_Eng$Address Source$
+$Zy_Tur$Adres Kayna&#287;&#305;$
+$Zy_Ger$Adresse bezogen &#252;ber$
+$Zy_Fre$Adresse source $
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str6$
+$Zy_Eng$Static$
+$Zy_Tur$Statik$
+$Zy_Ger$Statisch$
+$Zy_Fre$Statique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str7$
+$Zy_Eng$DHCP$
+$Zy_Tur$DHCP$
+$Zy_Ger$DHCP$
+$Zy_Fre$DHCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str8$
+$Zy_Eng$Connection Type$
+$Zy_Tur$Ba&#287;lant&#305; T&#252;r&#252;$
+$Zy_Ger$Verbindungstyp$
+$Zy_Fre$Type de connexion$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str9$
+$Zy_Eng$Ethernet$
+$Zy_Tur$Ethernet$
+$Zy_Ger$Ethernet$
+$Zy_Fre$Ethernet$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str1$
+$Zy_Eng$Device Information$
+$Zy_Tur$Cihaz Bilgileri$
+$Zy_Ger$Ger&#228;teinformationen$
+$Zy_Fre$Informations concernant l&#39;appareil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str10$
+$Zy_Eng$WLAN Information:$
+$Zy_Tur$Kablosuz Yerel A&#287; Bilgisi:$
+$Zy_Ger$WLAN-Informationen:$
+$Zy_Fre$Informations WLAN :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str10_1$
+$Zy_Eng$WLAN Information$
+$Zy_Tur$Kablosuz Yerel A&#287; Bilgisi$
+$Zy_Ger$WLAN-Informationen$
+$Zy_Fre$Informations WLAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str10_24$
+$Zy_Eng$2.4G WLAN Information$
+$Zy_Tur$2.4G WLAN Information$
+$Zy_Ger$2.4G WLAN Information$
+$Zy_Fre$2.4G WLAN Information$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str10_5$
+$Zy_Eng$5G WLAN Information$
+$Zy_Tur$5G WLAN Information$
+$Zy_Ger$5G WLAN Information$
+$Zy_Fre$5G WLAN Information$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str11$
+$Zy_Eng$Status:$
+$Zy_Tur$Durum:$
+$Zy_Ger$Status:$
+$Zy_Fre$&#201;tat :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str12$
+$Zy_Eng$Name(SSID):$
+$Zy_Tur$Ad&#305; (SSID):$
+$Zy_Ger$Name (SSID):$
+$Zy_Fre$Nom (SSID) :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str13$
+$Zy_Eng$Channel:$
+$Zy_Tur$Kanal$
+$Zy_Ger$Kanal:$
+$Zy_Fre$Canal :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str14$
+$Zy_Eng$Auto (Current: {{1}})$
+$Zy_Tur$ Otomatik (G&#252;ncel: {{1}}) $
+$Zy_Ger$Auto (aktuell: {{1}})$
+$Zy_Fre$Auto (Actuel : {{1}})$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str15$
+$Zy_Eng$Security Mode:$
+$Zy_Tur$G&#252;venlik Modu:$
+$Zy_Ger$Sicherheitsmodus:$
+$Zy_Fre$Mode de s&#233;curit&#233; :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str16$
+$Zy_Eng$WPS:$
+$Zy_Tur$WPS:$
+$Zy_Ger$WPS:$
+$Zy_Fre$WPS :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str17$
+$Zy_Eng$Firewall Information: $
+$Zy_Tur$G&#252;venlik Duvar&#305; Bilgileri: $
+$Zy_Ger$Firewall-Informationen: $
+$Zy_Fre$Informations sur le pare-feu : $
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str18$
+$Zy_Eng$Security Level:$
+$Zy_Tur$G&#252;venlik Seviyesi:$
+$Zy_Ger$Sicherheitsebene:$
+$Zy_Fre$Niveau de s&#233;curit&#233; :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str19$
+$Zy_Eng$Interface Status$
+$Zy_Tur$Aray&#252;z Durumu$
+$Zy_Ger$Schnittstellenstatus$
+$Zy_Fre$Etat de l&#39;interface$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str2$
+$Zy_Eng$Host Name:$
+$Zy_Tur$Host Ad&#305;:$
+$Zy_Ger$Hostname:$
+$Zy_Fre$Nom de l&#39;h&#244;te :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str20$
+$Zy_Eng$Interface$
+$Zy_Tur$Aray&#252;z$
+$Zy_Ger$Schnittstelle$
+$Zy_Fre$Interface$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str21$
+$Zy_Eng$Status$
+$Zy_Tur$Durum$
+$Zy_Ger$Status$
+$Zy_Fre$&#201;tat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str22$
+$Zy_Eng$Rate$
+$Zy_Tur$Oran$
+$Zy_Ger$Rate$
+$Zy_Fre$D&#233;bit$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str23$
+$Zy_Eng$Kbps$
+$Zy_Tur$Kbps$
+$Zy_Ger$Kb/s$
+$Zy_Fre$Kbps$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str24$
+$Zy_Eng$Mbps$
+$Zy_Tur$Mbps$
+$Zy_Ger$Mb/s$
+$Zy_Fre$Mbps$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str25$
+$Zy_Eng${{1}}M$
+$Zy_Tur${{1}} M$
+$Zy_Ger${{1}}M$
+$Zy_Fre${{1}}M$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str26$
+$Zy_Eng$LAN1$
+$Zy_Tur$Yerel A&#287; 1$
+$Zy_Ger$LAN1$
+$Zy_Fre$LAN1$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str27$
+$Zy_Eng$LAN2$
+$Zy_Tur$Yerel A&#287; 2$
+$Zy_Ger$LAN2$
+$Zy_Fre$LAN2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str28$
+$Zy_Eng$LAN3$
+$Zy_Tur$Yerel A&#287; 3$
+$Zy_Ger$LAN3$
+$Zy_Fre$LAN3$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str29$
+$Zy_Eng$LAN4$
+$Zy_Tur$Yerel A&#287; 4$
+$Zy_Ger$LAN4$
+$Zy_Fre$LAN4$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str3$
+$Zy_Eng$Model Number:$
+$Zy_Tur$Model Numaras&#305;:$
+$Zy_Ger$Modellnummer:$
+$Zy_Fre$Num&#233;ro de mod&#232;le :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str301$
+$Zy_Eng$Serial Number:$
+$Zy_Tur$Seri Numaras&#305;:$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str302$
+$Zy_Eng$Security Key:$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str30$
+$Zy_Eng$LAN5$
+$Zy_Tur$Yerel A&#287; 5$
+$Zy_Ger$LAN5$
+$Zy_Fre$LAN5$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str31$
+$Zy_Eng$WAN$
+$Zy_Tur$WAN$
+$Zy_Ger$WAN$
+$Zy_Fre$WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str32$
+$Zy_Eng$HPNA$
+$Zy_Tur$HPNA$
+$Zy_Ger$HPNA$
+$Zy_Fre$HPNA$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str33$
+$Zy_Eng$WLAN$
+$Zy_Tur$Kablosuz Yerel A&#287;$
+$Zy_Ger$WLAN$
+$Zy_Fre$WLAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str33_24$
+$Zy_Eng$2.4G WLAN$
+$Zy_Tur$2.4G WLAN$
+$Zy_Ger$2.4G WLAN$
+$Zy_Fre$2.4G WLAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str33_5$
+$Zy_Eng$5G WLAN$
+$Zy_Tur$5G WLAN$
+$Zy_Ger$5G WLAN$
+$Zy_Fre$5G WLAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str34$
+$Zy_Eng$Wireless$
+$Zy_Tur$Kablosuz$
+$Zy_Ger$WLAN$
+$Zy_Fre$Sans fil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str35$
+$Zy_Eng$MoCA$
+$Zy_Tur$MoCA$
+$Zy_Ger$MoCA$
+$Zy_Fre$MoCA$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str36$
+$Zy_Eng$MoCA LAN$
+$Zy_Tur$MoCA Yerel A&#287;$
+$Zy_Ger$MoCA LAN$
+$Zy_Fre$MoCA LAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str37$
+$Zy_Eng$MoCA WAN$
+$Zy_Tur$MoCA WAN$
+$Zy_Ger$MoCA WAN$
+$Zy_Fre$MoCA WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str38$
+$Zy_Eng$Ethernet WAN$
+$Zy_Tur$Ethernet WAN$
+$Zy_Ger$Ethernet WAN$
+$Zy_Fre$Ethernet WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str39$
+$Zy_Eng$DSL$
+$Zy_Tur$DSL$
+$Zy_Ger$DSL$
+$Zy_Fre$DSL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str4$
+$Zy_Eng$Firmware Version:$
+$Zy_Tur$Ayg&#305;t Yaz&#305;l&#305;m S&#252;r&#252;m&#252;:$
+$Zy_Ger$Firmware Version:$
+$Zy_Fre$Version du microprogramme :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str40$
+$Zy_Eng$RX: {{1}} / TX: {{1}} (Kbps)$
+$Zy_Tur$RX: {{1}} / TX: {{1}} (Kbps)$
+$Zy_Ger$RX: {{1}} / TX: {{1}} (Kb/s)$
+$Zy_Fre$RX : {{1}} / TX : {{1}} (Kbps)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str41$
+$Zy_Eng$3G USB$
+$Zy_Tur$3G USB$
+$Zy_Ger$3G USB$
+$Zy_Fre$3G USB$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str42$
+$Zy_Eng$System Status$
+$Zy_Tur$Sistem Durumu$
+$Zy_Ger$Systemstatus$
+$Zy_Fre$Etat du syst&#232;me$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str43$
+$Zy_Eng$System Up Time:$
+$Zy_Tur$Sistem &#199;al&#305;&#351;ma Zaman&#305;:$
+$Zy_Ger$Systemlaufzeit:$
+$Zy_Fre$Temps d&#39;activit&#233; du syst&#232;me :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str44$
+$Zy_Eng$Current Date/Time:$
+$Zy_Tur$G&#252;ncel Tarih / Saat:$
+$Zy_Ger$Datum/Uhrzeit aktuell:$
+$Zy_Fre$Date/Heure actuelle :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str45$
+$Zy_Eng$DSL Up Time: $
+$Zy_Tur$DSL &#199;al&#305;&#351;ma Zaman&#305;: $
+$Zy_Ger$DSL-Laufzeit: $
+$Zy_Fre$Dur&#233;e d&#39;activit&#233; DSL : $
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str46$
+$Zy_Eng$DSL Retrain Count:$
+$Zy_Tur$DSL Deneme Say&#305;s&#305;$
+$Zy_Ger$DSL-Retrain-Z&#228;hler:$
+$Zy_Fre$Nombre de tentatives DSL :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str47$
+$Zy_Eng$System Resource:$
+$Zy_Tur$Sistem Kayna&#287;&#305;:$
+$Zy_Ger$Systemressourcen:$
+$Zy_Fre$Ressources syst&#232;me :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str48$
+$Zy_Eng$CPU Usage:$
+$Zy_Tur$CPU Kullan&#305;m&#305;:$
+$Zy_Ger$CPU-Auslastung:$
+$Zy_Fre$Utilisation du CPU :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str49$
+$Zy_Eng$Memory Usage:$
+$Zy_Tur$Bellek Kullan&#305;m&#305;:$
+$Zy_Ger$Speicher-Auslastung:$
+$Zy_Fre$Utilisation de la m&#233;moire :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str5$
+$Zy_Eng$WAN Information:$
+$Zy_Tur$WAN Bilgisi:$
+$Zy_Ger$WAN-Informationen:$
+$Zy_Fre$Informations WAN :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str5_1$
+$Zy_Eng$WAN Information$
+$Zy_Tur$WAN Bilgisi:$
+$Zy_Ger$WAN-Informationen$
+$Zy_Fre$Informations WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str50$
+$Zy_Eng$Quick Link$
+$Zy_Tur$H&#305;zl&#305; Ba&#287;lant&#305;$
+$Zy_Ger$Quicklink$
+$Zy_Fre$Lien de raccourci$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str51$
+$Zy_Eng$Diagnostic tools$
+$Zy_Tur$Tan&#305;lama ara&#231;lar&#305;$
+$Zy_Ger$Diagnosewerkzeuge$
+$Zy_Fre$Outils de diagnostic$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str52$
+$Zy_Eng$Change password$
+$Zy_Tur$&#350;ifreyi de&#287;i&#351;tir $
+$Zy_Ger$Kennwort &#228;ndern$
+$Zy_Fre$Changer le mot de passe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str53$
+$Zy_Eng$Reboot$
+$Zy_Tur$Yeniden ba&#351;lat$
+$Zy_Ger$Neustarten$
+$Zy_Fre$Red&#233;marrer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str54$
+$Zy_Eng$Factory reset$
+$Zy_Tur$Fabrika ayarlar&#305;na d&#246;n$
+$Zy_Ger$Auf Werkseinstellungen zur&#252;cksetzen$
+$Zy_Fre$R&#233;initialisation aux valeurs d&#39;usine$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str55$
+$Zy_Eng$Registration Status$
+$Zy_Tur$Kay&#305;t Durumu$
+$Zy_Ger$Registrierungsstatus:$
+$Zy_Fre$Etat d&#39;enregistrement$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str56$
+$Zy_Eng$Account$
+$Zy_Tur$Hesap$
+$Zy_Ger$Konto$
+$Zy_Fre$Compte$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str57$
+$Zy_Eng$Action$
+$Zy_Tur$Eylem$
+$Zy_Ger$Aktion$
+$Zy_Fre$Action$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str58$
+$Zy_Eng$Account Status$
+$Zy_Tur$Hesap Durumu$
+$Zy_Ger$Konto-Status$
+$Zy_Fre$&#201;tat du compte$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str59$
+$Zy_Eng$Service Provider / SIP Account$
+$Zy_Tur$Servis Sa&#287;lay&#305;c&#305; / SIP Hesab&#305;$
+$Zy_Ger$Service Provider/SIP-Konto$
+$Zy_Fre$Fournisseur de services / compte SIP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str6$
+$Zy_Eng$WAN Type:$
+$Zy_Tur$WAN T&#252;r&#252;:$
+$Zy_Ger$WAN-Typ:$
+$Zy_Fre$Type de WAN :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_EircomBoardband$
+$Zy_Eng$Eircom Boardband:$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_DSLMode$
+$Zy_Eng$DSL Mode:$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_LineAttenuation$
+$Zy_Eng$Line Attenuation:$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_ContentFilter$
+$Zy_Eng$Content Filter$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_WanName$
+$Zy_Eng$WAN Name:$
+$Zy_Tur$WAN Ad&#305;:$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str60$
+$Zy_Eng$URI$
+$Zy_Tur$URI$
+$Zy_Ger$URI$
+$Zy_Fre$URI$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str61$
+$Zy_Eng${{1}} days: {{2}} hours: {{3}} minutes$
+$Zy_Tur$ {{1}} g&#252;n: {{2}} saat: {{3}} dakika $
+$Zy_Ger${{1}} Tage: {{2}} Stunden: {{3}} Minuten$
+$Zy_Fre${{1}} jours : {{2}} heures : {{3}} minutes$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str62$
+$Zy_Eng$Jan$
+$Zy_Tur$Ocak$
+$Zy_Ger$Jan$
+$Zy_Fre$Jan$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str63$
+$Zy_Eng$Feb$
+$Zy_Tur$&#350;ubat$
+$Zy_Ger$Feb$
+$Zy_Fre$F&#233;v$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str64$
+$Zy_Eng$Mar$
+$Zy_Tur$Mart$
+$Zy_Ger$Mrz$
+$Zy_Fre$Mar$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str65$
+$Zy_Eng$Apr$
+$Zy_Tur$Nisan$
+$Zy_Ger$Apr$
+$Zy_Fre$Avr$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str66$
+$Zy_Eng$May$
+$Zy_Tur$May&#305;s$
+$Zy_Ger$Mai$
+$Zy_Fre$Mai$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str67$
+$Zy_Eng$Jun$
+$Zy_Tur$Haziran$
+$Zy_Ger$Jun$
+$Zy_Fre$Juin$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str68$
+$Zy_Eng$Jul$
+$Zy_Tur$Temmuz$
+$Zy_Ger$Jul$
+$Zy_Fre$Juillet$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str69$
+$Zy_Eng$Aug$
+$Zy_Tur$A&#287;ustos$
+$Zy_Ger$Aug$
+$Zy_Fre$Ao&#251;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str7$
+$Zy_Eng$Encapsulation$
+$Zy_Tur$Kaps&#252;lleme$
+$Zy_Ger$Encapsulation$
+$Zy_Fre$Encapsulation$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str70$
+$Zy_Eng$Sep$
+$Zy_Tur$Eyl&#252;l$
+$Zy_Ger$Sep$
+$Zy_Fre$Sep$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str71$
+$Zy_Eng$Oct$
+$Zy_Tur$Ekim$
+$Zy_Ger$Okt$
+$Zy_Fre$Oct$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str72$
+$Zy_Eng$Nov$
+$Zy_Tur$Kas&#305;m$
+$Zy_Ger$Nov$
+$Zy_Fre$Nov$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str73$
+$Zy_Eng$Dec$
+$Zy_Tur$Aral&#305;k$
+$Zy_Ger$Dez$
+$Zy_Fre$D&#233;c$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str74$
+$Zy_Eng${{03}} {{Jan}} {{2011}} {{02}}:{{13}}:{{11}}$
+$Zy_Tur${{03}} {{Oca}} {{2011}} {{02}}: {{13}}: {{11}}$
+$Zy_Ger${{03}} {{Jan}} {{2011}} {{02}}:{{13}}:{{11}}$
+$Zy_Fre${{03}} {{Jan}} {{2011}} {{02}}:{{13}}:{{11}}$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str75$
+$Zy_Eng${{1}}H:{{2}}M:{{3}}S$
+$Zy_Tur${{1}}S: {{2}} D: {{3}} S$
+$Zy_Ger${{1}}H:{{2}}M:{{3}}S$
+$Zy_Fre${{1}}H:{{2}}M:{{3}}S$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str76$
+$Zy_Eng${{1}}Hours:{{2}}Minutes:{{3}}Seconds$
+$Zy_Tur${{1}} Saat: {{2}} Dakika: {{3}} Saniye$
+$Zy_Ger${{1}}Stunden:{{2}}Minuten:{{3}}Sekunden$
+$Zy_Fre${{1}}Heures:{{2}}Minutes:{{3}}Secondes$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str77$
+$Zy_Eng$WAN DNS servers$
+$Zy_Tur$WAN DNS sunucular&#305;$
+$Zy_Ger$WAN DNS Server$
+$Zy_Fre$Serveurs DNS WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str78$
+$Zy_Eng$WAN Default Gateway$
+$Zy_Tur$WAN Varsay&#305;lan A&#287; Ge&#231;idi$
+$Zy_Ger$WAN Standard-Gateway$
+$Zy_Fre$Passerelle WAN par d&#233;faut$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str79$
+$Zy_Eng$Network Device List$
+$Zy_Tur$A&#287; Cihaz Listesi$
+$Zy_Ger$Liste der Netzwerkger&#228;te$
+$Zy_Fre$Liste des appareils r&#233;seau$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str8$
+$Zy_Eng$LAN Information :$
+$Zy_Tur$Yerel A&#287; Bilgisi:$
+$Zy_Ger$LAN-Informationen:$
+$Zy_Fre$Informations LAN :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str8_1$
+$Zy_Eng$LAN Information$
+$Zy_Tur$Yerel A&#287; Bilgisi$
+$Zy_Ger$LAN-Informationen$
+$Zy_Fre$Informations LAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str80$
+$Zy_Eng$wired/wireless/speed (connected)$
+$Zy_Tur$kablolu / kablosuz / h&#305;zl&#305; (ba&#287;l&#305;)$
+$Zy_Ger$mit Kabel/kabellos/Geschwindigkeit (verbunden)$
+$Zy_Fre$c&#226;bl&#233;/sans fil/vitesse (connect&#233;)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str81$
+$Zy_Eng$IPv6 Link Local Address$
+$Zy_Tur$IPv6 Ba&#287;lant&#305;s&#305; Yerel Adres$
+$Zy_Ger$IPv6 Link Local Adresse$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str82$
+$Zy_Eng$DS-Lite Relay Server$
+$Zy_Tur$DS-Lite Aktarma Sunucusu$
+$Zy_Ger$DS-Lite Relay Server$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str83$
+$Zy_Eng$UnRegister$
+$Zy_Tur$Kayd&#305; Sil$
+$Zy_Ger$Registrierung zur&#252;cknehmen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str84$
+$Zy_Eng$Register$
+$Zy_Tur$Kaydol$
+$Zy_Ger$Registrieren$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str85$
+$Zy_Eng$SIP$
+$Zy_Tur$SIP$
+$Zy_Ger$SIP$
+$Zy_Fre$SIP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str86$
+$Zy_Eng$Inactive$
+$Zy_Tur$Aktif De&#287;il$
+$Zy_Ger$Inaktiv$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str87$
+$Zy_Eng$ChangeMe@ChangeMe$
+$Zy_Tur$De&#287;i&#351;tir@De&#287;i&#351;tir$
+$Zy_Ger$ChangeMe@ChangeMe$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str88$
+$Zy_Eng$SSID$
+$Zy_Tur$SSID$
+$Zy_Ger$SSID$
+$Zy_Fre$SSID$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str89$
+$Zy_Eng$Security$
+$Zy_Tur$G&#252;venlik$
+$Zy_Ger$Sicherheit$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str9$
+$Zy_Eng$DHCP:$
+$Zy_Tur$DHCP:$
+$Zy_Ger$DHCP:$
+$Zy_Fre$DHCP :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str90$
+$Zy_Eng$802.11 Mode$
+$Zy_Tur$802.11 Modu$
+$Zy_Ger$802.11 Modus$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str91$
+$Zy_Eng$Firewall$
+$Zy_Tur$G&#252;venlik Duvar&#305;$
+$Zy_Ger$Firewall$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str92$
+$Zy_Eng$System Mode$
+$Zy_Tur$Sistem Modu$
+$Zy_Ger$Systemmodus$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str93$
+$Zy_Eng$Power Supply$
+$Zy_Tur$G&#252;&#231; Kayna&#287;&#305;$
+$Zy_Ger$Stromversorgung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str94$
+$Zy_Eng$AC Adaptor$
+$Zy_Tur$AC Adapt&#246;r&#252;$
+$Zy_Ger$AC-Adapter$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str95$
+$Zy_Eng$UPS battery$
+$Zy_Tur$UPS pili$
+$Zy_Ger$USV-Batterie$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str96$
+$Zy_Eng$(UPS battery is low)$
+$Zy_Tur$(UPS pili zay&#305;f)$
+$Zy_Ger$(USV-Batterie ist schwach)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str97$
+$Zy_Eng$(UPS battery is not found)$
+$Zy_Tur$(UPS pili bulunamad&#305;)$
+$Zy_Ger$(USV-Batterie nicht gefunden)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str98$
+$Zy_Eng$6RD Relay Server$
+$Zy_Tur$6RD Aktarma Sunucusu$
+$Zy_Ger$6RD Relay Server$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str99$
+$Zy_Eng$Hybrid$
+$Zy_Tur$Hibrit$
+$Zy_Ger$Hybrid$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str100$
+$Zy_Eng$The UPS battery is low$
+$Zy_Tur$UPS pili zay&#305;f$
+$Zy_Ger$USV-Batterie ist schwach$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str101$
+$Zy_Eng$The battery will run out later and the Internet will be disconnected.$
+$Zy_Tur$Daha sonra pil bitecek ve internet ba&#287;lant&#305;s&#305; kesilecektir.$
+$Zy_Ger$Die Batterie wird demn&#228;chst leer sein und die Internetverbindung wird abgebaut.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str102$
+$Zy_Eng$The device is blocked successfully$
+$Zy_Tur$Cihaz ba&#351;ar&#305;yla bloke edildi$
+$Zy_Ger$Das Ger&#228;t wurde erfolgreich blockiert$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str103$
+$Zy_Eng$To change settings, you can go to$
+$Zy_Tur$Ayarlar&#305; de&#287;i&#351;tirmek i&#231;in, cihazlar&#305;n internete ba&#287;lanmalar&#305;na izin verebilece&#287;iniz ya da reddedebilece&#287;iniz. ...&#39; e gidebilirsiniz.$
+$Zy_Ger$Um Einstellungen zu &#228;ndern, gehen Sie zu$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str104$
+$Zy_Eng$where you can allow or deny devices to access the internet.$
+$Zy_Tur$where you can allow or deny devices to access the internet.$
+$Zy_Ger$wo Sie den Zugriff auf das Internet f&#252;r Ger&#228;te zulassen oder ablehnen k&#246;nnen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str105$
+$Zy_Eng$The UPS battery is not found$
+$Zy_Tur$UPS pili bulunamad&#305;$
+$Zy_Ger$USV-Batterie nicht gefunden$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str106$
+$Zy_Eng$Please confirm that the battery is properly connected in UPS system.$
+$Zy_Tur$Pilin d&#252;zg&#252;n bir &#351;ekilde UPS sistemine ba&#287;l&#305; oldu&#287;undan emin olunuz.$
+$Zy_Ger$Bitte stellen Sie sicher, dass die Batterie ordnungsgem&#228;&#223; an das USV-System angeschlossen ist.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_LastLoginTime$
+$Zy_Eng$Last Login Time:$
+$Zy_Tur$Son Giri&#351; Saati:$
+$Zy_Ger$Zeit der letzten Anmeldung$
+$Zy_Fre$Date de derni&#232;re connexion:$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_NotAvaliable$
+$Zy_Eng$Not Avaliable$
+$Zy_Tur$Kullan&#305;lam&#305;yor$
+$Zy_Ger$Nicht verf&#252;gbar$
+$Zy_Fre$Non disponibl$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Test_Str1$
+$Zy_Eng$navigate to first$
+$Zy_Tur$&#214;nce gez$
+$Zy_Ger$zum ersten Eintrag springen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Test_Str2$
+$Zy_Eng$refresh$
+$Zy_Tur$yenile $
+$Zy_Ger$Aktualisieren$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Test_Str3$
+$Zy_Eng$prev page$
+$Zy_Tur$&#246;nceki sayfa$
+$Zy_Ger$vorherige Seite$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Test_Str4$
+$Zy_Eng$next page$
+$Zy_Tur$sonraki sayfa$
+$Zy_Ger$n&#228;chste Seite$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_VD_Str1$
+$Zy_Eng$LAN{{1}} on$
+$Zy_Tur$Yerel A&#287; {{1}} a&#231;&#305;k$
+$Zy_Ger$LAN {{1}} EIN$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_VD_Str2$
+$Zy_Eng$wifi Signal on$
+$Zy_Tur$wifi Sinyal a&#231;&#305;k$
+$Zy_Ger$WLAN-Signal EIN$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_VD_Str3$
+$Zy_Eng$dsl line on$
+$Zy_Tur$dsl hatt&#305; a&#231;&#305;k$
+$Zy_Ger$DSL-Verbindung EIN$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_VD_Str4$
+$Zy_Eng$wan on$
+$Zy_Tur$wan a&#231;&#305;k$
+$Zy_Ger$WAN EIN$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_VD_Str5$
+$Zy_Eng$Virtual Device$
+$Zy_Tur$Sanal Cihaz$
+$Zy_Ger$Virtuelles Ger&#228;t$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_VD_Str6$
+$Zy_Eng$VOIP{{1}} on$
+$Zy_Tur$(null)$
+$Zy_Ger$VOIP {{1}} EIN$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_VD_Str7$
+$Zy_Eng$USB {{1}} on$
+$Zy_Tur$(null)$
+$Zy_Ger$USB {{1}} EIN$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Navi_Str1$
+$Zy_Eng$Connection Error$
+$Zy_Tur$Ba&#287;lant&#305; Hatas&#305;$
+$Zy_Ger$Verbindungsfehler$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Navi_Str2$
+$Zy_Eng$This device is disconnected from the Internet. Click Diagnose to check the problem.$
+$Zy_Tur$Cihaz internet ba&#287;lant&#305;s&#305; kesildi. Sorunu kontrol etmek Tan&#305;la&#39; ya t&#305;klay&#305;n&#305;z.$
+$Zy_Ger$Dieses Ger&#228;t ist nicht mit dem Internet verbunden. Bitte klicken Sie auf Diagnose, um das Problem zu pr&#252;fen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Navi_Str3$
+$Zy_Eng$Check the problems$
+$Zy_Tur$Sorunlar&#305; kontrol et$
+$Zy_Ger$Probleme pr&#252;fen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_ConnStatus_QuickStart_Str1$
+$Zy_Eng$Default Gateway:$
+$Zy_Tur$Varsay&#305;lan A&#287; Ge&#231;idi:$
+$Zy_Ger$Standard-Gateway:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str3$
+$Zy_Eng$Is there specific IP address information from your Internet Service Provider (ISP)?$
+$Zy_Tur$Internet Servis Sa&#287;lay&#305;c&#305;n&#305;z (ISS) taraf&#305;ndan verilmi&#351; &#246;zel bir IP adresi bilgisi var m&#305;?$
+$Zy_Ger$Haben Sie bestimmte IP-Adressinformationen von Ihrem Internet Service Provider (ISP)?$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str4$
+$Zy_Eng$Password:$
+$Zy_Tur$&#350;ifre:$
+$Zy_Ger$Kennwort:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_ConnStatus_QuickStart_Str5$
+$Zy_Eng$Please close this Quick Start window.$
+$Zy_Tur$L&#252;tfen bu H&#305;zl&#305; Ba&#351;lang&#305;&#231; &#8203;&#8203;penceresini kapat&#305;n&#305;z.$
+$Zy_Ger$Bitte schlie&#223;en Sie dieses Quickstart-Fenster.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str6$
+$Zy_Eng$Primary DNS Server:$
+$Zy_Tur$Birincil DNS Sunucusu:$
+$Zy_Ger$Prim&#228;rer DNS Server:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str7$
+$Zy_Eng$Result Summary$
+$Zy_Tur$Sonu&#231; &#214;zeti$
+$Zy_Ger$Zusammenfassung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str8$
+$Zy_Eng$Saving and applying configurations, please wait.$
+$Zy_Tur$Yap&#305;land&#305;rmalar kaydediliyor ve uygulan&#305;yor, l&#252;tfen bekleyiniz.$
+$Zy_Ger$Konfigurationen werden gespeichert und angewendet, bitte warten.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str9$
+$Zy_Eng$Secondary DNS Server:$
+$Zy_Tur$&#304;kincil DNS Sunucusu:$
+$Zy_Ger$Sekund&#228;rer DNS Server:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str10$
+$Zy_Eng$Security:$
+$Zy_Tur$G&#252;venlik:$
+$Zy_Ger$Sicherheit:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str14$
+$Zy_Eng$The following settings are the current wireless settings which your wireless client devices need in order to get connected to this device.$
+$Zy_Tur$A&#351;a&#287;&#305;daki ayarlar, bu cihaza ba&#287;lanmak i&#231;in kablosuz istemci cihazlar&#305;n&#305;z&#305;n gereksinim duydu&#287;u ge&#231;erli kablosuz ba&#287;lant&#305; ayarlar&#305;d&#305;r.$
+$Zy_Ger$Hier k&#246;nnen Sie das Drahtlose Netzwerk (Wireless LAN) ein- bzw. ausschalten, sowie die Sicherheitseinstellungen anpassen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str15$
+$Zy_Eng$Then the IP Address information will be dynamically assigned to you from your ISP.$
+$Zy_Tur$Daha sonra IP Adresi bilgileri, dinamik olarak ISS&#39; nizden size tahsis edilecektir.$
+$Zy_Ger$Dann werden Ihnen die IP-Adressinformationen dynamisch von Ihrem ISP zugewiesen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str16$
+$Zy_Eng$The wizard will guide you through the basic settings of this device. This will take about few minutes to complete. Click Next te begin.$
+$Zy_Tur$Sihirbaz, bu cihaz&#305;n temel ayarlar&#305; boyunca size rehberlik edecektir. Bu i&#351;lemin tamamlanmas&#305; birka&#231; dakika s&#252;recektir. Ba&#351;lamak i&#231;in &#304;leri&#39; yi t&#305;klay&#305;n&#305;z.$
+$Zy_Ger$Der Assistent f&#252;hrt Sie durch die Basiseinstellungen dieses Ger&#228;ts. Das dauert nur ein paar Minuten. Klicken Sie auf Weiter, um anzufangen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str17$
+$Zy_Eng$Time Zone:$
+$Zy_Tur$Zaman Dilimi:$
+$Zy_Ger$Zeitzone:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str18$
+$Zy_Eng$User Name:$
+$Zy_Tur$Kullan&#305;c&#305; Ad&#305;:$
+$Zy_Ger$Benutzername:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str20$
+$Zy_Eng$Wireless Network Name (SSID):$
+$Zy_Tur$Kablosuz A&#287; Ad&#305; (SSID):$
+$Zy_Ger$WLAN-Netzwerkname (SSID):$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str21$
+$Zy_Eng$Wireless Service:$
+$Zy_Tur$Kablosuz Hizmeti:$
+$Zy_Ger$Wireless-Service:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str23$
+$Zy_Eng$You have successfully walked through the Quick Start.$
+$Zy_Tur$H&#305;zl&#305; Ba&#351;lang&#305;&#231; ad&#305;m&#305;n&#305; ba&#351;ar&#305;yla g&#246;zden ge&#231;irdiniz.$
+$Zy_Ger$Sie haben den Quickstart erfolgreich absolviert.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str24$
+$Zy_Eng$Internet Connection$
+$Zy_Tur$&#304;nternet Ba&#287;lant&#305;s&#305;$
+$Zy_Ger$Internetverbindung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str25$
+$Zy_Eng$The current connection type is set to $
+$Zy_Tur$Ge&#231;erli ba&#287;lant&#305; t&#252;r&#252; .... i&#231;in ayarlanm&#305;&#351; $
+$Zy_Ger$Aktueller Verbindungstyp eingestellt auf  $
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str26$
+$Zy_Eng$Welcome to Quick Start wizard$
+$Zy_Tur$H&#305;zl&#305; Ba&#351;lang&#305;&#231; &#8203;&#8203;sihirbaz&#305;na ho&#351; geldiniz$
+$Zy_Ger$Willkommen zum Quickstart-Assistenten$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str27$
+$Zy_Eng$Wireless Setting$
+$Zy_Tur$Kablosuz Ayar&#305;$
+$Zy_Ger$Wireless-Einstellungen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str28$
+$Zy_Eng$ and needs a user name and password to get online.$
+$Zy_Tur$ ve &#231;evrimi&#231;i olmak i&#231;in bir kullan&#305;c&#305; ad&#305; ve &#351;ifre gerekmektedir.$
+$Zy_Ger$  und um online zu gehen, sind ein Benutzername und ein Kennwort erforderlich.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str31$
+$Zy_Eng$Step 2 of 3$
+$Zy_Tur$Ad&#305;m 2$
+$Zy_Ger$Schritt 2 von 3$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_ConnStatus_QuickStart_Str36$
+$Zy_Eng$Step 3 of 3$
+$Zy_Tur$Ad&#305;m 3$
+$Zy_Ger$Schritt 3 von 3$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_ConnStatus_QuickStart_Str37$
+$Zy_Eng$No$
+$Zy_Tur$Hayır$
+$Zy_Ger$Nein$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str38$
+$Zy_Eng$Step 1 of 3$
+$Zy_Tur$Ad&#305;m 1$
+$Zy_Ger$Schritt 1 von 3$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str39$
+$Zy_Eng$Ensure that the ethernet cable is securely connected among the router, splitter, and wall jack. To test physical connection again, click Retry.$
+$Zy_Tur$ Ethernet kablosunun y&#246;nlendirici, splitter ve priz aras&#305;na ba&#287;land&#305;&#287;&#305;ndan emin olunuz. Fiziki ba&#287;lant&#305;y&#305; s&#305;namak i&#231;in, Yeniden Dene se&#231;ene&#287;ine t&#305;klay&#305;n&#305;z.$
+$Zy_Ger$Stellen Sie sicher, dass das Ethernet-Kabel gut zwischen dem Router, dem Splitter und der Wandsteckdose befestigt ist. Um die physikalische Verbindung nochmals zu testen, klicken Sie auf Erneut probieren.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str40$
+$Zy_Eng$Internet connection$
+$Zy_Tur$&#304;nternet Ba&#287;lant&#305;s&#305;$
+$Zy_Ger$Internetverbindung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str41$
+$Zy_Eng$Physical connection$
+$Zy_Tur$Fiziksel ba&#287;lant&#305;$
+$Zy_Ger$Physikalische Verbindung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str42$
+$Zy_Eng$Uable to verify Internet connection. Ensure that your Internet service is valid and available. To Test Internet connection again, click Retry.$
+$Zy_Tur$&#304;nternet ba&#287;lant&#305;s&#305; do&#287;rulanam&#305;yor. &#304;nternet servisinizin ge&#231;erli ve kullan&#305;labilir oldu&#287;undan emin olunuz. &#304;nternet ba&#287;lant&#305;s&#305;n&#305; s&#305;namak i&#231;in, Yeniden Dene se&#231;ene&#287;ine t&#305;klay&#305;n&#305;z.$
+$Zy_Ger$Internetverbindung konnte nicht verifiziert werden. Stellen Sie sicher, dass Ihr Internet Service g&#252;ltig und verf&#252;gbar ist. Um die Internetverbindung nochmals zu testen, klicken Sie auf Erneut probieren.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str43$
+$Zy_Eng$mark$
+$Zy_Tur$i&#351;aretle $
+$Zy_Ger$Markierung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str44$
+$Zy_Eng$next (for demo)$
+$Zy_Tur$ileri (demo i&#231;in)$
+$Zy_Ger$weiter (f&#252;r Demo)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str45$
+$Zy_Eng$Default Gateway:$
+$Zy_Tur$Varsay&#305;lan A&#287; Ge&#231;idi:$
+$Zy_Ger$Standard-Gateway:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str46$
+$Zy_Eng$Is there specific IP address information from your Internet Service Provider (ISP)?$
+$Zy_Tur$Internet Servis Sa&#287;lay&#305;c&#305;n&#305;z (ISS) taraf&#305;ndan verilmi&#351; &#246;zel bir IP adresi bilgisi var m&#305;?$
+$Zy_Ger$Haben Sie bestimmte IP-Adressinformationen von Ihrem Internet Service Provider (ISP)?$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str47$
+$Zy_Eng$Password:$
+$Zy_Tur$&#350;ifre:$
+$Zy_Ger$Kennwort:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str48$
+$Zy_Eng$Primary DNS Server:$
+$Zy_Tur$Birincil DNS Sunucusu:$
+$Zy_Ger$Prim&#228;rer DNS Server:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str49$
+$Zy_Eng$Secondary DNS Server:$
+$Zy_Tur$&#304;kincil DNS Sunucusu:$
+$Zy_Ger$Sekund&#228;rer DNS Server:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str50$
+$Zy_Eng$The current connection type is set to Ethernrt. Is there specific IP address information from your Internet Service Provider (ISP)?$
+$Zy_Tur$Ge&#231;erli ba&#287;lant&#305; t&#252;r&#252; Ethernet i&#231;in ayarlanm&#305;&#351;. Internet Servis Sa&#287;lay&#305;c&#305;n&#305;z (ISS) taraf&#305;ndan verilmi&#351; &#246;zel bir IP adresi bilgisi var m&#305;?$
+$Zy_Ger$Der aktuelle Verbindungstyp ist eingestellt auf Ethernet. Haben Sie bestimmte IP-Adressinformationen von Ihrem Internet Service Provider (ISP)?$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str52$
+$Zy_Eng$Then the IP Address information will be dynamically assigned to you from your ISP.$
+$Zy_Tur$Daha sonra IP Adresi bilgileri, dinamik olarak ISS&#39; nizden size tahsis edilecektir.$
+$Zy_Ger$Dann werden Ihnen die IP-Adressinformationen dynamisch von Ihrem ISP zugewiesen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str53$
+$Zy_Eng$User Name:$
+$Zy_Tur$Kullan&#305;c&#305; Ad&#305;:$
+$Zy_Ger$Benutzername:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str54$
+$Zy_Eng$Verify Password:$
+$Zy_Tur$&#350;ifreyi Do&#287;rula:$
+$Zy_Ger$Kennwort nochmals eingeben:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str55$
+$Zy_Eng$ and needs a user name and password to get online.$
+$Zy_Tur$ ve &#231;evrimi&#231;i olmak i&#231;in bir kullan&#305;c&#305; ad&#305; ve &#351;ifre gerekmektedir.$
+$Zy_Ger$  und um online zu gehen, sind ein Benutzername und ein Kennwort erforderlich.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str56$
+$Zy_Eng$PPPoE$
+$Zy_Tur$PPPoE$
+$Zy_Ger$PPPoE$
+$Zy_Fre$PPPoE$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str57$
+$Zy_Eng$The current connection type is set to $
+$Zy_Tur$Ge&#231;erli ba&#287;lant&#305; t&#252;r&#252; .... i&#231;in ayarlanm&#305;&#351; $
+$Zy_Ger$Aktueller Verbindungstyp eingestellt auf  $
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str61$
+$Zy_Eng$The following list describes the errors occurred when saving and applying configurations. You can retry the saving and applying step, restart the Quick Start, or close the window.$
+$Zy_Tur$A&#351;a&#287;&#305;daki liste, yap&#305;land&#305;rmalar&#305; kaydederken ve uygularken olu&#351;an hatalar&#305; tan&#305;mlar. Ad&#305;m&#305; kaydetmeyi ve uygulamay&#305; yeniden deneyebilir, H&#305;zl&#305; Ba&#351;lang&#305;c&#305; &#8203;&#8203;yeniden ba&#351;latabilir veya pencereyi kapatabilirsiniz.$
+$Zy_Ger$In der folgenden Liste werden die Fehler beschrieben, die beim Speichern und Anwenden der Konfigurationen aufgetreten sind. Sie k&#246;nnen den Schritt Speichern und Anwenden nochmals ausf&#252;hren, den Quickstart neu starten oder das Fenster schlie&#223;en.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str58$
+$Zy_Eng$Unable to connect to the Internet$
+$Zy_Tur$&#304;nternete ba&#287;lanam&#305;yor.$
+$Zy_Ger$Verbindung zum Internet nicht m&#246;glich$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str59$
+$Zy_Eng$Unable to register &lt;SIP#&gt;$
+$Zy_Tur$H&#305;zl&#305; Ba&#351;lang&#305;&#231; ad&#305;m&#305;n&#305; Ba&#351;ar&#305;yla g&#246;zden ge&#231;irdiniz. lt;SIP# H&#305;zl&#305; Ba&#351;lang&#305;&#231;.gt ad&#305;m&#305;n&#305; Ba&#351;ar&#305;yla g&#246;zden ge&#231;irdiniz kayd&#305; yap&#305;lam&#305;yor;$
+$Zy_Ger$Registrierung nicht m&#246;glich &lt;SIP#&gt;$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str60$
+$Zy_Eng$You have successfully walked through the Quick Start.$
+$Zy_Tur$H&#305;zl&#305; Ba&#351;lang&#305;&#231; ad&#305;m&#305;n&#305; ba&#351;ar&#305;yla g&#246;zden ge&#231;irdiniz.$
+$Zy_Ger$Sie haben den Quickstart erfolgreich absolviert.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str62$
+$Zy_Eng$In order to make Internet calls, the following SIP and account information is essential. Consult your VoIP Service Provider if you need any help.$
+$Zy_Tur$&#304;nternet aramalar&#305; yapmak i&#231;in, a&#351;a&#287;&#305;daki SIP ve hesap bilgileri gereklidir. Yard&#305;ma ihtiyac&#305;n&#305;z varsa, VoIP Servis Sa&#287;lay&#305;c&#305;n&#305;za dan&#305;&#351;&#305;n&#305;z.$
+$Zy_Ger$Um Anrufe &#252;ber das Internet f&#252;hren zu k&#246;nnen, sind die folgenden SIP- und Kontoinformationen erforderlich. Bitte kontaktieren Sie Ihren VoIP Service Provider, wenn Sie Hilfe ben&#246;tigen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str63$
+$Zy_Eng$Password:$
+$Zy_Tur$&#350;ifre:$
+$Zy_Ger$Kennwort:$
+$Zy_Fre$Mot de passe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str64$
+$Zy_Eng$SIP1 Settings$
+$Zy_Tur$SIP1 Ayarlar$
+$Zy_Ger$SIP1 Einstellungen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str65$
+$Zy_Eng$SIP Number:$
+$Zy_Tur$SIP Numaras&#305;:$
+$Zy_Ger$SIP Nummer:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str66$
+$Zy_Eng$SIP Server Address:$
+$Zy_Tur$SIP Sunucu Adresi:$
+$Zy_Ger$SIP Server Adresse:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str67$
+$Zy_Eng$SIP Service Domain:$
+$Zy_Tur$SIP Hizmet Alan&#305;:$
+$Zy_Ger$SIP Service Domain:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str68$
+$Zy_Eng$User Name:$
+$Zy_Tur$Kullan&#305;c&#305; Ad&#305;:$
+$Zy_Ger$Benutzername:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str69$
+$Zy_Eng$I want to configure SIP2 settings$
+$Zy_Tur$SIP2 ayarlar&#305;n&#305; yap&#305;land&#305;rmak istiyorum$
+$Zy_Ger$Ich m&#246;chte SIP2 Einstellungen konfigurieren$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_ConnStatus_QuickStart_Str70$
+$Zy_Eng$Saving and applying configurations, please wait.$
+$Zy_Tur$Yap&#305;land&#305;rmalar kaydediliyor ve uygulan&#305;yor, l&#252;tfen bekleyin.$
+$Zy_Ger$Konfigurationen werden gespeichert und angewendet, bitte warten.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str71$
+$Zy_Eng$Deutsch$
+$Zy_Tur$Almanca$
+$Zy_Ger$Deutsch$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str72$
+$Zy_Eng$English$
+$Zy_Tur$&#304;ngilizce $
+$Zy_Ger$Englisch$
+$Zy_Fre$Anglais$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str73$
+$Zy_Eng$EspaFranItalianoccedil;aisntilde;ol$
+$Zy_Tur$EspaFranItalianoccedil; aisntilde; ol$
+$Zy_Ger$EspaFranItalianoccedil;aisntilde;ol$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str74$
+$Zy_Eng$FranItalianoccedil;ais$
+$Zy_Tur$FranItalianoccedil; ais$
+$Zy_Ger$Franz&#246;sisch$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str75$
+$Zy_Eng$Italiano$
+$Zy_Tur$&#304;talyanca$
+$Zy_Ger$Italienisch$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str76$
+$Zy_Eng$Language:$
+$Zy_Tur$Dil:$
+$Zy_Ger$Sprache:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str77$
+$Zy_Eng$The wizard will guide you through the basic settings of this device. This will take about few minutes to complete. Click Next te begin.$
+$Zy_Tur$Sihirbaz, bu cihaz&#305;n temel ayarlar&#305; boyunca size rehberlik edecektir. Bu i&#351;lemin tamamlanmas&#305; birka&#231; dakika s&#252;recektir. Ba&#351;lamak i&#231;in &#304;leri&#39; yi t&#305;klay&#305;n&#305;z.$
+$Zy_Ger$Der Assistent f&#252;hrt Sie durch die Basiseinstellungen dieses Ger&#228;ts. Das dauert nur ein paar Minuten. Klicken Sie auf Weiter, um anzufangen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str78$
+$Zy_Eng$Password:$
+$Zy_Tur$&#350;ifre:$
+$Zy_Ger$Kennwort:$
+$Zy_Fre$Mot de passe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str79$
+$Zy_Eng$Security:$
+$Zy_Tur$G&#252;venlik:$
+$Zy_Ger$Sicherheit:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str80$
+$Zy_Eng$The following settings are the current wireless settings which your wireless client devices need in order to get connected to this device.$
+$Zy_Tur$A&#351;a&#287;&#305;daki ayarlar, bu cihaza ba&#287;lanmak i&#231;in kablosuz istemci cihazlar&#305;n&#305;z&#305;n gereksinim duydu&#287;u ge&#231;erli kablosuz ba&#287;lant&#305; ayarlar&#305;d&#305;r.$
+$Zy_Ger$Die folgenden Einstellungen sind die aktuellen Wireless-Einstellungen, die Ihre Wireless Clients ben&#246;tigen, um sich mit diesem Ger&#228;t verbinden zu k&#246;nnen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str81$
+$Zy_Eng$Wireless Network Name (SSID):$
+$Zy_Tur$Kablosuz A&#287; Ad&#305; (SSID):$
+$Zy_Ger$WLAN-Netzwerkname (SSID):$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str82$
+$Zy_Eng$Wireless Service:$
+$Zy_Tur$Kablosuz Hizmeti:$
+$Zy_Ger$Wireless-Service:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str83$
+$Zy_Eng$WPA2$
+$Zy_Tur$WPA2$
+$Zy_Ger$WPA2$
+$Zy_Fre$WPA2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str84$
+$Zy_Eng$1234567$
+$Zy_Tur$1234567$
+$Zy_Ger$1234567$
+$Zy_Fre$1234567$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str85$
+$Zy_Eng$ZyXEL$
+$Zy_Tur$ZyXEL$
+$Zy_Ger$ZyXEL$
+$Zy_Fre$ZyXEL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str86$
+$Zy_Eng$Please choose the correct type of connection for the Internet connection$
+$Zy_Tur$(null)$
+$Zy_Ger$Bitte w&#228;hlen Sie den richtigen Verbindungstyp f&#252;r die Internetverbindung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str87_1$
+$Zy_Eng$When you’re finished and are ready to go to the next step, press$
+$Zy_Tur$(null)$
+$Zy_Ger$Wenn Sie Ihre Eingaben beendet haben gehen Sie mit$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str87_2$
+$Zy_Eng$.$
+$Zy_Tur$(null)$
+$Zy_Ger$ zum n&#228;chsten Schritt.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str88$
+$Zy_Eng$The wizard will guide you through the basic settings of this device. This will take about few minutes to complete.$
+$Zy_Tur$Sihirbaz, bu cihaz&#305;n temel ayarlar&#305; boyunca size rehberlik edecektir. Bu i&#351;lemin tamamlanmas&#305; birka&#231; dakika s&#252;recektir.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str89$
+$Zy_Eng$Please close this Easy setup window.$
+$Zy_Tur$Bu Kolay kurulum penceresini kapat&#305;n.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_QuickStart_Str90$
+$Zy_Eng$You have successfully walked through the Easy Setup.$
+$Zy_Tur$Ba&#351;ar&#305;yla Kolay Kurulum ile y&#252;r&#252;d&#252;.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_AlertMsg_Str1$
+$Zy_Eng$Duplicate static lease information! Please check the host name.$
+$Zy_Tur$Tekrar eden statik kiralama bilgisi! L&#252;tfen host ad&#305;n&#305; kontrol edniz.$
+$Zy_Ger$Doppelte Informationen f&#252;r Static Lease! Bitte Hostnamen pr&#252;fen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_AlertMsg_Str11$
+$Zy_Eng$IP Address \'{{1}}\' is invalid IP format.$
+$Zy_Tur$\'{{1}}\' IP Adresi, ge&#231;ersiz IP format&#305;ndad&#305;r.$
+$Zy_Ger$IP-Adresse \'{{1}}\' hat ung&#252;ltiges IP-Format.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_AlertMsg_Str12$
+$Zy_Eng$Subnet Mask \'{{1}}\' is invalid subnet mask format.$
+$Zy_Tur$\'{{1}}\' Alt a&#287; maskesi, ge&#231;ersiz alt a&#287; maskesi format&#305;ndad&#305;r.$
+$Zy_Ger$Subnetzmaske \'{{1}}\' hat ung&#252;ltiges Subnetzmasken-Format.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_AlertMsg_Str13$
+$Zy_Eng$Default Gateway \'{{1}}\' is invalid IP format.$
+$Zy_Tur$\'{{1}}\' Varsay&#305;lan A&#287; Ge&#231;idi, ge&#231;ersiz IP format&#305;ndad&#305;r.$
+$Zy_Ger$Standard-Gateway \'{{1}}\' hat ung&#252;ltiges IP-Format.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_AlertMsg_Str14$
+$Zy_Eng$Primary DNS \'{{1}}\' is invalid IP format.$
+$Zy_Tur$Birincil DNS \'{{1}}\', ge&#231;ersiz IP format&#305;ndad&#305;r.$
+$Zy_Ger$Prim&#228;rer DNS \'{{1}}\' hat ung&#252;ltiges IP-Format.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_AlertMsg_Str15$
+$Zy_Eng$Secondary DNS \'{{1}}\' is invalid IP format.$
+$Zy_Tur$&#304;kincil DNS \'{{1}}\', ge&#231;ersiz IP format&#305;ndad&#305;r.$
+$Zy_Ger$Sekund&#228;rer DNS \'{{1}}\' hat ung&#252;ltiges IP-Format.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_NetworkMap_Str8_1$
+$Zy_Eng$Connection Rate$
+$Zy_Tur$Ba&#287;lant&#305; H&#305;z&#305;$
+$Zy_Ger$Verbindungsrate$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str107$
+$Zy_Eng$days$
+$Zy_Tur$g&#252;n$
+$Zy_Ger$Tage$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str108$
+$Zy_Eng$hours$
+$Zy_Tur$saat$
+$Zy_Ger$Stunden$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str109$
+$Zy_Eng$minutes$
+$Zy_Tur$dakika$
+$Zy_Ger$Minuten$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_Str110$
+$Zy_Eng$seconds$
+$Zy_Tur$saniye$
+$Zy_Ger$Sekunden$
+$Zy_Fre$secondes$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_VOIP_Registration$
+$Zy_Eng$Registration$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$d&#39;enregistrement$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_ConnStatus_Status_VOIP_Registration_Time$
+$Zy_Eng$Registration Time$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$d&#39;enregistrement$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_ConnStatus_Status_InterfaceStatus_title$
+$Zy_Eng$Interface Status$
+$Zy_Tur$Aray&#252;z Durumu$
+$Zy_Ger$(null)$
+$Zy_Fre$Interface Status$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_InterfaceStatus_Interface$
+$Zy_Eng$Interface$
+$Zy_Tur$Aray&#252;z$
+$Zy_Ger$(null)$
+$Zy_Fre$Interface$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_InterfaceStatus_Status$
+$Zy_Eng$Status$
+$Zy_Tur$Durum$
+$Zy_Ger$(null)$
+$Zy_Fre$Status$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_InterfaceStatus_Rate$
+$Zy_Eng$Rate$
+$Zy_Tur$Oran$
+$Zy_Ger$(null)$
+$Zy_Fre$Rate$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_InterfaceStatus_Need_PIN$
+$Zy_Eng$Need PIN$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$Need PIN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_InterfaceStatus_No_Response$
+$Zy_Eng$No Response$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$No Response$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_InterfaceStatus_Damaged_SIM$
+$Zy_Eng$Damaged SIM$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$Damaged SIM$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_InterfaceStatus_Need_PUK$
+$Zy_Eng$Need PUK$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$Need PUK$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_IS_PIN_str1$
+$Zy_Eng$3G Warning Status$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$3G Warning Status$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_IS_PIN_str2$
+$Zy_Eng$Incorrect PIN code$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$Incorrect PIN code$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_IS_PIN_str3$
+$Zy_Eng$Enter PIN code again$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$Enter PIN code again$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_IS_PIN_str4$
+$Zy_Eng$Pin Left Error Times$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$Pin Left Error Times$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_IS_PIN_str5$
+$Zy_Eng$Entering the wrong PIN code 3 times will lock SIM card.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$Entering the wrong PIN code 3 times will lock SIM card.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_IS_PUK_str1$
+$Zy_Eng$SIM card is locked$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$SIM card is locked$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_IS_PUK_str2$
+$Zy_Eng$Enter PUK code and new PIN code to unlock.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$Enter PUK code and new PIN code to unlock.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_IS_PUK_str3$
+$Zy_Eng$PUK code$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$PUK code$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_IS_PUK_str4$
+$Zy_Eng$New PIN code$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$New PIN code$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_IS_PUK_str5$
+$Zy_Eng$PUK Left Error Times$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$PUK Left Error Times$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_IS_PUK_str6$
+$Zy_Eng$(1) Please contact your service provider for PUK code.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(1) Please contact your service provider for PUK code.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_IS_PUK_str7$
+$Zy_Eng$(2) If Unlock Retry Counter reaches 0, your SIM card will be permanently damaged.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(2) If Unlock Retry Counter reaches 0, your SIM card will be permanently damaged.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_IS_str1$
+$Zy_Eng$SIM card is not inserted or damaged.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$SIM card is not inserted or damaged.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_IS_str2$
+$Zy_Eng$Please check SIM card again.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$Please check SIM card again.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_IS_str3$
+$Zy_Eng$3G Card is not responding.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$3G Card is not responding.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_Status_IS_str4$
+$Zy_Eng$Please check if the 3G card is well plug-in the device.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$Please check if the 3G card is well plug-in the device.$
+$Zy_Ita$(null)$
+
+/*-----no_dsl_connection-----(troubleshooting1.html or troubleshooting6.html)*/
+$NAME$MLG_ConnStatus_TroubleShoot_NoDSL_Str1$
+$Zy_Eng$Physical line in not properly connected$
+$Zy_Tur$Fiziksel ba&#287;lant&#305; uygun &#351;ekilde kurulamad&#305;.$
+$Zy_Ger$Physical line in not properly connected$
+$Zy_Fre$Physical line in not properly connected$
+$Zy_Ita$Physical line in not properly connected$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoDSL_Str2$
+$Zy_Eng$No DSL connection$
+$Zy_Tur$DSL ba&#287;lant&#305;s&#305; yok.$
+$Zy_Ger$No DSL connection$
+$Zy_Fre$No DSL connection$
+$Zy_Ita$No DSL connection$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoDSL_Str3$
+$Zy_Eng$DSL connection error occurred. The following information might help you resolve the error.$
+$Zy_Tur$DSL ba&#287;lant&#305; hatas&#305; olu&#351;tu.A&#351;a&#287;&#305;daki bilgi hatay&#305; &#231;&#246;zmenize yard&#305;mc&#305; olabilir.$
+$Zy_Ger$DSL connection error occurred. The following information might help you resolve the error.$
+$Zy_Fre$DSL connection error occurred. The following information might help you resolve the error.$
+$Zy_Ita$DSL connection error occurred. The following information might help you resolve the error.$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoDSL_Str4$
+$Zy_Eng$Your router has not established a DSL connection to your local exchange. The DSL light on the router will blink while it is trying to connect, and stay on if it connects successfully.$
+$Zy_Tur$Y&#246;nlendiriciniz yerel santralinize DSL ba&#287;lant&#305;s&#305; kuramad&#305;. Y&#246;nlendiriciniz ba&#287;lant&#305;y&#305; sa&#287;lamaya &#231;al&#305;&#351;&#305;yorsa  DSL &#305;&#351;&#305;&#287;&#305; yan&#305;p s&#246;necek,e&#287;er DSL &#305;&#351;&#305;&#287;&#305; sabitleniyorsa ba&#287;lant&#305; ba&#351;ar&#305;yla sa&#287;lan&#305;r.$
+$Zy_Ger$Your router has not established a DSL connection to your local exchange. The DSL light on the router will blink while it is trying to connect, and stay on if it connects successfully.$
+$Zy_Fre$Your router has not established a DSL connection to your local exchange. The DSL light on the router will blink while it is trying to connect, and stay on if it connects successfully.$
+$Zy_Ita$Your router has not established a DSL connection to your local exchange. The DSL light on the router will blink while it is trying to connect, and stay on if it connects successfully.$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoDSL_Str5$
+$Zy_Eng$Your VoIP calls can not be made at this situation.$
+$Zy_Tur$Bu durumda VoIP aramalar&#305; yap&#305;lamaz.$
+$Zy_Ger$Your VoIP calls can not be made at this situation.$
+$Zy_Fre$Your VoIP calls can not be made at this situation.$
+$Zy_Ita$Your VoIP calls can not be made at this situation.$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoDSL_Str6$
+$Zy_Eng$After checking for$
+$Zy_Tur$ $
+$Zy_Ger$After checking for$
+$Zy_Fre$After checking for$
+$Zy_Ita$After checking for$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoDSL_Str7$
+$Zy_Eng$common connection problems$
+$Zy_Tur$yayg&#305;n ba&#287;lant&#305; problemlerini$
+$Zy_Ger$common connection problems$
+$Zy_Fre$common connection problems$
+$Zy_Ita$common connection problems$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoDSL_Str8$
+$Zy_Eng$please recheck the connection status. If the router still cannot connect, contact your ISP for technical assistance.$
+$Zy_Tur$kontrol ettikten sonra l&#252;tfen ba&#287;lant&#305; durumunu tekrar kontrol ediniz. e&#287;er y&#246;nlendiriciniz hala ba&#287;lanam&#305;yorsa l&#252;tfen teknik destek i&#231;in ISP'niz ile ileti&#351;ime ge&#231;iniz.$
+$Zy_Ger$please recheck the connection status. If the router still cannot connect, contact your ISP for technical assistance.$
+$Zy_Fre$please recheck the connection status. If the router still cannot connect, contact your ISP for technical assistance.$
+$Zy_Ita$please recheck the connection status. If the router still cannot connect, contact your ISP for technical assistance.$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoDSL_Str9$
+$Zy_Eng$Common Connection Problems$
+$Zy_Tur$Yayg&#305;n ba&#287;lant&#305; problemlerini$
+$Zy_Ger$Common Connection Problems$
+$Zy_Fre$Common Connection Problems$
+$Zy_Ita$Common Connection Problems$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoDSL_Str10$
+$Zy_Eng$The router might simply not have had enough time to connect yet. This process can take a few minutes to complete after you turn on the router. Try waiting a while to see if the DSL light blinks and then stays on.$
+$Zy_Tur$Y&#246;nlendiriciniz ba&#287;lanmak i&#231;in yeterli zamana sahip olmam&#305;&#351; olabilir. Bu i&#351;lem i&#231;in y&#246;nlendiriniz a&#231;&#305;ld&#305;ktan sonra birka&#231; dakika zaman alabilir. E&#287;er DSL &#305;&#351;&#305;&#287;&#305;n&#305;z yan&#305;p s&#246;n&#252;yorsa birka&#231; dakika sabitlenmesi i&#231;in l&#252;tfen bekleyiniz.$
+$Zy_Ger$The router might simply not have had enough time to connect yet. This process can take a few minutes to complete after you turn on the router. Try waiting a while to see if the DSL light blinks and then stays on.$
+$Zy_Fre$The router might simply not have had enough time to connect yet. This process can take a few minutes to complete after you turn on the router. Try waiting a while to see if the DSL light blinks and then stays on.$
+$Zy_Ita$The router might simply not have had enough time to connect yet. This process can take a few minutes to complete after you turn on the router. Try waiting a while to see if the DSL light blinks and then stays on.$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoDSL_Str11$
+$Zy_Eng$Maybe you have not connected the router to your phone line yet or have connected the phone cable (or microfilters if you are using them) incorrectly. Ensure you have followed the cabling instructions provided by your internet service provider.$
+$Zy_Tur$Y&#246;nlendiricinizi telefon hatt&#305;na ba&#287;lamam&#305;&#351; veya telefon kablonuzu(veya e&#287;er kullan&#305;yorsan&#305;z splitter'&#305;n&#305;z&#305;) d&#252;zg&#252;n bir &#351;ekilde ba&#287;lamam&#305;&#351; olabilirsiniz. L&#252;tfen internet sa&#287;lay&#305;c&#305;n&#305;z taraf&#305;ndan size verilen kablolama y&#246;nergesini do&#287;ru &#351;ekilde uygulad&#305;&#287;&#305;n&#305;zdan emin olunuz.$
+$Zy_Ger$Maybe you have not connected the router to your phone line yet or have connected the phone cable (or microfilters if you are using them) incorrectly. Ensure you have followed the cabling instructions provided by your internet service provider.$
+$Zy_Fre$Maybe you have not connected the router to your phone line yet or have connected the phone cable (or microfilters if you are using them) incorrectly. Ensure you have followed the cabling instructions provided by your internet service provider.$
+$Zy_Ita$Maybe you have not connected the router to your phone line yet or have connected the phone cable (or microfilters if you are using them) incorrectly. Ensure you have followed the cabling instructions provided by your internet service provider.$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoDSL_Str12$
+$Zy_Eng$Poor quality internal telephone cabling, or too many devices connected to the line, can affect the DSL signal. Try connecting your router to your main phone socket or unplugging all other telephones etc. from the line.$
+$Zy_Tur$Zay&#305;f kalitedeki dahili kablolama veya hatta ba&#287;l&#305; &#231;ok say&#305;da cihaz DSL sinyalini d&#252;&#351;&#252;r&#252;yor olabilir. Y&#246;nlendiricinizi l&#252;tfen direkt ana telefon soketine ba&#287;lamay&#305; ve di&#287;er b&#252;t&#252;n telefonlar&#305; hattan &#231;&#305;karmay&#305; deneyiniz.$
+$Zy_Ger$Poor quality internal telephone cabling, or too many devices connected to the line, can affect the DSL signal. Try connecting your router to your main phone socket or unplugging all other telephones etc. from the line.$
+$Zy_Fre$Poor quality internal telephone cabling, or too many devices connected to the line, can affect the DSL signal. Try connecting your router to your main phone socket or unplugging all other telephones etc. from the line.$
+$Zy_Ita$Poor quality internal telephone cabling, or too many devices connected to the line, can affect the DSL signal. Try connecting your router to your main phone socket or unplugging all other telephones etc. from the line.$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoDSL_Str13$
+$Zy_Eng$If you have multiple phone lines, ensure you are using the one that is DSL activated.$
+$Zy_Tur$E&#287;er birden fazla telefon hatt&#305; kullan&#305;yorsan&#305;z, DSL'i aktive edilmi&#351; hatt&#305; kulland&#305;&#287;&#305;n&#305;zdan emin olunuz.$
+$Zy_Ger$If you have multiple phone lines, ensure you are using the one that is DSL activated.$
+$Zy_Fre$If you have multiple phone lines, ensure you are using the one that is DSL activated.$
+$Zy_Ita$If you have multiple phone lines, ensure you are using the one that is DSL activated.$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoDSL_Str14$
+$Zy_Eng$There are other possible reasons for your router not connecting, including the possibility that DSL service has not been activated for your phone line yet.$
+$Zy_Tur$Y&#246;nlendiricinizin ba&#287;lanamamas&#305;n&#305;n, DSL sevisinizin telefon hatt&#305;n&#305;zda hen&#252;z aktive edilmemi&#351; olmas&#305; gibi di&#287;er nedenleri olabilir.$
+$Zy_Ger$There are other possible reasons for your router not connecting, including the possibility that DSL service has not been activated for your phone line yet.$
+$Zy_Fre$There are other possible reasons for your router not connecting, including the possibility that DSL service has not been activated for your phone line yet.$
+$Zy_Ita$There are other possible reasons for your router not connecting, including the possibility that DSL service has not been activated for your phone line yet.$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoDSL_Str15$
+$Zy_Eng$No connection$
+$Zy_Tur$ba&#287;lant&#305;s&#305; yok.$
+$Zy_Ger$No connection$
+$Zy_Fre$No DSL connection$
+$Zy_Ita$No DSL connection$
+
+/*-----no_fiber_connection-----(troubleshooting1.html or troubleshooting6.html)*/
+$NAME$MLG_ConnStatus_TroubleShoot_NoFiber_Str1$
+$Zy_Eng$No Fiber connection$
+$Zy_Tur$Fiber ba&#287;lant&#305;s&#305; yok.$
+$Zy_Ger$No Fiber connection$
+$Zy_Fre$No Fiber connection$
+$Zy_Ita$No Fiber connection$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoFiber_Str2$
+$Zy_Eng$Fiber connection error occurred. The following information might help you resolve the error.$
+$Zy_Tur$Fiber ba&#287;lant&#305; hatas&#305; olu&#351;tu.A&#351;a&#287;&#305;daki bilgi hatay&#305; &#231;&#246;zmenize yard&#305;mc&#305; olabilir.$
+$Zy_Ger$Fiber connection error occurred. The following information might help you resolve the error.$
+$Zy_Fre$Fiber connection error occurred. The following information might help you resolve the error.$
+$Zy_Ita$Fiber connection error occurred. The following information might help you resolve the error.$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoFiber_Str3$
+$Zy_Eng$Your gateway(modem) has not established a connection to your local exchange.$
+$Zy_Tur$A&#x011F; geçidiniz (modem) yerel santralinize Fiber Hat ba&#x011F;lant&#x0131;s&#x0131; kuramad&#x0131;.$
+$Zy_Ger$Your gateway(modem) has not established a connection to your local exchange.$
+$Zy_Fre$Your gateway(modem) has not established a connection to your local exchange.$
+$Zy_Ita$Your gateway(modem) has not established a connection to your local exchange.$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoFiber_Str4$
+$Zy_Eng$After checking for common connection problems please re-check the connection status.If the gateway(modem) still cannot connect to Internet, please contact your ISP for technical support.$
+$Zy_Tur$Yayg&#x0131;n ba&#x011F;lant&#x0131; problem ve çözümlerini kontrol ettikten sonra lütfen tekrar deneyiniz.E&#x011F;er A&#x011F; geçidiniz (modem) hala internete ba&#x011F;lanam&#x0131;yorsa lütfen teknik destek için internet servis sa&#x011F;lay&#x0131;c&#x0131;n&#x0131;z ile ileti&#x015F;ime geçiniz.$
+$Zy_Ger$After checking for common connection problems please re-check the connection status.If the gateway(modem) still cannot connect to Internet, please contact your ISP for technical support.$
+$Zy_Fre$After checking for common connection problems please re-check the connection status.If the gateway(modem) still cannot connect to Internet, please contact your ISP for technical support.$
+$Zy_Ita$After checking for common connection problems please re-check the connection status.If the gateway(modem) still cannot connect to Internet, please contact your ISP for technical support.$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoFiber_Str5$
+$Zy_Eng$Firstly please check the points listed below:$
+$Zy_Tur$Lütfen öncelikle yayg&#x0131;n ba&#x011F;lant&#x0131; problemlerine neden olan a&#x015F;a&#x011F;&#x0131;daki noktalar&#x0131; kontrol ediniz.$
+$Zy_Ger$Firstly please check the points listed below:$
+$Zy_Fre$Firstly please check the points listed below:$
+$Zy_Ita$Firstly please check the points listed below:$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoFiber_Str6$
+$Zy_Eng$Make sure that the fiber line is connected to WAN port coloured blue.$
+$Zy_Tur$Fiber ba&#x011F;lant&#x0131; kablonuzun modemin arkas&#x0131;ndaki mavi renkli WAN portuna tak&#x0131;l&#x0131;l&#x0131; oldugundan emin olunuz.$
+$Zy_Ger$Make sure that the fiber line is connected to WAN port coloured blue.$
+$Zy_Fre$Make sure that the fiber line is connected to WAN port coloured blue.$
+$Zy_Ita$Make sure that the fiber line is connected to WAN port coloured blue.$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoFiber_Str7$
+$Zy_Eng$If fiber line is connected, please make sure Internet LED is flashing green. Internet LED is the 3rd one from the left on front of the gateway(modem).$
+$Zy_Tur$WAN portuna kablo tak&#x0131;l&#x0131; ise modemin ön taraf&#x0131;nda soldan 3. konumdaki Internet LED'inin ye&#x015F;il renkte yand&#x0131;&#x011F;&#x0131;ndan emin olunuz.$
+$Zy_Ger$If fiber line is connected, please make sure Internet LED is flashing green. Internet LED is the 3rd one from the left on front of the gateway(modem).$
+$Zy_Fre$If fiber line is connected, please make sure Internet LED is flashing green. Internet LED is the 3rd one from the left on front of the gateway(modem).$
+$Zy_Ita$If fiber line is connected, please make sure Internet LED is flashing green. Internet LED is the 3rd one from the left on front of the gateway(modem).$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoFiber_Str8$
+$Zy_Eng$Please make sure the cable that you have connected to WAN port is not damaged.$
+$Zy_Tur$WAN portuna ba&#x011F;lad&#x0131;&#x011F;&#x0131;n&#x0131;z kablonun sa&#x011F;lam oldugundan emin olunuz.$
+$Zy_Ger$Please make sure the cable that you have connected to WAN port is not damaged.$
+$Zy_Fre$Please make sure the cable that you have connected to WAN port is not damaged.$
+$Zy_Ita$Please make sure the cable that you have connected to WAN port is not damaged.$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoFiber_Str9$
+$Zy_Eng$Please make sure Light ON/OFF switch is ON behind the gateway(modem).$
+$Zy_Tur$A&#x011F; geçidinizin (modem) arkas&#x0131;ndaki Light ON/OFF anahtar&#x0131;n&#x0131;n ON konumunda oldu&#x011F;undan emin olunuz.$
+$Zy_Ger$Please make sure Light ON/OFF switch is ON behind the gateway(modem).$
+$Zy_Fre$Please make sure Light ON/OFF switch is ON behind the gateway(modem).$
+$Zy_Ita$Please make sure Light ON/OFF switch is ON behind the gateway(modem).$
+
+/*-----no_wlan_security----*/
+$NAME$MLG_ConnStatus_TroubleShoot_NoWlanSecurity_Str1$
+$Zy_Eng$Wireless security is currently disabled $
+$Zy_Tur$Kablosuz g&#252;venli&#287;i &#351;u an i&#231;in aktif de&#287;ildir$
+$Zy_Ger$Die WLAN Schnittstelle ist nicht gesichert!$
+$Zy_Fre$La securite sans fil est actuellement desactive$
+$Zy_Ita$Security wireless disabilitata$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoWlanSecurity_Str2$
+$Zy_Eng$Wireless security error occurred. $
+$Zy_Tur$Kablosuz g&#252;venlik hatas&#305; ortaya &#231;&#305;kt&#305;$
+$Zy_Ger$WLAN Sicherheitsfehler!$
+$Zy_Fre$Une erreur de la securite sans fil a eu lieu. $
+$Zy_Ita$Errore nella cifratura wirelesss. $
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoWlanSecurity_Str3$
+$Zy_Eng$The following information can help you resolve the error. $
+$Zy_Tur$A&#351;a&#287;&#305;daki bilgi hatay&#305; &#231;&#246;zmenize yard&#305;mc&#305; olabilir.$
+$Zy_Ger$Die folgenden Information helfen vielleicht bei der L&#246;sung des Problems.$
+$Zy_Fre$L information suivante peut vous aider a resoudre l erreur.$
+$Zy_Ita$La seguente informazione potrebbe aiutare a risolvere l'errore.$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoWlanSecurity_Str4$
+$Zy_Eng$Unsecured Connection $
+$Zy_Tur$G&#252;venliksiz Ba&#287;lant&#305; $
+$Zy_Ger$unsichere Verbindung$
+$Zy_Fre$Connexion connexion non securisee$
+$Zy_Ita$Collegamento insicuro $
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoWlanSecurity_Str5$
+$Zy_Eng$Your wireless security is currently disabled. $
+$Zy_Tur$Kablosuz g&#252;venli&#287;iniz &#351;u an i&#231;in aktif de&#287;ildir.$
+$Zy_Ger$Die Sicherheitseinstellungen sind momentan deaktiviert.$
+$Zy_Fre$Votre securite sans fil est actuellement desactive.$
+$Zy_Ita$La security wireless &#232; disabilitata. $
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoWlanSecurity_Str6$
+$Zy_Eng$Please enable your wireless security to avoid connection of unauthorized people. $
+$Zy_Tur$Yetkisiz ki&#351;ilerin modeminize ve a&#287;&#305;n&#305;za eri&#351;memesi i&#231;in kablosuz g&#252;venli&#287;inizi aktif hale getiriniz.$
+$Zy_Ger$Bitte schalten Sie die Sicherheiteinstellungen auf der WLAN Schnittstelle ein, damit Fremde keinen Zugiff auf Ihr Netzwerk haben.$
+$Zy_Fre$S.V.P.  Activer la securite sans fil pour que les personnes non autorisees n accede pas votre reseau$
+$Zy_Ita$Attiva la security wireless per evitare accessi non autorizzati alla tua rete$
+
+$NAME$MLG_ConnStatus_TroubleShoot_NoWlanSecurity_Str7$
+$Zy_Eng$Wireless Setting$
+$Zy_Tur$Kablosuz Ayar&#305;$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+/*-----Remote Access Precautions----*/
+$NAME$MLG_ConnStatus_TroubleShoot_Password_Changed_Str1$
+$Zy_Eng$Dear User$
+$Zy_Tur$Değerli Kullanıcımız$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_TroubleShoot_Password_Changed_Str2$
+$Zy_Eng$In order to use safe internet session, we recommend you to update GUI password. Please contact the modem administrator.$
+$Zy_Tur$Güvenli İnternet kullanımına devam edebilmeniz için 'Modem Arayüz Şifresi'ni güncellemenizi tavsiye ediyoruz. Lütfen modem yöneticinize bilgi veriniz.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_TroubleShoot_Password_Changed_Str3$
+$Zy_Eng$For further information and support:$
+$Zy_Tur$Ayrıntılı bilgi ve destek için$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_TroubleShoot_Password_Changed_Str4$
+$Zy_Eng$http://www.zyxel.com/tr/tr/$
+$Zy_Tur$http://www.zyxel.com/tr/tr/$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_ConnStatus_TroubleShoot_Password_Changed_Str5$
+$Zy_Eng$444 11 50$
+$Zy_Tur$444 11 50$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+/*-----gateway is empty-----*/
+$NAME$MLG_ConnStatus_TroubleShoot_GatewayError_Str1$
+$Zy_Eng$Gateway Error$
+$Zy_Tur$A&#287; Ge&#231;idi Hatas&#305;$
+$Zy_Ger$Gateway Error$
+$Zy_Fre$Gateway Error$
+$Zy_Ita$Gateway Error$
+
+$NAME$MLG_ConnStatus_TroubleShoot_GatewayError_Str2$
+$Zy_Eng$Your Wireless Router has encountered an Internet Connection error. Please click on the Restart Connection button to restart the WAN interface.$
+$Zy_Tur$Kablosuz Router bir Internet Ba&#287;lant&#305;s&#305; hatayla kar&#351;&#305;la&#351;t&#305;.WAN aray&#252;z&#252; yeniden ba&#351;latmak i&#231;in Restart Ba&#287;lant&#305; d&#252;&#287;mesine t&#305;klay&#305;n.$
+$Zy_Ger$Your Wireless Router has encountered an Internet Connection error. Please click on the Restart Connection button to restart the WAN interface.$
+$Zy_Fre$Your Wireless Router has encountered an Internet Connection error. Please click on the Restart Connection button to restart the WAN interface.$
+$Zy_Ita$Your Wireless Router has encountered an Internet Connection error. Please click on the Restart Connection button to restart the WAN interface.$
+
+$NAME$MLG_ConnStatus_TroubleShoot_GatewayError_Str3$
+$Zy_Eng$If the error code does not go away after restarting the WAN connection, please contact with your ISP to report the Error Code to resolve the issue.$
+$Zy_Tur$Hata kodu WAN ba&#287;lant&#305;s&#305; yeniden ba&#351;latt&#305;ktan sonra gitmez ise, sorunu &#231;&#246;zmek i&#231;in Hata Kodu bildirmek i&#231;in ISS ile irtibata ge&#231;iniz.$
+$Zy_Ger$If the error code does not go away after restarting the WAN connection, please contact with your ISP to report the Error Code to resolve the issue.$
+$Zy_Fre$If the error code does not go away after restarting the WAN connection, please contact with your ISP to report the Error Code to resolve the issue.$
+$Zy_Ita$If the error code does not go away after restarting the WAN connection, please contact with your ISP to report the Error Code to resolve the issue.$
+
+$NAME$MLG_ConnStatus_TroubleShoot_GatewayError_Str4$
+$Zy_Eng$Gateway IP Address$
+$Zy_Tur$A&#287; Ge&#231;idi IP Adresi$
+$Zy_Ger$Gateway IP Address$
+$Zy_Fre$Gateway IP Address$
+$Zy_Ita$Gateway IP Address$
+
+$NAME$MLG_ConnStatus_TroubleShoot_GatewayError_Str5$
+$Zy_Eng$Down$
+$Zy_Tur$a&#351;a&#287;&#305;$
+$Zy_Ger$Down$
+$Zy_Fre$Down$
+$Zy_Ita$Down$
+
+$NAME$MLG_ConnStatus_TroubleShoot_GatewayError_Str6$
+$Zy_Eng$Restart Connection$
+$Zy_Tur$Ba&#287;lant&#305; yeniden ba&#351;lat&#305;n$
+$Zy_Ger$Restart Connection$
+$Zy_Fre$Restart Connection$
+$Zy_Ita$Restart Connection$
+
+$NAME$MLG_ConnStatus_Internet_str1$
+$Zy_Eng$Internet Test$
+$Zy_Tur$&#304;nternet Testi$
+$Zy_Ger$Internet Test$
+$Zy_Fre$Internet Test$
+$Zy_Ita$Internet Test$
+
+$NAME$MLG_ConnStatus_Internet_str2$
+$Zy_Eng$Internet is Connected$
+$Zy_Tur$&#304;nternet ba&#287;l&#305; olan$
+$Zy_Ger$Internet is Connected$
+$Zy_Fre$Internet is Connected$
+$Zy_Ita$Internet is Connected$
+
+$NAME$MLG_ConnStatus_Status_nat_usage$
+$Zy_Eng$NAT Session Usage$
+$Zy_Tur$NAT Oturum Kullan&#305;m&#305;$
+$Zy_Ger$Internet is Connected$
+$Zy_Fre$Internet is Connected$
+$Zy_Ita$Internet is Connected$
+

@@ -1,0 +1,4090 @@
+﻿#include<stdio.h>	
+#include<string.h>	
+#include<stdlib.h>	
+#include<time.h>	
+#include "languages.h"	
+
+
+$NAME$MLG_Network_General_Str1$
+$Zy_Eng$A wireless network name (also known as SSID) and a security level are basic elements to start a wireless service. It is recommended to set a security level other than No Security to protect your data from unauthorized access or damage via wireless network.$
+$Zy_Tur$Bir kablosuz a&#287; ad&#305; (SSID) ve g&#252;venlik d&#252;zeyi, bir kablosuz hizmeti ba&#351;latman&#305;n temel &#246;&#287;eleridir. Verilerinizi yetkisiz eri&#351;im ya da kablosuz a&#287; &#252;zerinden hasara kar&#351;&#305; korumak i&#231;in G&#252;venlik Yok d&#305;&#351;&#305;nda bir g&#252;venlik d&#252;zeyi belirlemeniz tavsiye edilir.$
+$Zy_Ger$Ein WLAN-Netzwerkname (auch SSID genannt) und eine Sicherheitsebene sind grundlegende Elemente beim Aufbau eines WLAN. Es wird empfohlen, eine andere Sicherheitsebene als Keine Sicherheit einzustellen, um Ihre Daten vor unbefugtem Zugriff oder Sch&#228;den &#252;ber das WLAN zu sch&#252;tzen.$
+$Zy_Fre$Vous pouvez convertir votre port WAN Ethernet en port LAN, ou r&#233;tablir le port LAN en port WAN.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_General_Str2$
+$Zy_Eng$Wireless Network Setup$
+$Zy_Tur$Kablosuz A&#287; Kurulumu$
+$Zy_Ger$WLAN einrichten$
+$Zy_Fre$Vous pouvez convertir votre port WAN Ethernet en port LAN, ou r&#233;tablir le port LAN en port WAN.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_5thEthernetPort_Str1$
+$Zy_Eng$You can convert your Ethernet WAN port to LAN port, or restore the LAN port to WAN port.$
+$Zy_Tur$WAN portunuzu Yerel A&#287; portuna  veya Yerel A&#287; portunu WAN portuna &#231;evirebilirsiniz. $
+$Zy_Ger$Sie k&#246;nnen Ihren Ethernet WAN-Port in einen LAN-Port verwandeln oder den LAN-Port auf den WAN-Port wiederherstellen.$
+$Zy_Fre$Vous pouvez convertir votre port WAN Ethernet en port LAN, ou r&#233;tablir le port LAN en port WAN.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_5thEthernetPort_Str2$
+$Zy_Eng$LAN Port$
+$Zy_Tur$Yerel A&#287; Portu$
+$Zy_Ger$LAN-Port$
+$Zy_Fre$Port LAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_5thEthernetPort_Str3$
+$Zy_Eng$WAN Port$
+$Zy_Tur$WAN Portu$
+$Zy_Ger$WAN-Port$
+$Zy_Fre$Port WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_5thEthernetPort_Str4$
+$Zy_Eng$Auto-Detect$
+$Zy_Tur$Otomatik Alg&#305;lama$
+$Zy_Ger$Auto-Detect$
+$Zy_Fre$D&#233;tection automatique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DNSEntry_Str1$
+$Zy_Eng$DNS Entry$
+$Zy_Tur$DNS Kayd&#305;$
+$Zy_Ger$DNS-Eintrag$
+$Zy_Fre$Entr&#233;e DNS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DNSEntry_Str2$
+$Zy_Eng$Domain Name System (DNS) translates hostnames into IP addresses for the purpose of locating and addressing these devices worldwide. You can start by adding a new DNS entry.$
+$Zy_Tur$Alan Ad&#305; Sistemi (DNS), d&#252;nya genelindeki adres ,host isimlerini IP adreslerine &#231;evirir. Yeni bir DNS kayd&#305; ekleyerek ba&#351;layabilirsiniz.$
+$Zy_Ger$DNS (Domain Name System) &#252;bersetzt Hostnamen in IP-Adressen, damit diese Ger&#228;te weltweit gefunden und adressiert werden k&#246;nnen. Sie k&#246;nnen durch Hinzuf&#252;gen eines neuen DNS-Eintrags beginnen.$
+$Zy_Fre$Domain Name System (DNS) traduit les noms d&#39;h&#244;tes en adresses IP dans le but de localiser et de traiter ces appareils &#224; travers le monde. Vous pouvez commencer par ajouter une nouvelle entr&#233;e DNS.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DNSEntry_Note$
+$Zy_Eng$ The hostnames needs combination of the host's local name with its domain's name. For example, Mycomputer.home consists of a local hostname (Mycomputer) and the domain name (home).$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_Domain_Name$
+$Zy_Eng$Domain Name$
+$Zy_Tur$Alan Ad&#305;$
+$Zy_Ger$Domain-Name$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Network_Dynamic_RoutingType$
+$Zy_Eng$Dynamic Routing Type$
+$Zy_Tur$Dinamik Y&#246;nlendirme Tipi$
+$Zy_Ger$Typ des dynamischen Routing$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_Dynamic_Str1$
+$Zy_Eng$Version 1$
+$Zy_Tur$S&#252;r&#252;m 1$
+$Zy_Ger$Version 1$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_Dynamic_Str2$
+$Zy_Eng$Version 2$
+$Zy_Tur$S&#252;r&#252;m 2$
+$Zy_Ger$Version 2$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_Dynamic_Str3$
+$Zy_Eng$off$
+$Zy_Tur$kapal&#305;$
+$Zy_Ger$aus$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DNSEntry_Str3$
+$Zy_Eng$Add new DNS entry$
+$Zy_Tur$Yeni DNS kayd&#305; ekle$
+$Zy_Ger$Neuen DNS-Eintrag hinzuf&#252;gen$
+$Zy_Fre$Ajouter une nouvelle entr&#233;e DNS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DNSEntry_Str4$
+$Zy_Eng$Hostname$
+$Zy_Tur$Host Ad&#305;$
+$Zy_Ger$Hostname$
+$Zy_Fre$Nom d&#39;h&#244;te$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DNSEntry_Str5$
+$Zy_Eng$Source$
+$Zy_Tur$Kaynak$
+$Zy_Ger$Bezogen &#252;ber$
+$Zy_Fre$Source$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DNSEntry_Str6$
+$Zy_Eng$DNS Entry Edit$
+$Zy_Tur$DNS Kayd&#305; D&#252;zenle$
+$Zy_Ger$DNS-Eintrag bearbeiten$
+$Zy_Fre$Modification de l&#39;entr&#233;e DNS $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DNSEntry_Str7$
+$Zy_Eng$DNS Entry Delete$
+$Zy_Tur$DNS Kayd&#305; Sil$
+$Zy_Ger$DNS-Eintrag l&#246;schen$
+$Zy_Fre$Suppression de l&#39;entr&#233;e DNS $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DNSEntry_Str8$
+$Zy_Eng$Host Name$
+$Zy_Tur$Host Ad&#305;:$
+$Zy_Ger$Hostname$
+$Zy_Fre$Nom de l&#39;h&#244;te$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DNSEntry_AlertMsg_Str1$
+$Zy_Eng$Host Name {{1}} is invalid.$
+$Zy_Tur${{1}} Host Ad&#305; ge&#231;ersiz.$
+$Zy_Ger$Hostname {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le nom de l&#39;h&#244;te {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DNSEntry_AlertMsg_Str2$
+$Zy_Eng$Address {{1}} is invalid IP address.$
+$Zy_Tur${{1}} adresi ge&#231;ersiz bir IP adresidir.$
+$Zy_Ger$Adresse {{1}} ist ung&#252;ltige IP-Adresse.$
+$Zy_Fre$L&#39;adresse {{1}} n&#39;est pas une adresse IP valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DNSEntry_AlertMsg_Str3$
+$Zy_Eng$Duplicate static lease information! Please check the host name or IP address.$
+$Zy_Tur$Tekrarlanm&#305;&#351; statik kira bilgilsi! L&#252;tfen Host ad&#305;n&#305; veya IP adresini kontrol ediniz.$
+$Zy_Ger$Doppelte Informationen f&#252;r Static Lease! Bitte Hostnamen oder IP-Adresse pr&#252;fen.$
+$Zy_Fre$Copie des Informations du bail statique! V&#233;rifiez le nom de l&#39;h&#244;te ou l&#39;adresse IP.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DNSEntry_AlertMsg_Str4$
+$Zy_Eng$This will delete the item. Please confirm this step.$
+$Zy_Tur$Bu, &#246;&#287;eyi silecektir. L&#252;tfen bu ad&#305;m&#305; onaylay&#305;n&#305;z.$
+$Zy_Ger$Element wird hierdurch gel&#246;scht. Bitte diesen Schritt best&#228;tigen.$
+$Zy_Fre$Cela va supprimer l&#39;&#233;l&#233;ment. Veuillez confirmer cette &#233;tape.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_Str1$
+$Zy_Eng$Dynamic DNS$
+$Zy_Tur$Dinamik DNS$
+$Zy_Ger$Dynamisches DNS$
+$Zy_Fre$DNS dynamique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_Str2$
+$Zy_Eng$Dynamic DNS can update your current dynamic IP into a hostname. Use the settings to set up dynamic DNS information.$
+$Zy_Tur$Dinamik DNS, mevcut dinamik IP&#39; nizi bir host ad&#305; olarak g&#252;ncelleyebilir. Dinamik DNS bilgilerini d&#252;zenlemek i&#231;in ayarlar&#305; kullan&#305;n&#305;z.$
+$Zy_Ger$Dynamisches DNS kann ihre aktuelle dynamischen IP in einen Hostnamen übersetzten. Richten Sie mit den Einstellungen den Dynamischen DNS Dienst ein.$
+$Zy_Fre$DNS dynamique peut mettre &#224; jour votre IP dynamique actuelle dans un nom d&#39;h&#244;te. Utilisez les param&#232;tres pour mettre en place des informations de DNS dynamique.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_Str3$
+$Zy_Eng$DynamicDNS Configuration$
+$Zy_Tur$Dinamik DNS Yap&#305;land&#305;rmas&#305;$
+$Zy_Ger$Dynamischen DNS konfigurieren$
+$Zy_Fre$Configuration de DNS dynamique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_Str4$
+$Zy_Eng$Dynamic DNS$
+$Zy_Tur$Dinamik DNS$
+$Zy_Ger$Dynamisches DNS$
+$Zy_Fre$DNS dynamique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_Setup$
+$Zy_Eng$Dynamic DNS Setup$
+$Zy_Tur$Dinamik DNS Kurulumu$
+$Zy_Ger$Dynamischen DNS einrichten$
+$Zy_Fre$DNS dynamique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_Str5$
+$Zy_Eng$Service Provider$
+$Zy_Tur$Servis Sa&#287;lay&#305;c&#305;$
+$Zy_Ger$Service Provider$
+$Zy_Fre$Fournisseur de services$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_Str6$
+$Zy_Eng$Key$
+$Zy_Tur$Anahtar$
+$Zy_Ger$Schl&#252;ssel$
+$Zy_Fre$Cl&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_Str7$
+$Zy_Eng$(The settings in this screen are invalid if you select this.)$
+$Zy_Tur$(Bunu se&#231;meniz durumunda, bu ekrandaki ayarlar ge&#231;ersiz olacakt&#305;r.)$
+$Zy_Ger$(Bei Auswahl dieser Option gelten die Einstellungen in diesem Bildschirm nicht.)$
+$Zy_Fre$(Les param&#232;tres dans cet &#233;cran ne sont pas valides si vous s&#233;lectionnez cette option.)$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Network_DynamicDNS_Str8$
+$Zy_Eng$Hostname$
+$Zy_Tur$Host Ad&#305;$
+$Zy_Ger$Hostname$
+$Zy_Fre$Nom de l&#39;h&#244;t$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_Str9$
+$Zy_Eng$Email$
+$Zy_Tur$E-posta$
+$Zy_Ger$E-Mail$
+$Zy_Fre$Emai$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_Str10$
+$Zy_Eng$www.DynDNS.com$
+$Zy_Tur$www.DynDNS.com$
+$Zy_Ger$www.DynDNS.com$
+$Zy_Fre$www.DynDNS.com$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_Str11$
+$Zy_Eng$TZO$
+$Zy_Tur$TZO$
+$Zy_Ger$TZO$
+$Zy_Fre$TZO$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_Str12$
+$Zy_Eng$Add new DNS route$
+$Zy_Tur$Yeni DNS yolu ekle$
+$Zy_Ger$Neue DNS-Route hinzuf&#252;gen$
+$Zy_Fre$Emai$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_Str13$
+$Zy_Eng$A DNS route entry defines a policy for the device to forward particular DNS query to a specific WAN interface.$
+$Zy_Tur$DNS y&#246;nlendirme, k&#305;smi DNS sorgular&#305;n&#305; WAN aray&#252;z&#252;ne iletmek i&#231;in policy olu&#351;turma i&#351;lemidir.$
+$Zy_Ger$Der Eintrag f&#252;r eine DNS-Route definiert eine Richtlinie f&#252;r das Ger&#228;t zur Weiterleitung einer bestimmten DNS Query an eine bestimmte WAN-Schnittstelle.$
+$Zy_Fre$Emai$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_Str14$
+$Zy_Eng$freedns.afraid.org$
+$Zy_Tur$freedns.afraid.org$
+$Zy_Ger$freedns.afraid.org$
+$Zy_Fre$freedns.afraid.org$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_Str15$
+$Zy_Eng$www.zoneedit.com$
+$Zy_Tur$www.zoneedit.com$
+$Zy_Ger$www.zoneedit.com$
+$Zy_Fre$www.zoneedit.com$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_Str16$
+$Zy_Eng$www.no-ip.com$
+$Zy_Tur$www.no-ip.com$
+$Zy_Ger$www.no-ip.com$
+$Zy_Fre$www.no-ip.com$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_Str17$
+$Zy_Eng$GnuDIP$
+$Zy_Tur$GnuDIP$
+$Zy_Ger$GnuDIP$
+$Zy_Fre$GnuDIP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_AlertMsg_Str1$
+$Zy_Eng$Empty Username.$
+$Zy_Tur$Bo&#351; Kullan&#305;c&#305; Ad&#305;.$
+$Zy_Ger$Benutzername leer.$
+$Zy_Fre$Nom d&#39;utilisateur vide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_AlertMsg_Str2$
+$Zy_Eng$Invalid Email.$
+$Zy_Tur$Ge&#231;ersiz E-posta.$
+$Zy_Ger$Ung&#252;ltige E-Mail.$
+$Zy_Fre$Email non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_AlertMsg_Str3$
+$Zy_Eng$Empty Password.$
+$Zy_Tur$Bo&#351; &#350;ifre.$
+$Zy_Ger$Kennwort leer.$
+$Zy_Fre$Mot de passe vide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_AlertMsg_Str4$
+$Zy_Eng$Invalid Key.$
+$Zy_Tur$Ge&#231;ersiz Anahtar.$
+$Zy_Ger$Ung&#252;ltiger Schl&#252;ssel.$
+$Zy_Fre$Cl&#233; non valide$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Network_DynamicDNS_AlertMsg_Str5$
+$Zy_Eng$Empty Hostname.$
+$Zy_Tur$Bo&#351; Host Ad&#305;.$
+$Zy_Ger$Hostname leer.$
+$Zy_Fre$Nom d&#39;h&#244;te vide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_AlertMsg_Str6$
+$Zy_Eng$settings are invalid when disabled$
+$Zy_Tur$devre d&#305;&#351;&#305; b&#305;rak&#305;ld&#305;&#287;&#305;nda ayarlar ge&#231;ersizdir$
+$Zy_Ger$wenn deaktiviert, gelten Einstellungen nicht$
+$Zy_Fre$Nom d&#39;h&#244;te vide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_AlertMsg_Str7$
+$Zy_Eng$Please specify service provider and account info.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_AlertMsg_Str8$
+$Zy_Eng$Empty Server name.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DynamicDNS_AlertMsg_Str9$
+$Zy_Eng$Not allow spaces in Hostname, Username and Password !!$
+$Zy_Tur$Host Ad&#305;, Kullan&#305;c&#305; Ad&#305; ve &#350;ifre bo&#351;luk izin vermez !!$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPACL_Str1$
+$Zy_Eng$IGMP ACL is used to control the access of channels on your multimedia devices. You can allow or block specific channel.$
+$Zy_Tur$IGMP ACL, multimedya cihazlar&#305;n&#305;zdaki kanallar&#305;n eri&#351;im kontrol&#252; i&#231;in kullan&#305;l&#305;r. Belirli bir kanala izin verebilir ya da engelleyebilirsiniz.$
+$Zy_Ger$IGMP ACL wird verwendet, um den Zugriff von Kan&#228;len auf Ihre Multimedia-Ger&#228;te zu steuern. Sie k&#246;nnen bestimmte Kan&#228;le zulassen oder blockieren.$
+$Zy_Fre$IGMP ACL est utilis&#233; pour contr&#244;ler l&#39;acc&#232;s des canaux sur vos appareils multim&#233;dias. Vous pouvez autoriser ou bloquer un canal sp&#233;cifique.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPACL_Str10$
+$Zy_Eng$Multicast IP Mask$
+$Zy_Tur$Multicast IP Maskesi$
+$Zy_Ger$Multicast IP-Maske$
+$Zy_Fre$Masque IP multidiffusion$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPACL_Str2$
+$Zy_Eng$IGMP Multicast ACL$
+$Zy_Tur$IGMP Multicast ACL$
+$Zy_Ger$IGMP Multicast ACL$
+$Zy_Fre$ACL multidiffusion IGMP $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPACL_Str3$
+$Zy_Eng$IGMP ACL List$
+$Zy_Tur$IGMP ACL Listesi$
+$Zy_Ger$IGMP ACL Liste$
+$Zy_Fre$Liste ACL IGMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPACL_Str4$
+$Zy_Eng$Black List$
+$Zy_Tur$Kara Liste$
+$Zy_Ger$Schwarze Liste$
+$Zy_Fre$Liste noire$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPACL_Str5$
+$Zy_Eng$White List$
+$Zy_Tur$Beyaz Liste$
+$Zy_Ger$Wei&#223;e Liste$
+$Zy_Fre$Liste blanche$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPACL_Str6$
+$Zy_Eng$Add a new rule$
+$Zy_Tur$Yeni bir policy ekle$
+$Zy_Ger$Neue Regel hinzuf&#252;gen$
+$Zy_Fre$Ajouter une nouvelle r&#232;gle$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPACL_Str7$
+$Zy_Eng$IGMP ACL Configuration$
+$Zy_Tur$IGMP ACL Yap&#305;land&#305;rmas&#305;$
+$Zy_Ger$IGMP ACL konfigurieren$
+$Zy_Fre$Configuration du code ACL IGMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPACL_Str8$
+$Zy_Eng$Please insert a new entry for IGMP ACL.$
+$Zy_Tur$L&#252;tfen IGMP ACL i&#231;in yeni bir kay&#305;t giriniz.$
+$Zy_Ger$Bitte einen neuen Eintrag f&#252;r IGMP ACL einf&#252;gen.$
+$Zy_Fre$Ins&#233;rez une nouvelle entr&#233;e pour ACL IGMP.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPACL_Str9$
+$Zy_Eng$Multicast IP Address$
+$Zy_Tur$Multicast IP Adresi$
+$Zy_Ger$Multicast IP-Adresse$
+$Zy_Fre$Adresse IP multidiffusion$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_AlertMsg_Str1$
+$Zy_Eng$Please enter a valid group$
+$Zy_Tur$L&#252;tfen ge&#231;erli bir grup giriniz.$
+$Zy_Ger$Bitte eine g&#252;ltige Gruppe eingeben.$
+$Zy_Fre$Entrer un groupe valide $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str1$
+$Zy_Eng$IGMP Filter is used to control the access of your multimedia devices. Max channels 0 means no limitation.$
+$Zy_Tur$IGMP Filtresi, multimedya cihazlar&#305;n&#305;z&#305;n eri&#351;im kontrol&#252; i&#231;in kullan&#305;l&#305;r. Maksimum kanal 0, herhangi bir s&#305;n&#305;rlama yok anlam&#305;na gelir.$
+$Zy_Ger$IGMP-Filter wird verwendet, um den Zugriff Ihrer Multimedia-Ger&#228;te zu steuern. Max. Kan&#228;le 0 bedeutet: ohne Begrenzung.$
+$Zy_Fre$Le filtre IGMP est utilis&#233; pour contr&#244;ler l&#39;acc&#232;s de vos appareils multim&#233;dia. Canaux max 0 signifie aucune limite.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str10$
+$Zy_Eng$LAN Host$
+$Zy_Tur$Yerel A&#287; Host Ad&#305;$
+$Zy_Ger$LAN-Host$
+$Zy_Fre$H&#244;te LAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str11$
+$Zy_Eng$LAN Host IP$
+$Zy_Tur$Yerel A&#287; host IP$
+$Zy_Ger$LAN-Host-IP$
+$Zy_Fre$IP de l&#39;h&#244;te LAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str12$
+$Zy_Eng$Type$
+$Zy_Tur$T&#252;r$
+$Zy_Ger$Typ$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str13$
+$Zy_Eng$IGMP Enabled$
+$Zy_Tur$IGMP Etkin$
+$Zy_Ger$IGMP aktiviert$
+$Zy_Fre$IGMP activ&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str14$
+$Zy_Eng$Max Allowed Channel$
+$Zy_Tur$Maksimum &#304;zin Verilen Kanal $
+$Zy_Ger$Max. zugelassene Kan&#228;le$
+$Zy_Fre$Canal max autoris&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str15$
+$Zy_Eng$Multicast service$
+$Zy_Tur$Multicast hizmeti$
+$Zy_Ger$Multicast-Service$
+$Zy_Fre$Service de multidiffusion $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str16$
+$Zy_Eng$add a new service$
+$Zy_Tur$yeni bir hizmet ekle $
+$Zy_Ger$Neuen Service hinzuf&#252;gen$
+$Zy_Fre$ajouter un nouveau service$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str17$
+$Zy_Eng$Service Name$
+$Zy_Tur$Hizmet Ad&#305;$
+$Zy_Ger$Service-Name$
+$Zy_Fre$Nom du service$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str18$
+$Zy_Eng$Multicast Group$
+$Zy_Tur$Multicast Grubu$
+$Zy_Ger$Multicast-Gruppe$
+$Zy_Fre$Groupe multidiffusion$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str19$
+$Zy_Eng$STB Max Channels$
+$Zy_Tur$STB Maksimum Kanal $
+$Zy_Ger$Max. Kan&#228;le STB$
+$Zy_Fre$Canaux max STB Max$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str2$
+$Zy_Eng$LAN Interface$
+$Zy_Tur$Yerel A&#287; Aray&#252;z&#252;$
+$Zy_Ger$LAN-Schnittstelle$
+$Zy_Fre$Interface LAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str20$
+$Zy_Eng$Non-STB max Channels$
+$Zy_Tur$STB&#39; siz Maksimum Kanal $
+$Zy_Ger$Max. Kan&#228;le Nicht STB$
+$Zy_Fre$Canaux max non-STB$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str21$
+$Zy_Eng$Add a new host limitation$
+$Zy_Tur$Yeni bir host s&#305;n&#305;rlamas&#305; ekle$
+$Zy_Ger$Neue Hostbegrenzung hinzuf&#252;gen$
+$Zy_Fre$Ajouter une nouvelle limitation d&#39;h&#244;te$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str22$
+$Zy_Eng$LAN IP$
+$Zy_Tur$Yerel A&#287; IP$
+$Zy_Ger$LAN-IP$
+$Zy_Fre$IP du LAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str23$
+$Zy_Eng$IGMP Service Domain Configuration$
+$Zy_Tur$IGMP Hizmet Alan&#305; Yap&#305;land&#305;rmas&#305;$
+$Zy_Ger$IGMP Service Domain konfigurieren$
+$Zy_Fre$Configuration du domaine de service IGMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str24$
+$Zy_Eng$Please enter the setting for a new IGMP service domain.$
+$Zy_Tur$Yeni bir IGMP hizmet alan&#305; i&#231;in ayar&#305; giriniz.$
+$Zy_Ger$Bitte geben Sie die Einstellung f&#252;r eine neue IGMP Service Domain ein.$
+$Zy_Fre$Entrez le param&#232;tre pour un nouveau domaine de service IGMP.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str25$
+$Zy_Eng$Maximum active channels for STB$
+$Zy_Tur$STB i&#231;in maksimum aktif kanal$
+$Zy_Ger$Maximal aktive Kan&#228;le f&#252;r STB$
+$Zy_Fre$Canaux actifs maximum pour STB$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str26$
+$Zy_Eng$Maximum active channels for non-STB$
+$Zy_Tur$STB&#39; siz i&#231;in maksimum aktif kanal$
+$Zy_Ger$Maximal aktive Kan&#228;le f&#252;r Nicht STB$
+$Zy_Fre$Canaux actifs maximum pour non-STB$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str27$
+$Zy_Eng$Group List$
+$Zy_Tur$Grup Listesi$
+$Zy_Ger$Gruppenliste$
+$Zy_Fre$Liste des groupes$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str28$
+$Zy_Eng$Add a group$
+$Zy_Tur$Grup ekle $
+$Zy_Ger$Gruppe hinzuf&#252;gen$
+$Zy_Fre$Ajouter un groupe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str29$
+$Zy_Eng$Group$
+$Zy_Tur$Grupla$
+$Zy_Ger$Gruppe$
+$Zy_Fre$Groupe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str3$
+$Zy_Eng$Allow IGMP packets from Ethernet interface$
+$Zy_Tur$Ethernet ara y&#252;z&#252;nden IGMP paketlerine izin ver$
+$Zy_Ger$IGMP-Pakete von Ethernet-Schnittstelle zulassen$
+$Zy_Fre$Autoriser les paquets IGMP &#224; partir de l&#39;interface Ethernet$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str30$
+$Zy_Eng$IGMP Service Domain Group Add$
+$Zy_Tur$IGMP Hizmet Alan&#305; Grubu Ekle$
+$Zy_Ger$IGMP Service Domain Gruppe hinzuf&#252;gen$
+$Zy_Fre$Ajout de groupe de domaine de service IGMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str31$
+$Zy_Eng$Please enter the multicast group and the mask. Mask is in CIDR format(e.g. 224.10.10.0/24).$
+$Zy_Tur$Multicast ve maskesini girin. Maske, CIDR format&#305;ndad&#305;r (&#246;rn. 224.10.10.0/24).$
+$Zy_Ger$Bitte geben Sie die Multicast-Gruppe und die Maske ein. Die Maske sollte CIDR-Format haben (z.B. 224.10.10.0/24).$
+$Zy_Fre$Entrez le groupe de multidiffusion et le masque. Masque est au format CIDR (e.g. 224.10.10.0/24).$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str32$
+$Zy_Eng$Multicast Group$
+$Zy_Tur$Multicast Grubu$
+$Zy_Ger$Multicast-Gruppe$
+$Zy_Fre$Groupe multidiffusion$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str33$
+$Zy_Eng$IGMP Service Domain Host Configuration$
+$Zy_Tur$IGMP Hizmet Alan&#305; Yap&#305;land&#305;rmas&#305;$
+$Zy_Ger$IGMP Service Domain Host konfigurieren$
+$Zy_Fre$Configuration de l&#39;h&#244;te de domaine de service IGMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str34$
+$Zy_Eng$Please insert a new entry for host limitation in a service domain.$
+$Zy_Tur$L&#252;tfen hizmet alan&#305;na host s&#305;n&#305;rlamas&#305; i&#231;in yeni bir kay&#305;t giriniz.$
+$Zy_Ger$Bitte einen neuen Eintrag f&#252;r Hostbegrenzung in einer Service Domain einf&#252;gen.$
+$Zy_Fre$Ins&#233;rez une nouvelle entr&#233;e pour la limitation de l&#39;h&#244;te dans un domaine de service.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str4$
+$Zy_Eng$Allow IGMP packets from WiFi interface$
+$Zy_Tur$WiFi aray&#252;z&#252;nden IGMP paketlerine izin ver$
+$Zy_Ger$IGMP-Pakete von WLAN-Schnittstelle zulassen$
+$Zy_Fre$Autoriser les paquets IGMP &#224; partir de l&#39;interface WiFi$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str5$
+$Zy_Eng$LAN Ethernet Port$
+$Zy_Tur$Yerel A&#287; Ethernet Portu$
+$Zy_Ger$LAN-Ethernet-Port$
+$Zy_Fre$Port Ethernet LAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str6$
+$Zy_Eng$Allow IGMP packets from Ethernet LAN port1$
+$Zy_Tur$Ethernet Yerel A&#287; port1&#39; den IGMP paketlerine izin ver$
+$Zy_Ger$IGMP-Pakete von Ethernet-LAN-Port 1 zulassen$
+$Zy_Fre$Autoriser les paquets IGMP &#224; partir du port1 Ethernet LAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str7$
+$Zy_Eng$Allow IGMP packets from Ethernet LAN port2$
+$Zy_Tur$Ethernet Yerel A&#287; port2&#39; den IGMP paketlerine izin ver$
+$Zy_Ger$IGMP-Pakete von Ethernet-LAN-Port 2 zulassen$
+$Zy_Fre$Autoriser les paquets IGMP &#224; partir du port2 Ethernet LAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str8$
+$Zy_Eng$Allow IGMP packets from Ethernet LAN port3$
+$Zy_Tur$Ethernet Yerel A&#287; port3&#39; den IGMP paketlerine izin ver$
+$Zy_Ger$IGMP-Pakete von Ethernet-LAN-Port 3 zulassen$
+$Zy_Fre$Autoriser les paquets IGMP &#224; partir du port3 Ethernet LAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str9$
+$Zy_Eng$Allow IGMP packets from Ethernet LAN port4$
+$Zy_Tur$Ethernet Yerel A&#287; port4&#39; den IGMP paketlerine izin ver$
+$Zy_Ger$IGMP-Pakete von Ethernet-LAN-Port 4 zulassen$
+$Zy_Fre$Autoriser les paquets IGMP &#224; partir du port4 Ethernet LAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPGeneral_Str1$
+$Zy_Eng$The Internet Group Management Protocol (IGMP) is a communication protocol which can be used for more efficient use of online streaming video.$
+$Zy_Tur$Internet Grup Y&#246;netimi Protokol&#252; (IGMP), &#231;evrimi&#231;i video ak&#305;&#351;&#305;n&#305;n daha etkin kullan&#305;m&#305; i&#231;in kullan&#305;labilecek bir ileti&#351;im protokol&#252;d&#252;r.$
+$Zy_Ger$Das Kommunikationsprotokoll IGMP (Internet Group Management Protocol) kann f&#252;r effizientere Nutzung von Online Video Streaming verwendet werden.$
+$Zy_Fre$L&#39;Internet Group Management Protocol (IGMP) est un protocole de communication pouvant &#234;tre utilis&#233; pour une utilisation plus efficace du streaming vid&#233;o en ligne.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPGeneral_Str10$
+$Zy_Eng$Ignore IGMP leave without router alert option$
+$Zy_Tur$Y&#246;nlendirici uyar&#305; se&#231;ene&#287;i olmayan IGMP iznini yoksay$
+$Zy_Ger$IGMP Leave ohne Router-Alarmoption ignorieren$
+$Zy_Fre$Ignorer IGMP Leave sans option d&#39;alerte routeur $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPGeneral_Str11$
+$Zy_Eng$Ignore IGMP query without router alert option$
+$Zy_Tur$Y&#246;nlendirici uyar&#305; se&#231;ene&#287;i olmayan IGMP sorgusunu yoksay$
+$Zy_Ger$IGMP Query ohne Router-Alarmoption ignorieren$
+$Zy_Fre$Ignorer la requ&#234;te IGMP sans option d&#39;alerte routeur $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPGeneral_Str12$
+$Zy_Eng$Ignore IGMP query which destination IP is not 224.0.0.1$
+$Zy_Tur$Hedef IP&#39; si 224.0.0.1 olmayan IGMP sorgusunu yoksay$
+$Zy_Ger$IGMP Query ignorieren, sofern die Ziel-IP nicht 224.0.0.1 ist$
+$Zy_Fre$Ignorer la requ&#234;te IGMP dont l&#39;IP de destination n&#39;est pas 224.0.0.1$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_MLDProxy$
+$Zy_Eng$MLD Proxy$
+$Zy_Tur$MLD Proxy$
+$Zy_Ger$MLD Proxy$
+$Zy_Fre$MLD proxy$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPGeneral_Str2$
+$Zy_Eng$IGMP Proxy State$
+$Zy_Tur$IGMP Proxy Durumu$
+$Zy_Ger$IGMP Proxy Status$
+$Zy_Fre$Etat du proxy IGMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPGeneral_Str3$
+$Zy_Eng$IGMP Proxy State$
+$Zy_Tur$IGMP Proxy Durumu$
+$Zy_Ger$IGMP Proxy Status$
+$Zy_Fre$Etat du proxy IGMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPGeneral_Str4$
+$Zy_Eng$Query Interval$
+$Zy_Tur$Sorgu Aral&#305;&#287;&#305;$
+$Zy_Ger$Query-Intervall$
+$Zy_Fre$Intervalle de requ&#234;te$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPGeneral_Str5$
+$Zy_Eng$Query Response Interval$
+$Zy_Tur$Sorgu Yan&#305;t Aral&#305;&#287;&#305;$
+$Zy_Ger$Query-Reaktionsintervall$
+$Zy_Fre$Intervalle de r&#233;ponse de requ&#234;te$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPGeneral_Str6$
+$Zy_Eng$Robustness Value$
+$Zy_Tur$Sa&#287;laml&#305;k De&#287;eri$
+$Zy_Ger$Wert f&#252;r Robustheit$
+$Zy_Fre$Valeur de robustesse $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPGeneral_Str7$
+$Zy_Eng$IGMP Packet Process$
+$Zy_Tur$IGMP Paket S&#252;reci$
+$Zy_Ger$IGMP-Paket-Prozess$
+$Zy_Fre$Processus de paquets IGMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPGeneral_Str8$
+$Zy_Eng$Ignore IGMP packets not from LAN subnet$
+$Zy_Tur$Yerel A&#287; alt a&#287;&#305;ndan olmayan IGMP paketlerini yoksay$
+$Zy_Ger$IGMP-Pakete ignorieren, die nicht von LAN-Subnetz kommen$
+$Zy_Fre$Ignorer les paquets IGMP ne provenant pas de sous-r&#233;seau LAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPGeneral_Str9$
+$Zy_Eng$Ignore IGMP report without router alert option$
+$Zy_Tur$Y&#246;nlendirici uyar&#305; se&#231;ene&#287;i olmayan IGMP raporunu yoksay$
+$Zy_Ger$IGMP Report ohne Router-Alarmoption ignorieren$
+$Zy_Fre$Ignorer le rapport IGMP sans option d&#39;alerte routeur $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_AlertMsg_Str1$
+$Zy_Eng$Max rule entry is 32.$
+$Zy_Tur$Maksimum kural giri&#351;i 32.$
+$Zy_Ger$Es k&#246;nnen maximal 32 Regeln eingegeben werden.$
+$Zy_Fre$L&#39;entr&#233;e de r&#232;gle max est 32.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_AlertMsg_Str10$
+$Zy_Eng$Hardware type interval {{1}}  should be between 0 and 65535$
+$Zy_Tur$Donan&#305;m tipi aral&#305;&#287;&#305; {{1}} 0 ile 65535 aras&#305;nda olmal&#305;d&#305;r$
+$Zy_Ger$Hardware-Typ-Intervall {{1}} sollte zwischen 0 und 65535 liegen.$
+$Zy_Fre$L&#39;intervalle de type de mat&#233;riel  {{1}}  doit &#234;tre compris entre 0 et 65535$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_AlertMsg_Str11$
+$Zy_Eng$Invalid Client-Identifier$
+$Zy_Tur$Ge&#231;ersiz &#304;stemci-Kimlik$
+$Zy_Ger$Ung&#252;ltiger Client-Identifier$
+$Zy_Fre$Identificateur client non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_AlertMsg_Str12$
+$Zy_Eng$Enterprise number interval {{1}}  should be between 0 and 65535$
+$Zy_Tur$Kurumsal say&#305; aral&#305;&#287;&#305; {{1}} 0 ile 65535 aras&#305;nda olmal&#305;d&#305;r$
+$Zy_Ger$Unternehmensnummer-Intervall {{1}} sollte zwischen 0 und 65535 liegen.$
+$Zy_Fre$L&#39;intervalle de num&#233;ro d&#39;entreprise  {{1}}  doit &#234;tre compris entre 0 et 65535$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_AlertMsg_Str13$
+$Zy_Eng$Invalid Client-Identifier$
+$Zy_Tur$Ge&#231;ersiz &#304;stemci-Kimlikleyici$
+$Zy_Ger$Ung&#252;ltiger Client-Identifier$
+$Zy_Fre$Identificateur client non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_AlertMsg_Str14$
+$Zy_Eng$Source MAC address {{1}} is invalid.$
+$Zy_Tur$Kaynak MAC adresi {{1}} ge&#231;ersiz.$
+$Zy_Ger$Quell-MAC-Adresse {{1}} ist ung&#252;ltig.$
+$Zy_Fre$L&#39;adresse MAC source {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_AlertMsg_Str15$
+$Zy_Eng$Hardware type interval {{1}}  should be between 0 and 65535$
+$Zy_Tur$Donan&#305;m tipi aral&#305;&#287;&#305; {{1}} 0 ile 65535 aras&#305;nda olmal&#305;d&#305;r$
+$Zy_Ger$Hardware-Typ-Intervall {{1}} sollte zwischen 0 und 65535 liegen.$
+$Zy_Fre$L&#39;intervalle de type de mat&#233;riel  {{1}}  doit &#234;tre compris entre 0 et 65535$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_AlertMsg_Str16$
+$Zy_Eng$Invalid DUID value$
+$Zy_Tur$Ge&#231;ersiz DUID de&#287;eri$
+$Zy_Ger$Ung&#252;ltiger DUID-Wert$
+$Zy_Fre$Valeur DUID non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_AlertMsg_Str17$
+$Zy_Eng$The DHCP option 125 is selected, but one or more than one value is invalid.$
+$Zy_Tur$DHCP se&#231;ene&#287;i 125 se&#231;ili, ancak bir veya birden fazla de&#287;er ge&#231;ersiz.$
+$Zy_Ger$Die DHCP-Option 125 wurde ausgew&#228;hlt, aber mindestens ein Wert ist ung&#252;ltig.$
+$Zy_Fre$L&#39;option DHCP 125 est s&#233;lectionn&#233;e, mais une valeur ou plus n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_AlertMsg_Str18$
+$Zy_Eng$Enterprise number interval {{1}}  should be between 0 and 65535$
+$Zy_Tur$Kurumsal say&#305; aral&#305;&#287;&#305; {{1}} 0 ile 65535 aras&#305;nda olmal&#305;d&#305;r$
+$Zy_Ger$Unternehmensnummer-Intervall {{1}} sollte zwischen 0 und 65535 liegen.$
+$Zy_Fre$L&#39;intervalle de num&#233;ro d&#39;entreprise  {{1}}  doit &#234;tre compris entre 0 et 65535$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_AlertMsg_Str19$
+$Zy_Eng$At least one criterion must be specified.$
+$Zy_Tur$En az bir kriter belirtilmelidir.$
+$Zy_Ger$Mindestens ein Kriterium muss verwendet werden.$
+$Zy_Fre$Au moins un crit&#232;re doit &#234;tre sp&#233;cifi&#233;.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_AlertMsg_Str2$
+$Zy_Eng$The source MAC address is selected, but the input value is invalid.$
+$Zy_Tur$Kaynak MAC adresi se&#231;ili, ancak giri&#351; de&#287;eri ge&#231;ersiz.$
+$Zy_Ger$Die Quell-MAC-Adresse wurde ausgew&#228;hlt, aber der Eingabewert ist ung&#252;ltig.$
+$Zy_Fre$L&#39;adresse MAC source est s&#233;lectionn&#233;e, mais la valeur d&#39;entr&#233;e n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_AlertMsg_Str20$
+$Zy_Eng$Need to provide a valid Group Name &#39;A non empty string of characters.&#39;$
+$Zy_Tur$&#39;Karakterler aras&#305;nda bo&#351;luk olmayan&#39; Ge&#231;erli bir Grup Ad&#305; sa&#287;laman&#305;z gerekir.$
+$Zy_Ger$Ein g&#252;ltiger Gruppenname muss angegeben werden &#39;Eine nicht-leere Zeichenkette&#39;.$
+$Zy_Fre$N&#233;cessit&#233; de fournir un nom de groupe valide &#171;&#160;Une cha&#238;ne de caract&#232;res non vide.&#160;&#187;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_AlertMsg_Str21$
+$Zy_Eng$Please enter the group name without special characters.$
+$Zy_Tur$L&#252;tfen &#246;zel karakter i&#231;ermeyen grup ad&#305;n&#305; girin.$
+$Zy_Ger$Bitte geben Sie den Gruppennamen ohne Sonderzeichen ein.$
+$Zy_Fre$Veuillez entrer le nom du groupe sans caract&#232;res sp&#233;ciaux.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_AlertMsg_Str22$
+$Zy_Eng$Configure interface grouping failed. Group name {{1}} cannot set the object$
+$Zy_Tur$Aray&#252;z&#252; gruplama yap&#305;land&#305;rmas&#305;  ba&#351;ar&#305;s&#305;z. Grup ad&#305; {{% s}} nesneyi ayarlayam&#305;yor $
+$Zy_Ger$Fehler beim Konfigurieren der Schnittstellengruppe. Gruppenname {{1}} kann das Objekt nicht einstellen$
+$Zy_Fre$La configuration du groupage d&#39;interfaces a &#233;chou&#233;.  Le Nom du groupe {{1}} ne peut pas d&#233;finir l&#39;obje$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_AlertMsg_Str3$
+$Zy_Eng$Source MAC address {{1}} is invalid.$
+$Zy_Tur$Kaynak MAC adresi {{1}} ge&#231;ersiz.$
+$Zy_Ger$Quell-MAC-Adresse {{1}} ist ung&#252;ltig.$
+$Zy_Fre$L&#39;adresse MAC source {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_AlertMsg_Str4$
+$Zy_Eng$The DHCP option 60 is selected, but the input value is invalid.$
+$Zy_Tur$DHCP se&#231;ene&#287;i 60 se&#231;ili, ancak giri&#351; de&#287;eri ge&#231;ersiz.$
+$Zy_Ger$Die DHCP-Option 60 wurde ausgew&#228;hlt, aber der Eingabewert ist ung&#252;ltig.$
+$Zy_Fre$L&#39;option DHCP 60 est s&#233;lectionn&#233;e, mais la valeur d&#39;entr&#233;e n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_AlertMsg_Str5$
+$Zy_Eng$The DHCP option 61 is selected, but one or more than one value is invalid.$
+$Zy_Tur$DHCP se&#231;ene&#287;i 125 se&#231;ili, ancak bir veya birden fazla de&#287;er ge&#231;ersiz.$
+$Zy_Ger$Die DHCP-Option 61 wurde ausgew&#228;hlt, aber mindestens ein Wert ist ung&#252;ltig.$
+$Zy_Fre$L&#39;option DHCP 61 est s&#233;lectionn&#233;e, mais une valeur ou plus n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_AlertMsg_Str6$
+$Zy_Eng$Hardware type interval {{1}}  should be between 0 and 2147483647$
+$Zy_Tur$Donan&#305;m tipi aral&#305;&#287;&#305; {{1}} 0 ve 2147483647 aras&#305;nda olmal&#305;d&#305;r$
+$Zy_Ger$Hardware-Typ-Intervall {{1}} sollte zwischen 0 und 2147483647 liegen.$
+$Zy_Fre$L&#39;intervalle de type de mat&#233;riel  {{1}}  doit &#234;tre compris entre 0 et 2147483647$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_AlertMsg_Str7$
+$Zy_Eng$Invalid Client-Identifier$
+$Zy_Tur$Ge&#231;ersiz &#304;stemci-Kimlikleyici$
+$Zy_Ger$Ung&#252;ltiger Client-Identifier$
+$Zy_Fre$Identificateur client non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_AlertMsg_Str8$
+$Zy_Eng$Link-layer address {{1}} is invalid.$
+$Zy_Tur$Ba&#287;lant&#305; katman&#305; adresi {{1}} ge&#231;ersiz.$
+$Zy_Ger$Link Layer Adresse {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Adresse de couche liaison {{1}} non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_AlertMsg_Str9$
+$Zy_Eng$Hardware type interval {{1}}  should be between 0 and 4294967295$
+$Zy_Tur$Donan&#305;m tipi aral&#305;&#287;&#305; {{1}} 0 ve 4294967295 aras&#305;nda olmal&#305;d&#305;r$
+$Zy_Ger$Hardware-Typ-Intervall {{1}} sollte zwischen 0 und 4294967295 liegen.$
+$Zy_Fre$L&#39;intervalle de type de mat&#233;riel  {{1}}  doit &#234;tre compris entre 0 et 4294967295$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str1$
+$Zy_Eng$Interface Grouping supports multiple ports to PVC and bridging groups. Each group will perform as an independent network. <br> To support this feature, you must create mapping groups with appropriate LAN and WAN interfaces using the Add button. The Remove button will remove the grouping and add the ungrouped interfaces to the Default group. Only the default group has IP interface.$
+$Zy_Tur$Aray&#252;z Gruplamas&#305;, PVC ve k&#246;pr&#252;leme gruplar&#305; i&#231;in &#231;oklu portlar&#305; destekler. Her grup ba&#287;&#305;ms&#305;z bir a&#287; olarak ger&#231;ekle&#351;tirilecektir. <br> Bu &#246;zelli&#287;i desteklemek i&#231;in, Ekle d&#252;&#287;mesini kullanarak uygun Yerel A&#287; ve WAN aray&#252;zleri ile haritalama gruplar&#305; olu&#351;turman&#305;z gerekir. Kald&#305;r d&#252;&#287;mesi, gruplamay&#305; kald&#305;r&#305;r ve Varsay&#305;lan gruba gruplanmam&#305;&#351; aray&#252;z&#252; ekler. Sadece varsay&#305;lan grubun IP aray&#252;z&#252; vard&#305;r.$
+$Zy_Ger$Die Schnittstellengruppierung unterst&#252;tzt mehrere Ports auf PVC und Bridging-Gruppen. Jede Gruppe funktioniert wie ein unabh&#228;ngiges Netzwerk. <br> Um diese Funktion zu unterst&#252;tzen, m&#252;ssen Sie Mapping-Gruppen mit entsprechenden LAN- und WAN-Schnittstellen erzeugen. Dazu verwenden Sie die Schaltfl&#228;che Hinzuf&#252;gen. Mit der Schaltfl&#228;che Entfernen k&#246;nnen Sie eine Gruppe entfernen und die nicht gruppierten Schnittstellen zur Standardgruppe hinzuf&#252;gen. Nur die Standardgruppe hat eine IP-Schnittstelle.$
+$Zy_Fre$Le groupement d&#39;interfaces prend en charge plusieurs ports vers PVC et groupes de pontage. Chaque groupe fonctionnera comme un r&#233;seau ind&#233;pendant. <br> Pour prendre en charge cette fonctionnalit&#233;, vous devez cr&#233;er des groupes de mappage avec des interfaces LAN et WAN appropri&#233;es en utilisant le bouton Ajouter. Le bouton Supprimer supprime le regroupement et ajoute les interfaces non group&#233;es au groupe par d&#233;faut. Seul le groupe par d&#233;faut a l&#39;interface IP.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str10$
+$Zy_Eng$WAN Interfaces used in the grouping$
+$Zy_Tur$Gruplamada kullan&#305;lan WAN Aray&#252;z&#252;$
+$Zy_Ger$In der Gruppierung verwendete WAN-Schnittstellen$
+$Zy_Fre$Interfaces WAN utilis&#233;es dans le groupement$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str11$
+$Zy_Eng$PTM type$
+$Zy_Tur$PTM tipi$
+$Zy_Ger$PTM-Typ$
+$Zy_Fre$Type PTM$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str12$
+$Zy_Eng$ATM type$
+$Zy_Tur$ATM tipi$
+$Zy_Ger$ATM-Typ$
+$Zy_Fre$Type ATM$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str13$
+$Zy_Eng$ETH type$
+$Zy_Tur$ETH tipi$
+$Zy_Ger$ETH-Typ$
+$Zy_Fre$Type ETH$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str14$
+$Zy_Eng$Grouped LAN Interfaces$
+$Zy_Tur$Grupland&#305;r&#305;lm&#305;&#351; Yerel A&#287; Aray&#252;zleri$
+$Zy_Ger$Gruppierte LAN-Schnittstellen$
+$Zy_Fre$Interfaces LAN group&#233;es$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str15$
+$Zy_Eng$Available LAN Interfaces$
+$Zy_Tur$Kullan&#305;labilir Yerel A&#287; Aray&#252;zleri$
+$Zy_Ger$Verf&#252;gbare LAN-Schnittstellen$
+$Zy_Fre$Interfaces LAN disponibles$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str16$
+$Zy_Eng$Automatically Add Clients With the following DHCP Vendor IDs$
+$Zy_Tur$A&#351;a&#287;&#305;daki DHCP Vendor ile M&#252;&#351;terileri otomatik olarak ekle $
+$Zy_Ger$Clients mit den folgenden DHCP-Anbieter-IDs automatisch hinzuf&#252;gen$
+$Zy_Fre$Ajouter automatiquement aux clients les ID suivantes de fournisseur DHCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str17$
+$Zy_Eng$Filter Criteria$
+$Zy_Tur$Filtre Kriterleri$
+$Zy_Ger$Filterkriterien$
+$Zy_Fre$Crit&#232;res de filtre$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str18$
+$Zy_Eng$WildCard Support$
+$Zy_Tur$Genel Arama Deste&#287;i$
+$Zy_Ger$Unterst&#252;tzung f&#252;r Platzhalter$
+$Zy_Fre$Prise en charge du caract&#232;re g&#233;n&#233;rique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str19$
+$Zy_Eng$Remove$
+$Zy_Tur$Kald&#305;r$
+$Zy_Ger$Entfernen$
+$Zy_Fre$Retirer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str2$
+$Zy_Eng$Add New Interface Group$
+$Zy_Tur$Yeni Aray&#252;z Grubu Ekle$
+$Zy_Ger$Neue Schnittstellengruppe hinzuf&#252;gen$
+$Zy_Fre$Ajouter un nouveau groupe d&#39;interfaces$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_Note$
+$Zy_Eng$Note$
+$Zy_Tur$Not$
+$Zy_Ger$Hinweis$
+$Zy_Fre$Remarque$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str21$
+$Zy_Eng$If a vendor ID is configured for a specific client device, please REBOOT the client device attached to the modem to allow it to obtain an appropriate IP address.$
+$Zy_Tur$Belirli bir vendor i&#231;in ID yap&#305;land&#305;r&#305;lm&#305;&#351;sa, uygun bir IP adresi almas&#305;na izin vermek i&#231;in modeme ba&#287;l&#305; istemci ayg&#305;t&#305;n&#305; YEN&#304;DEN BA&#350;LATINIZ.$
+$Zy_Ger$Wenn eine Anbieter-ID f&#252;r ein bestimmtes Client-Ger&#228;t konfiguriert ist, starten Sie bitte das an das Modem angeschlossene Client-Ger&#228;t neu, damit es eine geeignete IP-Adresse beziehen kann.$
+$Zy_Fre$Si une ID de fournisseur est configur&#233;e pour un appareil client sp&#233;cifique, RED&#201;MARREZ l&#39;appareil client reli&#233; au modem pour lui permettre d&#39;obtenir une adresse IP appropri&#233;e.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str22$
+$Zy_Eng$Add$
+$Zy_Tur$Ekle $
+$Zy_Ger$Hinzuf&#252;gen$
+$Zy_Fre$Ajouter$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str23$
+$Zy_Eng$Add new criteria$
+$Zy_Tur$Yeni kriterler ekle$
+$Zy_Ger$Neue Kriterien hinzuf&#252;gen$
+$Zy_Fre$Ajouter de nouveaux crit&#232;res$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str24$
+$Zy_Eng$Source MAC address$
+$Zy_Tur$Kaynak MAC adresi$
+$Zy_Ger$Quell-MAC-Adresse$
+$Zy_Fre$Adresse MAC source $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str25$
+$Zy_Eng$DHCP option 60$
+$Zy_Tur$DHCP se&#231;ene&#287;i 60$
+$Zy_Ger$DHCP-Option 60$
+$Zy_Fre$Option 60 DHCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str26$
+$Zy_Eng$Enable wildcard on dhcp option 60$
+$Zy_Tur$DHCP se&#231;ene&#287;i 60 da genel aramay&#305; etkinle&#351;tiriniz.$
+$Zy_Ger$Platzhalter bei DHCP-Option 60 aktivieren$
+$Zy_Fre$Activer le caract&#232;re g&#233;n&#233;rique sur l&#39;option 60 de dhcp$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str27$
+$Zy_Eng$DHCP option 61$
+$Zy_Tur$DHCP se&#231;ene&#287;i 61$
+$Zy_Ger$DHCP-Option 61$
+$Zy_Fre$Option 61 de DHCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str28$
+$Zy_Eng$IAID$
+$Zy_Tur$IAID$
+$Zy_Ger$IAID$
+$Zy_Fre$IAID$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str29$
+$Zy_Eng$DUID type$
+$Zy_Tur$DUID tipi$
+$Zy_Ger$DUID-Typ$
+$Zy_Fre$Type DUID$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str3$
+$Zy_Eng$Interface Group$
+$Zy_Tur$Aray&#252;z Grubu$
+$Zy_Ger$Schnittstellengruppe$
+$Zy_Fre$Groupe d&#39;interfaces$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str30$
+$Zy_Eng$DUID-LLT$
+$Zy_Tur$DUID-LLT$
+$Zy_Ger$DUID-LLT$
+$Zy_Fre$DUID-LLT$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str31$
+$Zy_Eng$DUID-EN$
+$Zy_Tur$DUID-EN$
+$Zy_Ger$DUID-EN$
+$Zy_Fre$DUID-EN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str32$
+$Zy_Eng$DUID-LL$
+$Zy_Tur$DUID-LL$
+$Zy_Ger$DUID-LL$
+$Zy_Fre$DUID-LL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str33$
+$Zy_Eng$Other$
+$Zy_Tur$Di&#287;er$
+$Zy_Ger$Andere$
+$Zy_Fre$Autre$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str34$
+$Zy_Eng$Hardware Type$
+$Zy_Tur$Donan&#305;m T&#252;r&#252;$
+$Zy_Ger$Hardware-Typ$
+$Zy_Fre$Type de mat&#233;riel $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str35$
+$Zy_Eng$Time$
+$Zy_Tur$S&#252;re $
+$Zy_Ger$Zeit$
+$Zy_Fre$Heure$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str36$
+$Zy_Eng$Link-layer address$
+$Zy_Tur$Ba&#287;lant&#305; katman&#305; adresi$
+$Zy_Ger$Link Layer Adresse$
+$Zy_Fre$Adresse de couche liaison$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str37$
+$Zy_Eng$Enterprise Number$
+$Zy_Tur$Kurum Numaras&#305;$
+$Zy_Ger$Unternehmensnummer$
+$Zy_Fre$Num&#233;ro d&#39;entreprise$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str38$
+$Zy_Eng$Identifier$
+$Zy_Tur$Kimlikleyici$
+$Zy_Ger$Identifier$
+$Zy_Fre$Identificateur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str39$
+$Zy_Eng$Manufacturer OUI$
+$Zy_Tur$&#220;retici OUI$
+$Zy_Ger$OUI des Herstellers$
+$Zy_Fre$Fabricant OUI$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str4$
+$Zy_Eng$Group Name$
+$Zy_Tur$Grup Ad&#305;$
+$Zy_Ger$Gruppenname$
+$Zy_Fre$Nom du groupe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str40$
+$Zy_Eng$Product Class$
+$Zy_Tur$&#220;r&#252;n S&#305;n&#305;f&#305;$
+$Zy_Ger$Produktklasse$
+$Zy_Fre$Classe du produit$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str41$
+$Zy_Eng$DUID$
+$Zy_Tur$DUID$
+$Zy_Ger$DUID$
+$Zy_Fre$DUID$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str42$
+$Zy_Eng$Model Name$
+$Zy_Tur$Model Ad&#305;$
+$Zy_Ger$Modellname$
+$Zy_Fre$Nom du mod&#232;le$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str43$
+$Zy_Eng$Serial Number$
+$Zy_Tur$Seri Numaras&#305;$
+$Zy_Ger$Seriennummer$
+$Zy_Fre$Num&#233;ro de s&#233;rie$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str44$
+$Zy_Eng$Interface Group Configuration$
+$Zy_Tur$Aray&#252;z Grup Yap&#305;land&#305;rmas&#305;$
+$Zy_Ger$Schnittstellengruppe konfigurieren$
+$Zy_Fre$Configuration du groupe d&#39;interfaces$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str45$
+$Zy_Eng$Remove Interface Group$
+$Zy_Tur$Aray&#252;z Grubunu Kald&#305;r$
+$Zy_Ger$Schnittstellengruppe entfernen$
+$Zy_Fre$Supprimez le groupe d&#39;interfaces$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str46$
+$Zy_Eng$DHCP option 125$
+$Zy_Tur$DHCP se&#231;ene&#287;i 125$
+$Zy_Ger$DHCP-Option 125$
+$Zy_Fre$Option 125 de DHCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str5$
+$Zy_Eng$WAN Interface$
+$Zy_Tur$WAN Aray&#252;z&#252;$
+$Zy_Ger$WAN-Schnittstelle$
+$Zy_Fre$Interface WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str6$
+$Zy_Eng$LAN Interfaces$
+$Zy_Tur$Yerel A&#287; Aray&#252;zleri$
+$Zy_Ger$LAN-Schnittstellen$
+$Zy_Fre$Interfaces LAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str7$
+$Zy_Eng$Criteria$
+$Zy_Tur$Kriterler$
+$Zy_Ger$Kriterien$
+$Zy_Fre$Crit&#232;re$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str9$
+$Zy_Eng$1.Enter the Group name and the group name must be unique and select either 2. (dynamic) or 3. (static) below <br> 2.If you like to automatically add LAN clients to a WAN Interface in the new group <br> add the DHCP vendor ID string. By configuring a DHCP vendor ID string <br> any DHCP client request with the specified vendor ID (DHCP option 60) <br> will be denied an IP address from the local DHCP server. <br> 3.Select interfaces from the available interface list and add it to the grouped <br> interface list using the arrow buttons to create the required mapping of the ports. <br> Note that these clients may obtain public IP addresses$
+$Zy_Tur$ 1. Grup ad&#305;n&#305; giriniz (grup ad&#305; benzersiz olmal&#305;d&#305;r) ve a&#351;a&#287;&#305;daki <br> ya 2 (Dinamik) ya da 3&#39; &#252; (Statik) se&#231;iniz, 2. Yerel A&#287; istemcilerini yeni gruptaki WAN Aray&#252;z&#252;ne otomatik olarak eklemek istiyorsan&#305;z, <br> DHCP vendor dizesini ekleyin. DHCP vendor dizesini yap&#305;land&#305;rarak, <br> belirtilen vendor (DHCP se&#231;ene&#287;i 60) ile yap&#305;lan herhangi bir DHCP istemci iste&#287;i <br> yerel DHCP sunucusundan bir IP adresi ile reddedilecektir. <br> 3. Kullan&#305;labilir aray&#252;z listesinden aray&#252;zleri se&#231;in ve gerekli port haritalamas&#305;n&#305; olu&#351;turmak i&#231;in oklar&#305; kullanarak bunu grupland&#305;r&#305;lm&#305;&#351; aray&#252;z listesine ekleyiniz <br>. <br> Bu m&#252;&#351;terilerin ortak IP adresleri alabilece&#287;ini unutmay&#305;n&#305;z. $
+$Zy_Ger$1. Geben Sie den Gruppennamen ein. Er muss eindeutig sein. W&#228;hlen Sie entweder 2. (dynamisch) oder 3. (statisch) unten aus.<br> 2. Wenn Sie LAN-Clients automatisch zu einer WAN-Schnittstelle in der neuen Gruppe hinzuf&#252;gen wollen,<br> f&#252;gen Sie die DHCP-Anbieter-ID hinzu. Durch Konfiguration einer DHCP-Anbieter-ID <br> erreichen Sie, dass jede DHCP-Client-Anforderung mit der angegebenen Anbieter-ID (DHCP Option 60) <br> keine IP-Adresse vom lokalen DHCP-Server erh&#228;lt. <br> 3. W&#228;hlen Sie Schnittstellen aus der Liste der verf&#252;gbaren Schnittstellen aus und f&#252;gen Sie sie zu der Liste <br> mit den gruppierten Schnittstellen hinzu. Verwenden Sie die Pfeilsymbole, um das erforderliche Mapping der Ports zu erzeugen. <br> Beachten Sie, dass diese Clients &#246;ffentliche IP-Adressen beziehen k&#246;nnen$
+$Zy_Fre$1.Saisissez le nom du groupe qui doit &#234;tre unique et s&#233;lectionnez 2 (dynamique) ou 3. (Statique) ci-dessous <br> 2.Si vous souhaitez ajouter automatiquement des clients LAN &#224; une interface WAN dans le nouveau groupe <br> ajoutez la cha&#238;ne d&#39;identification de fournisseur DHCP. En configurant une cha&#238;ne d&#39;ID de fournisseur DHCP <br> toute demande client DHCP avec l&#39;ID du fournisseur sp&#233;cifi&#233; (option 60 DHCP) <br> se verra refuser une adresse IP &#224; partir du serveur DHCP local. <br> 3.S&#233;lectionnez des interfaces dans la liste d&#39;interfaces disponibles et ajoutez-les &#224; la <br> liste d&#39;interfaces group&#233;es en utilisant les touches fl&#233;ch&#233;es pour cr&#233;er le mappage des ports n&#233;cessaires. <br> Notez que ces clients peuvent obtenir des adresses IP publiques$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str9_1$
+$Zy_Eng$Enter the Group name and the group name must be unique and select either 2. (dynamic) or 3. (static) below <br>$
+$Zy_Tur$Grup ad&#305;n&#305; girin (grup ad&#305; benzersiz olmal&#305;d&#305;r) ve a&#351;a&#287;&#305;daki <br> ya 2 (Dinamik) ya da 3&#39; &#252; (Statik) se&#231;iniz.$
+$Zy_Ger$Geben Sie den Gruppennamen ein. Er muss eindeutig sein. W&#228;hlen Sie entweder 2. (dynamisch) oder 3. (statisch) unten aus. <br>$
+$Zy_Fre$Saisissez le nom du groupe qui doit &#234;tre unique et s&#233;lectionnez 2 (dynamique) ou 3. (Statique) ci-dessous <br>$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str9_2$
+$Zy_Eng$If you like to automatically add LAN clients to a WAN Interface in the new group <br> add the DHCP vendor ID string. By configuring a DHCP vendor ID string <br> any DHCP client request with the specified vendor ID (DHCP option 60) <br> will be denied an IP address from the local DHCP server. <br>$
+$Zy_Tur$Yerel A&#287; istemcilerini yeni gruptaki WAN Aray&#252;z&#252;ne otomatik olarak eklemek istiyorsan&#305;z, <br> DHCP vendor dizesini ekleyiniz. DHCP vendor dizesini yap&#305;land&#305;rarak, <br> belirtilen vendor (DHCP se&#231;ene&#287;i 60) ile yap&#305;lan herhangi bir DHCP istemci iste&#287;i <br> yerel DHCP sunucusundan bir IP adresi ile reddedilecektir. <br>$
+$Zy_Ger$Wenn Sie LAN-Clients automatisch zu einer WAN-Schnittstelle in der neuen Gruppe hinzuf&#252;gen wollen,<br> f&#252;gen Sie die DHCP-Anbieter-ID hinzu. Durch Konfiguration einer DHCP-Anbieter-ID <br> erreichen Sie, dass jede DHCP-Client-Anforderung mit der angegebenen Anbieter-ID (DHCP Option 60) <br> keine IP-Adresse vom lokalen DHCP-Server erh&#228;lt. <br>$
+$Zy_Fre$Si vous souhaitez ajouter automatiquement des clients LAN &#224; une interface WAN dans le nouveau groupe <br> ajoutez la cha&#238;ne d&#39;identification de fournisseur DHCP. En configurant une cha&#238;ne d&#39;ID de fournisseur DHCP <br> toute demande client DHCP avec l&#39;ID du fournisseur sp&#233;cifi&#233; (option 60 DHCP) <br> se verra refuser une adresse IP &#224; partir du serveur DHCP local. <br>$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_InterfaceGrouping_Str9_3$
+$Zy_Eng$Select interfaces from the available interface list and add it to the grouped <br> interface list using the arrow buttons to create the required mapping of the ports. <br> Note that these clients may obtain public IP addresses$
+$Zy_Tur$Kullan&#305;labilir aray&#252;z listesinden aray&#252;zleri se&#231;in ve gerekli port haritalamas&#305;n&#305; olu&#351;turmak i&#231;in oklar&#305; kullanarak bunu grupland&#305;r&#305;lm&#305;&#351; aray&#252;z listesine ekleyiniz <br>. <br> Bu m&#252;&#351;terilerin ortak IP adresleri alabilece&#287;ini unutmay&#305;n&#305;z. $
+$Zy_Ger$W&#228;hlen Sie Schnittstellen aus der Liste der verf&#252;gbaren Schnittstellen aus und f&#252;gen Sie sie zu der Liste <br> mit den gruppierten Schnittstellen hinzu. Verwenden Sie die Pfeilsymbole, um das erforderliche Mapping der Ports zu erzeugen. <br> Beachten Sie, dass diese Clients &#246;ffentliche IP-Adressen beziehen k&#246;nnen$
+$Zy_Fre$S&#233;lectionnez des interfaces dans la liste d&#39;interfaces disponibles et ajoutez-les &#224; la <br> liste d&#39;interfaces group&#233;es en utilisant les touches fl&#233;ch&#233;es pour cr&#233;er le mappage des ports n&#233;cessaires. <br> Notez que ces clients peuvent obtenir des adresses IP publiques$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str1$
+$Zy_Eng$Address \'{{1}}\' is invalid IP address.$
+$Zy_Tur$\'{{1}}\' adresi ge&#231;ersiz IP adresi.$
+$Zy_Ger$Adresse \'{{1}}\' ist ung&#252;ltige IP-Adresse.$
+$Zy_Fre$L\'adresse \'{{1}}\' est une adresse IP non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str2$
+$Zy_Eng$Address \'{{1}}\' is invalid Subnet Mask.$
+$Zy_Tur$\'{{1}}\' adresi ge&#231;ersiz bir alt a&#287; maskesi.$
+$Zy_Ger$Adresse \'{{1}}\' ist ung&#252;ltige Subnetzmaske$
+$Zy_Fre$L&#39;adresse \'{{1}}\' n&#39;est pas un masque de sous r&#233;seau valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str3$
+$Zy_Eng$DNS server IP address 1 and/or 2 is invalid. Please enter a valid DNS Server IP Address.$
+$Zy_Tur$ DNS sunucusu IP adresini 1 ve / veya 2 ge&#231;ersiz. L&#252;tfen ge&#231;erli bir DNS Sunucusu IP Adresi giriniz.$
+$Zy_Ger$DNS Server IP-Adresse 1 und/oder 2 ist ung&#252;ltig. Bitte geben Sie eine g&#252;ltige DNS Server IP-Adresse ein.$
+$Zy_Fre$L&#39;adresse IP 1 et/ou 2 du serveur DNS n&#39;est pas valide. Entrez une adresse IP de serveur DNS valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str4$
+$Zy_Eng$Address \'{{1}}\' is invalid MAC address.$
+$Zy_Tur$\'{{1}}\' adresi ge&#231;ersiz bir MAC adresi.$
+$Zy_Ger$Adresse \'{{1}}\' ist ung&#252;ltige MAC-Adresse.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Explain$
+$Zy_Eng$The LAN IP address here is the IP address for you to login to the configuration interface. The DHCP Server settings decides the rules how it assigns IP addresses to the LAN clients on your network.$
+$Zy_Tur$Buradaki Yerel A&#287; IP adresi, yap&#305;land&#305;rma aray&#252;z&#252;ne giri&#351; i&#231;in kullanaca&#287;&#305;n&#305;z IP adresidir. DHCP Sunucusu ayarlar&#305;, IP adreslerini a&#287;&#305;n&#305;zdaki Yerel A&#287; istemcilerine nas&#305;l tahsis edilece&#287;ine ili&#351;kin kurallar&#305; belirler.$
+$Zy_Ger$Diese LAN IP-Adresse ist die IP-Adresse, mit der Sie sich bei der Konfigurationsschnittstelle anmelden. Die DHCP Server-Einstellungen legen fest, wie IP-Adressen den LAN-Clients in Ihrem Netzwerk zugewiesen werden.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str1$
+$Zy_Eng$This page lets you configure the LAN TCP/IP settings and have the VSG1432 as a DHCP server or DHCP relay agent.$
+$Zy_Tur$Bu sayfa, Yerel A&#287; TCP / IP ayarlar&#305;n&#305; yap&#305;land&#305;rman&#305;za ve bir DHCP sunucusu veya DHCP ge&#231;i&#351; arac&#305; olarak VSG1432&#39; e sahip olman&#305;za izin verir.$
+$Zy_Ger$Auf dieser Seite k&#246;nnen Sie die LAN TCP/IP-Einstellungen vornehmen und bestimmen, ob das Ger&#228;t als DHCP Server oder DHCP Relay Agent verwendet werden soll.$
+$Zy_Fre$Cette page vous permet de configurer les param&#232;tres TCP/IP du LAN et de d&#233;finir le VSG1432 comme un serveur DHCP ou un agent de relais DHCP.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str10$
+$Zy_Eng$DNS Values$
+$Zy_Tur$DNS De&#287;erleri$
+$Zy_Ger$DNS-Werte$
+$Zy_Fre$Valeurs DNS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str11$
+$Zy_Eng$DNS $
+$Zy_Tur$DNS $
+$Zy_Ger$DNS $
+$Zy_Fre$DNS $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IPv6DNS$
+$Zy_Eng$IPv6 DNS$
+$Zy_Tur$IPv6 DNS$
+$Zy_Ger$IPv6 DNS$
+$Zy_Fre$IPv6 DNS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DNS_Server$
+$Zy_Eng$DNS server$
+$Zy_Tur$DNS sunucusu$
+$Zy_Ger$DNS Server$
+$Zy_Fre$Serveur DNS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str12$
+$Zy_Eng$DNS Server 1$
+$Zy_Tur$DNS Sunucusu 1$
+$Zy_Ger$DNS Server 1$
+$Zy_Fre$Serveur DNS 1$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str13$
+$Zy_Eng$DNS Server 2$
+$Zy_Tur$DNS Sunucusu 2$
+$Zy_Ger$DNS Server 2$
+$Zy_Fre$Serveur DNS 2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str14$
+$Zy_Eng$Dynamic$
+$Zy_Tur$Dinamik$
+$Zy_Ger$Dynamisch$
+$Zy_Fre$Dynamique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str15$
+$Zy_Eng$Static$
+$Zy_Tur$Statik$
+$Zy_Ger$Statisch$
+$Zy_Fre$Statique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str16$
+$Zy_Eng$IP Alias$
+$Zy_Tur$IP Alias$
+$Zy_Ger$IP Alias$
+$Zy_Fre$Alias d&#39;IP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str17$
+$Zy_Eng$Enable IP Alias$
+$Zy_Tur$IP Alias &#8203;&#8203;etkinle&#351;tir $
+$Zy_Ger$IP Alias aktivieren$
+$Zy_Fre$Activer l&#39;alias d&#39;IP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str18$
+$Zy_Eng$IP Subnet Mask$
+$Zy_Tur$IP Alt A&#287; Maskesi$
+$Zy_Ger$IP-Subnetzmaske$
+$Zy_Fre$Masque de sous-r&#233;seau d&#39;IP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str19$
+$Zy_Eng$Beginning IP Address$
+$Zy_Tur$Ba&#351;lang&#305;&#231; &#8203;&#8203;IP Adresi$
+$Zy_Ger$Erste IP-Adresse$
+$Zy_Fre$Adresse IP de d&#233;but$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str2$
+$Zy_Eng$Group Name$
+$Zy_Tur$Grup Ad&#305;$
+$Zy_Ger$Gruppenname$
+$Zy_Fre$Nom du groupe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str20$
+$Zy_Eng$Ending IP Address$
+$Zy_Tur$Biti&#351; IP Adresi  $
+$Zy_Ger$Letzte IP-Adresse$
+$Zy_Fre$Adresse IP de fin$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str25$
+$Zy_Eng$DNS Entry Configuration$
+$Zy_Tur$DNS Giri&#351;i Yap&#305;land&#305;rmas&#305;$
+$Zy_Ger$DNS-Eintrag konfigurieren$
+$Zy_Fre$Adresse IP de fin$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str57$
+$Zy_Eng$From ISP$
+$Zy_Tur$ISS' den$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str58$
+$Zy_Eng$None$
+$Zy_Tur$hi&#231;biri$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str3$
+$Zy_Eng$LAN IP Setup$
+$Zy_Tur$Yerel A&#287; IP Kurulumu$
+$Zy_Ger$LAN IP einrichten$
+$Zy_Fre$Configuration de l&#39;IP LAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str4$
+$Zy_Eng$DHCP Server State$
+$Zy_Tur$DHCP Sunucu Durumu$
+$Zy_Ger$DHCP-Server-Status$
+$Zy_Fre$Etat du serveur DHCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AutoReserveLANDHCPLease$
+$Zy_Eng$Auto reserve IP for the same host$
+$Zy_Tur$Ayn&#305; sunucu i&#231;in otomatik IP reservi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str5$
+$Zy_Eng$IP Addressing Values$
+$Zy_Tur$IP Adresleme De&#287;erleri$
+$Zy_Ger$IP-Adressierungswerte$
+$Zy_Fre$Valeurs d&#39;adressage de l&#39;IP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str6$
+$Zy_Eng$DHCP Server Lease Time$
+$Zy_Tur$DHCP Sunucu Kiralama S&#252;resi$
+$Zy_Ger$DHCP Server Lease Zeit$
+$Zy_Fre$Dur&#233;e de bail du server DHCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str7$
+$Zy_Eng$Days$
+$Zy_Tur$G&#252;n$
+$Zy_Ger$Tage$
+$Zy_Fre$Jours$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str8$
+$Zy_Eng$Hours$
+$Zy_Tur$Saat$
+$Zy_Ger$Stunden$
+$Zy_Fre$Heures$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str9$
+$Zy_Eng$Minutes$
+$Zy_Tur$Dakika$
+$Zy_Ger$Minuten$
+$Zy_Fre$Minutes$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANVLAN_Str1$
+$Zy_Eng$A LAN VLAN operation can add, remove, remark or unchange on packet transmit to LAN.$
+$Zy_Tur$Yerel A&#287; VLAN i&#351;lemi ile, LAN paketlerinin iletimi i&#231;in paket iletimini ekleyebilir, kald&#305;rabilir, i&#351;aretleyebilir veya hi&#231;bir de&#287;i&#351;iklik yapmayabilirsiniz.$
+$Zy_Ger$Eine LAN VLAN Operation kann w&#228;hrend der &#220;bertragung von Paketen an das LAN ein Tag vergeben. M&#246;glichkeiten f&#252;r das Tag sind: Tag hinzuf&#252;gen, Tag entfernen, Tag &#228;ndern, Tag belassen.$
+$Zy_Fre$Une op&#233;ration LAN VLAN peut ajouter, supprimer, remarquer ou laisser inchang&#233; le paquet transmis au LAN.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANVLAN_Str10$
+$Zy_Eng$VLAN ID$
+$Zy_Tur$VLAN ID$
+$Zy_Ger$VLAN ID$
+$Zy_Fre$ID VLAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANVLAN_Str11$
+$Zy_Eng$Unchange$
+$Zy_Tur$De&#287;i&#351;tirme$
+$Zy_Ger$Tag belassen$
+$Zy_Fre$Inchang&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANVLAN_Str12$
+$Zy_Eng$Add$
+$Zy_Tur$Ekle $
+$Zy_Ger$Tag hinzuf&#252;gen$
+$Zy_Fre$Ajouter$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANVLAN_Str13$
+$Zy_Eng$Remove$
+$Zy_Tur$Kald&#305;r$
+$Zy_Ger$Tag entfernen$
+$Zy_Fre$Retirer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANVLAN_Str14$
+$Zy_Eng$Remark$
+$Zy_Tur$&#304;&#351;aretle$
+$Zy_Ger$Tag &#228;ndern$
+$Zy_Fre$Remarquer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANVLAN_Str2$
+$Zy_Eng$LAN VLAN Setup$
+$Zy_Tur$Yerel A&#287; VLAN Kurulumu$
+$Zy_Ger$LAN VLAN einrichten$
+$Zy_Fre$Configuration de LAN VLAN $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANVLAN_Str3$
+$Zy_Eng$LAN port$
+$Zy_Tur$Yerel A&#287; portu$
+$Zy_Ger$LAN-Port$
+$Zy_Fre$Port LAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANVLAN_Str4$
+$Zy_Eng$LAN1$
+$Zy_Tur$Yerel A&#287; 1$
+$Zy_Ger$LAN1$
+$Zy_Fre$LAN1$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANVLAN_Str5$
+$Zy_Eng$LAN2$
+$Zy_Tur$Yerel A&#287; 2$
+$Zy_Ger$LAN2$
+$Zy_Fre$LAN2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANVLAN_Str6$
+$Zy_Eng$LAN3$
+$Zy_Tur$Yerel A&#287; 3$
+$Zy_Ger$LAN3$
+$Zy_Fre$LAN3$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANVLAN_Str7$
+$Zy_Eng$LAN4$
+$Zy_Tur$Yerel A&#287; 4$
+$Zy_Ger$LAN4$
+$Zy_Fre$LAN4$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANVLAN_Str8$
+$Zy_Eng$TAG Operation$
+$Zy_Tur$TAG &#304;&#351;lemi$
+$Zy_Ger$TAG-Operation$
+$Zy_Fre$Op&#233;ration de balise $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANVLAN_Str9$
+$Zy_Eng$802.1P Mark$
+$Zy_Tur$802.1P &#304;&#351;areti$
+$Zy_Ger$802.1P Markierung$
+$Zy_Fre$Marquage 802.1P $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str1$
+$Zy_Eng$Please enter a policy name$
+$Zy_Tur$L&#252;tfen bir kural ad&#305; giriniz.$
+$Zy_Ger$Bitte geben Sie einen Richtliniennamen ein.$
+$Zy_Fre$Veuillez entrer un nom de strat&#233;gie.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str10$
+$Zy_Eng$You need to add a WAN Interface first.$
+$Zy_Tur$&#214;nce bir WAN Aray&#252;z&#252; eklemelisiniz.$
+$Zy_Ger$Sie m&#252;ssen zuerst eine WAN-Schnittstelle hinzuf&#252;gen.$
+$Zy_Fre$Vous devez d&#39;abord ajouter une interface WAN.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str11$
+$Zy_Eng$Please enter a policy name$
+$Zy_Tur$L&#252;tfen bir kural ad&#305; giriniz.$
+$Zy_Ger$Bitte geben Sie einen Richtliniennamen ein.$
+$Zy_Fre$Veuillez entrer un nom de strat&#233;gie.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str12$
+$Zy_Eng$Please enter valid rule name: No special characters.$
+$Zy_Tur$L&#252;tfen ge&#231;erli bir kural ad&#305; girin: &#214;zel karakter yok.$
+$Zy_Ger$Bitte g&#252;ltigen Regelnamen eingeben: Ohne Sonderzeichen.$
+$Zy_Fre$Entrez un nom de r&#232;gle valide: Pas de caract&#232;res sp&#233;ciaux.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str13$
+$Zy_Eng$Maximum policy name cannot exceed 8 characters.$
+$Zy_Tur$Maksimum kural ad&#305; 8 karakterden uzun olamaz.$
+$Zy_Ger$Ein Richtlinienname darf h&#246;chstens 8 Zeichen lang sein.$
+$Zy_Fre$Le nom de strat&#233;gie ne peut d&#233;passer 8 caract&#232;res.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str14$
+$Zy_Eng$Please at least enter a policy$
+$Zy_Tur$L&#252;tfen en az bir kural giriniz.$
+$Zy_Ger$Geben Sie bitte mindestens eine Richtlinie ein$
+$Zy_Fre$Veuillez entrer au moins une strat&#233;gie.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str15$
+$Zy_Eng$Source IP {{1}} is invalid IP address.$
+$Zy_Tur${{1}} Kaynak IP ge&#231;ersiz bir IP adresi.$
+$Zy_Ger$Quell-IP {{1}} ist ung&#252;ltige IP-Adresse.$
+$Zy_Fre$L&#39;IP source {{1}} est une adresse IP non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str16$
+$Zy_Eng$Source Subnet Mask {{1}} is invalid subnet mask.$
+$Zy_Tur${{1}} Kaynak Alt A&#287; Maskesi ge&#231;ersiz bir alt a&#287; maskesi.$
+$Zy_Ger$Quell-Subnetzmaske {{1}} ist ung&#252;ltige Subnetzmaske.$
+$Zy_Fre$Le masque de sous-r&#233;seau source {{1}} est un masque de sous r&#233;seau non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str17$
+$Zy_Eng$Source Port {{1}} is invalid Port.$
+$Zy_Tur${{1}} Kaynak Port ge&#231;ersiz bir Port.$
+$Zy_Ger$Quell-Port {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le port source {{1}} est un port non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str18$
+$Zy_Eng$You should select the protocol.$
+$Zy_Tur$Protokol&#252; se&#231;melisiniz.$
+$Zy_Ger$Sie sollten das Protokoll ausw&#228;hlen.$
+$Zy_Fre$Vous devez s&#233;lectionner le protocole.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str19$
+$Zy_Eng$Source Mac {{1}} is invalid Mac address.$
+$Zy_Tur${{1}} Kaynak Mac ge&#231;ersiz bir Mac adresi.$
+$Zy_Ger$Quell-MAC-Adresse {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Mac source {{1}} est une adresse Mac non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str2$
+$Zy_Eng$Please enter valid rule name: No special characters.$
+$Zy_Tur$L&#252;tfen ge&#231;erli bir policy ad&#305; giriniz: &#214;zel karakter yok.$
+$Zy_Ger$Bitte g&#252;ltigen Regelnamen eingeben: Ohne Sonderzeichen.$
+$Zy_Fre$Entrez un nom de r&#232;gle valide: Pas de caract&#232;res sp&#233;ciaux.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str20$
+$Zy_Eng$Configure route for rule source ip = {{1}}, protocol = {{2}}, source port = {{3}}, source MAC = {{4}} failed$
+$Zy_Tur$policy kaynak IP i&#231;in yolu yap&#305;land&#305;r = {{1}}, protokol = {{2}}, kaynak port = {{3}}, kaynak MAC = {{4}} ba&#351;ar&#305;s&#305;z$
+$Zy_Ger$Fehler bei der Konfiguration von Route f&#252;r Regel Quell-IP = {{1}}, Protokoll = {{2}}, Quell-Port = {{3}}, Quell-MAC = {{4}} aufgetreten$
+$Zy_Fre$La configuration du routage de l&#39;IP source de la r&#232;gle = {{1}}, protocole = {{2}}, port source = {{3}}, MAC source = {{4}} a &#233;chou&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str20_1$
+$Zy_Eng$Configure route for rule source ip =$
+$Zy_Tur$policy kaynak IP i&#231;in yolu yap&#305;land&#305;r =$
+$Zy_Ger$Fehler bei der Konfiguration von Route f&#252;r Regel Quell-IP =$
+$Zy_Fre$La configuration du routage de l&#39;IP source de la regle =$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str20_2$
+$Zy_Eng$, protocol =$
+$Zy_Tur$, protokol =$
+$Zy_Ger$, Protokoll =$
+$Zy_Fre$, protocole =$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str20_3$
+$Zy_Eng$, source port =$
+$Zy_Tur$, kaynak port =$
+$Zy_Ger$, Quell-Port =$
+$Zy_Fre$, port source =$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str20_4$
+$Zy_Eng$, source MAC =$
+$Zy_Tur$, kaynak MAC =$
+$Zy_Ger$, Quell-MAC =$
+$Zy_Fre$, MAC source =$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str20_5$
+$Zy_Eng$failed$
+$Zy_Tur$ba&#351;ar&#305;s&#305;z $
+$Zy_Ger$aufgetreten$
+$Zy_Fre$a echoue$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str21$
+$Zy_Eng$The rule source ip = {{1}}, protocol = {{1}}, source port = {{1}}, source MAC = {{1}} is already in use!$
+$Zy_Tur$Geni&#351;bantpolicy kaynak IP = {{1}}, protokol = {{1}}, kaynak port = {{1}}, kaynak MAC = {{1}} zaten kullan&#305;l&#305;yor!$
+$Zy_Ger$Die Regel Quell-IP = {{1}}, Protokoll = {{1}}, Quell-Port = {{1}}, Quell-MAC = {{1}} wird bereits verwendet!$
+$Zy_Fre$L&#39;IP source de la r&#232;gle = {{1}}, protocole = {{1}}, port source = {{1}}, MAC source = {{1}} est d&#233;j&#224; en cours d&#39;utilisation!$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str21_1$
+$Zy_Eng$The rule source ip =$
+$Zy_Tur$Geni&#351;bantpolicy kaynak IP =$
+$Zy_Ger$Die Regel Quell-IP =$
+$Zy_Fre$L&#39;IP source de la regle =$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str21_2$
+$Zy_Eng$, protocol =$
+$Zy_Tur$, protokol =$
+$Zy_Ger$, Protokoll =$
+$Zy_Fre$, protocole =$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str21_3$
+$Zy_Eng$, source port =$
+$Zy_Tur$, kaynak port =$
+$Zy_Ger$, Quell-Port =$
+$Zy_Fre$, port source =$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str21_4$
+$Zy_Eng$, source MAC =$
+$Zy_Tur$, kaynak MAC =$
+$Zy_Ger$, Quell-MAC =$
+$Zy_Fre$, MAC source =$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str21_5$
+$Zy_Eng$is already in use!$
+$Zy_Tur$zaten kullan&#305;l&#305;yor! $
+$Zy_Ger$wird bereits verwendet!$
+$Zy_Fre$est deja en cours d&#39;utilisation!$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str3$
+$Zy_Eng$Maximum policy name cannot exceed 8 characters.$
+$Zy_Tur$Maksimum kural ad&#305; 8 karakterden uzun olamaz.$
+$Zy_Ger$Ein Richtlinienname darf h&#246;chstens 8 Zeichen lang sein.$
+$Zy_Fre$Le nom de strat&#233;gie ne peut d&#233;passer 8 caract&#232;res.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str4$
+$Zy_Eng$Please at least enter a policy$
+$Zy_Tur$L&#252;tfen en az bir kural giriniz.$
+$Zy_Ger$Geben Sie bitte mindestens eine Richtlinie ein$
+$Zy_Fre$Veuillez entrer au moins une strat&#233;gie.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str5$
+$Zy_Eng$Source Ip {{1}} is invalid IP address.$
+$Zy_Tur${{1}} Kaynak IP ge&#231;ersiz bir IP adresi.$
+$Zy_Ger$Quell-IP {{1}} ist ung&#252;ltige IP-Adresse.$
+$Zy_Fre$L&#39;IP source {{1}} est une adresse IP non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str6$
+$Zy_Eng$Source Subnet Mask {{1}} is invalid subnet mask.$
+$Zy_Tur${{1}} Kaynak Alt A&#287; Maskesi ge&#231;ersiz bir alt a&#287; maskesi.$
+$Zy_Ger$Quell-Subnetzmaske {{1}} ist ung&#252;ltige Subnetzmaske.$
+$Zy_Fre$Le masque de sous-r&#233;seau source {{1}} est un masque de sous r&#233;seau non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str7$
+$Zy_Eng$Source Port {{1}} is invalid Port.$
+$Zy_Tur${{1}} Kaynak Port ge&#231;ersiz bir Port.$
+$Zy_Ger$Quell-Port {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le port source {{1}} est un port non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str8$
+$Zy_Eng$You should select the protocol.$
+$Zy_Tur$Protokol&#252; se&#231;melisiniz.$
+$Zy_Ger$Sie sollten das Protokoll ausw&#228;hlen.$
+$Zy_Fre$Vous devez s&#233;lectionner le protocole.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_AlertMsg_Str9$
+$Zy_Eng$Source Mac {{1}} is invalid Mac address.$
+$Zy_Tur${{1}} Kaynak Mac ge&#231;ersiz bir Mac adresi.$
+$Zy_Ger$Quell-MAC-Adresse {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Mac source {{1}} est une adresse Mac non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_Str1$
+$Zy_Eng$This page allows the {{1}} to override the default routing behavior and alter the packet forwarding based on the policy defined by the network administrator.$
+$Zy_Tur$Bu sayfa, {{1}} se&#231;ene&#287;inin varsay&#305;lan y&#246;nlendirme davran&#305;&#351;&#305;n&#305;n ge&#231;ersiz k&#305;l&#305;nmas&#305;n&#305; ve a&#287; y&#246;neticisi taraf&#305;ndan belirlenen kurala dayal&#305; paket iletiminin de&#287;i&#351;tirmesini sa&#287;lar.$
+$Zy_Ger$Mit dieser Seite kann {{1}} das Standard-Routing-Verhalten au&#223;er Kraft setzen und die Weiterleitung von Paketen auf Grundlage der vom Netzwerkadministrator definierten Richtlinie &#228;ndern.$
+$Zy_Fre$Cette page permet au {{1}} de remplacer le comportement de routage par d&#233;faut et modifier le routage des paquets sur la base de la strat&#233;gie d&#233;finie par l&#39;administrateur r&#233;seau.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_Str1_1$
+$Zy_Eng$This page allows the PolicyForward to override the default routing behavior and alter the packet forwarding based on the policy defined by the network administrator.$
+$Zy_Tur$Bu sayfa, kural ilet se&#231;ene&#287;inin varsay&#305;lan y&#246;nlendirme davran&#305;&#351;&#305;n&#305; ge&#231;ersiz k&#305;lmas&#305;n&#305; ve a&#287; y&#246;neticisi taraf&#305;ndan belirlenen kurala dayal&#305; paket iletimini de&#287;i&#351;tirmesini sa&#287;lar.$
+$Zy_Ger$Mit dieser Seite kann die Regel zur Weiterleitung des Standard-Routing Verhalten au&#223;er Kraft gesetzt werden und die Weiterleitung von Paketen auf Grundlage der vom Netzwerkadministrator definierten Richtlinien &#228;ndern.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_Str11$
+$Zy_Eng$You need to add {{1}}WAN Interface{{2}} first.$
+$Zy_Tur$&#214;nce bir {{1}} WAN Aray&#252;z&#252; {{2}} eklemelisiniz.$
+$Zy_Ger$Sie m&#252;ssen zuerst eine {{1}}WAN-Schnittstelle{{2}} hinzuf&#252;gen.$
+$Zy_Fre$Vous devez d&#39;abord ajouter une {{1}}interface WAN{{2}}.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_Str11_1$
+$Zy_Eng$You need to add$
+$Zy_Tur$Öncelikle$
+$Zy_Ger$Sie m&#252;ssen zuerst eine $
+$Zy_Fre$You need to add$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_Str11_2$
+$Zy_Eng$WAN Interface$
+$Zy_Tur$WAN Aray&#252;z&#252;$
+$Zy_Ger$WAN-Schnittstelle$
+$Zy_Fre$WAN Interface$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_Str11_3$
+$Zy_Eng$first.$
+$Zy_Tur$’ne eklemelisiniz.$
+$Zy_Ger$hinzuf&#252;gen.$
+$Zy_Fre$first.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_Str12$
+$Zy_Eng$Add WAN Interface$
+$Zy_Tur$WAN Aray&#252;z&#252; ekle$
+$Zy_Ger$WAN-Schnittstelle hinzuf&#252;gen$
+$Zy_Fre$Ajoutez une interface WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_Str13$
+$Zy_Eng$Add a New Policy Forward Entry$
+$Zy_Tur$Yeni Bir kural &#304;let Girdisi ekle$
+$Zy_Ger$Neuen Eintrag f&#252;r Weiterleiten einer Richtlinie$
+$Zy_Fre$Ajouter une nouvelle entr&#233;e de redirection de strat&#233;gie$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_Str13_1$
+$Zy_Eng$Add new Policy Forward Rule$
+$Zy_Tur$Yeni kurall&#305; y&#246;nlendirme ekle$
+$Zy_Ger$Neue Weiterleitungsrichtlinie hinzuf&#252;gen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_Str14$
+$Zy_Eng$Edit Policy Forward Entry$
+$Zy_Tur$kural &#304;let Girdisi d&#252;zenle$
+$Zy_Ger$Eintrag f&#252;r Weiterleiten einer Richtlinie hinzuf&#252;gen$
+$Zy_Fre$Modifiez l&#39;entr&#233;e de redirection de strat&#233;gie$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_Str15$
+$Zy_Eng$This will delete the item. Please confirm this step.$
+$Zy_Tur$Bu, &#246;&#287;eyi silecektir. L&#252;tfen bu ad&#305;m&#305; onaylay&#305;n&#305;z.$
+$Zy_Ger$Element wird hierdurch gel&#246;scht. Bitte diesen Schritt best&#228;tigen.$
+$Zy_Fre$Cela va supprimer l&#39;&#233;l&#233;ment. Veuillez confirmer cette &#233;tape.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_Str16$
+$Zy_Eng$Remove Policy Forward Entry$
+$Zy_Tur$Kural &#304;let Girdisi sil$
+$Zy_Ger$Eintrag f&#252;r Weiterleiten einer Richtlinie entfernen$
+$Zy_Fre$Supprimez l&#39;entr&#233;e de redirection de strat&#233;gie$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_Str2$
+$Zy_Eng$Policy Name$
+$Zy_Tur$Kural Ad&#305;$
+$Zy_Ger$Richtlinienname$
+$Zy_Fre$Nom de la strat&#233;gie$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_Str3$
+$Zy_Eng$Source IP$
+$Zy_Tur$Kaynak IP$
+$Zy_Ger$Quell-IP$
+$Zy_Fre$IP source$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_Str4$
+$Zy_Eng$Source Subnet Mask$
+$Zy_Tur$Kaynak Alt A&#287; Maskesi$
+$Zy_Ger$Quell-Subnetzmaske$
+$Zy_Fre$Masque de sous-r&#233;seau source$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_Str5$
+$Zy_Eng$Protocol$
+$Zy_Tur$Protokol$
+$Zy_Ger$Protokoll$
+$Zy_Fre$Protocole$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_Str6$
+$Zy_Eng$Source Port$
+$Zy_Tur$Kaynak Port$
+$Zy_Ger$Quell-Port$
+$Zy_Fre$Port source $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_Str7$
+$Zy_Eng$Source MAC$
+$Zy_Tur$Kaynak MAC$
+$Zy_Ger$Quell-MAC$
+$Zy_Fre$MAC source$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_Str8$
+$Zy_Eng$WAN$
+$Zy_Tur$WAN$
+$Zy_Ger$WAN$
+$Zy_Fre$WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_PolicyForwarding_Str9$
+$Zy_Eng$Modify$
+$Zy_Tur$De&#287;i&#351;tir$
+$Zy_Ger$&#196;ndern$
+$Zy_Fre$Modifier$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Network_StaticDHCP_AlertMsg_Str1$
+$Zy_Eng$Address \'00:00:g4:55:58:56\' is invalid MAC address.$
+$Zy_Tur$\'00:00:g4:55:58:56\' adresi ge&#231;ersiz bir MAC adresi.$
+$Zy_Ger$Adresse \'00:00:g4:55:58:56\' ist ung&#252;ltige MAC-Adresse.$
+$Zy_Fre$L&#39;adresse \'00:00:g4:55:58:56\' n&#39;est pas une adresse MAC valide.$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Network_StaticDHCP_Explain$
+$Zy_Eng$When any of the LAN clients on your network want to be always assigned fixed IP addresses, add a static lease for each such LAN client. You may need to know the MAC addresses of the clients in advance in order to process the set-up quickly.$
+$Zy_Tur$A&#287;&#305;n&#305;zdaki Yerel A&#287; istemcilerinden herhangi biri s&#252;rekli olarak kendisine sabit IP adresi atanmas&#305;n&#305; istedi&#287;inde, her Yerel A&#287; istemcisi i&#231;in statik kira ekleyiniz. Kurulum h&#305;zl&#305; bir &#351;ekilde yapmak i&#231;in istemcilerin MAC adreslerini &#246;nceden bilmeniz gerekebilir.$
+$Zy_Ger$Wenn LAN-Clients in Ihrem Netzwerk immer feste IP-Adressen beziehen wollen, f&#252;gen Sie eine Static Lease f&#252;r jeden derartigen Client hinzu. Um die Einrichtung schnell vornehmen zu k&#246;nnen, m&#252;ssen Sie vorab die MAC-Adressen der Clients kennen.$
+$Zy_Fre$Ajouter un nouveau bail statique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_Str1$
+$Zy_Eng$This page lets you assign a static IP address for a MAC address.$
+$Zy_Tur$Bu sayfa, bir MAC adresi i&#231;in statik bir IP adresi ataman&#305;z&#305; sa&#287;lar.$
+$Zy_Ger$Auf dieser Seite k&#246;nnen Sie eine statische IP-Adresse f&#252;r eine MAC-Adresse zuweisen.$
+$Zy_Fre$Cette page vous permet d&#39;attribuer une adresse IP statique pour une adresse MAC.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_Str2$
+$Zy_Eng$Add new static lease$
+$Zy_Tur$Yeni statik kira ekle$
+$Zy_Ger$Neue Static Lease hinzuf&#252;gen$
+$Zy_Fre$Ajouter un nouveau bail statique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_Str3$
+$Zy_Eng$Group Name$
+$Zy_Tur$Grup Ad&#305;$
+$Zy_Ger$Gruppenname$
+$Zy_Fre$Nom du groupe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_Str4$
+$Zy_Eng$Select Device Info$
+$Zy_Tur$Ayg&#305;t Bilgisi se&#231;iniz.$
+$Zy_Ger$Ger&#228;teinfo ausw&#228;hlen$
+$Zy_Fre$S&#233;lectionnez les informations de l&#39;appareil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_Str5$
+$Zy_Eng$MAC Address$
+$Zy_Tur$MAC Adresi$
+$Zy_Ger$MAC-Adresse$
+$Zy_Fre$Adresse MAC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_Str6$
+$Zy_Eng$IP Address$
+$Zy_Tur$IP Adresi$
+$Zy_Ger$IP-Adresse$
+$Zy_Fre$Adresse IP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_Str7$
+$Zy_Eng$Static DHCP Configuration$
+$Zy_Tur$Statik DHCP Yap&#305;land&#305;rmas&#305;$
+$Zy_Ger$Statisches DHCP konfigurieren$
+$Zy_Fre$Configuration DHCP statique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str1$
+$Zy_Eng$Entry name is necessary.$
+$Zy_Tur$Giri&#351; ad&#305; gerekli.$
+$Zy_Ger$Eingabename ist erforderlich.$
+$Zy_Fre$Le nom de l&#39;entr&#233;e est n&#233;cessaire.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str10$
+$Zy_Eng$Subnet Mask {{1}} is invalid subnet mask.$
+$Zy_Tur${{1}} Alt A&#287; Maskesi ge&#231;ersiz bir alt a&#287; maskesi.$
+$Zy_Ger$Subnetzmaske {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le masque de sous-r&#233;seau {{1}} est un masque de sous r&#233;seau non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str11$
+$Zy_Eng$Default gateway {{1}} is invalid IPv4 address.$
+$Zy_Tur${{1}} varsay&#305;lan a&#287; ge&#231;idi ge&#231;ersiz IPv4 adresi.$
+$Zy_Ger$Standard-Gateway {{1}} ist ung&#252;ltige IPv4-Adresse.$
+$Zy_Fre$La passerelle par d&#233;faut {{1}} n&#39;est pas une adresse IPv4 valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str12$
+$Zy_Eng$IP address cannot be the same with LAN subnet.$
+$Zy_Tur$IP adresi, Yerel A&#287; alt a&#287; maskesi ile ayn&#305; olamaz.$
+$Zy_Ger$IP-Adresse darf nicht mit dem LAN-Subnetz identisch sein.$
+$Zy_Fre$L&#8217;adresse IP ne doit pas &#234;tre la m&#234;me que celle du masque de sous r&#233;seau LAN.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str13$
+$Zy_Eng$Enable route entry for address = {{1}} and subnet mask = {{2}} failed$
+$Zy_Tur$Adres = {{1}} ve alt a&#287; maskesi = {{2}} i&#231;in yol girdisi etkinle&#351;tirme ba&#351;ar&#305;s&#305;z$
+$Zy_Ger$Fehler beim Aktivieren des Routeneintrags f&#252;r Adresse = {{1}} und Subnetzmaske = {{2}} aufgetreten$
+$Zy_Fre$L&#39;activation de l&#39;entr&#233;e de routage pour l&#39;adresse = {{1}} et le masque de sous-r&#233;seau = {{2}} a &#233;chou&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str13_1$
+$Zy_Eng$Enable route entry for address =$
+$Zy_Tur$Adresi = i&#231;in yol girdisi etkinle&#351;tir$
+$Zy_Ger$Fehler beim Aktivieren des Routeneintrags f&#252;r Adresse =$
+$Zy_Fre$L&#39;activation de l&#39;entree de routage pour l&#39;adresse =$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str13_2$
+$Zy_Eng$and subnet mask =$
+$Zy_Tur$alt a&#287; maskesi = $
+$Zy_Ger$und Subnetzmaske =$
+$Zy_Fre$et le masque de sous-reseau =$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str13_3$
+$Zy_Eng$failed$
+$Zy_Tur$ba&#351;ar&#305;s&#305;z $
+$Zy_Ger$aufgetreten$
+$Zy_Fre$a echoue$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str14$
+$Zy_Eng$The rule is already in use!$
+$Zy_Tur$kural zaten kullan&#305;l&#305;yor!$
+$Zy_Ger$Die Regel wird bereits verwendet!$
+$Zy_Fre$La r&#232;gle est d&#233;j&#224; en cours d&#39;utilisation!$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str15$
+$Zy_Eng$Configure route for address = {{1}} failed$
+$Zy_Tur$Adres = {{1}} i&#231;in yol yap&#305;land&#305;rmas&#305; ba&#351;ar&#305;s&#305;z $
+$Zy_Ger$Fehler beim Konfigurieren der Route f&#252;r Adresse = {{1}} aufgetreten$
+$Zy_Fre$La configuration du routage pour l&#39;adresse = {{1}} a &#233;chou&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str15_1$
+$Zy_Eng$Configure route for address =$
+$Zy_Tur$Adres = i&#231;in yol yap&#305;land&#305;rmas&#305;$
+$Zy_Ger$Fehler beim Konfigurieren der Route f&#252;r Adresse = {{1}}$
+$Zy_Fre$La configuration du routage pour l&#39;adresse =$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str15_2$
+$Zy_Eng$failed$
+$Zy_Tur$ba&#351;ar&#305;s&#305;z $
+$Zy_Ger$aufgetreten$
+$Zy_Fre$a echoue$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str16$
+$Zy_Eng$Configure route for subnet mask = {{1}} failed$
+$Zy_Tur$Alt a&#287; maskesi = {{1}} i&#231;in yol yap&#305;land&#305;rmas&#305; ba&#351;ar&#305;s&#305;z$
+$Zy_Ger$Fehler beim Konfigurieren der Route f&#252;r Subnetzmaske = {{1}} aufgetreten$
+$Zy_Fre$La configuration du routage pour le masque de sous-r&#233;seau = {{1}} a &#233;chou&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str16_1$
+$Zy_Eng$Configure route for subnet mask =$
+$Zy_Tur$Alt a&#287; maskesi = i&#231;in yol yap&#305;land&#305;rmas&#305; $
+$Zy_Ger$Fehler beim Konfigurieren der Route f&#252;r Subnetzmaske =$
+$Zy_Fre$La configuration du routage pour le masque de sous-reseau =$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str16_2$
+$Zy_Eng$failed$
+$Zy_Tur$ba&#351;ar&#305;s&#305;z $
+$Zy_Ger$aufgetreten$
+$Zy_Fre$a echoue$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str17$
+$Zy_Eng$Delete route entry for address = {{1}} and subnet mask = {{2}} failed$
+$Zy_Tur$Adres = {{1}} ve alt a&#287; maskesi = {{2}} i&#231;in yol girdisini sil$
+$Zy_Ger$Fehler beim L&#246;schen des Routeneintrags f&#252;r Adresse = {{1}} und Subnetzmaske = {{2}} aufgetreten$
+$Zy_Fre$La suppression de l&#39;entr&#233;e de routage pour l&#39;adresse = {{1}} et le masque de sous-r&#233;seau = {{2}} a &#233;chou&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str17_1$
+$Zy_Eng$Delete route entry for address =$
+$Zy_Tur$Adres = i&#231;in yol girdisini sil$
+$Zy_Ger$Fehler beim L&#246;schen des Routeneintrags f&#252;r Adresse =$
+$Zy_Fre$La suppression de l&#39;entree de routage pour l&#39;adresse =$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str17_2$
+$Zy_Eng$and subnet mask =$
+$Zy_Tur$ve alt a&#287; maskesi = $
+$Zy_Ger$und Subnetzmaske =$
+$Zy_Fre$et le masque de sous-reseau =$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str17_3$
+$Zy_Eng$failed$
+$Zy_Tur$ba&#351;ar&#305;s&#305;z $
+$Zy_Ger$aufgetreten$
+$Zy_Fre$a echoue$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str18$
+$Zy_Eng$Configure route for address = {{1}} and subnet mask = {{2}} failed: Please check the gateway address.$
+$Zy_Tur$Adres = {{1}} ve alt a&#287; maskesi = {{2}} i&#231;in yolu yap&#305;land&#305;rma ba&#351;ar&#305;s&#305;z: L&#252;tfen a&#287; ge&#231;idi adresini kontrol ediniz.$
+$Zy_Ger$Fehler beim Konfigurieren der Route f&#252;r Adresse = {{1}} und Subnetzmaske = {{2}} aufgetreten: Bitte Gateway-Adresse pr&#252;fen.$
+$Zy_Fre$La configuration du routage pour l&#39;adresse = {{1}} et le masque de sous-r&#233;seau = {{2}} a &#233;chou&#233;: V&#233;rifier l&#39;adresse de la passerelle.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str18_1$
+$Zy_Eng$Configure route for address =$
+$Zy_Tur$Adres = i&#231;in yol yap&#305;land&#305;rmas&#305; $
+$Zy_Ger$Fehler beim Konfigurieren der Route f&#252;r Adresse = {{1}}$
+$Zy_Fre$La configuration du routage pour l&#39;adresse =$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str18_2$
+$Zy_Eng$and subnet mask =$
+$Zy_Tur$ve alt a&#287; maskesi = $
+$Zy_Ger$und Subnetzmaske =$
+$Zy_Fre$et le masque de sous-reseau =$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str18_3$
+$Zy_Eng$failed: Please check the gateway address.$
+$Zy_Tur$ba&#351;ar&#305;s&#305;z: L&#252;tfen a&#287; ge&#231;idi adresini kontrol ediniz.$
+$Zy_Ger$aufgetreten: Bitte Gateway-Adresse pr&#252;fen.$
+$Zy_Fre$a echoue: Verifier l&#39;adresse de la passerelle.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str19$
+$Zy_Eng$Rule name is duplicated!$
+$Zy_Tur$Kural ad&#305; mevcut!$
+$Zy_Ger$Regelname kommt doppelt vor!$
+$Zy_Fre$Nom de la r&#232;gle est dupliqu&#233;!$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str2$
+$Zy_Eng$Need to specify destination IP Address.$
+$Zy_Tur$Hedef IP adresi belirtmeniz gerekir.$
+$Zy_Ger$Ziel-IP-Adresse muss angegeben werden.$
+$Zy_Fre$Besoin de pr&#233;ciser l&#39;adresse IP de destination.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str20$
+$Zy_Eng$The rule is already in use!$
+$Zy_Tur$policy zaten kullan&#305;l&#305;yor!$
+$Zy_Ger$Die Regel wird bereits verwendet!$
+$Zy_Fre$La r&#232;gle est d&#233;j&#224; en cours d&#39;utilisation!$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str21$
+$Zy_Eng$This will delete the item. Please confirm this step.$
+$Zy_Tur$Bu, &#246;&#287;eyi silecektir. L&#252;tfen bu ad&#305;m&#305; onaylay&#305;n&#305;z.$
+$Zy_Ger$Element wird hierdurch gel&#246;scht. Bitte diesen Schritt best&#228;tigen.$
+$Zy_Fre$Cela va supprimer l&#39;&#233;l&#233;ment. Veuillez confirmer cette &#233;tape.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str22$
+$Zy_Eng$Destination address {{1}} is invalid IPv6 address.$
+$Zy_Tur${{1}} hedef adresi ge&#231;ersiz bir IPv6 adresi.$
+$Zy_Ger$Zieladresse {{1}} ist ung&#252;ltige IPv6-Adresse.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str23$
+$Zy_Eng$Default gateway {{1}} is invalid IPv6 address.$
+$Zy_Tur${{1}} varsay&#305;lan a&#287; ge&#231;idi ge&#231;ersiz IPv6 adresi.$
+$Zy_Ger$Standard-Gateway {{1}} ist ung&#252;ltige IPv6-Adresse.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str24$
+$Zy_Eng$Need to specify IPv6 prefix length.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str3$
+$Zy_Eng$Destination address {{1}} is invalid IPv4 address.$
+$Zy_Tur${{1}} hedef adresi ge&#231;ersiz bir IPv4 adresi.$
+$Zy_Ger$Zieladresse {{1}} ist ung&#252;ltige IPv4-Adresse.$
+$Zy_Fre$L&#39;adresse de destination {{1}} n&#39;est pas une adresse IPv4 valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str4$
+$Zy_Eng$Subnet Mask {{1}} is invalid subnet mask.$
+$Zy_Tur${{1}} Alt A&#287; Maskesi ge&#231;ersiz bir alt a&#287; maskesi.$
+$Zy_Ger$Subnetzmaske {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le masque de sous-r&#233;seau {{1}} est un masque de sous r&#233;seau non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str5$
+$Zy_Eng$Default gateway {{1}} is invalid IPv4 address.$
+$Zy_Tur${{1}} varsay&#305;lan a&#287; ge&#231;idi ge&#231;ersiz IPv4 adresi.$
+$Zy_Ger$Standard-Gateway {{1}} ist ung&#252;ltige IPv4-Adresse.$
+$Zy_Fre$La passerelle par d&#233;faut {{1}} n&#39;est pas une adresse IPv4 valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str6$
+$Zy_Eng$IP address can not be the same with LAN subnet.$
+$Zy_Tur$IP adresi, Yerel A&#287; alt a&#287; maskesi ile ayn&#305; olamaz.$
+$Zy_Ger$IP-Adresse darf nicht mit dem LAN-Subnetz identisch sein.$
+$Zy_Fre$L&#8217;adresse IP ne doit pas &#234;tre la m&#234;me que celle du masque de sous r&#233;seau LAN.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str7$
+$Zy_Eng$Entry name is necessary.$
+$Zy_Tur$Giri&#351; ad&#305; gerekli.$
+$Zy_Ger$Eingabename ist erforderlich.$
+$Zy_Fre$Le nom de l&#39;entr&#233;e est n&#233;cessaire.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str8$
+$Zy_Eng$Need to specify destination IP Address.$
+$Zy_Tur$Hedef IP adresi belirtmeniz gerekir.$
+$Zy_Ger$Ziel-IP-Adresse muss angegeben werden.$
+$Zy_Fre$Besoin de pr&#233;ciser l&#39;adresse IP de destination.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_AlertMsg_Str9$
+$Zy_Eng$Destination address {{1}} is invalid IPv4 address.$
+$Zy_Tur${{1}} hedef adresi ge&#231;ersiz bir IPv4 adresi.$
+$Zy_Ger$Zieladresse {{1}} ist ung&#252;ltige IPv4-Adresse.$
+$Zy_Fre$L&#39;adresse de destination {{1}} n&#39;est pas une adresse IPv4 valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str1$
+$Zy_Eng$Routing$
+$Zy_Tur$Y&#246;nlendirme$
+$Zy_Ger$Routing$
+$Zy_Fre$Routage$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str10$
+$Zy_Eng$Add new Static Route$
+$Zy_Tur$Yeni Statik Yol Kayd&#305; Ekle$
+$Zy_Ger$Neue statische Route hinzuf&#252;gen$
+$Zy_Fre$Ajouter une nouvelle entr&#233;e de routage statique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str11$
+$Zy_Eng$General$
+$Zy_Tur$Genel$
+$Zy_Ger$Allgemein$
+$Zy_Fre$G&#233;n&#233;ral$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str12$
+$Zy_Eng$Active $
+$Zy_Tur$Aktif $
+$Zy_Ger$Aktiv $
+$Zy_Fre$Actif $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str13$
+$Zy_Eng$Route Name$
+$Zy_Tur$Yol Ad&#305;$
+$Zy_Ger$Name der Route$
+$Zy_Fre$Nom de racine$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str14$
+$Zy_Eng$Destination IP Address$
+$Zy_Tur$Hedef IP Adresi$
+$Zy_Ger$Ziel-IP-Adresse$
+$Zy_Fre$Adresse IP de destination$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str15$
+$Zy_Eng$IP Subnet Mask$
+$Zy_Tur$IP Alt A&#287; Maskesi$
+$Zy_Ger$IP-Subnetzmaske$
+$Zy_Fre$Masque de sous-r&#233;seau d&#39;IP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str16$
+$Zy_Eng$Use Gateway IP Address$
+$Zy_Tur$A&#287; Ge&#231;idi IP Adresini kullan$
+$Zy_Ger$Gateway-IP-Adresse verwenden$
+$Zy_Fre$Utiliser l&#39;adresse IP de la passerelle$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str17$
+$Zy_Eng$Gateway IP Address$
+$Zy_Tur$A&#287; Ge&#231;idi IP Adresi $
+$Zy_Ger$Gateway-IP-Adresse$
+$Zy_Fre$Adresse IP de la passerelle$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str18$
+$Zy_Eng$Use Interface$
+$Zy_Tur$Aray&#252;z kullan$
+$Zy_Ger$Schnittstelle verwenden$
+$Zy_Fre$Utilisez l&#39;interface$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str19$
+$Zy_Eng$This will delete the item. Please confirm this step.$
+$Zy_Tur$Bu, &#246;&#287;eyi silecektir. L&#252;tfen bu ad&#305;m&#305; onaylay&#305;n&#305;z.$
+$Zy_Ger$Element wird hierdurch gel&#246;scht. Bitte diesen Schritt best&#228;tigen.$
+$Zy_Fre$Cela va supprimer l&#39;&#233;l&#233;ment. Veuillez confirmer cette &#233;tape.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str2$
+$Zy_Eng$Routing can select paths in a network along which to send network traffic. In this page you can view and set up static routes on the device.$
+$Zy_Tur$Y&#246;nlendirme i&#351;lemi ile, a&#287; trafi&#287;ine g&#246;nderilecek yolu se&#231;ebilirsiniz. Bu sayfada cihazdaki statik yollar&#305;n&#305; g&#246;r&#252;nt&#252;leyebilir ve ayarlayabilirsiniz.$
+$Zy_Ger$Mit Routing k&#246;nnen Pfade in einem Netzwerk ausgew&#228;hlt werden, auf denen der Netzwerk-Traffic gesendet wird. Auf dieser Seite k&#246;nnen Sie statische Routen auf dem Ger&#228;t anzeigen und einrichten.$
+$Zy_Fre$Le routage peut s&#233;lectionner des chemins dans un r&#233;seau le long duquel envoyer du trafic r&#233;seau. Sur cette page vous pouvez afficher et mettre en place des routages statiques sur l&#39;appareil.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str20$
+$Zy_Eng$Remove Static Route Entry$
+$Zy_Tur$Statik Rotay&#305; Kald&#305;r$
+$Zy_Ger$Eintrag f&#252;r statische Route entfernen$
+$Zy_Fre$Supprimez l&#39;entr&#233;e de routage statique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str21$
+$Zy_Eng$Edit Static Route Entry$
+$Zy_Tur$Statik Rotay&#305; D&#252;zenle$
+$Zy_Ger$Eintrag f&#252;r statische Route bearbeiten$
+$Zy_Fre$Modifiez l&#39;entr&#233;e de routage statique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str22$
+$Zy_Eng$Remove Static Route Entry$
+$Zy_Tur$Statik Rotay&#305; Kald&#305;r$
+$Zy_Ger$Eintrag f&#252;r statische Route entfernen$
+$Zy_Fre$Supprimez l&#39;entr&#233;e de routage statique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str23$
+$Zy_Eng$The purpose of Static Route is to save time and bandwidth usage when LAN devices within an Intranet are transferring files or packets, especially when there are more than two Internet connections available in your home or office.$
+$Zy_Tur$Statik Rotan&#305;n amac&#305;, &#246;zellikle evinizde ya da ofisinizde ikiden fazla internet ba&#287;lant&#305;s&#305; oldu&#287;unda bir &#304;ntranet i&#231;erisindeki LAN ayg&#305;tlar&#305;n&#305;n dosya veya paketleri aktar&#305;rken zamandan ve bant geni&#351;li&#287;i kullan&#305;m&#305;ndan tasarruf sa&#287;lamakt&#305;r.$
+$Zy_Ger$Der Einsatz von statischen Routen soll Zeit und Bandbreite einsparen helfen, wenn LAN-Ger&#228;te in einem Intranet Dateien oder Pakete &#252;bertragen, besonders falls bei Ihnen zuhause oder in Ihrem B&#252;ro mehr als zwei Internetverbindungen verf&#252;gbar sind.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str24$
+$Zy_Eng$IP Type:$
+$Zy_Tur$IP T&#252;r&#252;:$
+$Zy_Ger$IP-Typ:$
+$Zy_Fre$Type IP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str25$
+$Zy_Eng$IPv4$
+$Zy_Tur$IPv4$
+$Zy_Ger$IPv4$
+$Zy_Fre$IPv4$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str26$
+$Zy_Eng$IPv6$
+$Zy_Tur$IPv6$
+$Zy_Ger$IPv6$
+$Zy_Fre$IPv6$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str27$
+$Zy_Eng$Static Route Edit$
+$Zy_Tur$Statik Rota D&#252;zenle$
+$Zy_Ger$Statische Route bearbeiten$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str28$
+$Zy_Eng$Add new Static Route$
+$Zy_Tur$Yeni Statik Rota Ekle$
+$Zy_Ger$Neue statische Route hinzuf&#252;gen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str30$
+$Zy_Eng$Prefix Length$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str3$
+$Zy_Eng$Status$
+$Zy_Tur$Durum$
+$Zy_Ger$Status$
+$Zy_Fre$&#201;tat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str4$
+$Zy_Eng$Name$
+$Zy_Tur$Ad$
+$Zy_Ger$Name$
+$Zy_Fre$Nom$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_Printer_Name$
+$Zy_Eng$Printer Name$
+$Zy_Tur$Yaz&#305;c&#305; Ad&#305;$
+$Zy_Ger$Drucker-Name$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str5$
+$Zy_Eng$Destination IP$
+$Zy_Tur$Hedef IP$
+$Zy_Ger$Ziel-IP$
+$Zy_Fre$IP de destination$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str6$
+$Zy_Eng$Subnet Mask/Prefix Length$
+$Zy_Tur$Alt A&#287; Maskesi$
+$Zy_Ger$Subnetzmaske$
+$Zy_Fre$Masque de sous-r&#233;seau$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str7$
+$Zy_Eng$Gateway$
+$Zy_Tur$A&#287; Ge&#231;idi$
+$Zy_Ger$Gateway$
+$Zy_Fre$Passerelle$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str8$
+$Zy_Eng$Interface$
+$Zy_Tur$Aray&#252;z$
+$Zy_Ger$Schnittstelle$
+$Zy_Fre$Interface$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticRoute_Str9$
+$Zy_Eng$Modify$
+$Zy_Tur$De&#287;i&#351;tir $
+$Zy_Ger$&#196;ndern$
+$Zy_Fre$Modifier$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DnsRoute_Intro$
+$Zy_Eng$The purpose of DNS Route is to forward DNS query and the traffic to the ip address obtained in the DNS query via the specific WAN interface. $
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DnsRoute_Note$
+$Zy_Eng$Maximum of 20 entries could be added.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DnsRoute_Edit$
+$Zy_Eng$DNS Route Edit$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DnsRoute_Add$
+$Zy_Eng$Add new DNS Route$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DnsRoute_Remove$
+$Zy_Eng$Remove DNS Route Entry$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DnsRoute_EditEntry$
+$Zy_Eng$Edit DNS Route Entry$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DnsRoute_DomainName$
+$Zy_Eng$Domain Name$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DnsRoute_Interface$
+$Zy_Eng$Interface$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DnsRoute_Subnetmask$
+$Zy_Eng$Subnet Mask$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DnsRoute_Modify$
+$Zy_Eng$Modify$
+$Zy_Tur$De&#287;i&#351;tir $
+$Zy_Ger$&#196;ndern$
+$Zy_Fre$Modifier$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DnsRoute_AlertMsg_DomainName$
+$Zy_Eng$Domain name is necessary.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DnsRoute_AlertMsg_DomainNameExist$
+$Zy_Eng$Domain name {{1}} already exists.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DnsRoute_AlertMsg_DomainNameInvalid$
+$Zy_Eng$Domain name {{1}} is invalid, . should follow by *$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_DnsRoute_AlertMsg_Subnetmask$
+$Zy_Eng$Subnet Mask {{1}} is invalid subnet mask.$
+$Zy_Tur${{1}} Alt A&#287; Maskesi ge&#231;ersiz bir alt a&#287; maskesi.$
+$Zy_Ger$Subnetzmaske {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le masque de sous-r&#233;seau {{1}} est un masque de sous r&#233;seau non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_EAP_Identity$
+$Zy_Eng$EAP Identity$
+$Zy_Tur$EAP Kimli&#287;i$
+$Zy_Ger$EAP Identity$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_EAP_method$
+$Zy_Eng$EAP method$
+$Zy_Tur$EAP y&#246;ntemi$
+$Zy_Ger$EAP-Methode$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_EAP_TLS$
+$Zy_Eng$EAP-TLS$
+$Zy_Tur$EAP-TLS$
+$Zy_Ger$EAP-TLS$
+$Zy_Fre$EAP-TLS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_Bidirectional_Authentication$
+$Zy_Eng$Bidirectional Authentication$
+$Zy_Tur$&#304;ki Y&#246;nl&#252; Kimlik Do&#287;rulama$
+$Zy_Ger$Bidirektionale Authentifizierung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_Certificate$
+$Zy_Eng$Certificate$
+$Zy_Tur$Sertifika$
+$Zy_Ger$Zertifikat$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_STBVendorID_Str1$
+$Zy_Eng$Device can identify the STB base on configured Vendor ID.$
+$Zy_Tur$Ayg&#305;t, yap&#305;land&#305;r&#305;lm&#305;&#351; Vendor ID ile STB&#39; yi tan&#305;mlayabilir.$
+$Zy_Ger$Ger&#228;t kann die STB-Basis anhand der konfigurierten Anbieter-ID identifizieren.$
+$Zy_Fre$L&#39;appareil peut identifier la base STB sur une ID de fournisseur configur&#233;e.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_STBVendorID_Str2$
+$Zy_Eng$Please enter Vendor ID for STB:$
+$Zy_Tur$STB i&#231;in vendor girin:$
+$Zy_Ger$Bitte die Anbieter-ID f&#252;r die STB eingeben:$
+$Zy_Fre$Entrez l&#39;ID du fournisseur pour STB:$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_STBVendorID_Str3$
+$Zy_Eng$DHCP option 60:$
+$Zy_Tur$DHCP se&#231;ene&#287;i 60:$
+$Zy_Ger$DHCP-Option 60:$
+$Zy_Fre$Option 60 DHCP:$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_STBVendorID_Str4$
+$Zy_Eng$DHCP option 67:$
+$Zy_Tur$DHCP se&#231;ene&#287;i 67:$
+$Zy_Ger$DHCP-Option 67:$
+$Zy_Fre$Option 67 DHCP:$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_STBVendorID_Str5$
+$Zy_Eng$The value of DHCP option 60 is comma separated (e.g. MSFT_IPTV,SAIP*,CIS*), and * can be used for rule partial match.$
+$Zy_Tur$DHCP se&#231;ene&#287;i 60 de&#287;eri virg&#252;l ile ayr&#305;lm&#305;&#351;t&#305;r (&#246;rne&#287;in; MSFT_IPTV, SA&#304;P *, CIS *) ve *, kural k&#305;smi e&#351;le&#351;me i&#231;in kullan&#305;labilir.$
+$Zy_Ger$Der Wert von DHCP-Option 60 wird durch Komma getrennt (z.B. :MSFT_IPTV,SAIP*,CIS*), und * kann f&#252;r beliebige Zeichen verwendet werden.$
+$Zy_Fre$La valeur de l&#39;option 60 DHCP est s&#233;par&#233;e par des virgules (e,g, MSFT_IPTV,SAIP*,CIS*), et * peut &#234;tre utilis&#233;e pour des correspondances partielles &#224; la r&#232;gle.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_STBVendorID_Str6$
+$Zy_Eng$Vendor ID$
+$Zy_Tur$vendor ID$
+$Zy_Ger$Anbieter-ID$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_UPnP_Explain$
+$Zy_Eng$Universal Plug and Play (UPnP) is a networking standard for easy network connectivity among networking devices and software that also have and enable UPnP.$
+$Zy_Tur$Evrensel Tak ve &#199;al&#305;&#351;t&#305;r (UPnP), UPnP &#246;zelli&#287;ine sahip ve bu &#246;zellikleri etkinle&#351;tirilmi&#351; ayg&#305;tlar aras&#305;nda kolay a&#287; kurulumu i&#231;in geli&#351;tirilmi&#351; bir a&#287; standard&#305;d&#305;r$
+$Zy_Ger$Universal Plug and Play (UPnP) ist ein Networking-Standard f&#252;r einfache Netzwerk-Konnektivit&#228;t zwischen Software und Netzwerkger&#228;ten, die auch UPnP haben und aktivieren k&#246;nnen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_UPnP_Explain_Str2$
+$Zy_Eng$When UPnP function of this device is enabled, UPnP-enabled devices and/or software on your network will be found and listed below.$
+$Zy_Tur$(null)$
+$Zy_Ger$Wenn UPnP auf diesem Ger&#228;t aktiviert wird, werden Ger&#228;te und/oder Software in Ihrem Netzwerk gefunden und unten aufgelistet.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_UPnP_Str1$
+$Zy_Eng$Universal Plug and Play (UPnP) is a networking standard for easy network connectivity among devices.$
+$Zy_Tur$Evrensel Tak ve &#199;al&#305;&#351;t&#305;r (UPnP), ayg&#305;tlar aras&#305;nda kolay a&#287; ba&#287;lant&#305;s&#305; sa&#287;layan bir a&#287; standard&#305;d&#305;r.$
+$Zy_Ger$Universal Plug and Play (UPnP) ist ein Networking-Standard f&#252;r einfache Netzwerk-Konnektivit&#228;t zwischen Ger&#228;ten.$
+$Zy_Fre$Universal Plug and Play (UPnP) est une norme de r&#233;seau pour la connectivit&#233; r&#233;seau facile entre les appareils.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_UPnP_Str2$
+$Zy_Eng$UPnP NAT-T only work when NAT is enabled$
+$Zy_Tur$UPnP NAT-T, sadece NAT etkin oldu&#287;unda &#231;al&#305;&#351;&#305;r$
+$Zy_Ger$UPnP NAT-T funktioniert nur, wenn NAT aktiviert ist$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_UPnP_Str3$
+$Zy_Eng$UPnP NAT-T State$
+$Zy_Tur$UPnP NAT-T Durumu$
+$Zy_Ger$UPnP NAT-T Status$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_UPnP_Str4$
+$Zy_Eng$UPnP NAT-T$
+$Zy_Tur$UPnP NAT-T$
+$Zy_Ger$UPnP NAT-T$
+$Zy_Fre$UPnP NAT-T$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_UPnP_Str5$
+$Zy_Eng$UPnP State$
+$Zy_Tur$UPnP Durumu$
+$Zy_Ger$UPnP-Status$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_UPnP_Str6$
+$Zy_Eng$UPnP$
+$Zy_Tur$UPnP$
+$Zy_Ger$UPnP$
+$Zy_Fre$UPnP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPGeneral_AlertMsg_Str1$
+$Zy_Eng$IGMP Query Interval {{1}} is invalid.$
+$Zy_Tur$IGMP Sorgu Aral&#305;&#287;&#305; {{1}} ge&#231;ersiz.$
+$Zy_Ger$IGMP Query-Intervall {{1}} ist ung&#252;ltig.$
+$Zy_Fre$L&#39;intervalle de requ&#234;te IGMP {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPGeneral_AlertMsg_Str2$
+$Zy_Eng$IGMP Query Interval {{1}} is out of range.$
+$Zy_Tur$IGMP Sorgu Aral&#305;&#287;&#305; {{1}} aral&#305;k d&#305;&#351;&#305;nda.$
+$Zy_Ger$IGMP Query-Intervall {{1}} liegt au&#223;erhalb des g&#252;ltigen Bereichs.$
+$Zy_Fre$L&#39;intervalle de requ&#234;te IGMP {{1}} est hors plage. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPGeneral_AlertMsg_Str3$
+$Zy_Eng$IGMP Query Response Interval {{1}} is invalid.$
+$Zy_Tur$IGMP Sorgu Yan&#305;t Aral&#305;&#287;&#305; {{1}} ge&#231;ersiz.$
+$Zy_Ger$IGMP Query-Reaktionsintervall{{1}} ist ung&#252;ltig.$
+$Zy_Fre$L&#39;intervalle de r&#233;ponse de requ&#234;te IGMP {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPGeneral_AlertMsg_Str4$
+$Zy_Eng$IGMP Query Response Interval must be less than Query Interval.$
+$Zy_Tur$IGMP Sorgu Yan&#305;t Aral&#305;&#287;&#305;, Sorgu Aral&#305;&#287;&#305;ndan az olmal&#305;d&#305;r.$
+$Zy_Ger$IGMP Query-Reaktionsintervall muss k&#252;rzer als das Query-Intervall sein.$
+$Zy_Fre$L&#39;intervalle de r&#233;ponse de requ&#234;te IGMP doit &#234;tre inf&#233;rieur &#224; l&#39;intervalle de requ&#234;te. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPGeneral_AlertMsg_Str5$
+$Zy_Eng$IGMP Query Response Interval {{1}} is out of range.$
+$Zy_Tur$IGMP Sorgu Yan&#305;t Aral&#305;&#287;&#305; {{1}} aral&#305;k d&#305;&#351;&#305;nda.$
+$Zy_Ger$IGMP Query-Reaktionsintervall {{1}} liegt au&#223;erhalb des g&#252;ltigen Bereichs.$
+$Zy_Fre$L&#39;intervalle de r&#233;ponse de requ&#234;te IGMP {{1}} est hors plage. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPGeneral_AlertMsg_Str6$
+$Zy_Eng$IGMP Robustness Value {{1}} is invalid.$
+$Zy_Tur$IGMP Sa&#287;laml&#305;k De&#287;eri {{1}} ge&#231;ersiz.$
+$Zy_Ger$Wert f&#252;r IGMP-Robustheit {{1}} ist ung&#252;ltig.$
+$Zy_Fre$La valeur de robustesse IGMP {{1}} n&#39;est pas valide. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPGeneral_AlertMsg_Str7$
+$Zy_Eng$IGMP Robustness Value {{1}} is out of range [1-7].$
+$Zy_Tur$IGMP Sa&#287;laml&#305;k De&#287;eri {{1}} aral&#305;k [1-7] d&#305;&#351;&#305;nda.$
+$Zy_Ger$Wert f&#252;r IGMP-Robustheit  {{1}} liegt au&#223;erhalb des Bereichs [1-7].$
+$Zy_Fre$La valeur de robustesse IGMP {{1}} est hors plage [1-7]. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str35$
+$Zy_Eng$IGMP Host Configuration$
+$Zy_Tur$IGMP host Yap&#305;land&#305;rmas&#305;$
+$Zy_Ger$IGMP-Host konfigurieren$
+$Zy_Fre$Configuration d&#39;h&#244;te IGMP $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str36$
+$Zy_Eng$IGMP Service Domain Delete$
+$Zy_Tur$IGMP Hizmet Alan&#305; Sil$
+$Zy_Ger$IGMP Service Domain l&#246;schen$
+$Zy_Fre$Supprimer le domaine de service IGMP $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str37$
+$Zy_Eng$IGMP Host Limitation Delete$
+$Zy_Tur$IGMP host S&#305;n&#305;rland&#305;rmas&#305; Sil$
+$Zy_Ger$IGMP-Hostbegrenzung l&#246;schen$
+$Zy_Fre$Supprimer le domaine d&#39;h&#244;te IGMP $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str38$
+$Zy_Eng$The page is used to modify IGMP service domain.$
+$Zy_Tur$Bu sayfa, IGMP hizmet alan&#305;n&#305; de&#287;i&#351;tirmek i&#231;in kullan&#305;l&#305;r.$
+$Zy_Ger$Auf dieser Seite wird die IGMP Service Domain ge&#228;ndert.$
+$Zy_Fre$La page est utilis&#233;e pour modifier le domaine de service IGMP.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str39$
+$Zy_Eng$Service$
+$Zy_Tur$Hizmet$
+$Zy_Ger$Service$
+$Zy_Fre$Service$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str40$
+$Zy_Eng$Modify the entry for host limitation.$
+$Zy_Tur$hostU s&#305;n&#305;rlamak i&#231;in girdiyi de&#287;i&#351;tiriniz.$
+$Zy_Ger$Eintrag f&#252;r die Hostbegrenzung &#228;ndern.$
+$Zy_Fre$Modifiez l&#39;entr&#233;e pour la limitation de l&#39;h&#244;te. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_Str41$
+$Zy_Eng$Modify the entry for host limitation in a service domain.$
+$Zy_Tur$Bir hizmet alan&#305;ndaki host&#305; s&#305;n&#305;rlamak i&#231;in girdiyi de&#287;i&#351;tiriniz.$
+$Zy_Ger$Eintrag f&#252;r die Hostbegrenzung in einer Service Domain &#228;ndern.$
+$Zy_Fre$Modifiez l&#39;entr&#233;e pour la limitation de l&#39;h&#244;te dans un domaine de service. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_AlertMsg_Str2$
+$Zy_Eng$Please enter a valid max STB allowed channels.$
+$Zy_Tur$L&#252;tfen ge&#231;erli bir maksimum STB izinli kanal giriniz.$
+$Zy_Ger$Bitte geben Sie die maximal zugelassene Anzahl an STB-Kan&#228;len an.$
+$Zy_Fre$Entrez les cha&#238;nes autoris&#233;es STB max valides. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_AlertMsg_Str3$
+$Zy_Eng$Please enter a valid max non-STB allowed channels.$
+$Zy_Tur$L&#252;tfen ge&#231;erli bir maksimum STB izinsiz kanal giriniz.$
+$Zy_Ger$Bitte geben Sie die maximal zugelassene Anzahl an Nicht-STB-Kan&#228;len an.$
+$Zy_Fre$Entrez les cha&#238;nes autoris&#233;es non-STB max valides.$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Network_IGMPFilter_AlertMsg_Str4$
+$Zy_Eng$Please enter the service name.$
+$Zy_Tur$L&#252;tfen hizmet ad&#305;n&#305; giriniz.$
+$Zy_Ger$Bitte geben Sie einen Service-Namen ein.$
+$Zy_Fre$Entrez le nom du service.$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Network_IGMPFilter_AlertMsg_Str5$
+$Zy_Eng$Please enter the service name without special characters.$
+$Zy_Tur$L&#252;tfen &#246;zel karakter i&#231;ermeyen hizmet ad&#305;n&#305; giriniz.$
+$Zy_Ger$Bitte geben Sie den Service-Namen ohne Sonderzeichen ein.$
+$Zy_Fre$Veuillez entrer le nom du service sans caract&#232;res sp&#233;ciaux.$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Network_IGMPFilter_AlertMsg_Str6$
+$Zy_Eng$The service name {{1}} is repeated.$
+$Zy_Tur$Hizmet ad&#305; {{1}} tekrar edilir.$
+$Zy_Ger$Der Service-Name {{1}} kommt bereits vor.$
+$Zy_Fre$Le nom du service {{1}} est r&#233;p&#233;t&#233;. $
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Network_IGMPFilter_AlertMsg_Str7$
+$Zy_Eng$Please add the group.$
+$Zy_Tur$L&#252;tfen grubu ekleyiniz.$
+$Zy_Ger$Bitte f&#252;gen Sie die Gruppe hinzu.$
+$Zy_Fre$Ajoutez le groupe.$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Network_IGMPFilter_AlertMsg_Str8$
+$Zy_Eng$Please enter a valid mask$
+$Zy_Tur$L&#252;tfen ge&#231;erli bir maske giriniz.$
+$Zy_Ger$Bitte eine g&#252;ltige Maske eingeben.$
+$Zy_Fre$Entrez un masque valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_AlertMsg_Str9$
+$Zy_Eng$Please enter a valid max allowed channels.$
+$Zy_Tur$L&#252;tfen ge&#231;erli bir maksimum izinli kanal giriniz.$
+$Zy_Ger$Bitte geben Sie eine g&#252;ltige, maximal zugelassene Anzahl an Kan&#228;len an.$
+$Zy_Fre$Entrez les cha&#238;nes autoris&#233;es max valides.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_AlertMsg_Str10$
+$Zy_Eng$Please select the service.$
+$Zy_Tur$L&#252;tfen hizmeti se&#231;iniz.$
+$Zy_Ger$Bitte w&#228;hlen Sie den Service.$
+$Zy_Fre$S&#233;lectionnez le service.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_AlertMsg_Str11$
+$Zy_Eng$Please select the host.$
+$Zy_Tur$L&#252;tfen host&#305; se&#231;iniz.$
+$Zy_Ger$Bitte w&#228;hlen Sie den Host.$
+$Zy_Fre$S&#233;lectionnez l&#39;h&#244;te.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPFilter_AlertMsg_Str12$
+$Zy_Eng$The IP address {{1}} is selected.$
+$Zy_Tur$IP adresi {{1}} se&#231;ilir.$
+$Zy_Ger$Die IP-Adresse {{1}} wurde bereits ausgew&#228;hlt.$
+$Zy_Fre$L&#39;adresse IP {{1}} est s&#233;lectionn&#233;e. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPACL_Str11$
+$Zy_Eng$IGMP ACL Delete$
+$Zy_Tur$IGMP ACL Sil$
+$Zy_Ger$IGMP ACL l&#246;schen$
+$Zy_Fre$Supprimer ACL IGMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPACL_Str12$
+$Zy_Eng$Multicast Address$
+$Zy_Tur$Multicast Yay&#305;n Adresi$
+$Zy_Ger$Multicast-Adresse$
+$Zy_Fre$Adresse de multidiffusion$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPACL_Str13$
+$Zy_Eng$Multicast Address Mask$
+$Zy_Tur$Multicast Yay&#305;n Adres Maskesi$
+$Zy_Ger$Multicast-Adressmaske$
+$Zy_Fre$Masque d&#39;adresse de multidiffusion$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Network_IGMPACL_AlertMsg_Str1$
+$Zy_Eng$Address {{1}} is an invalid IP address.$
+$Zy_Tur$Adres {{1}} ge&#231;ersiz bir IP adresi.$
+$Zy_Ger$Adresse {{1}} ist ung&#252;ltige IP-Adresse.$
+$Zy_Fre$L&#39;adresse {{1}} est une adresse IP non valide. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPACL_AlertMsg_Str2$
+$Zy_Eng$Address {{1}} is an invalid mask.$
+$Zy_Tur$Adres {{1}} ge&#231;ersiz bir maske.$
+$Zy_Ger$Adresse {{1}} ist ung&#252;ltige Maske.$
+$Zy_Fre$L&#39;adresse {{1}} est un masque non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPACL_AlertMsg_Str3$
+$Zy_Eng$Please select the ACL type$
+$Zy_Tur$L&#252;tfen ACL t&#252;r&#252;n&#252; se&#231;iniz.$
+$Zy_Ger$Bitte w&#228;hlen Sie den ACL-Typ aus.$
+$Zy_Fre$S&#233;lectionnez le type d&#39;ACL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPACL_AlertMsg_Str4$
+$Zy_Eng$Address {{1}} is a repeat IP address.$
+$Zy_Tur$Adres {{1}} tekrar edilen bir IP adresi.$
+$Zy_Ger$Adresse {{1}} kommt als IP-Adresse bereits vor.$
+$Zy_Fre$L&#39;adresse {{1}} est une adresse IP r&#233;p&#233;t&#233;e. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_IGMPACL_AlertMsg_Str5$
+$Zy_Eng$Address {{1}} / {{2}} is a repeat IP address.$
+$Zy_Tur$Adres {{1}} / {{2}} tekrar edilen bir IP adresi.$
+$Zy_Ger$Adresse {{1}} / {{2}} kommt als IP-Adresse bereits vor.$
+$Zy_Fre$L&#39;adresse {{1}} / {{2}} est une adresse IP r&#233;p&#233;t&#233;e. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str21$
+$Zy_Eng$DHCP Relay$
+$Zy_Tur$DHCP Aktarma$
+$Zy_Ger$DHCP Relay$
+$Zy_Fre$Relais DHCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str22$
+$Zy_Eng$DHCP Relay Server Addresss$
+$Zy_Tur$DHCP Aktarma Sunucusu Adresi $
+$Zy_Ger$Adresse des DHCP Relay Servers$
+$Zy_Fre$Adresse du serveur de relais DHCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str23$
+$Zy_Eng$Blocking Mode$
+$Zy_Tur$Engelleme Modu $
+$Zy_Ger$Blockier-Modus$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str24$
+$Zy_Eng$Delegate prefix from WAN$
+$Zy_Tur$WAN&#39; dan gelen &#246;neki devret$
+$Zy_Ger$Pr&#228;fix von WAN delegieren$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str26$
+$Zy_Eng$Standard Mode$
+$Zy_Tur$Standart Mod$
+$Zy_Ger$Standard-Modus$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str27$
+$Zy_Eng$LAN IPv6 Address Assign Setup$
+$Zy_Tur$Yerel A&#287; IPv6 Adresi Atama Kurulumu$
+$Zy_Ger$LAN IPv6 Adressenzuweisung einrichten$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str28$
+$Zy_Eng$Enable MLD Snooping$
+$Zy_Tur$MLD Trafik G&#246;zetlemeyi etkinle&#351;tir $
+$Zy_Ger$MLD Snooping aktivieren$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str29$
+$Zy_Eng$DHCPv6 Configuration$
+$Zy_Tur$DHCPv6 Yap&#305;land&#305;rmas&#305;$
+$Zy_Ger$DHCPv6 konfigurieren$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str30$
+$Zy_Eng$DHCPv6 State$
+$Zy_Tur$DHCPv6 Durumu$
+$Zy_Ger$DHCPv6-Status$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str31$
+$Zy_Eng$DHCPv6 Disable$
+$Zy_Tur$DHCPv6 Devre D&#305;&#351;&#305; B&#305;rak$
+$Zy_Ger$DHCPv6 deaktivieren$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str32$
+$Zy_Eng$DHCPv6 Server$
+$Zy_Tur$DHCPv6 Sunucusu$
+$Zy_Ger$DHCPv6 Server$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str33$
+$Zy_Eng$DHCPv6 Relay$
+$Zy_Tur$DHCP Aktarma$
+$Zy_Ger$DHCPv6 Relay$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str34$
+$Zy_Eng$IPv6 DNS Values$
+$Zy_Tur$IPv6 DNS De&#287;erleri$
+$Zy_Ger$IPv6 DNS-Werte$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str35$
+$Zy_Eng$IPv6 DNS Server$
+$Zy_Tur$IPv6 DNS Sunucusu$
+$Zy_Ger$IPv6 DNS Server$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str36$
+$Zy_Eng$IPv6 Address Values$
+$Zy_Tur$IPv6 Adres De&#287;erleri$
+$Zy_Ger$IPv6 Adresswerte$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str37$
+$Zy_Eng$IPv6 Start Address$
+$Zy_Tur$IPv6 Ba&#351;lang&#305;&#231; &#8203;&#8203;Adresi$
+$Zy_Ger$Erste IPv6-Adresse$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str38$
+$Zy_Eng$IPv6 End Address$
+$Zy_Tur$IPv6 Biti&#351; Adresi$
+$Zy_Ger$Letzte IPv6-Adresse$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str39$
+$Zy_Eng$IPv6 Domain Name$
+$Zy_Tur$IPv6 Alan Ad&#305;$
+$Zy_Ger$IPv6 Domain-Name$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str40$
+$Zy_Eng$IPv6 Router Advertisement State$
+$Zy_Tur$IPv6 Y&#246;nlendirici Bildiri Durumu$
+$Zy_Ger$IPv6 Router Advertisement-Status$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str41$
+$Zy_Eng$RADVD State$
+$Zy_Tur$RADVD Durumu$
+$Zy_Ger$RADVD-Status$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str42$
+$Zy_Eng$From ISP$
+$Zy_Tur$ISS&#39; den$
+$Zy_Ger$Vom ISP$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str43$
+$Zy_Eng$ULA IPv6 Address Setup$
+$Zy_Tur$ULA IPv6 Adres Kurulumu$
+$Zy_Ger$ULA IPv6 Adresse einrichten$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str44$
+$Zy_Eng$IPv6 Address$
+$Zy_Tur$IPv6 Adresi$
+$Zy_Ger$IPv6-Adresse$
+$Zy_Fre$Adresse IPv6$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str45$
+$Zy_Eng$Prefix Length$
+$Zy_Tur$&#214;nek Uzunlu&#287;u$
+$Zy_Ger$Pr&#228;fixl&#228;nge$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str46$
+$Zy_Eng$MLD Snooping$
+$Zy_Tur$MLD Trafik G&#246;zetleme$
+$Zy_Ger$MLD Snooping$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str47$
+$Zy_Eng$IPv6 State$
+$Zy_Tur$IPv6 Durumu$
+$Zy_Ger$IPv6-Status$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str48$
+$Zy_Eng$LAN IPv6 Mode Setup$
+$Zy_Tur$Yerel A&#287; Pv6 Modu Kurulumu$
+$Zy_Ger$LAN IPv6 Modus einrichten$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str49$
+$Zy_Eng$IGMP Snooping$
+$Zy_Tur$IGMP Trafik G&#246;zetleme$
+$Zy_Ger$IGMP Snooping$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str50$
+$Zy_Eng$LAN IPv6 Address Setup$
+$Zy_Tur$Yerel A&#287; IPv6 Adres Kurulumu$
+$Zy_Ger$LAN IPv6 Adresse einrichten$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str51$
+$Zy_Eng$Enable IGMP Snooping$
+$Zy_Tur$IGMP Trafik G&#246;zetlemeyi etkinle&#351;tir $
+$Zy_Ger$IGMP Snooping aktivieren$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str52$
+$Zy_Eng$ULA Pseudo-Random Global ID$
+$Zy_Tur$ULA S&#246;zde Rastgele K&#252;resel ID$
+$Zy_Ger$ULA Pseudo-Random Global ID$
+$Zy_Fre$ULA Pseudo-Random Global ID$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str53$
+$Zy_Eng$stateless + DNS send by RADVD (DHCPv6 server disable)$
+$Zy_Tur$(null)$
+$Zy_Ger$stateless + DNS send by RADVD (DHCPv6 server disable)$
+$Zy_Fre$stateless + DNS send by RADVD (DHCPv6 server disable)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str54$
+$Zy_Eng$stateless + DNS send by DHCPv6 (DHCPv6 server enable)$
+$Zy_Tur$(null)$
+$Zy_Ger$stateless + DNS send by DHCPv6 (DHCPv6 server enable)$
+$Zy_Fre$stateless + DNS send by DHCPv6 (DHCPv6 server enable)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str55$
+$Zy_Eng$stateful + DHCPv6 server (DHCPv6 server enable)$
+$Zy_Tur$(null)$
+$Zy_Ger$stateful + DHCPv6 server (DHCPv6 server enable)$
+$Zy_Fre$stateful + DHCPv6 server (DHCPv6 server enable)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_Str56$
+$Zy_Eng$stateful + DHCPv6 relay (DHCPv6 relay enable)$
+$Zy_Tur$(null)$
+$Zy_Ger$stateful + DHCPv6 relay (DHCPv6 relay enable)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_HPNACfg_Str1$
+$Zy_Eng$HPNA port can be enabled/disabled here.$
+$Zy_Tur$HPNA portu buradan etkinle&#351;tirilebilir / devre d&#305;&#351;&#305; b&#305;rak&#305;labilir.$
+$Zy_Ger$HPNA-Port kann hier aktiviert/deaktiviert werden.$
+$Zy_Fre$Le port HPNA peut &#234;tre activ&#233;/d&#233;sactiv&#233; ici.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANVLAN_Str15$
+$Zy_Eng$The Lan VLAN operation only works in downstream traffic.$
+$Zy_Tur$Yerel A&#287; VLAN i&#351;lemi, yaln&#305;zca indirilen trafikte &#231;al&#305;&#351;&#305;r.$
+$Zy_Ger$Die LAN VLAN Operation funktioniert nur bei Downstream-Traffic (d.h. Daten, die empfangen werden).$
+$Zy_Fre$L&#39;op&#233;ration VLAN Lan ne fonctionne que dans le trafic descendant.$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Network_LANVLAN_Str16$
+$Zy_Eng$If TAG Operation is Add,the VLAN tag only add when downstream packet is Untag.$
+$Zy_Tur$ET&#304;KETLEME &#304;&#351;lemi Ekli oldu&#287;unda, indirme paketi Etiketi Kald&#305;r&#305;lm&#305;&#351; olarak se&#231;ili ise VLAN etiketi devreye girer.$
+$Zy_Ger$Wenn die TAG-Operation Hinzuf&#252;gen ist, wird das VLAN-Tag nur dann hinzugef&#252;gt, wenn die Daten, die empfangen werden, noch kein Tag haben.$
+$Zy_Fre$Si l&#39;op&#233;ration TAG est Ajouter, la balise VLAN s&#39;ajoute seulement lorsque le paquet descendant n&#39;est pas balis&#233;.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANVLAN_Str17$
+$Zy_Eng$Priority of HPNA must be set between 0 to 7$
+$Zy_Tur$HPNA &#214;nceli&#287;i 0 ile 7 aras&#305;nda olmal&#305;d&#305;r$
+$Zy_Ger$Priorit&#228;t von HPNA muss zwischen 0 und 7 liegen$
+$Zy_Fre$La priorit&#233; de HPNA doit &#234;tre r&#233;gl&#233;e de 0 &#224; 7$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANVLAN_Str18$
+$Zy_Eng$Priority of LAN{{1}} must be set between 0 to 7$
+$Zy_Tur${{1}} Yerel A&#287; &#214;nceli&#287;i 0 ile 7 aras&#305;nda olmal&#305;d&#305;r$
+$Zy_Ger$Priorit&#228;t von LAN {{1}} muss zwischen 0 und 7 liegen$
+$Zy_Fre$La priorit&#233; de LAN{{1}} doit &#234;tre r&#233;gl&#233;e de 0 &#224; 7$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANVLAN_Str19$
+$Zy_Eng$VLAN ID of HPNA must be set between 0 and 4094.$
+$Zy_Tur$HPNA VLAN ID 0 ile 4094 aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$VLAN ID von HPNA muss zwischen 0 und 4094 liegen$
+$Zy_Fre$La VLAN ID de HPNA doit &#234;tre r&#233;gl&#233;e de 0 &#224; 4094$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANVLAN_Str20$
+$Zy_Eng$VLAN ID of LAN{{1}} must be set between 0 and 4094.$
+$Zy_Tur$Yerel A&#287; VLAN ID 0 ile 4094 aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$VLAN ID von LAN {{1}} muss zwischen 0 und 4094 liegen.$
+$Zy_Fre$La VLAN ID de LAN{{1}} doit &#234;tre r&#233;gl&#233;e de 0 &#224; 4094$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_Str8$
+$Zy_Eng$Static DHCP Edit$
+$Zy_Tur$Statik DHCP D&#252;zenle$
+$Zy_Ger$Statisches DHCP bearbeiten$
+$Zy_Fre$Modification de DHCP statiqu$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_Str9$
+$Zy_Eng$Static DHCP Delete$
+$Zy_Tur$Statik DHCP Sil$
+$Zy_Ger$Statisches DHCP l&#246;schen$
+$Zy_Fre$Suppression de DHCP statiqu$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_AlertMsg_Str2$
+$Zy_Eng$The number of static lease records is limited to 64.$
+$Zy_Tur$Statik kira kay&#305;t say&#305;s&#305; 64 ile s&#305;n&#305;rl&#305;d&#305;r.$
+$Zy_Ger$Die Anzahl von Datens&#228;tzen in der Static Lease ist auf 64 begrenzt.$
+$Zy_Fre$Le nombre d&#39;enregistrements de bail statique est limit&#233; &#224; 64$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_AlertMsg_Str3$
+$Zy_Eng$Duplicate static lease information! Please check the MAC address or IP address.$
+$Zy_Tur$Statik kira bilgileri kullan&#305;mda! L&#252;tfen MAC adresini veya IP adresini kontrol ediniz.$
+$Zy_Ger$Doppelte Informationen f&#252;r Static Lease! Bitte MAC- oder IP-Adresse pr&#252;fen.$
+$Zy_Fre$Copie des Informations du bail statique! V&#233;rifiez l&#39;adresse MAC ou l&#39;adresse IP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_AlertMsg_Str4$
+$Zy_Eng$IP address is not in LAN subnet! Please input a IP address in$
+$Zy_Tur$IP adresi Yerel A&#287; alt a&#287; maskesinde mevcut de&#287;il! L&#252;tfen bir IP adresi giriniz.$
+$Zy_Ger$IP-Adresse befindet sich nicht im LAN-Subnetz! Bitte IP-Adresse eingeben in$
+$Zy_Fre$L&#39;adresse IP n&#39;est pas dans le sous-r&#233;seau LAN! Entrez une adresse I$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_AlertMsg_Str5$
+$Zy_Eng$IP address is not in LAN subnet! Please input a IP address in$
+$Zy_Tur$IP adresi Yerel A&#287; alt a&#287; maskesinde mevcut de&#287;il! L&#252;tfen bir IP adresi giriniz.$
+$Zy_Ger$IP-Adresse befindet sich nicht im LAN-Subnetz! Bitte IP-Adresse eingeben in$
+$Zy_Fre$L&#39;adresse IP n&#39;est pas dans le sous-r&#233;seau LAN! Entrez une adresse I$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_AlertMsg_Str6$
+$Zy_Eng$Invalid ip/subnetMask$
+$Zy_Tur$Ge&#231;ersiz IP / Alt A&#287; Maskesi$
+$Zy_Ger$Ung&#252;ltige IP/Subnetzmaske$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_AlertMsg_Str7$
+$Zy_Eng$Only support subnet mask: Class A: 255.0.0.0; Class B: 255.255.0.0 and Class C: 255.255.255.0/255.255.255.128/255.255.255.192/255.255.255.224/255.255.255.240/255.255.255.248/255.255.255.252.$
+$Zy_Tur$Sadece alt a&#287; maskesini destekle: S&#305;n&#305;f A: 255.0.0.0 S&#305;n&#305;f B: 255.255.0.0 ve S&#305;n&#305;f C: 255.255.255.0/255.255.255.128/255.255.255.192/255.255.255.224/255.255.255.240/255.255.255.248/255.255.255.252.$
+$Zy_Ger$Es werden nur folgende Subnetzmasken unterst&#252;tzt: Class A: 255.0.0.0; Class B: 255.255.0.0 und Class C: 255.255.255.0/255.255.255.128/255.255.255.192/255.255.255.224/255.255.255.240/255.255.255.248/255.255.255.252.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_AlertMsg_Str8$
+$Zy_Eng$IP address cannot be same as the broadcast ip address.$
+$Zy_Tur$IP adresi, yay&#305;n IP adresi ile ayn&#305; olamaz.$
+$Zy_Ger$IP-Adresse darf nicht mit der Broadcast-IP-Adresse &#252;bereinstimmen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_AlertMsg_Str9$
+$Zy_Eng$IP Address {{1}} is invalid IP address.$
+$Zy_Tur$IP Adresi {{1}} ge&#231;ersiz bir IP adresi.$
+$Zy_Ger$IP-Adresse {{1}} ist ung&#252;ltig.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_AlertMsg_Str10$
+$Zy_Eng$Subnet mask {{1}} is invalid IP address.$
+$Zy_Tur$Alt a&#287; maskesi {{1}} ge&#231;ersiz bir IP adresi.$
+$Zy_Ger$Subnetzmaske {{1}} ist ung&#252;ltige IP-Adresse.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_AlertMsg_Str11$
+$Zy_Eng$The IP address cannot be the network address.$
+$Zy_Tur$IP adresi, a&#287; adresi olamaz.$
+$Zy_Ger$Die IP-Adresse darf nicht mit der Netzwerkadresse &#252;bereinstimmen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_AlertMsg_Str12$
+$Zy_Eng$The IP address cannot be the broadcast address.$
+$Zy_Tur$IP adresi, yay&#305;n adresi olamaz.$
+$Zy_Ger$Die IP-Adresse darf nicht mit der Broadcast-Adresse &#252;bereinstimmen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_AlertMsg_Str13$
+$Zy_Eng$The IP Address of Public LAN {{1}} is invalid.$
+$Zy_Tur$Ortak Yerel A&#287; IP adresi {{1}} ge&#231;ersiz.$
+$Zy_Ger$Die IP-Adresse von Public LAN {{1}} ist ung&#252;ltig.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_AlertMsg_Str14$
+$Zy_Eng$The Subnet Mask of Public LAN {{1}} is invalid.$
+$Zy_Tur$Ortak Yerel A&#287; {{1}} Alt A&#287; Maskesi ge&#231;ersiz.$
+$Zy_Ger$Die Subnetzmaske von Public LAN {{1}} ist ung&#252;ltig.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_Str10$
+$Zy_Eng$Public LAN$
+$Zy_Tur$Ortak Yerel A&#287;$
+$Zy_Ger$&#214;ffentliches LAN$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_Str11$
+$Zy_Eng$Offer Public IP by DHCP$
+$Zy_Tur$DHCP&#39; den Ortak IP Sunumu$
+$Zy_Ger$&#214;ffentliche IP &#252;ber DHCP anbieten$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_Str12$
+$Zy_Eng$Enable ARP Proxy$
+$Zy_Tur$ARP Proxy etkinle&#351;tir$
+$Zy_Ger$ARP Proxy aktivieren$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_StaticDHCP_Str14$
+$Zy_Eng$IP Alias Setup$
+$Zy_Tur$IP Alias &#8203;&#8203;Kurulumu$
+$Zy_Ger$IP Alias einrichten$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_VendorID_Explain$
+$Zy_Eng$Device can idenitify the STB base on configured Vendor ID.$
+$Zy_Tur$Ayg&#305;t, yap&#305;land&#305;r&#305;lm&#305;&#351; Bayi ID temelinde STB&#39; yi tan&#305;mlayabilir.$
+$Zy_Ger$Ger&#228;t kann die STB-Basis anhand der konfigurierten Anbieter-ID identifizieren.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_Ethwanlan_Explain$
+$Zy_Eng$You can convert your Ethernet WAN port as LAN port, or restore the LAN port to WAN port.$
+$Zy_Tur$Ethernet WAN portunuzu Yerel A&#287; portuna d&#246;n&#252;&#351;t&#252;rebilir veya Yerel A&#287; portunu WAN portu olarak geri y&#252;kleyebilirsiniz.$
+$Zy_Ger$Sie k&#246;nnen Ihren Ethernet WAN-Port in einen LAN-Port verwandeln oder den LAN-Port auf den WAN-Port wiederherstellen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_Ethwanlan_Str1$
+$Zy_Eng$State Enable, the Ethernet Port is LAN ethernet.$
+$Zy_Tur$Durum Etkinle&#351;tirme, Ethernet Portu Yerel A&#287; Ethernet&#8217; idir.$
+$Zy_Ger$Status Aktivieren, der Ethernet-Port bezieht sich auf LAN-Ethernet.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_Ethwanlan_Str2$
+$Zy_Eng$State Disable, the Ethernet Port is WAN ethernet.$
+$Zy_Tur$Durum Devre D&#305;&#351;&#305; B&#305;rakma, Ethernet Portu WAN Ethernet&#8217; idir.$
+$Zy_Ger$Status Deaktivieren, der Ethernet-Port bezieht sich auf WAN-Ethernet.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str1$
+$Zy_Eng$The device can share files from your USB flash drive or disk when you attach it to the USB port. You may start from deciding which folders in the USB disks to share and which users can access the shared folders.$
+$Zy_Tur$USB fla&#351; s&#252;r&#252;c&#252;s&#252;nden veya USB portuna takt&#305;&#287;&#305;n&#305;zda diskten dosyalar&#305; payla&#351;abilirsiniz USB disklerdeki hangi klas&#246;rleri payla&#351;aca&#287;&#305;n&#305;za ve payla&#351;&#305;lan klas&#246;rlere hangi kullan&#305;c&#305;lar&#305;n eri&#351;ebilece&#287;ine karar vermekle ba&#351;layabilirsiniz.$
+$Zy_Ger$&#220;ber das Gerät kann man Dateien von Ihrem USB Flash Drive oder Ihrer USB-Festplatte gemeinsam nutzen. Dabei entscheiden Sie, welche Ordner auf den USB-Medien f&#252;r File Sharing freigegeben werden und welche Benutzer auf die freigegebenen Ordner zugreifen d&#252;rfen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str2$
+$Zy_Eng$ File Sharing Services:$
+$Zy_Tur$ Dosya Payla&#351;&#305;m Hizmetleri:$
+$Zy_Ger$ File Sharing Services:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str3$
+$Zy_Eng$If you would like to play any media contents stored in a USB flash drive or disk through a media client, like PS3, attach the USB flash drive or disk onto this device and enable the Media Server function.$
+$Zy_Tur$PS3 gibi bir medya istemci &#252;zerinden bir USB fla&#351; s&#252;r&#252;c&#252; veya disk i&#231;erisindeki herhangi bir medya i&#231;eri&#287;ini oynatmak isterseniz, USB fla&#351; s&#252;r&#252;c&#252;s&#252;n&#252; veya diski bu cihaza tak&#305;n ve Ortam Sunucusu i&#351;levini etkinle&#351;tirin.$
+$Zy_Ger$Wenn Sie die Medieninhalte, die auf einem USB Flash Drive oder einer USB-Festplatte gespeichert sind, &#252;ber einen Media Client (wie etwa PS3) abspielen wollen, verbinden Sie das USB Flash Drive oder die USB-Festplatte mit diesem Ger&#228;t und aktivieren Sie die Medienserver-Funktion.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str4$
+$Zy_Eng$Media Server:$
+$Zy_Tur$Medya Sunucusu:$
+$Zy_Ger$Medienserver:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str5$
+$Zy_Eng$Media Library Path:$
+$Zy_Tur$Ortam Kitapl&#305;&#287;&#305; Yolu:$
+$Zy_Ger$Pfad der Media Library:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str6$
+$Zy_Eng$When a supported printer is attached to this device, it can act as a server to accept print jobs from LAN clients on your network. In other words, you can use any of your computers to print something you want.$
+$Zy_Tur$Bu cihaza desteklenen bir yaz&#305;c&#305; tak&#305;ld&#305;&#287;&#305;nda, modem a&#287;&#305;n&#305;zdaki Yerel A&#287; istemcilerinden gelen yazd&#305;rma g&#246;revlerini kabul etmede bir sunucu olarak i&#351;lev g&#246;rebilir. Di&#287;er bir deyi&#351;le, istedi&#287;iniz herhangi bir &#351;eyi yazd&#305;rmak i&#231;in bilgisayarlar&#305;n&#305;zdan herhangi birini kullanabilirsiniz.$
+$Zy_Ger$Wird ein unterst&#252;tzter Drucker mit diesem Ger&#228;t verbunden, kann das Ger&#228;t als Server eingesetzt werden, der Druckauftr&#228;ge von LAN-Clients in Ihrem Netzwerk annimmt. Mit anderen Worten: Sie k&#246;nnen von jedem Ihrer Computer etwas ausdrucken.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str7$
+$Zy_Eng$Print Server:$
+$Zy_Tur$Yazd&#305;rma Sunucusu $
+$Zy_Ger$Print Server:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str8$
+$Zy_Eng$Maker and model:$
+$Zy_Tur$Marka ve model:$
+$Zy_Ger$Hersteller und Modell:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str9$
+$Zy_Eng$To use the print server, define a network printer with URL http:// {{1}} :631/printers/ {{2}} .$
+$Zy_Tur$Yazd&#305;rma sunucusunu kullanmak i&#231;in, URL http:// {{1}} :631/printers/ {{2}} ile bir a&#287; yaz&#305;c&#305;s&#305; tan&#305;mlay&#305;n&#305;z.$
+$Zy_Ger$Um den Print Server zu verwenden, definieren Sie einen Netzwerkdrucker mit URL http:// {{1}} :631/printers/ {{2}} .$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str10$
+$Zy_Eng$To use the print server, define a network printer with URL $
+$Zy_Tur$Bask&#305; sunucusunu kullanmak i&#231;in, URL ile bir a&#287; yaz&#305;c&#305;s&#305; tan&#305;mlamak$
+$Zy_Ger$Um den Print Server zu verwenden, definieren Sie einen Netzwerkdrucker mit URL $
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str11$
+$Zy_Eng$Add New User$
+$Zy_Tur$Yeni Kullan&#305;c&#305; Ekle$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str12$
+$Zy_Eng$Add Share Directory$
+$Zy_Tur$Hisse Dizin Ekle$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str13$
+$Zy_Eng$Volume$
+$Zy_Tur$Birim$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str14$
+$Zy_Eng$Share Path$
+$Zy_Tur$Hisse Yol$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str15$
+$Zy_Eng$Access Level$
+$Zy_Tur$Seviye eri&#351;im$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str16$
+$Zy_Eng$Public$
+$Zy_Tur$kamu$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str17$
+$Zy_Eng$Browse$
+$Zy_Tur$G&#246;zat$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str18$
+$Zy_Eng$Share Directory List$
+$Zy_Tur$Hisse Dizin Listesi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str19$
+$Zy_Eng$Account Management$
+$Zy_Tur$Hesap Y&#246;netimi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str20$
+$Zy_Eng$Add New Share$
+$Zy_Tur$Yeni Payla&#351;&#305;m Ekle$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str21$
+$Zy_Eng$Information$
+$Zy_Tur$Bilgi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str22$
+$Zy_Eng$Server Configuration$
+$Zy_Tur$Sunucu Yap&#305;land&#305;rmas&#305;$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str23$
+$Zy_Eng$Capacity$
+$Zy_Tur$Kapasite$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str24$
+$Zy_Eng$Used Space$
+$Zy_Tur$Kullan&#305;lan Alan$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str25$
+$Zy_Eng$Allow Users$
+$Zy_Tur$Kullan&#305;c&#305;lar izin ver$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str26$
+$Zy_Eng$Available Users$
+$Zy_Tur$Mevcut Kullan&#305;c&#305;lar$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str27$
+$Zy_Eng$To access the USB drive: <br> Windows: Run > \\\\$
+$Zy_Tur$USB s&#252;r&#252;c&#252;s&#252;ne eri&#351;mek i&#231;in: <br> Windows: &#199;al&#305;&#351;t&#305;r (Windows + R) > \\\\$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_Str28$
+$Zy_Eng$MacOS: Finder > Connect to Server (Command + K) > $
+$Zy_Tur$MacOS: Finder > Sunucuya Ba&#287;lan (Command + K) > $
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_AlertMsg_Str1$
+$Zy_Eng$Maker and model length is invalid [1-80]$
+$Zy_Tur$Marka ve model uzunlu&#287;u ge&#231;ersiz [1-80] $
+$Zy_Ger$L&#228;nge von Hersteller und Modell ist ung&#252;ltig [1-80]$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_halfBridge_Str1$
+$Zy_Eng$IP Passthrough$
+$Zy_Tur$IP Do&#287;rudan Ge&#231;i&#351;$
+$Zy_Ger$IP Passthrough$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_halfBridge_Str2$
+$Zy_Eng$Dynamic DNS Setup$
+$Zy_Tur$Dinamik DNS Kurulumu$
+$Zy_Ger$Dynamischen DNS einrichten$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_halfBridge_Str3$
+$Zy_Eng$Active WAN IP Passthrough$
+$Zy_Tur$Aktif WAN IP Do&#287;rudan Ge&#231;i&#351;i$
+$Zy_Ger$Aktives WAN IP Passthrough$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_halfBridge_Str4$
+$Zy_Eng$You may select which computer should use the WAN IP address of the DSL Router in one of three ways :$
+$Zy_Tur$DSL Y&#246;nlendiricisi WAN IP adresini kullanmas&#305; gereken bilgisayar&#305; a&#351;a&#287;&#305;daki &#252;&#231; y&#246;ntemden biriyle se&#231;ebilirsiniz:$
+$Zy_Ger$Sie haben die Wahl aus drei M&#246;glichkeiten, wie der Computer die WAN-IP-Adresse des DSL-Routers verwenden soll:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_halfBridge_Str5$
+$Zy_Eng$Manually enter the WAN IP address of the DSL Router in the computer.$
+$Zy_Tur$DSL Y&#246;nlendiricisi WAN IP adresini bilgisayara manuel olarak giriniz.$
+$Zy_Ger$Manuelle Eingabe der WAN-IP-Adresse des DSL-Routers in den Computer.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_halfBridge_Str6$
+$Zy_Eng$Enter the MAC Address of the computer :$
+$Zy_Tur$Bilgisayar&#305;n MAC adresini giriniz:$
+$Zy_Ger$Eingabe der MAC-Adresse des Computers:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_halfBridge_Str7$
+$Zy_Eng$Select the computer from a list of connected computers:$
+$Zy_Tur$Ba&#287;l&#305; bilgisayarlar listesinden bilgisayar se&#231;iniz:$
+$Zy_Ger$Auswahl des Computers aus einer Liste von angeschlossenen Computern:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_halfBridge_Str8$
+$Zy_Eng$IP Address Update Policy$
+$Zy_Tur$IP Adresi G&#252;ncelleme kural&#305;$
+$Zy_Ger$Richtlinie zum Aktualisieren von IP-Adressen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_halfBridge_Str9$
+$Zy_Eng$Host Name$
+$Zy_Tur$Host Ad&#305;$
+$Zy_Ger$Hostname$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_halfBridge_Str10$
+$Zy_Eng$1:After you change your WAN IP passthrough settings please either reboot this device or release and renew your DHCP lease.</br> &nbsp;&nbsp;2:To use WAN IP Passthrough you will need to set the firewall to either Off, Low or Custom (with the correct WAN/Router rule).</br>&nbsp;&nbsp;3: If you are enabling or disabling WAN IP Passthrough from the PC that will also be the IP Passthrough PC please Logout after clicking Apply.$
+$Zy_Tur$1: WAN IP D&#252;z Ge&#231;i&#351;i ayarlar&#305;n&#305;z&#305; de&#287;i&#351;tirdikten sonra ya bu cihaz&#305; yeniden ba&#351;lat&#305;n&#305;z ya da DHCP kiran&#305;z&#305; serbest b&#305;rak&#305;n&#305;z ve yenileyiniz. </br> &nbsp;&nbsp; 2: WAN IP D&#252;z Ge&#231;i&#351;ini kullanmak i&#231;in g&#252;venlik duvar&#305;n&#305;z&#305;n durumunu ya Kapal&#305;, D&#252;&#351;&#252;k ya da &#214;zel olarak ayarlaman&#305;z gerekir (do&#287;ru WAN / Y&#246;nlendirici policy ile).</br>&nbsp;&nbsp;3: PC&#39; den WAN IP D&#252;z Ge&#231;i&#351;ini etkinle&#351;tiriyor veya devre d&#305;&#351;&#305; b&#305;rak&#305;yorsan&#305;z, bu, ayn&#305; zamanda PC&#39; den IP Do&#287;rudan Ge&#231;i&#351; olacakt&#305;r, l&#252;tfen Uygula se&#231;ene&#287;ine t&#305;klad&#305;ktan sonra Oturumu Kapat&#305;n&#305;z.$
+$Zy_Ger$1: Nach &#196;nderung Ihrer Einstellungen f&#252;r WAN IP Passthrough fahren Sie entweder das Ger&#228;t neu hoch oder geben Sie Ihre DHCP Lease frei und erneuern Sie sie.</br> &nbsp;&nbsp;2: Um WAN IP Passthrough verwenden zu k&#246;nnen, m&#252;ssen Sie die Firewall entweder auf Aus, Niedrig oder Benutzerdefiniert einstellen (mit der richtigen WAN/Router-Regel).</br>&nbsp;&nbsp;3: Wenn Sie WAN IP Passthrough von dem PC aus aktivieren bzw. deaktivieren, der auch der IP Passthrough PC sein wird, melden Sie sich bitte nach Klicken auf Anwenden ab.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANVLAN_Str21$
+$Zy_Eng$LAN Port$
+$Zy_Tur$LAN portu$
+$Zy_Ger$LAN-Port$
+$Zy_Fre$Port LAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str11$
+$Zy_Eng$The Ending IP Address is invalid. Please enter a valid IP address.$
+$Zy_Tur$Biti&#351; IP adresi ge&#231;ersizdir. L&#252;tfen ge&#231;erli bir IP adresi giriniz.$
+$Zy_Ger$Die letzte IP-Adresse ist ung&#252;ltig. Bitte geben Sie eine g&#252;ltige IP-Adresse ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str12$
+$Zy_Eng$The Ending IP Address cannot be the same as the LAN IP address of the modem. Please enter a valid IP address.$
+$Zy_Tur$Biti&#351; IP adresi modemin LAN IP adresi ile ayn&#305; olmaz. L&#252;tfen ge&#231;erli bir IP adresi giriniz.$
+$Zy_Ger$Die letzte IP-Adresse darf nicht mit der LAN-IP-Adresse des Modems &#252;bereinstimmen. Bitte geben Sie eine g&#252;ltige IP-Adresse ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str13$
+$Zy_Eng$Last portion of IP Address has to be less than 254 for Enabled DHCP Server$
+$Zy_Tur$Etkin DHCP Sunucusunun IP adresinin son k&#305;sm&#305; 254&#39;ten daha azd&#305;r.$
+$Zy_Ger$Der letzte Teil der IP-Adresse muss weniger als 254 sein f&#252;r aktivierte DHCP Server$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str14$
+$Zy_Eng$LAN IP Address cannot be between Beginning IP Address and Ending IP Address.$
+$Zy_Tur$LAN IP Adresi Ba&#351;lang&#305;&#231; IP adresi ve Biti&#351; IP adresi aras&#305;nda olamaz.$
+$Zy_Ger$Die LAN-IP-Adresse darf nicht zwischen der ersten IP-Adresse und der letzten IP-Adresse liegen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$$MLG_Network_LANSetup_AlertMsg_Str15$
+$Zy_Eng$There is only a bridged interface. Do not enable DHCP server.$
+$Zy_Tur$Sadece bir k&#246;pr&#252; arabirimi vard&#305;r. DHCP sunucusunu etkile&#351;tirmeyiniz.$
+$Zy_Ger$Es gibt nur eine Bridge-Schnittstelle. Bitte aktivieren Sie den DHCP-Server nicht.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str16$
+$Zy_Eng$The LAN IP Address is invalid. Please enter a valid LAN IP address.$
+$Zy_Tur$LAN IP Adresi ge&#231;ersizdir. L&#252;tfen ge&#231;erli bir LAN IP adresi giriniz.$
+$Zy_Ger$Die LAN IP-Adresse ist ung&#252;ltig. Bitte geben Sie eine g&#252;ltige LAN-IP-Adresse ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str17$
+$Zy_Eng$The Subnet Mask is invalid. Please enter a valid Subnet Mask.$
+$Zy_Tur$Alt a&#287; maskesi ge&#231;ersizdir. L&#252;tfen ge&#231;erli bir alt a&#287; maskesi giriniz.$
+$Zy_Ger$Die Subnetzmaske ist ung&#252;ltig. Bitte geben Sie eine g&#252;ltige Subnetzmaske ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str18$
+$Zy_Eng$The Beginning IP Address is invalid. Please enter a valid IP address.$
+$Zy_Tur$Ba&#351;lang&#305;&#231; IP adresi ge&#231;ersizdir. L&#252;tfen ge&#231;erli bir IP adresi giriniz.$
+$Zy_Ger$Die erste IP-Adresse ist ung&#252;ltig. Bitte geben Sie eine g&#252;ltige IP-Adresse ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str19$
+$Zy_Eng$The Beginning IP Address cannot be the same as the LAN IP address of the modem. Please enter a valid IP address.$
+$Zy_Tur$Ba&#351;lang&#305;&#231; IP adresi modemin LAN IP adresi ile ayn&#305; olmaz. L&#252;tfen ge&#231;erli bir IP adresi giriniz.$
+$Zy_Ger$Die erste IP-Adresse darf nicht mit der LAN-IP-Adresse des Modems &#252;bereinstimmen. Bitte geben Sie eine g&#252;ltige IP-Adresse ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str20$
+$Zy_Eng$This IP address is used by other Group.$
+$Zy_Tur$(null)$
+$Zy_Ger$Diese IP-Adresse wird von einer andern Gruppe verwendet.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str21$
+$Zy_Eng$The day is invalid. Please enter a valid day which is located from 0 to 365.$
+$Zy_Tur$G&#252;nler ge&#231;ersizdir.  L&#252;tfen 0&#39;dan 365&#39;e kadar ge&#231;erli bir G&#252;n  giriniz.$
+$Zy_Ger$Die Angabe f&#252;r Tage ist ung&#252;ltig. Bitte geben Sie einen Tag zwischen 0 und 365 ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str22$
+$Zy_Eng$The hour is invalid. Please enter a valid hour which is located from 0 to 23.$
+$Zy_Tur$Saatler ge&#231;ersizdir.  L&#252;tfen 0&#39;dan 23&#39;e kadar ge&#231;erli bir Saat giriniz.$
+$Zy_Ger$Die Angabe f&#252;r Stunden ist ung&#252;ltig. Bitte geben Sie eine Stunde zwischen 0 und 23 ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str23$
+$Zy_Eng$The minute is invalid. Please enter a valid minute which is located from 0 to 59.$
+$Zy_Tur$Dakikalar ge&#231;ersizdir.  L&#252;tfen 0&#39;dan 59&#39;a kadar ge&#231;erli bir Dakika giriniz.$
+$Zy_Ger$Die Angabe f&#252;r Minuten ist ung&#252;ltig. Bitte geben Sie eine Minute zwischen 0 und 59 ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str24$
+$Zy_Eng$The Lease Time is zero. Please enter a valid Lease Time.$
+$Zy_Tur$DHCP Kiralama S&#252;resi s&#305;f&#305;rd&#305;r. L&#252;tfen ge&#231;erli bir DHCP kiralama s&#252;resi giriniz.$
+$Zy_Ger$Die Lease Zeit ist Null. Bitte geben Sie eine g&#252;ltige Lease Zeit ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str25$
+$Zy_Eng$The Lease Time is more than 365 days. Please enter a valid Lease Time.$
+$Zy_Tur$DHCP Kiralama S&#252;resi 365 g&#252;nden fazlad&#305;r. L&#252;tfen ge&#231;erli bir DHCP Kiralama S&#252;resi giriniz.$
+$Zy_Ger$Die Lease Zeit ist mehr als 365 Tage. Bitte geben Sie eine g&#252;ltige Lease Zeit ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str26$
+$Zy_Eng$Address \' {{1}} \' is used for LAN IP address.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str31$
+$Zy_Eng$DNS server IP address 1 is the same as DNS server IP address 2. Please enter a valid DNS Server 2.$
+$Zy_Tur$DNS sunucusunun 1. IP adresi, DNS sunucusunun 2. IP adresi ile ayn&#305;d&#305;r. L&#252;tfen DNS  sunucusunun 2. IP adresi i&#231;in ge&#231;erli bir IP giriniz.$
+$Zy_Ger$Die DNS Server IP-Adresse 1 ist identisch zu DNS Server IP-Adresse 2. Bitte geben Sie einen g&#252;ltigen DNS Server 2 ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str32$
+$Zy_Eng$The LAN IP address or subnet mask is changed. You need refresh your IP address to access correct LAN IP address of the device.$
+$Zy_Tur$LAN IP adresi veya alt a&#287; maskesi de&#287;i&#351;tirilmi&#351;tir. Do&#287;ru LAN IP adresi  ile cihaz&#305;n&#305;za eri&#351;mek i&#231;in  IP adresinizi yenileyiniz.$
+$Zy_Ger$Die LAN IP-Adresse oder Subnetzmaske wurde ge&#228;ndert. Sie m&#252;ssen Ihre IP-Adresse aktualisieren, um auf die richtige LAN-IP-Adresse des Ger&#228;ts zugreifen zu k&#246;nnen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str33$
+$Zy_Eng$IPv6 Prefix \'{{1}}\' is invalid IPv6 address.$
+$Zy_Tur$IPv6 \'{{1}}\' &#214;neki ge&#231;ersiz bir IPv6 adresidir.$
+$Zy_Ger$IPv6-Pr&#228;fix \'{{1}}\' ist ung&#252;ltige IPv6-Adresse.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str34$
+$Zy_Eng$Please enter the prefix length \'/\' to IPv6 Prefix field, e.g.: xxxx:xxxx::/xx$
+$Zy_Tur$L&#252;tfen IPv6 &#214;nek alan&#305; i&#231;in ge&#231;erli bir &#246;nek uzunlu&#287;u \'/\' giriniz, &#246;rn: xxxx:xxxx::/xx$
+$Zy_Ger$Bitte geben Sie die Pr&#228;fixl&#228;nge \'/\' in das Feld f&#252;r das IPv6-Pr&#228;fix ein, z.B.: xxxx:xxxx::/xx$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str35$
+$Zy_Eng$Please remove the \'/\' on Beginning IPv6 Address field$
+$Zy_Tur$L&#252;tfen Ba&#351;lang&#305;&#231; IP Adresi alan&#305;ndaki \'/\'  kald&#305;r&#305;n&#305;z.$
+$Zy_Ger$Bitte entfernen Sie \'/\' im Feld f&#252;r die erste IPv6-Adresse.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str36$
+$Zy_Eng$The Beginning IPv6 Address is invalid. Please enter a valid IPv6 address.$
+$Zy_Tur$Ba&#351;lang&#305;&#231; IPv6 Adresi ge&#231;ersizdir. L&#252;tfen ge&#231;erli bir IPv6 adresi giriniz.$
+$Zy_Ger$Die erste IPv6-Adresse ist ung&#252;ltig. Bitte geben Sie eine g&#252;ltige IPv6-Adresse ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str37$
+$Zy_Eng$The Beginning IPv6 Address does not support ZERO COMPRESSION \'::\'.$
+$Zy_Tur$Ba&#351;lang&#305;&#231; IPv6 Adresi ZERO COMPESSION \'::\' u desteklemez.$
+$Zy_Ger$Die erste IPv6-Adresse unterst&#252;tzt kein Weglassen f&#252;hrender Nullen (Zero Compression) und Ersetzen durch \'::\'.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str38$
+$Zy_Eng$The Beginning IPv6 Address length is too little.$
+$Zy_Tur$Ba&#351;lang&#305;&#231; IPv6 Adresi uzunlu&#287;u &#231;ok k&#252;&#231;&#252;kt&#252;r.$
+$Zy_Ger$Die erste IPv6-Adresse ist zu kurz.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str39$
+$Zy_Eng$The Beginning IPv6 Address length is too big.$
+$Zy_Tur$Ba&#351;lang&#305;&#231; IPv6 Adresi uzunlu&#287;u &#231;ok b&#252;y&#252;kt&#252;r.$
+$Zy_Ger$Die erste IPv6-Adresse ist zu lang.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str41$
+$Zy_Eng$The Beginning IPv6 Address is not more than the Ending IPv6 Address.$
+$Zy_Tur$Ba&#351;lang&#305;&#231; IPv6 Adresi , Biti&#351; IPv6 Adresi&#39;nden b&#252;y&#252;k olamaz.$
+$Zy_Ger$Die erste IPv6-Adresse ist nicht gr&#246;&#223;er als die letzte IPv6-Adresse.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str42$
+$Zy_Eng$The Ending IPv6 Address is invalid. Please enter a valid IPv6 address.$
+$Zy_Tur$Biti&#351; IPv6 Adresi ge&#231;ersizdir. L&#252;tfen ge&#231;erli bir IPv6 adresi giriniz.$
+$Zy_Ger$Die letzte IPv6-Adresse ist ung&#252;ltig. Bitte geben Sie eine g&#252;ltige IPv6-Adresse ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str43$
+$Zy_Eng$The Ending IPv6 Address does not support ZERO COMPRESSION \'::\'.$
+$Zy_Tur$Biti&#351; IPv6 Adresi ZERO COMPESSION \'::\' &#39;u desteklemez.$
+$Zy_Ger$Die letzte IPv6-Adresse unterst&#252;tzt kein Weglassen f&#252;hrender Nullen (Zero Compression) und Ersetzen durch \'::\'.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str44$
+$Zy_Eng$The Ending IPv6 Address length is too little.$
+$Zy_Tur$Biti&#351; IPv6 Adresinin uzunlu&#287;u &#231;ok k&#252;&#231;&#252;kt&#252;r.$
+$Zy_Ger$Die letzte IPv6-Adresse ist zu kurz.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str45$
+$Zy_Eng$The Ending IPv6 Address length is too big.$
+$Zy_Tur$Biti&#351; IPv6 Adresinin uzunlu&#287;u &#231;ok b&#252;y&#252;kt&#252;r.$
+$Zy_Ger$Die letzte IPv6-Adresse ist zu lang.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str46$
+$Zy_Eng$Invalid LAN IPv6 prefix address.$
+$Zy_Tur$Ge&#231;ersiz LAN IPv6 &#246;nek adresidir.$
+$Zy_Ger$Ung&#252;ltige LAN IPv6-Pr&#228;fixadresse$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str47$
+$Zy_Eng$Invalid LAN IPv6 address.$
+$Zy_Tur$Ge&#231;ersiz LAN IPv6 adresidir.$
+$Zy_Ger$Ung&#252;ltige LAN IPv6-Adresse$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str48$
+$Zy_Eng$LAN IPv6 Prefix \'{{1}}\' is invalid IPv6 Prefix.$
+$Zy_Tur$LAN IPv6 \'{{1}}\' &#214;neki ge&#231;ersiz bir IPv6 &#246;nekidir. $
+$Zy_Ger$LAN IPv6-Pr&#228;fix \'{{1}}\' ist ung&#252;ltiges IPv6-Pr&#228;fix.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str49$
+$Zy_Eng$The Relay Server Address is invalid. Please enter a valid IP address.$
+$Zy_Tur$Relay Sunucu adresi ge&#231;ersizidir. L&#252;tfen ge&#231;erli bir IP giriniz.$
+$Zy_Ger$Die Relay Server Adresse ist ung&#252;ltig. Bitte geben Sie eine g&#252;ltige IP-Adresse ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str50$
+$Zy_Eng$Please disable NAT if you want to enable DHCP relay.$
+$Zy_Tur$DHCP Relay&#39;i etkinle&#351;tirmek isterseniz, NAT&#39;&#305; kapat&#305;n&#305;z.$
+$Zy_Ger$Bitte deaktivieren Sie NAT, wenn Sie DHCP Relay aktivieren wollen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str51$
+$Zy_Eng$Please remove the \'/\', and keyin LAN IPv6 prefix to Prefix Length field.$
+$Zy_Tur$(null)$
+$Zy_Ger$Bitte entfernen Sie \'/\' und geben das LAN IPv6 prefix im Feld Prefix L&#228;nge ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str52$
+$Zy_Eng$WAN side IA_PD is disabled, please enable IA_PD on WAN side or select static/ULA pseudo-random global ID prefix on LAN side$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANSetup_AlertMsg_Str53$
+$Zy_Eng$This IP Address is used by other Group.$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANVLAN_Str17_1$
+$Zy_Eng$Priority of LAN5 must be set between 0 to 7$
+$Zy_Tur$LAN5 &#246;nceli&#287;i 0 ile 7 aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$Priorit&#228;t von LAN5 muss zwischen 0 und 7 liegen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANVLAN_Str19_1$
+$Zy_Eng$VLAN ID of LAN5 must be set between 0 and 4094$
+$Zy_Tur$LAN5&#39;in vlan ID&#39;si 0 ile 4094 aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$VLAN ID von LAN5 muss zwischen 0 und 4094 liegen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_USBService_AlertMsg_Str11$
+$Zy_Eng$Media path length is invalid [1-80].$
+$Zy_Tur$Medya yolu uzunlu&#287;u ge&#231;ersizdir, [1-80].$
+$Zy_Ger$L&#228;nge des Medienpfads ist ung&#252;ltig [1-80]$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_STBVendorID_AlertMsg_Str1$
+$Zy_Eng$Vendor ID \'{{1}}\' is already used.$
+$Zy_Tur$Vendor ID \'{{1}}\', zaten kullan&#305;lmaktad&#305;r.$
+$Zy_Ger$Anbieter-ID \'{{1}}\' wird bereits verwendet.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_STBVendorID_AlertMsg_Str2$
+$Zy_Eng$Vendor ID \'{{1}}\' should not contain strange characters.$
+$Zy_Tur$Relay Sunucu adresi ge&#231;ersizidir. L&#252;tfen ge&#231;erli bir IP giriniz.$
+$Zy_Ger$Anbieter-ID \'{{1}}\' sollte keine Sonderzeichen enthalten.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_Routing_rip_Str1$
+$Zy_Eng$To activate RIP for the WAN Interface, select the desired RIP version and operation and place a check in the Enable checkbox.$
+$Zy_Tur$WAN aray&#252;z&#252;nde RIP etkinle&#351;tirmek i&#231;in, istenen RIP s&#252;r&#252;m&#252;n&#252; se&#231;in ve 'Etkin' ba&#351;l&#305;kl&#305; s&#252;tunundaki onay kutusunu i&#351;aretleyin.$
+$Zy_Ger$Um RIP f&#252;r die WAN-Schnittstelle zu aktivieren, w&#228;hlen Sie die gew&#252;nschte RIP-Version und -Operation aus und       markieren das Kontrollk&#228;stchen Aktivieren.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_Routing_rip_Str2$
+$Zy_Eng$To stop RIP on the WAN Interface, uncheck the Enable checkbox.$
+$Zy_Tur$WAN aray&#252;z&#252;nde RIP durdurmak i&#231;in, &#8216;Etkin&#8217; onay kutusundaki i&#351;aretini kald&#305;r&#305;n.$
+$Zy_Ger$Um RIP an der WAN-Schnittstelle anzuhalten, entfernen Sie die Markierung im Kontrollk&#228;stchen Aktivieren.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_Routing_rip_Str3$
+$Zy_Eng$Click the Apply button to star/stop RIP and save the configuration.$
+$Zy_Tur$RIP ba&#351;latmak ve yap&#305;land&#305;rmay&#305; kaydetmek i&#231;in 'Uygula' d&#252;&#287;mesine t&#305;klay&#305;n.$
+$Zy_Ger$Klicken Sie auf die Schaltfl&#228;che Anwenden, um RIP zu starten/stoppen und die Konfiguration zu speichern.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_Routing_rip_Str4$
+$Zy_Eng$Operation$
+$Zy_Tur$Operasyon$
+$Zy_Ger$Betrieb$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_Routing_rip_Str5$
+$Zy_Eng$RIP CANNOT BE CONFIGURED on the WAN interface which has NAT enabled (such as PPPoE).$
+$Zy_Tur$RIP CANNOT BE CONFIGURED on the WAN interface which has NAT enabled (such as PPPoE)$
+$Zy_Ger$RIP KANN NICHT F&#220;R EINE WAN-SCHNITTSTELLE KONFIGURIERT WERDEN, bei der NAT aktiviert ist (z.B. PPPoE).$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_Wake_on_Lan_err1$
+$Zy_Eng$IP Address \'{{1}}\' is invalid IP address$
+$Zy_Tur$IP Adresi \'{{1}}\' geçersiz bir IP adresidir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_Wake_on_Lan_err2$
+$Zy_Eng$MAC Address \'{{1}}\' is invalid MAC address$
+$Zy_Tur$MAC Adresi \'{{1}}\' geçersiz bir MAC adresidir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_Wake_on_Lan_str1$
+$Zy_Eng$Wake on Lan$
+$Zy_Tur$Wake on Lan$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_Wake_on_Lan_str2$
+$Zy_Eng$Wake up$
+$Zy_Tur$Uyandır$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_Wake_on_Lan_str3$
+$Zy_Eng$Wake up your PC in LAN if your PC supports 'Wake on LAN' feature$
+$Zy_Tur$Eğer bilgisayarınız ''Wake on Lan'' destekliyorsa, LAN'daki bilgisayarı uyandırınız.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_Wake_on_Lan_str4$
+$Zy_Eng$Wake by Address$
+$Zy_Tur$Adres ile Uyandır$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_Wake_on_Lan_str5$
+$Zy_Eng$Manual$
+$Zy_Tur$Manual$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_ethenet_err1$
+$Zy_Eng$Can not set when there is a wan interface for ethernet wan in \'{{1}}\' page.$
+$Zy_Tur$\'{{1}}\' sayfasında bir wan arayüzü yoksa ayarlanamaz.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_ethenet_err2$
+$Zy_Eng$The device will reboot after changing wan to lan.$
+$Zy_Tur$wan'ı lan olarak değiştirdiğinizde cihaz yeniden başlatılacaktır.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_ethenet_err3$
+$Zy_Eng$The browser no support XMLHttp Object$
+$Zy_Tur$Tarayıcı XMLHttp Objesini desteklemiyor$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Network_LANVLAN_Str22$
+$Zy_Eng$A LAN VLAN operation can add or unchange on packet transmit to LAN.$
+$Zy_Tur$Yerel A&#287; VLAN i&#351;lemi ile, LAN paketlerinin iletimi i&#231;in paket iletimini ekleyebilir veya hi&#231;bir de&#287;i&#351;iklik yapmayabilirsiniz.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$

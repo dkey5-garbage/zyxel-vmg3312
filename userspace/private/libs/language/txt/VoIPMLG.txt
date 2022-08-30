@@ -1,0 +1,1407 @@
+﻿#include<stdio.h>	
+#include<string.h>	
+#include<stdlib.h>	
+#include<time.h>	
+#include "languages.h"	
+
+
+
+$NAME$MLG_VoIP_AlertMsg_Alert$
+$Zy_Eng$Alert$
+$Zy_Tur$&#214;nemli Uyar&#305;$
+$Zy_Ger$Alarm$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Register$
+$Zy_Eng$Register$
+$Zy_Tur$Kayıt et$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Unregister$
+$Zy_Eng$UnRegister$
+$Zy_Tur$Kaydı kaldır$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Inactive$
+$Zy_Eng$Inactive$
+$Zy_Tur$Etkin değil$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Registered_Onregister$
+$Zy_Eng$OnRegister$
+$Zy_Tur$Kayıtlı$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Registering$
+$Zy_Eng$Registering$
+$Zy_Tur$Kayıt oluyor$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_ServiceProvider1$
+$Zy_Eng$ServiceProvider-1$
+$Zy_Tur$ServisSağlayıcı-1$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_changeme$
+$Zy_Eng$changeme$
+$Zy_Tur$Tanımlanmamış$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Status$
+$Zy_Eng$VoIP Status$
+$Zy_Tur$VoIP Durumu$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Information$
+$Zy_Eng$Information, such as whether a SIP account is registered and the total call volume made by a SIP account, can be viewed in the page$
+$Zy_Tur$SIP hesabının kayıtlı olup olmadığı ve SIP hesabının arama trafiği bu sayfada görülebilir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Pollinterval$
+$Zy_Eng$Poll interval(s)$
+$Zy_Tur$Sorgulama Aralığı$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_sec$
+$Zy_Eng$sec$
+$Zy_Tur$sn$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Setinterval$
+$Zy_Eng$Set Interval$
+$Zy_Tur$Aralık ayarla$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Stop$
+$Zy_Eng$Stop$
+$Zy_Tur$Durdur$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_SIPStatus$
+$Zy_Eng$SIP Status$
+$Zy_Tur$SIP Durumu$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Registration$
+$Zy_Eng$Registration$
+$Zy_Tur$Hesap Durumu$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_RegistrationTime$
+$Zy_Eng$Registration Time$
+$Zy_Tur$Çalışma Süresi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_MessageWaiting$
+$Zy_Eng$Message Waiting$
+$Zy_Tur$Mesaj Bekletme$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_No$
+$Zy_Eng$No$
+$Zy_Tur$Hayır$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Yes$
+$Zy_Eng$Yes$
+$Zy_Tur$Evet$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message1$
+$Zy_Eng$Last Incoming Number$
+$Zy_Tur$Son Arayan Numara$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message2$
+$Zy_Eng$Last Outgoing Number$
+$Zy_Tur$Son Aranan Numara$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message3$
+$Zy_Eng$Call Status$
+$Zy_Tur$Çalışma Durumu$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message4$
+$Zy_Eng$Duration$
+$Zy_Tur$Süre$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message5$
+$Zy_Eng$Peer Number$
+$Zy_Tur$Eş Numara$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message6$
+$Zy_Eng$SIP Account$
+$Zy_Tur$SIP Hesapları$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message7$
+$Zy_Eng$SIP Service Provider$
+$Zy_Tur$SIP Servis Sağlayıcılar$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message8$
+$Zy_Eng$Add new account$
+$Zy_Tur$Yeni Hesap Ekle$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message9$
+$Zy_Eng$Account No.$
+$Zy_Tur$Hesap Numarası$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message10$
+$Zy_Eng$In order to make Internet phone calls, a valid SIP account is essential. You may need to consult your SIP service provider for the following settings. This configuration should be used in conjunction with SIP Service Provider.$
+$Zy_Tur$Internet üzerinden telefon görüşmeleri yapabilmek için SIP hesabı gereklidir. Aşağıdaki ayarları öğrenmek için SIP Servis Sağlayıcınız ile görüşmeniz gerekebilir. Bu ayarlar SIP Servis Sağlayıcınız ile bir arada kullanılır.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message11$
+$Zy_Eng$Edit this account$
+$Zy_Tur$Bu hesabı düzenle$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message12$
+$Zy_Eng$SIP Account Selection$
+$Zy_Tur$SIP Hesap Seçimi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message13$
+$Zy_Eng$SIP Service Provider Association$
+$Zy_Tur$SIP Servis Sağlayıcı Bağlantısı$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message14$
+$Zy_Eng$SIP Account Associated with  :$
+$Zy_Tur$SIP Hesap-SIP Servis Sağlayıcı Bağlantısı  :$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message15$
+$Zy_Eng$Enable SIP account$
+$Zy_Tur$SIP hesabı etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message16$
+$Zy_Eng$SIP Account Number :$
+$Zy_Tur$SIP Hesap Numarası :$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message17$
+$Zy_Eng$Authentication$
+$Zy_Tur$Doğrulama$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message18$
+$Zy_Eng$Apply to Phone$
+$Zy_Tur$Uygulanacak Telefonlar$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message19$
+$Zy_Eng$Phone 1$
+$Zy_Tur$Telefon 1$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message20$
+$Zy_Eng$Phone 2$
+$Zy_Tur$Telefon 2$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message21$
+$Zy_Eng$If both SIP accounts apply to the same phone, the SIP account priority for that phone is SIP0 > SIP1 ...$
+$Zy_Tur$Eğer iki SIP hesap da aynı telefona uygulanırsa, SIP hesap önceliği şu şekildedir: SIP0>SIP1 ...$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message22$
+$Zy_Eng$more..$
+$Zy_Tur$Genişlet..$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message23$
+$Zy_Eng$less..$
+$Zy_Tur$Daralt..$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message24$
+$Zy_Eng$URL Type$
+$Zy_Tur$URL tipi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message25$
+$Zy_Eng$Voice Features$
+$Zy_Tur$Ses Özellikleri$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message26$
+$Zy_Eng$Primary Compression Type$
+$Zy_Tur$Birincil Sıkıştırma Tipi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message27$
+$Zy_Eng$Secondary Compression Type$
+$Zy_Tur$İkincil Sıkıştırma Tipi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message28$
+$Zy_Eng$None$
+$Zy_Tur$Hiçbiri$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message29$
+$Zy_Eng$Third Compression Type$
+$Zy_Tur$Üçüncül Sıkıştırma Tipi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message30$
+$Zy_Eng$Speaking Volume Control$
+$Zy_Tur$Konuşma Ses Düzeyi Kontrolü$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message31$
+$Zy_Eng$Listening Volume Control$
+$Zy_Tur$Dinleme Ses Düzeyi Kontrolü$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message32$
+$Zy_Eng$Enable G.168(Echo Cancellation)$
+$Zy_Tur$G.168(Yankı İptali) Etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message33$
+$Zy_Eng$Enable VAD (Voice Active Detector)$
+$Zy_Tur$VAD (Gürültü Aktiflik Detektörü) Etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message34$
+$Zy_Eng$Call Features$
+$Zy_Tur$Çağrı Özellikleri$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message35$
+$Zy_Eng$Send Caller ID$
+$Zy_Tur$Arayan kimliğini gönder$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message36$
+$Zy_Eng$Enable Call Transfer$
+$Zy_Tur$Çağrı Aktarma Etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message37$
+$Zy_Eng$Enable Call Waiting$
+$Zy_Tur$Çağrı Bekletme Etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message38$
+$Zy_Eng$Call Waiting Reject Timer$
+$Zy_Tur$Çağrı Bekletme Red Zamanlayıcısı$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message39$
+$Zy_Eng$Second$
+$Zy_Tur$saniye$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message40$
+$Zy_Eng$Caution:$
+$Zy_Tur$Not:$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message41$
+$Zy_Eng$If you enable [Call Waiting], [Busy Forward] will be ignored.$
+$Zy_Tur$Eğer Call Waiting özelliği etkin ise, Meşgul Aktarma özelliği göz ardı edilecektir.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message42$
+$Zy_Eng$Enable Unconditional Forward$
+$Zy_Tur$Koşulsuz Aktarma etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message43$
+$Zy_Eng$To Number$
+$Zy_Tur$Bu numaraya$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message44$
+$Zy_Eng$Enable Busy Forward$
+$Zy_Tur$Meşgul Aktarma etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message45$
+$Zy_Eng$Enable No Answer Forward$
+$Zy_Tur$Cevapsız Arama Aktarma Etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message46$
+$Zy_Eng$No Answer Time$
+$Zy_Tur$Cevapsız Arama Zamanı$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message47$
+$Zy_Eng$If you enable (Unconditional Forward), (Busy Forward) and (No Answer) will be ignored.$
+$Zy_Tur$Eğer Koşulsuz Aktarma özelliği etkin ise, Meşgul Aktarma ve Cevapsuz Arama Aktarma özelliği göz ardı edilecektir.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message48$
+$Zy_Eng$Enable Do Not Disturb$
+$Zy_Tur$Rahatsız Etme etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message49$
+$Zy_Eng$Warning:$
+$Zy_Tur$Uyarı:$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message50$
+$Zy_Eng$If you enable this item, you will not get indication when somebody call you.$
+$Zy_Tur$Rahatsız Etme özelliğini aktif etmeniz durumunda dışarıdan bir arama geldiğinde herhangi bir uyarı alamazsınız.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message51$
+$Zy_Eng$Enable Anonymous Call Block$
+$Zy_Tur$Anonim Çağrı Engelleme etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message52$
+$Zy_Eng$Enable Call Completion on Busy Subscriber$
+$Zy_Tur$Meşgul Aboneye Erişim etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message53$
+$Zy_Eng$Notice:$
+$Zy_Tur$Not:$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message54$
+$Zy_Eng$ If you enable CCBS, activate this feature by pressing phone key 5 after attempting a call on busy.$
+$Zy_Tur$ Meşgul Aboneye Erişim özelliği etkin ise, bu özelliği aktif etmek için meşgulde bir çağrı denedikten sonra telefonunuzda 5 tuşlamanız gerekmektedir.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message55$
+$Zy_Eng$MWI (Message Waiting Indication)$
+$Zy_Tur$Mesaj Bekletme Bildirimi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message56$
+$Zy_Eng$Expiration Time$
+$Zy_Tur$Zaman Aşımı$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message57$
+$Zy_Eng$Hot Line/Warm Line Enable$
+$Zy_Tur$Yardım/Destek Hattı etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message58$
+$Zy_Eng$Warm Line$
+$Zy_Tur$Destek Hattı$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message59$
+$Zy_Eng$Hot Line$
+$Zy_Tur$Yardım Hattı$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message60$
+$Zy_Eng$Hot Line/Warm Line Number$
+$Zy_Tur$Yardım/Destek Hattı numarası$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message61$
+$Zy_Eng$Warm Line Timer (sec)$
+$Zy_Tur$Destek Hattı Zamanlayıcısı$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message62$
+$Zy_Eng$Enable Missed Call Email Notification$
+$Zy_Tur$Cevapsız Çağrıda Email Bildirimi etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message63$
+$Zy_Eng$Mail Server$
+$Zy_Tur$Mail Sunucusu$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message64$
+$Zy_Eng$Send Notification to email$
+$Zy_Tur$Mail adresine bildirim gönder$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message65$
+$Zy_Eng$Missed Call Email Title$
+$Zy_Tur$Cevapsız Çağrı Mail Başlığı$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message66$
+$Zy_Eng$Please configure mail server in Advanced > Email Notification page and select the mail server for this feature.$
+$Zy_Tur$Lütfen mail sunucusunu Gelişmiş>Email Bildirimi sayfasında ayarlayınız ve mail adresini bu özellik için seçiniz.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message67$
+$Zy_Eng$Early Media$
+$Zy_Tur$Erken Medya$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message68$
+$Zy_Eng$IVR Play Index$
+$Zy_Tur$IVR Oynatma indeksi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message69$
+$Zy_Eng$Music On Hold$
+$Zy_Tur$Bekletmede müzik$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message70$
+$Zy_Eng$Add new provider$
+$Zy_Tur$Yeni sağlayıcı ekle$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message71$
+$Zy_Eng$SIP Service Provider Name$
+$Zy_Tur$SIP Servis Sağlayıcı Adı$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message72$
+$Zy_Eng$SIP Server Address$
+$Zy_Tur$SIP Sunucu Adresi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+v$NAME$MLG_VoIP_Message73$
+$Zy_Eng$REGISTER Server Address$
+$Zy_Tur$Kayıt Sunucu Adresi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message74$
+$Zy_Eng$SIP Service Domain$
+$Zy_Tur$SIP Servis Alan adı$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message75$
+$Zy_Eng$Modify$
+$Zy_Tur$Değiştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message76$
+$Zy_Eng$Edit this provider$
+$Zy_Tur$Bu sağlayıcıyı düzenle$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message77$
+$Zy_Eng$SIP Service Provider offers services of making Internet calls using VoIP technology. You may need to consult your SIP Service Provider for the following settings. This configuration should be used in conjunction with SIP Account.$
+$Zy_Tur$SIP Servis Sağlayıcısı, VOIP teknolojisi kullanılarak İnternet aramaları yapma hizmetleri sunmaktadır. Bu konfigürasyon, SIP Hesabı ile birlikte kullanılmadır.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message78$
+$Zy_Eng$SIP Service Provider Selection$
+$Zy_Tur$SIP Servis Sağlayıcı Seçimi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message79$
+$Zy_Eng$Service Provider Selection$
+$Zy_Tur$Servis Sağlayıcı Seçimi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message80$
+$Zy_Eng$General$
+$Zy_Tur$Genel$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message81$
+$Zy_Eng$SIP Service Provider Name$
+$Zy_Tur$SIP Servis Sağlayıcı Adı$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message82$
+$Zy_Eng$SIP Local Port$
+$Zy_Tur$SIP Yerel Portu$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message83$
+$Zy_Eng$SIP Server Port$
+$Zy_Tur$SIP Sunucu Portu$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message84$
+$Zy_Eng$REGISTER Server Address$
+$Zy_Tur$Kayıt Sunucu Adresi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message85$
+$Zy_Eng$REGISTER Server Port$
+$Zy_Tur$Kayıt Sunucu Portu$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message86$
+$Zy_Eng$RFC support$
+$Zy_Tur$RFC Desteği$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message87$
+$Zy_Eng$Support Locating SIP Server (RFC 3263)$
+$Zy_Tur$SIP Sunucu Yerleştirme Desteği (RFC 3263)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message88$
+$Zy_Eng$RFC 3262 (Require: 100rel)$
+$Zy_Tur$RFC 3262 (Gereklilik: 100rel)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message89$
+$Zy_Eng$VoIP IOP Flags$
+$Zy_Tur$VOIP IOP Bayrakları$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message90$
+$Zy_Eng$Replace dial digit$
+$Zy_Tur$Arama numaralarını$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message90_2$
+$Zy_Eng$ in SIP messages$
+$Zy_Tur$'e çevir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message90_1$
+$Zy_Eng$to$
+$Zy_Tur$SIP mesajlarındaki$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message91$
+$Zy_Eng$Remove :5060 and transport=udp from request-uri in SIP messages$
+$Zy_Tur$5060 ve transport=udp yi SIP mesajlarındaki request-uriden çıkar$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message92$
+$Zy_Eng$Remove the Route header in SIP messages$
+$Zy_Tur$SIP mesajlarındaki Route başlığını çıkar$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message93$
+$Zy_Eng$Don't send re-Invite to the remote party when there are multiple codecs answered in the SDP$
+$Zy_Tur$SDP'de cevaplanmış çoklu kodekler olduğu zaman uzak tarafa tekrar davet gönderme$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message94$
+$Zy_Eng$Bound Interface Name$
+$Zy_Tur$Bound Inerface Adı$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message95$
+$Zy_Eng$Outbound Proxy$
+$Zy_Tur$Giden Proxy$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message96$
+$Zy_Eng$Outbound Proxy Address$
+$Zy_Tur$Giden Proxy Adresi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message97$
+$Zy_Eng$Outbound Proxy Port$
+$Zy_Tur$Giden Proxy Portu$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message98$
+$Zy_Eng$RTP Port Range$
+$Zy_Tur$RTP Port Aralığı$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message99$
+$Zy_Eng$Start Port$
+$Zy_Tur$Başlangıç Portu$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message100$
+$Zy_Eng$End Port$
+$Zy_Tur$Bitiş Portu$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message101$
+$Zy_Eng$SRTP Support$
+$Zy_Tur$SRTP Desteği$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message102$
+$Zy_Eng$Crypto Suite$
+$Zy_Tur$Kripto Paketi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message103$
+$Zy_Eng$(Encryption and Authentication type)$
+$Zy_Tur$(Şifreleme ve Doğrulama Tipi)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message104$
+$Zy_Eng$DTMF Mode$
+$Zy_Tur$DTMF Modu$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message105$
+$Zy_Eng$Transport Type$
+$Zy_Tur$Taşıma Tipi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message106$
+$Zy_Eng$Ignore Direct IP$
+$Zy_Tur$Direk IP'yi ihmal et$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message107$
+$Zy_Eng$FAX Option$
+$Zy_Tur$FAX Seçeneği$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message108$
+$Zy_Eng$T.38 FAX Relay$
+$Zy_Tur$T.38 FAX Geçişi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message109$
+$Zy_Eng$Fax Passthrough Codec$
+$Zy_Tur$Fax Passthrough Kodek$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message110$
+$Zy_Eng$QoS Tag$
+$Zy_Tur$QoS Etiket$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message111$
+$Zy_Eng$SIP DSCP Mark Setting$
+$Zy_Tur$SIP DSCP İşaret Ayarı$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message112$
+$Zy_Eng$RTP DSCP Mark Setting$
+$Zy_Tur$RTP DSCP İşaret Ayarı$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message113$
+$Zy_Eng$Timer Setting$
+$Zy_Tur$Zamanlayıcı Ayarlama$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message114$
+$Zy_Eng$Expiration Duration$
+$Zy_Tur$Sonlanma Süresi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message115$
+$Zy_Eng$Register Re-send timer$
+$Zy_Tur$Tekrar kayıt gönderme zamanlayıcısı$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message116$
+$Zy_Eng$Session Expires$
+$Zy_Tur$Oturum Sonlanması$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message117$
+$Zy_Eng$Phone Key Config$
+$Zy_Tur$Telefon Anahtar Yapılandırması$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message118$
+$Zy_Eng$Call Return$
+$Zy_Tur$Geri Arama$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message119$
+$Zy_Eng$One Shot Caller Display Call$
+$Zy_Tur$Tek seferlik arayan gösterme$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message120$
+$Zy_Eng$One Shot Caller Hidden Call$
+$Zy_Tur$Tek seferlik arayan gizli arama$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message121$
+$Zy_Eng$Call Waiting Enable$
+$Zy_Tur$Arama bekleme etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message122$
+$Zy_Eng$Call Waiting Disable$
+$Zy_Tur$Arama bekleme devredışı bırak$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message123$
+$Zy_Eng$IVR$
+$Zy_Tur$Sesli yanıt sistemi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message124$
+$Zy_Eng$Internal Call$
+$Zy_Tur$Dahili Arama$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message125$
+$Zy_Eng$Call Transfer$
+$Zy_Tur$Arama aktarma$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message126$
+$Zy_Eng$Unconditional Call Forward Enable$
+$Zy_Tur$Koşulsuz çağrı aktarma etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message127$
+$Zy_Eng$Unconditional Call Forward Disable$
+$Zy_Tur$Koşulsuz aktarma deverdışı bırak$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message128$
+$Zy_Eng$No Answer Call Forward Enable$
+$Zy_Tur$Cevapsız arama aktarma etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message129$
+$Zy_Eng$No Answer Call Forward Disable$
+$Zy_Tur$Cevapsız arama aktarma devredışı bırak$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message130$
+$Zy_Eng$Call Forward When Busy Enable$
+$Zy_Tur$Meşgulken çağrı aktarma etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message131$
+$Zy_Eng$Call Forward When Busy Disable$
+$Zy_Tur$Meşgulken çağrı aktarma devredışı bırak$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message132$
+$Zy_Eng$One Shot Call Waiting Enable$
+$Zy_Tur$Tek seferlik çağrı bekleme etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message133$
+$Zy_Eng$One Shot Call Waiting Disable$
+$Zy_Tur$Tek seferlik çağrı bekleme devredışı bırak$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message134$
+$Zy_Eng$Do Not Disturb Enable$
+$Zy_Tur$Rahatsız etme etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message135$
+$Zy_Eng$Do Not Disturb Disable$
+$Zy_Tur$Rahatsız etme devredışı bırak$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message136$
+$Zy_Eng$Call Completion on Busy Subscriber (CCBS) Deactivate$
+$Zy_Tur$Meşgul aboneye erişimini (CCBS) devredışı bırak$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message137$
+$Zy_Eng$Outgoing SIP$
+$Zy_Tur$Giden SIP$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message138$
+$Zy_Eng$Redial Code$
+$Zy_Tur$Tekrar arama kodu$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message139$
+$Zy_Eng$Answering Machine Unconditional Enable$
+$Zy_Tur$Çağrı yanıtlama makinesi koşulsuz etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message140$
+$Zy_Eng$Answering Machine Unconditional Disable$
+$Zy_Tur$Çağrı yanıtlama makinesi koşulsuz devredışı bırak$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message141$
+$Zy_Eng$Answering Machine Record Greeting$
+$Zy_Tur$Çağrı yanıtlama makinesi kayıt sesli iletisi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message142$
+$Zy_Eng$Answering Machine Play Greeting$
+$Zy_Tur$Çağrı yanıtlama makine oynatma sesli iletisi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message143$
+$Zy_Eng$Answering Machine On No Answer Enable$
+$Zy_Tur$Cevapsızken çağrı yanıtlama makinesini etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message144$
+$Zy_Eng$Answering Machine On No Answer Disable$
+$Zy_Tur$Cevapsızken çağrı yanıtlama makinesini devredışı bırak$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message145$
+$Zy_Eng$Answering Machine On Busy Enable$
+$Zy_Tur$Meşgulken çağrı yanıtlama makinesini etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message146$
+$Zy_Eng$Answering Machine On Busy Disable$
+$Zy_Tur$Meşgulken çağrı yanıtlama makinesini devredışı bırak$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message147$
+$Zy_Eng$Answering Machine Message Handling$
+$Zy_Tur$Çağrı yanıtlama makinesi mesaj  yönetimi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message148$
+$Zy_Eng$Anonymous Per Call Enable$
+$Zy_Tur$Çağrı başına anonim etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message149$
+$Zy_Eng$Anonymous Per Call Disable$
+$Zy_Tur$Çağrı başına anonim devredışı bırak$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message150$
+$Zy_Eng$Anonymous Calls To Answering Machine Enable$
+$Zy_Tur$Anonim çağrılar çağrı yanıtlama makinesine yönlenme etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message151$
+$Zy_Eng$Anonymous Calls To Answering Machine Disable$
+$Zy_Tur$Anonim çağrılar çağrı yanıtlama makinesine yönlensin devredışı bırak$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message152$
+$Zy_Eng$Anonymous Call Block Enable$
+$Zy_Tur$Anonim çağrı engelle etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message153$
+$Zy_Eng$Anonymous Call Block Disable$
+$Zy_Tur$Anonim çağrı engelle bırak devredışı bırak$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message154$
+$Zy_Eng$Always Anonymous Call Enable$
+$Zy_Tur$Her zaman anonim çağrı etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message155$
+$Zy_Eng$Always Anonymous Call Disable$
+$Zy_Tur$Her zaman anonim çağrı devredışı bırak$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message156$
+$Zy_Eng$Active Dial Enable$
+$Zy_Tur$Aktif arama etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message157$
+$Zy_Eng$Active Dial Disable$
+$Zy_Tur$Aktif arama devredışı bırak$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message158$
+$Zy_Eng$Dial Plan$
+$Zy_Tur$Arama planı$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message159$
+$Zy_Eng$Dial Plan Enable$
+$Zy_Tur$Aramaı planı etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message160$
+$Zy_Eng$Dialing Interval Selection$
+$Zy_Tur$Çevirme Interval Seçimi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message161$
+$Zy_Eng$Immediate Dial Enable$
+$Zy_Tur$Anlık arama etkinleştir$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message162$
+$Zy_Eng$When certain phone numbers are dialed on a regular basis, Speed Dial accelerates dialing process. The following rules apply to all the phone devices connected to this device.$
+$Zy_Tur$Ayarlanmış telefon numaraları çevrildiğinde, Hızlı Çevirme özelliği telefon numarası çevirme sürecini hızlandırır. Aşağıdaki kurallar bu cihaza bağlı tüm telefon cihazlarına uygulanır.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message163$
+$Zy_Eng$Call rule$
+$Zy_Tur$Çağrı Kuralları$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message164$
+$Zy_Eng$Clear all speed dials$
+$Zy_Tur$Tüm hızlı telefon çevirme kurallarını temizle$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message165$
+$Zy_Eng$Keys$
+$Zy_Tur$Anahtarlar$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message166$
+$Zy_Eng$Number$
+$Zy_Tur$Numara$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message167$
+$Zy_Eng$Selecting current region where this device is physically located provides better quality of phone calls.$
+$Zy_Tur$Bu cihazın kullanıldığı bölge seçimini yapmak daha kaliteli telefon görüşmeleri sağlar.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message168$
+$Zy_Eng$Region Settings$
+$Zy_Tur$Bölge Ayarları$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message169$
+$Zy_Eng$Call Service Mode$
+$Zy_Tur$Çağrı Servis Modu$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message170$
+$Zy_Eng$Europe Type$
+$Zy_Tur$Avrupa Tipi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message171$
+$Zy_Eng$USA Type$
+$Zy_Tur$ABD Tipi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message172$
+$Zy_Eng$When Region Settings is changed, you need to reboot device to take settings effect.$
+$Zy_Tur$Yapılan Bölge ayarlarının cihazda etkinleştirilmesi için cihazı yeniden başlatmanız gerekir.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message173$
+$Zy_Eng$Phone Status$
+$Zy_Tur$Telefon Durumu$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message174$
+$Zy_Eng$Outgoing Number$
+$Zy_Tur$Aranan Numara$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message175$
+$Zy_Eng$Incoming Number$
+$Zy_Tur$Arayan Numara$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Message176$
+$Zy_Eng$MissedCallNotification$
+$Zy_Tur$Cevapsız Çağrı Bildirimi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Registered_Notregister$
+$Zy_Eng$Not Register$
+$Zy_Tur$Kayıtlı Değil$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_VoIP_Registered_Idle$
+$Zy_Eng$Idle$
+$Zy_Tur$Boş$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$

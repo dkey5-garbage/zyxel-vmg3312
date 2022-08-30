@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- #BEGINZONE header_FWUpInProgress_zone -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- #BEGINZONE header_FWUpInProgressRedirect_zone -->
+<meta http-equiv="refresh" content="240;url='/login/login.html' "/>
+<!-- #ENDZONE header_FWUpInProgressRedirect_zone -->
+<title><%ejGetML(MLG_Common_FirmwareUpgradeInProgress)%></title>
+<script src="../js/jquery-1.3.2.min.js" type="text/javascript"></script>
+<script src="../js/jquery.validate.pack.js" type="text/javascript"></script>
+<script type="text/javascript" src="../js/common.js"></script>   
+<script type="text/javascript">
+setTimeout("document.aForm.submit()",5000);
+setTimeout('reboot()', 210000);
+function reboot() {
+	var loc = 'login/login.html';
+	var code = 'window.top.location="' + loc + '"';
+
+	eval(code);
+}
+</script>
+<link href="css/brick.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+<!-- #ENDZONE header_FWUpInProgress_zone -->
+
+<!-- #BEGINZONE form_FWUpInProgress_zone -->
+<body >
+<form method='post' id='aForm' name='aForm' ENCTYPE='multipart/form-data' action='/pages/tabFW/firmwareUpgrade-upload-download.cgi'>
+  <input type="submit" style="display:none"/>
+</form>
+<div id="wrapper2">
+<div id="popup_win3">
+<ul>
+<li class="popup_left2"></li>
+<li class="popup_center2">
+<div id="popup_content2">
+<ul>
+<li class="popup_title4"><%ejGetML(MLG_Common_FirmwareUpgradeInProgress)%></li>
+<li>
+  <div style="position:absolute; height:235px; z-index:3000; left: 40px; top:70px; width:620px; overflow-x:hidden;overflow-y:auto; padding-right:20px;">
+    <ul>
+      <li class="popup_word3">
+	  <li class="space"></li>
+<div class="w_text blod"><img src="images/i_caution.gif" width="12" height="12" /> <%ejGetML(MLG_Common_FirmwareUpgradeInProgress)%>.</div>
+<div class="w_text blod"><img src="images/i_caution.gif" width="12" height="12" /> <%ejGetML(MLG_Common_DoNotTurnOffTheDevice)%></div>
+<div class="w_text blod"><img src="images/i_caution.gif" width="12" height="12" /> <%ejGetML(MLG_Common_PleaseWait)%></div>
+<div class="step1"><div class="w_text">
+                       <p><div class="w_text blod"><%ejGetML(MLG_Common_Note_Common)%>:</div> <%ejGetML(MLG_Common_FirmwareUpgradeInProgress_CONTENT_2)%></p>
+					   <p>&nbsp;</p>
+					   <p><%ejGetML(MLG_Common_FirmwareUpgradeInProgress_CONTENT_3)%></p>
+                   </div>
+</div>
+  </li>
+    </ul>
+  </div></li>
+</ul>
+</div>
+
+</li>
+<li class="popup_right2"></li>
+</ul>
+</div>
+<div id="popup3"></div>
+</div>
+
+
+</body>
+<!-- #ENDZONE form_FWUpInProgress_zone -->
+</html>

@@ -1,0 +1,5236 @@
+﻿#include<stdio.h>	
+#include<string.h>	
+#include<stdlib.h>	
+#include<time.h>	
+#include "languages.h"	
+
+
+
+$NAME$MLG_Security_Certificate_AlertMsg_Str1$
+$Zy_Eng$Invalid Certificate Name$
+$Zy_Tur$Ge&#231;ersiz Sertifika &#304;smi$
+$Zy_Ger$Ung&#252;ltiger Zertifikatsname$
+$Zy_Fre$Nom de certificat non valide  $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificate_AlertMsg_Str10$
+$Zy_Eng$Certificate does not match request$
+$Zy_Tur$Sertifika talep ile uyu&#351;mamaktad&#305;r$
+$Zy_Ger$Zertifikat passt nicht zur Anforderung$
+$Zy_Fre$Le certificat ne correspond pas &#224; la demande$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificate_AlertMsg_Str11$
+$Zy_Eng$Certificate type error$
+$Zy_Tur$Sertifika t&#252;r&#252; hatas&#305;$
+$Zy_Ger$Fehler beim Zertifikatstyp$
+$Zy_Fre$Erreur de type de certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificate_AlertMsg_Str12$
+$Zy_Eng$Certificate name not found$
+$Zy_Tur$Sertifika ismi bulunamamaktad&#305;r$
+$Zy_Ger$Zertifikatsname nicht gefunden$
+$Zy_Fre$Nom du certificat introuvable$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificate_AlertMsg_Str13$
+$Zy_Eng$Cannot decode upload file format$
+$Zy_Tur$Y&#252;klenen dosya format&#305;n&#305;n &#351;ifresi &#231;&#246;z&#252;lemiyor.$
+$Zy_Ger$Format der Upload-Datei kann nicht dekodiert werden$
+$Zy_Fre$Impossible de d&#233;coder le format du fichier t&#233;l&#233;charg&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificate_AlertMsg_Str14$
+$Zy_Eng$pkcs#12 invalid password$
+$Zy_Tur$pkcs#12 ge&#231;ersiz &#351;ifre$
+$Zy_Ger$pkcs#12 ung&#252;ltiges Kennwort$
+$Zy_Fre$pkcs#12 mot de passe non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificate_AlertMsg_Str15$
+$Zy_Eng$password for private key error$
+$Zy_Tur$&#214;zel tu&#351; hatas&#305; i&#231;in &#351;ifre$
+$Zy_Ger$Fehler bei Kennwort f&#252;r privaten Schl&#252;ssel$
+$Zy_Fre$mot de passe pour une erreur de cl&#233; priv&#233;e$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificate_AlertMsg_Str16$
+$Zy_Eng$A certificate with the same name already exists$
+$Zy_Tur$Ayn&#305; isme sahip bir sertifika zaten mevcuttur$
+$Zy_Ger$Ein Zertifikat mit demselben Namen existiert bereits$
+$Zy_Fre$Un certificat avec le m&#234;me nom existe d&#233;j&#224;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificate_AlertMsg_Str17$
+$Zy_Eng$Cannot remove certificate$
+$Zy_Tur$Sertifika kald&#305;r&#305;lam&#305;yor.$
+$Zy_Ger$Zertifikat kann nicht entfernt werden$
+$Zy_Fre$Impossible de supprimer le certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificate_AlertMsg_Str18$
+$Zy_Eng$Certificate Error$
+$Zy_Tur$Sertifika Hatas &#305;$
+$Zy_Ger$Zertifikatsfehler$
+$Zy_Fre$Erreur de certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificate_AlertMsg_Str19$
+$Zy_Eng$This certificate is in use. Other functions may stop working if it is deleted. Are you sure want to force the deletion?$
+$Zy_Tur$&#304;&#351;bu sertifika kullan&#305;mdad&#305;r. E&#287;er silinirse di&#287;er fonksiyonlar &#231;al&#305;&#351;mayabilir. Silme i&#351;lemini zorlamak istedi&#287;inizden emin misiniz?$
+$Zy_Ger$Dieses Zertifikat wird bereits verwendet. Wenn es gel&#246;scht wird, funktionieren andere Funktionen u.U. nicht mehr. Wollen Sie wirklich l&#246;schen?$
+$Zy_Fre$Ce certificat est en cours d&#39;utilisation D&#39;autres fonctions peuvent cesser de fonctionner si elle est supprim&#233;e.  Etes-vous s&#251;r vouloir forcer la suppression?$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificate_AlertMsg_Str2$
+$Zy_Eng$Common Name should not be empty.$
+$Zy_Tur$Yerel Ad bo&#351; b&#305;rak&#305;lmamal&#305;d&#305;r.$
+$Zy_Ger$Common Name sollte nicht leer sein.$
+$Zy_Fre$Le nom usuel ne doit pas &#234;tre vide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificate_AlertMsg_Str20$
+$Zy_Eng$This certificate is in use.$
+$Zy_Tur$&#304;&#351;bu sertifika kullan&#305;mdad&#305;r.$
+$Zy_Ger$Dieses Zertifikat wird bereits verwendet.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Security_Certificate_AlertMsg_Str3$
+$Zy_Eng$Organization Name should not be empty.$
+$Zy_Tur$Kurulu&#351; &#304;smi bo&#351; b&#305;rak&#305;lmamal&#305;d&#305;r.$
+$Zy_Ger$Der Name der Organisation sollte nicht leer sein.$
+$Zy_Fre$Le nom de l&#39;organisation ne doit pas &#234;tre vide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificate_AlertMsg_Str4$
+$Zy_Eng$State/Province Name should not be empty.$
+$Zy_Tur$Eyalet/&#304;l &#304;smi bo&#351; b&#305;rak&#305;lmamal&#305;d&#305;r.$
+$Zy_Ger$Name des Bundeslands sollte nicht leer sein.$
+$Zy_Fre$Le nom de l&#39;Etat/Province ne doit pas &#234;tre vide!$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificate_AlertMsg_Str5$
+$Zy_Eng$Maximum 4 certificates can be stored.$
+$Zy_Tur$Haf&#305;zaya en fazla 4 sertifika al&#305;nabilir.$
+$Zy_Ger$Es k&#246;nnen maximal 4 Zertifikate gespeichert werden.$
+$Zy_Fre$4 certificats maximum peuvent &#234;tre stock&#233;s.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificate_AlertMsg_Str6$
+$Zy_Eng$Certificate Name should not be empty.$
+$Zy_Tur$Sertifika &#304;smi bo&#351; olmamal&#305;d&#305;r.$
+$Zy_Ger$Der Zertifikatsname sollte nicht leer sein.$
+$Zy_Fre$Le nom de certificat ne doit pas &#234;tre vide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificate_AlertMsg_Str7$
+$Zy_Eng$Certificate Public Key should not be empty.$
+$Zy_Tur$Sertifika Ortak Anahtar bo&#351; b&#305;rak&#305;lmamal&#305;d&#305;r.$
+$Zy_Ger$Der &#246;ffentliche Schl&#252;ssel des Zertifikats sollte nicht leer sein.$
+$Zy_Fre$Le nom de Cl&#233; publique ne doit pas &#234;tre vide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificate_AlertMsg_Str8$
+$Zy_Eng$Certificate Private Key should not be empty.$
+$Zy_Tur$Sertifika &#214;zel Anahtar bo&#351; b&#305;rak&#305;lmamal&#305;d&#305;r.$
+$Zy_Ger$Der private Schl&#252;ssel des Zertifikats sollte nicht leer sein.$
+$Zy_Fre$Le nom de Cl&#233; priv&#233;e ne doit pas &#234;tre vide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificate_AlertMsg_Str9$
+$Zy_Eng$This certificate is in use$
+$Zy_Tur$&#304;&#351;bu sertifika kullan&#305;mdad&#305;r.$
+$Zy_Ger$Dieses Zertifikat wird bereits verwendet.$
+$Zy_Fre$Ce certificat est en cours d&#39;utilisation$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str1$
+$Zy_Eng$Certificates (also known as digital IDs) can authenticate users. In Local Certificate, you can generate certification requests and import the signed certificates.$
+$Zy_Tur$Sertifika (ayn&#305; zamanda dijital kimlik olarak da bilinmektedir) kullan&#305;c&#305;lar&#305;n kimlik do&#287;rulamas&#305;n&#305; yapabilir. Yerel sertifikada, sertifika talepleri olu&#351;turup, imzalanm&#305;&#351; sertifikalar&#305; i&#231;eriye aktarabilirsiniz.$
+$Zy_Ger$Mit Zertifikaten (auch als digitale IDs bekannt) k&#246;nnen Benutzer authentifiziert werden. Unter Manuell eingetragene Zertifikate k&#246;nnen Sie Zertifizierungsanforderungen erzeugen und signierte Zertifikate importieren.$
+$Zy_Fre$Le certificat (&#233;galement connu sous le nom d&#39;ID num&#233;riques) permet d&#39;authentifier les utilisateurs. Dans Certificats locaux, vous pouvez g&#233;n&#233;rer des demandes de certification et importer les certificats sign&#233;s.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str10$
+$Zy_Eng$Organization Name$
+$Zy_Tur$Organizasyon &#304;smi$
+$Zy_Ger$Name der Organisation$
+$Zy_Fre$Nom de l&#39;organisation$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str11$
+$Zy_Eng$State/Province Name$
+$Zy_Tur$Eyalet/&#304;l &#304;smi$
+$Zy_Ger$Name des Bundeslands$
+$Zy_Fre$Nom de l&#39;Etat/Province$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str12$
+$Zy_Eng$Country/Region Name$
+$Zy_Tur$&#220;lke/B&#246;lge &#304;smi$
+$Zy_Ger$Name des Landes/der Region$
+$Zy_Fre$Nom du Pays/R&#233;gion$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str13$
+$Zy_Eng$Customize$
+$Zy_Tur$&#214;zelle&#351;tir$
+$Zy_Ger$Anpassen$
+$Zy_Fre$Personnaliser$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str14$
+$Zy_Eng$Load Signed Certificate$
+$Zy_Tur$&#304;mzalanm&#305;&#351; Sertifikay&#305; Y&#252;kle$
+$Zy_Ger$Signiertes Zertifikat laden$
+$Zy_Fre$Charger le certificat sign&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str15$
+$Zy_Eng$Certificate signing request successfully created.  Note a request is not yet functional - have it signed by a Certificate Authority and load the signed certificate to this device.$
+$Zy_Tur$Sertifika imzalama talebi ba&#351;ar&#305;l&#305; bir &#351;ekilde olu&#351;turulmu&#351;tur. Bir talebin hen&#252;z fonksiyonel olmad&#305;&#287;&#305;n&#305; dikkate al&#305;n&#305;z &#8211; bir Sertifika Yetkilisi taraf&#305;ndan imzalatt&#305;r&#305;p, imzalanm&#305;&#351; sertifikay&#305; i&#351;bu cihaza y&#252;kleyiniz.$
+$Zy_Ger$Anforderung zum Signieren eines Zertifikats (CSR) wurde erfolgreich erstellt.  Bitte beachten Sie, dass eine Anforderung nicht unmittelbar funktioniert. Sie m&#252;ssen sie von einer CA (Certificate Authority) signieren lassen und dann das signierte Zertifikat auf dieses Ger&#228;t hochladen.$
+$Zy_Fre$Demande de signature de certificat cr&#233;&#233;e avec succ&#232;s.  Notez qu&#39;une demande n&#39;est pas encore fonctionnelle - faites-la signer par une autorit&#233; de certification et chargez le certificat sign&#233; sur cet appareil.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str16$
+$Zy_Eng$Signing Request$
+$Zy_Tur$&#304;mzalama Talebi$
+$Zy_Ger$Anforderung zum Signieren$
+$Zy_Fre$Demande de signature$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str17$
+$Zy_Eng$Load Signed$
+$Zy_Tur$&#304;mzalanm&#305;&#351; Sureti Y&#252;kle$
+$Zy_Ger$Signiertes Zertifikat laden$
+$Zy_Fre$Charger le certificat sign&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str18$
+$Zy_Eng$Paste signed certificate.$
+$Zy_Tur$&#304;mzalanm&#305;&#351; sertifikay&#305; yap&#305;&#351;t&#305;r$
+$Zy_Ger$Signiertes Zertifikat einf&#252;gen.$
+$Zy_Fre$Coller le certificat sign&#233;.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str19$
+$Zy_Eng$Certificate$
+$Zy_Tur$Sertifika$
+$Zy_Ger$Zertifikat$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str2$
+$Zy_Eng$Create Certificate Request$
+$Zy_Tur$Sertifika Talebi Olu&#351;tur$
+$Zy_Ger$CSR erstellen$
+$Zy_Fre$Cr&#233;er une demande de certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str20$
+$Zy_Eng$View Certificate$
+$Zy_Tur$Sertifikay&#305; G&#246;r&#252;nt&#252;le$
+$Zy_Ger$Zertifikat anzeigen$
+$Zy_Fre$Voir le certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str21$
+$Zy_Eng$Certificate Details$
+$Zy_Tur$Sertifika Detaylar &#305;$
+$Zy_Ger$Details des Zertifikats$
+$Zy_Fre$D&#233;tails du certificat $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str22$
+$Zy_Eng$Private Key$
+$Zy_Tur$&#214;zel Anahtar$
+$Zy_Ger$Privater Schl&#252;ssel$
+$Zy_Fre$Cl&#233; priv&#233;e$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str23$
+$Zy_Eng$The certificate is in one of the following formats.$
+$Zy_Tur$Sertifika altta belirtilen formatlardan birine sahiptir.$
+$Zy_Ger$Das Zertifikat hat eines der folgenden Formate.$
+$Zy_Fre$Le certificat est dans l&#39;un des formats suivants.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_BinaryX509$
+$Zy_Eng$Binary X.509$
+$Zy_Tur$Binary X.509$
+$Zy_Ger$Binary X.509$
+$Zy_Fre$Binary X.509$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str24$
+$Zy_Eng$PEM (Base-64) encoded$
+$Zy_Tur$PEM (Base-64) &#351;ifreli$
+$Zy_Ger$PEM (Base-64) encoded$
+$Zy_Fre$PEM encod&#233; en base 64$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str25$
+$Zy_Eng$Binary PKCS#7$
+$Zy_Tur$Binary PKCS#7$
+$Zy_Ger$Binary PKCS#7$
+$Zy_Fre$Binaire PKCS#7$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str26$
+$Zy_Eng$PEM (Base-64) encoded PKCS#7$
+$Zy_Tur$PEM (Base-64) &#351;ifreli PKCS#7$
+$Zy_Ger$PEM (Base-64) encoded PKCS#7$
+$Zy_Fre$PEM encod&#233; en base 64 PKCS#7$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str27$
+$Zy_Eng$Import from file$
+$Zy_Tur$Dosyadan veri aktar$
+$Zy_Ger$Aus Datei importieren$
+$Zy_Fre$Importer depuis un fichier$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str28$
+$Zy_Eng$Certificate File Path$
+$Zy_Tur$Sertifika Dosya Yolu$
+$Zy_Ger$Pfad der Zertifikatsdatei$
+$Zy_Fre$Chemin du fichier du certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str29$
+$Zy_Eng$Private Key is protected by a password.$
+$Zy_Tur$&#214;zel Anahtar bir &#351;ifre taraf&#305;ndan korunmaktad&#305;r.$
+$Zy_Ger$Privater Schl&#252;ssel Kennwort-gesch&#252;tzt.$
+$Zy_Fre$La cl&#233; priv&#233;e est prot&#233;g&#233;e par un mot de passe.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str3$
+$Zy_Eng$Import Certificate$
+$Zy_Tur$Sertifikay&#305; &#304;&#231;e Aktar$
+$Zy_Ger$Zertifikat importieren$
+$Zy_Fre$Importer un certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str30$
+$Zy_Eng$Certification Authority (CA) issues certificates and guarantees the identity of each certificate owner. In Trusted CA, you can save the certificates of trusted CAs.$
+$Zy_Tur$Onay Kurumu (CA) sertifikalar olu&#351;turup, her sertifika sahibinin kimli&#287;ini taahh&#252;t etmektedir. G&#252;venilir CA&#8217;da, g&#252;venilir CA&#8217;lar&#305;n sertifikalar&#305;n&#305; kaydedebilirsiniz.$
+$Zy_Ger$Eine CA (Certification Authority) gibt Zertifikate heraus und garantiert die Identit&#228;t jedes Zertifikatsinhabers. Unter Trusted CA k&#246;nnen Sie die Zertifikate von vertrauensw&#252;rdigen Zertifizierungsstellen speichern.$
+$Zy_Fre$L&#39;autorit&#233; de certification (CA) &#233;met des certificats et garantit l&#39;identit&#233; de chaque d&#233;tenteur de certificat. Dans l&#39;Autorit&#233; de certification approuv&#233;e, vous pouvez enregistrer les certificats des Autorit&#233;s de certification approuv&#233;es.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str31$
+$Zy_Eng$Enable Trusted CA for 802.1x Authentication$
+$Zy_Tur$802.1x Kimlik Do&#287;rulamas&#305; i&#231;in G&#252;venilir CA etkinle&#351;tirin$
+$Zy_Ger$Trusted CA f&#252;r 802.1x Authentifizierung aktivieren$
+$Zy_Fre$Activer l&#39;Autorit&#233; de certification approuv&#233;e pour  l&#39;Authentification 802.1x $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str32$
+$Zy_Eng$Enable Trusted CA for TR-069$
+$Zy_Tur$TR-069 i&#231;in G&#252;venilir CA etkinle&#351;tirin$
+$Zy_Ger$Trusted CA f&#252;r TR-069 aktivieren$
+$Zy_Fre$Activer l&#39;Autorit&#233; de certification approuv&#233;e pour TR-069$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str33$
+$Zy_Eng$View Certificate$
+$Zy_Tur$Sertifikay&#305; G&#246;r&#252;nt&#252;le$
+$Zy_Ger$Zertifikat anzeigen$
+$Zy_Fre$Afficher le certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str34$
+$Zy_Eng$Remove Local Certificate Entry$
+$Zy_Tur$Yerel Sertifika Giri&#351;ini Sil$
+$Zy_Ger$Manuell eingetragenes Zertifikat entfernen$
+$Zy_Fre$Supprimer une entr&#233;e de certification locale$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str35$
+$Zy_Eng$insert certificate here$
+$Zy_Tur$Sertifikay&#305; buradan giriniz$
+$Zy_Ger$Zertifikat hier einf&#252;gen$
+$Zy_Fre$Ins&#233;rez un certificat ici$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str36$
+$Zy_Eng$insert private key here$
+$Zy_Tur$&#214;zel anahtar&#305; buraya giriniz$
+$Zy_Ger$Privaten Schl&#252;ssel hier einf&#252;gen$
+$Zy_Fre$Ins&#233;rez la cl&#233; priv&#233;e ici $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str37$
+$Zy_Eng$Binary$
+$Zy_Tur$Binary$
+$Zy_Ger$Bin&#228;r$
+$Zy_Fre$Binaire$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str38$
+$Zy_Eng$Load Certificate$
+$Zy_Tur$Sertifika Y&#252;kle$
+$Zy_Ger$Zertifikat laden$
+$Zy_Fre$Charger le certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str39$
+$Zy_Eng$Enable Trusted CA for TR-069$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str4$
+$Zy_Eng$In Use$
+$Zy_Tur$Kullan&#305;mda$
+$Zy_Ger$In Verwendung$
+$Zy_Fre$En cours d&#39;utilisation$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str41$
+$Zy_Eng$Current File$
+$Zy_Tur$Mevcut Dosya$
+$Zy_Ger$Aktuelle Datei$
+$Zy_Fre$En cours d&#39;utilisation$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str42$
+$Zy_Eng$Issuer$
+$Zy_Tur$Yay&#305;mlayan$
+$Zy_Ger$Aussteller$
+$Zy_Fre$En cours d&#39;utilisation$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str43$
+$Zy_Eng$Valid From$
+$Zy_Tur$-&#8216;den itibaren ge&#231;erlidir$
+$Zy_Ger$G&#252;ltig ab$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str44$
+$Zy_Eng$Valid To$
+$Zy_Tur$-&#8216;e kadar ge&#231;erlidir$
+$Zy_Ger$G&#252;ltig bis$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str45$
+$Zy_Eng$Replace PrivateKey/Certificate file in PEM format$
+$Zy_Tur$&#214;zelAnahtar/Sertifika dosyas&#305;n&#305; PEM format&#305;nda yenisiyle de&#287;i&#351;tiriniz$
+$Zy_Ger$Privaten Schl&#252;ssel/Zertifikat durch Datei in PEM-Format ersetzen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str46$
+$Zy_Eng$Please input certificate filename.$
+$Zy_Tur$L&#252;tfen sertifika dosya ismini giriniz.$
+$Zy_Ger$Bitte geben Sie den Zertifikatsnamen ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str47$
+$Zy_Eng$Certificates- Trusted CA$
+$Zy_Tur$Sertifikalar- G&#252;venilir CA&#8217;lar$
+$Zy_Ger$Zertifikate - Trusted CA$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Security_Certificates_Str5$
+$Zy_Eng$Subject$
+$Zy_Tur$Konu$
+$Zy_Ger$Antragsteller$
+$Zy_Fre$Sujet$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str51$
+$Zy_Eng$BEGIN CERTIFICATE$
+$Zy_Tur$SERT&#304;F&#304;KAYI BA&#350;LAT$
+$Zy_Ger$ANFANG ZERTIFIKAT$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str52$
+$Zy_Eng$insert certificate here$
+$Zy_Tur$Sertifikay&#305; buradan giriniz$
+$Zy_Ger$Zertifikat hier einf&#252;gen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str53$
+$Zy_Eng$END CERTIFICATE$
+$Zy_Tur$SERT&#304;F&#304;KAYI SONU&#199;LANDIR$
+$Zy_Ger$ENDE ZERTIFIKAT$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str6$
+$Zy_Eng$Maximum 4 certificates can be stored.$
+$Zy_Tur$Haf&#305;zaya en fazla 4 sertifika al&#305;nabilir.$
+$Zy_Ger$Es k&#246;nnen maximal 4 Zertifikate gespeichert werden.$
+$Zy_Fre$4 certificats maximum peuvent &#234;tre stock&#233;s.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str7$
+$Zy_Eng$To generate a certificate signing request you need to include Common Name, Organization Name, State/Province Name, and the 2-letter Country Code for the certificate.$
+$Zy_Tur$Bir sertifika imzalama talebini olu&#351;turmak i&#231;in sertifika i&#231;in Yerel Ad, Organizasyon &#304;smi, Eyalet/&#304;l &#304;smi ve 2-harfli &#220;lke Kodunu dahil etmeniz gerekmektedir.$
+$Zy_Ger$Um eine Anforderung zum Signieren eines Zertifikats (CSR) zu erstellen, m&#252;ssen Sie den Common Name, den Namen der Organisation, des Bundeslands und den zweistelligen L&#228;ndercode f&#252;r das Zertifikat eingeben.$
+$Zy_Fre$Pour g&#233;n&#233;rer une demande de signature de certificat, vous devez inclure le Nom usuel, Nom de l&#39;organisation, Nom de l&#39;Etat/Province, et le code du  pays &#224; 2 lettres pour le certificat.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str8$
+$Zy_Eng$Certificate Name$
+$Zy_Tur$Sertifika &#304;smi$
+$Zy_Ger$Zertifikatsname$
+$Zy_Fre$Nom du certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Str9$
+$Zy_Eng$Common Name$
+$Zy_Tur$Yerel Ad$
+$Zy_Ger$Common Name$
+$Zy_Fre$Nom usuel$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_AlertMsg_Str1$
+$Zy_Eng$Max rule entry is 32.$
+$Zy_Tur$Maks. kural giri&#351;i 32&#8217;dir.$
+$Zy_Ger$Es k&#246;nnen maximal 32 Regeln eingegeben werden.$
+$Zy_Fre$L&#39;entr&#233;e de r&#232;gle maximum est 32.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_AlertMsg_Str2$
+$Zy_Eng$Invalid port number$
+$Zy_Tur$Ge&#231;ersiz port numaras &#305;$
+$Zy_Ger$Ung&#252;ltige Portnummer$
+$Zy_Fre$Valeur de port non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_AlertMsg_Str3$
+$Zy_Eng$Port 7547 is used for TR-069.$
+$Zy_Tur$7547 portu, TR-069 i&#231;in kullan&#305;lmaktad&#305;r.$
+$Zy_Ger$Port 7547 wird f&#252;r TR-069 verwendet.$
+$Zy_Fre$Le port 7547 est utilis&#233; pour TR-069.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_AlertMsg_Str4$
+$Zy_Eng$Invalid source port number$
+$Zy_Tur$Ge&#231;ersiz kaynak portu numaras &#305;$
+$Zy_Ger$Ung&#252;ltige Quell-Portnummer$
+$Zy_Fre$Num&#233;ro de port source non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_AlertMsg_Str5$
+$Zy_Eng$Port option can not set large port to Small port$
+$Zy_Tur$Aral&#305;k belirlerken, k&#252;&#231;&#252;k olan portu b&#252;y&#252;k olan porttan daha &#246;nce yazmal&#305;s&#305;n&#305;z.$
+$Zy_Ger$Port-Option kann eine hohe Portzahl nicht auf eine niedrige Portzahl setzen$
+$Zy_Fre$L&#39;option de port ne permet pas de r&#233;gler un grand port sur un petit port$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_AlertMsg_Str6$
+$Zy_Eng$Invalid port number$
+$Zy_Tur$Ge&#231;ersiz port numaras &#305;$
+$Zy_Ger$Ung&#252;ltige Portnummer$
+$Zy_Fre$Valeur de port non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_AlertMsg_Str7$
+$Zy_Eng$Invalid destination port number$
+$Zy_Tur$Ge&#231;ersiz var&#305;&#351; port numaras &#305;$
+$Zy_Ger$Ung&#252;ltige Ziel-Portnummer$
+$Zy_Fre$Num&#233;ro de port de destination non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_AlertMsg_Str8$
+$Zy_Eng$Valid protocol number is 0~255$
+$Zy_Tur$Ge&#231;erli protokol numaras&#305; 0~255&#8217;tir.$
+$Zy_Ger$G&#252;ltige Protokollnummer ist 0~255$
+$Zy_Fre$Le num&#233;ro de protocole valide est 0~255$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_AlertMsg_Str9$
+$Zy_Eng$duplicate rule$
+$Zy_Tur$Kural&#305; kopyala$
+$Zy_Ger$doppelte Regel$
+$Zy_Fre$r&#232;gle dupliqu&#233;e$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_AlertMsg_Str10$
+$Zy_Eng$ICMPv6 is invalid IPv4 protocol$
+$Zy_Tur$ICMPv6  ge&#231;ersiz IPv4 protokol&#252;d&#252;r.$
+$Zy_Ger$ICMPv6 ist ung&#252;ltiges IPv4-Protokoll$
+$Zy_Fre$ICMPv6 est un protocole IPv4 non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_AlertMsg_Str11$
+$Zy_Eng$Source address {{1}} is invalid IPv6 address.$
+$Zy_Tur$Kaynak adresi {{1}} ge&#231;ersiz IPv6 adresidir.$
+$Zy_Ger$Quelladresse {{1}} ist ung&#252;ltige IPv6-Adresse.$
+$Zy_Fre$L&#39;adresse source {{1}} n&#39;est pas une adresse IPv6 valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_AlertMsg_Str12$
+$Zy_Eng$ICMP is invalid IPv6 protocol$
+$Zy_Tur$ICMP ge&#231;ersizdir IPv6 protokol&#252;$
+$Zy_Ger$ICMP ist ung&#252;ltiges IPv6-Protokoll$
+$Zy_Fre$ICMP est un protocole IPv6 non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_AlertMsg_Str13$
+$Zy_Eng$The rule is already in use!$
+$Zy_Tur$Kural zaten kullan&#305;mdad&#305;r!$
+$Zy_Ger$Die Regel wird bereits verwendet!$
+$Zy_Fre$La r&#232;gle est d&#233;j&#224; en cours d&#39;utilisation!$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_AlertMsg_Str14$
+$Zy_Eng$Rule name is duplicated!$
+$Zy_Tur$Kural ismi kopyalanm&#305;&#351;t&#305;r!$
+$Zy_Ger$Regelname kommt doppelt vor!$
+$Zy_Fre$Le nom de la r&#232;gle est dupliqu&#233;!$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_AlertMsg_Str15$
+$Zy_Eng$Add incoming IP filter named %s failed. Status: %d$
+$Zy_Tur$%s isimli girilen IP filtresi eklenirken ba&#351;ar&#305;s&#305;z olmu&#351;tur. Durum: %d$
+$Zy_Ger$Fehler beim Hinzuf&#252;gen von Filter f&#252;r eingehende IP mit Namen %s. Status: %d$
+$Zy_Fre$L&#39;Ajout du filtre IP entrant nomm&#233; %s a &#233;chou&#233;.  Etat: %d $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_AlertMsg_Str16$
+$Zy_Eng$Failed to configure DoS Protection. Please try again.$
+$Zy_Tur$DoS Korumas&#305; konfig&#252;rasyonu ba&#351;ar&#305;s&#305;z olmu&#351;tur. L&#252;tfen tekrar deneyiniz.$
+$Zy_Ger$Fehler bei Konfiguration des DoS-Schutzes. Bitte nochmals versuchen.$
+$Zy_Fre$Impossible de configurer la Protection DoS. R&#233;essayez.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_AlertMsg_Str17$
+$Zy_Eng$Delete ACL rule %s failed, please try again.$
+$Zy_Tur$ACL kural&#305; % Sil ba&#351;ar&#305;s&#305;z olmu&#351;tur, l&#252;tfen tekrar deneyiniz.$
+$Zy_Ger$Fehler beim L&#246;schen der ACL-Regel %s, bitte nochmals versuchen.$
+$Zy_Fre$La suppression de la r&#232;gle ACL %s a &#233;chou&#233;, r&#233;essayez.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str1$
+$Zy_Eng$An ACL rule is a manually defined rule to accept, reject, or drop the incoming or outgoing data of your network. You may need to create at least one Protocol entry in order to add an ACL rule.$
+$Zy_Tur$Bir ACL kural&#305;, a&#287;&#305;n&#305;z&#305;n giren veya &#231;&#305;kan verilerini kabul etmek, reddetmek veya kesmek i&#231;in man&#252;el olarak tan&#305;mlanm&#305;&#351; bir kurald&#305;r. Bir ACL kural&#305;n&#305; eklemek i&#231;in en az&#305;ndan bir Protokol giri&#351;ini olu&#351;turman&#305;z gerekebilir.$
+$Zy_Ger$Eine ACL-Regel ist eine manuell definierte Regel, in der festgelegt wird, ob bei Ihrem Netzwerk eingehende oder ausgehende Nachrichten angenommen, abgewiesen oder verworfen werden. Sie m&#252;ssen mindestens einen Protokoll-Eintrag vornehmen, um eine ACL-Regel hinzuf&#252;gen zu k&#246;nnen.$
+$Zy_Fre$Vous pouvez d&#233;finir les r&#232;gles dans la Liste de contr&#244;le d&#39;acc&#232;s (ACL) pour bloquer les services comme le courrier &#233;lectronique ou l&#39;acc&#232;s Internet &#224; partir de ou vers votre r&#233;seau.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str10$
+$Zy_Eng$Src IP$
+$Zy_Tur$Src IP$
+$Zy_Ger$Quell-IP$
+$Zy_Fre$IP Src$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str11$
+$Zy_Eng$Dst IP$
+$Zy_Tur$Dst IP$
+$Zy_Ger$Ziel-IP$
+$Zy_Fre$IP Dst$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str12$
+$Zy_Eng$Protocol$
+$Zy_Tur$Protokol$
+$Zy_Ger$Protokoll$
+$Zy_Fre$Protocole$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str13$
+$Zy_Eng$Direction$
+$Zy_Tur$Y&#246;nlendirme$
+$Zy_Ger$Richtung$
+$Zy_Fre$Direction$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str14$
+$Zy_Eng$Action$
+$Zy_Tur$Eylem$
+$Zy_Ger$Aktion$
+$Zy_Fre$Action$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str15$
+$Zy_Eng$Mofify$
+$Zy_Tur$De&#287;i&#351;tir$
+$Zy_Ger$&#196;ndern$
+$Zy_Fre$Modifier$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str16$
+$Zy_Eng$General$
+$Zy_Tur$Genel$
+$Zy_Ger$Allgemein$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str17$
+$Zy_Eng$Filter Name$
+$Zy_Tur$Filtre &#304;smi$
+$Zy_Ger$Filtername$
+$Zy_Fre$Nom du filtre$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str18$
+$Zy_Eng$Select Source Device$
+$Zy_Tur$Kaynak Cihaz&#305; Se&#231;iniz$
+$Zy_Ger$Quellger&#228;t ausw&#228;hlen$
+$Zy_Fre$S&#233;lectionner un appareil source$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str19$
+$Zy_Eng$Enter IP Address Below$
+$Zy_Tur$A&#351;a&#287;&#305;daki IP Adresini Giriniz$
+$Zy_Ger$IP-Adresse unten eingeben$
+$Zy_Fre$Entrez l&#39;adresse IP ci-dessous$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str2$
+$Zy_Eng$Denial of Service (DoS) Protection$
+$Zy_Tur$Hizmet (DoS) Korumas&#305;n&#305;n Reddi$
+$Zy_Ger$DoS-Schutz (Denial of Service)$
+$Zy_Fre$Protection D&#233;ni de service (DoS) $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str20$
+$Zy_Eng$Source IP Address$
+$Zy_Tur$Kaynak IP adresi$
+$Zy_Ger$Quell-IP-Adresse$
+$Zy_Fre$Adresse IP source$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str21$
+$Zy_Eng$prefix length$
+$Zy_Tur$&#214;n ek uzunlu&#287;u$
+$Zy_Ger$Pr&#228;fixl&#228;nge$
+$Zy_Fre$longueur du pr&#233;fixe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str22$
+$Zy_Eng$Select Destination Device$
+$Zy_Tur$Hedef Cihaz&#305; Se&#231;iniz$
+$Zy_Ger$Zielger&#228;t ausw&#228;hlen$
+$Zy_Fre$S&#233;lectionner un appareil de destination$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str23$
+$Zy_Eng$Destination IP Address$
+$Zy_Tur$Hedef IP Adresi$
+$Zy_Ger$Ziel-IP-Adresse$
+$Zy_Fre$Adresse IP de destination$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str24$
+$Zy_Eng$IP Type$
+$Zy_Tur$IP Tipi$
+$Zy_Ger$IP-Typ$
+$Zy_Fre$Type IP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str25$
+$Zy_Eng$IPv4$
+$Zy_Tur$IPv4$
+$Zy_Ger$IPv4$
+$Zy_Fre$IPv4$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str26$
+$Zy_Eng$Select Protocol$
+$Zy_Tur$Protokol Se&#231;in$
+$Zy_Ger$Protokoll ausw&#228;hlen$
+$Zy_Fre$S&#233;lectionnez le protocole$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str27$
+$Zy_Eng$Specific Protocol$
+$Zy_Tur$Belirgin Protokol$
+$Zy_Ger$Spezifisches Protokoll$
+$Zy_Fre$Protocole sp&#233;cifique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str28$
+$Zy_Eng$Custom Source Port$
+$Zy_Tur$&#214;zel Kaynak Portu$
+$Zy_Ger$Benutzerdefinierter Quell-Port$
+$Zy_Fre$Port source personnalis&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str29$
+$Zy_Eng$port or port:port$
+$Zy_Tur$Port veya port: port$
+$Zy_Ger$port oder port:port$
+$Zy_Fre$port ou port:port$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str3$
+$Zy_Eng$State$
+$Zy_Tur$Eyalet$
+$Zy_Ger$Status$
+$Zy_Fre$&#201;tat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str30$
+$Zy_Eng$Custom Destination Port$
+$Zy_Tur$&#214;zel Hedef Portu$
+$Zy_Ger$Benutzerdefinierter Ziel-Port$
+$Zy_Fre$Port de destination personnalis&#233; $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str31$
+$Zy_Eng$TCP/UDP$
+$Zy_Tur$TCP/UDP$
+$Zy_Ger$TCP/UDP$
+$Zy_Fre$TCP/UDP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str32$
+$Zy_Eng$TCP$
+$Zy_Tur$TCP$
+$Zy_Ger$TCP$
+$Zy_Fre$TCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str33$
+$Zy_Eng$UDP$
+$Zy_Tur$UDP$
+$Zy_Ger$UDP$
+$Zy_Fre$UDP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str34$
+$Zy_Eng$ICMP$
+$Zy_Tur$ICMP$
+$Zy_Ger$ICMP$
+$Zy_Fre$ICMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str35$
+$Zy_Eng$TCP Flag Mask$
+$Zy_Tur$TCP &#304;&#351;aret Maskeleme$
+$Zy_Ger$TCP-Flag mask$
+$Zy_Fre$Masque de drapeaux TCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str36$
+$Zy_Eng$TCP Flag$
+$Zy_Tur$TCP &#304;&#351;aret$
+$Zy_Ger$TCP-Flag$
+$Zy_Fre$Drapeau TCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str37$
+$Zy_Eng$Policy$
+$Zy_Tur$Kural$
+$Zy_Ger$Richtlinie$
+$Zy_Fre$Strat&#233;gie$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str38$
+$Zy_Eng$ACCEPT$
+$Zy_Tur$KABUL ET$
+$Zy_Ger$ANNEHMEN$
+$Zy_Fre$ACCEPTER$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str39$
+$Zy_Eng$DROP$
+$Zy_Tur$D&#220;&#350;&#220;R$
+$Zy_Ger$VERWERFEN$
+$Zy_Fre$ABANDONNER$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str4$
+$Zy_Eng$Enable$
+$Zy_Tur$Aktif$
+$Zy_Ger$Aktivieren$
+$Zy_Fre$Activer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str40$
+$Zy_Eng$REJECT$
+$Zy_Tur$REDDET$
+$Zy_Ger$ABWEISEN$
+$Zy_Fre$REJETER$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str41$
+$Zy_Eng$Direction$
+$Zy_Tur$Y&#246;nlendirme$
+$Zy_Ger$Richtung$
+$Zy_Fre$Direction$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str42$
+$Zy_Eng$INCOMING$
+$Zy_Tur$GELEN$
+$Zy_Ger$EINGEHEND$
+$Zy_Fre$ENTRANT$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str43$
+$Zy_Eng$OUTGOING$
+$Zy_Tur$G&#304;DEN$
+$Zy_Ger$AUSGEHEND$
+$Zy_Fre$SORTANT$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str44$
+$Zy_Eng$Enable Rate Limit$
+$Zy_Tur$ORAN L&#304;M&#304;T&#304;N&#304; ETK&#304;NLE&#350;T&#304;R$
+$Zy_Ger$&#220;bertragungsratengrenze aktivieren$
+$Zy_Fre$Activer la limite de vitesse$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str45$
+$Zy_Eng$ packet(s) per $
+$Zy_Tur$ Her ba&#351;&#305;na paket(ler)$
+$Zy_Ger$ Paket(e) pro $
+$Zy_Fre$ paquet(s) par $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str46$
+$Zy_Eng$Minute$
+$Zy_Tur$Dakika$
+$Zy_Ger$Minute$
+$Zy_Fre$minute$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str47$
+$Zy_Eng$Second$
+$Zy_Tur$Saniye$
+$Zy_Ger$Sekunde$
+$Zy_Fre$Seconde$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str48$
+$Zy_Eng$Scheduler Rules$
+$Zy_Tur$Programc&#305; Kurallar&#305;$
+$Zy_Ger$Zeitplan$
+$Zy_Fre$R&#232;gles de planificateur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str49$
+$Zy_Eng$Add New Rule$
+$Zy_Tur$Yeni Kural Ekle$
+$Zy_Ger$Neue Regel hinzuf&#252;gen$
+$Zy_Fre$Ajouter une nouvelle r&#232;gle$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str50$
+$Zy_Eng$IPv6$
+$Zy_Tur$IPv6$
+$Zy_Ger$IPv6$
+$Zy_Fre$IPv6$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str51$
+$Zy_Eng$ACL Configuration$
+$Zy_Tur$ACL Konfig&#252;rasyonu$
+$Zy_Ger$ACL konfigurieren$
+$Zy_Fre$Configuration d&#39;ACL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str52$
+$Zy_Eng$ACL Edit$
+$Zy_Tur$ACL D&#252;zenle$
+$Zy_Ger$ACL bearbeiten$
+$Zy_Fre$Modification d&#39;ACL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str53$
+$Zy_Eng$ACL Delete$
+$Zy_Tur$ACL Sil$
+$Zy_Ger$ACL l&#246;schen$
+$Zy_Fre$Suppression d&#39;ACL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str5$
+$Zy_Eng$Disable$
+$Zy_Tur$Devre d&#305;&#351;&#305;$
+$Zy_Ger$Deaktivieren$
+$Zy_Fre$D&#233;sactiver$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str6$
+$Zy_Eng$Deny Ping Response$
+$Zy_Tur$Ping Yan&#305;t&#305;n&#305; Reddet$
+$Zy_Ger$Ping-Antwort abweisen$
+$Zy_Fre$D&#233;ni de r&#233;ponse ping$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str7$
+$Zy_Eng$ACL Rule List$
+$Zy_Tur$ACL Kural Listesi$
+$Zy_Ger$Liste mit ACL-Regeln$
+$Zy_Fre$Liste des r&#232;gles ACL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str8$
+$Zy_Eng$Add New ACL Rule$
+$Zy_Tur$Yeni ACL Kural&#305; Ekle$
+$Zy_Ger$Neue ACL-Regel hinzuf&#252;gen$
+$Zy_Fre$Ajouter une nouvelle r&#232;gle ACL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_Str9$
+$Zy_Eng$Name$
+$Zy_Tur$&#304;sim$
+$Zy_Ger$Name$
+$Zy_Fre$Nom$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_WhiteList_Str1$
+$Zy_Eng$White List$
+$Zy_Tur$Beyaz Liste$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallACL_WhiteList_Str2$
+$Zy_Eng$Black List$
+$Zy_Tur$Kara Liste$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallGenera_Str1$
+$Zy_Eng$When the security level is set to \'High\', only access to the following services is allowed: Telnet, FTP, HTTP, HTTPS, DNS, IMAP, POP3 and SMTP$
+$Zy_Tur$G&#252;venlik seviyesi &#8220;Y&#252;ksek&#8221; olarak ayarl&#305; iken, sadece altta belirtilen hizmetlere eri&#351;ilmesine izin verilmektedir: Telnet, FTP, HTTP, HTTPS, DNS, IMAP, POP3 ve SMTP$
+$Zy_Ger$Wenn die Sicherheitsebene auf \'Hoch\' steht, ist der Zugriff auf die folgenden Services zugelassen: Telnet, FTP, HTTP, HTTPS, DNS, IMAP, POP3 und SMTP$
+$Zy_Fre$Lorsque le niveau de s&#233;curit&#233; est r&#233;gl&#233; sur &#171;&#160;Forte&#160;&#187;, seul l&#39;acc&#232;s aux services suivants est autoris&#233; : Telnet, FTP, HTTP, HTTPS, DNS, IMAP, POP3 et SMTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallGenera_Str2$
+$Zy_Eng$Security$
+$Zy_Tur$G&#252;venlik$
+$Zy_Ger$Sicherheit$
+$Zy_Fre$S&#233;curit&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallGenera_Str3$
+$Zy_Eng$Medium$
+$Zy_Tur$Orta$
+$Zy_Ger$Mittel$
+$Zy_Fre$Moyenne$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallGenera_Str4$
+$Zy_Eng$Low$
+$Zy_Tur$D&#252;&#351;&#252;k$
+$Zy_Ger$Niedrig$
+$Zy_Fre$Faible$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallGenera_Str5$
+$Zy_Eng$Level$
+$Zy_Tur$Seviye$
+$Zy_Ger$Ebene$
+$Zy_Fre$Niveau$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallGenera_Str6$
+$Zy_Eng$The firewall blocks unauthorized accesses to your network. <br> Drag and drop the indicator to set a security level. <br>Also note that a higher firewall level means more restrictions to the Internet activities you want to do. <br>All rules under <span class=\'explain_text_bold\'>Access Control List (ACL)</span> take precedence over the security levels show below: <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;High - All WAN-to-LAN and LAN-to-WAN traffic is blocked. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Medium - All WAN-to-LAN traffic is blocked. All LAN-to-WAN traffic is allowed, except for ACL&#39;s.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Low - All WAN-to-LAN and LAN-to-WAN traffic is allowed, except for ACL&#39;s.$
+$Zy_Tur$G&#252;venlik duvar&#305;, bilgisayar a&#287;&#305;n&#305;za yetkisiz eri&#351;imleri engellemektedir. <br> Bir g&#252;venlik seviyesi olu&#351;turmak i&#231;in g&#246;stergeyi istenilen seviyeye s&#252;r&#252;kleyiniz. <br> Ayr&#305;ca daha y&#252;ksek bir g&#252;venlik duvar&#305; seviyesinin,  yerine getirmek istedi&#287;iniz internet faaliyetlerini daha &#231;ok k&#305;s&#305;tlayaca&#287;&#305; anlam&#305;na geldi&#287;ini unutmay&#305;n. <br><span class=\'explain_text_bold\'>Access Control List (ACL)</span> alt&#305;ndaki b&#252;t&#252;n kurallar alta belirtilen g&#252;venlik seviyelere g&#246;re &#252;st&#252;nl&#252;&#287;&#252; bulunmaktad&#305;r: <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Y&#252;ksek - B&#252;t&#252;n WAN-to-LAN ve LAN-to-WAN trafi&#287;i bloke edilmi&#351;tir. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Orta - All WAN-to-LAN trafi&#287;i bloke edilmi&#351;tir. All LAN-to-WAN trafi&#287;ine izin verilmektedir, ACL&#8217;ler hari&#231;.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Low - All WAN-to-LAN ve LAN-to-WAN trafi&#287;ine izin verilmektedir, ACL&#8217;ler hari&#231;.$
+$Zy_Ger$Die Firewall blockiert unbefugten Zugriff auf Ihr Netzwerk. <br> Um eine Sicherheitsebene einzustellen, ziehen Sie den blauen Indikator auf die gew&#252;nschte Ebene und lassen ihn dort los. <br>Beachten Sie auch, dass eine h&#246;here Firewall-Ebene mehr Einschr&#228;nkungen f&#252;r Ihre Aktivit&#228;ten im Internet bedeutet. <br>Alle Regeln unter <span class=\'explain_text_bold\'>Zugriffskontrolle</span> haben Vorrang vor den unten stehenden Sicherheitsebenen: <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hoch - Jeglicher WAN-zu-LAN und LAN-zu-WAN Traffic wird blockiert. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mittel - Jeglicher WAN-zu-LAN Traffic wird blockiert. Jeglicher LAN-zu-WAN Traffic ist zugelassen, au&#223;er den in den ACLs aufgef&#252;hrten Optionen.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Niedrig - Jeglicher WAN-zu-LAN und LAN-zu-WAN Traffic ist zugelassen, au&#223;er den in den ACLs aufgef&#252;hrten Optionen.$
+$Zy_Fre$Le pare-feu bloque les acc&#232;s non autoris&#233;s &#224; votre r&#233;seau. <br> Faites glisser l&#39;indicateur pour d&#233;finir un niveau de s&#233;curit&#233;. <br> Notez &#233;galement qu&#39;un niveau sup&#233;rieur de pare-feu signifie plus de restrictions aux activit&#233;s Internet que vous voulez faire. <br> Toutes les r&#232;gles de la Liste de contr&#244;le d&#39;acc&#232;s (ACL) ont pr&#233;s&#233;ance sur les niveaux de s&#233;curit&#233; indiqu&#233;s ci-dessous: <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fort - Tout le trafic WAN-to-LAN et LAN-to-WAN est bloqu&#233;. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Moyen - Tout le trafic WAN-to-LAN est bloqu&#233;. Tout le trafic LAN-to-WAN est autoris&#233;, sauf pour ACL.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faible - Tout le trafic WAN-to-LAN et LAN-to-WAN est autoris&#233;, sauf pour ACL.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallGeneral_AlertMsg_Str1$
+$Zy_Eng$Filter name is necessary.$
+$Zy_Tur$Filtre ismi gereklidir.$
+$Zy_Ger$Filtername ist erforderlich.$
+$Zy_Fre$Le nom du filtre est n&#233;cessaire.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallGeneral_AlertMsg_Str2$
+$Zy_Eng$Please enter valid rule name: (mixed alphabetic and numeric).$
+$Zy_Tur$L&#252;tfen ge&#231;erli bir kural ismi giriniz: (kar&#305;&#351;&#305;k alfabetik ve n&#252;merik).$
+$Zy_Ger$Bitte g&#252;ltigen Regelnamen eingeben: (gemischt mit Buchstaben und Ziffern)$
+$Zy_Fre$Entrez un nom de r&#232;gle valide : (Alphab&#233;tique et num&#233;rique m&#233;lang&#233;s).$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallGeneral_AlertMsg_Str3$
+$Zy_Eng$Source address {{1}}  is invalid IPv4 address.$
+$Zy_Tur$Kaynak adresi {{1}}  ge&#231;ersiz IPv4 adresidir.$
+$Zy_Ger$Quelladresse {{1}} ist ung&#252;ltige IPv4-Adresse.$
+$Zy_Fre$L&#39;adresse source 2001:0DB8::1428:57ab  n&#39;est pas une adresse IPv4 valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallGeneral_AlertMsg_Str4$
+$Zy_Eng$Destination address 2001:0DB8::1428:57ab  is invalid IPv4 address.$
+$Zy_Tur$Hedef adresi 2001:0DB8::1428:57ab  ge&#231;ersiz IPv4 adresidir.$
+$Zy_Ger$Zieladresse 2001:0DB8::1428:57ab ist ung&#252;ltige IPv4-Adresse.$
+$Zy_Fre$L&#39;adresse de destination 2001:0DB8::1428:57ab  n&#39;est pas une adresse IPv4 valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallGeneral_AlertMsg_Str5$
+$Zy_Eng$Port 7547 is used for TR-069 and not allow user to set ACL rules for this port.$
+$Zy_Tur$Ba&#287;lant&#305; noktas&#305; 7547,  TR-069 i&#231;in kullan&#305;lmaktad&#305;r ve kullan&#305;c&#305;n&#305;n i&#351;bu ba&#287;lant&#305; noktas&#305; i&#231;in ACL kurallar&#305; d&#252;zenlemesine izin vermemektedir.$
+$Zy_Ger$Port 7547 wird f&#252;r TR-069 verwendet. Sie d&#252;rfen keine ACL-Regeln festlegen, da dieser Port f&#252;r TR-069 reserviert ist.$
+$Zy_Fre$Le port 7547 est utilis&#233; pour TR-069 et ne permet pas &#224; l&#39;utilisateur de d&#233;finir des r&#232;gles ACL pour ce port.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallGeneral_AlertMsg_Str6$
+$Zy_Eng$Please enter a valid port range.$
+$Zy_Tur$L&#252;tfen ge&#231;erli bir ba&#287;lant&#305; noktas&#305; aral&#305;&#287;&#305; girin.$
+$Zy_Ger$Bitte geben Sie einen g&#252;ltigen Portbereich ein.$
+$Zy_Fre$Entrez une plage de port valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallGeneral_AlertMsg_Str7$
+$Zy_Eng$Port option can not set large port to Small port$
+$Zy_Tur$Ba&#287;lant&#305; noktas&#305; se&#231;ene&#287;i b&#252;y&#252;k ba&#287;lant&#305; noktas&#305;n&#305; K&#252;&#231;&#252;k ba&#287;lant&#305; noktas&#305; olarak ayarlayamamaktad&#305;r$
+$Zy_Ger$Port-Option kann eine hohe Portzahl nicht auf eine niedrige Portzahl setzen$
+$Zy_Fre$L&#39;option de port ne permet pas de r&#233;gler un grand port sur un petit port$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallGeneral_AlertMsg_Str8$
+$Zy_Eng$Please enter rate limit.$
+$Zy_Tur$L&#252;tfen oran limiti giriniz.$
+$Zy_Ger$Bitte geben Sie die &#220;bertragungsratengrenze ein.$
+$Zy_Fre$Veuillez entrer la limite de d&#233;bit.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallGeneral_AlertMsg_Str9$
+$Zy_Eng$Invalid value for rate limit.$
+$Zy_Tur$Oran limiti i&#231;in ge&#231;ersiz de&#287;er.$
+$Zy_Ger$Ung&#252;ltiger Wert f&#252;r &#220;bertragungsratengrenze.$
+$Zy_Fre$Valeur incorrecte pour la limite de d&#233;bit.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallGeneral_AlertMsg_Str10$
+$Zy_Eng$Configure Firewall Setting failed, please try again.$
+$Zy_Tur$G&#252;venlik Duvar&#305;n&#305;n Konfig&#252;rasyon D&#252;zenlemesi ba&#351;ar&#305;s&#305;z olmu&#351;tur, l&#252;tfen tekrar deneyiniz.$
+$Zy_Ger$Fehler bei der Konfiguration der Firewall-Einstellungen, bitte nochmals versuchen.$
+$Zy_Fre$La configuration des param&#232;tres de pare-feu a &#233;chou&#233;, veuillez essayer &#224; nouveau. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_AlertMsg_Str1$
+$Zy_Eng$Protocol name is necessary.$
+$Zy_Tur$Protokol ismi gerekmektedir.$
+$Zy_Ger$Protokollname ist erforderlich.$
+$Zy_Fre$Le nom du protocole est n&#233;cessaire.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_AlertMsg_Str2$
+$Zy_Eng$Please enter valid rule name: (mixed alphabetic and numeric without special characters).$
+$Zy_Tur$L&#252;tfen ge&#231;erli kural ismi giriniz: (alfabetik ve n&#252;merik kar&#305;&#351;&#305;k, &#246;zel karakterler olmaks&#305;z&#305;n).$
+$Zy_Ger$Bitte g&#252;ltigen Regelnamen eingeben: (gemischt mit Buchstaben und Ziffern ohne Sonderzeichen)$
+$Zy_Fre$Entrez un nom de r&#232;gle valide: (alphanum&#233;riques et num&#233;riques m&#233;lang&#233;s sans caract&#232;res sp&#233;ciaux).$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_AlertMsg_Str3$
+$Zy_Eng$Description contain invalid characters.$
+$Zy_Tur$Tan&#305;m ge&#231;ersiz karakterler i&#231;ermektedir.$
+$Zy_Ger$Beschreibung enth&#228;lt ung&#252;ltige Zeichen.$
+$Zy_Fre$La description contient des caract&#232;res non valides.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_AlertMsg_Str4$
+$Zy_Eng$No rule specified. Please at least add one rule.$
+$Zy_Tur$Kural belirlenmemi&#351;tir. L&#252;tfen en az&#305;ndan bir kural ekleyiniz.$
+$Zy_Ger$Keine Regel angegeben. Bitte f&#252;gen Sie mindestens eine Regel hinzu.$
+$Zy_Fre$Aucune r&#232;gle sp&#233;cifi&#233;e. Ajoutez au moins une r&#232;gle.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_AlertMsg_Str5$
+$Zy_Eng$Protocol name is used, please use another name.$
+$Zy_Tur$Protokol ismi kullan&#305;mdad&#305;r, l&#252;tfen ba&#351;ka bir isim kullan&#305;n&#305;z.$
+$Zy_Ger$Protokollname wird bereits verwendet, bitte einen anderen Namen verwenden.$
+$Zy_Fre$Le nom du protocole est utilis&#233;, utilisez un autre nom. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_AlertMsg_Str6$
+$Zy_Eng$Protocol is used, please use another one.$
+$Zy_Tur$Protokol kullan&#305;mdad&#305;r, l&#252;tfen ba&#351;ka birini se&#231;iniz.$
+$Zy_Ger$Protokoll wird bereits verwendet, bitte ein anderes verwenden.$
+$Zy_Fre$Le protocole est utilis&#233;, utilisez-en un autre. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_AlertMsg_Str7$
+$Zy_Eng$The rules of port range overlap have been removed.$
+$Zy_Tur$Ba&#287;lant&#305; noktas&#305; aral&#305;&#287;&#305;n&#305;n &#246;rt&#252;&#351;&#252;m&#252; ile ilgili kurallar silinmi&#351;tir.$
+$Zy_Ger$Die Regeln f&#252;r die &#220;berlappung von Portbereichen wurde entfernt.$
+$Zy_Fre$Les r&#232;gles de chevauchement plage de port ont &#233;t&#233; supprim&#233;es. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_AlertMsg_Str8$
+$Zy_Eng$Configure Protocol Setting failed, please try again.$
+$Zy_Tur$Protokol Konfig&#252;rasyonu D&#252;zenle ba&#351;ar&#305;s&#305;z olmu&#351;tur, l&#252;tfen tekrar deneyiniz.$
+$Zy_Ger$Fehler bei der Konfiguration der Protokoll-Einstellungen, bitte nochmals versuchen.$
+$Zy_Fre$La configuration des param&#232;tres de protocole a &#233;chou&#233;, veuillez essayer &#224; nouveau.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str1$
+$Zy_Eng$Create predefined Internet services to be used for Access Control List (ACL) settings.$
+$Zy_Tur$Eri&#351;im Denetim Listesi (ACL) ayarlar&#305; i&#231;in kullan&#305;lmak &#252;zere &#246;nceden tan&#305;mlanm&#305;&#351; &#304;nternet hizmetleri olu&#351;turunuz.$
+$Zy_Ger$Erstellen Sie vordefinierte Internet-Services, die f&#252;r die Einstellungen der ACL (Access Control List) verwendet werden sollen.$
+$Zy_Fre$Cr&#233;ez des services Internet pr&#233;d&#233;finis &#224; utiliser pour les param&#232;tres de Liste de contr&#244;le d&#39;acc&#232;s (ACL).$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str10$
+$Zy_Eng$Protocol$
+$Zy_Tur$Protokol$
+$Zy_Ger$Protokoll$
+$Zy_Fre$Protocole$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str11$
+$Zy_Eng$TCP$
+$Zy_Tur$TCP$
+$Zy_Ger$TCP$
+$Zy_Fre$TCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str12$
+$Zy_Eng$UDP$
+$Zy_Tur$UDP$
+$Zy_Ger$UDP$
+$Zy_Fre$UDP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str13$
+$Zy_Eng$ICMP$
+$Zy_Tur$ICMP$
+$Zy_Ger$ICMP$
+$Zy_Fre$ICMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str14$
+$Zy_Eng$Other$
+$Zy_Tur$Di&#287;er$
+$Zy_Ger$Anderes$
+$Zy_Fre$Autre$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str15$
+$Zy_Eng$Any$
+$Zy_Tur$Herhangi bir$
+$Zy_Ger$Beliebig$
+$Zy_Fre$Tout$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str16$
+$Zy_Eng$Single$
+$Zy_Tur$Tek$
+$Zy_Ger$Ein Port$
+$Zy_Fre$Individuel$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str17$
+$Zy_Eng$Range$
+$Zy_Tur$Aral&#305;k$
+$Zy_Ger$Bereich$
+$Zy_Fre$Plage$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str18$
+$Zy_Eng$Source Port$
+$Zy_Tur$Kaynak Portu$
+$Zy_Ger$Quell-Port$
+$Zy_Fre$Port source $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str19$
+$Zy_Eng$Destination Port$
+$Zy_Tur$Hedef Portu$
+$Zy_Ger$Ziel-Port$
+$Zy_Fre$Port de destination$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str2$
+$Zy_Eng$Add New Protocol Entry$
+$Zy_Tur$Yeni Protokol Giri&#351;i Ekleyin$
+$Zy_Ger$Neuen Protokoll-Eintrag hinzuf&#252;gen$
+$Zy_Fre$Ajoutez une nouvelle entr&#233;e de protocole$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str20$
+$Zy_Eng$Rule List$
+$Zy_Tur$Kural Listesi$
+$Zy_Ger$Liste mit Regeln$
+$Zy_Fre$Liste des r&#232;gles$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str21$
+$Zy_Eng$Service Name$
+$Zy_Tur$Hizmet &#304;smi$
+$Zy_Ger$Service-Name$
+$Zy_Fre$Nom du service$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str22$
+$Zy_Eng$Service Description$
+$Zy_Tur$Hizmet Tan&#305;m&#305;$
+$Zy_Ger$Service-Beschreibung$
+$Zy_Fre$Description du service$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str23$
+$Zy_Eng$Add$
+$Zy_Tur$Ekle$
+$Zy_Ger$Hinzuf&#252;gen$
+$Zy_Fre$Ajouter$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str24$
+$Zy_Eng$ICMPv6$
+$Zy_Tur$ICMPv6$
+$Zy_Ger$ICMPv6$
+$Zy_Fre$ICMPv6 $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str25$
+$Zy_Eng$Protocol Number$
+$Zy_Tur$Protokol Numaras&#305;$
+$Zy_Ger$Protokollnummer$
+$Zy_Fre$Num&#233;ro de protocole$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str26$
+$Zy_Eng$Custom Protocol$
+$Zy_Tur$&#214;zel Protokol$
+$Zy_Ger$Benutzerdefiniertes Protokoll$
+$Zy_Fre$Protocole personnalis&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str27$
+$Zy_Eng$Protocol Edit$
+$Zy_Tur$Protokol D&#252;zenle$
+$Zy_Ger$Protokoll bearbeiten$
+$Zy_Fre$Modification du protocole$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str28$
+$Zy_Eng$Protocol Delete$
+$Zy_Tur$Protokol Sil$
+$Zy_Ger$Protokoll l&#246;schen$
+$Zy_Fre$Suppression du protocole$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str29$
+$Zy_Eng$Delete$
+$Zy_Tur$Sil$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str4$
+$Zy_Eng$Description$
+$Zy_Tur$Tan&#305;m$
+$Zy_Ger$Beschreibung$
+$Zy_Fre$Description$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str5$
+$Zy_Eng$Ports/Protocol Number$
+$Zy_Tur$Port/Protokol Numaras&#305;$
+$Zy_Ger$Ports/Protokollnummer$
+$Zy_Fre$Num&#233;ro de Ports/Protocole$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str6$
+$Zy_Eng$Modify$
+$Zy_Tur$De&#287;i&#351;tir$
+$Zy_Ger$&#196;ndern$
+$Zy_Fre$Modifier$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str7$
+$Zy_Eng$Note$
+$Zy_Tur$Dikkate al&#305;n$
+$Zy_Ger$Hinweis$
+$Zy_Fre$Remarque$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str8$
+$Zy_Eng$If a protocol rule is removed, related ACL rules will also be removed.$
+$Zy_Tur$E&#287;er bir protokol kural&#305; silinirse, ilgili ACL kurallar&#305; da ayn&#305; zamanda silinecektir.$
+$Zy_Ger$Wird eine Protokollregel entfernt, werden die zugeh&#246;rigen ACL-Regeln ebenfalls entfernt.$
+$Zy_Fre$Si une r&#232;gle de protocole est supprim&#233;e, les r&#232;gles ACL connexes seront &#233;galement supprim&#233;es.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallProtocol_Str9$
+$Zy_Eng$Add Protocol$
+$Zy_Tur$Protokol Ekle$
+$Zy_Ger$Protokoll hinzuf&#252;gen$
+$Zy_Fre$Ajouter un protocole$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPN_AlertMsg_Str1$
+$Zy_Eng$The connection name {{1}} has been used.$
+$Zy_Tur$Ba&#287;lant&#305; ismi {{1}} kullan&#305;lm&#305;&#351;t&#305;r.$
+$Zy_Ger$Der Verbindungsname {{1}} kommt bereits vor.$
+$Zy_Fre$Le nom de la connexion {{1}} a &#233;t&#233; utilis&#233;.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPN_AlertMsg_Str10$
+$Zy_Eng$No certificate available for authentication. Use Certificates page to add certificates or choose another autentication method.$
+$Zy_Tur$Kimlik do&#287;rulama i&#231;in sertifika mevcut de&#287;ildir. Sertifikalar eklemek veya ba&#351;ka bir kimlik do&#287;rulama y&#246;ntemi se&#231;mek i&#231;in Sertifika men&#252;s&#252;n&#252; kullan&#305;n&#305;z.$
+$Zy_Ger$Kein Zertifikat verf&#252;gbar f&#252;r Authentifizierung. Unter Sicherheit > Zertifikate k&#246;nnen Sie Zertifikate hinzuf&#252;gen oder eine andere Authentifizierungsmethode w&#228;hlen.$
+$Zy_Fre$Aucun certificat disponible pour l&#39;authentification. Utiliser le menu de certificats pour ajouter des certificats ou choisir une autre m&#233;thode authentification.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPN_AlertMsg_Str11$
+$Zy_Eng$ASN1DN can just be used as certificate.$
+$Zy_Tur$ASN1DN sadece Sertifikada kullan&#305;labilir.$
+$Zy_Ger$ASN1DN kann als Zertifikat verwendet werden.$
+$Zy_Fre$ASN1DN peut simplement &#234;tre utilis&#233; au certificat.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPN_AlertMsg_Str13$
+$Zy_Eng$Local ID {{1}} is not a valid address$
+$Zy_Tur$Yerel Kimlik {{1}} ge&#231;erli bir adres de&#287;ildir$
+$Zy_Ger$Lokale ID {{1}} ist keine g&#252;ltige Adresse.$
+$Zy_Fre$L&#39;ID locale {{1}} n&#39;est pas une adresse valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPN_AlertMsg_Str14$
+$Zy_Eng$Remote ID {{1}} is not a valid address$
+$Zy_Tur$Uzaktan Kimlik {{1}} ge&#231;erli bir adres de&#287;ildir$
+$Zy_Ger$Remote ID {{1}} ist keine g&#252;ltige Adresse.$
+$Zy_Fre$L&#39;ID distante {{1}} n&#39;est pas une adresse valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPN_AlertMsg_Str15$
+$Zy_Eng$Invalid Manual Encryption Key.$
+$Zy_Tur$Ge&#231;ersiz Manuel &#350;ifreleme Anahtar&#305;.$
+$Zy_Ger$Ung&#252;ltiger manueller Verschl&#252;sselungsschl&#252;ssel$
+$Zy_Fre$Cl&#233; de cryptage manuelle non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPN_AlertMsg_Str16$
+$Zy_Eng$Invalid Manual Authentication Key.$
+$Zy_Tur$Ge&#231;ersiz Manuel Kimlik Do&#287;rulama Anahtar&#305;.$
+$Zy_Ger$Ung&#252;ltiger manueller Authentifizierungsschl&#252;ssel$
+$Zy_Fre$Cl&#233; d&#39;authentification manuelle non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPN_AlertMsg_Str17$
+$Zy_Eng$The connection name {{1}} has been used.$
+$Zy_Tur$Ba&#287;lant&#305; ismi {{1}} kullan&#305;lm&#305;&#351;t&#305;r.$
+$Zy_Ger$Der Verbindungsname {{1}} kommt bereits vor.$
+$Zy_Fre$Le nom de la connexion {{1}} a &#233;t&#233; utilis&#233;.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPN_AlertMsg_Str18$
+$Zy_Eng$Invalid connection name {{1}}.$
+$Zy_Tur$Ge&#231;ersiz ba&#287;lant&#305; ismi {{1}}.$
+$Zy_Ger$Ung&#252;ltiger Verbindungsname {{1}}.$
+$Zy_Fre$Nom de connexion {{1}} non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPN_AlertMsg_Str3$
+$Zy_Eng$Local IP Address {{1}} is invalid.$
+$Zy_Tur$Yerel IP Adresi {{1}} ge&#231;ersizdir.$
+$Zy_Ger$Lokale IP-Adresse {{1}} ist ung&#252;ltig.$
+$Zy_Fre$L&#39;adresse IP locale {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPN_AlertMsg_Str4$
+$Zy_Eng$Local Subnet Mask {{1}} is invalid.$
+$Zy_Tur$Yerel Alt A&#287;&#305; Maskesi {{1}} ge&#231;ersizdir.$
+$Zy_Ger$Lokale Subnetzmaske {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le masque de sous r&#233;seau local  {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPN_AlertMsg_Str5$
+$Zy_Eng$Remote IP Address {{1}} is invalid.$
+$Zy_Tur$Uzaktan IP Adresi {{1}} ge&#231;ersizdir.$
+$Zy_Ger$Remote-IP-Adresse {{1}} ist ung&#252;ltig.$
+$Zy_Fre$L&#39;adresse IP distante {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPN_AlertMsg_Str6$
+$Zy_Eng$Remote IP Address {{1}} is invalid.$
+$Zy_Tur$Uzaktan IP Adresi {{1}} ge&#231;ersizdir.$
+$Zy_Ger$Remote-IP-Adresse {{1}} ist ung&#252;ltig.$
+$Zy_Fre$L&#39;adresse IP distante {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPN_AlertMsg_Str7$
+$Zy_Eng$Remote Subnet Mask {{1}} is invalid.$
+$Zy_Tur$Uzaktan Alt A&#287; Maskesi {{1}} ge&#231;ersizdir.$
+$Zy_Ger$Remote Subnetzmaske {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le masque de sous r&#233;seau distant {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPN_AlertMsg_Str8$
+$Zy_Eng$Phase 1 Key Life Time is invalid.$
+$Zy_Tur$A&#351;ama 1 Anahtar &#214;mr&#252; ge&#231;ersizdir.$
+$Zy_Ger$Phase 1 Schl&#252;sselverwendungsdauer ist ung&#252;ltig.$
+$Zy_Fre$La dur&#233;e de vie de la cl&#233; de Phase 1 n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPN_AlertMsg_Str9$
+$Zy_Eng$Phase 2 Key Life Time is invalid.$
+$Zy_Tur$A&#351;ama 2 Anahtar &#214;mr&#252; ge&#231;ersizdir.$
+$Zy_Ger$Phase 2 Schl&#252;sselverwendungsdauer ist ung&#252;ltig.$
+$Zy_Fre$La dur&#233;e de vie de la cl&#233; de Phase 2 n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNMonitor_Str1$
+$Zy_Eng$The status of IPSec Tunnel is displayed on this page. You can trigger the IPSec Tunnel or change its status by clicking the button in the table. $
+$Zy_Tur$IPSec T&#252;nelinin durumu bu sayfada g&#246;r&#252;nt&#252;lenmi&#351;tir. Tablodaki tu&#351;a t&#305;klayarak IPSec T&#252;nelini tetikleyebilirsiniz veya durumunu de&#287;i&#351;tirebilirsiniz.$
+$Zy_Ger$Auf dieser Seite wird der Status des IPSec-Tunnels angezeigt. Sie k&#246;nnen einen Trigger f&#252;r den IPSec-Tunnel setzen oder seinen Status &#228;ndern, indem Sie auf die Schaltfl&#228;che in der Tabelle klicken. $
+$Zy_Fre$L&#39;&#233;tat du tunnel IPSec est affich&#233; dans cette page. Vous pouvez d&#233;clencher le tunnel IPSec ou modifier son &#233;tat en cliquant sur le bouton dans le tableau. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNMonitor_Str2$
+$Zy_Eng$Refresh Interval$
+$Zy_Tur$Aral&#305;&#287;&#305; Yenile$
+$Zy_Ger$Aktualisierungsintervall$
+$Zy_Fre$Intervalle d&#39;actualisation $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNMonitor_Str3$
+$Zy_Eng$Local Addresses$
+$Zy_Tur$Yerel Adresler$
+$Zy_Ger$Lokale Adressen$
+$Zy_Fre$Adresses locales$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNMonitor_Str4$
+$Zy_Eng$Trigger$
+$Zy_Tur$Tetikle$
+$Zy_Ger$Trigger$
+$Zy_Fre$D&#233;clencheur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNMonitor_Str5$
+$Zy_Eng$Processing...$
+$Zy_Tur$&#304;&#351;leme al&#305;yor...$
+$Zy_Ger$Verarbeitung...$
+$Zy_Fre$Traitement...$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNMonitor_Str6$
+$Zy_Eng$IPSec tunnels follow the Firewall Security Level. You can add Firewall ACL Rule to accept some services.$
+$Zy_Tur$IPSec t&#252;nelleri G&#252;venlik Duvar&#305; G&#252;venlik Seviyesini takip etmektedir. Baz&#305; hizmetleri kabul etmek i&#231;in G&#252;venlik Duvar&#305; ACL Kurallar&#305; ekleyebilirsiniz.$
+$Zy_Ger$IPSec-Tunnel folgen der Sicherheitsebene der Firewall. Sie k&#246;nnen eine Firewall ACL-Regel hinzuf&#252;gen, damit einige Services angenommen werden.$
+$Zy_Fre$Les tunnels IPSec suivent le niveau de s&#233;curit&#233; du pare-feu. Vous pouvez ajouter une r&#232;gle ACL de pare-feu pour accepter certains services.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNMonitor_Str7$
+$Zy_Eng$No Refresh$
+$Zy_Tur$Yenileme Yapma$
+$Zy_Ger$Keine Aktualisierung$
+$Zy_Fre$Pas d&#39;actualisation $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str1$
+$Zy_Eng$IPSec can be used to protect data flows between a pair of hosts (computer users or servers), security gateways (routers or firewalls), or between a security gateway and a host. You can add or remove IPSec tunnel connections from this page.$
+$Zy_Tur$IPSec bir &#231;ift kullan&#305;c&#305; (bilgisayar kullan&#305;c&#305;lar&#305; veya sunucular), g&#252;venlik ge&#231;itleri (y&#246;nelticiler veya g&#252;venlik duvarlar&#305;) veya bir g&#252;venlik ge&#231;idi ve bir kullan&#305;c&#305; aras&#305;ndaki veri ak&#305;mlar&#305;n&#305; korumak i&#231;in kullan&#305;labilir. &#304;&#351;bu sayfada IPSec t&#252;nel ba&#287;lant&#305;lar&#305; ekleyebilirsiniz veya silebilirsiniz.$
+$Zy_Ger$IPSec kann verwendet werden, um Daten-Flows zwischen Hostpaaren (Computernutzer oder Server), Sicherheits-Gateways (Router oder Firewall) oder zwischen einem Sicherheits-Gateway und einem Host zu sch&#252;tzen. Sie k&#246;nnen auf dieser Seite IPSec-Tunnel-Verbindungen hinzuf&#252;gen oder l&#246;schen.$
+$Zy_Fre$IPSec peut &#234;tre utilis&#233; pour prot&#233;ger les flux de donn&#233;es entre une paire d&#39;h&#244;tes (les utilisateurs d&#39;ordinateurs ou de serveurs), les passerelles de s&#233;curit&#233; (routeurs ou pare-feu), ou entre une passerelle de s&#233;curit&#233; et un h&#244;te. Vous pouvez ajouter ou supprimer des connexions tunnel IPSec sur cette page.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str10$
+$Zy_Eng$IPSec Connection Name$
+$Zy_Tur$IPSec Ba&#287;lant&#305; &#304;smi$
+$Zy_Ger$IPSec-Verbindungsname$
+$Zy_Fre$Nom de la connexion IPSec$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str11$
+$Zy_Eng$Remote IPSec Gateway Address (IP or Domain Name)$
+$Zy_Tur$Remote IPSec Ge&#231;it Adresi (IP veya Domain &#304;smi)$
+$Zy_Ger$Adresse des Remote IPSec-Gateways (IP oder Domain-Name)$
+$Zy_Fre$Adresse de passerelle IPSec distante (IP ou nom de domaine)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str12$
+$Zy_Eng$Tunnel access from local IP addresses$
+$Zy_Tur$Yerel IP adreslerden t&#252;nel eri&#351;imi$
+$Zy_Ger$Tunnel-Zugriff von lokalen IP-Adressen$
+$Zy_Fre$Acc&#232;s au tunnel &#224; partir des adresses IP locales$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str13$
+$Zy_Eng$IP Address for VPN$
+$Zy_Tur$VPN i&#231;in IP Adresi$
+$Zy_Ger$IP-Adresse f&#252;r VPN$
+$Zy_Fre$Adresse IP pour VPN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str14$
+$Zy_Eng$IP Subnetmask$
+$Zy_Tur$IP Alt A&#287; Maskesi$
+$Zy_Ger$IP-Subnetzmaske$
+$Zy_Fre$Masque de sous-r&#233;seau d&#39;IP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str15$
+$Zy_Eng$Tunnel access from remote IP addresses$
+$Zy_Tur$Uzaktan IP adreslerden t&#252;nel eri&#351;imi$
+$Zy_Ger$Tunnel-Zugriff von Remote IP-Adressen$
+$Zy_Fre$Acc&#232;s au tunnel &#224; partir des adresses IP distantes$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str16$
+$Zy_Eng$Protocol$
+$Zy_Tur$Protokol$
+$Zy_Ger$Protokoll$
+$Zy_Fre$Protocole$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str17$
+$Zy_Eng$Key Exchange Method$
+$Zy_Tur$Anahtar De&#287;i&#351;tir Y&#246;ntemi$
+$Zy_Ger$Methode f&#252;r Schl&#252;sselaustausch$
+$Zy_Fre$M&#233;thode d&#39;&#233;change de cl&#233;s$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str18$
+$Zy_Eng$Auto(IKE)$
+$Zy_Tur$Oto(IKE)$
+$Zy_Ger$Auto (IKE)$
+$Zy_Fre$Auto(IKE)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str19$
+$Zy_Eng$Manual$
+$Zy_Tur$Manuel$
+$Zy_Ger$Manuell$
+$Zy_Fre$Manuel$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str2$
+$Zy_Eng$Add New Connection$
+$Zy_Tur$Yeni Ba&#287;lant&#305; Ekle$
+$Zy_Ger$Neue Verbindung hinzuf&#252;gen$
+$Zy_Fre$Ajouter une nouvelle connexion$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str20$
+$Zy_Eng$Authentication Method$
+$Zy_Tur$Kimlik Do&#287;rulama Y&#246;ntemi$
+$Zy_Ger$Authentifizierungsmethode$
+$Zy_Fre$M&#233;thode d&#39;authentification$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str21$
+$Zy_Eng$Pre-Shared Key$
+$Zy_Tur$&#214;nceden Payla&#351;&#305;lm&#305;&#351; Anahtar$
+$Zy_Ger$Pre-shared Key$
+$Zy_Fre$Cl&#233; pr&#233;partag&#233;e$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str22$
+$Zy_Eng$Certificate (X.509)$
+$Zy_Tur$Sertifika (X.509)$
+$Zy_Ger$Zertifikat (X.509)$
+$Zy_Fre$Certificat (X.509)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str23$
+$Zy_Eng$Certificates$
+$Zy_Tur$Sertifikalar$
+$Zy_Ger$Zertifikate$
+$Zy_Fre$Certificats$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str24$
+$Zy_Eng$Local ID Type$
+$Zy_Tur$Yerel Kimlik Tipi$
+$Zy_Ger$Lokaler ID-Typ$
+$Zy_Fre$Type d&#39;ID locale$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str25$
+$Zy_Eng$E-mail$
+$Zy_Tur$E-Posta$
+$Zy_Ger$E-Mail$
+$Zy_Fre$E-mail$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str26$
+$Zy_Eng$ASN1DN$
+$Zy_Tur$ASN1DN$
+$Zy_Ger$ASN1DN$
+$Zy_Fre$ASN1DN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str27$
+$Zy_Eng$Local ID Content$
+$Zy_Tur$Yerel Kimlik &#304;&#231;eri&#287;i$
+$Zy_Ger$Lokaler ID-Inhalt$
+$Zy_Fre$Contenu d&#39;ID local$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str28$
+$Zy_Eng$Remote ID Type$
+$Zy_Tur$Uzaktan Kimlik Tipi$
+$Zy_Ger$Remote ID-Typ$
+$Zy_Fre$Type d&#39;ID distant$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str29$
+$Zy_Eng$Remote ID Content$
+$Zy_Tur$Uzaktan Kimlik &#304;&#231;eri&#287;i$
+$Zy_Ger$Remote ID-Inhalt$
+$Zy_Fre$Contenu d&#39;ID distant$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str3$
+$Zy_Eng$Connection Name$
+$Zy_Tur$Ba&#287;lant&#305; &#304;smi$
+$Zy_Ger$Verbindungsname$
+$Zy_Fre$Nom de connexion$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str30$
+$Zy_Eng$Advanced IKE Settings$
+$Zy_Tur$Geli&#351;mi&#351; IKE Ayarlar&#305;$
+$Zy_Ger$Erweiterte IKE-Einstellungen$
+$Zy_Fre$Param&#232;tres IKE avanc&#233;s$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str31$
+$Zy_Eng$more&#8230;$
+$Zy_Tur$Daha fazlas&#305;&#8230;$
+$Zy_Ger$mehr&#8230;$
+$Zy_Fre$plus&#8230;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str32$
+$Zy_Eng$Encryption Algorithm$
+$Zy_Tur$&#350;ifreleme Algoritmas&#305;$
+$Zy_Ger$Verschl&#252;sselungsalgorithmus$
+$Zy_Fre$Algorithme de cryptage$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str33$
+$Zy_Eng$Encryption Key$
+$Zy_Tur$&#350;ifreleme Anahtar&#305; $
+$Zy_Ger$Verschl&#252;sselungsschl&#252;ssel$
+$Zy_Fre$Cl&#233; de cryptage:$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str34$
+$Zy_Eng$Authentication Algorithm$
+$Zy_Tur$Kimlik Do&#287;rulama Algoritmas&#305;$
+$Zy_Ger$Authentifizierungsalgorithmus$
+$Zy_Fre$Algorithme d&#39;authentification $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str35$
+$Zy_Eng$Authentication Key$
+$Zy_Tur$Do&#287;rulama Anahtar&#305;$
+$Zy_Ger$Authentifizierungsschl&#252;ssel$
+$Zy_Fre$Cl&#233; d&#39;authentification$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str36$
+$Zy_Eng$NAT_Traversal$
+$Zy_Tur$NAT_Traversal$
+$Zy_Ger$NAT_Traversal$
+$Zy_Fre$NAT_Traversal$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str37$
+$Zy_Eng$Phase 1$
+$Zy_Tur$A&#351;ama 1$
+$Zy_Ger$Phase 1$
+$Zy_Fre$Phase 1$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str38$
+$Zy_Eng$Main$
+$Zy_Tur$Ana$
+$Zy_Ger$Main$
+$Zy_Fre$Principal$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str39$
+$Zy_Eng$Aggressive$
+$Zy_Tur$Sald&#305;rgan$
+$Zy_Ger$Aggressive$
+$Zy_Fre$Agressif$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str4$
+$Zy_Eng$Remote Gateway$
+$Zy_Tur$Uzaktan A&#287; Ge&#231;idi$
+$Zy_Ger$Remote Gateway$
+$Zy_Fre$Passerelle distante$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str40$
+$Zy_Eng$Integrity Algorithm$
+$Zy_Tur$B&#252;t&#252;nl&#252;k Algoritmas&#305;$
+$Zy_Ger$Integrit&#228;tsalgorithmus$
+$Zy_Fre$Algorithme d&#39;int&#233;grit&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str41$
+$Zy_Eng$Select Diffie-Hellman Group for Key Exchange$
+$Zy_Tur$Anahtar de&#287;i&#351;imi ad&#305;na Diffie-Hellman Grubu&#39;nu se&#231;iniz.$
+$Zy_Ger$Diffie-Hellman Gruppe f&#252;r Schl&#252;sselaustausch w&#228;hlen$
+$Zy_Fre$S&#233;lectionnez Diffie-Hellman Group pour l&#39;&#233;change de cl&#233;s$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str42$
+$Zy_Eng$Key Life Time$
+$Zy_Tur$Anahtar &#214;mr&#252; $
+$Zy_Ger$Schl&#252;sselverwendungsdauer$
+$Zy_Fre$Dur&#233;e de vie de la cl&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str43$
+$Zy_Eng$Phase 2$
+$Zy_Tur$A&#351;ama 2$
+$Zy_Ger$Phase 2$
+$Zy_Fre$Phase 2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str44$
+$Zy_Eng$Perfect Forward Secrecy(PFS)$
+$Zy_Tur$M&#252;kemmel &#304;letme Gizlili&#287;i (PFS)$
+$Zy_Ger$Perfect Forward Secrecy (PFS)$
+$Zy_Fre$Parfaite confidentialit&#233; de la redirection (PFS)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str45$
+$Zy_Eng$IPSec Configuration Edit$
+$Zy_Tur$IPSec Yap&#305;sal D&#252;zenlemesi$
+$Zy_Ger$IPSec-Konfiguration bearbeiten$
+$Zy_Fre$Modification de la configuration IPSec $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str46$
+$Zy_Eng$Subnet$
+$Zy_Tur$Alt A&#287;$
+$Zy_Ger$Subnetz$
+$Zy_Fre$Sous-r&#233;seau$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str47$
+$Zy_Eng$Single Address$
+$Zy_Tur$Tekli Adres$
+$Zy_Ger$Einzelne Adresse$
+$Zy_Fre$Adresse unique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str48$
+$Zy_Eng$Remove IPSec Entry$
+$Zy_Tur$IPSec Giri&#351;ini Kald&#305;r$
+$Zy_Ger$IPSec-Eintrag entfernen$
+$Zy_Fre$Supprimer l&#39;entr&#233;e IPSec $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str49$
+$Zy_Eng$Connecting$
+$Zy_Tur$Ba&#287;lan&#305;yor$
+$Zy_Ger$Verbinden$
+$Zy_Fre$Connexion en cours$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str5$
+$Zy_Eng$Local Addresses$
+$Zy_Tur$Yerel Adresler$
+$Zy_Ger$Lokale Adressen$
+$Zy_Fre$Adresses locales$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str50$
+$Zy_Eng$Disconnecting$
+$Zy_Tur$Ba&#287;lant&#305; Kesiliyor$
+$Zy_Ger$Verbindung abbauen$
+$Zy_Fre$D&#233;connexion en cours$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str51$
+$Zy_Eng$IPSEC VPN Add$
+$Zy_Tur$IPSEC VPN Ekle$
+$Zy_Ger$IPSEC VPN hinzuf&#252;gen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str52$
+$Zy_Eng$IPSEC VPN Edit$
+$Zy_Tur$IPSEC VPN D&#252;zenle$
+$Zy_Ger$IPSEC VPN bearbeiten$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str53$
+$Zy_Eng$ESP$
+$Zy_Tur$ESP$
+$Zy_Ger$ESP$
+$Zy_Fre$ESP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str54$
+$Zy_Eng$AH$
+$Zy_Tur$AH$
+$Zy_Ger$AH$
+$Zy_Fre$AH$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str55$
+$Zy_Eng$DES$
+$Zy_Tur$DES$
+$Zy_Ger$DES$
+$Zy_Fre$DES$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str56$
+$Zy_Eng$ESP_NULL$
+$Zy_Tur$ESP_NULL$
+$Zy_Ger$ESP_NULL$
+$Zy_Fre$ESP_NULL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str57$
+$Zy_Eng$MD5$
+$Zy_Tur$MD5$
+$Zy_Ger$MD5$
+$Zy_Fre$MD5$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str58$
+$Zy_Eng$SHA1$
+$Zy_Tur$SHA1$
+$Zy_Ger$SHA1$
+$Zy_Fre$SHA1$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str59$
+$Zy_Eng$digit Hex$
+$Zy_Tur$Hex say&#305;$
+$Zy_Ger$digit Hex$
+$Zy_Fre$digit Hex$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str6$
+$Zy_Eng$Remote Addresses$
+$Zy_Tur$Uzaktan Eri&#351;im Adresleri$
+$Zy_Ger$Remote Adressen$
+$Zy_Fre$Adresses distantes$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str60$
+$Zy_Eng$SPI$
+$Zy_Tur$SPI$
+$Zy_Ger$SPI$
+$Zy_Fre$SPI$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str61$
+$Zy_Eng$HEX$
+$Zy_Tur$HEX$
+$Zy_Ger$HEX$
+$Zy_Fre$HEX$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str62$
+$Zy_Eng$AES$
+$Zy_Tur$AES$
+$Zy_Ger$AES$
+$Zy_Fre$AES$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str63$
+$Zy_Eng$bit$
+$Zy_Tur$bit$
+$Zy_Ger$bit$
+$Zy_Fre$bit$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str64$
+$Zy_Eng$DH Group$
+$Zy_Tur$DH Grubu$
+$Zy_Ger$DH-Gruppe$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str7$
+$Zy_Eng$IPSec tunnels follow the Firewall Security Level. You can add Firewall ACL Rule to accept some services.$
+$Zy_Tur$IPSec t&#252;nelleri G&#252;venlik Duvar&#305; G&#252;venlik D&#252;zeyini takip etmektedir. Baz&#305; hizmetleri kabul etmek ad&#305;na Firewall ACL Kural&#305;n&#305; ekleyebilirsiniz. $
+$Zy_Ger$IPSec-Tunnel folgen der Sicherheitsebene der Firewall. Sie k&#246;nnen eine Firewall ACL-Regel hinzuf&#252;gen, damit einige Services angenommen werden.$
+$Zy_Fre$Les tunnels IPSec suivent le niveau de s&#233;curit&#233; du pare-feu. Vous pouvez ajouter une r&#232;gle ACL de pare-feu pour accepter certains services.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str8$
+$Zy_Eng$IPSec Settings$
+$Zy_Tur$IPSec Ayarlar&#305;$
+$Zy_Ger$IPSec-Einstellungen$
+$Zy_Fre$Param&#232;tres IPSec$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_IPSecVPNSetting_Str9$
+$Zy_Eng$Set up IPSec in this page.$
+$Zy_Tur$IPSec&#8217;i bu sayfada kurun$
+$Zy_Ger$Auf dieser Seite k&#246;nnen Sie IPSec einrichten.$
+$Zy_Fre$Mettre en place IPSec sur cette page.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_PPTPVPNSetting_ENABLEPPTP$
+$Zy_Eng$Enable PPTP$
+$Zy_Tur$PPTP Aktif Et$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_PPTPVPNSetting_PPTPVPN$
+$Zy_Eng$PPTP VPN$
+$Zy_Tur$PPTP VPN$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_PPTPVPNSetting_Name$
+$Zy_Eng$Name$
+$Zy_Tur$İsim$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_PPTPVPNSetting_ServerIP$
+$Zy_Eng$Server IP$
+$Zy_Tur$Sunucu IP$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_PPTPVPNSetting_Account$
+$Zy_Eng$PPTP ACCOUNT$
+$Zy_Tur$PPTP HESAP$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_PPTPVPNSetting_Password$
+$Zy_Eng$PPTP Password$
+$Zy_Tur$PPTP Şifre$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_PPTPVPNSetting_EnablePolicyRoute$
+$Zy_Eng$Enable Policy Route$
+$Zy_Tur$Policy Route Aktif Et$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_PPTPVPNSetting_RouteTarget$
+$Zy_Eng$Route Target$
+$Zy_Tur$RRoute Hedef$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_PPTPVPNSetting_RouteMask$
+$Zy_Eng$Route Mask$
+$Zy_Tur$Route Maske$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_PPTPVPNSetting_Encryption$
+$Zy_Eng$Encryption$
+$Zy_Tur$Şifreleme$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_PPTPVPNSetting_RequireMPPE$
+$Zy_Eng$RequireMPPE$
+$Zy_Tur$MPPE İhtiyacı$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_PPTPVPNSetting_Refuse40$
+$Zy_Eng$Refuse 40-bit Encryption$
+$Zy_Tur$40-bit Şifreleme Reddet$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_PPTPVPNSetting_Refuse128$
+$Zy_Eng$Refuse 128-bit Encryption$
+$Zy_Tur$128-bit Şifreleme Reddet$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_PPTPVPNSetting_Refusestateless$
+$Zy_Eng$Refuse stateless Encryption$
+$Zy_Tur$Şifreleme Reddet$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_PPTPVPNSetting_RefuseEAP$
+$Zy_Eng$Refuse to Authenticate with EAP$
+$Zy_Tur$EAP ile Kimlik Doğrulama Reddet$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_PPTPVPNSetting_Status$
+$Zy_Eng$Status$
+$Zy_Tur$Durum$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_PPTPVPNSetting_Server$
+$Zy_Eng$Server$
+$Zy_Tur$Sunucu$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_PPTPVPNSetting_Disconnected$
+$Zy_Eng$Disconnected$
+$Zy_Tur$Bağlantı kesildi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_PPTPVPNSetting_IPAddress$
+$Zy_Eng$IP Address$
+$Zy_Tur$IP Adresi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_PPTPVPNSetting_PeerIPAddress$
+$Zy_Eng$Peer IP Address$
+$Zy_Tur$Peer IP Adresi$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_PPTPVPNSetting_Note$
+$Zy_Eng$Note$
+$Zy_Tur$Not$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_PPTPVPNSetting_Str1$
+$Zy_Eng$Policy Routing configuration may conflicts with port binding$
+$Zy_Tur$Policy Routing yapılandırması port eşleştirme ile çakışıyor olabilir.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_PPTPVPNSetting_Str2$
+$Zy_Eng$Please refresh web page to get the status info$
+$Zy_Tur$Durum bilgisi almak için lütfen web sayfasını yenileyiniz.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_PPTPVPNSetting_connect$
+$Zy_Eng$connect$
+$Zy_Tur$bağlan$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_AlertMsg_Str1$
+$Zy_Eng$Address {{1}} is invalid MAC address.$
+$Zy_Tur$Adres {{1}} MAC adresi ge&#231;ersizdir .$
+$Zy_Ger$Adresse {{1}} ist ung&#252;ltige MAC-Adresse.$
+$Zy_Fre$L&#39;adresse {{1}} n&#39;est pas une adresse MAC valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_AlertMsg_Str2$
+$Zy_Eng$Address {{1}} is invalid MAC address.$
+$Zy_Tur$Adres {{1}} MAC adresi ge&#231;ersizdir .$
+$Zy_Ger$Adresse {{1}} ist ung&#252;ltige MAC-Adresse.$
+$Zy_Fre$L&#39;adresse {{1}} n&#39;est pas une adresse MAC valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_AlertMsg_Str3$
+$Zy_Eng$Address {{1}} is invalid MAC address.$
+$Zy_Tur$Adres {{1}} MAC adresi ge&#231;ersizdir .$
+$Zy_Ger$Adresse {{1}} ist ung&#252;ltige MAC-Adresse.$
+$Zy_Fre$L&#39;adresse {{1}} n&#39;est pas une adresse MAC valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_AlertMsg_Str4$
+$Zy_Eng$Address {{1}} is duplicated MAC address.$
+$Zy_Tur$Adres {{1}} MAC adresi kopyalanm&#305;&#351;t&#305;r .$
+$Zy_Ger$Adresse {{1}} ist doppelte MAC-Adresse.$
+$Zy_Fre$L&#39;adresse {{1}} est une copie d&#39;adresse MAC.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_AlertMsg_Str5$
+$Zy_Eng$Please at least have one entry in the allow list.$
+$Zy_Tur$L&#252;tfen izin verilenler listesinde en az bir giri&#351;iniz olsun.$
+$Zy_Ger$Bitte nehmen Sie mindestens einen Eintrag in der Liste der zugelassenen Elemente vor.$
+$Zy_Fre$une entr&#233;e au moins est requise dans la liste des autorisations.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_AlertMsg_Str6$
+$Zy_Eng$Delete the device from list?$
+$Zy_Tur$Ayg&#305;t&#305; listeden kald&#305;rmak m&#305; istiyorsunuz?$
+$Zy_Ger$Ger&#228;t aus Liste l&#246;schen?$
+$Zy_Fre$Supprimer l&#39;appareil de la liste?$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_AlertMsg_Str7$
+$Zy_Eng$Configure MAC Filter failed, please try again.$
+$Zy_Tur$MAC Filtresi konfig&#252;rasyonu ba&#351;ar&#305;s&#305;z oldu, l&#252;tfen tekrar deneyiniz.$
+$Zy_Ger$Fehler bei der Konfiguration des MAC-Filters, bitte nochmals versuchen.$
+$Zy_Fre$La configuration du Filtre MAC a &#233;chou&#233;, r&#233;essayez.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_AlertMsg_Str8$
+$Zy_Eng$To activated MAC Address Filter, Must be at least one allowed MAC address exists in table.$
+$Zy_Tur$MAC Adresi Filtresini aktive etmek i&#231;in tabloda izin verilen en az bir MAC adresi bulunmal&#305;d&#305;r.$
+$Zy_Ger$(null)$
+$Zy_Fre$La configuration du Filtre MAC a &#233;chou&#233;, r&#233;essayez.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_Str1$
+$Zy_Eng$MAC Filter$
+$Zy_Tur$MAC Filtresi$
+$Zy_Ger$MAC-Filter$
+$Zy_Fre$Filtre MAC $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_Str10$
+$Zy_Eng$Device$
+$Zy_Tur$Cihaz$
+$Zy_Ger$Ger&#228;t$
+$Zy_Fre$P&#233;riph&#233;rique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_Str11$
+$Zy_Eng$MAC Address$
+$Zy_Tur$MAC Adresi$
+$Zy_Ger$MAC-Adresse$
+$Zy_Fre$Adresse MAC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_Str12$
+$Zy_Eng$Modify$
+$Zy_Tur$De&#287;i&#351;tir$
+$Zy_Ger$&#196;ndern$
+$Zy_Fre$Modifier$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_Str13$
+$Zy_Eng$Add Device$
+$Zy_Tur$Cihaz Ekle$
+$Zy_Ger$Ger&#228;t hinzuf&#252;gen$
+$Zy_Fre$Ajouter un appareil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_Str14$
+$Zy_Eng$Add device to allow list by MAC address$
+$Zy_Tur$MAC adresine g&#246;re izin verilen liste i&#231;in cihaz ekleyin.$
+$Zy_Ger$Ger&#228;t zu Liste der zugelassenen Elemente anhand MAC-Adresse hinzuf&#252;gen$
+$Zy_Fre$Ajouter un appareil &#224; la liste des autorisations par adresse MAC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_Str15$
+$Zy_Eng$Add to list by MAC address$
+$Zy_Tur$MAC adresi listesine ekleyin.$
+$Zy_Ger$Zu Liste anhand MAC-Adresse hinzuf&#252;gen$
+$Zy_Fre$Ajouter &#224; la liste par adresse MAC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_Str16$
+$Zy_Eng$To add a device, please enter device&#8217;s MAC address :$
+$Zy_Tur$Bir ayg&#305;t eklemek i&#231;in l&#252;tfen ayg&#305;t &#8217;s MAC adresini girin:$
+$Zy_Ger$Um ein Ger&#228;t hinzuzuf&#252;gen, geben Sie bitte die MAC-Adresse des Ger&#228;ts ein.$
+$Zy_Fre$Pour ajouter un appareil, entrez l&#39;adresse MAC de l&#39;appareil :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_Str17$
+$Zy_Eng$unknown$
+$Zy_Tur$Tan&#305;nmayan$
+$Zy_Ger$unbekannt$
+$Zy_Fre$Inconnu$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_Str18$
+$Zy_Eng$Add device to the block List automatically.$
+$Zy_Tur$Engellenenler listesine otomatik olarak ayg&#305;t ekleyin.$
+$Zy_Ger$Ger&#228;t automatisch zu der Liste der blockierten Elemente hinzuf&#252;gen.$
+$Zy_Fre$Ajouter automatiquement un p&#233;riph&#233;rique &#224; la liste des blocages.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_Str19$
+$Zy_Eng$Add device to block list by MAC address$
+$Zy_Tur$Mac adresine g&#246;re engellenenler listesine cihaz ekleyin.$
+$Zy_Ger$Ger&#228;t zu Liste der blockierten Elemente anhand MAC-Adresse hinzuf&#252;gen$
+$Zy_Fre$Ajouter un appareil pour bloquer la liste par adresse MAC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_Str20$
+$Zy_Eng$Delete the device from list$
+$Zy_Tur$Listeden ayg&#305;t&#305; kald&#305;r&#305;n$
+$Zy_Ger$Ger&#228;t aus Liste l&#246;schen$
+$Zy_Fre$Supprimer l&#39;appareil de la liste$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_Str2$
+$Zy_Eng$The MAC Filter allows or blocks access to your router by checking the MAC addresses of devices. Edit the MAC filter lists to allow or block a device.$
+$Zy_Tur$MAC Filtresi ayg&#305;tlar&#305;n MAC adreslerini kontrolden ge&#231;irerek y&#246;nlendiricinize olan eri&#351;imlerine izin vermektedir veya engellemektedir. Bir ayg&#305;ta izin vermek veya engellemek ad&#305;na Mac filtre listelerini d&#252;zenleyin.$
+$Zy_Ger$Der MAC-Filter erteilt oder blockiert den Zugriff auf Ihren Router. Dazu werden die MAC-Adressen von Ger&#228;ten gepr&#252;ft. Bearbeiten Sie die MAC-Filter-Listen, um ein Ger&#228;t zuzulassen oder zu blockieren.$
+$Zy_Fre$Le filtre MAC autorise ou bloque l&#39;acc&#232;s &#224; votre routeur en v&#233;rifiant les adresses MAC des appareils. Modifiez les listes de filtres MAC pour autoriser ou bloquer un appareil.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_Str3$
+$Zy_Eng$MAC Filter Setup$
+$Zy_Tur$MAC Filtresi Kurulumu$
+$Zy_Ger$MAC-Filter einrichten$
+$Zy_Fre$Configuration du filtre MAC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_Str4$
+$Zy_Eng$Enable$
+$Zy_Tur$Etkinle&#351;tir$
+$Zy_Ger$Aktivieren$
+$Zy_Fre$Activer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_Str5$
+$Zy_Eng$Disable (The settings in this screen are invalid if you select this.)$
+$Zy_Tur$Devreden &#199;&#305;karma (Bunu se&#231;erseniz bu ekrandaki ayarlar ge&#231;ersiz k&#305;l&#305;nacakt&#305;r.)$
+$Zy_Ger$Deaktivieren (dann gelten die Einstellungen in diesem Bildschirm nicht)$
+$Zy_Fre$D&#233;sactiver (Les param&#232;tres dans cet &#233;cran ne sont pas valables si vous s&#233;lectionnez cette option.)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_Str6$
+$Zy_Eng$Add new devices to the Allow List automatically.$
+$Zy_Tur$Otomatik olarak &#304;zin Listesine yeni ayg&#305;tlar ekleyin.$
+$Zy_Ger$Neue Ger&#228;te automatisch zu der Liste der zugelassenen Elemente hinzuf&#252;gen.$
+$Zy_Fre$Ajouter automatiquement de nouveaux appareils &#224; la liste des autorisations.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_Str7$
+$Zy_Eng$MAC Filter Lists$
+$Zy_Tur$MAC Filtre Listeleri$
+$Zy_Ger$MAC-Filter-Listen$
+$Zy_Fre$Listes des filtres MAC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_Str8$
+$Zy_Eng$Allow List$
+$Zy_Tur$&#304;zin Listesi$
+$Zy_Ger$Zugelassen (Liste)$
+$Zy_Fre$Liste des autorisations$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_Str9$
+$Zy_Eng$Block List$
+$Zy_Tur$Engellenenler Listesi$
+$Zy_Ger$Blockiert (Liste)$
+$Zy_Fre$Liste des blocages$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_AlertMsg_Str1$
+$Zy_Eng$MAC address error.$
+$Zy_Tur$MAC adresi hatas&#305;.$
+$Zy_Ger$Fehler bei MAC-Adresse$
+$Zy_Fre$Erreur d&#39;adresse MAC.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_AlertMsg_Str2$
+$Zy_Eng$This PC Name/IP/MAC is being used.$
+$Zy_Tur$Bu Bilgisayar &#304;smi/IP/MAC kullan&#305;lm&#305;&#351;t&#305;r.$
+$Zy_Ger$PC-Name/IP/MAC wird bereits verwendet.$
+$Zy_Fre$Ce Nom/IP/MAC de PC a &#233;t&#233; utilis&#233;.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_AlertMsg_Str3$
+$Zy_Eng$At least one web site must be added.$
+$Zy_Tur$En az bir web sitesi eklenmelidir.$
+$Zy_Ger$Bitte mindestens eine Website hinzuf&#252;gen.$
+$Zy_Fre$Au moins un site web doit &#234;tre ajout&#233;.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_AlertMsg_Str4$
+$Zy_Eng$Please input website only, not webpage address.$
+$Zy_Tur$L&#252;tfen sadece web siteleri ekleyin, web sayfas&#305; adresleri eklemeyiniz.$
+$Zy_Ger$Bitte geben Sie nur die Website ein, keine Webseiten-Adresse.$
+$Zy_Fre$Entrez seulement un site web, pas une adresse de page web.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_AlertMsg_Str5$
+$Zy_Eng$Table is full, max list number is 100$
+$Zy_Tur$&#199;izelge tablosu doludur, azami liste numaras&#305; 100&#8217;d&#252;r$
+$Zy_Ger$Tabelle ist voll, es sind nur 100 Eintr&#228;ge erlaubt$
+$Zy_Fre$Le tableau est plein, le nombre de liste max est 100$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_AlertMsg_Str7$
+$Zy_Eng$You need to add a Scheduler Rule first.$
+$Zy_Tur$&#304;lk &#246;nce Programc&#305; Kurallar&#305; eklemelisiniz.$
+$Zy_Ger$Sie m&#252;ssen zuerst eine Zeitplan hinzuf&#252;gen.$
+$Zy_Fre$Vous devez d&#39;abord ajouter une r&#232;gle de planificateur.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_AlertMsg_Str8$
+$Zy_Eng$The maximum number of Parentcal Control rules is limited to 20.$
+$Zy_Tur$Listelenen kay&#305;tlar&#305;n say&#305;s&#305; 64 ile s&#305;n&#305;rland&#305;r&#305;lm&#305;&#351;t&#305;r.$
+$Zy_Ger$Die Anzahl von Jugendschutzregeln ist auf 20 begrenzt.$
+$Zy_Fre$Le nombre d&#39;enregistrements de listes est limit&#233; &#224; 64.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_AlertMsg_Str9$
+$Zy_Eng$There is no Parental Control Profile applied to this user currently. <br />Do you want to create one now?$
+$Zy_Tur$(null)$
+$Zy_Ger$Es ist kein Jugendschutzprofil diesem Benutzer zugewiesen. <br /> M&#246;chten Sie eins erstellen?$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str1$
+$Zy_Eng$In Parental Control, you can set the rule to block websites on your PC. Please click \add new rule\ to decide the rule for website blocking.$
+$Zy_Tur$Ebeveyn Kontrol&#252;&#8217;nde, Bilgisayar&#305;n&#305;zda web sitelerin engellenmesi i&#231;in kural olu&#351;turabilirsiniz. Web sitesi engelleme kural&#305;n&#305; koymak i&#231;in l&#252;tfen /yeni kural ekleyiniz/&#8217;e t&#305;klay&#305;n&#305;z.$
+$Zy_Ger$Unter Jugendschutz k&#246;nnen Sie die Regeln zum Blockieren von Websites auf Ihrem PC einstellen. Bitte klicken Sie auf \Neue Regel hinzuf&#252;gen\, um die Regel zum Blockieren von Websites festzulegen.$
+$Zy_Fre$Dans le contr&#244;le parental, vous pouvez d&#233;finir la r&#232;gle pour bloquer des sites Web sur votre PC. Cliquer sur &#171;&#160;Ajouter une nouvelle r&#232;gle&#160;&#187; pour d&#233;cider de la r&#232;gle de blocage du site.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str10$
+$Zy_Eng$Parental Control List Configuration$
+$Zy_Tur$Ebeveyn Kontrol&#252; Liste Konfig&#252;rasyonu$
+$Zy_Ger$Liste f&#252;r Jugendschutz konfigurieren$
+$Zy_Fre$Configuration de la liste de contr&#244;le parental $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str11$
+$Zy_Eng$Parental Control List Delete$
+$Zy_Tur$Ebeveyn Kontrol&#252; Liste Sil$
+$Zy_Ger$Liste f&#252;r Jugendschutz l&#246;schen$
+$Zy_Fre$Suppression de la liste de contr&#244;le parental$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str12$
+$Zy_Eng$Parental Control Edit$
+$Zy_Tur$Ebeveyn Kontrol&#252;&#8217;n&#252;n D&#252;zenlenmesi$
+$Zy_Ger$Jugendschutz bearbeiten$
+$Zy_Fre$Modification du contr&#244;le parental$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str13$
+$Zy_Eng$Block Web Site$
+$Zy_Tur$Web Sitesi Engelle$
+$Zy_Ger$Website blockieren$
+$Zy_Fre$Bloque le site web$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str14$
+$Zy_Eng$Allow Web Site$
+$Zy_Tur$Web Sitesi Eri&#351;imine &#304;zin Ver$
+$Zy_Ger$Website zulassen$
+$Zy_Fre$Autoriser le site web$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str15$
+$Zy_Eng$Block All$
+$Zy_Tur$Hepsini Engelle$
+$Zy_Ger$Alle blockieren$
+$Zy_Fre$Tout bloquer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str16$
+$Zy_Eng$Remove$
+$Zy_Tur$Kald&#305;r$
+$Zy_Ger$Entfernen$
+$Zy_Fre$Retirer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str17$
+$Zy_Eng$Scheduler Rules$
+$Zy_Tur$Programc&#305; Kurallar&#305;$
+$Zy_Ger$Zeitplan$
+$Zy_Fre$R&#232;gles de planificateur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str2$
+$Zy_Eng$The settings in this screen are invalid if you select this.$
+$Zy_Tur$Bunu se&#231;erseniz bu ekrandaki ayarlar ge&#231;ersiz k&#305;l&#305;nacakt&#305;r.$
+$Zy_Ger$Bei Auswahl dieser Option gelten die Einstellungen in diesem Bildschirm nicht.$
+$Zy_Fre$Les param&#232;tres dans cet &#233;cran ne sont pas valables si vous s&#233;lectionnez cette option.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str3$
+$Zy_Eng$Rule List$
+$Zy_Tur$Kural Listesi$
+$Zy_Ger$Liste mit Regeln$
+$Zy_Fre$Liste des r&#232;gles$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str4$
+$Zy_Eng$Add new rule$
+$Zy_Tur$Yeni kural ekle$
+$Zy_Ger$Neue Regel hinzuf&#252;gen$
+$Zy_Fre$Ajouter une nouvelle r&#232;gle$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str5$
+$Zy_Eng$PC Name/IP/MAC$
+$Zy_Tur$Bilgisayar &#304;smi/IP/MAC$
+$Zy_Ger$PC-Name/IP/MAC$
+$Zy_Fre$Nom/IP/MAC du PC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str6$
+$Zy_Eng$Access Type$
+$Zy_Tur$Eri&#351;im T&#252;r&#252;$
+$Zy_Ger$Zugriffstyp$
+$Zy_Fre$Type d&#39;acc&#232;s $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str7$
+$Zy_Eng$Web Site$
+$Zy_Tur$Web Site$
+$Zy_Ger$Website$
+$Zy_Fre$Site Web$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str8$
+$Zy_Eng$Scheduler Name$
+$Zy_Tur$Programc&#305; Ad&#305; $
+$Zy_Ger$Scheduling-Name$
+$Zy_Fre$Nom du planificateur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Profile_Name$
+$Zy_Eng$Parental Control Profile Name$
+$Zy_Tur$Ebeveyn Kontrol&#252; Profil Ad&#305;$
+$Zy_Ger$PCP-Name$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Profile$
+$Zy_Eng$Parental Control Profile (PCP)$
+$Zy_Tur$Ebeveyn Kontrol Profili (EKP)$
+$Zy_Ger$PCP (Parental Control Profile)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Add_New_PCP$
+$Zy_Eng$Add new PCP$
+$Zy_Tur$Yeni EKP ekleyiniz$
+$Zy_Ger$Neues PCP hinzuf&#252;gen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str9$
+$Zy_Eng$You need to add {{1}} first.$
+$Zy_Tur$&#304;lk &#246;nce {{1}}&#8217;i eklemelisiniz. $
+$Zy_Ger$Sie m&#252;ssen zuerst eine {{1}} hinzuf&#252;gen.$
+$Zy_Fre$Vous devez d&#39;abord ajouter {{1}}.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Scheduler_AlertMsg_Str1$
+$Zy_Eng$Rule Name is being used.$
+$Zy_Tur$Kural Ad&#305; kullan&#305;lm&#305;&#351;t&#305;r.$
+$Zy_Ger$Regelname wird bereits verwendet.$
+$Zy_Fre$Le nom de la r&#232;gle est utilis&#233;..$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Scheduler_AlertMsg_Str10$
+$Zy_Eng$Time of Day Range is in 24 hour clock$
+$Zy_Tur$G&#252;n i&#231;indeki saat de&#287;er aral&#305;&#287;&#305; 24 saatlik zaman bi&#231;imi &#351;eklindedir.$
+$Zy_Ger$Der Bereich f&#252;r die Tageszeit wird in 24-Stunden-Format angegeben$
+$Zy_Fre$La plage horaire de la journ&#233;e est au format de 24 heures$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Scheduler_AlertMsg_Str11$
+$Zy_Eng$Modem time is not set and Scheduling will not work correctly without it!  Please set it in \'Maintenance/Time\' Setting$
+$Zy_Tur$Modem saati kurulmam&#305;&#351;t&#305;r ve bu olmadan Zaman Planlama d&#252;zg&#252;n bir &#351;ekilde &#231;al&#305;&#351;mayacakt&#305;r! L&#252;tfen &#8216;Bak&#305;m/Zaman Ayarlamas&#305;&#8217;n&#305; ayarlay&#305;n&#305;z.$
+$Zy_Ger$Modemzeit ist nicht eingestellt, daher wird das Scheduling nicht korrekt funktionieren!  Bitte unter \'Wartung > Zeit\' einstellen.$
+$Zy_Fre$L&#39;heure du modem n&#39;est pas r&#233;gl&#233;e et la planification ne fonctionnera pas correctement sans elle!   D&#233;finissez-la dans &#171;&#160;Entretien/R&#233;glage de l&#39;heure&#160;&#187; $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Scheduler_AlertMsg_Str12$
+$Zy_Eng$(hh:mm)$
+$Zy_Tur$(ss:dd)$
+$Zy_Ger$(hh:mm)$
+$Zy_Fre$hh:mm (au format de 24 heures)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Scheduler_AlertMsg_Str2$
+$Zy_Eng$Please enter a scheduler rule name$
+$Zy_Tur$L&#252;tfen bir programc&#305; kural&#305; girin$
+$Zy_Ger$Bitte geben Sie einen Namen f&#252;r die Scheduling-Regel ein$
+$Zy_Fre$Entrez un nom de r&#232;gle de planificateur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Scheduler_AlertMsg_Str3$
+$Zy_Eng$Please enter valid rule name: No special characters.$
+$Zy_Tur$L&#252;tfen ge&#231;erli bir kural ad&#305; girin: &#214;zel karakterler kullanmay&#305;n.$
+$Zy_Ger$Bitte g&#252;ltigen Regelnamen eingeben: Ohne Sonderzeichen.$
+$Zy_Fre$Entrez un nom de r&#232;gle valide: Pas de caract&#232;res sp&#233;ciaux.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Scheduler_AlertMsg_Str4$
+$Zy_Eng$Description contains invalid characters.$
+$Zy_Tur$Tan&#305;mlama ge&#231;ersiz karakterler i&#231;ermektedir. $
+$Zy_Ger$Beschreibung enth&#228;lt ung&#252;ltige Zeichen.$
+$Zy_Fre$La description contient des caract&#232;res non valides.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Scheduler_AlertMsg_Str5$
+$Zy_Eng$No days were specified.$
+$Zy_Tur$G&#252;nler belirtilmemi&#351;tir$
+$Zy_Ger$Keine Tage angegeben.$
+$Zy_Fre$Aucun jour n&#39;a &#233;t&#233; sp&#233;cifi&#233;.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Scheduler_AlertMsg_Str6$
+$Zy_Eng$is an invalid time.$
+$Zy_Tur$Ge&#231;ersiz bir zamand&#305;r$
+$Zy_Ger$ist eine ung&#252;ltige Zeit.$
+$Zy_Fre$est une heure non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Scheduler_AlertMsg_Str7$
+$Zy_Eng$Stop time is before start time.$
+$Zy_Tur$Durdurma zaman&#305; ba&#351;latma zaman&#305;ndan &#246;ncedir.$
+$Zy_Ger$Ende liegt vor Anfang.$
+$Zy_Fre$L&#39;heure d&#39;arr&#234;t est avant l&#39;heure de d&#233;but.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Scheduler_AlertMsg_Str8$
+$Zy_Eng$This rule is used by Parental Control can not be removed.$
+$Zy_Tur$Bu kural Ebeveyn Kontrol&#252; taraf&#305;ndan kullan&#305;lmaktad&#305;r, silinemez.$
+$Zy_Ger$Diese Regel wird vom Jugendschutz verwendet und kann nicht entfernt werden.$
+$Zy_Fre$Cette r&#232;gle est utilis&#233;e par le contr&#244;le parental et ne peut pas &#234;tre enlev&#233;e.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Scheduler_AlertMsg_Str9$
+$Zy_Eng$This rule is still used by ACL.$
+$Zy_Tur$Bu kural halen ACL taraf&#305;ndan kullan&#305;lmaktad&#305;r. $
+$Zy_Ger$Diese Regel wird noch von der ACL verwendet.$
+$Zy_Fre$Cette r&#232;gle est encore utilis&#233;e par ACL.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Scheduler_Str1$
+$Zy_Eng$Scheduler Rules can let you define scheduling rules and turn them into reusable objects. These objects can be selected in other configuration pages when scheduling is needed.$
+$Zy_Tur$Programc&#305; Kurallar&#305; zaman planlama kurallar&#305;n&#305; tan&#305;mlaman&#305;za ve onlar&#305; tekrar kullan&#305;labilir nesnelere d&#246;n&#252;&#351;t&#252;rmenize izin verebilir. Bu nesneler zaman planlama gerekli oldu&#287;u zamanlarda di&#287;er yap&#305;sal d&#252;zenleme sayfalardan se&#231;ilebilir.$
+$Zy_Ger$Mit Zeitplan k&#246;nnen Sie einen Zeitplan als wieder verwendbares Objekt definieren. Sie k&#246;nnen diese Objekte dann auf anderen Konfigurationsseiten ausw&#228;hlen, wenn Scheduling erforderlich ist.$
+$Zy_Fre$Les r&#232;gles de planificateur peuvent vous permettre de d&#233;finir les r&#232;gles de planification et de les transformer en objets r&#233;utilisables. Ces objets peuvent &#234;tre s&#233;lectionn&#233;s dans d&#39;autres pages de configuration lorsque la planification est n&#233;cessaire.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Scheduler_Str2$
+$Zy_Eng$Add new rule$
+$Zy_Tur$Yeni kural ekleyin$
+$Zy_Ger$Neue Regel hinzuf&#252;gen$
+$Zy_Fre$Ajouter une nouvelle r&#232;gle$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Scheduler_Str3$
+$Zy_Eng$Rule Name$
+$Zy_Tur$Kural Ad&#305;$
+$Zy_Ger$Regelname$
+$Zy_Fre$Nom de la r&#232;gle$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Scheduler_Str4$
+$Zy_Eng$Scheduler Rule Configuration$
+$Zy_Tur$Programc&#305; Kural&#305; Konfig&#252;rasyonu$
+$Zy_Ger$Zeitplan konfigurieren$
+$Zy_Fre$Configuration de r&#232;gle de planificateur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Scheduler_Str5$
+$Zy_Eng$Scheduler Rule Delete$
+$Zy_Tur$Programc&#305; Kural&#305;n&#305; Sil$
+$Zy_Ger$Zeitplan l&#246;schen$
+$Zy_Fre$Suppression de r&#232;gle de planificateur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Scheduler_Str6$
+$Zy_Eng$Scheduler Rule Edit$
+$Zy_Tur$Programc&#305; Kural&#305;n&#305; D&#252;zenle$
+$Zy_Ger$Zeitplan bearbeiten$
+$Zy_Fre$Modification de r&#232;gle de planificateur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Scheduler_Str7$
+$Zy_Eng$Time Of Day Range$
+$Zy_Tur$G&#252;n &#304;&#231;indeki Saatin Aral&#305;&#287;&#305;$
+$Zy_Ger$Bereich f&#252;r Tageszeit$
+$Zy_Fre$Plage d&#39;heure de la journ&#233;e$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Scheduler_Str8$
+$Zy_Eng$Scheduler Rule List Delete$
+$Zy_Tur$Programc&#305; Kural&#305; Listesini Sil$
+$Zy_Ger$Liste mit Zeitplan l&#246;schen$
+$Zy_Fre$Suppression de la liste r&#232;gles de planificateur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Scheduler_Str9$
+$Zy_Eng$in 24 hour format$
+$Zy_Tur$24 saatlik zaman bi&#231;iminde$
+$Zy_Ger$in 24-Stunden Format$
+$Zy_Fre$au format de 24 heures$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Scheduler_Str10$
+$Zy_Eng$A scheduler rule is a scheduling setting and a re-usable object that should be used in conjunction with other configurations.$
+$Zy_Tur$Bir programc&#305; kural&#305; bir programlama ayar&#305; olup, di&#287;er yap&#305;sal d&#252;zenlemeler ile birlikte kullan&#305;lmas&#305; gereken yeniden kullan&#305;labilir bir nesnedir.$
+$Zy_Ger$Hier k&#246;nnen Sie Zeitplanobjekte erstellen, die in anderen Konfigurationspunkten genutzt werden k&#246;nnen.$
+$Zy_Fre$au format de 24 heures$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Scheduler_Str11$
+$Zy_Eng$Time of Day Range$
+$Zy_Tur$G&#252;n &#304;&#231;indeki Saatin Aral&#305;&#287;&#305;$
+$Zy_Ger$Bereich f&#252;r Tageszeit$
+$Zy_Fre$au format de 24 heures$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_AlertMsg_Str1$
+$Zy_Eng$ HTTP port {{1}} is used for other service.$
+$Zy_Tur$HTTP ba&#287;lant&#305; noktas&#305; {{1}} di&#287;er hizmetler i&#231;in kullan&#305;lmaktad&#305;r.$
+$Zy_Ger$ HTTP-Port {{1}} wird f&#252;r anderen Service verwendet.$
+$Zy_Fre$ Le port HTTP {{1}} est utilis&#233; pour un autre service.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_AlertMsg_Str10$
+$Zy_Eng$ FTP port {{1}} is  invalid (1~65535).$
+$Zy_Tur$FTP ba&#287;lant&#305; noktas&#305; {{1}} ge&#231;ersizdir (1~65535).$
+$Zy_Ger$ FTP-Port {{1}} ist ung&#252;ltig (1~65535).$
+$Zy_Fre$ Le port FTP {{1}} n&#39;est pas valide (1~65535).$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_AlertMsg_Str11$
+$Zy_Eng$ Subnet {{1}} is  invalid.$
+$Zy_Tur$Alt a&#287; {{1}} ge&#231;ersizdir.$
+$Zy_Ger$ Subnetz {{1}} ist ung&#252;ltig.$
+$Zy_Fre$ Le sous-r&#233;seau {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_AlertMsg_Str12$
+$Zy_Eng$ IP Address {{1}} is  invalid.$
+$Zy_Tur$IP Adresi {{1}} ge&#231;ersizdir.$
+$Zy_Ger$ IP-Adresse {{1}} ist ung&#252;ltig.$
+$Zy_Fre$ L&#39;adresse IP {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_AlertMsg_Str13$
+$Zy_Eng$Subnet is invalid.$
+$Zy_Tur$Alt a&#287; ge&#231;ersizdir.$
+$Zy_Ger$Subnetz ist ung&#252;ltig.$
+$Zy_Fre$Le sous-r&#233;seau n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_AlertMsg_Str14$
+$Zy_Eng$IP Address is invalid.$
+$Zy_Tur$IP Adresi ge&#231;ersizdir.$
+$Zy_Ger$IP-Adresse ist ung&#252;ltig.$
+$Zy_Fre$L&#39;adresse IP n&#8217;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_AlertMsg_Str15$
+$Zy_Eng$IP Address {{1}} is invalid.$
+$Zy_Tur$IP Adresi {{1}} ge&#231;ersizdir.$
+$Zy_Ger$IP-Adresse {{1}} ist ung&#252;ltig.$
+$Zy_Fre$L&#39;adresse IP {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_AlertMsg_Str16$
+$Zy_Eng$Subnet {{1}} is invalid.$
+$Zy_Tur$Alt a&#287; {{1}} ge&#231;ersizdir.$
+$Zy_Ger$Subnetz {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le sous-r&#233;seau {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_AlertMsg_Str17$
+$Zy_Eng$Configure Service Control failed, please try again.$
+$Zy_Tur$Hizmet Denetimi Konfig&#252;rasonu ba&#351;ar&#305;s&#305;z olmu&#351;tur, l&#252;tfen tekrar deneyin.$
+$Zy_Ger$Fehler bei der Konfiguration der Service Control, bitte nochmals versuchen.$
+$Zy_Fre$La configuration du contr&#244;le de service a &#233;chou&#233;, r&#233;essayez.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_AlertMsg_Str2$
+$Zy_Eng$ HTTPS port {{1}} is used for other service.$
+$Zy_Tur$ HTTPS portu {{1}} di&#287;er hizmetler i&#231;in kullan&#305;lmaktad&#305;r.$
+$Zy_Ger$ HTTPS-Port {{1}} wird f&#252;r anderen Service verwendet.$
+$Zy_Fre$ Le port HTTPS {{1}} est utilis&#233; pour un autre service.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_AlertMsg_Str3$
+$Zy_Eng$ SSH port {{1}} is used for other service.$
+$Zy_Tur$ SSH portu{{1}} di&#287;er hizmetler i&#231;in kullan&#305;lmaktad&#305;r.$
+$Zy_Ger$ SSH-Port {{1}} wird f&#252;r anderen Service verwendet.$
+$Zy_Fre$ Le port SSH {{1}} est utilis&#233; pour un autre service.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_AlertMsg_Str4$
+$Zy_Eng$ TELNET port {{1}} is used for other service.$
+$Zy_Tur$TELNET portu {{1}} di&#287;er hizmetler i&#231;in kullan&#305;lmaktad&#305;r.$
+$Zy_Ger$ TELNET-Port {{1}} wird f&#252;r anderen Service verwendet.$
+$Zy_Fre$ Le port TELNET {{1}} est utilis&#233; pour un autre service.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_AlertMsg_Str5$
+$Zy_Eng$ FTP port {{1}} is used for other service.$
+$Zy_Tur$FTP portu {{1}} di&#287;er hizmetler i&#231;in kullan&#305;lmaktad&#305;r.$
+$Zy_Ger$ FTP-Port {{1}} wird f&#252;r anderen Service verwendet.$
+$Zy_Fre$ Le port FTP {{1}} est utilis&#233; pour un autre service.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_AlertMsg_Str6$
+$Zy_Eng$ Http port {{1}} is invalid (1~65535).$
+$Zy_Tur$Http portu {{1}} ge&#231;ersizdir (1~65535).$
+$Zy_Ger$ HTTP-Port {{1}} ist ung&#252;ltig (1~65535).$
+$Zy_Fre$ Le port Http {{1}} n&#39;est pas valide (1~65535).$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_AlertMsg_Str7$
+$Zy_Eng$ Https port {{1}} is  invalid (1~65535).$
+$Zy_Tur$Httpsportu {{1}} ge&#231;ersizdir (1~65535).$
+$Zy_Ger$ HTTPS-Port {{1}} ist ung&#252;ltig (1~65535).$
+$Zy_Fre$ Le port Https {{1}} n&#39;est pas valide (1~65535).$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_AlertMsg_Str8$
+$Zy_Eng$ SSH port {{1}} is  invalid (1~65535).$
+$Zy_Tur$SSH portu {{1}} ge&#231;ersizdir (1~65535).$
+$Zy_Ger$ SSH-Port {{1}} ist ung&#252;ltig (1~65535).$
+$Zy_Fre$ Le port SSH {{1}} n&#39;est pas valide (1~65535).$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_AlertMsg_Str9$
+$Zy_Eng$ Telnet port {{1}} is  invalid (1~65535).$
+$Zy_Tur$Telnet portu {{1}} ge&#231;ersizdir (1~65535).$
+$Zy_Ger$ TELNET-Port {{1}} ist ung&#252;ltig (1~65535).$
+$Zy_Fre$ Le port Telnet {{1}} n&#39;est pas valide (1~65535).$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_Str1$
+$Zy_Eng$Service Control$
+$Zy_Tur$Hizmet Denetimi$
+$Zy_Ger$Service Control$
+$Zy_Fre$Contr&#244;le de service$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_Str10$
+$Zy_Eng$HTTPS Certificate:$
+$Zy_Tur$HTTPS Sertifikas&#305;:$
+$Zy_Ger$HTTPS-Zertifikat:$
+$Zy_Fre$Certificat HTTPS:$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_Str11$
+$Zy_Eng$default$
+$Zy_Tur$&#214;nceden tan&#305;mlanm&#305;&#351;$
+$Zy_Ger$Standard$
+$Zy_Fre$par d&#233;faut$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_Str12$
+$Zy_Eng$Notes$
+$Zy_Tur$Notlar$
+$Zy_Ger$Hinweise$
+$Zy_Fre$Remarques$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_Str13$
+$Zy_Eng$1.Service Control setting will be affected by ACL.$
+$Zy_Tur$1. Hizmet Denetimi ayarlar&#305; ACL taraf&#305;ndan etkilenecektir.$
+$Zy_Ger$1. Die Einstellung der Service Control wird von der ACL beeinflusst.$
+$Zy_Fre$1.Le param&#233;trage du contr&#244;le de service sera affect&#233; par ACL.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_Str14$
+$Zy_Eng$2.You need to change the HTTPS certificate to reopen browser or reimport a new certificate.$
+$Zy_Tur$2. Internet taray&#305;c&#305;s&#305;n&#305; tekrar a&#231;mak i&#231;in HTTPS sertifikas&#305;n&#305; de&#287;i&#351;tirmelisiniz veya yeni bir sertifikay&#305; i&#231;eri aktarmal&#305;s&#305;n&#305;z.$
+$Zy_Ger$2. Sie m&#252;ssen das HTTPS-Zertifikat &#228;ndern, um den Browser wieder zu &#246;ffnen, oder ein neues Zertifikat importieren.$
+$Zy_Fre$2.Vous devez modifier le certificat HTTPS pour rouvrir le navigateur ou r&#233;importer un nouveau certificat.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_Str15$
+$Zy_Eng$Error$
+$Zy_Tur$Hata$
+$Zy_Ger$Fehler$
+$Zy_Fre$Erreur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_Str16$
+$Zy_Eng$Services Control$
+$Zy_Tur$Hizmetler Denetimi$
+$Zy_Ger$Service Control$
+$Zy_Fre$Contr&#244;le des services$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_Str17$
+$Zy_Eng$HTTP$
+$Zy_Tur$HTTP$
+$Zy_Ger$HTTP$
+$Zy_Fre$HTTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_Str18$
+$Zy_Eng$HTTPS$
+$Zy_Tur$HTTPS$
+$Zy_Ger$HTTPS$
+$Zy_Fre$HTTPS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_Str19$
+$Zy_Eng$SSH$
+$Zy_Tur$SSH$
+$Zy_Ger$SSH$
+$Zy_Fre$SSH$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_Str20$
+$Zy_Eng$TELNET$
+$Zy_Tur$TELNET$
+$Zy_Ger$TELNET$
+$Zy_Fre$Telnet$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_Str21$
+$Zy_Eng$FTP$
+$Zy_Tur$FTP$
+$Zy_Ger$FTP$
+$Zy_Fre$FTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_Str22$
+$Zy_Eng$When creating a rule causes inaccessible devices, please restore to the factory defaults.$
+$Zy_Tur$Kural olu&#351;turman&#305;z eri&#351;ilemeyen ayg&#305;tlara neden oldu&#287;unda, l&#252;tfen fabrika ayarlar&#305;na geri d&#246;n&#252;n&#252;z.$
+$Zy_Ger$Wenn die Erstellung einer Regel dazu f&#252;hrt, dass auf Ger&#228;te nicht zugegriffen werden kann, stellen Sie die Werkseinstellungen wieder her.$
+$Zy_Fre$Remarques$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_Str2$
+$Zy_Eng$Service Control allows you to choose the network service(s) that {{1}} allow(s).$
+$Zy_Tur$Hizmet Denetimi {{1}}&#8217;in izin verdi&#287;i a&#287; hizmet(ler)ini se&#231;menize izin vermektedir.$
+$Zy_Ger$(null)$
+$Zy_Fre$Le contr&#244;le de service de vous permet de choisir le(s) service(s) du r&#233;seau autoris&#233;(s) par {{1}}.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_Str3$
+$Zy_Eng$You can set one trust domain for remote management. Let trust domain can be through your choose the network services to access the {{1}}.$
+$Zy_Tur$Uzaktan y&#246;netim i&#231;in bir g&#252;venli etki alan&#305; ayarlayabilirsiniz. G&#252;venilir etki alan&#305; {{1}} eri&#351;mek i&#231;in kulland&#305;&#287;&#305;n&#305;z a&#287; hizmetlerinden se&#231;erek ayarlayabilirsiniz.  $
+$Zy_Ger$(null)$
+$Zy_Fre$Vous pouvez d&#233;finir un domaine de confiance pour la gestion &#224; distance pour permettre aux utilisateurs dans le domaine de confiance d&#39;acc&#233;der au {{1}}.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_Str4$
+$Zy_Eng$Trust Domain$
+$Zy_Tur$G&#252;venli Etki Alan&#305;$
+$Zy_Ger$Trusted Domain$
+$Zy_Fre$Domaine de confiance$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_Str5$
+$Zy_Eng$Services Name$
+$Zy_Tur$Hizmetler Ad&#305;$
+$Zy_Ger$Name der Services$
+$Zy_Fre$Nom du service$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_Str6$
+$Zy_Eng$LAN$
+$Zy_Tur$LAN (Yerel alan a&#287;&#305;)$
+$Zy_Ger$LAN$
+$Zy_Fre$LAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_Str7$
+$Zy_Eng$WAN$
+$Zy_Tur$WAN (Geni&#351; alan a&#287;&#305;)$
+$Zy_Ger$WAN$
+$Zy_Fre$WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_Str8$
+$Zy_Eng$Port$
+$Zy_Tur$Port$
+$Zy_Ger$Port$
+$Zy_Fre$Port$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ServiceControl_Str9$
+$Zy_Eng$Certificate$
+$Zy_Tur$Sertifika$
+$Zy_Ger$Zertifikat$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_FirewallIndex$
+$Zy_Eng$The firewall blocks unauthorized accesses to your network. Drag and drop the indicator to set a security level. Also note that a higher firewall level means more restrictions to the Internet activities you want to do.$
+$Zy_Tur$G&#252;venlik duvar&#305;, bilgisayar a&#287;&#305;n&#305;za yetkisiz eri&#351;imleri engellemektedir. Bir g&#252;venlik seviyesi olu&#351;turmak i&#231;in g&#246;stergeyi istenilen seviyeye s&#252;r&#252;kleyiniz. Ayr&#305;ca daha y&#252;ksek bir g&#252;venlik duvar&#305; seviyesinin, &#160;yerine getirmek istedi&#287;iniz internet faaliyetlerini daha &#231;ok k&#305;s&#305;tlayaca&#287;&#305; anlam&#305;na geldi&#287;ini unutmay&#305;n.$
+$Zy_Ger$Die Firewall blockiert unbefugten Zugriff auf Ihr Netzwerk. Um eine Sicherheitsebene einzustellen, ziehen Sie den blauen Indikator auf die gew&#252;nschte Ebene und lassen ihn dort los. Beachten Sie auch, dass eine h&#246;here Firewall-Ebene mehr Einschr&#228;nkungen f&#252;r Ihre Aktivit&#228;ten im Internet bedeutet.$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_LAN_to_WAN$
+$Zy_Eng$LAN to WAN$
+$Zy_Tur$LAN&#8217;dan WAN&#8217;a$
+$Zy_Ger$LAN zu WAN$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_WAN_to_LAN$
+$Zy_Eng$WAN to LAN$
+$Zy_Tur$WAN&#8217;dan LAN&#8217;a$
+$Zy_Ger$WAN zu LAN$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_WAN_to_ROUTER$
+$Zy_Eng$WAN to ROUTER$
+$Zy_Tur$WAN&#8217;dan ROUTER&#8217;a$
+$Zy_Ger$WAN zu ROUTER$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_LAN_to_ROUTER$
+$Zy_Eng$LAN to ROUTER$
+$Zy_Tur$LAN&#8217;dan ROUTER&#8217;a$
+$Zy_Ger$LAN zu ROUTER$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Low$
+$Zy_Eng$Low$
+$Zy_Tur$D&#252;&#351;&#252;k$
+$Zy_Ger$Niedrig$
+$Zy_Fre$Faible$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Medium$
+$Zy_Eng$Medium$
+$Zy_Tur$Orta $
+$Zy_Ger$Mittel$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Recommended$
+$Zy_Eng$(Recommended)$
+$Zy_Tur$(&#214;nerilen)$
+$Zy_Ger$(Empfohlen)$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_High$
+$Zy_Eng$High$
+$Zy_Tur$Y&#252;ksek$
+$Zy_Ger$Hoch$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Note_Str1$
+$Zy_Eng$LAN to WAN: Allow access to all internet services$
+$Zy_Tur$LAN&#8217;dan WAN&#8217;a: B&#252;t&#252;n internet hizmetlerine eri&#351;im sa&#287;lans&#305;n.$
+$Zy_Ger$LAN zu WAN: Zugriff auf alle Internet-Dienste zulassen$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Note_Str2$
+$Zy_Eng$WAN to LAN: Allow access from other computers on the Internet$
+$Zy_Tur$WAN&#8217;dan LAN&#8217;a: &#304;nternette olan di&#287;er bilgisayarlardan eri&#351;im sa&#287;lans&#305;n.$
+$Zy_Ger$WAN zu LAN: Zugriff von anderen Computern auf das Internet zulassen$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Note_Str3$
+$Zy_Eng$When the security level is set to \'High\', access to the following services is allowed: Telnet, FTP, HTTP, HTTPS, DNS, IMAP, POP3 and SMTP$
+$Zy_Tur$G&#252;venlik d&#252;zeyi &#8216;Y&#252;ksek&#8217; olarak ayarland&#305;&#287;&#305; zaman altta belirtilmi&#351; olan hizmetlere eri&#351;im sa&#287;lanmaktad&#305;r: Telnet, FTP, http, HTTPS, DNS, IMAP, POP3 ve SMTP$
+$Zy_Ger$Wenn die Sicherheitsebene auf \'Hoch\' steht, ist der Zugriff auf die folgenden Services zugelassen: Telnet, FTP, HTTP, HTTPS, DNS, IMAP, POP3 und SMTP$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Note_Str4$
+$Zy_Eng$Each entry in the following table represents a application or a set of custom protocol rules. It is a re-usable object and should be used in conjunction with ACL Rules in Access Control.$
+$Zy_Tur$A&#351;a&#287;&#305;da belirtilmi&#351; olan &#231;izelge tablosuna yap&#305;lan her giri&#351; bir veya bir tak&#305;m &#246;zel protokol kurallar&#305;n&#305; temsil etmektedir. Yeniden kullan&#305;labilir bir nesnedir ve Eri&#351;im Kontrol&#252;&#8217;nde ACL Kurallar&#305; ile birlikte kullan&#305;lmal&#305;d&#305;r.$
+$Zy_Ger$Jeder Eintrag in der folgenden Tabelle stellt eine Anwendung oder eine Menge von benutzerdefinierten Protokollregeln dar. Es handelt sich um ein wieder verwendbares Objekt und sollte zusammen mit ACL-Regeln unter Zugriffskontrolle verwendet werden.$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_NATLoopback$
+$Zy_Eng$NATLoopBack$
+$Zy_Tur$NATLoopBack$
+$Zy_Ger$NATLoopBack$
+$Zy_Fre$NATLoopBack$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_AddService_entry$
+$Zy_Eng$Add new service entry$
+$Zy_Tur$Yeni hizmet giri&#351;i ekleyin$
+$Zy_Ger$Neuen Service-Eintrag hinzuf&#252;gen$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Add_NewService$
+$Zy_Eng$Add New Service$
+$Zy_Tur$Yeni Hizmet Ekleyin$
+$Zy_Ger$Neuen Service hinzuf&#252;gen$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_AlertMsg_Port30005$
+$Zy_Eng$Port 50805 is used for TR-069.$
+$Zy_Tur$50805 portu, TR-069 ad&#305;na kullan&#305;lmaktad&#305;r$
+$Zy_Ger$Port 50805 wird f&#252;r TR-069 verwendet.$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_AlertMsg_Port7547$
+$Zy_Eng$Port 7547 is used for TR069.$
+$Zy_Tur$7547 portu, TR069 ad&#305;na kullan&#305;lmaktad&#305;r$
+$Zy_Ger$Port 7547 wird f&#252;r TR-069 verwendet.$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Rules_Storage$
+$Zy_Eng$Rules Storage Space usage$
+$Zy_Tur$Saklama Kapasitesi kullan&#305;m&#305; ile ilgili Kurallar$
+$Zy_Ger$Genutzter Speicherplatz f&#252;r Regeln$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Service$
+$Zy_Eng$Service$
+$Zy_Tur$Hizmet$
+$Zy_Ger$Service$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_prefix_length$
+$Zy_Eng$[/prefix length]$
+$Zy_Tur$[/&#246;n ek uzunlu&#287;u]$
+$Zy_Ger$[/Pr&#228;fixl&#228;nge]$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Order$
+$Zy_Eng$Order$
+$Zy_Tur$S&#305;ralama$
+$Zy_Ger$Sortierung$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_SelectService$
+$Zy_Eng$Select Service$
+$Zy_Tur$Hizmet Se&#231;iniz$
+$Zy_Ger$Service ausw&#228;hlen$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MAC_Filter_Note$
+$Zy_Eng$Enable MAC Filter and add the MAC addresses of the LAN clients in your home or office to the following table if you wish to allow only them to access your network. Sometimes, MAC Filter is considered a method to increase the security of your network.$
+$Zy_Tur$MAC Filtresini etkinle&#351;tirin ve evinizdeki veya ofisinizdeki LAN m&#252;&#351;terilerin MAC adreslerini, e&#287;er sadece onlar&#305;n a&#287;&#305;n&#305;za eri&#351;melerine izin vermek istiyorsan&#305;z, altta belirtilen tabloya ekleyin. Bazen, MAC Filtresi bilgisayar a&#287;&#305;n&#305;z&#305;n g&#252;venli&#287;ini y&#252;kselten bir y&#246;ntem olarak g&#246;r&#252;lmektedir.$
+$Zy_Ger$Aktivieren Sie den MAC-Filter und f&#252;gen Sie die MAC-Adressen der LAN-Clients bei Ihnen zuhause oder in Ihrem B&#252;ro zur folgenden Tabelle hinzu, wenn Sie den Zugriff auf Ihr Netzwerk von ihnen zulassen wollen. Manchmal wird MAC-Filter als Methode zur Steigerung der Netzwerksicherheit angesehen.$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter$
+$Zy_Eng$MAC Address Filter$
+$Zy_Tur$MAC Adresi Filtresi $
+$Zy_Ger$MAC-Adressen-Filter$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_Note2$
+$Zy_Eng$Only devices listed here are granted access to the network.$
+$Zy_Tur$Sadece burada listelenmi&#351; olan ayg&#305;tlara bilgisayar a&#287;&#305;na eri&#351;melerine izin verildi.$
+$Zy_Ger$Nur hier aufgelistete Ger&#228;te erhalten Zugriff auf das Netzwerk.$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_Note3$
+$Zy_Eng$settings are invalid when disabled$
+$Zy_Tur$Ayarlar devre d&#305;&#351;&#305; b&#305;rak&#305;ld&#305;&#287;&#305; zaman ge&#231;ersiz olacakt&#305;r. $
+$Zy_Ger$wenn deaktiviert, gelten Einstellungen nicht$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_Note4$
+$Zy_Eng$To limit the time of using Internet or to prevent family members from inappropriate contents and online activities, the administrator can define Parental Control Profile (PCP) to a specific home network user. A maximum of 20 profiles can be created.$
+$Zy_Tur$Internet kullan&#305;m&#305;n s&#252;resini s&#305;n&#305;rlamak veya aile bireylerini uygunsuz i&#231;eriklerden ve &#231;evrim i&#231;i faaliyetlerden korumak ad&#305;na, y&#246;netici &#246;zel bir ev a&#287;&#305; kullan&#305;c&#305;s&#305;na Ebeveyn Kontrol Profili (EKP) tan&#305;mlayabilir.  Azami olarak 20 profil olu&#351;turulabilir.$
+$Zy_Ger$Um die Zeit einzuschr&#228;nken, in der das Internet verwendet werden kann, oder um Familienmitglieder daran zu hindern, ungeeignete Inhalte zu verwenden und unangemessene Online-Aktivit&#228;ten durchzuf&#252;hren, kann der Administrator das PCP-Profil (Parental Control Profile) f&#252;r einen bestimmten Nutzer des Heimnetzwerks definieren. Es k&#246;nnen maximal 20 Profile erstellt werden.$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Dos_Note3$
+$Zy_Eng$When firewall is disabled , the DoS and Deny Ping can not setup.$
+$Zy_Tur$G&#252;venlik duvar&#305; devre d&#305;&#351;&#305; b&#305;rak&#305;ld&#305;&#287;&#305; zaman, DOS ve Ping&#39;e yan&#305;t ayarlanamaz. $
+$Zy_Ger$Wenn die Firewall deaktiviert ist, k&#246;nnen weder DoS noch Ping abgewiesen werden.$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Dos_Note4$
+$Zy_Eng$DoS Protection Blocking$
+$Zy_Tur$DoS Korumas&#305;n&#305; Engelleme$
+$Zy_Ger$DoS-Schutz$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Dos_Note5$
+$Zy_Eng$Deny Ping Response$
+$Zy_Tur$Ping Yan&#305;t&#305;n&#305; Reddet$
+$Zy_Ger$Ping-Antwort unterdr&#252;cken$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Dos_Note6$
+$Zy_Eng$Ping Death Protection$
+$Zy_Tur$Ping Öl&#252;m Koruma$ 
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_MACFilter_HostName$
+$Zy_Eng$Host name$
+$Zy_Tur$Kullan&#305;c&#305;$
+$Zy_Ger$Hostname$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str18$
+$Zy_Eng$PCP Edit$
+$Zy_Tur$EKP D&#252;zenle$
+$Zy_Ger$PCP bearbeiten$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str19$
+$Zy_Eng$Home Network User$
+$Zy_Tur$Ev A&#287;&#305; Kullan&#305;c&#305;s&#305;$
+$Zy_Ger$Nutzer des Heimnetzwerks$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Security_ParentalControl_Str20$
+$Zy_Eng$MAC$
+$Zy_Tur$MAC$
+$Zy_Ger$MAC$
+$Zy_Fre$MAC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str21$
+$Zy_Eng$PCP Name$
+$Zy_Tur$EKP Ad&#305;$
+$Zy_Ger$PCP-Name$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str22$
+$Zy_Eng$Internet Access Schedule$
+$Zy_Tur$Internet Eri&#351;im Zamanlama Plan&#305;$
+$Zy_Ger$Zeitplan f&#252;r Internetzugang$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str23$
+$Zy_Eng$Network Service$
+$Zy_Tur$A&#287; Hizmetleri$
+$Zy_Ger$Netzwerk-Service$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str24$
+$Zy_Eng$Website Blocked$
+$Zy_Tur$Web site Engellenmi&#351;tir$
+$Zy_Ger$Website blockiert$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str25$
+$Zy_Eng$Everyday$
+$Zy_Tur$Her g&#252;n $
+$Zy_Ger$Jeden Tag$
+$Zy_Fre$Certificat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str26$
+$Zy_Eng$Monday$
+$Zy_Tur$Pazartesi$
+$Zy_Ger$Montag$
+$Zy_Fre$Lundi$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str27$
+$Zy_Eng$Tuesday$
+$Zy_Tur$Sal&#305;$
+$Zy_Ger$Dienstag$
+$Zy_Fre$Mardi$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str28$
+$Zy_Eng$Wednesday$
+$Zy_Tur$&#199;ar&#351;amba$
+$Zy_Ger$Mittwoch$
+$Zy_Fre$Mercredi$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str29$
+$Zy_Eng$Thursday$
+$Zy_Tur$Per&#351;embe$
+$Zy_Ger$Donnerstag$
+$Zy_Fre$Jeudi$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str30$
+$Zy_Eng$Friday$
+$Zy_Tur$Cuma $
+$Zy_Ger$Freitag$
+$Zy_Fre$Vendredi$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str31$
+$Zy_Eng$Saturday$
+$Zy_Tur$Cumartesi$
+$Zy_Ger$Samstag$
+$Zy_Fre$Samedi$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str32$
+$Zy_Eng$Sunday$
+$Zy_Tur$Pazar$
+$Zy_Ger$Sonntag$
+$Zy_Fre$Dimanche$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str33$
+$Zy_Eng$Time (Start - End)$
+$Zy_Tur$S&#252;re (Ba&#351;lang&#305;&#231; - Son)$
+$Zy_Ger$Zeit (Anfang - Ende)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str34$
+$Zy_Eng$No access$
+$Zy_Tur$Eri&#351;im yok$
+$Zy_Ger$Kein Zugriff$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str35$
+$Zy_Eng$Authorized access$
+$Zy_Tur$Yetkili Eri&#351;im$
+$Zy_Ger$Autorisierter Zugriff$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str36$
+$Zy_Eng$selected service(s)$
+$Zy_Tur$Se&#231;ilmi&#351; Hizmet(ler)$
+$Zy_Ger$ausgew&#228;hlte Services$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str37$
+$Zy_Eng$Blocked Site/URL Keyword$
+$Zy_Tur$Engellenmi&#351; Site/URL Anahtar kelime$
+$Zy_Ger$Blockierte Site/URL-Schl&#252;sselwort$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str38$
+$Zy_Eng$Example$
+$Zy_Tur$&#214;rnek$
+$Zy_Ger$Beispiel$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str39$
+$Zy_Eng$Block$
+$Zy_Tur$Engelle$
+$Zy_Ger$Blockiert$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str41$
+$Zy_Eng$UserDefined$
+$Zy_Tur$Kullanıcı Tanımlı$
+$Zy_Ger$Benutzerdefiniert$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str42$
+$Zy_Eng$XboxLive$
+$Zy_Tur$XboxLive$
+$Zy_Ger$XboxLive$
+$Zy_Fre$XboxLive$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str43$
+$Zy_Eng$HTTPS$
+$Zy_Tur$HTTPS$
+$Zy_Ger$HTTPS$
+$Zy_Fre$HTTPS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str44$
+$Zy_Eng$IPSEC_IKE$
+$Zy_Tur$IPSEC_IKE$
+$Zy_Ger$IPSEC_IKE$
+$Zy_Fre$IPSEC_IKE$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str45$
+$Zy_Eng$MicrosoftRemoteDesktop$
+$Zy_Tur$Microsoft Uzak Masa&#252;st&#252;$
+$Zy_Ger$MicrosoftRemoteDesktop$
+$Zy_Fre$MicrosoftRemoteDesktop$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str46$
+$Zy_Eng$NetMeeting$
+$Zy_Tur$NetMeeting$
+$Zy_Ger$Netmeeting$
+$Zy_Fre$Netmeeting$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str47$
+$Zy_Eng$POP3$
+$Zy_Tur$POP3$
+$Zy_Ger$POP3$
+$Zy_Fre$POP3$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str48$
+$Zy_Eng$PPTP$
+$Zy_Tur$PPTP$
+$Zy_Ger$PPTP$
+$Zy_Fre$PPTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str49$
+$Zy_Eng$SMTP$
+$Zy_Tur$SMTP$
+$Zy_Ger$SMTP$
+$Zy_Fre$SMTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str50$
+$Zy_Eng$SSH$
+$Zy_Tur$SSH$
+$Zy_Ger$SSH$
+$Zy_Fre$SSH$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str51$
+$Zy_Eng$VNC$
+$Zy_Tur$VNC$
+$Zy_Ger$VNC$
+$Zy_Fre$VNC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str52$
+$Zy_Eng$Port$
+$Zy_Tur$Port $
+$Zy_Ger$Port$
+$Zy_Fre$Port$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Firewalltext$
+$Zy_Eng$Prevent DoS attack$
+$Zy_Tur$Dos sald&#305;r&#305;lar&#305;n&#305; engelle$
+$Zy_Ger$DoS-Angriff verhindern$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Firewall_Custom$
+$Zy_Eng$Custom$
+$Zy_Tur$&#214;zel $
+$Zy_Ger$Benutzerdefiniert$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Firewall_All$
+$Zy_Eng$All$
+$Zy_Tur$Hepsi$
+$Zy_Ger$Alle$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_Str53$
+$Zy_Eng$Web browsing service(HTTP) is not available.$
+$Zy_Tur$Web taray&#305;c&#305; servisleri(HTTP) kullan&#305;labilir durumda de&#287;ildir.$
+$Zy_Ger$Web-Browsing-Service (HTTP) ist nicht verf&#252;gbar.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Security_FirewallGeneral_AlertMsg_Str51$
+$Zy_Eng$Port 50805 is used for TR-069 and the user is not allowed to set ACL rules for this port.$
+$Zy_Tur$Port 50805, TR-069 i&#231;in kullan&#305;lmaktad&#305;r ve kullan&#305;c&#305;n&#305;n bu port i&#231;in ACL kurallar&#305; girmesine izin vermemektedir.$
+$Zy_Ger$Port 50805 wird f&#252;r TR-069 verwendet. Sie d&#252;rfen die ACL-Regeln f&#252;r diesen Port nicht festlegen.$
+$Zy_Fre$Le port 50805 est utilis&#233; pour TR-069 et ne permet pas &#224; l&#39;utilisateur de d&#233;finir des r&#232;gles ACL pour ce port.$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Security_Certificates_Str61$
+$Zy_Eng$Please input the password.$
+$Zy_Tur$L&#252;tfen &#351;ifreyi giriniz.$
+$Zy_Ger$Bitte geben Sie das Kennwort ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Security_ParentalControl_AlertMsg_Str11$
+$Zy_Eng$Please enter a profile name$
+$Zy_Tur$L&#252;tfen profil ad&#305;n&#305; giriniz.$
+$Zy_Ger$Bitte geben Sie einen Profilnamen ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_AlertMsg_Str12$
+$Zy_Eng$Please enter valid profile name: No special characters.$
+$Zy_Tur$L&#252;tfen ge&#231;erli bir profil ad&#305; giriniz: &#214;zel karakterler hari&#231;$
+$Zy_Ger$Bitte g&#252;ltigen Profilnamen eingeben: Ohne Sonderzeichen.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_AlertMsg_Str13$
+$Zy_Eng$The browser does not support XMLHttp Object.$
+$Zy_Tur$Tray&#305;c&#305;n&#305;c XML, Http Nesnesini desteklememektedir.$
+$Zy_Ger$Der Browser unterst&#252;tzt XMLHttp Objekt nicht.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_AlertMsg_Str14$
+$Zy_Eng$This rule already exists, please set up new rule again.$
+$Zy_Tur$Bu kural zaten vard&#305;r, l&#252;tfen tekrar yeni bir kural olu&#351;turunuz.$
+$Zy_Ger$Diese Regel besteht bereits, bitte richten Sie eine neue Regel ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_AlertMsg_Str15$
+$Zy_Eng$The Service Name cannot be empty. Please enter the Service Name for your account.$
+$Zy_Tur$Servis Ad&#305; bo&#351; olamaz. L&#252;tfen hesab&#305;n&#305;z&#305;n Servis Ad&#305;&#39;n&#305; giriniz.$
+$Zy_Ger$Der Service-Name darf nicht leer sein. Bitte geben Sie den Service-Namen f&#252;r Ihr Konto ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_AlertMsg_Str16$
+$Zy_Eng$The Port cannot be empty. Please enter at least one port for your service.$
+$Zy_Tur$Port bo&#351; olamaz.L&#252;tfen servisinizin en az bir portunu giriniz.$
+$Zy_Ger$Der Port darf nicht leer sein. Bitte geben Sie mindestens einen Port f&#252;r Ihren Service ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_AlertMsg_Str17$
+$Zy_Eng$Port range error !(1-65535)$
+$Zy_Tur$Port aral&#305;&#287;&#305; hatas&#305;! (1-65535)$
+$Zy_Ger$Fehler bei Portbereich (1-65535)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_AlertMsg_Str18$
+$Zy_Eng$Port range error! The end port must great than start port.$
+$Zy_Tur$Port aral&#305;&#287;&#305; hatas&#305;! Biti&#351; portu ba&#351;lang&#305;&#231; potundan b&#252;y&#252;k olmal&#305;d&#305;r.$
+$Zy_Ger$Fehler bei Portbereich! Letzter Port muss gr&#246;&#223;er als erster Port sein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_AlertMsg_Str19$
+$Zy_Eng$The service ports are out of range. The total number is 8 for different ports.$
+$Zy_Tur$Servis portlar&#305; aral&#305;k d&#305;&#351;&#305;ndad&#305;r. De&#287;i&#351;ik portlar i&#231;in toplam say&#305; 8&#39;dir.$
+$Zy_Ger$Die Anzahl der Service-Ports liegt au&#223;erhalb des zul&#228;ssigen Bereichs. Insgesamt sind 8 verschiedene Ports m&#246;glich.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_AlertMsg_Str20$
+$Zy_Eng$The number of keywords is out of range. Please remove some keywords after adding blocked site.$
+$Zy_Tur$Anahtar kelime say&#305;s&#305; aral&#305;k d&#305;&#351;&#305;ndad&#305;r. Engellenmi&#351; siteleri ekledikten sonra l&#252;tfen baz&#305; anahtar kelimeleri kald&#305;r&#305;n&#305;z.$
+$Zy_Ger$Die Anzahl der Schl&#252;sselw&#246;rter liegt au&#223;erhalb des zul&#228;ssigen Bereichs. Bitte entfernen Sie einige Schl&#252;sselw&#246;rter, nachdem Sie eine blockierte Site hinzugef&#252;gt haben.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_ParentalControl_AlertMsg_Str21$
+$Zy_Eng$There are duplicate keywords. Please input another keyword.$
+$Zy_Tur$Tekrar eden anahtar kelimedir. L&#252;tfen ba&#351;ka bir anahtar kelime giriniz.$
+$Zy_Ger$Schl&#252;sselw&#246;rter kommen doppelt vor. Bitte geben Sie ein anderes Schl&#252;sselwort ein.$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str1$
+$Zy_Eng$AD (Andorra)$
+$Zy_Tur$AD (Andorra)$
+$Zy_Ger$AD (Andorra)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str2$
+$Zy_Eng$AE (United Arab Emirates)$
+$Zy_Tur$AE (Birleşik Arap Emirlikleri)$
+$Zy_Ger$AE (Vereinigte Arabische Emirate)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str3$
+$Zy_Eng$AF (Afghanistan)$
+$Zy_Tur$AF (Afganistan)$
+$Zy_Ger$AF (Afghanistan)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str4$
+$Zy_Eng$AG (Antigua and Barbuda)$
+$Zy_Tur$AG (Antigua and Barbuda)$
+$Zy_Ger$AG (Antigua und Barbuda)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str5$
+$Zy_Eng$AI (Anguilla)$
+$Zy_Tur$AI (Anguilla)$
+$Zy_Ger$AI (Anguilla)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str6$
+$Zy_Eng$AL (Albania)$
+$Zy_Tur$AL (Arnavutluk)$
+$Zy_Ger$AL (Albanien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str7$
+$Zy_Eng$AM (Armenia)$
+$Zy_Tur$AM (Armenia)$
+$Zy_Ger$AM (Armenien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str8$
+$Zy_Eng$AN (Netherlands Antilles)$
+$Zy_Tur$AN (Hollanda Antilleri)$
+$Zy_Ger$AN (Niederländische Antillen)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str9$
+$Zy_Eng$AO (Angola)$
+$Zy_Tur$AO (Angola)$
+$Zy_Ger$AO (Angola)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str10$
+$Zy_Eng$AQ (Antarctica)$
+$Zy_Tur$AQ (Antartika)$
+$Zy_Ger$AQ (Antarktis)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str11$
+$Zy_Eng$AR (Argentina)$
+$Zy_Tur$AR (Arjantin)$
+$Zy_Ger$AR (Argentinien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str12$
+$Zy_Eng$AS (American Samoa)$
+$Zy_Tur$AS (Amerikan Samoası)$
+$Zy_Ger$AS (Amerikanisch Samoa)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str13$
+$Zy_Eng$AT (Austria)$
+$Zy_Tur$AT (Avusturya)$
+$Zy_Ger$AT (Österreich)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str14$
+$Zy_Eng$AU (Australia)$
+$Zy_Tur$AU (Avustralya)$
+$Zy_Ger$AU (Australien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str15$
+$Zy_Eng$AW (Aruba)$
+$Zy_Tur$AW (Aruba)$
+$Zy_Ger$AW (Aruba)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str16$
+$Zy_Eng$AZ (Azerbaijan)$
+$Zy_Tur$AZ (Azerbaycan)$
+$Zy_Ger$AZ (Aserbaidschan)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str17$
+$Zy_Eng$BA (Bosnia and Herzegovina)$
+$Zy_Tur$BA (Bosna Hersek)$
+$Zy_Ger$BA (Bosnien und Herzegowina)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str18$
+$Zy_Eng$BB (Barbados)$
+$Zy_Tur$BB (Barbados)$
+$Zy_Ger$BB (Barbados)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str19$
+$Zy_Eng$BD (Bangladesh)$
+$Zy_Tur$BD (Bangladeş)$
+$Zy_Ger$BD (Bangladesch)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str20$
+$Zy_Eng$BE (Belgium)$
+$Zy_Tur$BE (Belçika)$
+$Zy_Ger$BE (Belgien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str21$
+$Zy_Eng$BF (Burkina Faso)$
+$Zy_Tur$BF (Burkina Faso)$
+$Zy_Ger$BF (Burkina Faso)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str22$
+$Zy_Eng$BG (Bulgaria)$
+$Zy_Tur$BG (Bulgaristan)$
+$Zy_Ger$BG (Bulgarien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str23$
+$Zy_Eng$BH (Bahrain)$
+$Zy_Tur$BH (Bahreyn)$
+$Zy_Ger$BH (Bahrain)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str24$
+$Zy_Eng$BI (Burundi)$
+$Zy_Tur$BI (Burundi)$
+$Zy_Ger$BI (Burundi)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str25$
+$Zy_Eng$BJ (Benin)$
+$Zy_Tur$BJ (Benin)$
+$Zy_Ger$BJ (Benin)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str26$
+$Zy_Eng$BM (Bermuda)$
+$Zy_Tur$BM (Bermuda)$
+$Zy_Ger$BM (Bermuda)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str27$
+$Zy_Eng$BN (Brunei)$
+$Zy_Tur$BN (Brunei)$
+$Zy_Ger$BN (Brunei)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str28$
+$Zy_Eng$BO (Bolivia)$
+$Zy_Tur$BO (Bolivya)$
+$Zy_Ger$BO (Bolivien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str29$
+$Zy_Eng$BR (Brazil)$
+$Zy_Tur$BR (Brezilya)$
+$Zy_Ger$BR (Brasilien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str30$
+$Zy_Eng$BS (Bahamas)$
+$Zy_Tur$BS (Bahamalar)$
+$Zy_Ger$BS (Bahamas)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str31$
+$Zy_Eng$BT (Bhutan)$
+$Zy_Tur$BT (Bhutan)$
+$Zy_Ger$BT (Bhutan)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str32$
+$Zy_Eng$BV (Bouvet Islands)$
+$Zy_Tur$BV (Bouvet Adaları)$
+$Zy_Ger$BV (Bouvetinsel)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str33$
+$Zy_Eng$BW (Botswana)$
+$Zy_Tur$BW (Botswana)$
+$Zy_Ger$BW (Botswana)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str34$
+$Zy_Eng$BY (Belarus)$
+$Zy_Tur$BY (Belarus)$
+$Zy_Ger$BY (Weißrussland)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str35$
+$Zy_Eng$CA (Canada)$
+$Zy_Tur$CA (Kanada)$
+$Zy_Ger$CA (Kanada)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str36$
+$Zy_Eng$CC (Cocos Keeling)$
+$Zy_Tur$CC (Cocos Keeling)$
+$Zy_Ger$CC (Kokosinseln)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str37$
+$Zy_Eng$CD (Congo(DRC))$
+$Zy_Tur$CD (Kongo(DRC))$
+$Zy_Ger$CD (Demokratische Republik Kongo)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str38$
+$Zy_Eng$CF (Central African Republic)$
+$Zy_Tur$CF (Merkezi Afrika Cumhuriyeti)$
+$Zy_Ger$CF (Zentralafrikanische Republik)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str39$
+$Zy_Eng$CG (Congo)$
+$Zy_Tur$CG (Kongo)$
+$Zy_Ger$CG (Republik Kongo)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str40$
+$Zy_Eng$CH (Switzerland)$
+$Zy_Tur$CH (Switzerland)$
+$Zy_Ger$CH (Schweiz)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str41$
+$Zy_Eng$CI (Cote D'lvoire)$
+$Zy_Tur$CI (Cote D'lvoire)$
+$Zy_Ger$CI (Elfenbeinküste)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str42$
+$Zy_Eng$CK (Cook Islands)$
+$Zy_Tur$CK (Cook Islands)$
+$Zy_Ger$CK (Cookinseln)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str43$
+$Zy_Eng$CL (Chile)$
+$Zy_Tur$CL (Şili)$
+$Zy_Ger$CL (Chile)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str44$
+$Zy_Eng$CM (Cameroon)$
+$Zy_Tur$CM (Kamerun)$
+$Zy_Ger$CM (Kamerun)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str45$
+$Zy_Eng$CN (China)$
+$Zy_Tur$CN (Çin)$
+$Zy_Ger$CN (China)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str46$
+$Zy_Eng$CO (Colombia)$
+$Zy_Tur$CO (Kolombiya)$
+$Zy_Ger$CO (Kolumbien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str47$
+$Zy_Eng$CR (Costa Rica)$
+$Zy_Tur$CR (Costa Rica)$
+$Zy_Ger$CR (Costa Rica)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str48$
+$Zy_Eng$CU (Cuba)$
+$Zy_Tur$CU (Küba)$
+$Zy_Ger$CU (Kuba)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str49$
+$Zy_Eng$CV (Cape Verde)$
+$Zy_Tur$CV (Cape Verde)$
+$Zy_Ger$CV (Kap Verde)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str50$
+$Zy_Eng$CX (Chrismas Island)$
+$Zy_Tur$CX (Chrismas Island)$
+$Zy_Ger$CX (Weihnachtsinsel)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str51$
+$Zy_Eng$CY (Cyprus)$
+$Zy_Tur$CY (Kıbrıs)$
+$Zy_Ger$CY (Zypern)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str52$
+$Zy_Eng$CZ (Czech Republic)$
+$Zy_Tur$CZ (Çek Cumhuriyeti)$
+$Zy_Ger$CZ (Tschechien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str53$
+$Zy_Eng$DE (Germany)$
+$Zy_Tur$DE (Almanya)$
+$Zy_Ger$DE (Deutschland)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str54$
+$Zy_Eng$DJ (Djibouti)$
+$Zy_Tur$DJ (Djibouti)$
+$Zy_Ger$DJ (Dschibuti)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str55$
+$Zy_Eng$DK (Denmark)$
+$Zy_Tur$DK (Danimarka)$
+$Zy_Ger$DK (Dänemark)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str56$
+$Zy_Eng$DM (Dominica)$
+$Zy_Tur$DM (Dominica)$
+$Zy_Ger$DM (Dominica)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str57$
+$Zy_Eng$DO (Dominican Republic)$
+$Zy_Tur$DO (Dominik Cumhuriyeti)$
+$Zy_Ger$DO (Dominikanische Republik)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str58$
+$Zy_Eng$DZ (Algeria)$
+$Zy_Tur$DZ (Cezayir)$
+$Zy_Ger$DZ (Algerien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str59$
+$Zy_Eng$EC (Ecuador)$
+$Zy_Tur$EC (Ekvador)$
+$Zy_Ger$EC (Ecuador)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str60$
+$Zy_Eng$EE (Estonia)$
+$Zy_Tur$EE (Estonya)$
+$Zy_Ger$EE (Estland)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str61$
+$Zy_Eng$EG (Egypt)$
+$Zy_Tur$EG (Mısır)$
+$Zy_Ger$EG (Ägypten)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str62$
+$Zy_Eng$ER (Eritrea)$
+$Zy_Tur$ER (Eritrea)$
+$Zy_Ger$ER (Eritrea)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str63$
+$Zy_Eng$ES (Spain)$
+$Zy_Tur$ES (İspanya)$
+$Zy_Ger$ES (Spanien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str64$
+$Zy_Eng$ET (Ethiopia)$
+$Zy_Tur$ET (Etiyopya)$
+$Zy_Ger$ET (Äthiopien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str65$
+$Zy_Eng$FI (Finland)$
+$Zy_Tur$FI (Finlandiya)$
+$Zy_Ger$FI (Finnland)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str66$
+$Zy_Eng$FJ (Fiji Islands)$
+$Zy_Tur$FJ (Fiji Islands)$
+$Zy_Ger$FJ (Fidschi)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str67$
+$Zy_Eng$FK (Falkland Islands)$
+$Zy_Tur$FK (Falkland Islands)$
+$Zy_Ger$FK (Falklandinseln)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str68$
+$Zy_Eng$FM (Micronesia)$
+$Zy_Tur$FM (Micronesia)$
+$Zy_Ger$FM (Mikronesien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str69$
+$Zy_Eng$FR (France)$
+$Zy_Tur$FR (Fransa)$
+$Zy_Ger$FR (Frankreich)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str70$
+$Zy_Eng$FX (France, Metropolit)$
+$Zy_Tur$FX (Fransa, Metropolit)$
+$Zy_Ger$FX (Frankreich, Festland)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str71$
+$Zy_Eng$GA (Gabon)$
+$Zy_Tur$GA (Gabon)$
+$Zy_Ger$GA (Gabun)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str72$
+$Zy_Eng$GB (United Kingdom)$
+$Zy_Tur$GB (Büyük Britanya)$
+$Zy_Ger$GB (Vereinigtes Königreich)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str73$
+$Zy_Eng$GD (Grenada)$
+$Zy_Tur$GD (Grenada)$
+$Zy_Ger$GD (Grenada)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str74$
+$Zy_Eng$GE (Georgia)$
+$Zy_Tur$GE (Georgia)$
+$Zy_Ger$GE (Georgien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str75$
+$Zy_Eng$GF (French Guiana)$
+$Zy_Tur$GF (French Guiana)$
+$Zy_Ger$GF (Französisch Guayana)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str76$
+$Zy_Eng$GH (Ghana)$
+$Zy_Tur$GH (Gana)$
+$Zy_Ger$GH (Ghana)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str77$
+$Zy_Eng$GI (Gibraltar)$
+$Zy_Tur$GI (Gibraltar)$
+$Zy_Ger$GI (Gibraltar)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str78$
+$Zy_Eng$GL (Greenland)$
+$Zy_Tur$GL (Grönland)$
+$Zy_Ger$GL (Grönland)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str79$
+$Zy_Eng$GM (Gambia, The)$
+$Zy_Tur$GM (Gambia, The)$
+$Zy_Ger$GM (Gambia)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str80$
+$Zy_Eng$GN (Guinea)$
+$Zy_Tur$GN (Gine)$
+$Zy_Ger$GN (Guinea)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str81$
+$Zy_Eng$GP (Guadeloupe)$
+$Zy_Tur$GP (Guadeloupe)$
+$Zy_Ger$GP (Guadeloupe)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str82$
+$Zy_Eng$GQ (Equatoria Guinea)$
+$Zy_Tur$GQ (Equatoria Gine)$
+$Zy_Ger$GQ (Äquatorialguinea)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str83$
+$Zy_Eng$GR (Greece)$
+$Zy_Tur$GR (Yunanistan)$
+$Zy_Ger$GR (Griechenland)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str84$
+$Zy_Eng$GS (South Georgia And the South Sandwich Islands)$
+$Zy_Tur$GS (Güney Georgia ve Güney Sandwich Adaları)$
+$Zy_Ger$GS (Sügeorgien und die Südlichen Sandwichinseln)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str85$
+$Zy_Eng$GT (Guatemala)$
+$Zy_Tur$GT (Guatemala)$
+$Zy_Ger$GT (Guatemala)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str86$
+$Zy_Eng$GU (Guam)$
+$Zy_Tur$GU (Guam)$
+$Zy_Ger$GU (Guam)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str87$
+$Zy_Eng$GW (Guinea-Bissau)$
+$Zy_Tur$GW (Guinea-Bissau)$
+$Zy_Ger$GW (Guinea-Bissau)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str88$
+$Zy_Eng$GY (Guyana)$
+$Zy_Tur$GY (Guyana)$
+$Zy_Ger$GY (Guyana)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str89$
+$Zy_Eng$HK (Hong Kong S.A.R)$
+$Zy_Tur$HK (Hong Kong S.A.R)$
+$Zy_Ger$HK (Hongkong)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str90$
+$Zy_Eng$HM (Heard and McDo)$
+$Zy_Tur$HM (Heard and McDo)$
+$Zy_Ger$HM (Heard und McDonaldinseln)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str91$
+$Zy_Eng$HN (Honduras)$
+$Zy_Tur$HN (Honduras)$
+$Zy_Ger$HN (Honduras)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str92$
+$Zy_Eng$HR (Croatia)$
+$Zy_Tur$HR (Hırvatistan)$
+$Zy_Ger$HR (Kroatien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str93$
+$Zy_Eng$HT (Haiti)$
+$Zy_Tur$HT (Haiti)$
+$Zy_Ger$HT (Haiti)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str94$
+$Zy_Eng$HU (Hungary)$
+$Zy_Tur$HU (Macaristan)$
+$Zy_Ger$HU (Ungarn)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str95$
+$Zy_Eng$ID (Indonesia)$
+$Zy_Tur$ID (Endonezya)$
+$Zy_Ger$ID (Indonesien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str96$
+$Zy_Eng$IE (Ireland)$
+$Zy_Tur$IE (İrlanda)$
+$Zy_Ger$IE (Irland)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str97$
+$Zy_Eng$IL (Israel)$
+$Zy_Tur$IL (İsrail)$
+$Zy_Ger$IL (Israel)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str98$
+$Zy_Eng$IN (India)$
+$Zy_Tur$IN (Hindistan)$
+$Zy_Ger$IN (Indien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str99$
+$Zy_Eng$IO (British Indian Ocean Territory)$
+$Zy_Tur$IO (British Indian Ocean Territory)$
+$Zy_Ger$IO (Britisches Territorium im Indischen Ozean)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str100$
+$Zy_Eng$IQ (Iraq)$
+$Zy_Tur$IQ (Irak)$
+$Zy_Ger$IQ (Irak)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str101$
+$Zy_Eng$IR (Iran)$
+$Zy_Tur$IR (İran)$
+$Zy_Ger$IR (Iran)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str102$
+$Zy_Eng$IS (Iceland)$
+$Zy_Tur$IS (İzlanda)$
+$Zy_Ger$IS (Island)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str103$
+$Zy_Eng$IT (Italy)$
+$Zy_Tur$IT (İtalya)$
+$Zy_Ger$IT (Italien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str104$
+$Zy_Eng$JM (Jamaica)$
+$Zy_Tur$JM (Jamaika)$
+$Zy_Ger$JM (Jamaika)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str105$
+$Zy_Eng$JO (Jordan)$
+$Zy_Tur$JO (Jordan)$
+$Zy_Ger$JO (Jordanien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str106$
+$Zy_Eng$JP (Japan)$
+$Zy_Tur$JP (Japonya)$
+$Zy_Ger$JP (Japan)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str107$
+$Zy_Eng$KE (Kenya)$
+$Zy_Tur$KE (Kenya)$
+$Zy_Ger$KE (Kenia)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str108$
+$Zy_Eng$KG (Kyrgyzstan)$
+$Zy_Tur$KG (Kırgızistan)$
+$Zy_Ger$KG (Kirgisistan)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str109$
+$Zy_Eng$KH (Cambodia)$
+$Zy_Tur$KH (Kamboçya)$
+$Zy_Ger$KH (Kambodscha)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str110$
+$Zy_Eng$KI (Kiribati)$
+$Zy_Tur$KI (Kiribati)$
+$Zy_Ger$KI (Kiribati)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str111$
+$Zy_Eng$KM (Comoros)$
+$Zy_Tur$KM (Comoros)$
+$Zy_Ger$KM (Komoren)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str112$
+$Zy_Eng$KN (St. Kitts And Nevis)$
+$Zy_Tur$KN (St. Kitts And Nevis)$
+$Zy_Ger$KN (St. Kitts und Nevis)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str113$
+$Zy_Eng$KP (North Korea)$
+$Zy_Tur$KP (Kuzey Kore)$
+$Zy_Ger$KP (Nordkorea)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str114$
+$Zy_Eng$KR (Korea)$
+$Zy_Tur$KR (Kore)$
+$Zy_Ger$KR (Südkorea)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str115$
+$Zy_Eng$KW (Kuwait)$
+$Zy_Tur$KW (Kuveyt)$
+$Zy_Ger$KW (Kuwait)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str116$
+$Zy_Eng$KY (Cayman Islands)$
+$Zy_Tur$KY (Cayman Adaları)$
+$Zy_Ger$KY (Kaimaninseln)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str117$
+$Zy_Eng$KZ (Kazakhstan)$
+$Zy_Tur$KZ (Kazakistan)$
+$Zy_Ger$KZ (Kasachstan)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str118$
+$Zy_Eng$LA (Laos)$
+$Zy_Tur$LA (Laos)$
+$Zy_Ger$LA (Laos)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str119$
+$Zy_Eng$LB (Lebanon)$
+$Zy_Tur$LB (Lübnan)$
+$Zy_Ger$LB (Libanon)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str120$
+$Zy_Eng$LC (St. Lucia)$
+$Zy_Tur$LC (St. Lucia)$
+$Zy_Ger$LC (St. Lucia)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str121$
+$Zy_Eng$LI (Liechtenstein)$
+$Zy_Tur$LI (Liechtenstein)$
+$Zy_Ger$LI (Liechtenstein)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str122$
+$Zy_Eng$LK (Sri Lanka)$
+$Zy_Tur$LK (Sri Lanka)$
+$Zy_Ger$LK (Sri Lanka)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str123$
+$Zy_Eng$LR (Liberia)$
+$Zy_Tur$LR (Liberia)$
+$Zy_Ger$LR (Liberia)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str124$
+$Zy_Eng$LS (Lesotho)$
+$Zy_Tur$LS (Lesotho)$
+$Zy_Ger$LS (Lesotho)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str125$
+$Zy_Eng$LT (Lithuania)$
+$Zy_Tur$LT (Litvanya)$
+$Zy_Ger$LT (Litauen)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str126$
+$Zy_Eng$LU (Luxembourg)$
+$Zy_Tur$LU (Lüksemburg)$
+$Zy_Ger$LU (Luxemburg)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str127$
+$Zy_Eng$LV (Latvia)$
+$Zy_Tur$LV (Letonya)$
+$Zy_Ger$LV (Lettland)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str128$
+$Zy_Eng$LY (Libya)$
+$Zy_Tur$LY (Libya)$
+$Zy_Ger$LY (Libyen)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str129$
+$Zy_Eng$MA (Morocco)$
+$Zy_Tur$MA (Morocco)$
+$Zy_Ger$MA (Marokko)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str130$
+$Zy_Eng$MC (Monaco)$
+$Zy_Tur$MC (Monako)$
+$Zy_Ger$MC (Monaco)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str131$
+$Zy_Eng$MD (Moldova)$
+$Zy_Tur$MD (Moldova)$
+$Zy_Ger$MD (Moldawien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str132$
+$Zy_Eng$MG (Madagascar)$
+$Zy_Tur$MG (Madagaskar)$
+$Zy_Ger$MG (Madagaskar)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str133$
+$Zy_Eng$MH (Marshall Islands)$
+$Zy_Tur$MH (Marshall Adaları)$
+$Zy_Ger$MH (Marshallinseln)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str134$
+$Zy_Eng$MK (Macedonia)$
+$Zy_Tur$MK (Makedonya)$
+$Zy_Ger$MK (Mazedonien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str135$
+$Zy_Eng$ML (Mali)$
+$Zy_Tur$ML (Mali)$
+$Zy_Ger$ML (Mali)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str136$
+$Zy_Eng$MM (Myanmar)$
+$Zy_Tur$MM (Myanmar)$
+$Zy_Ger$MM (Myanmar)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str137$
+$Zy_Eng$MN (Mongolia)$
+$Zy_Tur$MN (Mongolia)$
+$Zy_Ger$MN (Mongolei)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str138$
+$Zy_Eng$MO (Macau S.A.R.)$
+$Zy_Tur$MO (Macau S.A.R.)$
+$Zy_Ger$MO (Macau)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str139$
+$Zy_Eng$MP (Northern Mariana Islands)$
+$Zy_Tur$MP (Kuzey Mariana Adaları)$
+$Zy_Ger$MP (Nördliche Marianen)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str140$
+$Zy_Eng$MQ (Martinique)$
+$Zy_Tur$MQ (Martinique)$
+$Zy_Ger$MQ (Martinique)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str141$
+$Zy_Eng$MR (Mauritania)$
+$Zy_Tur$MR (Mauritania)$
+$Zy_Ger$MR (Mauretanien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str142$
+$Zy_Eng$MS (Montserrat)$
+$Zy_Tur$MS (Montserrat)$
+$Zy_Ger$MS (Montserrat)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str143$
+$Zy_Eng$MT (Malta)$
+$Zy_Tur$MT (Malta)$
+$Zy_Ger$MT (Malta)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str144$
+$Zy_Eng$MU (Mauritius)$
+$Zy_Tur$MU (Mauritius)$
+$Zy_Ger$MU (Mauritius)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str145$
+$Zy_Eng$MV (Maldives)$
+$Zy_Tur$MV (Maldivler)$
+$Zy_Ger$MV (Malediven)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str146$
+$Zy_Eng$MW (Malawi)$
+$Zy_Tur$MW (Malawi)$
+$Zy_Ger$MW (Malawi)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str147$
+$Zy_Eng$MX (Mexico)$
+$Zy_Tur$MX (Meksika)$
+$Zy_Ger$MX (Mexiko)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str148$
+$Zy_Eng$MY (Malaysia)$
+$Zy_Tur$MY (Malaysia)$
+$Zy_Ger$MY (Malaysia)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str149$
+$Zy_Eng$MZ (Mozambique)$
+$Zy_Tur$MZ (Mozambique)$
+$Zy_Ger$MZ (Mosambik)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str150$
+$Zy_Eng$NA (Namibia)$
+$Zy_Tur$NA (Namibia)$
+$Zy_Ger$NA (Namibia)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Security_Certificates_Country_Str151$
+$Zy_Eng$NC (New Caledonia)$
+$Zy_Tur$NC (New Caledonia)$
+$Zy_Ger$NC (Neukaledonien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str152$
+$Zy_Eng$NE (Niger)$
+$Zy_Tur$NE (Nijer)$
+$Zy_Ger$NE (Niger)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str153$
+$Zy_Eng$NF (Norfolk Island)$
+$Zy_Tur$NF (Norfolk Adası)$
+$Zy_Ger$NF (Norfolkinsel)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str154$
+$Zy_Eng$NG (Nigeria)$
+$Zy_Tur$NG (Nijerya)$
+$Zy_Ger$NG (Nigeria)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str155$
+$Zy_Eng$NI (Nicaragua)$
+$Zy_Tur$NI (Nikaragua)$
+$Zy_Ger$NI (Nicaragua)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str156$
+$Zy_Eng$NL (Netherlands, The)$
+$Zy_Tur$NL (Hollanda)$
+$Zy_Ger$NL (Niederlande)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str157$
+$Zy_Eng$NO (Norway)$
+$Zy_Tur$NO (Norveç)$
+$Zy_Ger$NO (Norwegen)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str158$
+$Zy_Eng$NP (Nepal)$
+$Zy_Tur$NP (Nepal)$
+$Zy_Ger$NP (Nepal)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str159$
+$Zy_Eng$NR (Nauru)$
+$Zy_Tur$NR (Nauru)$
+$Zy_Ger$NR (Nauru)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str160$
+$Zy_Eng$NU (Niue)$
+$Zy_Tur$NU (Niue)$
+$Zy_Ger$NU (Niue)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str161$
+$Zy_Eng$NZ (New Zealand)$
+$Zy_Tur$NZ (Yeni Zellanda)$
+$Zy_Ger$NZ (Neuseeland)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str162$
+$Zy_Eng$OM (Oman)$
+$Zy_Tur$OM (Oman)$
+$Zy_Ger$OM (Oman)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str163$
+$Zy_Eng$PA (Panama)$
+$Zy_Tur$PA (Panama)$
+$Zy_Ger$PA (Panama)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str164$
+$Zy_Eng$PE (Peru)$
+$Zy_Tur$PE (Peru)$
+$Zy_Ger$PE (Peru)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str165$
+$Zy_Eng$PF (French Polynesia)$
+$Zy_Tur$PF (French Polynesia)$
+$Zy_Ger$PF (Französisch-Polynesien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str166$
+$Zy_Eng$PG (Papua New Guinea)$
+$Zy_Tur$PG (Papua New Guinea)$
+$Zy_Ger$PG (Papua-Neuguinea)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str167$
+$Zy_Eng$PH (Philippines)$
+$Zy_Tur$PH (Philippines)$
+$Zy_Ger$PH (Philippinen)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str168$
+$Zy_Eng$PK (Pakistan)$
+$Zy_Tur$PK (Pakistan)$
+$Zy_Ger$PK (Pakistan)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str169$
+$Zy_Eng$PL (Poland)$
+$Zy_Tur$PL (Polanya)$
+$Zy_Ger$PL (Polen)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str170$
+$Zy_Eng$PM (St. Pierre and Miquelon)$
+$Zy_Tur$PM (St. Pierre and Miquelon)$
+$Zy_Ger$PM (St. Pierre und Miquelon)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str171$
+$Zy_Eng$PN (Pitcairn Islands)$
+$Zy_Tur$PN (Pitcairn Adaları)$
+$Zy_Ger$PN (Pitcairninseln)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str172$
+$Zy_Eng$PR (Puerto Rico)$
+$Zy_Tur$PR (Porta Riko)$
+$Zy_Ger$PR (Puerto Rico)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str173$
+$Zy_Eng$PT (Portugal)$
+$Zy_Tur$PT (Portekiz)$
+$Zy_Ger$PT (Portugal)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str174$
+$Zy_Eng$PW (Palau)$
+$Zy_Tur$PW (Palau)$
+$Zy_Ger$PW (Palau)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str175$
+$Zy_Eng$PY (Paraguay)$
+$Zy_Tur$PY (Paraguay)$
+$Zy_Ger$PY (Paraguay)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str176$
+$Zy_Eng$QA (Qatar)$
+$Zy_Tur$QA (Katar)$
+$Zy_Ger$QA (Katar)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str177$
+$Zy_Eng$RE (Reunion)$
+$Zy_Tur$RE (Reunion)$
+$Zy_Ger$RE (Reunion)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str178$
+$Zy_Eng$RO (Romania)$
+$Zy_Tur$RO (Romanya)$
+$Zy_Ger$RO (Rumänien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str179$
+$Zy_Eng$RU (Russia)$
+$Zy_Tur$RU (Rusya)$
+$Zy_Ger$RU (Russland)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str180$
+$Zy_Eng$RW (Rwanda)$
+$Zy_Tur$RW (Rwanda)$
+$Zy_Ger$RW (Ruanda)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str181$
+$Zy_Eng$SA (Saudi Arabia)$
+$Zy_Tur$SA (Suudi Arabistan)$
+$Zy_Ger$SA (Saudi-Arabien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str182$
+$Zy_Eng$SB (Solomon Islands)$
+$Zy_Tur$SB (Solomon Adaları)$
+$Zy_Ger$SB (Salomonen)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str183$
+$Zy_Eng$SC (Seychelles)$
+$Zy_Tur$SC (Seyşeller)$
+$Zy_Ger$SC (Seychellen)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str184$
+$Zy_Eng$SD (Sudan)$
+$Zy_Tur$SD (Sudan)$
+$Zy_Ger$SD (Sudan)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str185$
+$Zy_Eng$SE (Sweden)$
+$Zy_Tur$SE (İsveç)$
+$Zy_Ger$SE (Schweden)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str186$
+$Zy_Eng$SG (Singapore)$
+$Zy_Tur$SG (Singapur)$
+$Zy_Ger$SG (Singapur)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str187$
+$Zy_Eng$SH (St. Helena)$
+$Zy_Tur$SH (St. Helena)$
+$Zy_Ger$SH (St. Helena)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str188$
+$Zy_Eng$SI (Slovenia)$
+$Zy_Tur$SI (Slovenya)$
+$Zy_Ger$SI (Slowenien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str189$
+$Zy_Eng$SJ (Svalbard And Jan Mayen Islands)$
+$Zy_Tur$SJ (Svalbard ve Jan Mayen Adaları)$
+$Zy_Ger$SJ (Svalbard und Jan Mayen)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str190$
+$Zy_Eng$SK (Slovakia)$
+$Zy_Tur$SK (Slovakya)$
+$Zy_Ger$SK (Slowakei)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str191$
+$Zy_Eng$SL (Sierra Leone)$
+$Zy_Tur$SL (Sierra Leone)$
+$Zy_Ger$SL (Sierra Leone)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str192$
+$Zy_Eng$SM (San Marino)$
+$Zy_Tur$SM (San Marino)$
+$Zy_Ger$SM (San Marino)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str193$
+$Zy_Eng$SN (Senegal)$
+$Zy_Tur$SN (Senegal)$
+$Zy_Ger$SN (Senegal)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str194$
+$Zy_Eng$SO (Somalia)$
+$Zy_Tur$SO (Somalia)$
+$Zy_Ger$SO (Somalia)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str195$
+$Zy_Eng$RS (Serbia)$
+$Zy_Tur$RS (Surbistan)$
+$Zy_Ger$RS (Serbien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str196$
+$Zy_Eng$SR (Suriname)$
+$Zy_Tur$SR (Suriname)$
+$Zy_Ger$SR (Surinam)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str197$
+$Zy_Eng$ST (Sao Tome and Principe)$
+$Zy_Tur$ST (Sao Tome and Principe)$
+$Zy_Ger$ST (Sao Tome und Principe)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str198$
+$Zy_Eng$SV (El Salvador)$
+$Zy_Tur$SV (El Salvador)$
+$Zy_Ger$SV (El Salvador)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str199$
+$Zy_Eng$SY (Syria)$
+$Zy_Tur$SY (Suriye)$
+$Zy_Ger$SY (Syrien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str200$
+$Zy_Eng$SZ (Swaziland)$
+$Zy_Tur$SZ (Swaziland)$
+$Zy_Ger$SZ (Swasiland)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str201$
+$Zy_Eng$TC (Turks And Caicos Island)$
+$Zy_Tur$TC (Turks And Caicos Island)$
+$Zy_Ger$TC (Turks- und Caicosinseln)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str202$
+$Zy_Eng$TD (Chad)$
+$Zy_Tur$TD (Çad)$
+$Zy_Ger$TD (Tschad)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str203$
+$Zy_Eng$TF (French Southern Territories)$
+$Zy_Tur$TF (French Southern Territories)$
+$Zy_Ger$TF (Französische Süd- und Antarktisgebiete)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str204$
+$Zy_Eng$TG (Togo)$
+$Zy_Tur$TG (Togo)$
+$Zy_Ger$TG (Togo)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str205$
+$Zy_Eng$TH (Thailand)$
+$Zy_Tur$TH (Tayland)$
+$Zy_Ger$TH (Thailand)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str206$
+$Zy_Eng$TJ (Tajikistan)$
+$Zy_Tur$TJ (Tajikistan)$
+$Zy_Ger$TJ (Tadschikistan)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str207$
+$Zy_Eng$TK (Tokelau)$
+$Zy_Tur$TK (Tokelau)$
+$Zy_Ger$TK (Tokelau)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str208$
+$Zy_Eng$TM (Turkmenistan)$
+$Zy_Tur$TM (Türkmenistan)$
+$Zy_Ger$TM (Turkmenistan)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str209$
+$Zy_Eng$TN (Tunisia)$
+$Zy_Tur$TN (Tunus)$
+$Zy_Ger$TN (Tunesien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str210$
+$Zy_Eng$TO (Tonga)$
+$Zy_Tur$TO (Tonga)$
+$Zy_Ger$TO (Tonga)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str211$
+$Zy_Eng$TP (East Timor)$
+$Zy_Tur$TP (East Timor)$
+$Zy_Ger$TP (Osttimor)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str212$
+$Zy_Eng$TR (Turkey)$
+$Zy_Tur$TR (Türkiye)$
+$Zy_Ger$TR (Türkei)$
+$Zy_Fre$(null)$MLG_Security_IPSecVPNSetting_Str3
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str213$
+$Zy_Eng$TT (Trinidad and Tobago)$
+$Zy_Tur$TT (Trinidad and Tobago)$
+$Zy_Ger$TT (Trinidad und Tobago)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str214$
+$Zy_Eng$TV (Tuvalu)$
+$Zy_Tur$TV (Tuvalu)$
+$Zy_Ger$TV (Tuvalu)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str215$
+$Zy_Eng$TW (Taiwan)$
+$Zy_Tur$TW (Tayvan)$
+$Zy_Ger$TW (Taiwan)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str216$
+$Zy_Eng$TZ (Tanzania)$
+$Zy_Tur$TZ (Tanzanya)$
+$Zy_Ger$TZ (Tansania)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str217$
+$Zy_Eng$UA (Ukraine)$
+$Zy_Tur$UA (Ukranya)$
+$Zy_Ger$UA (Ukraine)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str218$
+$Zy_Eng$UG (Uganda)$
+$Zy_Tur$UG (Uganda)$
+$Zy_Ger$UG (Uganda)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str219$
+$Zy_Eng$UM (U.S. Minor Outlyi)$
+$Zy_Tur$UM (U.S. Minor Outlyi)$
+$Zy_Ger$UM (U.S. Minor Outlying Islands)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str220$
+$Zy_Eng$US (United States)$
+$Zy_Tur$US (Birleşik Devletleri)$
+$Zy_Ger$US (Vereinigte Staaten)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str221$
+$Zy_Eng$UY (Uruguay)$
+$Zy_Tur$UY (Uruguay)$
+$Zy_Ger$UY (Uruguay)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str222$
+$Zy_Eng$UZ (Uzbekistan)$
+$Zy_Tur$UZ (Özbekistan)$
+$Zy_Ger$UZ (Usbekistan)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str223$
+$Zy_Eng$VA (Vatican City)$
+$Zy_Tur$VA (Vatikan)$
+$Zy_Ger$VA (Vatikanstadt)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str224$
+$Zy_Eng$VC (St. Vincent And The Grenadines)$
+$Zy_Tur$VC (St. Vincent And The Grenadines)$
+$Zy_Ger$VC (St. Vincent und die Grenadinen)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str225$
+$Zy_Eng$VE (Venezuela)$
+$Zy_Tur$VE (Venezuela)$
+$Zy_Ger$VE (Venezuela)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str226$
+$Zy_Eng$VG (Virgin Islands, British)$
+$Zy_Tur$VG (Virgin Adaları, İngiliz)$
+$Zy_Ger$VG (Britische Jungferninseln)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str227$
+$Zy_Eng$VI (Virgin Islands)$
+$Zy_Tur$VI (Virgin Adaları)$
+$Zy_Ger$VI (Amerikanische Jungferninseln)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str228$
+$Zy_Eng$VN (Viet Nam)$
+$Zy_Tur$VN (Viet Nam)$
+$Zy_Ger$VN (Vietnam)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str229$
+$Zy_Eng$VU (Vanuatu)$
+$Zy_Tur$VU (Vanuatu)$
+$Zy_Ger$VU (Vanuatu)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str230$
+$Zy_Eng$WF (Wallis and Futuna)$
+$Zy_Tur$WF (Wallis and Futuna)$
+$Zy_Ger$WF (Wallis und Futuna)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str231$
+$Zy_Eng$WS (Samoa)$
+$Zy_Tur$WS (Samoa)$
+$Zy_Ger$WS (Samoa)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str232$
+$Zy_Eng$YE (Yemen)$
+$Zy_Tur$YE (Yemen)$
+$Zy_Ger$YE (Jemen)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str233$
+$Zy_Eng$YT (Mayotte)$
+$Zy_Tur$YT (Mayotte)$
+$Zy_Ger$YT (Mayotte)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str234$
+$Zy_Eng$YU (Yugoslvia)$
+$Zy_Tur$YU (Yugoslavya)$
+$Zy_Ger$YU (Jugoslawien)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str235$
+$Zy_Eng$ZA (South Africa)$
+$Zy_Tur$ZA (Güney Afrika)$
+$Zy_Ger$ZA (Südafrika)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str236$
+$Zy_Eng$ZM (Zambia)$
+$Zy_Tur$ZM (Zambia)$
+$Zy_Ger$ZM (Sambia)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str237$
+$Zy_Eng$ZW (Zimbabwe)$
+$Zy_Tur$ZW (Zimbabwe)$
+$Zy_Ger$ZW (Simbabwe)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_Certificates_Country_Str238$
+$Zy_Eng$SS (South Sudan)$
+$Zy_Tur$SS (Güney Sudan)$
+$Zy_Ger$SS (Süd Sudan)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Security_parent_control_err1$
+$Zy_Eng$The number of list records is limited to 20.$
+$Zy_Tur$Liste kayıtları sayısı 20 ile sınırlandırılmıştır.$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$

@@ -1,0 +1,2702 @@
+﻿#include<stdio.h>	
+#include<string.h>	
+#include<stdlib.h>	
+#include<time.h>	
+#include "languages.h"	
+
+
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str1$
+$Zy_Eng$The maximum entries of classifier is 32.$
+$Zy_Tur$S&#305;n&#305;fland&#305;r&#305;c&#305;n&#305;n maksimum girdi say&#305;s&#305; 32&#39; dir.$
+$Zy_Ger$Es k&#246;nnen maximal 32 Classifier verwendet werden.$
+$Zy_Fre$Le maximum d&#39;entr&#233;es du classificateur est 32.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str10$
+$Zy_Eng$invalid destination mac.$
+$Zy_Tur$hedef MAC ge&#231;ersiz.$
+$Zy_Ger$Ung&#252;ltige Ziel-MAC.$
+$Zy_Fre$mac de destination non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str11$
+$Zy_Eng$invalid destination ip.$
+$Zy_Tur$hedef IP ge&#231;ersiz.$
+$Zy_Ger$Ung&#252;ltige Ziel-IP.$
+$Zy_Fre$ip de destination non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str12$
+$Zy_Eng$invalid destination port range.$
+$Zy_Tur$ge&#231;ersiz hedef ba&#287;lant&#305; noktas&#305; aral&#305;&#287;&#305;.$
+$Zy_Ger$Ung&#252;ltiger Bereich f&#252;r Ziel-Port.$
+$Zy_Fre$plage de port de destination non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str13$
+$Zy_Eng$invalid destination port range with wrong order.$
+$Zy_Tur$yanl&#305;&#351; s&#305;ral&#305;, ge&#231;ersiz hedef ba&#287;lant&#305; noktas&#305; aral&#305;&#287;&#305;.$
+$Zy_Ger$Ung&#252;ltiger Bereich f&#252;r Ziel-Port mit falscher Reihenfolge.$
+$Zy_Fre$plage de port de destination non valide avec ordre incorrect.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str14$
+$Zy_Eng$unconfigured VLAN ID in criteria configuration.$
+$Zy_Tur$Kriter yap&#305;land&#305;rmada Yap&#305;land&#305;r&#305;lamam&#305;&#351; VLAN ID.$
+$Zy_Ger$Nicht konfigurierte VLAN ID in Konfiguration der Kriterien.$
+$Zy_Fre$ID VLAN non configur&#233;e dans la configuration des crit&#232;res.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str15$
+$Zy_Eng$VLAN ID {{1}} is out of range [0-4094].$
+$Zy_Tur$VLAN ID {{1}} aral&#305;k d&#305;&#351;&#305;nda [0-4094].$
+$Zy_Ger$VLAN ID {{1}} liegt au&#223;erhalb des Bereichs [0-4094].$
+$Zy_Fre$ID VLAN {{1}} hors plage [0-4094].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str16$
+$Zy_Eng$Protocol number {{1}} is out of range [1-252].$
+$Zy_Tur$Protokol numaras&#305; {{1}} aral&#305;k d&#305;&#351;&#305;nda [1-252].$
+$Zy_Ger$Protokollnummer {{1}} liegt au&#223;erhalb des Bereichs [1-252].$
+$Zy_Fre$Num&#233;ro de protocole {{1}} hors plage [1-252].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str17$
+$Zy_Eng$unconfigured IP Packet Length in criteria configuration.$
+$Zy_Tur$Kriter yap&#305;land&#305;rma Yap&#305;land&#305;r&#305;lmam&#305;&#351; IP paket uzunlu&#287;u.$
+$Zy_Ger$Nicht konfigurierte IP-Paketl&#228;nge in Konfiguration der Kriterien.$
+$Zy_Fre$longueur de paquet d&#39;IP non configur&#233;e dans la configuration des crit&#232;res.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str18$
+$Zy_Eng$The start length of range of packet length {{1}} is out of range [46-1500].$
+$Zy_Tur$Paket uzunluk aral&#305;&#287;&#305; ba&#351;lang&#305;&#231; uzunlu&#287;u {{1}} aral&#305;k d&#305;&#351;&#305;nda [46-1500].$
+$Zy_Ger$Die erste Angabe des Bereichs f&#252;r die Paketl&#228;nge {{1}} liegt au&#223;erhalb des Bereichs [46-1500].$
+$Zy_Fre$La longueur de d&#233;but de la plage de longueur de paquet {{1}} est hors plage [46-1500].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str19$
+$Zy_Eng$The end length of range of packet length {{1}} is out of range [46-1500].$
+$Zy_Tur$Paket uzunluk aral&#305;&#287;&#305; biti&#351; uzunlu&#287;u {{1}} aral&#305;k d&#305;&#351;&#305;nda [46-1500].$
+$Zy_Ger$Die letzte Angabe des Bereichs f&#252;r die Paketl&#228;nge {{1}} liegt au&#223;erhalb des Bereichs [46-1500].$
+$Zy_Fre$La longueur de fin de la plage de longueur de paquet {{1}} est hors plage [46-1500].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str2$
+$Zy_Eng$Please enter QoS class name.$
+$Zy_Tur$L&#252;tfen QoS s&#305;n&#305;f&#305; ad&#305;n&#305; girin.$
+$Zy_Ger$Bitte geben Sie den Namen der QoS-Klasse ein.$
+$Zy_Fre$Entrez le nom de classe QoS.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str20$
+$Zy_Eng$The start length of range of packet length is greater than the end length of range of packet length$
+$Zy_Tur$Paket ba&#351;lang&#305;&#231; &#8203;&#8203;uzunlu&#287;u aral&#305;&#287;&#305;, paket biti&#351; uzunlu&#287;unu aral&#305;&#287;&#305;ndan daha b&#252;y&#252;k $
+$Zy_Ger$Die erste Angabe des Bereichs f&#252;r die Paketl&#228;nge ist gr&#246;&#223;er als die letzte Angabe des Bereichs f&#252;r die Paketl&#228;nge.$
+$Zy_Fre$La longueur de d&#233;but de la plage de longueur de paquet est sup&#233;rieure &#224; la longueur de fin de la plage de longueur de paquet$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str21$
+$Zy_Eng$unconfigured DSCP in criteria configuration.$
+$Zy_Tur$Kriter yap&#305;land&#305;rmada Yap&#305;land&#305;r&#305;lmam&#305;&#351; DSCP.$
+$Zy_Ger$Nicht konfiguriertes DSCP in Konfiguration der Kriterien.$
+$Zy_Fre$DSCP non configur&#233; dans la configuration des crit&#232;res.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str22$
+$Zy_Eng$DSCP {{1}} is out of range [0-63].$
+$Zy_Tur$DSCP {{1}} aral&#305;k d&#305;&#351;&#305;nda [0-63].$
+$Zy_Ger$DSCP {{1}} liegt au&#223;erhalb des Bereichs [0-63].$
+$Zy_Fre$DSCP {{1}} est hors plage  [0-63].$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str23$
+$Zy_Eng$unconfigured DHCP Option Value in criteria configuration.$
+$Zy_Tur$Kriter yap&#305;land&#305;rmada Yap&#305;land&#305;r&#305;lmam&#305;&#351; DHCP Se&#231;enek De&#287;eri.$
+$Zy_Ger$Nicht konfigurierter Wert einer DHCP-Option in Konfiguration der Kriterien.$
+$Zy_Fre$Valeur de l&#39;option DHCP non configur&#233;e dans la configuration des crit&#232;res.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str24$
+$Zy_Eng$Source subnet mask {{1}} is invalid subnet mask.$
+$Zy_Tur$Kaynak Alt A&#287; Maskesi {{1}} ge&#231;ersiz bir alt a&#287; maskesi.$
+$Zy_Ger$Quell-Subnetzmaske {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le masque de sous-r&#233;seau source  {{1}} est un masque de sous r&#233;seau non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str25$
+$Zy_Eng$Destination subnet mask {{1}} is invalid subnet mask.$
+$Zy_Tur$Alt A&#287; Maskesi {{1}} ge&#231;ersiz bir alt a&#287; maskesi.$
+$Zy_Ger$Ziel-Subnetzmaske {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le masque de sous-r&#233;seau de destination {{1}} est un masque de sous r&#233;seau non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str26$
+$Zy_Eng$Source MAC address mask {{1}} is invalid.$
+$Zy_Tur$Kaynak MAC adresi {{1}} ge&#231;ersiz.$
+$Zy_Ger$Maske der Quell-MAC-Adresse {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le masque d&#39;adresse MAC source  {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str27$
+$Zy_Eng$Destination MAC address mask {{1}} is invalid.$
+$Zy_Tur$Hedef MAC adresi maskesi {{1}} ge&#231;ersiz.$
+$Zy_Ger$Maske der Ziel-MAC-Adresse {{1}} ist ung&#252;ltig.$
+$Zy_Fre$Le masque d&#39;adresse MAC de destination {{1}} n&#39;est pas valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str28$
+$Zy_Eng$Unconfig DSCP mark value$
+$Zy_Tur$Yap&#305;land&#305;r&#305;lmam&#305;&#351; DSCP i&#351;areti de&#287;eri$
+$Zy_Ger$Nicht konfigurierter DSCP-Markierungswert$
+$Zy_Fre$Reconfigurer la valeur de marquage DSCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str29$
+$Zy_Eng$VLAN ID Tag cannot be removed when 802.1p is marked$
+$Zy_Tur$802.1p i&#351;aretlenmi&#351; oldu&#287;unda VLAN ID Etiketi Kald&#305;r&#305;lamaz$
+$Zy_Ger$VLAN ID Tag kann nicht entfernt werden, wenn 802.1p mit Markierung versehen ist$
+$Zy_Fre$La balise ID VLAN ne peut pas &#234;tre supprim&#233;e lorsque 802.1p est marqu&#233;e$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str3$
+$Zy_Eng$Please enter valid QoS class name: No special characters.$
+$Zy_Tur$L&#252;tfen ge&#231;erli bir QoS s&#305;n&#305;f&#305; ad&#305; girin. &#214;zel karakter girilmemelidir.$
+$Zy_Ger$Bitte g&#252;ltigen Namen f&#252;r die QoS-Klasse eingeben: Ohne Sonderzeichen.$
+$Zy_Fre$Entrez un nom de classe QoS valide: Pas de caract&#232;res sp&#233;ciaux.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str30$
+$Zy_Eng$Unconfig VLAN ID$
+$Zy_Tur$Yap&#305;land&#305;r&#305;lmam&#305;&#351; VLAN ID$
+$Zy_Ger$Nicht konfigurierte VLAN ID$
+$Zy_Fre$Reconfigurer l&#39;ID VLAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str31$
+$Zy_Eng$Please assigned queue index on Step5. If none option on it, please add new queue.$
+$Zy_Tur$L&#252;tfen 5. Ad&#305;mda kuyruk endeksi atay&#305;n.$
+$Zy_Ger$Bitte weisen Sie bei Schritt 5 einen Queue-Index zu.$
+$Zy_Fre$Veuillez attribuer l&#39;index de file d&#39;attente de l&#39;&#233;tape5.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str32$
+$Zy_Eng$You can not select Q_DROP only with criteria \'From interface\', \'To interface\' and \'Ether Type\'$
+$Zy_Tur$Q_DROP&#39; u  \'Ara y&#252;zden\' \'Ara y&#252;ze\' ve \'Ether T&#252;r&#252;ne\' kriterleri ile se&#231;emezsiniz$
+$Zy_Ger$Sie k&#246;nnen Q_DROP nicht allein bei den Kriterien \'Von Schnittstelle\', \'An Schnittstelle\' und \'Ethernet-Typ\' ausw&#228;hlen$
+$Zy_Fre$Vous ne pouvez pas s&#233;lectionner Q_DROP qu&#39;avec les crit&#232;res de &#171;&#160;De l&#39;interface&#160;&#187;, &#171;&#160;Vers l&#39;interface&#160;&#187; et &#171;&#160;Type Ether&#160;&#187;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str33$
+$Zy_Eng$You must configure some criteria in step 2.$
+$Zy_Tur$2. Ad&#305;mda baz&#305; kriterleri yap&#305;land&#305;rman&#305;z gerekir.$
+$Zy_Ger$Sie m&#252;ssen in Schritt 2 Kriterien konfigurieren.$
+$Zy_Fre$Vous devez configurer certains crit&#232;res &#224; l&#39;&#233;tape 2.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str34$
+$Zy_Eng$Cannot set Destination MAC Address in routing mode.$
+$Zy_Tur$Y&#246;nlendirme modunda Hedef MAC Adresi ayarlanam&#305;yor.$
+$Zy_Ger$Im Routing-Modus kann die Ziel-MAC-Adresse nicht eingestellt werden.$
+$Zy_Fre$Impossible de d&#233;finir l&#39;adresse MAC de destination en mode routage.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str35$
+$Zy_Eng$Cannot add class rule with the same criteria.$
+$Zy_Tur$Ayn&#305; kriterler ile s&#305;n&#305;f kural&#305; eklenemiyor.$
+$Zy_Ger$Klassen-Regel mit denselben Kriterien kann nicht hinzugef&#252;gt werden.$
+$Zy_Fre$Impossible d&#39;ajouter la r&#232;gle de classe avec le m&#234;me crit&#232;re.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str36$
+$Zy_Eng$invalid packet length range.$
+$Zy_Tur$ge&#231;ersiz paket uzunlu&#287;u aral&#305;&#287;&#305;.$
+$Zy_Ger$Ung&#252;ltiger Bereich f&#252;r die Paketl&#228;nge.$
+$Zy_Fre$Plage de longueur de paquet non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str4$
+$Zy_Eng$Maximum QoS class name cannot exceed 15 characters.$
+$Zy_Tur$Maksimum QoS s&#305;n&#305;f ad&#305; 15 karakterden uzun olamaz.$
+$Zy_Ger$Ein Name f&#252;r eine QoS-Klasse darf h&#246;chstens 15 Zeichen lang sein.$
+$Zy_Fre$Le nom de classe QoS maximum ne peut d&#233;passer 15 caract&#232;res.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str5$
+$Zy_Eng$QoS queue name existed, please enter another queue name.$
+$Zy_Tur$QoS kuyruk ad&#305; var, l&#252;tfen ba&#351;ka bir kuyruk ad&#305; giriniz.$
+$Zy_Ger$QoS Queue-Name existiert bereits, bitte geben Sie einen anderen Queue-Namen ein.$
+$Zy_Fre$Le nom de file d&#39;attente QoS existe, entrez un autre nom de file d&#39;attente.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str6$
+$Zy_Eng$invalid source MAC.$
+$Zy_Tur$kaynak mac ge&#231;ersiz.$
+$Zy_Ger$Ung&#252;ltige Quell-MAC.$
+$Zy_Fre$mac source non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str7$
+$Zy_Eng$invalid source IP.$
+$Zy_Tur$kaynak IP ge&#231;ersiz.$
+$Zy_Ger$Ung&#252;ltige Quell-IP.$
+$Zy_Fre$ip source non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str8$
+$Zy_Eng$invalid source port range.$
+$Zy_Tur$kaynak port aral&#305;&#287;&#305; ge&#231;ersiz.$
+$Zy_Ger$Ung&#252;ltiger Bereich f&#252;r Quell-Port.$
+$Zy_Fre$Plage de port source non valide.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_AlertMsg_Str9$
+$Zy_Eng$invalid source port range with wrong order.$
+$Zy_Tur$yanl&#305;&#351; s&#305;ral&#305; ge&#231;ersiz kaynak port aral&#305;&#287;&#305;.$
+$Zy_Ger$Ung&#252;ltiger Bereich f&#252;r Quell-Port mit falscher Reihenfolge.$
+$Zy_Fre$plage de port source non valide avec ordre incorrect.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str1$
+$Zy_Eng$A classifier groups traffic into data flows according to specific criteria. Class Setup can add, edit, or delete QoS classifiers.$
+$Zy_Tur$S&#305;n&#305;fland&#305;r&#305;c&#305;, trafi&#287;i belirli kriterlere g&#246;re veri ak&#305;&#351;lar&#305;na gruplar. S&#305;n&#305;f Kurulumu, QoS s&#305;n&#305;fland&#305;r&#305;c&#305;lar&#305;n&#305; ekleyebilir, d&#252;zenleyebilir veya silebilir.$
+$Zy_Ger$Ein Classifier gruppiert Traffic in Daten-Flows gem&#228;&#223; bestimmter Kriterien. Unter Klasse einrichten k&#246;nnen Sie QoS Classifier hinzuf&#252;gen, bearbeiten oder l&#246;schen.$
+$Zy_Fre$Un trafic de groupes de classificateurs en flux de donn&#233;es selon des crit&#232;res sp&#233;cifiques. Le param&#233;trage de classe peut ajouter, modifier ou supprimer des classificateurs QoS.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str10$
+$Zy_Eng$VLAN ID Tag$
+$Zy_Tur$VLAN ID Etiketi$
+$Zy_Ger$VLAN ID Tag$
+$Zy_Fre$Balise ID VLAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str11$
+$Zy_Eng$To Queue$
+$Zy_Tur$Kuyruk i&#231;in$
+$Zy_Ger$Zu Queue$
+$Zy_Fre$A mettre en file d&#39;attente$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str12$
+$Zy_Eng$Unchange$
+$Zy_Tur$De&#287;i&#351;tirme$
+$Zy_Ger$Tag belassen$
+$Zy_Fre$Inchang&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str13$
+$Zy_Eng$QoS Classifier Configuration$
+$Zy_Tur$QoS S&#305;n&#305;fland&#305;r&#305;c&#305; Yap&#305;land&#305;rma$
+$Zy_Ger$QoS Classifier konfigurieren$
+$Zy_Fre$Configuration du classificateur QoS $
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str14$
+$Zy_Eng$QoS Classifier Edit$
+$Zy_Tur$QoS S&#305;n&#305;fland&#305;r&#305;c&#305; D&#252;zenleme$
+$Zy_Ger$QoS Classifier bearbeiten$
+$Zy_Fre$Modification du classificateur QoS $
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str15$
+$Zy_Eng$Please fill up steps 1 through 4 to configure a QoS rule. $
+$Zy_Tur$L&#252;tfen bir QoS kural&#305; yap&#305;land&#305;rmak i&#231;in 4. Ad&#305;m &#252;zerinden 1. Ad&#305;m&#305; doldurunuz.$
+$Zy_Ger$Bitte f&#252;hren Sie Schritte 1 bis 4 aus, um eine QoS-Regel zu konfigurieren. $
+$Zy_Fre$Veuillez effectuer les &#233;tapes 1 &#224; 4 pour configurer une r&#232;gle de QoS. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str16$
+$Zy_Eng$Step1: Class configuration$
+$Zy_Tur$Ad&#305;m 1: S&#305;n&#305;f yap&#305;land&#305;rma $
+$Zy_Ger$ Schritt 1: Klasse konfigurieren$
+$Zy_Fre$Etape1 : Configuration de classes $
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str17$
+$Zy_Eng$Active$
+$Zy_Tur$Aktif$
+$Zy_Ger$Aktiv$
+$Zy_Fre$Actif$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str19$
+$Zy_Eng$Classification Order :$
+$Zy_Tur$S&#305;n&#305;fland&#305;rma S&#305;ras&#305;:$
+$Zy_Ger$Reihenfolge der Klassifizierung:$
+$Zy_Fre$Ordre de classification :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str2$
+$Zy_Eng$Class Setup$
+$Zy_Tur$S&#305;n&#305;f Kurulumu$
+$Zy_Ger$Klasse einrichten$
+$Zy_Fre$Param&#233;trage de classe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str20$
+$Zy_Eng$Last$
+$Zy_Tur$Son$
+$Zy_Ger$Letzte$
+$Zy_Fre$Dernier$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str21$
+$Zy_Eng$Step2: Criteria configuration$
+$Zy_Tur$Ad&#305;m 2: Kriterleri yap&#305;land&#305;rma $
+$Zy_Ger$ Schritt 2: Kriterien konfigurieren$
+$Zy_Fre$Etape2 : Configuration des crit&#232;res $
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str22$
+$Zy_Eng$Use the fields below to specify the characteristics of a data flow that needs to be managed by this QoS rule$
+$Zy_Tur$Bu QoS kural&#305; taraf&#305;ndan y&#246;netilmesi gereken bir veri ak&#305;&#351;&#305;n&#305;n karakteristiklerini belirtmek i&#231;in a&#351;a&#287;&#305;daki alanlar&#305; kullan&#305;n&#305;z.$
+$Zy_Ger$Verwenden Sie die Felder unten, um die Eigenschaften eines Daten-Flows anzugeben, der von dieser QoS-Regel verwaltet werden soll$
+$Zy_Fre$Utilisez les champs ci-dessous pour pr&#233;ciser les caract&#233;ristiques d&#39;un flux de donn&#233;es devant &#234;tre g&#233;r&#233; par cette r&#232;gle de QoS $
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str23$
+$Zy_Eng$Basic$
+$Zy_Tur$Basit$
+$Zy_Ger$Basic$
+$Zy_Fre$Basique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str24$
+$Zy_Eng$From Interface :$
+$Zy_Tur$Ara y&#252;zden:$
+$Zy_Ger$Von Schnittstelle:$
+$Zy_Fre$De l&#39;interface :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str25$
+$Zy_Eng$Local$
+$Zy_Tur$Yerel$
+$Zy_Ger$Lokal$
+$Zy_Fre$Local$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str26$
+$Zy_Eng$Ether Type :$
+$Zy_Tur$Eter T&#252;r&#252;:$
+$Zy_Ger$Ethernet-Typ:$
+$Zy_Fre$Type Ether :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str27$
+$Zy_Eng$PPPoE_DISC$
+$Zy_Tur$PPPoE_DISC$
+$Zy_Ger$PPPoE_DISC$
+$Zy_Fre$PPPoE_DISC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str28$
+$Zy_Eng$PPPoE_SEC$
+$Zy_Tur$PPPoE_SEC$
+$Zy_Ger$PPPoE_SEC$
+$Zy_Fre$PPPoE_SEC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str29$
+$Zy_Eng$Source$
+$Zy_Tur$Kaynak$
+$Zy_Ger$Quelle$
+$Zy_Fre$Source$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str3$
+$Zy_Eng$Add new Classifier$
+$Zy_Tur$Yeni S&#305;n&#305;fland&#305;r&#305;c&#305; ekle$
+$Zy_Ger$Neuen Classifier hinzuf&#252;gen$
+$Zy_Fre$Ajouter un nouveau classificateur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str30$
+$Zy_Eng$Address$
+$Zy_Tur$Adres$
+$Zy_Ger$Adresse$
+$Zy_Fre$Adresse$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str31$
+$Zy_Eng$Subnet Netmask$
+$Zy_Tur$Alt a&#287; Net maskesi $
+$Zy_Ger$Subnetzmaske$
+$Zy_Fre$Masque de sous-r&#233;seau $
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str32$
+$Zy_Eng$Exclude$
+$Zy_Tur$D&#305;&#351;la$
+$Zy_Ger$Ausschlie&#223;en$
+$Zy_Fre$Exclure$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str33$
+$Zy_Eng$Port Range$
+$Zy_Tur$Port Aral&#305;&#287;&#305;$
+$Zy_Ger$Portbereich$
+$Zy_Fre$Plage des ports$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str34$
+$Zy_Eng$MAC$
+$Zy_Tur$MAC$
+$Zy_Ger$MAC$
+$Zy_Fre$MAC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str35$
+$Zy_Eng$MAC Mask$
+$Zy_Tur$MAC Maskesi$
+$Zy_Ger$MAC-Maske$
+$Zy_Fre$Masque MAC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str36$
+$Zy_Eng$Destination$
+$Zy_Tur$Hedef$
+$Zy_Ger$Ziel$
+$Zy_Fre$Destination$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str37$
+$Zy_Eng$Others$
+$Zy_Tur$Di&#287;er$
+$Zy_Ger$Andere$
+$Zy_Fre$Autres$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str38$
+$Zy_Eng$Service $
+$Zy_Tur$Hizmet $
+$Zy_Ger$Service $
+$Zy_Fre$Service $
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str39$
+$Zy_Eng$IP Protocol$
+$Zy_Tur$IP Protokol&#252;$
+$Zy_Ger$IP-Protokoll$
+$Zy_Fre$Protocole IP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str4$
+$Zy_Eng$Current Settings :$
+$Zy_Tur$Ge&#231;erli Ayarlar:$
+$Zy_Ger$Aktuelle Einstellungen:$
+$Zy_Fre$Param&#232;tres actuels :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str40$
+$Zy_Eng$User Defined$
+$Zy_Tur$Kullan&#305;c&#305; Tan&#305;ml&#305;$
+$Zy_Ger$Benutzerdefiniert$
+$Zy_Fre$Personnalis&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str41$
+$Zy_Eng$Vendor Class ID (DHCP Option 60)$
+$Zy_Tur$vendor S&#305;n&#305;f ID (DHCP Se&#231;ene&#287;i 60)$
+$Zy_Ger$Anbieter-Klassen-ID (DHCP-Option 60)$
+$Zy_Fre$ID de classe de vendeur (Option DHCP 60)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str411$
+$Zy_Eng$Client ID (DHCP Option 61)$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str42$
+$Zy_Eng$User Class ID (DHCP Option 77)$
+$Zy_Tur$Kullan&#305;c&#305; S&#305;n&#305;f ID (DHCP Se&#231;ene&#287;i 77)$
+$Zy_Ger$Benutzer-Klassen-ID (DHCP-Option 77)$
+$Zy_Fre$ID de classe d&#39;utilisateur (Option DHCP 77)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str421$
+$Zy_Eng$VendorSpecificInfo (DHCP Option 125)$
+$Zy_Tur$(null)$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str43$
+$Zy_Eng$Packet Length$
+$Zy_Tur$Paket Uzunlu&#287;u$
+$Zy_Ger$Paketl&#228;nge$
+$Zy_Fre$Longueur du paquet$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str44$
+$Zy_Eng$TCP ACK$
+$Zy_Tur$TCP ACK$
+$Zy_Ger$TCP ACK$
+$Zy_Fre$ACK TCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str45$
+$Zy_Eng$Step3: Packet modification$
+$Zy_Tur$Ad&#305;m 3: Paket de&#287;i&#351;ikli&#287;i $
+$Zy_Ger$Schritt 3: Pakete &#228;ndern$
+$Zy_Fre$Etape3 : Modification du paquet $
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str46$
+$Zy_Eng$The content of the packet can be modified by applying the following settings:$
+$Zy_Tur$Paketin i&#231;eri&#287;i a&#351;a&#287;&#305;daki ayarlar&#305;n uygulanmas&#305;yla de&#287;i&#351;tirilebilir:$
+$Zy_Ger$Der Inhalt eines Pakets kann ver&#228;ndert werden durch Anwenden folgender Einstellungen:$
+$Zy_Fre$Le contenu du paquet peut &#234;tre modifi&#233; en appliquant les param&#232;tres suivants :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str47$
+$Zy_Eng$Mark$
+$Zy_Tur$&#304;&#351;aretle $
+$Zy_Ger$Markieren$
+$Zy_Fre$Marquer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str48$
+$Zy_Eng$Remark$
+$Zy_Tur$&#304;&#351;aretle$
+$Zy_Ger$Tag &#228;ndern$
+$Zy_Fre$Remarquer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str49$
+$Zy_Eng$Add$
+$Zy_Tur$Ekle $
+$Zy_Ger$Hinzuf&#252;gen$
+$Zy_Fre$Ajouter$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str5$
+$Zy_Eng$Class$
+$Zy_Tur$S&#305;n&#305;f$
+$Zy_Ger$Klasse$
+$Zy_Fre$Classe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str50$
+$Zy_Eng$Remove$
+$Zy_Tur$Kald&#305;r$
+$Zy_Ger$Entfernen$
+$Zy_Fre$Retirer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str51$
+$Zy_Eng$Step4: Outgoing queue selection$
+$Zy_Tur$Ad&#305;m 4: Giden kuyruk se&#231;imi $
+$Zy_Ger$Schritt 4: Abgehende Queue ausw&#228;hlen$
+$Zy_Fre$Etape4 : S&#233;lection de file d&#39;attente sortante $
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str52$
+$Zy_Eng$Outgoing queue decides the priority of the traffic and how traffic should be shaped in the WAN inteface. Choose \'None\' if you do not want to apply outgoing queue$
+$Zy_Tur$Giden kuyruk, trafik &#246;nceli&#287;ine ve trafi&#287;in WAN aray&#252;z&#252;nde nas&#305;l &#351;ekillenmesi gerekti&#287;i karar&#305;n&#305; verir. Giden kuyru&#287;u uygulamak istemiyorsan&#305;z \'Hi&#231;biri\' se&#231;ene&#287;ini se&#231;iniz.$
+$Zy_Ger$In der abgehenden Queue wird die Priorit&#228;t des Traffic festgelegt und bestimmt, wie Traffic in der WAN-Schnittstelle beschaffen sein soll. W&#228;hlen Sie \'Keine\', wenn Sie keine abgehende Queue anwenden wollen$
+$Zy_Fre$La file d&#39;attente sortante d&#233;cide de la priorit&#233; du trafic et la fa&#231;on dont le trafic devrait &#234;tre mis en forme dans l&#39;interface WAN. Choisissez &#171;&#160;Aucun&#160;&#187; si vous ne voulez pas appliquer la file d&#39;attente sortante$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str53$
+$Zy_Eng$To Queue Index :$
+$Zy_Tur$Kuyruk Endeksi i&#231;in:$
+$Zy_Ger$Zu Queue Index:$
+$Zy_Fre$Vers l&#39;index de file d&#39;attente:$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str54$
+$Zy_Eng$Q_DROP$
+$Zy_Tur$Q_DROP$
+$Zy_Ger$Q_DROP$
+$Zy_Fre$Q_DROP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str55$
+$Zy_Eng$QoS Classifier Delete$
+$Zy_Tur$QoS S&#305;n&#305;fland&#305;r&#305;c&#305; Silme$
+$Zy_Ger$QoS Classifier l&#246;schen$
+$Zy_Fre$Suppression du classificateur QoS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str56$
+$Zy_Eng$MASK$
+$Zy_Tur$MASKE$
+$Zy_Ger$MASK$
+$Zy_Fre$MASQUE$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str57$
+$Zy_Eng$802.1P$
+$Zy_Tur$802.1P$
+$Zy_Ger$802.1P$
+$Zy_Fre$802.1P$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str58$
+$Zy_Eng$Age of Empires$
+$Zy_Tur$Age of Empires$
+$Zy_Ger$Age of Empires$
+$Zy_Fre$Age of Empires$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str59$
+$Zy_Eng$Age of Empires II$
+$Zy_Tur$Age of Empires II$
+$Zy_Ger$Age of Empires II$
+$Zy_Fre$Age of Empires II$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str60$
+$Zy_Eng$Age of Empires III$
+$Zy_Tur$Age of Empires III$
+$Zy_Ger$Age of Empires III$
+$Zy_Fre$Age of EmpiresIII$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str61$
+$Zy_Eng$Age of Mythology$
+$Zy_Tur$Age of Mythology$
+$Zy_Ger$Age of Mythology$
+$Zy_Fre$Age of Mythology$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str62$
+$Zy_Eng$Alien vs. Predator 2$
+$Zy_Tur$Alien vs. Predator 2$
+$Zy_Ger$Alien vs. Predator 2$
+$Zy_Fre$Alien vs. Predator 2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str63$
+$Zy_Eng$Asheron&#39;s Call$
+$Zy_Tur$Asheron&#39;s Call$
+$Zy_Ger$Asheron&#39;s Call$
+$Zy_Fre$Asheron&#39;s Call$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str64$
+$Zy_Eng$Baldur&#39;s Gate$
+$Zy_Tur$Baldur&#39;s Gate$
+$Zy_Ger$Baldur&#39;s Gate$
+$Zy_Fre$Baldur&#39;s Gate$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str65$
+$Zy_Eng$Baldur&#39;s Gate II$
+$Zy_Tur$Baldur&#39;s Gate II$
+$Zy_Ger$Baldur&#39;s Gate II$
+$Zy_Fre$Baldur&#39;s Gate II$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str66$
+$Zy_Eng$Battlefield 1942$
+$Zy_Tur$Battlefield 1942$
+$Zy_Ger$Battlefield 1942$
+$Zy_Fre$Battlefield 1942$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str67$
+$Zy_Eng$Battlefield Vietnam$
+$Zy_Tur$Battlefield Vietnam$
+$Zy_Ger$Battlefield Vietnam$
+$Zy_Fre$Battlefield Vietnam$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str68$
+$Zy_Eng$Battlestations Midway$
+$Zy_Tur$Battlestations Midway$
+$Zy_Ger$Battlestations Midway$
+$Zy_Fre$Battlestations Midway$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str69$
+$Zy_Eng$Black and White$
+$Zy_Tur$Black and White$
+$Zy_Ger$Black and White$
+$Zy_Fre$Black and White$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str70$
+$Zy_Eng$Call of Duty$
+$Zy_Tur$Call of Duty$
+$Zy_Ger$Call of Duty$
+$Zy_Fre$Call of Duty$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str71$
+$Zy_Eng$Call of Duty - United Offensive$
+$Zy_Tur$Call of Duty - United Offensive$
+$Zy_Ger$Call of Duty - United Offensive$
+$Zy_Fre$Call of Duty - United Offensive$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str72$
+$Zy_Eng$Call of Duty 2$
+$Zy_Tur$Call of Duty 2$
+$Zy_Ger$Call of Duty 2$
+$Zy_Fre$Call of Duty 2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str73$
+$Zy_Eng$Call of Duty 4$
+$Zy_Tur$Call of Duty 4$
+$Zy_Ger$Call of Duty 4$
+$Zy_Fre$Call of Duty 4$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str74$
+$Zy_Eng$Civilization III$
+$Zy_Tur$Civilization III$
+$Zy_Ger$Civilization III$
+$Zy_Fre$Civilization III$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str75$
+$Zy_Eng$Civilization IV$
+$Zy_Tur$Civilization IV$
+$Zy_Ger$Civilization IV$
+$Zy_Fre$Civilization IV$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str76$
+$Zy_Eng$Close Combat$
+$Zy_Tur$Close Combat$
+$Zy_Ger$Close Combat$
+$Zy_Fre$Close Combat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str77$
+$Zy_Eng$Close Combat III: The Russian Front$
+$Zy_Tur$Close Combat III: The Russian Front$
+$Zy_Ger$Close Combat III: The Russian Front$
+$Zy_Fre$Close Combat III: The Russian Front$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str78$
+$Zy_Eng$Close Combat IV$
+$Zy_Tur$Close Combat IV$
+$Zy_Ger$Close Combat IV$
+$Zy_Fre$Close Combat IV$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str79$
+$Zy_Eng$Close Combat V$
+$Zy_Tur$Close Combat V$
+$Zy_Ger$Close Combat V$
+$Zy_Fre$Close Combat V$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str80$
+$Zy_Eng$Command and Conquer 3 TW$
+$Zy_Tur$Command and Conquer 3 TW$
+$Zy_Ger$Command and Conquer 3 TW$
+$Zy_Fre$Command and Conquer 3 TW$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str81$
+$Zy_Eng$Command and Conquer Generals$
+$Zy_Tur$Command and Conquer Generals$
+$Zy_Ger$Command and Conquer Generals$
+$Zy_Fre$Command and Conquer Generals$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str82$
+$Zy_Eng$Dark Reign 2$
+$Zy_Tur$Dark Reign 2$
+$Zy_Ger$Dark Reign 2$
+$Zy_Fre$Dark Reign 2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str83$
+$Zy_Eng$Delta Force$
+$Zy_Tur$Delta Force$
+$Zy_Ger$Delta Force$
+$Zy_Fre$Delta Force$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str84$
+$Zy_Eng$Diablo$
+$Zy_Tur$Diablo$
+$Zy_Ger$Diablo$
+$Zy_Fre$Diablo$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str85$
+$Zy_Eng$Diablo II$
+$Zy_Tur$Diablo II$
+$Zy_Ger$Diablo II$
+$Zy_Fre$Diablo II$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str86$
+$Zy_Eng$DirectX 7-8 Games$
+$Zy_Tur$DirectX 7-8 Games$
+$Zy_Ger$DirectX 7-8 Games$
+$Zy_Fre$DirectX 7-8 Games$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str87$
+$Zy_Eng$Doom I-II-III$
+$Zy_Tur$Doom I-II-III$
+$Zy_Ger$Doom I-II-III$
+$Zy_Fre$Doom I-II-III$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str88$
+$Zy_Eng$Dune 2000$
+$Zy_Tur$Dune 2000$
+$Zy_Ger$Dune 2000$
+$Zy_Fre$Dune 2000$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str89$
+$Zy_Eng$Dungeons & Dragons Online$
+$Zy_Tur$Dungeons & Dragons Online$
+$Zy_Ger$Dungeons & Dragons Online$
+$Zy_Fre$Dungeons & Dragons Online$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str90$
+$Zy_Eng$F-16 Mig. 29$
+$Zy_Tur$F-16 Mig. 29$
+$Zy_Ger$F-16 Mig. 29$
+$Zy_Fre$F-16 Mig. 29$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str91$
+$Zy_Eng$F-22 Lightning 3$
+$Zy_Tur$F-22 Lightning 3$
+$Zy_Ger$F-22 Lightning 3$
+$Zy_Fre$F-22 Lightning 3$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str92$
+$Zy_Eng$F-22 Raptor$
+$Zy_Tur$F-22 Raptor$
+$Zy_Ger$F-22 Raptor$
+$Zy_Fre$F-22 Raptor$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str93$
+$Zy_Eng$Fighter Ace II$
+$Zy_Tur$Fighter Ace II$
+$Zy_Ger$Fighter Ace II$
+$Zy_Fre$Fighter Ace II$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str94$
+$Zy_Eng$Flight Simulator 2000 - 2002$
+$Zy_Tur$Flight Simulator 2000 - 2002$
+$Zy_Ger$Flight Simulator 2000 - 2002$
+$Zy_Fre$Flight Simulator 2000 - 2002$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str95$
+$Zy_Eng$Flight Simulator 2004$
+$Zy_Tur$Flight Simulator 2004$
+$Zy_Ger$Flight Simulator 2004$
+$Zy_Fre$Flight Simulator 2004$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str96$
+$Zy_Eng$GameSpy$
+$Zy_Tur$GameSpy$
+$Zy_Ger$GameSpy$
+$Zy_Fre$GameSpy$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str97$
+$Zy_Eng$Ghost Recon: Advanced Warfighter 2$
+$Zy_Tur$Ghost Recon: Advanced Warfighter 2$
+$Zy_Ger$Ghost Recon: Advanced Warfighter 2$
+$Zy_Fre$Ghost Recon: Advanced Warfighter 2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str98$
+$Zy_Eng$GNUtella$
+$Zy_Tur$GNUtella$
+$Zy_Ger$GNUtella$
+$Zy_Fre$GNUtella$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str99$
+$Zy_Eng$Guild Wars$
+$Zy_Tur$Guild Wars$
+$Zy_Ger$Guild Wars$
+$Zy_Fre$Guild Wars$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str100$
+$Zy_Eng$Half Life$
+$Zy_Tur$Half Life$
+$Zy_Ger$Half Life$
+$Zy_Fre$Half Life$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str101$
+$Zy_Eng$Half Life II$
+$Zy_Tur$Half Life II$
+$Zy_Ger$Half Life II$
+$Zy_Fre$Half Life II$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str102$
+$Zy_Eng$Halo - Combat Evolved$
+$Zy_Tur$Halo - Combat Evolved$
+$Zy_Ger$Halo - Combat Evolved$
+$Zy_Fre$Halo - Combat Evolved$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str103$
+$Zy_Eng$Heretic II$
+$Zy_Tur$Heretic II$
+$Zy_Ger$Heretic II$
+$Zy_Fre$Heretic II$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str104$
+$Zy_Eng$Hexen II$
+$Zy_Tur$Hexen II$
+$Zy_Ger$Hexen II$
+$Zy_Fre$Hexen II$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str105$
+$Zy_Eng$Kali$
+$Zy_Tur$Kali$
+$Zy_Ger$Kali$
+$Zy_Fre$Kali$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str106$
+$Zy_Eng$KaZaA$
+$Zy_Tur$KaZaA$
+$Zy_Ger$KaZaA$
+$Zy_Fre$KaZaA$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str107$
+$Zy_Eng$Lord of the Rings Online$
+$Zy_Tur$Lord of the Rings Online$
+$Zy_Ger$Lord of the Rings Online$
+$Zy_Fre$Le Seigneur des anneaux en ligne$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str108$
+$Zy_Eng$Lord of the Rings: Battle for Middle Earth$
+$Zy_Tur$Lord of the Rings: Battle for Middle Earth$
+$Zy_Ger$Lord of the Rings: Battle for Middle Earth$
+$Zy_Fre$Le Seigneur des anneaux: La Bataille pour la Terre du Milieu$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str109$
+$Zy_Eng$Lord of the Rings: Battle for Middle Earth 2$
+$Zy_Tur$Lord of the Rings: Battle for Middle Earth 2$
+$Zy_Ger$Lord of the Rings: Battle for Middle Earth 2$
+$Zy_Fre$Le Seigneur des anneaux: La Bataille pour la Terre du Milieu 2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str110$
+$Zy_Eng$Lord of the Rings: War of the Rings$
+$Zy_Tur$Lord of the Rings: War of the Rings$
+$Zy_Ger$Lord of the Rings: War of the Rings$
+$Zy_Fre$Le Seigneur des anneaux: La Guerre des Anneaux$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str111$
+$Zy_Eng$Madden 06$
+$Zy_Tur$Madden 06$
+$Zy_Ger$Madden 06$
+$Zy_Fre$Madden 06$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str112$
+$Zy_Eng$Madden 07$
+$Zy_Tur$Madden 07$
+$Zy_Ger$Madden 07$
+$Zy_Fre$Madden 07$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str113$
+$Zy_Eng$MechWarrior 4 - Black Knight / Mercenaries / Vengeance$
+$Zy_Tur$MechWarrior 4 - Black Knight / Mercenaries / Vengeance$
+$Zy_Ger$MechWarrior 4 - Black Knight / Mercenaries / Vengeance$
+$Zy_Fre$MechWarrior 4 - Black Knight / Mercenaries / Vengeance$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str114$
+$Zy_Eng$MSN Gaming Zone$
+$Zy_Tur$MSN Gaming Zone$
+$Zy_Ger$MSN Gaming Zone$
+$Zy_Fre$MSN Gaming Zone$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str115$
+$Zy_Eng$Need For Speed 3$
+$Zy_Tur$Need For Speed 3$
+$Zy_Ger$Need For Speed 3$
+$Zy_Fre$Need For Speed 3$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str116$
+$Zy_Eng$Need for Speed Porsche$
+$Zy_Tur$Need for Speed Porsche$
+$Zy_Ger$Need for Speed Porsche$
+$Zy_Fre$Need for Speed Porsche$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str117$
+$Zy_Eng$Outlaws$
+$Zy_Tur$Outlaws$
+$Zy_Ger$Outlaws$
+$Zy_Fre$Outlaws$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str118$
+$Zy_Eng$Rainbow 6$
+$Zy_Tur$Rainbow 6$
+$Zy_Ger$Rainbow 6$
+$Zy_Fre$Rainbow 6$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str119$
+$Zy_Eng$Rouge Spear$
+$Zy_Tur$Rouge Spear$
+$Zy_Ger$Rouge Spear$
+$Zy_Fre$Rouge Spear$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str120$
+$Zy_Eng$Starcraft$
+$Zy_Tur$Starcraft$
+$Zy_Ger$Starcraft$
+$Zy_Fre$Starcraft$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str121$
+$Zy_Eng$Star Wars$
+$Zy_Tur$Star Wars$
+$Zy_Ger$Star Wars$
+$Zy_Fre$La Guerre des Etoiles$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str122$
+$Zy_Eng$Supreme Commander$
+$Zy_Tur$Supreme Commander$
+$Zy_Ger$Supreme Commander$
+$Zy_Fre$Supreme Commander$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str123$
+$Zy_Eng$Tabula Rasa$
+$Zy_Tur$Tabula Rasa$
+$Zy_Ger$Tabula Rasa$
+$Zy_Fre$Tabula Rasa$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str124$
+$Zy_Eng$Tiberian Sun$
+$Zy_Tur$Tiberian Sun$
+$Zy_Ger$Tiberian Sun$
+$Zy_Fre$Tiberian Sun$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str125$
+$Zy_Eng$Ultima$
+$Zy_Tur$Ultima$
+$Zy_Ger$Ultima$
+$Zy_Fre$Ultima$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str126$
+$Zy_Eng$Quake 3 Server$
+$Zy_Tur$Quake 3 Server$
+$Zy_Ger$Quake 3 Server$
+$Zy_Fre$Serveur Quake 3$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str127$
+$Zy_Eng$Quake 2 Server$
+$Zy_Tur$Quake 2 Server$
+$Zy_Ger$Quake 2 Server$
+$Zy_Fre$Serveur Quake 2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str128$
+$Zy_Eng$World of Warcraft$
+$Zy_Tur$World of Warcraft$
+$Zy_Ger$World of Warcraft$
+$Zy_Fre$World of Warcraft$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str129$
+$Zy_Eng$Sony PS-2 / PS-3$
+$Zy_Tur$Sony PS-2 / PS-3$
+$Zy_Ger$Sony PS-2 / PS-3$
+$Zy_Fre$Sony PS-2 / PS-3$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str130$
+$Zy_Eng$Nintendo Wii$
+$Zy_Tur$Nintendo Wii$
+$Zy_Ger$Nintendo Wii$
+$Zy_Fre$Nintendo Wii$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str131$
+$Zy_Eng$Xbox 360$
+$Zy_Tur$Xbox 360$
+$Zy_Ger$Xbox 360$
+$Zy_Fre$Xbox 360$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str132$
+$Zy_Eng$DirecTV Receiver 1$
+$Zy_Tur$DirecTV Receiver 1$
+$Zy_Ger$DirecTV Receiver 1$
+$Zy_Fre$DirecTV Receiver 1$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str133$
+$Zy_Eng$DirecTV Receiver 2$
+$Zy_Tur$DirecTV Receiver 2$
+$Zy_Ger$DirecTV Receiver 2$
+$Zy_Fre$DirecTV Receiver 2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str134$
+$Zy_Eng$DirecTV Receiver 3$
+$Zy_Tur$DirecTV Receiver 3$
+$Zy_Ger$DirecTV Receiver 3$
+$Zy_Fre$DirecTV Receiver 3$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str135$
+$Zy_Eng$iTunes Music Share$
+$Zy_Tur$iTunes M&#252;zik Payla&#351;&#305;m&#305;$
+$Zy_Ger$iTunes Music Share$
+$Zy_Fre$iTunes Music Share$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str136$
+$Zy_Eng$Net2Phone$
+$Zy_Tur$Net2Phone$
+$Zy_Ger$Net2Phone$
+$Zy_Fre$Net2Phone$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str137$
+$Zy_Eng$NetFone$
+$Zy_Tur$NetFone$
+$Zy_Ger$NetFone$
+$Zy_Fre$NetFone$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str138$
+$Zy_Eng$Slingbox$
+$Zy_Tur$Slingbox$
+$Zy_Ger$Slingbox$
+$Zy_Fre$Slingbox$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str139$
+$Zy_Eng$Quick Time 4 Server$
+$Zy_Tur$Quick Time 4 Server$
+$Zy_Ger$Quick Time 4 Server$
+$Zy_Fre$Quick Time 4 Server$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str140$
+$Zy_Eng$Webphone$
+$Zy_Tur$Web telefon$
+$Zy_Ger$Webphone$
+$Zy_Fre$Webphone$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str141$
+$Zy_Eng$Gnutella$
+$Zy_Tur$Gnutella$
+$Zy_Ger$Gnutella$
+$Zy_Fre$Gnutella$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str142$
+$Zy_Eng$PC Anywhere$
+$Zy_Tur$PC Anywhere$
+$Zy_Ger$PC Anywhere$
+$Zy_Fre$PC Anywhere$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str143$
+$Zy_Eng$Remote Anything$
+$Zy_Tur$Remote Anything$
+$Zy_Ger$Remote Anything$
+$Zy_Fre$Remote Anything$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str144$
+$Zy_Eng$Remote AnyWhere$
+$Zy_Tur$Remote AnyWhere$
+$Zy_Ger$Remote AnyWhere$
+$Zy_Fre$Remote AnyWhere$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str145$
+$Zy_Eng$Remote Desktop Connection$
+$Zy_Tur$Uzak Masa&#252;st&#252; Ba&#287;lant&#305;s&#305;$
+$Zy_Ger$Remote Desktop Connection$
+$Zy_Fre$Remote Desktop Connection$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str146$
+$Zy_Eng$Windows 2000 Terminal$
+$Zy_Tur$Windows 2000 Terminal$
+$Zy_Ger$Windows 2000 Terminal$
+$Zy_Fre$Windows 2000 Terminal$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str147$
+$Zy_Eng$IPSec$
+$Zy_Tur$IPSec$
+$Zy_Ger$IPSec$
+$Zy_Fre$IPSec$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str148$
+$Zy_Eng$L2TP$
+$Zy_Tur$L2TP$
+$Zy_Ger$L2TP$
+$Zy_Fre$L2TP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str149$
+$Zy_Eng$PPTP$
+$Zy_Tur$PPTP$
+$Zy_Ger$PPTP$
+$Zy_Fre$PPTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str150$
+$Zy_Eng$Shiva VPN$
+$Zy_Tur$Shiva VPN$
+$Zy_Ger$Shiva VPN$
+$Zy_Fre$Shiva VPN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str151$
+$Zy_Eng$DNS Server$
+$Zy_Tur$DNS Sunucusu$
+$Zy_Ger$DNS Server$
+$Zy_Fre$Serveur DNS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str152$
+$Zy_Eng$FTP Server$
+$Zy_Tur$FTP Sunucusu$
+$Zy_Ger$FTP Server$
+$Zy_Fre$Serveur FTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str153$
+$Zy_Eng$LDAP Server$
+$Zy_Tur$LDAP Sunucusu$
+$Zy_Ger$LDAP Server$
+$Zy_Fre$Serveur LDAP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str154$
+$Zy_Eng$POP2 Mail Server$
+$Zy_Tur$POP2 Posta Sunucusu$
+$Zy_Ger$POP2 Mail Server$
+$Zy_Fre$Serveur de messagerie POP2$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str155$
+$Zy_Eng$POP3 Mail Server$
+$Zy_Tur$POP3 Posta Sunucusu$
+$Zy_Ger$POP3 Mail Server$
+$Zy_Fre$Serveur de messagerie POP3$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str156$
+$Zy_Eng$NNTP Server$
+$Zy_Tur$NNTP Sunucusu$
+$Zy_Ger$NNTP Server$
+$Zy_Fre$Serveur NNTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str157$
+$Zy_Eng$SMTP Mail Server$
+$Zy_Tur$SMTP Posta Sunucusu$
+$Zy_Ger$SMTP Mail Server$
+$Zy_Fre$Serveur de messagerie SMTP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str158$
+$Zy_Eng$Telnet Server$
+$Zy_Tur$Telnet Sunucusu$
+$Zy_Ger$Telnet Server$
+$Zy_Fre$Serveur Telnet$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str159$
+$Zy_Eng$Web Server$
+$Zy_Tur$Web Sunucusu$
+$Zy_Ger$Web Server$
+$Zy_Fre$Serveur Web$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str160$
+$Zy_Eng$SIP Server$
+$Zy_Tur$SIP Sunucusu$
+$Zy_Ger$SIP Server$
+$Zy_Fre$Serveur SIP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str161$
+$Zy_Eng$RTSP Server$
+$Zy_Tur$RTSP Sunucusu$
+$Zy_Ger$RTSP Server$
+$Zy_Fre$Serveur RTSP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str162$
+$Zy_Eng$ Delta Force II$
+$Zy_Tur$ Delta Force II$
+$Zy_Ger$ Delta Force II$
+$Zy_Fre$ Delta Force II$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str163$
+$Zy_Eng$TCP$
+$Zy_Tur$TCP$
+$Zy_Ger$TCP$
+$Zy_Fre$TCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str164$
+$Zy_Eng$UDP$
+$Zy_Tur$UDP$
+$Zy_Ger$UDP$
+$Zy_Fre$UDP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str165$
+$Zy_Eng$ICMP$
+$Zy_Tur$ICMP$
+$Zy_Ger$ICMP$
+$Zy_Fre$ICMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str166$
+$Zy_Eng$IGMP$
+$Zy_Tur$IGMP$
+$Zy_Ger$IGMP$
+$Zy_Fre$IGMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str167$
+$Zy_Eng$DHCP$
+$Zy_Tur$DHCP$
+$Zy_Ger$DHCP$
+$Zy_Fre$DHCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str168$
+$Zy_Eng$DSCP$
+$Zy_Tur$DSCP$
+$Zy_Ger$DSCP$
+$Zy_Fre$DSCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str169$
+$Zy_Eng$802.1P$
+$Zy_Tur$802.1P$
+$Zy_Ger$802.1P$
+$Zy_Fre$802.1P$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str170$
+$Zy_Eng$VLAN ID$
+$Zy_Tur$VLAN ID$
+$Zy_Ger$VLAN ID$
+$Zy_Fre$VLAN ID$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str171$
+$Zy_Eng$0 BE$
+$Zy_Tur$0 BE$
+$Zy_Ger$0 BE$
+$Zy_Fre$0 BE$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str172$
+$Zy_Eng$1 BK$
+$Zy_Tur$1 BK$
+$Zy_Ger$1 BK$
+$Zy_Fre$1 BK$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str173$
+$Zy_Eng$2 SPARE$
+$Zy_Tur$2 SPARE$
+$Zy_Ger$2 SPARE$
+$Zy_Fre$2 SPARE$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str174$
+$Zy_Eng$3 EE$
+$Zy_Tur$3 EE$
+$Zy_Ger$3 EE$
+$Zy_Fre$3 EE$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str175$
+$Zy_Eng$4 CL$
+$Zy_Tur$4 CL$
+$Zy_Ger$4 CL$
+$Zy_Fre$4 CL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str176$
+$Zy_Eng$5 VI$
+$Zy_Tur$5 VI$
+$Zy_Ger$5 VI$
+$Zy_Fre$5 VI$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str177$
+$Zy_Eng$6 VO$
+$Zy_Tur$6 VO$
+$Zy_Ger$6 VO$
+$Zy_Fre$6 VO$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str178$
+$Zy_Eng$7 NC$
+$Zy_Tur$7 NC$
+$Zy_Ger$7 NC$
+$Zy_Fre$7 NC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str179$
+$Zy_Eng$NA$
+$Zy_Tur$NA$
+$Zy_Ger$NA$
+$Zy_Fre$NA$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str180$
+$Zy_Eng$IP (0x0800)$
+$Zy_Tur$IP (0x0800)$
+$Zy_Ger$IP (0x0800)$
+$Zy_Fre$IP (0x0800)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str181$
+$Zy_Eng$ARP (0x0806)$
+$Zy_Tur$ARP (0x0806)$
+$Zy_Ger$ARP (0x0806)$
+$Zy_Fre$ARP (0x0806)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str182$
+$Zy_Eng$PPPoE_DISC (0x8863)$
+$Zy_Tur$PPPoE_DISC (0x8863)$
+$Zy_Ger$PPPoE_DISC (0x8863)$
+$Zy_Fre$PPPoE_DISC (0x8863)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str183$
+$Zy_Eng$PPPoE_SES (0x8864)$
+$Zy_Tur$PPPoE_SES (0x8864)$
+$Zy_Ger$PPPoE_SES (0x8864)$
+$Zy_Fre$PPPoE_SES (0x8864)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str184$
+$Zy_Eng$ 802.1Q (0x8100)$
+$Zy_Tur$ 802.1Q (0x8100)$
+$Zy_Ger$ 802.1Q (0x8100)$
+$Zy_Fre$ 802.1Q (0x8100)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str185$
+$Zy_Eng$Unknown$
+$Zy_Tur$Bilinmeyen$
+$Zy_Ger$Unbekanntes$
+$Zy_Fre$Inconnu$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str186$
+$Zy_Eng$Protocol$
+$Zy_Tur$Protokol  $
+$Zy_Ger$Protokoll$
+$Zy_Fre$Protocole$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str187$
+$Zy_Eng$AutoMark$
+$Zy_Tur$Otomatik &#304;&#351;aretleme$
+$Zy_Ger$AutoMark$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str188$
+$Zy_Eng$Forward To Interface:$
+$Zy_Tur$Aray&#252;ze &#304;let:$
+$Zy_Ger$Weiterleiten an Schnittstelle:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str189$
+$Zy_Eng$IPv6 (0x86DD)$
+$Zy_Tur$IPv6 (0x86DD)$
+$Zy_Ger$IPv6 (0x86DD)$
+$Zy_Fre$IPv6 (0x86DD)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str190$
+$Zy_Eng$Please follow the guidance through step 1~5 to configure a QoS rule$
+$Zy_Tur$Bir QoS kural&#305;n&#305; yap&#305;land&#305;rmak i&#231;in ad&#305;m 1 ~ 5 &#252;zerinden k&#305;lavuzu takip ediniz.$
+$Zy_Ger$Bitte f&#252;hren Sie die Schritte 1 bis 5 durch, um eine QoS-Regel zu konfigurieren$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str191$
+$Zy_Eng$Step4 Policy Forwarding$
+$Zy_Tur$Ad&#305;m 4 Politika Y&#246;nlendirme$
+$Zy_Ger$Schritt 4 Weiterleitung von Richtlinien$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str192$
+$Zy_Eng$This module can route or bridge packets to certain interface according to the class settings:$
+$Zy_Tur$Bu mod&#252;l, k&#246;pr&#252; paketlerini s&#305;n&#305;f ayarlar&#305;na g&#246;re belirli bir aray&#252;ze y&#246;nlendirebilir ya da k&#246;pr&#252;leyebilir:$
+$Zy_Ger$Dieses Modul kann Pakete durch Routing oder Bridging an eine bestimmte Schnittstelle weiterleiten gem&#228;&#223; der Einstellungen f&#252;r die Klasse:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str193$
+$Zy_Eng$Step5: Outgoing queue selection$
+$Zy_Tur$Ad&#305;m 5: Giden kuyruk se&#231;imi $
+$Zy_Ger$Schritt 5: Abgehende Queue ausw&#228;hlen$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str194$
+$Zy_Eng$From Intf: $
+$Zy_Tur$&#350;u aray&#252;zden:$
+$Zy_Ger$Von Schnittst.:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str195$
+$Zy_Eng$To Intf: $
+$Zy_Tur$&#350;u aray&#252;ze:$
+$Zy_Ger$An Schnittst.:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str196$
+$Zy_Eng$Ether Type: $
+$Zy_Tur$Ether Type:$
+$Zy_Ger$Ethernet-Typ:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str197$
+$Zy_Eng$Src MAC: $
+$Zy_Tur$Kaynak MAC:$
+$Zy_Ger$Quell-MAC:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str198$
+$Zy_Eng$DHCP OP$
+$Zy_Tur$DHCP OP$
+$Zy_Ger$DHCP OP$
+$Zy_Fre$DHCP OP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str199$
+$Zy_Eng$Src IP: $
+$Zy_Tur$Kaynak IP:$
+$Zy_Ger$Quell-IP$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str200$
+$Zy_Eng$Src Port: $
+$Zy_Tur$Kaynak Portu:$
+$Zy_Ger$Quell-Port $
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str201$
+$Zy_Eng$Dst MAC: $
+$Zy_Tur$Hedef MAC:$
+$Zy_Ger$Ziel-MAC:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str202$
+$Zy_Eng$Dst IP: $
+$Zy_Tur$Hedef IP:$
+$Zy_Ger$Ziel-IP$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str203$
+$Zy_Eng$Dst Port: $
+$Zy_Tur$Hedef Port:$
+$Zy_Ger$Ziel-Port $
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str204$
+$Zy_Eng$IP Length: $
+$Zy_Tur$IP uzunlu&#287;u:$
+$Zy_Ger$IP-L&#228;nge:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str6$
+$Zy_Eng$Class Name$
+$Zy_Tur$S&#305;n&#305;f Ad&#305;$
+$Zy_Ger$Klassenname$
+$Zy_Fre$Nom de classe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str7$
+$Zy_Eng$Classification Criteria$
+$Zy_Tur$S&#305;n&#305;fland&#305;rma Kriterleri$
+$Zy_Ger$Klassifizierung skriterien$
+$Zy_Fre$Crit&#232;re de classification$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str8$
+$Zy_Eng$DSCP Mark$
+$Zy_Tur$DSCP &#304;&#351;areti$
+$Zy_Ger$DSCP-Markierung$
+$Zy_Fre$Marquage DSCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSClassSetup_Str9$
+$Zy_Eng$802.1P Mark$
+$Zy_Tur$802.1P &#304;&#351;areti$
+$Zy_Ger$802.1P Markierung$
+$Zy_Fre$Marquage 802.1P$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSGeneral_AlertMsg_Str1$
+$Zy_Eng$Please enter valid up rate$
+$Zy_Tur$L&#252;tfen ge&#231;erli bir art&#305;&#351; de&#287;eri giriniz.$
+$Zy_Ger$Bitte geben Sie eine g&#252;ltige Upstream-Rate ein$
+$Zy_Fre$Saisissez un d&#233;bit maximum valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSGeneral_AlertMsg_Str2$
+$Zy_Eng$Please enter valid down rate$
+$Zy_Tur$L&#252;tfen ge&#231;erli bir azalma de&#287;eri giriniz.$
+$Zy_Ger$Bitte geben Sie eine g&#252;ltige Downstream-Rate ein$
+$Zy_Fre$Saisissez un d&#233;bit minimum valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSGeneral_AlertMsg_Str3$
+$Zy_Eng$The range of WAN managed upstream bandwith is 0 ~ $
+$Zy_Tur$WAN y&#246;netimli &#252;st bant geni&#351;li&#287;i aral&#305;&#287;&#305; 0 ~ $
+$Zy_Ger$Der Bereich der &#252;ber WAN verwalteten Upstream-Bandbreite ist 0 ~ $
+$Zy_Fre$La gamme des bandes passantes en amont WAN g&#233;r&#233;es est 0 ~ $
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSGeneral_AlertMsg_Str4$
+$Zy_Eng$The range of WAN managed downstream bandwith is 0 ~ $
+$Zy_Tur$WAN y&#246;netimli alt bant geni&#351;li&#287;i aral&#305;&#287;&#305; 0 ~ $
+$Zy_Ger$Der Bereich der &#252;ber WAN verwalteten Downstream-Bandbreite ist 0 ~ $
+$Zy_Fre$La gamme des bandes passantes en aval WAN g&#233;r&#233;es est 0 ~ $
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSGeneral_Str1$
+$Zy_Eng$Quality of Service(QoS) defines the traffic priority of Internet services to the home network.$
+$Zy_Tur$Servis Kalitesi (QoS), ev a&#287;&#305;na gelen &#304;nternet servislerinin trafik &#246;nceli&#287;ini tan&#305;mlar.$
+$Zy_Ger$Quality of Service (QoS) definiert die Priorit&#228;t des Traffic von Internet Services zum Heimnetzwerk.$
+$Zy_Fre$Qualit&#233; de Service (QoS) d&#233;finit la priorit&#233; du trafic des services Internet pour le r&#233;seau domestique.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSGeneral_Str10$
+$Zy_Eng$Assigned by$
+$Zy_Tur$Atayan$
+$Zy_Ger$Zugewiesen durch$
+$Zy_Fre$Attribu&#233; par$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSGeneral_Str11$
+$Zy_Eng$None$
+$Zy_Tur$Hi&#231;biri$
+$Zy_Ger$Keine$
+$Zy_Fre$Aucun$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSGeneral_Str12$
+$Zy_Eng$Ethernet Priority$
+$Zy_Tur$Ethernet &#214;nceli&#287;i$
+$Zy_Ger$Ethernet-Priorit&#228;t$
+$Zy_Fre$Priorit&#233; Ethernet$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSGeneral_Str13$
+$Zy_Eng$IP Precedence$
+$Zy_Tur$IP &#214;nceli&#287;i$
+$Zy_Ger$IP Vorrang$
+$Zy_Fre$Priorit&#233; d&#8217;IP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSGeneral_Str14$
+$Zy_Eng$Packet Length$
+$Zy_Tur$Paket Uzunlu&#287;u$
+$Zy_Ger$Paketl&#228;nge$
+$Zy_Fre$Longueur du paquet$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSGeneral_Str15$
+$Zy_Eng$You can assign the upstream bandwidth manually. If the field is empty, the CPE sets the value automatically. <br> If the setting of WAN managed upstream bandwidth is greater than current WAN interface linkup rate, then the WAN managed upstream bandwidth will become current WAN interface linkup rate. $
+$Zy_Tur$&#220;st bant geni&#351;li&#287;i manuel olarak atayabilirsiniz. Alan bo&#351; ise, CPE, de&#287;eri otomatik olarak belirler. <br> WAN y&#246;netimli &#252;st bant geni&#351;li&#287;i ayar&#305; ge&#231;erli WAN aray&#252;z ba&#287;lant&#305; noktas&#305; de&#287;erinden b&#252;y&#252;k ise, WAN y&#246;netimli &#252;st bant geni&#351;li&#287;i, ge&#231;erli WAN aray&#252;z ba&#287;lant&#305; noktas&#305; de&#287;eri olacakt&#305;r. $
+$Zy_Ger$Sie k&#246;nnen die Upstream-Bandbreite manuell zuweisen. Wenn das Feld leer ist, stellt die CPE den Wert automatisch ein. <br> Wenn die Einstellung f&#252;r die vom WAN verwaltete Upstream-Bandbreite gr&#246;&#223;er als die aktuelle Linkup-Rate der WAN-Schnittstelle ist, so wird die vom WAN verwaltete Upstream-Bandbreite auf die aktuelle Linkup-Rate der WAN-Schnittstelle gesetzt. $
+$Zy_Fre$Vous pouvez attribuer la bande passante montante manuellement. Si le champ est vide, le CPE d&#233;finit la valeur automatiquement. <br>   Si le param&#232;tre de bande passante montante g&#233;r&#233;e par WAN est sup&#233;rieur au d&#233;bit de liaison montante de l&#39;interface WAN actuelle, alors la bande passante montante g&#233;r&#233;e par WAN deviendra le d&#233;bit de liaison montante de l&#39;interface WAN actuelle. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSGeneral_Str16$
+$Zy_Eng$WAN Managed Upstream Bandwidth:$
+$Zy_Tur$WAN Y&#246;netimli &#220;st Bant Geni&#351;li&#287;i:$
+$Zy_Ger$Vom WAN verwaltete Upstream-Bandbreite:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSGeneral_Str17$
+$Zy_Eng$LAN Managed Downstream Bandwidth:$
+$Zy_Tur$LAN Y&#246;netimli Alt Bant Geni&#351;li&#287;i:$
+$Zy_Ger$Vom LAN verwaltete Downstream-Bandbreite:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSGeneral_Str18$
+$Zy_Eng$Upstream traffic priority Assigned by:$
+$Zy_Tur$... taraf&#305;ndan atanan &#252;st trafik &#246;nceli&#287;i:$
+$Zy_Ger$Upstream-Traffic-Priorit&#228;t zugewiesen von:$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSGeneral_Str2$
+$Zy_Eng$QoS :$
+$Zy_Tur$QoS :$
+$Zy_Ger$QoS:$
+$Zy_Fre$QoS :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSGeneral_Str3$
+$Zy_Eng$State :$
+$Zy_Tur$Durum:$
+$Zy_Ger$Status:$
+$Zy_Fre$&#201;tat :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSGeneral_Str4$
+$Zy_Eng$(The settings of QoS are invalid if you select this.)$
+$Zy_Tur$(Bunu se&#231;erseniz QoS ayarlar&#305; ge&#231;ersizdir.)$
+$Zy_Ger$(Bei Auswahl dieser Option gelten die QoS-Einstellungen nicht.)$
+$Zy_Fre$(Les param&#232;tres de qualit&#233; de service (QoS) ne sont pas valables si vous s&#233;lectionnez cette option.)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSGeneral_Str5$
+$Zy_Eng$WAN Managed :$
+$Zy_Tur$WAN Y&#246;netimli:$
+$Zy_Ger$Vom WAN verwaltet:$
+$Zy_Fre$G&#233;r&#233; par WAN :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSGeneral_Str6$
+$Zy_Eng$Upstream Bandwidth :$
+$Zy_Tur$&#220;st Bant Geni&#351;li&#287;i:$
+$Zy_Ger$Upstream-Bandbreite:$
+$Zy_Fre$Bande passante montante :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSGeneral_Str7$
+$Zy_Eng$LAN Managed :$
+$Zy_Tur$LAN Y&#246;netimli:$
+$Zy_Ger$Vom LAN verwaltet:$
+$Zy_Fre$G&#233;r&#233; par LAN :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSGeneral_Str8$
+$Zy_Eng$Downstream Bandwidth : $
+$Zy_Tur$Alt Bant Geni&#351;li&#287;i: $
+$Zy_Ger$Downstream-Bandbreite: $
+$Zy_Fre$Bande passante descendante : $
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSGeneral_Str9$
+$Zy_Eng$Upstream traffic priority :$
+$Zy_Tur$&#220;st trafik &#246;nceli&#287;i:$
+$Zy_Ger$Upstream-Traffic-Priorit&#228;t:$
+$Zy_Fre$Priorit&#233; du trafic montant :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSMonitor_Str1$
+$Zy_Eng$Monitor shows the statistics of QoS on WAN/LAN interface and the status of Queue setup.$
+$Zy_Tur$Monit&#246;r, WAN / LAN aray&#252;z&#252;ndeki QoS istatistiklerini ve Kuyruk kurulum durumunu g&#246;sterir.$
+$Zy_Ger$Unter Monitor werden die Statistiken von QoS an den WAN/LAN-Schnittstellen und der Status der Queue-Einrichtung angezeigt.$
+$Zy_Fre$Le moniteur affiche les statistiques de QoS sur l&#39;interface WAN/LAN et l&#39;&#233;tat de la configuration de file d&#39;attente.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSMonitor_Str10$
+$Zy_Eng$Queue Monitor $
+$Zy_Tur$Kuyruk Monit&#246;r $
+$Zy_Ger$Queue &#252;berwachen $
+$Zy_Fre$Moniteur de file d&#39;attente $
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSMonitor_Str11$
+$Zy_Eng$If the rate fields are empty, either the interface is not up, the general QoS settings are not configured, queue rate limits are not configured, or there are no queues with the same priority and different weights. $
+$Zy_Tur$De&#287;er alan&#305; bo&#351; ise, ya aray&#252;z artmam&#305;&#351;, genel QoS ayarlar&#305; yap&#305;land&#305;r&#305;lmam&#305;&#351;, kuyruk oran&#305; s&#305;n&#305;rlar&#305; yap&#305;land&#305;r&#305;lm&#305;&#351;t&#305;r ya da ayn&#305; &#246;ncelik ve farkl&#305; a&#287;&#305;rl&#305;klara sahip hi&#231;bir kuyruk yoktur. $
+$Zy_Ger$Wenn die Felder f&#252;r die Raten leer sind, l&#228;uft entweder die Schnittstelle nicht oder sind die allgemeinen QoS-Einstellungen nicht konfiguriert bzw. sind keine Queue-Bandbreitenbegrenzungen konfiguriert oder es gibt keine Queues mit derselben Priorit&#228;t und anderen Gewichtungen. $
+$Zy_Fre$Si les champs de d&#233;bit sont vides, l&#39;interface n&#39;est pas active, les param&#232;tres g&#233;n&#233;raux de qualit&#233; de service ne sont pas configur&#233;s, les limites de d&#233;bit de file d&#39;attente ne sont pas configur&#233;es, ou il n&#39;y a pas de file d&#39;attente avec la m&#234;me priorit&#233; et des poids diff&#233;rents. $
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSMonitor_Str12$
+$Zy_Eng$No Refresh$
+$Zy_Tur$Yenileme Yok$
+$Zy_Ger$Keine Aktualisierung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSMonitor_Str2$
+$Zy_Eng$Monitor$
+$Zy_Tur$&#304;zle $
+$Zy_Ger$Monitor$
+$Zy_Fre$Moniteur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSMonitor_Str3$
+$Zy_Eng$Refresh Interval :$
+$Zy_Tur$Yenileme S&#305;kl&#305;&#287;&#305;:$
+$Zy_Ger$Aktualisierungsintervall:$
+$Zy_Fre$Intervalle d&#39;actualisation :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSMonitor_Str4$
+$Zy_Eng$None$
+$Zy_Tur$Hi&#231;biri$
+$Zy_Ger$Keines$
+$Zy_Fre$Aucun$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSMonitor_Str5$
+$Zy_Eng${{1}} seconds$
+$Zy_Tur${{1}} saniye$
+$Zy_Ger${{1}} Sekunden$
+$Zy_Fre${{1}} secondes$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSMonitor_Str6$
+$Zy_Eng$Status :$
+$Zy_Tur$Durum:$
+$Zy_Ger$Status:$
+$Zy_Fre$&#201;tat :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSMonitor_Str7$
+$Zy_Eng$Interface Monitor $
+$Zy_Tur$Aray&#252;z Monit&#246;r&#252; $
+$Zy_Ger$Schnittstelle &#252;berwachen $
+$Zy_Fre$Moniteur d&#39;interface  $
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSMonitor_Str8$
+$Zy_Eng$Pass Rate(bps)$
+$Zy_Tur$Ge&#231;i&#351; H&#305;z&#305; (bps)$
+$Zy_Ger$Rate (b/s) f&#252;r Durchlassen$
+$Zy_Fre$D&#233;bit de passage (bps)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSMonitor_Str9$
+$Zy_Eng$Drop Rate(bps)$
+$Zy_Tur$D&#252;&#351;me H&#305;z&#305; (bps)$
+$Zy_Ger$Rate(b/s) f&#252;r Verwerfen$
+$Zy_Fre$D&#233;bit d&#39;abandon(bps)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str1$
+$Zy_Eng$Please enter policer name.$
+$Zy_Tur$L&#252;tfen kural ad&#305;n&#305; giriniz.$
+$Zy_Ger$Bitte geben Sie einen Policer-Namen ein.$
+$Zy_Fre$Entrez le nom de policer.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str10$
+$Zy_Eng$Invalid conforming action DSCP mark {{1}}$
+$Zy_Tur$Ge&#231;ersiz uygun eylem DSCP i&#351;areti {{1}}$
+$Zy_Ger$Ung&#252;ltige DSCP-Markierung {{1}} f&#252;r Aktion bei Konformit&#228;t$
+$Zy_Fre$Marquage DSCP d&#39;action conforme {{1}} non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str11$
+$Zy_Eng$Please enter non conforming action DSCP mark .$
+$Zy_Tur$L&#252;tfen uygun olmayan bir eylem DSCP i&#351;areti girin.$
+$Zy_Ger$Bitte geben Sie die DSCP-Markierung f&#252;r Aktion bei Nicht-Konformit&#228;t ein .$
+$Zy_Fre$Entrez un marquage DSCP d&#39;action non conforme.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str12$
+$Zy_Eng$Invalid non conforming action DSCP mark {{1}}$
+$Zy_Tur$Ge&#231;ersiz uygun olmayan eylem DSCP i&#351;areti {{1}}$
+$Zy_Ger$Ung&#252;ltige DSCP-Markierung {{1}} f&#252;r Aktion bei Nicht-Konformit&#228;t$
+$Zy_Fre$Marquage DSCP d&#39;action non conforme {{1}} non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str13$
+$Zy_Eng$Please enter policer committed rate.$
+$Zy_Tur$L&#252;tfen kural i&#231;eren h&#305;z&#305; giriniz.$
+$Zy_Ger$Bitte geben Sie die Committed Rate des Policers ein.$
+$Zy_Fre$Entrez un d&#233;bit garanti de policer.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str14$
+$Zy_Eng$Please enter policer commited burst size.$
+$Zy_Tur$L&#252;tfen kural i&#231;eren veri blo&#287;u boyutunu giriniz.$
+$Zy_Ger$Bitte geben Sie die Committed Burst Size des Policers ein.$
+$Zy_Fre$Entrez une taille de rafale garantie de policer.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str15$
+$Zy_Eng$Please enter policer excess burst size.$
+$Zy_Tur$L&#252;tfen kural ek veri blo&#287;u boyutunu giriniz.$
+$Zy_Ger$Bitte geben Sie die Excess Burst Size des Policers ein.$
+$Zy_Fre$Entrez une taille de rafale exc&#233;dentaire de policer.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str16$
+$Zy_Eng$Invalid committed rate {{1}}$
+$Zy_Tur$Ge&#231;ersiz taahh&#252;t edilen h&#305;z {{1}}$
+$Zy_Ger$Ung&#252;ltige Committed Rate {{1}}$
+$Zy_Fre$D&#233;bit garanti {{1}} non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str17$
+$Zy_Eng$Invalid committed burst size {{1}}$
+$Zy_Tur$Ge&#231;ersiz taahh&#252;t edilen veri blo&#287;u boyutu {{1}}$
+$Zy_Ger$Ung&#252;ltige Committed Burst Size {{1}}$
+$Zy_Fre$Taille de rafale garantie {{1}} non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str18$
+$Zy_Eng$Invalid excess burst size {{1}}$
+$Zy_Tur$Ge&#231;ersiz ek veri blo&#287;u boyutu {{1}}$
+$Zy_Ger$Ung&#252;ltige Excess Burst Size {{1}}$
+$Zy_Fre$Taille de rafale exc&#233;dentaire {{1}} non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str19$
+$Zy_Eng$Please enter conforming action DSCP mark .$
+$Zy_Tur$L&#252;tfen uygun eylem DSCP i&#351;aretini giriniz.$
+$Zy_Ger$Bitte geben Sie die DSCP-Markierung f&#252;r Aktion bei Konformit&#228;t ein.$
+$Zy_Fre$Entrez un marquage DSCP d&#39;action conforme.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str2$
+$Zy_Eng$Please enter valid QoS policer name: No special characters.$
+$Zy_Tur$L&#252;tfen ge&#231;erli bir QoS policer ad&#305; giriniz. &#214;zel karakter yok.$
+$Zy_Ger$Bitte g&#252;ltigen QoS-Policer-Namen eingeben: Ohne Sonderzeichen.$
+$Zy_Fre$Entrez un nom de policer QoS valide: Pas de caract&#232;res sp&#233;ciaux.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str20$
+$Zy_Eng$Invalid conforming action DSCP mark {{1}}$
+$Zy_Tur$Ge&#231;ersiz uygun eylem DSCP i&#351;areti {{1}}$
+$Zy_Ger$Ung&#252;ltige DSCP-Markierung {{1}} f&#252;r Aktion bei Konformit&#228;t$
+$Zy_Fre$Marquage DSCP d&#39;action conforme {{1}} non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str21$
+$Zy_Eng$Please enter partial conforming action DSCP mark .$
+$Zy_Tur$L&#252;tfen k&#305;smi uygun eylem DSCP i&#351;aretini giriniz.$
+$Zy_Ger$Bitte geben Sie die DSCP-Markierung f&#252;r Aktion bei teilweise Konformit&#228;t ein.$
+$Zy_Fre$Entrez un marquage DSCP d&#39;action conforme partielle.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str22$
+$Zy_Eng$Invalid partial conforming action DSCP mark {{1}}$
+$Zy_Tur$Ge&#231;ersiz k&#305;smi uygun eylem DSCP i&#351;areti {{1}}$
+$Zy_Ger$Ung&#252;ltige DSCP-Markierung {{1}} f&#252;r Aktion bei teilweiser Konformit&#228;t$
+$Zy_Fre$Marquage DSCP d&#39;action conforme partielle {{1}} non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str23$
+$Zy_Eng$Please enter non conforming action DSCP mark .$
+$Zy_Tur$L&#252;tfen uygun olmayan eylem DSCP i&#351;aretini giriniz.$
+$Zy_Ger$Bitte geben Sie die DSCP-Markierung f&#252;r Aktion bei Nicht-Konformit&#228;t ein .$
+$Zy_Fre$Entrez un marquage DSCP d&#39;action non conforme.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str24$
+$Zy_Eng$Invalid non conforming action DSCP mark {{1}}$
+$Zy_Tur$Ge&#231;ersiz uygun olmayan eylem DSCP i&#351;areti {{1}}$
+$Zy_Ger$Ung&#252;ltige DSCP-Markierung {{1}} f&#252;r Aktion bei Nicht-Konformit&#228;t$
+$Zy_Fre$Marquage DSCP d&#39;action non conforme {{1}} non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str25$
+$Zy_Eng$Please enter policer committed rate.$
+$Zy_Tur$L&#252;tfen policer taahh&#252;t edilen h&#305;z&#305; giriniz.$
+$Zy_Ger$Bitte geben Sie die Committed Rate des Policers ein.$
+$Zy_Fre$Entrez un d&#233;bit garanti de policer.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str26$
+$Zy_Eng$Please enter policer commited burst size.$
+$Zy_Tur$L&#252;tfen policer taahh&#252;t edilen veri blo&#287;u boyutunu giriniz.$
+$Zy_Ger$Bitte geben Sie die Committed Burst Size des Policers ein.$
+$Zy_Fre$Entrez une taille de rafale garantie de policer.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str27$
+$Zy_Eng$Please enter policer peak rate.$
+$Zy_Tur$L&#252;tfen policer en y&#252;ksek h&#305;z&#305;n&#305; giriniz.$
+$Zy_Ger$Bitte geben Sie die Peak Rate des Policers ein.$
+$Zy_Fre$Entrez le d&#233;bit max de policer.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str28$
+$Zy_Eng$Please enter policer peak burst size.$
+$Zy_Tur$L&#252;tfen policer en y&#252;ksek veri blo&#287;u boyutunu giriniz.$
+$Zy_Ger$Bitte geben Sie die Peak Burst Size des Policers ein.$
+$Zy_Fre$Entrez une taille de rafale max de policer.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str29$
+$Zy_Eng$Invalid committed rate {{1}}$
+$Zy_Tur$Ge&#231;ersiz taahh&#252;t edilen h&#305;z {{1}}$
+$Zy_Ger$Ung&#252;ltige Committed Rate {{1}}$
+$Zy_Fre$D&#233;bit garanti {{1}} non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str3$
+$Zy_Eng$Maximum QoS policer name cannot exceed 15 characters.$
+$Zy_Tur$Maksimum QoS policer ad&#305; 15 karakterden uzun olamaz.$
+$Zy_Ger$Ein QoS-Policer-Name darf h&#246;chstens 15 Zeichen lang sein.$
+$Zy_Fre$Le nom de policer QoS maximum ne peut d&#233;passer 15 caract&#232;res.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str30$
+$Zy_Eng$Invalid committed burst size {{1}}$
+$Zy_Tur$Ge&#231;ersiz taahh&#252;t edilen veri blo&#287;u boyutu {{1}}$
+$Zy_Ger$Ung&#252;ltige Committed Burst Size {{1}}$
+$Zy_Fre$Taille de rafale garantie {{1}} non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str31$
+$Zy_Eng$Invalid peak rate {{1}}$
+$Zy_Tur$Ge&#231;ersiz en y&#252;ksek h&#305;z {{1}}$
+$Zy_Ger$Ung&#252;ltige Peak Rate {{1}}$
+$Zy_Fre$D&#233;bit maximum {{1}} non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str32$
+$Zy_Eng$Invalid peak burst size {{1}}$
+$Zy_Tur$Ge&#231;ersiz en y&#252;ksek veri blo&#287;u boyutu {{1}}$
+$Zy_Ger$Ung&#252;ltige Peak Burst Size {{1}}$
+$Zy_Fre$Taille de rafale maximum {{1}} non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str33$
+$Zy_Eng$Peak rate must be equal to or greater than committed rate$
+$Zy_Tur$En y&#252;ksek de&#287;er, taahh&#252;t edilen de&#287;ere e&#351;it veya daha y&#252;ksek olmal&#305;d&#305;r$
+$Zy_Ger$Peak Rate muss gr&#246;&#223;er oder gleich der Committed Rate sein$
+$Zy_Fre$Le d&#233;bit maximum doit &#234;tre &#233;gal ou sup&#233;rieur au d&#233;bit garanti$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str34$
+$Zy_Eng$Please enter conforming action DSCP mark .$
+$Zy_Tur$L&#252;tfen uygun eylem DSCP i&#351;aretini giriniz.$
+$Zy_Ger$Bitte geben Sie die DSCP-Markierung f&#252;r Aktion bei Konformit&#228;t ein.$
+$Zy_Fre$Entrez un marquage DSCP d&#39;action conforme.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str35$
+$Zy_Eng$Invalid conforming action DSCP mark {{1}}$
+$Zy_Tur$Ge&#231;ersiz uygun eylem DSCP i&#351;areti {{1}}$
+$Zy_Ger$Ung&#252;ltige DSCP-Markierung {{1}} f&#252;r Aktion bei Konformit&#228;t$
+$Zy_Fre$Marquage DSCP d&#39;action conforme {{1}} non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str36$
+$Zy_Eng$Please enter partial conforming action DSCP mark .$
+$Zy_Tur$L&#252;tfen k&#305;smi uyumlu eylem DSCP i&#351;aretini giriniz.$
+$Zy_Ger$Bitte geben Sie die DSCP-Markierung f&#252;r Aktion bei teilweise Konformit&#228;t ein.$
+$Zy_Fre$Entrez un marquage DSCP d&#39;action conforme partielle.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str37$
+$Zy_Eng$Invalid partial conforming action DSCP mark {{1}}$
+$Zy_Tur$Ge&#231;ersiz k&#305;smi uygun eylem DSCP i&#351;areti {{1}}$
+$Zy_Ger$Ung&#252;ltige DSCP-Markierung {{1}} f&#252;r Aktion bei teilweiser Konformit&#228;t$
+$Zy_Fre$Marquage DSCP d&#39;action conforme partielle {{1}} non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str38$
+$Zy_Eng$Please enter non conforming action DSCP mark .$
+$Zy_Tur$L&#252;tfen uygun olmayan eylem DSCP i&#351;aretini giriniz.$
+$Zy_Ger$Bitte geben Sie die DSCP-Markierung f&#252;r Aktion bei Nicht-Konformit&#228;t ein .$
+$Zy_Fre$Entrez un marquage DSCP d&#39;action non conforme.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str39$
+$Zy_Eng$Invalid non conforming action DSCP mark {{1}}$
+$Zy_Tur$Ge&#231;ersiz uygun olmayan eylem DSCP i&#351;areti {{1}}$
+$Zy_Ger$Ung&#252;ltige DSCP-Markierung {{1}} f&#252;r Aktion bei Nicht-Konformit&#228;t$
+$Zy_Fre$Marquage DSCP d&#39;action non conforme {{1}} non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str4$
+$Zy_Eng$Policer name exists, please enter another policer name.$
+$Zy_Tur$Policer ad&#305; var, l&#252;tfen ba&#351;ka bir policer ad&#305; giriniz.$
+$Zy_Ger$Policer-Name existiert bereits, bitte geben Sie einen anderen Policer-Namen ein.$
+$Zy_Fre$Le nom de policer existe, entrez un autre nom de policer.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str40$
+$Zy_Eng$At least one selected classification is required$
+$Zy_Tur$En az bir adet se&#231;ilmi&#351; s&#305;n&#305;fland&#305;rma gereklidir.$
+$Zy_Ger$Mindestens eine der ausgew&#228;hlten Klassifizierungen ist erforderlich$
+$Zy_Fre$Au moins un classement s&#233;lectionn&#233; est requis$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str41$
+$Zy_Eng$QoS couple of Maximum Rate and Burst Size exists, please select another couple of Maximum Rate and Burst Size.$
+$Zy_Tur$Maksimum H&#305;z ve Veri Blo&#287;u Boyutu QoS &#231;ifti var; l&#252;tfen Maksimum H&#305;z ve Veri Blo&#287;u Boyutu i&#231;in ba&#351;ka bir &#231;ift se&#231;iniz.$
+$Zy_Ger$QoS-Paar Maximum Rate und Burst Size existiert bereits, bitte w&#228;hlen Sie ein anderes Paar f&#252;r Maximum Rate und Burst Size aus.$
+$Zy_Fre$Le couple QoS de d&#233;bit maximum et taille de rafale existe, veuillez s&#233;lectionner un autre couple de d&#233;bit maximum et taille de rafale.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str42$
+$Zy_Eng$The numbers of classifier of a policer can not exceed three.$
+$Zy_Tur$Policer s&#305;n&#305;fland&#305;r&#305; adedi &#252;&#231;&#252; ge&#231;emez.$
+$Zy_Ger$Ein Policer darf nicht mehr als drei Classifier haben.$
+$Zy_Fre$Le nombre de classificateurs d&#39;un policer ne peut exc&#233;der trois.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str43$
+$Zy_Eng$These classes cannot be added to the policer group becuase $
+$Zy_Tur$Bu s&#305;n&#305;flar policer grubuna eklenemez &#231;&#252;nk&#252; $
+$Zy_Ger$Diese Klassen k&#246;nnen nicht zur Policer-Gruppe hinzugef&#252;gt werden. Grund: $
+$Zy_Fre$Ces classes ne peuvent pas &#234;tre ajout&#233;es au groupe de policer d&#251; &#224;  $
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str44$
+$Zy_Eng$Internal Error$
+$Zy_Tur$Dahili Hata$
+$Zy_Ger$Interner Fehler$
+$Zy_Fre$une erreur interne$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str45$
+$Zy_Eng$one class exists with Q_DROP queue$
+$Zy_Tur$&#252;&#231; tane, biri Q_DROP kuyruklu s&#305;n&#305;f $
+$Zy_Ger$Es gibt eine Klasse mit Q_DROP Queue$
+$Zy_Fre$il existe une classe avec file d&#39;attente Q_DROP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str46$
+$Zy_Eng$one class exists for upstream and one class for downstream.$
+$Zy_Tur$&#252;&#231; tane, bir s&#305;n&#305;f alt di&#287;er s&#305;n&#305;f &#252;st i&#231;in.$
+$Zy_Ger$Es gibt eine Klasse f&#252;r Upstream und eine Klasse f&#252;r Downstream.$
+$Zy_Fre$il existe une classe pour le sens montant et une classe pour le sens descendant.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str5$
+$Zy_Eng$Please enter policer committed rate.$
+$Zy_Tur$L&#252;tfen policer taahh&#252;t edilen h&#305;z&#305; giriniz.$
+$Zy_Ger$Bitte geben Sie die Committed Rate des Policers ein.$
+$Zy_Fre$Entrez un d&#233;bit garanti de policer.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str6$
+$Zy_Eng$Please enter policer commited burst size.$
+$Zy_Tur$L&#252;tfen policer taahh&#252;t edilen veri blo&#287;u boyutunu giriniz.$
+$Zy_Ger$Bitte geben Sie die Committed Burst Size des Policers ein.$
+$Zy_Fre$Entrez une taille de rafale garantie de policer.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str7$
+$Zy_Eng$Invalid committed rate {{1}}$
+$Zy_Tur$Ge&#231;ersiz taahh&#252;t edilen h&#305;z {{1}}$
+$Zy_Ger$Ung&#252;ltige Committed Rate {{1}}$
+$Zy_Fre$D&#233;bit garanti {{1}} non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str8$
+$Zy_Eng$Invalid committed burst size {{1}}$
+$Zy_Tur$Ge&#231;ersiz taahh&#252;t edilen veri blo&#287;u boyutu {{1}}$
+$Zy_Ger$Ung&#252;ltige Committed Burst Size {{1}}$
+$Zy_Fre$Taille de rafale garantie {{1}} non valide$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_AlertMsg_Str9$
+$Zy_Eng$Please enter conforming action DSCP mark .$
+$Zy_Tur$L&#252;tfen uygun eylem DSCP i&#351;aretini giriniz.$
+$Zy_Ger$Bitte geben Sie die DSCP-Markierung f&#252;r Aktion bei Konformit&#228;t ein.$
+$Zy_Fre$Entrez un marquage DSCP d&#39;action conforme.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str1$
+$Zy_Eng$Policer Setup decides the rules of the inbound traffic.$
+$Zy_Tur$Policer Kurulumu gelen trafik kurallar&#305;n&#305; belirler.$
+$Zy_Ger$In Policer einrichten werden die Regeln f&#252;r den eingehenden Traffic bestimmt.$
+$Zy_Fre$La configuration Policer d&#233;cide des r&#232;gles du trafic entrant.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str10$
+$Zy_Eng$QoS Policer Configuration$
+$Zy_Tur$QoS Policer Yap&#305;land&#305;rma$
+$Zy_Ger$QoS-Policer konfigurieren$
+$Zy_Fre$Configuration de Policer QoS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str11$
+$Zy_Eng$Policer Edit$
+$Zy_Tur$Policer D&#252;zenleme$
+$Zy_Ger$Policer bearbeiten$
+$Zy_Fre$Modification de Policer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str12$
+$Zy_Eng$Active$
+$Zy_Tur$Aktif$
+$Zy_Ger$Aktiv$
+$Zy_Fre$Actif$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str13$
+$Zy_Eng$Meter Type :$
+$Zy_Tur$Metre T&#252;r&#252;:$
+$Zy_Ger$Meter-Typ:$
+$Zy_Fre$Type de mesure:$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str14$
+$Zy_Eng$Simple Token Bucket$
+$Zy_Tur$Basit Simge Demeti$
+$Zy_Ger$Simple Token Bucket$
+$Zy_Fre$Simple compartiment de jetons$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str15$
+$Zy_Eng$Single Rate Three Color Marker$
+$Zy_Tur$Tek H&#305;z &#220;&#231; Renk &#304;&#351;aretleyici$
+$Zy_Ger$Single Rate Three Color Marker$
+$Zy_Fre$Marqueurs &#224; trois couleurs &#224; vitesse unique $
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str16$
+$Zy_Eng$Two Rate Three Color Marker$
+$Zy_Tur$&#304;ki H&#305;z &#220;&#231; Renk &#304;&#351;aretleyici$
+$Zy_Ger$Two Rate Three Color Marker$
+$Zy_Fre$Marqueurs &#224; trois couleurs &#224; deux vitesses $
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str17$
+$Zy_Eng$Committed Rate :$
+$Zy_Tur$Taahh&#252;t Edilen H&#305;z:$
+$Zy_Ger$Committed Rate:$
+$Zy_Fre$Vitesse garantie :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str18$
+$Zy_Eng$Committed Burst Size :$
+$Zy_Tur$Taahh&#252;t Edilen Veri Blo&#287;u Boyutu:$
+$Zy_Ger$Committed Burst Size:$
+$Zy_Fre$Taille de rafale garantie :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str19$
+$Zy_Eng$Peak Rate :$
+$Zy_Tur$En Y&#252;ksek H&#305;z:$
+$Zy_Ger$Peak Rate:$
+$Zy_Fre$Vitesse maximum :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str2$
+$Zy_Eng$Policer Setup$
+$Zy_Tur$Policer Kurulumu$
+$Zy_Ger$Policer einrichten$
+$Zy_Fre$Configuration Policer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str20$
+$Zy_Eng$Peak Burst Size :$
+$Zy_Tur$En Y&#252;ksek Veri Blo&#287;u Boyutu:$
+$Zy_Ger$Peak Burst Size:$
+$Zy_Fre$Taille de rafale maximum :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str21$
+$Zy_Eng$Conforming Action :$
+$Zy_Tur$Uygun Eylem:$
+$Zy_Ger$Aktion bei Konformit&#228;t:$
+$Zy_Fre$Action conforme :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str22$
+$Zy_Eng$Pass$
+$Zy_Tur$Ge&#231;i&#351;$
+$Zy_Ger$Durchlassen$
+$Zy_Fre$Passe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str23$
+$Zy_Eng$DSCP Mark$
+$Zy_Tur$DSCP &#304;&#351;areti$
+$Zy_Ger$DSCP-Markierung$
+$Zy_Fre$Marquage DSCP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str24$
+$Zy_Eng$Drop$
+$Zy_Tur$&#304;ptal$
+$Zy_Ger$Verwerfen$
+$Zy_Fre$Abandonner$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str25$
+$Zy_Eng$Partial Conforming Action :$
+$Zy_Tur$K&#305;smi Uygun Eylem:$
+$Zy_Ger$Aktion bei teilweiser Konformit&#228;t:$
+$Zy_Fre$Action conforme partielle :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str26$
+$Zy_Eng$Non-Conforming Action :$
+$Zy_Tur$Uygun Olmayan Eylem:$
+$Zy_Ger$Aktion bei Nicht-Konformit&#228;t:$
+$Zy_Fre$Action non-conforme$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str27$
+$Zy_Eng$Regulated Classes Member Setting$
+$Zy_Tur$D&#252;zenlenmi&#351; S&#305;n&#305;flar &#220;ye Ayar&#305;$
+$Zy_Ger$Zugeh&#246;rigkeit zu regulierten Klassen einstellen$
+$Zy_Fre$Param&#232;tre de membre de classe r&#233;glement&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str28$
+$Zy_Eng$Available Class$
+$Zy_Tur$Mevcut S&#305;n&#305;f$
+$Zy_Ger$Verf&#252;gbare Klasse$
+$Zy_Fre$Classe disponible$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str3$
+$Zy_Eng$Add new Policer$
+$Zy_Tur$Yeni Policer ekle$
+$Zy_Ger$Neuen Policer hinzuf&#252;gen$
+$Zy_Fre$Ajouter un nouveau Policer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str30$
+$Zy_Eng$Selected Class$
+$Zy_Tur$Se&#231;ili S&#305;n&#305;f$
+$Zy_Ger$Ausgew&#228;hlte Klasse$
+$Zy_Fre$Classe s&#233;lectionn&#233;e $
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str31$
+$Zy_Eng$Policer Delete$
+$Zy_Tur$Policer Silme$
+$Zy_Ger$Policer l&#246;schen$
+$Zy_Fre$Suppression de Policer $
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str32$
+$Zy_Eng$Policer Setting$
+$Zy_Tur$Policer Ayar&#305;$
+$Zy_Ger$Policer einrichten$
+$Zy_Fre$Param&#232;tre de Policer $
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str33$
+$Zy_Eng$Excess Burst Size$
+$Zy_Tur$Ek Veri Blo&#287;u Boyutu:$
+$Zy_Ger$Excess Burst Size$
+$Zy_Fre$Taille de rafale exc&#233;dentaire$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str34$
+$Zy_Eng$Length$
+$Zy_Tur$Uzunluk$
+$Zy_Ger$L&#228;nge$
+$Zy_Fre$Longueur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str4$
+$Zy_Eng$Current Settings :$
+$Zy_Tur$Ge&#231;erli Ayarlar:$
+$Zy_Ger$Aktuelle Einstellungen:$
+$Zy_Fre$Param&#232;tres actuels :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str5$
+$Zy_Eng$Policer$
+$Zy_Tur$Kural$
+$Zy_Ger$Policer$
+$Zy_Fre$Policer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str6$
+$Zy_Eng$Regulated Classes$
+$Zy_Tur$D&#252;zenlenmi&#351; S&#305;n&#305;flar$
+$Zy_Ger$Regulierte Klassen$
+$Zy_Fre$Classes r&#233;glement&#233;es$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str7$
+$Zy_Eng$Meter Type$
+$Zy_Tur$Metre T&#252;r&#252;$
+$Zy_Ger$Meter-Typ$
+$Zy_Fre$Type de mesure$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str8$
+$Zy_Eng$Rule$
+$Zy_Tur$Kural$
+$Zy_Ger$Regel$
+$Zy_Fre$R&#232;gle$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSPolicerSetup_Str9$
+$Zy_Eng$Action$
+$Zy_Tur$Eylem$
+$Zy_Ger$Aktion$
+$Zy_Fre$Action$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_AlertMsg_Str1$
+$Zy_Eng$Please enter QoS queue name.$
+$Zy_Tur$L&#252;tfen QoS kuyruk ad&#305;n&#305; giriniz.$
+$Zy_Ger$Bitte geben Sie den Namen der QoS Queue ein.$
+$Zy_Fre$Entrez le nom de la file d&#39;attente QoS.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_AlertMsg_Str2$
+$Zy_Eng$Please enter valid QoS queue name: No special characters.$
+$Zy_Tur$L&#252;tfen ge&#231;erli bir QoS kuyruk ad&#305; girin. &#214;zel karakter yok.$
+$Zy_Ger$Bitte g&#252;ltigen QoS Queue-Namen eingeben: Ohne Sonderzeichen.$
+$Zy_Fre$Entrez un nom de file d&#39;attente QoS valide : Pas de caract&#232;res sp&#233;ciaux.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_AlertMsg_Str3$
+$Zy_Eng$Maximum QoS queue name cannot exceed 15 characters.$
+$Zy_Tur$Maksimum QoS kuyruk ad&#305; 15 karakterden uzun olamaz.$
+$Zy_Ger$Ein QoS Queue-Name darf h&#246;chstens 15 Zeichen lang sein.$
+$Zy_Fre$Le nom de file d&#39;attente QoS maximum ne peut d&#233;passer 15 caract&#232;res.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_AlertMsg_Str4$
+$Zy_Eng$QoS queue name existed, please enter another queue name.$
+$Zy_Tur$QoS kuyruk ad&#305; var, l&#252;tfen ba&#351;ka bir kuyruk ad&#305; giriniz.$
+$Zy_Ger$QoS Queue-Name existiert bereits, bitte geben Sie einen anderen Queue-Namen ein.$
+$Zy_Fre$Le nom de file d&#39;attente QoS existe, entrez un autre nom de file d&#39;attente.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_AlertMsg_Str5$
+$Zy_Eng$Queues of WAN interface is limited by 8.$
+$Zy_Tur$WAN aray&#252;z&#252; kuyruk say&#305;s&#305; 8 ile s&#305;n&#305;rl&#305;d&#305;r.$
+$Zy_Ger$Maximal 8 Queues f&#252;r WAN-Schnittstelle erlaubt.$
+$Zy_Fre$Les files d&#39;attente de l&#39;interface WAN sont limit&#233;es &#224; 8.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_AlertMsg_Str6$
+$Zy_Eng$Queues of LAN/WLAN interface is limited by 3.$
+$Zy_Tur$Yerel A&#287; / Kablosuz Yerel A&#287; aray&#252;z kuyruk say&#305;s&#305; 3 ile s&#305;n&#305;rl&#305;d&#305;r.$
+$Zy_Ger$Maximal 3 Queues f&#252;r LAN/WAN-Schnittstelle erlaubt.$
+$Zy_Fre$Les files d&#39;attente de l&#39;interface LAN/WLAN sont limit&#233;es &#224; 3.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_AlertMsg_Str7$
+$Zy_Eng$Specify an egress interface for this queue.$
+$Zy_Tur$Bu kuyruk i&#231;in bir &#231;&#305;k&#305;&#351; arabirimi belirtiniz.$
+$Zy_Ger$Geben Sie eine egress-Schnittstelle f&#252;r diese Queue an.$
+$Zy_Fre$Sp&#233;cifier une interface de sortie pour cette file d&#39;attente.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_AlertMsg_Str8$
+$Zy_Eng$Shaping rate {{1}} should be between 0 and 1024000.$
+$Zy_Tur$&#350;ekillendirme h&#305;z&#305; {{1}} 0 ile 1024000 aras&#305;nda olmal&#305;d&#305;r.$
+$Zy_Ger$Die Shaping Rate {{1}} sollte zwischen 0 und 1024000 liegen.$
+$Zy_Fre$Le d&#233;bit de mise en forme {{1}} doit &#234;tre compris entre 0 et 1024000.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_Str1$
+$Zy_Eng$Queue Setup decides the priority on WAN/LAN interfaces. Use this page to configure QoS queue assignment.$
+$Zy_Tur$Kuyruk Kurulumu, Yerel A&#287; / Kablosuz Yerel A&#287; aray&#252;zlerindeki &#246;nceliklere karar verir. QoS kuyru&#287;u atamas&#305; yap&#305;land&#305;rmas&#305; i&#231;in bu sayfay&#305; kullan&#305;n&#305;z.$
+$Zy_Ger$In Queue einrichten wird die Priorit&#228;t f&#252;r WAN/LAN-Schnittsellen festgelegt. Verwenden Sie diese Seite, um die Zuweisung von QoS Queues zu konfigurieren.$
+$Zy_Fre$La Configuration de file d&#39;attente d&#233;cide de la priorit&#233; des interfaces WAN/LAN. Utilisez cette page pour configurer l&#39;affectation de la file d&#39;attente QoS.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_Str10$
+$Zy_Eng$Buffer Management$
+$Zy_Tur$Arabellek Y&#246;netimi$
+$Zy_Ger$Puffer-Management$
+$Zy_Fre$Gestion des tampons$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_Str11$
+$Zy_Eng$Rate Limit (kbps)$
+$Zy_Tur$H&#305;z Limiti (kbps)$
+$Zy_Ger$&#220;bertragungsratengrenze (kb/s)$
+$Zy_Fre$Limite de d&#233;bit (kbps)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_Str12$
+$Zy_Eng$Maximum of 8 configurable entries for WAN port, and maximum of 3 configurable entries for LAN port.<br>&nbsp;&nbsp;If queue is deleted, then related classifiers will be removed too.<br>&nbsp;&nbsp;Priority level \'1\' is the highest priority for QoS.<br>&nbsp;&nbsp;Rate Limit \'0\' is max bandwidth.$
+$Zy_Tur$WAN portu i&#231;in maksimum 8 ayarlanabilir girdi ve Yerel A&#287; portu i&#231;in maksimum 3 ayarlanabilir girdi tan&#305;m&#305; yap&#305;labilir . <br> Kuyruk silinirse, ilgili s&#305;n&#305;fland&#305;r&#305;c&#305;lar da silinecektir. <br> &#214;ncelik seviyesi \'1\' QoS i&#231;in en y&#252;ksek &#246;ncelik de&#287;eridir. <br> H&#305;z Limiti \'0\' maksimum bant geni&#351;li&#287;idir.$
+$Zy_Ger$F&#252;r den WAN-Port k&#246;nnen maximal 8 konfigurierbare Eintr&#228;ge vorgenommen werden, f&#252;r den LAN-Port maximal 3.<br>&nbsp;&nbsp;Wenn die Queue gel&#246;scht wird, werden auch zugeh&#246;rige Classifier entfernt.<br>&nbsp;&nbsp;Priorit&#228;tsebene \'1\' stellt die h&#246;chste Priorit&#228;t f&#252;r QoS dar.<br>&nbsp;&nbsp;&#220;bertragungsratengrenze \'0\' ist die maximale Bandbreite.$
+$Zy_Fre$Un maximum de 8 entr&#233;es configurables pour le port WAN, et un maximum de 3 entr&#233;es configurables pour le port LAN.<br>&nbsp;&nbsp;Si la file d&#39;attente est supprim&#233;e, alors les classificateurs li&#233;s seront supprim&#233;s aussi.<br>&nbsp;&nbsp;Le niveau de priorit&#233; \'1\' est la plus haute priorit&#233; pour la QoS.<br>&nbsp;&nbsp;La limite de d&#233;bit \'0\' est la bande passante max.$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_Str13$
+$Zy_Eng$QoS Queue Configuration$
+$Zy_Tur$QoS Kuyruk Yap&#305;land&#305;rma$
+$Zy_Ger$QoS Queue konfigurieren$
+$Zy_Fre$Configuration de la file d&#39;attente de QoS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_Str14$
+$Zy_Eng$Queue Edit$
+$Zy_Tur$Kuyruk D&#252;zenleme$
+$Zy_Ger$Queue bearbeiten$
+$Zy_Fre$Modification de la file d&#39;attente$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_Str15$
+$Zy_Eng$Queue Settings$
+$Zy_Tur$Kuyruk Ayarlar&#305;$
+$Zy_Ger$Queue einstellen$
+$Zy_Fre$Param&#232;tres de la file d&#39;attente$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_Str16$
+$Zy_Eng$Active$
+$Zy_Tur$Aktif$
+$Zy_Ger$Aktiv$
+$Zy_Fre$Actif$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_Str17$
+$Zy_Eng$To Interface :$
+$Zy_Tur$Aray&#252;z i&#231;in:$
+$Zy_Ger$An Schnittstelle:$
+$Zy_Fre$Vers interface:$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_Str18$
+$Zy_Eng$LAN/WLAN$
+$Zy_Tur$Yerel A&#287; / Kablosuz Yerel A&#287;$
+$Zy_Ger$LAN/WLAN$
+$Zy_Fre$LAN/WLAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_Str19$
+$Zy_Eng$WAN$
+$Zy_Tur$WAN$
+$Zy_Ger$WAN$
+$Zy_Fre$WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_Str2$
+$Zy_Eng$Queue Setup$
+$Zy_Tur$Kuyruk Kurulumu$
+$Zy_Ger$Queue einrichten$
+$Zy_Fre$Configuration de la file d&#39;attente$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_Str20$
+$Zy_Eng$High$
+$Zy_Tur$Y&#252;ksek$
+$Zy_Ger$Hoch$
+$Zy_Fre$Forte$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_Str21$
+$Zy_Eng$Drop Tail (DT)$
+$Zy_Tur$Kuyruk &#304;ptal (DT)$
+$Zy_Ger$Drop Tail (DT)$
+$Zy_Fre$Drop Tail (DT)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_Str22$
+$Zy_Eng$Queue Delete$
+$Zy_Tur$Kuyruk Silme$
+$Zy_Ger$Queue l&#246;schen$
+$Zy_Fre$Suppression d&#39;une file d&#39;attente$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_Str23$
+$Zy_Eng$USB$
+$Zy_Tur$USB$
+$Zy_Ger$USB$
+$Zy_Fre$USB$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_Str3$
+$Zy_Eng$Add new Queue$
+$Zy_Tur$Yeni Kuyruk ekle$
+$Zy_Ger$Neue Queue hinzuf&#252;gen$
+$Zy_Fre$Ajouter une nouvelle file d&#39;attente$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_Str4$
+$Zy_Eng$Current Settings :$
+$Zy_Tur$Ge&#231;erli Ayarlar:$
+$Zy_Ger$Aktuelle Einstellungen:$
+$Zy_Fre$Param&#232;tres actuels :$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_Str5$
+$Zy_Eng$Queue$
+$Zy_Tur$Kuyruk$
+$Zy_Ger$Queue$
+$Zy_Fre$File d&#39;attente$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_Str6$
+$Zy_Eng$DefaultQueue$
+$Zy_Tur$Varsay&#305;lan Kuyruk$
+$Zy_Ger$DefaultQueue$
+$Zy_Fre$File d&#39;attente par d&#233;faut$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_Str7$
+$Zy_Eng$Interface$
+$Zy_Tur$Aray&#252;z$
+$Zy_Ger$Schnittstelle$
+$Zy_Fre$Interface$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_Str8$
+$Zy_Eng$Priority$
+$Zy_Tur$&#214;ncelik$
+$Zy_Ger$Priorit&#228;t$
+$Zy_Fre$Priorit&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_QOS_QOSQueueSetup_Str9$
+$Zy_Eng$Weight$
+$Zy_Tur$A&#287;&#305;rl&#305;k$
+$Zy_Ger$Gewichtung$
+$Zy_Fre$Poids$
+$Zy_Ita$(null)$

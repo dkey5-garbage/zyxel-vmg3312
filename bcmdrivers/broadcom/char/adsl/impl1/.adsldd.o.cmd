@@ -1,0 +1,1 @@
+cmd_/tmp/consumer/100AAPP7D0/bcmdrivers/broadcom/char/adsl/bcm963268/adsldd.o := /opt/toolchains/uclibc-crosstools-gcc-4.4.2-1/usr/bin/mips-linux-uclibc-ld  -m elf32btsmip   -r -o /tmp/consumer/100AAPP7D0/bcmdrivers/broadcom/char/adsl/bcm963268/adsldd.o /tmp/consumer/100AAPP7D0/bcmdrivers/broadcom/char/adsl/bcm963268/adsldd_dep.o 

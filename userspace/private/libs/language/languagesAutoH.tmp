@@ -1,0 +1,18 @@
+#define MLG_$Zy_token1$ 0
+#define MLG_$Zy_token2$ 1
+#define MLG_$Zy_token3$ 2
+#define MLG_$Zy_token4$ 3
+#define MLG_$Zy_token5$ 4
+#define MLG_$Zy_token6$ 5
+#define MLG_$Zy_token7$ 6
+#define MLG_$Zy_token8$ 7
+#define MLG_naming_prefix 			"MLG_"
+#define MLG_naming_prefix_end 	"_"
+
+extern MAPPING_ITEM *mlg_pre;
+extern int mlg_MappingItemCounter;
+extern char* mlg_not_found;
+
+extern void mlg_initLanguage();	//implement by myself
+extern void mlg_cgiGetValue(char* varName, char* varScope, char* varValue);//implement by myself
+extern int mlg_cgiGetMLScope(char* scope); //implement by myself

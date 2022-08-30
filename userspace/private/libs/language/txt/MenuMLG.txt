@@ -1,0 +1,984 @@
+﻿#include<stdio.h>	
+#include<string.h>	
+#include<stdlib.h>	
+#include<time.h>	
+#include "languages.h"	
+
+
+
+$NAME$MLG_Menu_ARPTable$
+$Zy_Eng$ARP table$
+$Zy_Tur$ARP tablosu$
+$Zy_Ger$ARP-Tabelle$
+$Zy_Fre$Table ARP $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Broadband$
+$Zy_Eng$Broadband$
+$Zy_Tur$Geni&#351;bant$
+$Zy_Ger$Breitband$
+$Zy_Fre$Large bande$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Certificates$
+$Zy_Eng$Certificates$
+$Zy_Tur$Sertifikalar$
+$Zy_Ger$Zertifikate$
+$Zy_Fre$Certificats$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_UsbService$
+$Zy_Eng$USB Service$
+$Zy_Tur$USB Servisi$
+$Zy_Ger$USB-Service$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Configuration$
+$Zy_Eng$Configuration$
+$Zy_Tur$Yap&#305;land&#305;rma$
+$Zy_Ger$Konfiguration$
+$Zy_Fre$Configuration$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_userAccount$
+$Zy_Eng$User Account$
+$Zy_Tur$Kullan&#305;c&#305; Hesab&#305;$
+$Zy_Ger$Benutzerkonto$
+$Zy_Fre$Configuration$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_ConnectionSattus$
+$Zy_Eng$Connection Status$
+$Zy_Tur$Ba&#287;lant&#305; Durumu$
+$Zy_Ger$Verbindungsstatus$
+$Zy_Fre$&#201;tat de la connexion$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Diagnostic$
+$Zy_Eng$Diagnostic$
+$Zy_Tur$Tan&#305;lama$
+$Zy_Ger$Diagnose$
+$Zy_Fre$Diagnostique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_PingTracerouteNslookup$
+$Zy_Eng$Ping&Traceroute&Nslookup$
+$Zy_Tur$Ping, Traceroute ve Nslookup$
+$Zy_Ger$Ping&Traceroute&Nslookup$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_DNSSetting$
+$Zy_Eng$DNS$
+$Zy_Tur$DNS$
+$Zy_Ger$DNS$
+$Zy_Fre$Param&#232;tre DNS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Firewall$
+$Zy_Eng$Firewall$
+$Zy_Tur$G&#252;venlik Duvar&#305;$
+$Zy_Ger$Firewall$
+$Zy_Fre$Pare-feu$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_FirmwareUpgrade$
+$Zy_Eng$Firmware Upgrade$
+$Zy_Tur$Yaz&#305;l&#305;m G&#252;ncelleme$
+$Zy_Ger$Firmware Upgrade$
+$Zy_Fre$Mise &#224; niveau du microprogramme$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_HomeNetworking$
+$Zy_Eng$Home Networking$
+$Zy_Tur$Ev A&#287;&#305;$
+$Zy_Ger$Home Networking$
+$Zy_Fre$R&#233;seau &#224; domicile$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_IGMPGroupStatus$
+$Zy_Eng$IGMP/MLD Group Status$
+$Zy_Tur$IGMP Grup Durumu$
+$Zy_Ger$Status der IGMP-Gruppe$
+$Zy_Fre$Etat du groupe IGMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_IGMPSetting$
+$Zy_Eng$IGMP Setting$
+$Zy_Tur$IGMP Ayar&#305;$
+$Zy_Ger$IGMP-Einstellungen$
+$Zy_Fre$Param&#232;tre IGMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_InterfaceGroup$
+$Zy_Eng$Interface Group$
+$Zy_Tur$Aray&#252;z Grubu$
+$Zy_Ger$Schnittstellengruppe$
+$Zy_Fre$Groupe d&#39;interfaces$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_IPSecVPN$
+$Zy_Eng$IPSec VPN$
+$Zy_Tur$IPSec VPN$
+$Zy_Ger$IPSec VPN$
+$Zy_Fre$VPN IPSec$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Log$
+$Zy_Eng$Log$
+$Zy_Tur$G&#252;nl&#252;k$
+$Zy_Ger$Protokoll$
+$Zy_Fre$Journal$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_LogSetting$
+$Zy_Eng$Log Setting$
+$Zy_Tur$G&#252;nl&#252;k Ayar&#305;$
+$Zy_Ger$Protokoll-Einstellungen$
+$Zy_Fre$Configuration du journal$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_MACFilter$
+$Zy_Eng$MAC Filter$
+$Zy_Tur$MAC Filtresi$
+$Zy_Ger$MAC-Filter$
+$Zy_Fre$Filtre MAC $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Maintenance$
+$Zy_Eng$Maintenance$
+$Zy_Tur$Bak&#305;m$
+$Zy_Ger$Wartung$
+$Zy_Fre$Entretien$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_NAT$
+$Zy_Eng$NAT$
+$Zy_Tur$NAT$
+$Zy_Ger$NAT$
+$Zy_Fre$NAT$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_NetworkMap$
+$Zy_Eng$Home$
+$Zy_Tur$Ana Sayfa$
+$Zy_Ger$Startseite$
+$Zy_Fre$Origine$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_NetworkSetting$
+$Zy_Eng$Network Setting$
+$Zy_Tur$A&#287; Ayar&#305;$
+$Zy_Ger$Netzwerkein stellungen$
+$Zy_Fre$Param&#232;tres r&#233;seau$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_ParentalControl$
+$Zy_Eng$Parental Control$
+$Zy_Tur$Ebeveyn Kontrol&#252;$
+$Zy_Ger$Jugendschutz$
+$Zy_Fre$Contr&#244;le parental$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_QoS$
+$Zy_Eng$QoS$
+$Zy_Tur$QoS$
+$Zy_Ger$QoS$
+$Zy_Fre$QoS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Reboot$
+$Zy_Eng$Reboot$
+$Zy_Tur$Yeniden ba&#351;lat$
+$Zy_Ger$Neustart$
+$Zy_Fre$Red&#233;marrer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_RemoteMGMT$
+$Zy_Eng$Remote MGMT$
+$Zy_Tur$Uzaktan MGMT$
+$Zy_Ger$Fernwartung$
+$Zy_Fre$Gestion &#224; distance$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Routing$
+$Zy_Eng$Routing$
+$Zy_Tur$Y&#246;nlendirme$
+$Zy_Ger$Routing$
+$Zy_Fre$Routage$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_SchedulerRules$
+$Zy_Eng$Scheduler Rules$
+$Zy_Tur$Zamanlay&#305;c&#305; Kurallar&#305;$
+$Zy_Ger$Zeitplan$
+$Zy_Fre$R&#232;gles de planificateur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Security$
+$Zy_Eng$Security$
+$Zy_Tur$G&#252;venlik$
+$Zy_Ger$Sicherheit$
+$Zy_Fre$Param&#232;tres de s&#233;curit&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_ServiceControl$
+$Zy_Eng$Service Control$
+$Zy_Tur$Hizmet Denetimi$
+$Zy_Ger$Service Control$
+$Zy_Fre$Contr&#244;le de service$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_SystemMonitor$
+$Zy_Eng$System Monitor$
+$Zy_Tur$Sistem Monit&#246;r&#252;$
+$Zy_Ger$Systemmonitor$
+$Zy_Fre$Moniteur syst&#232;me$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_3GBackup$
+$Zy_Eng$3G Backup$
+$Zy_Tur$3G Yedekleme$
+$Zy_Ger$3G-Backup$
+$Zy_Fre$Sauvegarde 3G$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_5thEthernetPort$
+$Zy_Eng$5th Ethernet port$
+$Zy_Tur$5. Ethernet portu$
+$Zy_Ger$5. Ethernet-Port$
+$Zy_Fre$5&#232;me port Ethernet $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_8021x$
+$Zy_Eng$802.1x$
+$Zy_Tur$802.1x$
+$Zy_Ger$802.1x$
+$Zy_Fre$802.1x$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_Advanced$
+$Zy_Eng$Advanced$
+$Zy_Tur$Geli&#351;mi&#351;$
+$Zy_Ger$Erweitert$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_ALG$
+$Zy_Eng$ALG$
+$Zy_Tur$ALG$
+$Zy_Ger$ALG$
+$Zy_Fre$ALG$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_NATLoopback$
+$Zy_Eng$NATLoopback$
+$Zy_Tur$NATLoopback$
+$Zy_Ger$NATLoopback$
+$Zy_Fre$NATLoopback$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_Applications$
+$Zy_Eng$Applications$
+$Zy_Tur$Uygulamalar$
+$Zy_Ger$Anwendungen$
+$Zy_Fre$Applications$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_AutoWanDetect$
+$Zy_Eng$Auto IPoE/PPPoE Detect$
+$Zy_Tur$Otomatik IPoE / PPPoE Alg&#305;lama$
+$Zy_Ger$Auto IPoE/PPPoE Detect$
+$Zy_Fre$D&#233;tection IPoE/PPPoE auto $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_Broadband$
+$Zy_Eng$Broadband$
+$Zy_Tur$Geni&#351;bant$
+$Zy_Ger$Breitband$
+$Zy_Fre$Large bande$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Menu_Tab_UsbFileShare$
+$Zy_Eng$File Sharing$
+$Zy_Tur$Dosya Payla&#351;&#305;m&#305;$
+$Zy_Ger$File Sharing$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_UsbMediaServer$
+$Zy_Eng$Media Server$
+$Zy_Tur$Medya Sunucusu$
+$Zy_Ger$Medienserver$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_UsbPrintServer$
+$Zy_Eng$Print Server$
+$Zy_Tur$Yazd&#305;rma Sunucusu$
+$Zy_Ger$Print Server$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Menu_Tab_CFM$
+$Zy_Eng$802.1ag$
+$Zy_Tur$802.1ag$
+$Zy_Ger$802.1ag$
+$Zy_Fre$802.1ag$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_Configuration$
+$Zy_Eng$Configuration$
+$Zy_Tur$Yap&#305;land&#305;rma$
+$Zy_Ger$Konfiguration$
+$Zy_Fre$Configuration$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_ConnStatus$
+$Zy_Eng$Connection Status$
+$Zy_Tur$Ba&#287;lant&#305; Durumu$
+$Zy_Ger$Verbindungsstatus$
+$Zy_Fre$Carte du r&#233;seau$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_ConnStatusStatus$
+$Zy_Eng$Status$
+$Zy_Tur$Durum$
+$Zy_Ger$Status$
+$Zy_Fre$&#201;tat$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_ConnStatusVirtualDevice$
+$Zy_Eng$Virtual Device$
+$Zy_Tur$Sanal Ayg&#305;t$
+$Zy_Ger$Virtuelles Ger&#228;t$
+$Zy_Fre$Appareil virtuel$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_DMZ$
+$Zy_Eng$DMZ$
+$Zy_Tur$DMZ$
+$Zy_Ger$DMZ$
+$Zy_Fre$DMZ$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_DNSEntry$
+$Zy_Eng$DNS Entry$
+$Zy_Tur$DNS Girdisi$
+$Zy_Ger$DNS-Eintrag$
+$Zy_Fre$Entr&#233;e DNS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_DSL$
+$Zy_Eng$DSL$
+$Zy_Tur$DSL$
+$Zy_Ger$DSL$
+$Zy_Fre$DSL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_DynamicDns$
+$Zy_Eng$Dynamic DNS$
+$Zy_Tur$Dinamik DNS$
+$Zy_Ger$Dynamischer DNS$
+$Zy_Fre$DNS dynamique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_EmailNotification$
+$Zy_Eng$Email Notification$
+$Zy_Tur$E-posta Bildirimi$
+$Zy_Ger$E-Mail-Benachrichtigung$
+$Zy_Fre$Notification par email$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_FileSharing$
+$Zy_Eng$File Sharing$
+$Zy_Tur$Dosya Payla&#351;&#305;m&#305;$
+$Zy_Ger$File Sharing$
+$Zy_Fre$Partage de fichiers$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_FirewallACL$
+$Zy_Eng$Access Control$
+$Zy_Tur$Eri&#351;im Kontrol&#252;$
+$Zy_Ger$Zugriffskontrolle$
+$Zy_Fre$Liste de contr&#244;le d&#39;acc&#232;s (ACL)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_FirewallGeneral$
+$Zy_Eng$General$
+$Zy_Tur$Genel$
+$Zy_Ger$Allgemein$
+$Zy_Fre$G&#233;n&#233;ral$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_FirewallProtocol$
+$Zy_Eng$Protocol$
+$Zy_Tur$Hizmet$
+$Zy_Ger$Protokoll$
+$Zy_Fre$Protocole$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_Dos$
+$Zy_Eng$DoS$
+$Zy_Tur$DoS$
+$Zy_Ger$DoS$
+$Zy_Fre$DoS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_FirmwareUpgrade$
+$Zy_Eng$Firmware Upgrade$
+$Zy_Tur$Yaz&#305;l&#305;m G&#252;ncelleme$
+$Zy_Ger$Firmware Upgrade$
+$Zy_Fre$Mise &#224; niveau du microprogramme$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_General$
+$Zy_Eng$General$
+$Zy_Tur$Genel$
+$Zy_Ger$Allgemein$
+$Zy_Fre$G&#233;n&#233;ral$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_IGMPACL$
+$Zy_Eng$IGMP ACL$
+$Zy_Tur$IGMP ACL$
+$Zy_Ger$IGMP ACL$
+$Zy_Fre$IGMP ACL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_IGMPFilter$
+$Zy_Eng$IGMP Filter$
+$Zy_Tur$IGMP Filtresi$
+$Zy_Ger$IGMP-Filter$
+$Zy_Fre$Filtre IGMP $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_IGMPGroup$
+$Zy_Eng$IGMP Group$
+$Zy_Tur$IGMP Grubu$
+$Zy_Ger$IGMP-Gruppe$
+$Zy_Fre$Groupe IGMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_IGMPStatistics$
+$Zy_Eng$IGMP Statistics$
+$Zy_Tur$IGMP &#304;statistikleri$
+$Zy_Ger$IGMP-Statistik$
+$Zy_Fre$Statistiques IGMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_InterfaceGrouping$
+$Zy_Eng$Interface Grouping$
+$Zy_Tur$Grup aray&#252;zleri$
+$Zy_Ger$Schnittstellengruppe$
+$Zy_Fre$Groupe d&#39;interfaces$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_IPSecVPNMonitor$
+$Zy_Eng$Monitor$
+$Zy_Tur$&#304;zle $
+$Zy_Ger$Monitor$
+$Zy_Fre$Moniteur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_IPSecVPNSetting$
+$Zy_Eng$Settings$
+$Zy_Tur$Ayarlar$
+$Zy_Ger$Einstellungen$
+$Zy_Fre$R&#233;glages$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_LANSetup$
+$Zy_Eng$LAN Setup$
+$Zy_Tur$Yerel A&#287; Kurulumu$
+$Zy_Ger$LAN einrichten$
+$Zy_Fre$Configuration LAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_LANVLAN$
+$Zy_Eng$LAN VLAN$
+$Zy_Tur$LAN VLAN$
+$Zy_Ger$LAN VLAN$
+$Zy_Fre$LAN VLAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_LocalCertificates$
+$Zy_Eng$Local Certificates$
+$Zy_Tur$Yerel Sertifikalar$
+$Zy_Ger$Manuell eingetragene Zertifikate$
+$Zy_Fre$Certificats locaux $
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_MediaServer$
+$Zy_Eng$Media Server$
+$Zy_Tur$Medya Sunucusu$
+$Zy_Ger$Medienserver$
+$Zy_Fre$Serveur multim&#233;dia$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_NatAddressMapping$
+$Zy_Eng$Address Mapping$
+$Zy_Tur$Adres E&#351;le&#351;tirme$
+$Zy_Ger$Abdressabbildung$
+$Zy_Fre$Mappage d&#39;adresses$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_OAMPing$
+$Zy_Eng$OAM Ping$
+$Zy_Tur$OAM Ping$
+$Zy_Ger$OAM Ping$
+$Zy_Fre$OAM Ping$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_PingTraceRouteNsLookup$
+$Zy_Eng$Ping & Trace Route & NsLookup$
+$Zy_Tur$Ping & Trace Route ve Nslookup$
+$Zy_Ger$Ping & Trace Route & NsLookup$
+$Zy_Fre$Ping et Trace Route et NsLookup$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_PolicyForwarding$
+$Zy_Eng$PolicyForwarding$
+$Zy_Tur$Kurall&#305; Y&#246;nlendirme$
+$Zy_Ger$Weiterleitungsrichlinien$
+$Zy_Fre$Redirection de strat&#233;gie$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_PortForwarding$
+$Zy_Eng$Port Forwarding$
+$Zy_Tur$Port Y&#246;nlendirme$
+$Zy_Ger$Port Forwarding$
+$Zy_Fre$Redirection de port$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_PortTriggering$
+$Zy_Eng$Port Triggering$
+$Zy_Tur$Port Tetikleme$
+$Zy_Ger$Port Triggering$
+$Zy_Fre$D&#233;clenchement du port$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_PrintServer$
+$Zy_Eng$Print Server$
+$Zy_Tur$Yazd&#305;rma Sunucusu$
+$Zy_Ger$Print Server$
+$Zy_Fre$Serveur d&#39;impression$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_QoSClassSetup$
+$Zy_Eng$Class Setup$
+$Zy_Tur$S&#305;n&#305;f Kurulumu$
+$Zy_Ger$Klasse einrichten$
+$Zy_Fre$Param&#233;trage de classe$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_QoSGeneral$
+$Zy_Eng$General$
+$Zy_Tur$Genel$
+$Zy_Ger$Allgemein$
+$Zy_Fre$G&#233;n&#233;ral$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_QoSMonitor$
+$Zy_Eng$Monitor$
+$Zy_Tur$&#304;zle $
+$Zy_Ger$Monitor$
+$Zy_Fre$Moniteur$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_QoSPolicerSetup$
+$Zy_Eng$Policer Setup$
+$Zy_Tur$Kural Kurulumu$
+$Zy_Ger$Policer einrichten$
+$Zy_Fre$Configuration de Policer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_QoSQueueSetup$
+$Zy_Eng$Queue Setup$
+$Zy_Tur$Kuyruk Kurulumu$
+$Zy_Ger$Queue einrichten$
+$Zy_Fre$Configuration de la file d&#39;attente$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_Reboot$
+$Zy_Eng$Reboot$
+$Zy_Tur$Yeniden ba&#351;lat$
+$Zy_Ger$Neustart$
+$Zy_Fre$Red&#233;marrer$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_SecurityLog$
+$Zy_Eng$Security Log$
+$Zy_Tur$G&#252;venlik G&#252;nl&#252;&#287;&#252;$
+$Zy_Ger$Sicherheitsprotokoll$
+$Zy_Fre$Le journal de s&#233;curit&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_Sessions$
+$Zy_Eng$Sessions$
+$Zy_Tur$Oturumlar$
+$Zy_Ger$Sitzungen$
+$Zy_Fre$Sessions$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_SNMP$
+$Zy_Eng$SNMP Agent$
+$Zy_Tur$SNMP Agent&#39;&#305;$
+$Zy_Ger$SNMP Agent$
+$Zy_Fre$Agent SNMP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_StaticDHCP$
+$Zy_Eng$Static DHCP$
+$Zy_Tur$Statik DHCP$
+$Zy_Ger$Statisches DHCP$
+$Zy_Fre$DHCP statique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_additionalSubnet$
+$Zy_Eng$Additional Subnet$
+$Zy_Tur$Ek Alt a&#287;$
+$Zy_Ger$Zus&#228;tzliches Subnetz$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Menu_Tab_DynamicRoute$
+$Zy_Eng$Dynamic Route$
+$Zy_Tur$Dinamik Rota$
+$Zy_Ger$Dynamische Route$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_StaticRoute$
+$Zy_Eng$Static Route$
+$Zy_Tur$Statik Y&#246;nlendirme$
+$Zy_Ger$Statische Route$
+$Zy_Fre$Routage statique$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_STBVendorID$
+$Zy_Eng$STB Vendor ID$
+$Zy_Tur$STB Sa&#287;lay&#305;c&#305;s&#305; ID$
+$Zy_Ger$STB-Anbieter-ID$
+$Zy_Fre$ID fournisseur STB$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_SystemLog$
+$Zy_Eng$System Log$
+$Zy_Tur$Sistem G&#252;nl&#252;&#287;&#252;$
+$Zy_Ger$Systemprotokoll$
+$Zy_Fre$Journal syst&#232;me$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_TR064$
+$Zy_Eng$TR-064$
+$Zy_Tur$TR-064$
+$Zy_Ger$TR-064$
+$Zy_Fre$TR-064$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_TR069$
+$Zy_Eng$TR-069 Client$
+$Zy_Tur$TR-069 &#304;stemci$
+$Zy_Ger$TR-069 Client$
+$Zy_Fre$TR-069 Client$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_TrafficStatusHPNA$
+$Zy_Eng$HPNA$
+$Zy_Tur$HPNA$
+$Zy_Ger$HPNA$
+$Zy_Fre$HPNA$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_TrafficStatusLAN$
+$Zy_Eng$LAN$
+$Zy_Tur$Yerel A&#287;$
+$Zy_Ger$LAN$
+$Zy_Fre$LAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_RemoteMGMT$
+$Zy_Eng$Remote MGMT$
+$Zy_Tur$Uzaktan MGMT$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_TrustDomain$
+$Zy_Eng$Trust Domain$
+$Zy_Tur$Güvenilir Alan$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_TrafficStatusWAN$
+$Zy_Eng$WAN$
+$Zy_Tur$WAN$
+$Zy_Ger$WAN$
+$Zy_Fre$WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_TrustedCA$
+$Zy_Eng$Trusted CA$
+$Zy_Tur$G&#252;venilir CA$
+$Zy_Ger$Trusted CA$
+$Zy_Fre$Autorit&#233; de certification approuv&#233;e$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_Upnp$
+$Zy_Eng$UPnP$
+$Zy_Tur$UPnP$
+$Zy_Ger$UPnP$
+$Zy_Fre$UPnP$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_UserConfiguration$
+$Zy_Eng$Users Configuration$
+$Zy_Tur$Kullan&#305;c&#305; Yap&#305;land&#305;rmas&#305;$
+$Zy_Ger$Benutzerkonfiguration$
+$Zy_Fre$Configuration personnalis&#233;e$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_MoreAp$
+$Zy_Eng$More AP$
+$Zy_Tur$Daha fazla AP$
+$Zy_Ger$Weitere APs$
+$Zy_Fre$WLAN suppl&#233;mentaires$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_WlanAdvanced$
+$Zy_Eng$Others$
+$Zy_Tur$Di&#287;er$
+$Zy_Ger$Erweitert$
+$Zy_Fre$Avanc&#233;$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_ChannelStatus$
+$Zy_Eng$Channel Status$
+$Zy_Tur$Kanal Durumu$
+$Zy_Ger$Status Kan&#228;le$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+
+$NAME$MLG_Menu_Tab_WlanGeneralSetup$
+$Zy_Eng$General$
+$Zy_Tur$Genel$
+$Zy_Ger$Allgemein$
+$Zy_Fre$Configuration sans fil de base$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_WlanMACAuthentication$
+$Zy_Eng$MAC Authentication$
+$Zy_Tur$MAC Kimlik Do&#287;rulama$
+$Zy_Ger$MAC-Authentifizierung$
+$Zy_Fre$Authentification MAC$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_WlanWDS$
+$Zy_Eng$WDS$
+$Zy_Tur$WDS$
+$Zy_Ger$WDS$
+$Zy_Fre$WDS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_WlanWMM$
+$Zy_Eng$WMM$
+$Zy_Tur$WMM$
+$Zy_Ger$WMM$
+$Zy_Fre$WMM$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_WlanWPS$
+$Zy_Eng$WPS$
+$Zy_Tur$WPS$
+$Zy_Ger$WPS$
+$Zy_Fre$WPS$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_TimeSetting$
+$Zy_Eng$Time$
+$Zy_Tur$S&#252;re $
+$Zy_Ger$Zeit$
+$Zy_Fre$R&#233;glage de l&#8217;heure$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_TR069Client$
+$Zy_Eng$tr069Client$
+$Zy_Tur$tr069&#304;stemci$
+$Zy_Ger$TR-069 Client$
+$Zy_Fre$TR-069 Client$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_PacketCapture$
+$Zy_Eng$Packet Capture$
+$Zy_Tur$Packet Capture$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_TraficStatus$
+$Zy_Eng$Traffic Status$
+$Zy_Tur$Trafik Durumu$
+$Zy_Ger$Verkehrsstatus$
+$Zy_Fre$&#201;tat du trafic$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_RouteTable$
+$Zy_Eng$Routing Table$
+$Zy_Tur$Y&#246;nlendirme Tablosu$
+$Zy_Ger$Routing-Tabelle$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Wireless$
+$Zy_Eng$Wireless$
+$Zy_Tur$Kablosuz$
+$Zy_Ger$WLAN$
+$Zy_Fre$Sans fil$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_xDSLStatistics$
+$Zy_Eng$xDSL Statistics$
+$Zy_Tur$xDSL &#304;statistikleri$
+$Zy_Ger$xDSL-Statistik$
+$Zy_Fre$Statistiques xDSL$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_IPSecVPNSetup$
+$Zy_Eng$Setup$
+$Zy_Tur$Kurulum$
+$Zy_Ger$Einrichtung$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_Tab_EthernetWAN$
+$Zy_Eng$Ethernet WAN$
+$Zy_Tur$Ethernet WAN$
+$Zy_Ger$Ethernet WAN$
+$Zy_Fre$Ethernet WAN$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_voip$
+$Zy_Eng$VoIP$
+$Zy_Tur$VoIP$
+$Zy_Ger$VoIP$
+$Zy_Fre$VoIP$
+$Zy_Ita$VoIP$
+
+$NAME$MLG_Menu_voipStatus$
+$Zy_Eng$VoIP Status$
+$Zy_Tur$VoIP Status$
+$Zy_Ger$VoIP Status$
+$Zy_Fre$VoIP Status$
+$Zy_Ita$VoIP Status$
+
+$NAME$MLG_Menu_3gStatistics$
+$Zy_Eng$3G Statistics$
+$Zy_Tur$3G Statistics$
+$Zy_Ger$3G Statistics$
+$Zy_Fre$3G Statistics$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_voipSIP$
+$Zy_Eng$SIP$
+$Zy_Tur$SIP$
+$Zy_Ger$SIP$
+$Zy_Fre$SIP$
+$Zy_Ita$SIP$
+
+$NAME$MLG_Menu_voipPhone$
+$Zy_Eng$Phone$
+$Zy_Tur$Telefon$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_voipCallRule$
+$Zy_Eng$Call Rule$
+$Zy_Tur$Call Rule$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_voipCallHistory$
+$Zy_Eng$Call History$
+$Zy_Tur$Call History$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_voipLineTest$
+$Zy_Eng$Line Test$
+$Zy_Tur$Line Test$
+$Zy_Ger$(null)$
+$Zy_Fre$(null)$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_voipSIPAccount$
+$Zy_Eng$SIP Account$
+$Zy_Tur$SIP Account$
+$Zy_Ger$(null)$
+$Zy_Fre$SIP Account$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_voipSIPProvider$
+$Zy_Eng$SIP Service Provider$
+$Zy_Tur$SIP Service Provider$
+$Zy_Ger$(null)$
+$Zy_Fre$SIP Service Provider$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_voipRegion$
+$Zy_Eng$region$
+$Zy_Tur$region$
+$Zy_Ger$(null)$
+$Zy_Fre$region$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_voipSpeedDial$
+$Zy_Eng$speedDial$
+$Zy_Tur$speedDial$
+$Zy_Ger$(null)$
+$Zy_Fre$speedDial$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_voipCHSummary$
+$Zy_Eng$Call History Summary$
+$Zy_Tur$Call History Summary$
+$Zy_Ger$(null)$
+$Zy_Fre$Call History Summary$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_voipCHOutgoing$
+$Zy_Eng$Call History Outgoing$
+$Zy_Tur$Call History Outgoing$
+$Zy_Ger$(null)$
+$Zy_Fre$Call History Outgoing$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_voipCHIncoming$
+$Zy_Eng$Call History Incoming$
+$Zy_Tur$Call History Incoming$
+$Zy_Ger$(null)$
+$Zy_Fre$Call History Incoming$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_voipLTGR909$
+$Zy_Eng$GR909$
+$Zy_Tur$GR909$
+$Zy_Ger$(null)$
+$Zy_Fre$GR909$
+$Zy_Ita$(null)$
+
+$NAME$MLG_Menu_EthStatistics$
+$Zy_Eng$EtherWAN Statistics$
+$Zy_Tur$EtherWAN &#304;statistikleri$
+$Zy_Ger$(null)$
+$Zy_Fre$Statistiques EtherWAN$
+$Zy_Ita$(null)$

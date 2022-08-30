@@ -1,0 +1,299 @@
+<script type="text/javascript">
+var idxStr = '<%ejGetOther(sysInfo, upldSts)%>';
+var upprocess = '<%ejGet(UpdateProcess)%>';
+var enbleAutoUpgrade = '<%ejGetOther(sysInfo, buildAutoupgrade)%>';
+var enbleothersdomain = '<%ejGetOther(sysInfo, othersdomain)%>';
+var show3gpackage = '<%ejGetOther(sysInfo, build_3G_Package_page)%>';
+var TTNETfeature='<%ejGetOther(sysInfo,ttnetFeature)%>';
+
+var TTNETMultiUser='<%ejGetOther(sysInfo,ttnetMultiUser)%>';
+var curloginLevel = "<%ejGet(curloginLevel)%>";
+var VisibilityLevel = "<%ejGet(firmwareupgradev)%>";
+var Limitation = "<%ejGet(firmwareupgradeLimitation)%>";
+var Lock = "<%ejGet(firmwareupgradeLock)%>";
+function VisibilityLevelshow(){
+	if(curloginLevel == "admin")
+	{
+		if (VisibilityLevel == 2)
+		{
+			document.getElementById("s1").style.display="none";
+		}
+		else if (Lock ==1)
+		{
+			filename.disabled="ture";
+			upload_btn.disabled="ture";
+			gfilename.disabled="ture";
+			upload_btn_wwan.disabled="ture";
+		}
+	}
+	else if(curloginLevel == "root")
+	{
+		if(Lock ==1)
+		{
+			filename.disabled="ture";
+			upload_btn.disabled="ture";
+			gfilename.disabled="ture";
+			upload_btn_wwan.disabled="ture";
+		}
+	}
+}
+function Confirm() {
+with ( document.forms[0] ) {
+  	
+      $.ajax({
+         url: "../maintenance/firmwareUpgrade/ChecklatestFW.html",
+         type: 'GET',
+         async: true,
+         cache: false,
+         timeout: 60000,
+         data:  "",
+		 success:  function(data){
+					
+					var CheckLatestFirmware = data;
+					if ( CheckLatestFirmware != "" && CheckLatestFirmware != null ) {
+						
+						if(CheckLatestFirmware == 'success'){
+						document.forms[0].upgrade.disabled = false;
+						document.forms[0].cancel.disabled = false;
+						document.forms[0].check.disabled = true;
+						}else if(
+						CheckLatestFirmware == 'fail'){
+						hciAlert('NO NEW Firmware!!', {height: 180, type: 2, title: ''});
+						document.forms[0].upgrade.disabled = true;
+						document.forms[0].cancel.disabled = true;
+						
+						}
+					}
+				
+			},
+		 error:  function(){
+					document.forms[0].upgrade.disabled = true;
+					ocument.forms[0].cancel.disabled = true;
+			}		
+		});
+	}
+}
+
+function ConfirmUpgrade(){
+                  var x=document.getElementById("aForm");
+			      var totaltime = 240000;
+                  if ($('#chkRestoreDefault').attr("checked"))
+				{
+				x.action = "/pages/tabFW/firmwareUpgrade-upload-download-restore.cgi";
+				}else{
+				x.action = "/pages/tabFW/firmwareUpgrade-upload-download.cgi";
+				}
+				document.aForm.submit();
+		     
+                  setTimeout("$.openLoadingMask(2)", 500);
+                  setTimeout("BackgroundUrl('firmwareUpgrade-uploadpost.cgi')", 5500);
+                  setTimeout('reboot()', totaltime);
+
+
+}
+function ConfirmCancel() {
+	with ( document.forms[0] ) {
+  	
+      $.ajax({
+         url: "../maintenance/firmwareUpgrade/CancelUpgradeFW.html",
+         type: 'GET',
+         async: true,
+         cache: false,
+         timeout: 60000,
+         data:  "",
+		 success:  function(data){
+					
+					var CancelUpgradeFirmware = data;
+					if ( CancelUpgradeFirmware != "" && CancelUpgradeFirmware != null ) {
+						
+						if(CancelUpgradeFirmware == 'success'){
+						document.forms[0].upgrade.disabled = true;
+						document.forms[0].cancel.disabled = true;
+						document.forms[0].check.disabled = false;
+						}
+					}
+				
+			},
+		 error:  function(){
+					document.forms[0].upgrade.disabled = false;
+					document.forms[0].cancel.disabled = false;
+					document.forms[0].check.disabled = true;
+			}		
+		});
+	}
+}
+function Progress() {
+	document.forms[0].upload_btn.disabled = true;
+
+	if ($('#chkRestoreDefault').attr("checked"))
+	{
+		var x=document.getElementById("aForm");
+		x.action = "/pages/tabFW/firmwareUpgrade-upload-restore.cgi";
+	}
+
+	return true;
+}
+
+function getMsgIndex() {
+	var idxNum = parseInt(idxStr);
+	if ( isNaN(idxNum) || idxNum < 0 || idxNum > 6 )
+		idxNum = 5;
+	
+	return idxNum;
+}
+
+var msg = new Array();
+msg[1] = '<%ejGetML(MLG_Maintenance_FWUpgrade_AlertMsg_Str1)%>';
+msg[2] = '<%ejGetML(MLG_Maintenance_FWUpgrade_AlertMsg_Str2)%>';
+msg[3] = '<%ejGetML(MLG_Maintenance_FWUpgrade_AlertMsg_Str3)%>';
+msg[4] = '<%ejGetML(MLG_Maintenance_FWUpgrade_AlertMsg_Str4)%>';
+msg[5] = '<%ejGetML(MLG_Maintenance_FWUpgrade_AlertMsg_Str5)%>';
+msg[6] = '<%ejGetML(MLG_Maintenance_FWUpgrade_AlertMsg_Str6)%>';
+
+function reboot() {
+window.top.location ="http://192.168.1.1/login/login.html";
+}
+
+function BackgroundUrl(url)
+{
+	var objXMLHTTP = null;
+
+	if (window.XMLHttpRequest){
+		objXMLHTTP=new XMLHttpRequest();
+	}// code for IE
+	else if (window.ActiveXObject){
+		objXMLHTTP=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	else{
+		alert("The browser no support XMLHttp Object");
+		return;
+	}
+
+	if ( objXMLHTTP != null ){
+		objXMLHTTP.open("GET","./"+url,true);
+		objXMLHTTP.onreadystatechange = function()
+		{
+		}
+		objXMLHTTP.send(null);
+	}
+}
+
+function frmLoad () {
+	var idx = getMsgIndex();
+	var totaltime = 150000; //reboot time + burning time
+
+	if(show3gpackage == '1'){
+		showhide('show3gpackagepage',1);
+	}else{
+		showhide('show3gpackagepage',0);
+	}
+	
+	/* hide restoredefault checkbox */
+	showhide("checkboxRestoreDefault", "0");
+
+    if(enbleAutoUpgrade=='1')
+      {
+        if(TTNETfeature == '1')
+      		showhide('Autoupgrade',0);
+        else
+       	showhide('Autoupgrade',1);
+      }
+    else
+      {showhide('Autoupgrade',0);}
+
+    if (enbleothersdomain=='1')
+      {document.forms[0].check.disabled = true;}
+    else
+      {document.forms[0].check.disabled = false;}
+	if ( idx != 0 ) {
+		hciAlert(msg[idx], {height: 180, type: 2, title: ''});
+	}
+	if (upprocess == '1') {
+		setTimeout("$.openLoadingMask(2)", 500);
+		setTimeout("BackgroundUrl('firmwareUpgrade-uploadpost.cgi')", 1500);
+		setTimeout('reboot()', totaltime);
+	}
+}
+
+$(document).ready(function() {
+  document.forms[0].upgrade.disabled = true;
+  document.forms[0].cancel.disabled = true;
+  frmLoad();
+  if(TTNETMultiUser == '1')
+  VisibilityLevelshow();
+});
+
+</script>
+<div class="content_frame" id="s1">
+<!--Unit Explain start-->
+<div class="explain">
+<div><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b><b class="r4"></b></div>
+<div class="explain_text"><%ejGetML(MLG_Maintenance_FWUpgrade_Explain)%></div>
+<div><b class="r4"></b><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></div></div>
+<!--Unit Explain End-->
+<!--Set area start-->
+<div class="data_frame"><ul>
+<li class="set1">
+<div class="title"><%ejGetML(MLG_Maintenance_FWUpgrade_Str10)%></div>
+<div class="w_text">
+<ul><li id= "checkboxRestoreDefault"><input type='checkbox' id='chkRestoreDefault' name='chkRestoreDefault'>&nbsp;<%ejGetML(MLG_Maintenance_FWUpgrade_Str2)%></li></ul>
+</div>
+</li>
+<form method='post' id='aForm' name='aForm' ENCTYPE='multipart/form-data' action='/pages/tabFW/firmwareUpgrade-upload.cgi' onSubmit="$.openLoadingMask(1);return Progress();">
+<li class="set1">
+<div class="w_text">
+<ul><li class="all_table"><%ejGetML(MLG_Maintenance_FWUpgrade_Str3)%>:<font color="#ff0000"> <%ejGet(sysVersion)%> </font></li></ul>
+<ul>
+<li class="left_table"><%ejGetML(MLG_Maintenance_FWUpgrade_Str5)%>: </li><li class="right_table"><input name="filename" id="filename" size="20" maxlength="128" type="file" /></li>
+</ul>
+</div>
+</li>
+<li class="space"> </li>
+<li class="buttonframe"><div class="button_position"><input value="<%ejGetML(MLG_Common_Upload)%>" type="submit" id="upload_btn" name="upload_btn" /></div></li>
+
+<li class="set1">
+<div class="w_text" id="Autoupgrade">
+<!--level 1 title start--><div class="title"><%ejGetML(MLG_Maintenance_FWUpgrade_Str11)%></div><!--level 1 title end-->
+<ul><li class="all_table"><%ejGetML(MLG_Maintenance_FWUpgrade_Str12)%></li></ul>
+<ul>
+<li class="left_table"><input type="button" name="check" value="<%ejGetML(MLG_Maintenance_FWUpgrade_Str14)%>" onClick="Confirm()" ></li>
+</ul>
+
+<ul><li class="all_table"><%ejGetML(MLG_Maintenance_FWUpgrade_Str13)%></li></ul>
+<ul>
+<li class="left_table">
+<input type="button" name="upgrade" value="<%ejGetML(MLG_Maintenance_Upgrade)%>" onclick="ConfirmUpgrade();" >
+<input type="button" name="cancel" value="<%ejGetML(MLG_Maintenance_Cancel_Btn)%>" onClick="ConfirmCancel()" >
+</li>
+</ul>
+</div>
+</li>
+
+</form>
+</ul></div>
+<!--Add start -->
+<ul><li id= "show3gpackagepage">
+<div class="data_frame"><ul>
+<li class="set1">
+<div class="title"><%ejGetML(MLG_Maintenance_3G_package_title)%></div>
+</li>
+<form method='post' id='bForm' name='bForm' ENCTYPE='multipart/form-data' action='/pages/tabFW/firmwareUpgrade-3gpackage.cgi' onSubmit="$.openLoadingMask(1);return Progress();">
+<li class="set1">
+<div class="w_text">
+<ul><li class="all_table"><%ejGetML(MLG_Maintenance_3G_package_CurrentVer)%>:<font color="#ff0000"> <%ejGet(sys3gPackageVersion)%> </font></li></ul>
+<ul>
+<li class="left_table"><%ejGetML(MLG_Maintenance_3G_package_FilePath)%>: </li><li class="right_table"><input name="filename" id="gfilename" size="20" maxlength="128" type="file" /></li>
+</ul>
+</div>
+</li>
+<li class="space"> </li>
+<li class="buttonframe"><div class="button_position"><input value="<%ejGetML(MLG_Common_Upload)%>" type="submit" id="upload_btn_wwan" /></div></li>
+
+</form>
+</ul></div>
+</li></ul>
+<!--Add end -->
+
+<!--Set area end-->
+</div>
+<br/><br/>

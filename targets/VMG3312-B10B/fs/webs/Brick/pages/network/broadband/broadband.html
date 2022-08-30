@@ -1,0 +1,617 @@
+<script language="javascript">
+<!-- hide
+var gblsessionKey = "<%ejGetOther(sessionKey)%>";
+var numOfWan = "<%ejGetOther(sysInfo, numOfWan)%>";
+var maxNumOfWan = "<%ejGetOther(sysInfo, maxNumOfWan)%>";
+
+//IPv6 start
+var buildMstcIPv6 = '<%ejGetOther(sysInfo, buildMstcIPv6)%>';
+//IPv6 end
+
+var TTNETMultiUser='<%ejGetOther(sysInfo,ttnetMultiUser)%>';
+var curloginLevel = "<%ejGet(curloginLevel)%>";
+var VisibilityLevel = "<%ejGet(broadbandv)%>";
+var Limitation = "<%ejGet(broadbandLimitation)%>";
+var Lock = "<%ejGet(broadbandLock)%>";
+var Internet_DSLv = "<%ejGet(Internet_DSLv)%>";
+var Internet_WANv = "<%ejGet(Internet_WANv)%>";
+var IPTV_DSLv = "<%ejGet(IPTV_DSLv)%>";
+var IPTV_WANv = "<%ejGet(IPTV_WANv)%>";
+var tthomegwfeature='<%ejGetOther(sysInfo,tthomegwFeature)%>'; //TT HomeGW
+if(tthomegwfeature =='1'){
+var Tr69PVCEnable='<%ejGetOther(sysInfo,tr69PVCEnable)%>';	/* _MSTC_, Linda, user should not be able to disable TR-069 PVC. */
+var VoIPPVCEnable='<%ejGetOther(sysInfo,voipPVCEnable)%>';	/* _MSTC_, Bruce, user should not be able to disable VoIP PVC. */
+var IPTVPVCEnable='<%ejGetOther(sysInfo,iptvPVCEnable)%>';	/* _MSTC_, Bruce, user should not be able to disable IPTV PVC. */
+}
+function VisibilityLevelshow(){
+	if(curloginLevel == "admin")
+	{
+		if (VisibilityLevel == 2)
+		{
+			document.getElementById("s1").style.display="none";
+		}
+		else if(Limitation==0)
+		{
+			if(Lock ==1)
+			{
+				addnewshareBtn.disabled="ture";
+				//ALL content will be grayed-out for admin
+			}
+		}
+		else if (Limitation==1)
+		{
+			if(Lock ==0)
+			{
+				document.getElementById("s2").style.display="none";
+				//Admin will see the limited version of the page
+			}
+			else if(Lock ==1)
+			{
+				document.getElementById("s2").style.display="none";
+				addnewshareBtn.disabled="ture";
+				//grayed-out with Limitation parameter
+			}
+		}
+	}
+	else if(curloginLevel == "root")
+	{
+		if(Lock ==1)
+		{
+			addnewshareBtn.disabled="ture";
+			//see all content grayed-out
+		}
+	}
+}
+function addClick() {
+   var loc = 'pages/network/broadband/broadband_add.html';
+
+   if ((parseInt(numOfWan) >= parseInt(maxNumOfWan)) && (parseInt(maxNumOfWan) != 0))
+   {
+		var tmpStr = '<%ejGetML(MLG_WAN_Broadband_AlertMsg_Str1)%>';
+		hciAlert(MLG_Makestring(tmpStr, maxNumOfWan), 1);
+      return;
+   }
+
+   var internet_add_dialog = window.parent.$.zyUiDialog({
+                 width: '75%',
+                 height: 500,
+                 title: '<%ejGetML(MLG_WAN_Broadband_Str92)%>',
+
+                 buttons: {
+                    '<%ejGetML(MLG_Common_Cancel)%>': function(){ internet_add_dialog.dialog('close') },
+                    '<%ejGetML(MLG_Common_Apply)%>':function(){}
+                 }
+   });
+   internet_add_dialog.load(loc);
+   internet_add_dialog.dialog('open');
+}
+
+function editClick(ifName, name) {
+	if(TTNETMultiUser == '1')
+	{
+		if(curloginLevel == "admin" || curloginLevel == "root")
+		{
+			if(Lock == 0)
+			{
+				var loc = '/pages/tabFW/broadband-internetEdit.cmd?serviceId=1&enblZyGUI=1&wanIfName=' + ifName;
+				loc += '&srvName=' + name;
+				loc += '&sessionKey=' + gblsessionKey;
+
+				var internet_edit_dialog = window.parent.$.zyUiDialog({
+				width: '75%',
+				height: 500,
+				title: '<%ejGetML(MLG_WAN_Broadband_Str90)%>',
+
+				buttons: {
+					'<%ejGetML(MLG_Common_Cancel)%>': function(){ internet_edit_dialog.dialog('close') },
+					'<%ejGetML(MLG_Common_Apply)%>':function(){}
+				}
+				});
+				internet_edit_dialog.load(loc);
+				internet_edit_dialog.dialog('open');
+			}
+		}
+		else
+		{
+			var loc = '/pages/tabFW/broadband-internetEdit.cmd?serviceId=1&enblZyGUI=1&wanIfName=' + ifName;
+			loc += '&srvName=' + name;
+			loc += '&sessionKey=' + gblsessionKey;
+
+			var internet_edit_dialog = window.parent.$.zyUiDialog({
+			width: '75%',
+			height: 500,
+			title: '<%ejGetML(MLG_WAN_Broadband_Str90)%>',
+
+			buttons: {
+				'<%ejGetML(MLG_Common_Cancel)%>': function(){ internet_edit_dialog.dialog('close') },
+				'<%ejGetML(MLG_Common_Apply)%>':function(){}
+			}
+			});
+			internet_edit_dialog.load(loc);
+			internet_edit_dialog.dialog('open');
+		}
+	}
+	else
+	{
+		var loc = '/pages/tabFW/broadband-internetEdit.cmd?serviceId=1&enblZyGUI=1&wanIfName=' + ifName;
+		loc += '&srvName=' + name;
+		loc += '&sessionKey=' + gblsessionKey;
+
+		var internet_edit_dialog = window.parent.$.zyUiDialog({
+		width: '75%',
+		height: 500,
+		title: '<%ejGetML(MLG_WAN_Broadband_Str90)%>',
+
+		buttons: {
+			'<%ejGetML(MLG_Common_Cancel)%>': function(){ internet_edit_dialog.dialog('close') },
+			'<%ejGetML(MLG_Common_Apply)%>':function(){}
+		}
+		});
+		internet_edit_dialog.load(loc);
+		internet_edit_dialog.dialog('open');
+	}
+}
+
+function rmlClick(ifName, name)
+{   
+   var loc = '/pages/tabFW/broadband-internetRemove.cmd?action=remove&enblZyGUI=1&rmLst=' + ifName;
+   loc += '&srvName=' + name;
+   loc += '&sessionKey=' + gblsessionKey;
+   var code = 'location="' + loc + '"';
+   eval(code);
+}
+function removeClick(ifName, name) {
+	if(TTNETMultiUser == '1')
+	{
+		if(curloginLevel == "admin" ||curloginLevel == "root")
+		{
+			if(Lock == 0)
+			{
+				var internet_remove_dialog = window.parent.$.zyUiDialog({
+				width: 450,
+				height: 190,
+				title: '<%ejGetML(MLG_WAN_Broadband_Str93)%>',
+				buttons: {
+					'<%ejGetML(MLG_Common_No)%>': function(){ internet_remove_dialog.dialog('close'); },
+					'<%ejGetML(MLG_Common_Yes)%>': function(){ internet_remove_dialog.dialog('close'); $.openLoadingMask(1); rmlClick(ifName, name); }
+				}
+				});
+				internet_remove_dialog.load('/pages/delete.html');
+				internet_remove_dialog.dialog('open');
+			}
+		}
+		else
+		{
+			var internet_remove_dialog = window.parent.$.zyUiDialog({
+			width: 450,
+			height: 190,
+			title: '<%ejGetML(MLG_WAN_Broadband_Str93)%>',
+			buttons: {
+				'<%ejGetML(MLG_Common_No)%>': function(){ internet_remove_dialog.dialog('close'); },
+				'<%ejGetML(MLG_Common_Yes)%>': function(){ internet_remove_dialog.dialog('close'); $.openLoadingMask(1); rmlClick(ifName, name); }
+			}
+			});
+			internet_remove_dialog.load('/pages/delete.html');
+			internet_remove_dialog.dialog('open');
+		}
+	}
+	else
+	{
+		var internet_remove_dialog = window.parent.$.zyUiDialog({
+        width: 450,
+        height: 190,
+        title: '<%ejGetML(MLG_WAN_Broadband_Str93)%>',
+        buttons: {
+			'<%ejGetML(MLG_Common_No)%>': function(){ internet_remove_dialog.dialog('close'); },
+			'<%ejGetML(MLG_Common_Yes)%>': function(){ internet_remove_dialog.dialog('close'); $.openLoadingMask(1); rmlClick(ifName, name); }
+        }
+		});
+		internet_remove_dialog.load('/pages/delete.html');
+		internet_remove_dialog.dialog('open');
+	}
+}
+
+function frmLoad() {
+   var errMsg = "<%ejGetOther(errMsg)%>";
+   if (errMsg != '')
+   {
+      //AlertOpen(errMsg, 2);
+	  hciAlert(errMsg, {height: 180,type: 2, title: ''});
+   }
+}
+
+$(document).ready(function() {
+   frmLoad(); 
+   if(TTNETMultiUser == '1')
+   VisibilityLevelshow();
+});
+
+function strstr (haystack, needle, bool) {
+    // Finds first occurrence of a string within another  
+    // 
+    // version: 1109.2015
+    // discuss at: http://phpjs.org/functions/strstr
+    // +   original by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
+    // +   bugfixed by: Onno Marsman
+    // +   improved by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
+    // *     example 1: strstr('Kevin van Zonneveld', 'van');
+    // *     returns 1: 'van Zonneveld'
+    // *     example 2: strstr('Kevin van Zonneveld', 'van', true);
+    // *     returns 2: 'Kevin '
+    // *     example 3: strstr('name@example.com', '@');
+    // *     returns 3: '@example.com'
+    // *     example 4: strstr('name@example.com', '@', true);
+    // *     returns 4: 'name'
+    var pos = 0;
+ 
+    haystack += '';
+    pos = haystack.indexOf(needle);
+    if (pos == -1) {
+        return false;
+    } else {
+        if (bool) {
+            return haystack.substr(0, pos);
+        } else {
+            return haystack.slice(pos);
+        }
+    }
+}
+// done hiding -->
+</script>
+<div class="content_frame" id="s1">
+<!--Unit Explain start-->
+<div class="explain">
+<div><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b><b class="r4"></b></div>
+<div class="explain_text"><%ejGetML(MLG_WAN_Broadband_Str1)%></div>
+<div><b class="r4"></b><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></div></div>
+<!--Unit Explain End-->
+<div class="data_frame"><ul>
+<li class="set1"><div class="w_table" id="s2"> <input type="button" value="<%ejGetML(MLG_WAN_Broadband_Str81)%>" id='addnewshareBtn' onclick="addClick()" ></div></li>
+<li class="set1">
+<div class="w_table">
+<table width="100%" cellpadding="0" cellspacing="0" style="table-layout:fixed;" class="table_frame" id="boradbandTable">
+                <tr align="center" valign="top">
+                  <td width="5%" class="top_font">#</td>
+                  <td class="top_font"><%ejGetML(MLG_WAN_Broadband_Str4)%></td>
+                  <td class="top_font"><%ejGetML(MLG_WAN_Broadband_Str7)%></td>
+                  <td class="top_font"><%ejGetML(MLG_WAN_Broadband_Str8)%></td>
+                  <td class="top_font"><%ejGetML(MLG_WAN_Broadband_Str23)%></td>
+                  <td class="top_font textOverflow"><%ejGetML(MLG_WAN_Broadband_Str9)%></td>
+                  <td class="top_font"><%ejGetML(MLG_WAN_Broadband_Str57)%></td>
+                  <td  class="top_font"><%ejGetML(MLG_WAN_Broadband_Str58)%></td>
+                  <td  class="top_font"><%ejGetML(MLG_WAN_Broadband_Str94)%></td>
+                  <td  class="top_font"><%ejGetML(MLG_WAN_Broadband_Str13)%></td>
+                  <td  class="top_font"><%ejGetML(MLG_WAN_Broadband_Str14)%></td>
+<!--IPv6 start-->
+                  <%ejGetOtherBig(wan6Show)%>
+<!-- debug
+                  <td class="top_font">IPv6</td>
+                  <td class="top_font"><%ejGetML(MLG_Network_MLDProxy)%></td>
+-->
+<!--IPv6 end-->
+                  <td width="60"  class="top_font" style="border-right:0px;"><%ejGetML(MLG_Network_StaticRoute_Str9)%></td>
+                </tr>
+<script language="javascript">
+<!-- hide
+{
+   // #|Enable|Name|Type|Mode|Encapsulation|vpi|vci|802.1p|802.1q|IGMP Proxy|NAT|Default Gateway|IfName@
+   var i = 0;
+   var wanList = '<%ejGetOther(wanShow)%>';
+   var wan = wanList.split('@');
+   var str = '';
+
+   for ( i = 0; i < wan.length; i++ ) {
+      if (wan[i] != '') {
+
+         var fields = wan[i].split('|');
+
+         if (fields != '') {
+				var pass = 1;
+				if(TTNETMultiUser == '1')
+				{
+					if(fields[1] == "MyISP_ATM" && Internet_DSLv == 2)
+					{
+						if(curloginLevel == "admin")
+						{
+							pass = 0;
+						}
+					}
+					else if(fields[1] == "MyISP_PTM_35" && Internet_DSLv == 2)
+					{
+						if(curloginLevel == "admin")
+						{
+							pass = 0;
+						}
+					}
+					else if(fields[1] == "MyISP_ETH" && Internet_WANv == 2)
+					{
+						if(curloginLevel == "admin")
+						{
+							pass = 0;
+						}
+					}
+					else if(fields[1] == "iptv_ATM" && IPTV_DSLv == 2)
+					{
+						if(curloginLevel == "admin")
+						{
+							pass = 0;
+						}
+					}
+					else if(fields[1] == "iptv_PTM_55" && IPTV_DSLv == 2)
+					{
+						if(curloginLevel == "admin")
+						{
+							pass = 0;
+						}
+					}
+					else if(fields[1] == "iptv_ETH" && IPTV_WANv == 2)
+					{
+						if(curloginLevel == "admin")
+						{
+							pass = 0;
+						}
+					}
+				}
+			if(pass == '1') {
+            str += '<tr align="center">'; // #
+            str += '<td class="table_font textOverflow">' + fields[0] + '</td>'; // #
+	     str += '<td class="table_font textOverflow">' + fields[15] + '</td>'; // Enable
+		    if(fields[15]=='N')
+			{
+              if(strstr(fields[1],'_ETH') == false){
+				  if(TTNETMultiUser == 1)
+				  {
+					if(fields[1] == "MyISP_ATM" || fields[1] == "MyISP_PTM_35")
+					var addname = "Internet_DSL";
+					else if(fields[1] == "iptv_ATM" || fields[1] == "iptv_PTM_55")
+					var addname = "IPTV_DSL";
+				  }
+				  else
+				  {
+					var addname = fields[1].substring(0, fields[1].length-4);
+					addname += '_xDSL';
+				  }
+	              str += '<td class="table_font textOverflow">' + addname + '</td>'; // Name
+                  str += '<td class="table_font textOverflow">' + 'N/A' + '</td>'; // Type
+                  str += '<td class="table_font textOverflow">' + fields[3] + '</td>'; // Mode
+                  str += '<td class="table_font textOverflow">' + fields[4] + '</td>'; // Encapsulation
+			      str += '<td class="table_font textOverflow">' + 'N/A' + '</td>'; // 802.1p(vpi)
+            	  str += '<td class="table_font textOverflow">' + 'N/A' + '</td>'; // 802.1q(vci)						
+				}else{
+				  if(TTNETMultiUser == 1)
+				  {
+					if(fields[1] == "MyISP_ETH")
+					var addname = "Internet_WAN";
+					else if(fields[1] == "iptv_ETH")
+					var addname = "IPTV_WAN";
+					
+					str += '<td class="table_font textOverflow">' + addname + '</td>'; // Name
+				  }
+				  else
+				  {
+					str += '<td class="table_font textOverflow">' + fields[1] + '</td>'; // Name
+				  }
+                  str += '<td class="table_font textOverflow">' + fields[2] + '</td>'; // Type
+                  str += '<td class="table_font textOverflow">' + fields[3] + '</td>'; // Mode
+                  str += '<td class="table_font textOverflow">' + fields[4] + '</td>'; // Encapsulation
+		
+		          if (fields[2]=='ATM') {
+			          str += '<td class="table_font textOverflow">' + fields[5] + '</td>'; // 802.1p(vpi)
+            		  str += '<td class="table_font textOverflow">' + fields[6] + '</td>'; // 802.1q(vci)
+		          }else{
+	      		      str += '<td class="table_font textOverflow">' + fields[7] + '</td>'; // 802.1p(vpi)
+             		  str += '<td class="table_font textOverflow">' + fields[8] + '</td>'; // 802.1q(vci)
+		          }           				
+				
+				}
+			}else if (fields[15]=='Y'){
+// *   if you change the name "MyISP_PTM_35" to "MyISP_PTM_355"...etc in the default config, then you have to modify the number of the strncpy			
+			   if(strstr(fields[1],'_ETH') == false){
+                   var addname;
+                        if(TTNETMultiUser == 1)
+                        {
+                            if(fields[1] == "MyISP_ATM" || fields[1] == "MyISP_PTM_35")
+                            addname = "Internet_DSL";
+                            else if(fields[1] == "iptv_ATM" || fields[1] == "iptv_PTM_55")
+                            addname = "IPTV_DSL";
+
+                            str += '<td class="table_font textOverflow">' + addname + '</td>'; // Name
+                        }
+                       else if (fields[1] == 'MyISP_PTM_35'){
+                           addname = fields[1].substring(0, fields[1].length-7);	
+                           addname += '_VDSL';
+                           str += '<td class="table_font textOverflow">' + addname + '</td>'; // Name
+                       }else if (fields[1] == 'iptv_PTM_55'){
+                           addname = fields[1].substring(0, fields[1].length-7);	
+                           addname += '_VDSL';
+                           str += '<td class="table_font textOverflow">' + addname + '</td>'; // Name
+                       }else{ 
+							if(fields[1].substring(fields[1].length-4) == '_ATM' ){
+								addname = fields[1].substring(0, fields[1].length-4);	 	
+								addname += '_ADSL';
+								str += '<td class="table_font textOverflow">' + addname + '</td>'; // Name
+							}else if(fields[1].substring(fields[1].length-4) == '_PTM' ){
+								addname = fields[1].substring(0, fields[1].length-4);	
+								addname += '_VDSL';
+								str += '<td class="table_font textOverflow">' + addname + '</td>'; // Name
+							}  
+                       }
+               }else{
+					if(TTNETMultiUser == 1)
+					{
+						if(fields[1] == "MyISP_ETH")
+						var addname = "Internet_WAN";
+						else if(fields[1] == "iptv_ETH")
+						var addname = "IPTV_WAN";
+								
+						str += '<td class="table_font textOverflow">' + addname + '</td>'; // Name
+					}
+					else
+					{
+						str += '<td class="table_font textOverflow">' + fields[1] + '</td>'; // Name
+					}			
+               }
+                str += '<td class="table_font textOverflow">' + fields[2] + '</td>'; // Type
+                str += '<td class="table_font textOverflow">' + fields[3] + '</td>'; // Mode
+                str += '<td class="table_font textOverflow">' + fields[4] + '</td>'; // Encapsulation
+				
+				if (fields[2]=='ATM') {
+			        str += '<td class="table_font textOverflow">' + fields[5] + '</td>'; // 802.1p(vpi)
+            		str += '<td class="table_font textOverflow">' + fields[6] + '</td>'; // 802.1q(vci)
+		        }else{
+	      		    str += '<td class="table_font textOverflow">' + fields[7] + '</td>'; // 802.1p(vpi)
+            		str += '<td class="table_font textOverflow">' + fields[8] + '</td>'; // 802.1q(vci)
+		        }
+			}
+            str += '<td class="table_font textOverflow">' + fields[9] + '</td>'; // IGMP Proxy
+            str += '<td class="table_font textOverflow">' + fields[10] + '</td>'; // NAT
+            str += '<td class="table_font textOverflow">' + fields[11] + '</td>'; // Default Gateway
+//IPv6 start
+            if (buildMstcIPv6 == '1')
+            {
+               str += '<td class="table_font textOverflow">' + fields[13] + '</td>'; // IPv6
+               str += '<td class="table_font textOverflow">' + fields[14] + '</td>'; // MLD Proxy
+            }
+//IPv6 end
+
+            str += '<td class="table_font"><div class="i_modify"><ul>';
+
+            if( tthomegwfeature == 1){
+				if(fields[1] == "Tr69Ntp_ETH"){
+					if(Tr69PVCEnable == 1)
+						str += '<li><a href="#" class="edit" id="editBtn" title="<%ejGetML(MLG_Common_Edit)%>" onclick="editClick(\'' + fields[12] + '\', \'' + fields[1] + '\')"></a></li>';
+				}
+				else if(fields[1] == "VoIP_ETH"){
+					if(VoIPPVCEnable == 1)
+						str += '<li><a href="#" class="edit" id="editBtn" title="<%ejGetML(MLG_Common_Edit)%>" onclick="editClick(\'' + fields[12] + '\', \'' + fields[1] + '\')"></a></li>';
+				}
+				else if(fields[1] == "iptv_ETH"){
+					if(IPTVPVCEnable == 1)
+						str += '<li><a href="#" class="edit" id="editBtn" title="<%ejGetML(MLG_Common_Edit)%>" onclick="editClick(\'' + fields[12] + '\', \'' + fields[1] + '\')"></a></li>';
+				}
+				else
+					str += '<li><a href="#" class="edit" id="editBtn" title="<%ejGetML(MLG_Common_Edit)%>" onclick="editClick(\'' + fields[12] + '\', \'' + fields[1] + '\')"></a></li>';
+//            	if( (Tr69PVCEnable == 1) || ((Tr69PVCEnable == 0) && (fields[1] != "Tr69Ntp_ETH")))
+//            		str += '<li><a href="#" class="edit" id="editBtn" title="<%ejGetML(MLG_Common_Edit)%>" onclick="editClick(\'' + fields[12] + '\', \'' + fields[1] + '\')"></a></li>';
+            }
+            else{
+            	str += '<li><a href="#" class="edit" id="editBtn" title="<%ejGetML(MLG_Common_Edit)%>" onclick="editClick(\'' + fields[12] + '\', \'' + fields[1] + '\')"></a></li>';
+            }
+			if(TTNETMultiUser == 1)
+			{
+				if(curloginLevel == "admin")
+				{
+					if(Limitation==0)
+					{
+						if(Lock ==0)
+						{
+							str += '<li ><a href="#" id="deleteBtn" class="delete" title="<%ejGetML(MLG_Common_Delete)%>" onclick="removeClick(\'' + fields[12] + '\', \'' + fields[1] + '\')" ></a></li>';
+						}
+						else if(Lock ==1)
+						{
+							str += '<li ><a href="#" id="deleteBtn" class="delete" title="<%ejGetML(MLG_Common_Delete)%>" onclick="removeClick(\'' + fields[12] + '\', \'' + fields[1] + '\')" ></a></li>';
+						}
+					}
+				}
+				else
+				{
+					str += '<li ><a href="#" id="deleteBtn" class="delete" title="<%ejGetML(MLG_Common_Delete)%>" onclick="removeClick(\'' + fields[12] + '\', \'' + fields[1] + '\')" ></a></li>';
+				}
+			}
+			else
+			{
+				if( tthomegwfeature == 1){
+					if(fields[1] == "Tr69Ntp_ETH"){
+						if(Tr69PVCEnable == 1)
+							str += '<li ><a href="#" id="deleteBtn" class="delete" title="<%ejGetML(MLG_Common_Delete)%>" onclick="removeClick(\'' + fields[12] + '\', \'' + fields[1] + '\')" ></a></li>';
+					}
+					else if(fields[1] == "VoIP_ETH"){
+						if(VoIPPVCEnable == 1)
+							str += '<li ><a href="#" id="deleteBtn" class="delete" title="<%ejGetML(MLG_Common_Delete)%>" onclick="removeClick(\'' + fields[12] + '\', \'' + fields[1] + '\')" ></a></li>';
+					}
+					else if(fields[1] == "iptv_ETH"){
+						if(IPTVPVCEnable == 1)
+							str += '<li ><a href="#" id="deleteBtn" class="delete" title="<%ejGetML(MLG_Common_Delete)%>" onclick="removeClick(\'' + fields[12] + '\', \'' + fields[1] + '\')" ></a></li>';
+					}
+					else
+						str += '<li ><a href="#" id="deleteBtn" class="delete" title="<%ejGetML(MLG_Common_Delete)%>" onclick="removeClick(\'' + fields[12] + '\', \'' + fields[1] + '\')" ></a></li>';
+//					if( (Tr69PVCEnable == 1) || ((Tr69PVCEnable == 0) && (fields[1] != "Tr69Ntp_ETH")))
+//						str += '<li ><a href="#" id="deleteBtn" class="delete" title="<%ejGetML(MLG_Common_Delete)%>" onclick="removeClick(\'' + fields[12] + '\', \'' + fields[1] + '\')" ></a></li>';
+				}else{
+					str += '<li ><a href="#" id="deleteBtn" class="delete" title="<%ejGetML(MLG_Common_Delete)%>" onclick="removeClick(\'' + fields[12] + '\', \'' + fields[1] + '\')" ></a></li>';
+				}
+			}
+            str += '</ul></div></td>';
+            str += '</tr>';
+			}
+         }
+      }
+   }
+
+   $('#boradbandTable').append(str)
+
+   $('.textOverflow').each(function(){ $(this).attr('title', $(this).text());} );    
+   $('.textOverflow').ellipsis(true);
+}
+// done hiding -->
+</script>
+                <!--<tr align="center">
+                  <td class="table_font">1</td>
+                  <td class="table_font">WAN1</td>
+                  <td class="table_font">VDSL</td>
+                  <td class="table_font">Routing</td>
+                  <td class="table_font">ENET ENCAP</td>
+                  <td class="table_font">N/A</td>
+                  <td class="table_font">N/A</td>
+                  <td class="table_font">Enabled</td>
+                  <td class="table_font">Enabled</td>
+                  <td class="table_font">Y</td>
+                  <td class="table_font"><div class="i_modify">
+                    <ul>
+                      <li><a href="#" class="edit" id='editBtn' title="<%ejGetML(MLG_Common_Edit)%>"></a></li>
+                      <li ><a href="#"  id='deleteBtn' class="delete" title="<%ejGetML(MLG_Common_Delete)%>"></a></li>
+                    </ul>
+                  </div></td>
+                </tr>
+                <tr align="center">
+                  <td class="table_font">2</td>
+                  <td class="table_font">WAN2</td>
+                  <td class="table_font">ADSL</td>
+                  <td class="table_font"><%ejGetML(MLG_WAN_Broadband_Str28)%></td>
+                  <td class="table_font"><%ejGetML(MLG_WAN_Broadband_Str28)%></td>
+                  <td class="table_font">N/A</td>
+                  <td class="table_font">N/A</td>
+                  <td class="table_font">Enabled</td>
+                  <td class="table_font">Enabled</td>
+                  <td class="table_font">N</td>
+                  <td class="table_font"><div class="i_modify">
+                    <ul>
+                      <li><a href="#" class="edit" id='editBtn' title="<%ejGetML(MLG_Common_Edit)%>"></a></li>
+                      <li ><a href="#"  id='deleteBtn' class="delete" title="<%ejGetML(MLG_Common_Delete)%>"></a></li>
+                    </ul>
+                  </div></td>
+                </tr>
+                <tr align="center">
+                  <td class="table_font">3</td>
+                  <td class="table_font">WAN3</td>
+                  <td class="table_font textOverflow">EtherWAN</td>
+                  <td class="table_font">Routing</td>
+                  <td class="table_font"><%ejGetML(MLG_WAN_Broadband_Str29)%></td>
+                  <td class="table_font">N/A</td>
+                  <td class="table_font">N/A</td>
+                  <td class="table_font">Enabled</td>
+                  <td class="table_font">Enabled</td>
+                  <td class="table_font">N</td>
+                  <td class="table_font"><div class="i_modify"><ul><li><a href="#" class="edit" id='editBtn' title="<%ejGetML(MLG_Common_Edit)%>"></a></li><li ><a href="#"  id='deleteBtn' class="delete" title="<%ejGetML(MLG_Common_Delete)%>"></a></li></ul></div></td>
+                  </tr> -->
+                
+              </table>
+</div></li>
+<li class="space"> </li>
+<!--level 2 start--><!--Please add this tag--><!--Note define start-->
+
+</ul>
+</div>
+<!--Set area end-->
+</div>
+<br/><br/>

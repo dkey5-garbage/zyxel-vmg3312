@@ -1,0 +1,639 @@
+<script language='javascript'>
+
+var pEnable = '<%ejGet(pptpEnable)%>';
+var pName = '<%ejGet(pptpName)%>';
+var pServer = '<%ejGet(pptpServer)%>';
+var prequireMPPE =  '<%ejGet(requireMPPE)%>';
+var pnoMPPE40='<%ejGet(noMPPE40)%>';
+var pnoMPPE128 = '<%ejGet(noMPPE128)%>';
+var pmppeStateful='<%ejGet(mppeStateful)%>';
+var prefuseEAP = '<%ejGet(refuseEAP)%>';
+var ppolicerouterEn = '<%ejGet(policerouterEn)%>';
+var pstatus='<%ejGet(status)%>';
+var pAccount='<%ejGet(pptpAccount)%>';
+var pPwd='<%ejGet(pptpPwd)%>';
+var pipaddr='<%ejGet(ipaddr)%>';
+var ppeerIpaddr='<%ejGet(peerIpaddr)%>';
+var pinterface='<%ejGet(pptpinterface)%>';
+var glbSessionKey = '<%ejGetOther(sessionKey)%>';
+var pptpinfo = '<%ejGetOther(pptpConnect)%>';
+var ssid = '<%ejGetWl(wlSsid)%>';
+var ssid1 = '<%ejGetWl(wlSsid_wl0v1)%>';
+var ssid2 = '<%ejGetWl(wlSsid_wl0v2)%>';
+var ssid3 = '<%ejGetWl(wlSsid_wl0v3)%>';
+
+
+function pptpbtn()
+   {
+   with ( document.forms[0] ) {
+   if(status.value=='1')//action for disconnect
+   	  status.value='0';
+   else
+   	  status.value='1';
+   btnSave();
+   }
+}
+function btnSave(){
+    with ( document.forms[0] ) {
+		sessionKey.value=glbSessionKey;
+   if(pptpName.value == "")
+	{
+		alert("Name is empty!");
+		return;	
+	}
+	if(pptpServer.value == "")
+	{
+		alert("Server IP/Name is empty!");
+		return;	
+	}
+	var intfacetmp="";
+	if(policerouterEn.value=='0')
+	{
+	if(PPTP_LAN1_H.value=='1')
+		intfacetmp+="LAN1 ";
+	if(PPTP_LAN2_H.value=='1')
+		intfacetmp+="LAN2 ";
+	if(PPTP_LAN3_H.value=='1')
+		intfacetmp+="LAN3 ";
+	if(PPTP_LAN4_H.value=='1')
+		intfacetmp+="LAN4 ";
+	if(PPTP_AP0_H.value=='1')
+		intfacetmp+="AP0 ";
+	if(PPTP_AP1_H.value=='1')
+		intfacetmp+="AP1 ";
+	if(PPTP_AP2_H.value=='1')
+		intfacetmp+="AP2 ";
+	if(PPTP_AP3_H.value=='1')
+		intfacetmp+="AP3 ";
+	}
+	else
+		intfacetmp="ALL";
+	pptpinterface.value=intfacetmp;
+	$.openLoadingMask(1);
+    submit();
+}
+}
+
+function frmLoad()
+{
+   with ( document.forms[0] ) {
+
+   var pptpstatus = pptpinfo.split('|');
+	pstatus=pptpstatus[0];
+	pipaddr=pptpstatus[1];
+	ppeerIpaddr=pptpstatus[2];
+	
+   if(pEnable=='1')
+	  {
+	   pptp_active.checked=true;
+       pptpEnable.value='1';
+      }
+   else
+   	  {
+	   pptp_active.checked=false;
+       pptpEnable.value='0';
+      }
+   pptpName.value=pName;
+   pptpServer.value=pServer;
+   pptpAccount.value=pAccount;
+   pptpPwd.value=pPwd;
+   policerouterEn.value=ppolicerouterEn;
+   pptpinterface.value=pinterface;
+   if(policerouterEn.value=='1')
+    {
+      PPTP_PR.checked=true;
+	  PPTP_LAN1.disabled=true;
+      PPTP_LAN2.disabled=true;
+      PPTP_LAN3.disabled=true;
+      PPTP_LAN4.disabled=true;
+      PPTP_AP0.disabled=true;
+      PPTP_AP1.disabled=true;
+      PPTP_AP2.disabled=true;
+      PPTP_AP3.disabled=true;
+	  PPTP_LAN1.checked=true;
+	  PPTP_LAN1_H.value='1';
+	  PPTP_LAN2.checked=true;
+	  PPTP_LAN2_H.value='1';
+	  PPTP_LAN3.checked=true;
+	  PPTP_LAN3_H.value='1';
+	  PPTP_LAN4.checked=true;
+	  PPTP_LAN4_H.value='1';
+	  PPTP_AP0.checked=true;
+	  PPTP_AP0_H.value='1';
+	  PPTP_AP1.checked=true;
+	  PPTP_AP1_H.value='1';
+	  PPTP_AP2.checked=true;
+	  PPTP_AP2_H.value='1';
+	  PPTP_AP3.checked=true;
+	  PPTP_AP3_H.value='1';
+	  
+    }
+   else
+    {
+      PPTP_PR.checked=false;
+      PPTP_LAN1.disabled=false;
+      PPTP_LAN2.disabled=false;
+      PPTP_LAN3.disabled=false;
+      PPTP_LAN4.disabled=false;
+      PPTP_AP0.disabled=false;
+      PPTP_AP1.disabled=false;
+      PPTP_AP2.disabled=false;
+      PPTP_AP3.disabled=false;
+  if(pinterface.indexOf("LAN1")!=-1)
+  	{
+  	PPTP_LAN1.checked=true;
+	PPTP_LAN1_H.value='1';
+  	}
+  else
+  	{
+  	PPTP_LAN1.checked=false;
+	PPTP_LAN1_H.value='0';
+  	}
+  if(pinterface.indexOf("LAN2")!=-1)
+  	{
+  	PPTP_LAN2.checked=true;
+	PPTP_LAN2_H.value='1';
+  	}
+  else
+  	{
+  	PPTP_LAN2.checked=false;
+	PPTP_LAN2_H.value='0';
+  	}
+  if(pinterface.indexOf("LAN3")!=-1)
+  	{
+  	PPTP_LAN3.checked=true;
+	PPTP_LAN3_H.value='1';
+  	}
+  else
+  	{
+  	PPTP_LAN3.checked=false;
+	PPTP_LAN3_H.value='0';
+  	}
+  if(pinterface.indexOf("LAN4")!=-1)
+  	{
+  	PPTP_LAN4.checked=true;
+	PPTP_LAN4_H.value='1';
+  	}
+  else
+  	{
+  	PPTP_LAN4.checked=false;
+	PPTP_LAN4_H.value='0';
+  	}
+  if(pinterface.indexOf("AP0")!=-1)
+  	{
+  	PPTP_AP0.checked=true;
+	PPTP_AP0_H.value='1';
+  	}
+  else
+  	{
+  	PPTP_AP0.checked=false;
+	PPTP_AP0_H.value='0';
+  	}
+  if(pinterface.indexOf("AP1")!=-1)
+  	{
+  	PPTP_AP1.checked=true;
+	PPTP_AP1_H.value='1';
+  	}
+  else
+  	{
+  	PPTP_AP1.checked=false;
+	PPTP_AP1_H.value='0';
+  	}
+  if(pinterface.indexOf("AP2")!=-1)
+  	{
+  	PPTP_AP2.checked=true;
+	PPTP_AP2_H.value='1';
+  	}
+  else
+  	{
+  	PPTP_AP2.checked=false;
+	PPTP_AP2_H.value='0';
+  	}
+  if(pinterface.indexOf("AP3")!=-1)
+  	{
+  	PPTP_AP3.checked=true;
+	PPTP_AP3_H.value='1';
+  	}
+  else
+  	{
+  	PPTP_AP3.checked=false;
+	PPTP_AP3_H.value='0';
+  	}
+   }
+   if(prequireMPPE=='1')
+	   Require_MPPE.checked=true;
+   else
+	   Require_MPPE.checked=false;
+   if(pnoMPPE40=='1')
+	   Refuse_40bit.checked=true;
+   else
+	   Refuse_40bit.checked=false;
+   if(pnoMPPE128=='1')
+	   Refuse_128bit.checked=true;
+   else
+	   Refuse_128bit.checked=false;
+   if(pmppeStateful=='1')
+	   Refuse_stateless.checked=true;
+   else
+	   Refuse_stateless.checked=false;
+   if(prefuseEAP=='1')
+	   Refuse_EAP.checked=true;
+   else
+	   Refuse_EAP.checked=false;
+   if(pstatus=="Connected")
+   	   {
+   	   guistatus.innerHTML='<%ejGetML(MLG_Security_PPTPVPNSetting_connect)%>';
+       connectbtn.value='<%ejGetML(MLG_Security_PPTPVPNSetting_Disconnected)%>';
+       status.value='1';
+       }
+   else
+       {
+      guistatus.innerHTML='<%ejGetML(MLG_Security_PPTPVPNSetting_Disconnected)%>';
+      connectbtn.value='<%ejGetML(MLG_Security_PPTPVPNSetting_connect)%>';
+      status.value='0';
+       }
+   if(pipaddr!=""){
+   	   guiipaddr.innerHTML=pipaddr;
+          ipaddr.value=pipaddr;
+   }
+   else
+   	{
+       guiipaddr.innerHTML="N/A";
+       ipaddr.value="0.0.0.0";
+   }
+   if(ppeerIpaddr!="")
+   	{
+   	   guipeerIpaddr.innerHTML=ppeerIpaddr;
+          peerIpaddr.value=ppeerIpaddr;
+   }
+   else
+   	{
+       guipeerIpaddr.innerHTML="N/A";
+	   peerIpaddr.value="0.0.0.0";
+   }
+   requireMPPE.value=prequireMPPE;
+   noMPPE40.value=pnoMPPE40;
+   noMPPE128.value=pnoMPPE128;
+   mppeStateful.value=pmppeStateful;
+   refuseEAP.value=prefuseEAP;
+   apreal.innerHTML=ssid;
+   apreal1.innerHTML=ssid1;
+   apreal2.innerHTML=ssid2;
+   apreal3.innerHTML=ssid3;
+}
+}
+
+function ClickPPTPPR(){
+ with ( document.forms[0] ) {
+ if(PPTP_PR.checked==true)
+    {
+      policerouterEn.value='1';
+	  PPTP_LAN1.disabled=true;
+      PPTP_LAN2.disabled=true;
+      PPTP_LAN3.disabled=true;
+      PPTP_LAN4.disabled=true;
+      PPTP_AP0.disabled=true;
+      PPTP_AP1.disabled=true;
+      PPTP_AP2.disabled=true;
+      PPTP_AP3.disabled=true;
+	  PPTP_LAN1.checked=true;
+	  PPTP_LAN1_H.value='1';
+	  PPTP_LAN2.checked=true;
+	  PPTP_LAN2_H.value='1';
+	  PPTP_LAN3.checked=true;
+	  PPTP_LAN3_H.value='1';
+	  PPTP_LAN4.checked=true;
+	  PPTP_LAN4_H.value='1';
+	  PPTP_AP0.checked=true;
+	  PPTP_AP0_H.value='1';
+	  PPTP_AP1.checked=true;
+	  PPTP_AP1_H.value='1';
+	  PPTP_AP2.checked=true;
+	  PPTP_AP2_H.value='1';
+	  PPTP_AP3.checked=true;
+	  PPTP_AP3_H.value='1';
+    }
+ else
+    {
+      policerouterEn.value='0';
+      PPTP_LAN1.disabled=false;
+      PPTP_LAN2.disabled=false;
+      PPTP_LAN3.disabled=false;
+      PPTP_LAN4.disabled=false;
+      PPTP_AP0.disabled=false;
+      PPTP_AP1.disabled=false;
+      PPTP_AP2.disabled=false;
+      PPTP_AP3.disabled=false;
+    }
+  }
+}
+
+function ClickPPTPLAN1(){
+	with ( document.forms[0] ) {
+		if(PPTP_LAN1.checked==true)
+			PPTP_LAN1_H.value='1';
+		else
+			PPTP_LAN1_H.value='0';
+     }
+  }
+
+function ClickPPTPLAN2(){
+	with ( document.forms[0] ) {
+		if(PPTP_LAN2.checked==true)
+			PPTP_LAN2_H.value='1';
+		else
+			PPTP_LAN2_H.value='0';
+		}
+  }
+
+function ClickPPTPLAN3(){
+	with ( document.forms[0] ) {
+		if(PPTP_LAN3.checked==true)
+			PPTP_LAN3_H.value='1';
+		else
+			PPTP_LAN3_H.value='0';
+		}
+  }
+
+function ClickPPTPLAN4(){
+	with ( document.forms[0] ) {
+		if(PPTP_LAN4.checked==true)
+			PPTP_LAN4_H.value='1';
+		else
+			PPTP_LAN4_H.value='0';
+		}
+  }
+
+function ClickPPTPAP0(){
+	with ( document.forms[0] ) {
+		if(PPTP_AP0.checked==true)
+			PPTP_AP0_H.value='1';
+		else
+			PPTP_AP0_H.value='0';
+		}
+  }
+
+function ClickPPTPAP1(){
+	with ( document.forms[0] ) {
+		if(PPTP_AP1.checked==true)
+			PPTP_AP1_H.value='1';
+		else
+			PPTP_AP1_H.value='0';
+		}
+  }
+
+function ClickPPTPAP2(){
+	with ( document.forms[0] ) {
+		if(PPTP_AP2.checked==true)
+			PPTP_AP2_H.value='1';
+		else
+			PPTP_AP2_H.value='0';
+		}
+  }
+
+function ClickPPTPAP3(){
+	with ( document.forms[0] ) {
+		if(PPTP_AP3.checked==true)
+			PPTP_AP3_H.value='1';
+		else
+			PPTP_AP3_H.value='0';
+		}
+  }
+
+function ClickMPPE(){
+	with ( document.forms[0] ) {
+		if(Require_MPPE.checked==true)
+			requireMPPE.value='1';
+		else
+			requireMPPE.value='0';
+		}
+  }
+
+function Clickstateless(){
+	with ( document.forms[0] ) {
+		if(Refuse_stateless.checked==true)
+			mppeStateful.value='1';
+		else
+			mppeStateful.value='0';
+		}
+  }
+
+function Click40bit(){
+	with ( document.forms[0] ) {
+		if(Refuse_40bit.checked==true)
+			noMPPE40.value='1';
+		else
+			noMPPE40.value='0';
+		}
+  }
+
+function ClickEAP(){
+	with ( document.forms[0] ) {
+		if(Refuse_EAP.checked==true)
+			refuseEAP.value='1';
+		else
+			refuseEAP.value='0';
+		}
+  }
+
+function Click128bit(){
+	with ( document.forms[0] ) {
+		if(Refuse_128bit.checked==true)
+			noMPPE128.value='1';
+		else
+			noMPPE128.value='0';
+		}
+  }
+
+function Clickpptp(){
+	with ( document.forms[0] ) {
+		if(pptp_active.checked==true)
+			pptpEnable.value='1';
+		else
+			pptpEnable.value='0';
+		}
+  }
+
+
+</script>
+
+   <form action="/pages/tabFW/pptp-cfg.cgi" method="post">
+   <input name="sessionKey" type="HIDDEN" id="sessionKey" value=""; />
+    <div class="content_frame">
+    <!--Set Server start-->
+    <div class="data_frame">
+    <ul>
+    <li class="set1">
+    <div class="title"><%ejGetML(MLG_Security_PPTPVPNSetting_Server)%></div>
+    <div class="w_text">
+    <input type="checkbox" name="pptp_active" onClick="Clickpptp()"/> <%ejGetML(MLG_Security_PPTPVPNSetting_ENABLEPPTP)%>
+    <input type="hidden" name="pptpEnable" value="false">
+    </div>
+    <div class="w_text">
+		<ul>
+			<li class="left_table"><%ejGetML(MLG_Security_PPTPVPNSetting_Name)%></li>
+			<li class="right_table">
+				<input type="text" name="pptpName" size="17" maxlength="17" />
+			</li>
+		</ul>
+		<ul>
+			<li class="left_table"><%ejGetML(MLG_Security_PPTPVPNSetting_ServerIP)%></li>
+			<li class="right_table">
+				<input type="text" name="pptpServer" size="17" maxlength="17" />
+			</li>
+		</ul>
+		<ul>
+			<li class="left_table"><%ejGetML(MLG_Security_PPTPVPNSetting_Account)%></li>
+			<li class="right_table">
+				<input type="text" name="pptpAccount" size="17" maxlength="17" />
+			</li>
+		</ul>
+		<ul>
+			<li class="left_table"><%ejGetML(MLG_Security_PPTPVPNSetting_Password)%></li>
+			<li class="right_table">
+				<input type="password" name="pptpPwd" size="17" maxlength="17" />
+			</li>
+		</ul>
+        <ul> 
+			<li class="left_table"><%ejGetML(MLG_Security_PPTPVPNSetting_EnablePolicyRoute)%></li>
+            <li class="right_table">
+			<ul>
+		    <li><input type="checkbox" name="PPTP_PR" onClick="ClickPPTPPR()" />ALL</li>
+            <input type="hidden" name="policerouterEn" value="0">
+            <input type="hidden" name="pptpinterface" value="0">
+            </ul>
+            <ul>
+			<li><input type="checkbox" name="PPTP_LAN1" onClick="ClickPPTPLAN1()" />LAN1</li>&nbsp;
+			<input type="hidden" name="PPTP_LAN1_H" value="0">
+			<li><input type="checkbox" name="PPTP_LAN2" onClick="ClickPPTPLAN2()" />LAN2</li>&nbsp;
+            <input type="hidden" name="PPTP_LAN2_H" value="0">
+			<li><input type="checkbox" name="PPTP_LAN3" onClick="ClickPPTPLAN3()" />LAN3</li>&nbsp;
+            <input type="hidden" name="PPTP_LAN3_H" value="0">
+			<li><input type="checkbox" name="PPTP_LAN4" onClick="ClickPPTPLAN4()" />LAN4</li>&nbsp;
+            <input type="hidden" name="PPTP_LAN4_H" value="0">
+            </ul>
+            <ul>
+			<li><input type="checkbox" name="PPTP_AP0" onClick="ClickPPTPAP0()" /><span id="apreal">AP0</span></li>&nbsp;&nbsp;
+            <input type="hidden" name="PPTP_AP0_H" value="0">
+			<li><input type="checkbox" name="PPTP_AP1" onClick="ClickPPTPAP1()" /><span id="apreal1">AP1</span></li>&nbsp;&nbsp;
+            <input type="hidden" name="PPTP_AP1_H" value="0">
+			<li><input type="checkbox" name="PPTP_AP2" onClick="ClickPPTPAP2()" /><span id="apreal2">AP2</span></li>&nbsp;&nbsp;
+            <input type="hidden" name="PPTP_AP2_H" value="0">
+			<li><input type="checkbox" name="PPTP_AP3" onClick="ClickPPTPAP3()" /><span id="apreal3">AP3</span></li>&nbsp;&nbsp;
+            <input type="hidden" name="PPTP_AP3_H" value="0">
+            </ul>
+            </li>
+        </ul>
+    </div>
+   </li>
+   </ul>
+   </div>
+   <!--Set Server end-->
+   <!--Set Encryption start-->
+   <div class="data_frame">
+    <ul>
+    <li class="set1">
+    <div class="title"><%ejGetML(MLG_Security_PPTPVPNSetting_Encryption)%></div>
+    <div class="w_text">
+    <ul>
+			<li class="left_table"><input type="checkbox" name="Require_MPPE" onClick="ClickMPPE()" /><%ejGetML(MLG_Security_PPTPVPNSetting_RequireMPPE)%></li>
+			<input type="hidden" name="requireMPPE" value="0">
+			<li class="right_table"><input type="checkbox" name="Refuse_stateless" onClick="Clickstateless()" /><%ejGetML(MLG_Security_PPTPVPNSetting_Refusestateless)%></li>
+			<input type="hidden" name="mppeStateful" value="0">
+    </ul>
+    <ul>
+			<li class="left_table"><input type="checkbox" name="Refuse_40bit" onClick="Click40bit()" /><%ejGetML(MLG_Security_PPTPVPNSetting_Refuse40)%></li>
+            <input type="hidden" name="noMPPE40" value="0">
+			<li class="right_table"><input type="checkbox" name="Refuse_EAP" onClick="ClickEAP()" /><%ejGetML(MLG_Security_PPTPVPNSetting_RefuseEAP)%></li>
+			<input type="hidden" name="refuseEAP" value="0">
+    </ul>
+    <ul>
+			<li class="left_table"><input type="checkbox" name="Refuse_128bit" onClick="Click128bit()" /><%ejGetML(MLG_Security_PPTPVPNSetting_Refuse128)%></li>
+			<input type="hidden" name="noMPPE128" value="0">
+    </ul>
+    </div>
+    </li>
+    </ul>
+    </div>
+    <!--Set Encryption end-->
+    <!--Show Status start-->
+   <div class="data_frame">
+    <ul>
+    <li class="set1">
+    <div class="title"><%ejGetML(MLG_Security_PPTPVPNSetting_Status)%></div>
+    <div class="w_text">
+    <ul>
+			<li>
+			<span><%ejGetML(MLG_Security_PPTPVPNSetting_Status)%>:</span>
+            <span id="guistatus"><%ejGetML(MLG_Security_PPTPVPNSetting_Disconnected)%></span>&nbsp;&nbsp;
+            <input name="connectbtn" value="<%ejGetML(MLG_Security_PPTPVPNSetting_connect)%>" type="button" onClick="pptpbtn();"/>
+            <input type="hidden" name="status" value="0">
+			</li>
+    </ul>
+    <ul>
+			<li>
+			<span><%ejGetML(MLG_Security_PPTPVPNSetting_IPAddress)%>:</span>
+            <span id="guiipaddr">N/A</span>
+            <input type="hidden" name="ipaddr" value="0.0.0.0">
+			</li>
+    </ul>
+    <ul>
+			<li>
+			<span><%ejGetML(MLG_Security_PPTPVPNSetting_PeerIPAddress)%>:</span>
+            <span id="guipeerIpaddr">N/A</span>
+            <input type="hidden" name="peerIpaddr" value="0.0.0.0">
+			</li>
+	</ul>
+    </div>
+    </li>
+    </ul>
+    </div>
+    <!--Show Status end-->
+    <!--Show Notes start-->
+   <div class="data_frame">
+    <ul>
+    <li class="set1">
+    <div class="title"><%ejGetML(MLG_Security_PPTPVPNSetting_Note)%></div>
+    <div class="w_text">
+    <ul>
+			<li>
+			<span>1.<%ejGetML(MLG_Security_PPTPVPNSetting_Str1)%></span>
+			</li>
+    </ul>
+    <ul>
+			<li>
+			<span>2.<%ejGetML(MLG_Security_PPTPVPNSetting_Str2)%></span>
+			</li>
+    </ul>
+    </div>
+    </li>
+    </ul>
+    </div>
+    <!--Show Notes end-->
+    <!--Button define start-->
+   <div class="data_frame">
+   <ul>
+   <li class="buttonframe">
+   <div class="button_position">
+   <input name="sysSubmit" value="<%ejGetML(MLG_Common_Apply)%>" type="button" onClick="btnSave();"/>
+   &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+   <input name="Cancel" value="<%ejGetML(MLG_Common_Cancel)%>" type="button" onClick="frmLoad();"/></div>
+   </li>
+   </ul>
+   </div>
+   <!--Button define end-->
+   </div>
+  </form>
+
+  <script language='JavaScript'>
+
+
+$(document).ready(function() {
+
+	frmLoad();
+});
+
+
+</script>
+
+

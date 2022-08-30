@@ -1,0 +1,1 @@
+cmd_/tmp/consumer/100AAPP7D0/bcmdrivers/broadcom/char/chipinfo//bcm963268/chipinfo.o := /opt/toolchains/uclibc-crosstools-gcc-4.4.2-1/usr/bin/mips-linux-uclibc-ld  -m elf32btsmip   -r -o /tmp/consumer/100AAPP7D0/bcmdrivers/broadcom/char/chipinfo//bcm963268/chipinfo.o /tmp/consumer/100AAPP7D0/bcmdrivers/broadcom/char/chipinfo//bcm963268/chipinfo_dep.o 

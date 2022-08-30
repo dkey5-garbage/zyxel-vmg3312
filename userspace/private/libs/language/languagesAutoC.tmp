@@ -1,0 +1,112 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <signal.h>
+
+#include "$Zy_token1$MLG.h"
+#include "$Zy_token2$MLG.h"
+#include "$Zy_token3$MLG.h"
+#include "$Zy_token4$MLG.h"
+#include "$Zy_token5$MLG.h"
+#include "$Zy_token6$MLG.h"
+#include "$Zy_token7$MLG.h"
+#include "$Zy_token8$MLG.h"
+#include "languages.h"
+#include "languagesF.h"
+#include "languagesAuto.h"
+
+MAPPING_ITEM *mlg_pre = NULL;
+int mlg_MappingItemCounter=0;
+int mlg_UsedLanguage=0;
+char* mlg_not_found; 
+
+void mlg_initLanguage(){
+	if(!mlg_not_found){
+		mlg_not_found = malloc(strlen("(null)")*sizeof(char));
+		strcpy(mlg_not_found,"(null)");
+	}
+	if(!$Zy_token1$MappingItem[0].varName)
+		$Zy_token1$MappingItemMapping();
+	if(!$Zy_token2$MappingItem[0].varName)
+		$Zy_token2$MappingItemMapping();
+	if(!$Zy_token3$MappingItem[0].varName)
+		$Zy_token3$MappingItemMapping();
+	if(!$Zy_token4$MappingItem[0].varName)
+		$Zy_token4$MappingItemMapping();
+	if(!$Zy_token5$MappingItem[0].varName)
+		$Zy_token5$MappingItemMapping();
+	if(!$Zy_token6$MappingItem[0].varName)
+		$Zy_token6$MappingItemMapping();
+	if(!$Zy_token7$MappingItem[0].varName)
+		$Zy_token7$MappingItemMapping();
+	if(!$Zy_token8$MappingItem[0].varName)
+		$Zy_token8$MappingItemMapping();		
+}
+
+void mlg_cgiGetValue(char* varName, char* varScope, char* varValue){
+	//cmsLog_error("Enter");
+	int scope = mlg_cgiGetMLScope(varScope);
+	mlg_initLanguage();
+	mlg_pre=NULL;
+	switch (scope){
+		case MLG_$Zy_token1$:
+			mlg_pre = &$Zy_token1$MappingItem[0];
+			mlg_MappingItemCounter = MAPPING_$Zy_token1$MappingItem_COUNTER;
+			break;
+		case MLG_$Zy_token2$:
+			mlg_pre = &$Zy_token2$MappingItem[0];			
+			mlg_MappingItemCounter = MAPPING_$Zy_token2$MappingItem_COUNTER;		
+			break;
+		case MLG_$Zy_token3$:
+			mlg_pre = &$Zy_token3$MappingItem[0];	
+			mlg_MappingItemCounter = MAPPING_$Zy_token3$MappingItem_COUNTER;			
+			break;
+		case MLG_$Zy_token4$:
+			mlg_pre = &$Zy_token4$MappingItem[0];					
+			mlg_MappingItemCounter = MAPPING_$Zy_token4$MappingItem_COUNTER;			
+			break;
+		case MLG_$Zy_token5$:
+			mlg_pre = &$Zy_token5$MappingItem[0];			
+			mlg_MappingItemCounter = MAPPING_$Zy_token5$MappingItem_COUNTER;			
+			break;
+		case MLG_$Zy_token6$:
+			mlg_pre = &$Zy_token6$MappingItem[0];				
+			mlg_MappingItemCounter = MAPPING_$Zy_token6$MappingItem_COUNTER;			
+			break;
+		case MLG_$Zy_token7$:
+			mlg_pre = &$Zy_token7$MappingItem[0];				
+			mlg_MappingItemCounter = MAPPING_$Zy_token7$MappingItem_COUNTER;			
+			break;
+		case MLG_$Zy_token8$:
+			mlg_pre = &$Zy_token8$MappingItem[0];			
+			mlg_MappingItemCounter = MAPPING_$Zy_token8$MappingItem_COUNTER;			
+			break;
+		default:
+			mlg_pre = &$Zy_token1$MappingItem[0];			
+			mlg_MappingItemCounter = MAPPING_$Zy_token1$MappingItem_COUNTER;		
+			break;			 
+	}	
+	mlg_search(varName,varValue);
+	//cmsLog_error("Exit");	
+}
+
+int mlg_cgiGetMLScope(char* scope){
+	if(!strcmp(scope,"$Zy_token1$"))
+		return MLG_$Zy_token1$;
+	else if(!strcmp(scope,"$Zy_token2$"))
+		return MLG_$Zy_token2$;	
+	else if(!strcmp(scope,"$Zy_token3$"))
+		return MLG_$Zy_token3$;	
+	else if(!strcmp(scope,"$Zy_token4$"))
+		return MLG_$Zy_token4$;	
+	else if(!strcmp(scope,"$Zy_token5$"))
+		return MLG_$Zy_token5$;	
+	else if(!strcmp(scope,"$Zy_token6$"))
+		return MLG_$Zy_token6$;	
+	else if(!strcmp(scope,"$Zy_token7$"))
+		return MLG_$Zy_token7$;	
+	else if(!strcmp(scope,"$Zy_token8$"))
+		return MLG_$Zy_token8$;	
+	else 
+		return MLG_$Zy_token1$;
+}
